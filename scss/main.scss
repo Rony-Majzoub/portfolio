@@ -1,0 +1,16 @@
+.transition-fade {
+    transition:opacity 0.4s cubic-bezier(0.19, 1, 0.22, 1),transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+    opacity: 1;
+    transform: translate3d(0, 0, 0);  
+  }
+  html.is-animating .transition-fade {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  
+  html.is-animating.is-leaving .transition-fade {
+    transition:opacity 0.2s cubic-bezier(0.55, 0.055, 0.675, 0.19),transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    opacity: 0;
+    transform: translate3d(0, 60px, 0);
+  }
+  
