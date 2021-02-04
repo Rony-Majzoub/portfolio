@@ -21,6 +21,7 @@ body {
   --hover-filter: brightness(75%);
   --font-heavy: 700;
   --font-normal: 400;
+  --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
 }
 
 /*Dark Theme Colors*/
@@ -39,6 +40,7 @@ body.dark-theme {
   --hover-filter: brightness(100%);
   --font-heavy: 600;
   --font-normal: 300;
+  --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
 }
 
 /* Styles for users who prefer dark mode at the OS level */
@@ -59,6 +61,7 @@ body.dark-theme {
     --hover-filter: brightness(100%);
     --font-heavy: 600;
     --font-normal: 300;
+    --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
   }
   /* Override dark mode with light mode styles if the user decides to swap */
   body.light-theme {
@@ -76,6 +79,7 @@ body.dark-theme {
     --hover-filter: brightness(75%);
     --font-heavy: 700;
     --font-normal: 400;
+    --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
   }
 }
 
@@ -320,6 +324,18 @@ main h1 {
   font-size: 2.5em;
 }
 
+main p {
+  color: var(--fontColor);
+  opacity: 0.60;
+  font-family: var(--fontSubtitle);
+  font-weight: var(--font-normal);
+  padding: 0;
+  margin: 0;
+  font-size: 1.5em;
+  line-height: 1.5em;
+  opacity: 0.80;
+}
+
 @media screen and (min-width: 320px) {
   main {
     padding: 0 1rem 0 1rem;
@@ -330,6 +346,42 @@ main h1 {
   main {
     padding: 0 5rem 0 5rem;
   }
+}
+
+.profile {
+  border-radius: 50%;
+  width: 50%;
+  -webkit-filter: var(--profile-shadow);
+          filter: var(--profile-shadow);
+}
+
+.info-content {
+  text-align: right;
+}
+
+.info-content h3 {
+  color: var(--fontColor);
+  opacity: 0.87;
+  font-family: var(--fontTitle);
+  font-weight: var(--font-heavy);
+  padding: 0;
+  margin: 0;
+  opacity: 0.80;
+  padding-top: 1em;
+  font-size: 2.2em;
+  line-height: 5rem;
+}
+
+.info-content h4 {
+  color: var(--fontColor);
+  opacity: 0.60;
+  font-family: var(--fontSubtitle);
+  font-weight: var(--font-normal);
+  padding: 0;
+  margin: 0;
+  opacity: 0.80;
+  font-size: 1.5em;
+  line-height: 3rem;
 }
 
 .project-grid {

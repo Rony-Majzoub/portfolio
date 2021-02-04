@@ -134,6 +134,13 @@ main {
     padding-bottom:1em;
     font-size: 2.5em;
   }
+  p {
+    @include medium-text;
+    @include reset-mp;
+    font-size: 1.5em;
+    line-height: 1.5em;
+    opacity: 0.80;
+  }
 }
 
 @media screen and (min-width: 320px) {
@@ -147,7 +154,31 @@ main {
     padding: 0 5rem 0 5rem;
   }
 }
+.profile {
+  border-radius: 50%;
+  width: 50%;
+  filter: var(--profile-shadow);
+}
 
+.info-content {
+  text-align: right;
+  h3 {
+    @include high-text;
+    @include reset-mp;
+    opacity: 0.80;
+    padding-top: 1em;
+    font-size: 2.2em;
+    line-height: 5rem;
+  }
+
+  h4 {
+    @include medium-text;
+    @include reset-mp;
+    opacity: 0.80;
+    font-size: 1.5em;
+    line-height: 3rem;
+  }
+}
 
 .project-grid {
   display: grid;
