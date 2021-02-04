@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 body {
-  width: 100%;
+  height: 100%;
   @include reset-mp;
   overflow-x: hidden;
   margin-bottom: 2rem;
@@ -18,22 +18,49 @@ header {
   @include center;
   flex-direction: row;
   justify-content: space-between;
-  position: sticky;
-  padding: 2.5em;
-  margin-bottom: 3rem;
-  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 7.5vh;
   box-shadow: var(--headerShadow);
   box-sizing: border-box;
+  z-index: 1;
 }
 
-a {
+@media screen and (min-width: 320px) {
+  header {
+    padding: 1em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    padding: 2.5em;
+  }
+}
+
+.header-item {
+  
   @include high-text;
   text-decoration: none;
 }
 
-.header-item {
-  font-size: 1.2rem
+@media screen and (min-width: 320px) {
+  .header-item {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .header-item {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .header-item {
+    font-size: 1.4rem;
+  }
 }
 
 nav {
@@ -47,10 +74,6 @@ button {
   background: none;
   cursor: pointer;
   outline: transparent;
-}
-
-.theme-toggle {
-  background-image: url(../img/invert_colors-black-48dp.svg);
 }
 
 .post {
@@ -82,18 +105,72 @@ button {
   }
 }
 
-.post:nth-last-child(1):nth-child(odd) {
-  grid-column: 2 / span 2;
-}
 
 .material-icons {
   color: var(--icon-color)
 }
 
+@media screen and (min-width: 320px) {
+  .material-icons {
+    font-size: 32px;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .material-icons {
+    font-size: 48px;
+  }
+}
+
+
 main {
   padding: 0 5rem 0 5rem;
+  margin-top: 15vh;
   max-width: 100vw;
+}
+
+@media screen and (min-width: 320px) {
+  main {
+    padding: 0 1rem 0 1rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    padding: 0 5rem 0 5rem;
+  }
+}
+
+
+.project-grid {
   display: grid;
-  grid-template-columns: repeat( 4, minmax(250px, 1fr) );
   gap: 3rem;
+}
+@media screen and (min-width: 320px) {
+  .project-grid {
+    grid-template-columns: repeat( auto-fit, minmax(150px, 1fr));
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .project-grid {
+    grid-template-columns: repeat( auto-fit, minmax(180px, 1fr));
+  }
+}
+@media screen and (min-width: 1025px) {
+  .project-grid {
+    grid-template-columns: repeat( auto-fit, minmax(251px, 1fr));
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .post:nth-last-child(1):nth-child(odd) {
+    grid-column: auto / span 2;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .post:nth-last-child(1):nth-child(odd) {
+    grid-column: 2 / span 2;
+  }
 }
