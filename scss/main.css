@@ -182,7 +182,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 7.5vh;
+  height: 8vh;
   -webkit-box-shadow: var(--headerShadow);
           box-shadow: var(--headerShadow);
   -webkit-box-sizing: border-box;
@@ -358,10 +358,6 @@ main p {
           filter: var(--profile-shadow);
 }
 
-.info-content {
-  text-align: right;
-}
-
 .info-content h3 {
   color: var(--fontColor);
   opacity: 0.87;
@@ -372,7 +368,7 @@ main p {
   opacity: 0.80;
   padding-top: 1em;
   font-size: 2.2em;
-  line-height: 5rem;
+  line-height: 3rem;
 }
 
 .info-content h4 {
@@ -384,7 +380,19 @@ main p {
   margin: 0;
   opacity: 0.80;
   font-size: 1.5em;
-  line-height: 3rem;
+  line-height: 2rem;
+}
+
+@media screen and (min-width: 320px) {
+  .info-content {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .info-content {
+    text-align: right;
+  }
 }
 
 .info-text h2 {
@@ -395,8 +403,19 @@ main p {
   padding: 0;
   margin: 0;
   opacity: 0.80;
-  font-size: 2em;
   line-height: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .info-text h2 {
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .info-text h2 {
+    font-size: 2em;
+  }
 }
 
 .info-text h3 {
@@ -407,9 +426,32 @@ main p {
   padding: 0;
   margin: 0;
   opacity: 0.80;
-  font-size: 2em;
   line-height: 3rem;
   font-weight: var(--font-heavy);
+}
+
+@media screen and (min-width: 320px) {
+  .info-text h3 {
+    font-size: 1.2em;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .info-text h3 {
+    font-size: 2em;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .info-text {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .info-text {
+    max-width: 50vw;
+  }
 }
 
 .project-grid {

@@ -25,7 +25,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  height: 7.5vh;
+  height: 8vh;
   box-shadow: var(--headerShadow);
   box-sizing: border-box;
   z-index: 1;
@@ -164,14 +164,14 @@ main {
 }
 
 .info-content {
-  text-align: right;
+  
   h3 {
     @include high-text;
     @include reset-mp;
     opacity: 0.80;
     padding-top: 1em;
     font-size: 2.2em;
-    line-height: 5rem;
+    line-height: 3rem;
   }
 
   h4 {
@@ -179,7 +179,19 @@ main {
     @include reset-mp;
     opacity: 0.80;
     font-size: 1.5em;
-    line-height: 3rem;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .info-content {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .info-content {
+    text-align: right;
   }
 }
 
@@ -188,16 +200,47 @@ main {
     @include medium-text;
     @include reset-mp;
     opacity: 0.80;
-    font-size: 2em;
     line-height: 3rem;
+  }
+  @media screen and (min-width: 320px) {
+    h2 {
+      font-size: 1.5em;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    h2 {
+      font-size: 2em;
+    }
   }
   h3 {
     @include medium-text;
     @include reset-mp;
     opacity: 0.80;
-    font-size: 2em;
     line-height: 3rem;
     font-weight: var(--font-heavy);
+  }
+  @media screen and (min-width: 320px) {
+    h3 {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    h3 {
+      font-size: 2em;
+    }
+  }
+}
+@media screen and (min-width: 320px) {
+  .info-text {
+    max-width: 90vw;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .info-text {
+    max-width: 50vw;
   }
 }
 
