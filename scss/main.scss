@@ -8,11 +8,13 @@ body {
   @include reset-mp;
   overflow-x: hidden;
   margin-bottom: 2rem;
-  background-color: $bgColor;
+  background-color: var(--bgColor);
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubicAnimation);
 }
 
 header {
-  background-color: $headerColor;
+  background-color: var(--headerColor);
   @include center;
   flex-direction: row;
   justify-content: space-between;
@@ -21,7 +23,7 @@ header {
   margin-bottom: 3rem;
   width: 100vw;
   height: 7.5vh;
-  box-shadow: $headerShadow;
+  box-shadow: var(--headerShadow);
   box-sizing: border-box;
 }
 
@@ -37,6 +39,14 @@ a {
 nav {
   @include center;
   gap: 1em;
+}
+
+button {
+  @include reset-mp;
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: transparent;
 }
 
 .theme-toggle {
@@ -60,19 +70,24 @@ nav {
   }
 
   a {
+    filter: var(--image-filter);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.45, 0.1, 0.25, 1);
+    transition-timing-function: var(--cubicAnimation);
   }
 
   a:hover {
-    filter: brightness(50%);
+    filter: var(--hover-filter);
     transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.45, 0.1, 0.25, 1);
+    transition-timing-function: var(--cubicAnimation);
   }
 }
 
 .post:nth-last-child(1):nth-child(odd) {
   grid-column: 2 / span 2;
+}
+
+.material-icons {
+  color: var(--icon-color)
 }
 
 main {

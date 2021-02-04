@@ -1,12 +1,74 @@
-$bgColor: #FAFAFA;
-$headerColor: #EEEEEE;
-$headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
-$boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
-$borderRadius: 2px;
-$fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
-$fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
-$fontColor: #000000;
-$cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+:root {
+  color-scheme: light dark; /* both supported */
+}
+
+/*Default Colors*/
+body {
+    --bgColor: #FAFAFA;
+    --headerColor: #EEEEEE;
+    --headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    --boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+    --borderRadius: 2px;
+    --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
+    --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
+    --fontColor: #000000;
+    --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+    --icon-color: rgba(0, 0, 0, 0.54);
+    --image-filter: brightness(100%);
+    --hover-filter: brightness(50%);
+
+}
+/*Dark Theme Colors*/
+body.dark-theme {
+    --bgColor: #121212;
+    --headerColor: #212121;
+    --headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+    --boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+    --borderRadius: 2px;
+    --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
+    --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
+    --fontColor: #FFFFFF;
+    --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+    --icon-color: rgba(255, 255, 255, 1);
+    --image-filter: brightness(75%);
+    --hover-filter: brightness(100%);
+}
+
+/* Styles for users who prefer dark mode at the OS level */
+@media (prefers-color-scheme: dark) {
+    /* defaults to dark theme */
+    body {
+        --bgColor: #121212;
+        --headerColor: #212121;
+        --headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+        --boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+        --borderRadius: 2px;
+        --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
+        --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
+        --fontColor: #FFFFFF;
+        --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+        --icon-color: rgba(255, 255, 255, 1);
+        --image-filter: brightness(75%);
+        --hover-filter: brightness(100%);
+    }
+    /* Override dark mode with light mode styles if the user decides to swap */
+    body.light-theme {
+        --bgColor: #FAFAFA;
+        --headerColor: #EEEEEE;
+        --headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+        --boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+        --borderRadius: 2px;
+        --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
+        --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
+        --fontColor: #000000;
+        --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+        --icon-color: rgba(0, 0, 0, 0.54);
+        --image-filter: brightness(100%);
+        --hover-filter: brightness(50%);
+    
+    }
+}
+
 
 @mixin center {
     display: flex;
@@ -15,22 +77,22 @@ $cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
 }
 
 @mixin high-text {
-    color: $fontColor;
+    color: var(--fontColor);
     opacity: 0.87;
-    font-family: $fontTitle;
+    font-family: var(--fontTitle);
     font-weight: 700;
 }
 @mixin medium-text {
-    color: $fontColor;
+    color: var(--fontColor);
     opacity: 0.80;
-    font-family: $fontSubtitle;
+    font-family: var(--fontSubtitle);
     font-weight: 400;
 
 }
 @mixin disabled-text {
-    color: $fontColor;
+    color: var(--fontColor);
     opacity: 0.38;
-    font-family: $fontSubtitle;
+    font-family: var(--fontSubtitle);
     font-weight: 400;
 }
 
