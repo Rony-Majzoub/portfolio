@@ -19,6 +19,7 @@ body {
   --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
   --fontColor: #000000;
   --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+  --cubic-duration: 250ms;
   --icon-color: rgba(0, 0, 0, 0.54);
   --image-filter: brightness(100%);
   --hover-filter: brightness(75%);
@@ -38,6 +39,7 @@ body.dark-theme {
   --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
   --fontColor: #FFFFFF;
   --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+  --cubic-duration: 250ms;
   --icon-color: rgba(255, 255, 255, 1);
   --image-filter: brightness(75%);
   --hover-filter: brightness(100%);
@@ -59,6 +61,7 @@ body.dark-theme {
     --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
     --fontColor: #FFFFFF;
     --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+    --cubic-duration: 250ms;
     --icon-color: rgba(255, 255, 255, 1);
     --image-filter: brightness(75%);
     --hover-filter: brightness(100%);
@@ -77,6 +80,7 @@ body.dark-theme {
     --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
     --fontColor: #000000;
     --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+    --cubic-duration: 250ms;
     --icon-color: rgba(0, 0, 0, 0.54);
     --image-filter: brightness(100%);
     --hover-filter: brightness(75%);
@@ -154,8 +158,8 @@ body {
   overflow-x: hidden;
   margin-bottom: 2rem;
   background-color: var(--bgColor);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-duration: var(--cubic-duration);
+          transition-duration: var(--cubic-duration);
   -webkit-transition-timing-function: var(--cubicAnimation);
           transition-timing-function: var(--cubicAnimation);
 }
@@ -188,6 +192,10 @@ header {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   z-index: 1;
+  -webkit-transition-duration: var(--cubic-duration);
+          transition-duration: var(--cubic-duration);
+  -webkit-transition-timing-function: var(--cubicAnimation);
+          transition-timing-function: var(--cubicAnimation);
 }
 
 @media screen and (min-width: 320px) {

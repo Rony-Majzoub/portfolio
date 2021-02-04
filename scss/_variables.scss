@@ -13,6 +13,7 @@ body {
     --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
     --fontColor: #000000;
     --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+    --cubic-duration: 250ms;
     --icon-color: rgba(0, 0, 0, 0.54);
     --image-filter: brightness(100%);
     --hover-filter: brightness(75%);
@@ -32,6 +33,7 @@ body.dark-theme {
     --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
     --fontColor: #FFFFFF;
     --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+    --cubic-duration: 250ms;
     --icon-color: rgba(255, 255, 255, 1);
     --image-filter: brightness(75%);
     --hover-filter: brightness(100%);
@@ -53,12 +55,14 @@ body.dark-theme {
         --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
         --fontColor: #FFFFFF;
         --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+        --cubic-duration: 250ms;
         --icon-color: rgba(255, 255, 255, 1);
         --image-filter: brightness(75%);
         --hover-filter: brightness(100%);
         --font-heavy: 600;
         --font-normal: 300;
         --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+        
         
     }
     /* Override dark mode with light mode styles if the user decides to swap */
@@ -72,6 +76,7 @@ body.dark-theme {
         --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
         --fontColor: #000000;
         --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+        --cubic-duration: 250ms;
         --icon-color: rgba(0, 0, 0, 0.54);
         --image-filter: brightness(100%);
         --hover-filter: brightness(75%);
