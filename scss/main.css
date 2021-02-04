@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 :root {
   color-scheme: light dark;
   /* both supported */
@@ -19,6 +19,8 @@ body {
   --icon-color: rgba(0, 0, 0, 0.54);
   --image-filter: brightness(100%);
   --hover-filter: brightness(50%);
+  --font-heavy: 700;
+  --font-normal: 400;
 }
 
 /*Dark Theme Colors*/
@@ -35,6 +37,8 @@ body.dark-theme {
   --icon-color: rgba(255, 255, 255, 1);
   --image-filter: brightness(75%);
   --hover-filter: brightness(100%);
+  --font-heavy: 600;
+  --font-normal: 300;
 }
 
 /* Styles for users who prefer dark mode at the OS level */
@@ -53,6 +57,8 @@ body.dark-theme {
     --icon-color: rgba(255, 255, 255, 1);
     --image-filter: brightness(75%);
     --hover-filter: brightness(100%);
+    --font-heavy: 600;
+    --font-normal: 300;
   }
   /* Override dark mode with light mode styles if the user decides to swap */
   body.light-theme {
@@ -68,6 +74,8 @@ body.dark-theme {
     --icon-color: rgba(0, 0, 0, 0.54);
     --image-filter: brightness(100%);
     --hover-filter: brightness(50%);
+    --font-heavy: 700;
+    --font-normal: 400;
   }
 }
 
@@ -179,7 +187,7 @@ a {
   color: var(--fontColor);
   opacity: 0.87;
   font-family: var(--fontTitle);
-  font-weight: 700;
+  font-weight: var(--font-heavy);
   text-decoration: none;
 }
 
@@ -225,7 +233,7 @@ button {
   color: var(--fontColor);
   opacity: 0.87;
   font-family: var(--fontTitle);
-  font-weight: 700;
+  font-weight: var(--font-heavy);
   padding: 0;
   margin: 0;
 }
@@ -234,7 +242,7 @@ button {
   color: var(--fontColor);
   opacity: 0.80;
   font-family: var(--fontSubtitle);
-  font-weight: 400;
+  font-weight: var(--font-normal);
   padding: 0;
   margin: 0;
 }

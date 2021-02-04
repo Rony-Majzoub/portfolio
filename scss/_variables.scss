@@ -16,6 +16,8 @@ body {
     --icon-color: rgba(0, 0, 0, 0.54);
     --image-filter: brightness(100%);
     --hover-filter: brightness(50%);
+    --font-heavy: 700;
+    --font-normal: 400;
 
 }
 /*Dark Theme Colors*/
@@ -32,6 +34,8 @@ body.dark-theme {
     --icon-color: rgba(255, 255, 255, 1);
     --image-filter: brightness(75%);
     --hover-filter: brightness(100%);
+    --font-heavy: 600;
+    --font-normal: 300;
 }
 
 /* Styles for users who prefer dark mode at the OS level */
@@ -50,6 +54,9 @@ body.dark-theme {
         --icon-color: rgba(255, 255, 255, 1);
         --image-filter: brightness(75%);
         --hover-filter: brightness(100%);
+        --font-heavy: 600;
+        --font-normal: 300;
+        
     }
     /* Override dark mode with light mode styles if the user decides to swap */
     body.light-theme {
@@ -65,6 +72,8 @@ body.dark-theme {
         --icon-color: rgba(0, 0, 0, 0.54);
         --image-filter: brightness(100%);
         --hover-filter: brightness(50%);
+        --font-heavy: 700;
+        --font-normal: 400;
     
     }
 }
@@ -80,20 +89,20 @@ body.dark-theme {
     color: var(--fontColor);
     opacity: 0.87;
     font-family: var(--fontTitle);
-    font-weight: 700;
+    font-weight: var(--font-heavy);
 }
 @mixin medium-text {
     color: var(--fontColor);
     opacity: 0.80;
     font-family: var(--fontSubtitle);
-    font-weight: 400;
+    font-weight: var(--font-normal);
 
 }
 @mixin disabled-text {
     color: var(--fontColor);
     opacity: 0.38;
     font-family: var(--fontSubtitle);
-    font-weight: 400;
+    font-weight: var(--font-normal);
 }
 
 @mixin reset-mp {
