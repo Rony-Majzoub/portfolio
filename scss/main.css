@@ -287,8 +287,8 @@ button {
 .post a {
   -webkit-filter: var(--image-filter);
           filter: var(--image-filter);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-duration: var(--cubic-duration);
+          transition-duration: var(--cubic-duration);
   -webkit-transition-timing-function: var(--cubicAnimation);
           transition-timing-function: var(--cubicAnimation);
 }
@@ -296,8 +296,8 @@ button {
 .post a:hover {
   -webkit-filter: var(--hover-filter);
           filter: var(--hover-filter);
-  -webkit-transition-duration: 250ms;
-          transition-duration: 250ms;
+  -webkit-transition-duration: var(--cubic-duration);
+          transition-duration: var(--cubic-duration);
   -webkit-transition-timing-function: var(--cubicAnimation);
           transition-timing-function: var(--cubicAnimation);
 }

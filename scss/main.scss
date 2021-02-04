@@ -99,13 +99,13 @@ button {
 
   a {
     filter: var(--image-filter);
-    transition-duration: 250ms;
+    transition-duration: var(--cubic-duration);
     transition-timing-function: var(--cubicAnimation);
   }
 
   a:hover {
     filter: var(--hover-filter);
-    transition-duration: 250ms;
+    transition-duration: var(--cubic-duration);
     transition-timing-function: var(--cubicAnimation);
   }
 }
