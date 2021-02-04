@@ -262,7 +262,7 @@ button {
 
 .post h3 {
   color: var(--fontColor);
-  opacity: 0.80;
+  opacity: 0.60;
   font-family: var(--fontSubtitle);
   font-weight: var(--font-normal);
   padding: 0;
