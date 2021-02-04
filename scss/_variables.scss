@@ -1,0 +1,54 @@
+$bgColor: #FAFAFA;
+$headerColor: #EEEEEE;
+$headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+$boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
+$borderRadius: 2px;
+$fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
+$fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
+$fontColor: #000000;
+$cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin high-text {
+    color: $fontColor;
+    opacity: 0.87;
+    font-family: $fontTitle;
+    font-weight: 700;
+}
+@mixin medium-text {
+    color: $fontColor;
+    opacity: 0.80;
+    font-family: $fontSubtitle;
+    font-weight: 400;
+
+}
+@mixin disabled-text {
+    color: $fontColor;
+    opacity: 0.38;
+    font-family: $fontSubtitle;
+    font-weight: 400;
+}
+
+@mixin reset-mp {
+    padding: 0;
+    margin: 0;
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
