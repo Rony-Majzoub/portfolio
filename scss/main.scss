@@ -127,6 +127,13 @@ main {
   padding: 0 5rem 0 5rem;
   margin-top: 15vh;
   max-width: 100vw;
+
+  h1 {
+    @include high-text;
+    @include reset-mp;
+    padding-bottom:1em;
+    font-size: 2.5em;
+  }
 }
 
 @media screen and (min-width: 320px) {

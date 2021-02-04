@@ -15,7 +15,7 @@ body {
     --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
     --icon-color: rgba(0, 0, 0, 0.54);
     --image-filter: brightness(100%);
-    --hover-filter: brightness(50%);
+    --hover-filter: brightness(75%);
     --font-heavy: 700;
     --font-normal: 400;
 
@@ -71,7 +71,7 @@ body.dark-theme {
         --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
         --icon-color: rgba(0, 0, 0, 0.54);
         --image-filter: brightness(100%);
-        --hover-filter: brightness(50%);
+        --hover-filter: brightness(75%);
         --font-heavy: 700;
         --font-normal: 400;
     
