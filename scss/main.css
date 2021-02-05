@@ -467,8 +467,8 @@ main p {
 
 @media screen and (min-width: 320px) {
   .project-grid {
-    -ms-grid-columns: (minmax(150px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    -ms-grid-columns: (minmax(150px, 1fr))[1];
+        grid-template-columns: repeat(1, minmax(150px, 1fr));
   }
 }
 
