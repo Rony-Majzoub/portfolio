@@ -91,6 +91,8 @@ button {
 
 .post {
   grid-column: span 2;
+  transition-duration: var(--cubic-duration);
+  transition-timing-function: var(--cubicAnimation);
   
   img {
     max-width: 100%;

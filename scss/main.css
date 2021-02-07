@@ -285,6 +285,10 @@ button {
 
 .post {
   grid-column: span 2;
+  -webkit-transition-duration: var(--cubic-duration);
+          transition-duration: var(--cubic-duration);
+  -webkit-transition-timing-function: var(--cubicAnimation);
+          transition-timing-function: var(--cubicAnimation);
 }
 
 .post img {
