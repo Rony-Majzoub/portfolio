@@ -12,6 +12,7 @@ body {
     --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
     --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
     --fontColor: #000000;
+    --header-hover: 0, 0, 0;
     --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
     --cubic-duration: 250ms;
     --icon-color: rgba(0, 0, 0, 0.54);
@@ -32,6 +33,7 @@ body.dark-theme {
     --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
     --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
     --fontColor: #FFFFFF;
+    --header-hover: 255, 255, 255;
     --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
     --cubic-duration: 250ms;
     --icon-color: rgba(255, 255, 255, 1);
@@ -54,6 +56,7 @@ body.dark-theme {
         --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
         --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
         --fontColor: #FFFFFF;
+        --header-hover: 255, 255, 255;
         --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
         --cubic-duration: 250ms;
         --icon-color: rgba(255, 255, 255, 1);
@@ -75,6 +78,7 @@ body.dark-theme {
         --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
         --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
         --fontColor: #000000;
+        --header-hover: 0, 0, 0;
         --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
         --cubic-duration: 250ms;
         --icon-color: rgba(0, 0, 0, 0.54);
