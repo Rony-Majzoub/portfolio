@@ -214,6 +214,9 @@ main {
 }
 
 .info-text {
+  a {
+    font-weight: var(--font-heavy);
+  }
 
   /* unvisited link */
   a:link {

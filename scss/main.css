@@ -477,6 +477,10 @@ main p {
   /* selected link */
 }
 
+.info-text a {
+  font-weight: var(--font-heavy);
+}
+
 .info-text a:link {
   color: var(--unvisited-link);
 }
