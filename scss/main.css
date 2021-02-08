@@ -23,6 +23,10 @@ body {
   --font-medium: 500;
   --font-normal: 400;
   --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+  --unvisited-link: #2196F3;
+  --visited-link: #673AB7;
+  --hover-link: #673AB7;
+  --active-link: #F44336;
 }
 
 /*Dark Theme Colors*/
@@ -45,6 +49,10 @@ body.dark-theme {
   --font-medium: 400;
   --font-normal: 300;
   --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+  --unvisited-link: #64B5F6;
+  --visited-link: #9575CD;
+  --hover-link: #9575CD;
+  --active-link: #E57373;
 }
 
 /* Styles for users who prefer dark mode at the OS level */
@@ -69,6 +77,10 @@ body.dark-theme {
     --font-medium: 400;
     --font-normal: 300;
     --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+    --unvisited-link: #64B5F6;
+    --visited-link: #9575CD;
+    --hover-link: #9575CD;
+    --active-link: #E57373;
   }
   /* Override dark mode with light mode styles if the user decides to swap */
   body.light-theme {
@@ -90,6 +102,10 @@ body.dark-theme {
     --font-medium: 500;
     --font-normal: 400;
     --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
+    --unvisited-link: #2196F3;
+    --visited-link: #673AB7;
+    --hover-link: #673AB7;
+    --active-link: #F44336;
   }
 }
 
@@ -452,6 +468,29 @@ main p {
   .info-content {
     text-align: right;
   }
+}
+
+.info-text {
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */
+}
+
+.info-text a:link {
+  color: var(--unvisited-link);
+}
+
+.info-text a:visited {
+  color: var(--visited-link);
+}
+
+.info-text a:hover {
+  color: var(--hover-link);
+}
+
+.info-text a:active {
+  color: var(--active-link);
 }
 
 .info-text h2 {

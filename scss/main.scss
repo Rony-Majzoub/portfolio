@@ -86,6 +86,8 @@ button {
   outline: transparent;
 }
 
+
+
 .post {
   grid-column: span 2;
   transition-duration: var(--cubic-duration);
@@ -212,6 +214,27 @@ main {
 }
 
 .info-text {
+
+  /* unvisited link */
+  a:link {
+  color: var(--unvisited-link);
+  }
+
+  /* visited link */
+  a:visited {
+  color: var(--visited-link);
+  }
+
+  /* mouse over link */
+  a:hover {
+  color: var(--hover-link);
+  }
+
+  /* selected link */
+  a:active {
+  color: var(--active-link);
+  } 
+
   h2 {
     @include medium-text;
     @include reset-mp;
