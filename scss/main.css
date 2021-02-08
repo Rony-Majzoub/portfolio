@@ -10,8 +10,8 @@ body {
   --headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
   --boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
   --borderRadius: 2px;
-  --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
-  --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
+  --fontTitle: 'Inter', 'Segoe UI', 'lato', sans-serif;
+  --fontSubtitle: 'lato', 'Segoe UI', 'Inter', sans-serif;
   --fontColor: #000000;
   --header-hover: 0, 0, 0;
   --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
@@ -20,6 +20,7 @@ body {
   --image-filter: brightness(100%);
   --hover-filter: brightness(75%);
   --font-heavy: 700;
+  --font-medium: 500;
   --font-normal: 400;
   --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
 }
@@ -31,8 +32,8 @@ body.dark-theme {
   --headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
   --boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
   --borderRadius: 2px;
-  --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
-  --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
+  --fontTitle: 'Inter', 'Segoe UI', 'lato', sans-serif;
+  --fontSubtitle: 'lato', 'Segoe UI', 'Inter', sans-serif;
   --fontColor: #FFFFFF;
   --header-hover: 255, 255, 255;
   --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
@@ -41,6 +42,7 @@ body.dark-theme {
   --image-filter: brightness(75%);
   --hover-filter: brightness(100%);
   --font-heavy: 600;
+  --font-medium: 400;
   --font-normal: 300;
   --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
 }
@@ -54,8 +56,8 @@ body.dark-theme {
     --headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
     --boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
     --borderRadius: 2px;
-    --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
-    --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
+    --fontTitle: 'Inter', 'Segoe UI', 'lato', sans-serif;
+    --fontSubtitle: 'lato', 'Segoe UI', 'Inter', sans-serif;
     --fontColor: #FFFFFF;
     --header-hover: 255, 255, 255;
     --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
@@ -64,6 +66,7 @@ body.dark-theme {
     --image-filter: brightness(75%);
     --hover-filter: brightness(100%);
     --font-heavy: 600;
+    --font-medium: 400;
     --font-normal: 300;
     --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
   }
@@ -74,8 +77,8 @@ body.dark-theme {
     --headerShadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
     --boxShadow: 0px 4px 5px rgba(0, 0, 0, 0.14), 0px 1px 10px rgba(0, 0, 0, 0.12), 0px 2px 4px rgba(0, 0, 0, 0.2);
     --borderRadius: 2px;
-    --fontTitle: 'Inter', 'Segoe UI', 'Lato', sans-serif;
-    --fontSubtitle: 'Lato', 'Segoe UI', 'Inter', sans-serif;
+    --fontTitle: 'Inter', 'Segoe UI', 'lato', sans-serif;
+    --fontSubtitle: 'lato', 'Segoe UI', 'Inter', sans-serif;
     --fontColor: #000000;
     --header-hover: 0, 0, 0;
     --cubicAnimation: cubic-bezier(0.45, 0.1, 0.25, 1);
@@ -84,6 +87,7 @@ body.dark-theme {
     --image-filter: brightness(100%);
     --hover-filter: brightness(75%);
     --font-heavy: 700;
+    --font-medium: 500;
     --font-normal: 400;
     --profile-shadow: drop-shadow(0px 8px 10px rgba(0, 0, 0, 0.14)) drop-shadow(0px 3px 14px rgba(0, 0, 0, 0.12)) drop-shadow(0px 5px 5px rgba(0, 0, 0, 0.2));
   }
@@ -457,6 +461,7 @@ main p {
   font-weight: var(--font-normal);
   padding: 0;
   margin: 0;
+  font-weight: var(--font-medium);
   opacity: 0.80;
   line-height: 1.5em;
 }
