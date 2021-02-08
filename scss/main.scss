@@ -170,6 +170,9 @@ main {
     padding: 0 5rem 0 5rem;
   }
 }
+.project-main {
+  @include center;
+}
 .profile {
   border-radius: 50%;
   width: 50%;
@@ -251,11 +254,7 @@ main {
   }
 }
 
-@media screen and (min-width: 1000px) {
-  .info-text {
-    max-width: 50vw;
-  }
-}
+
 
 .project-grid {
   display: grid;
@@ -275,7 +274,11 @@ main {
 @media screen and (min-width: 1025px) {
   .project-grid {
     grid-template-columns: repeat( auto-fit, minmax(251px, 1fr));
+    .info-text {
+      max-width: 50vw;
+    }
   }
+  
 }
 
 @media screen and (min-width: 320px) {
@@ -297,6 +300,7 @@ main {
 @media screen and (min-width: 320px) {
   .project-flex {
     flex-direction: column-reverse;
+    max-width: 100%;
   }
   img {
     max-width: 100%
@@ -306,12 +310,12 @@ main {
 @media screen and (min-width: 1000px) {
   .project-flex {
     flex-direction: column-reverse;
+    max-width: 75%;
   }
   .info-project {
-    @include center;
 
     img {
-      max-width: 75%
+      max-width: 100%
     }
   }
 }
