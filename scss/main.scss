@@ -1,8 +1,5 @@
 @import 'variables';
 @import 'animations';
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
 body {
   height: 100%;
   @include reset-mp;
@@ -146,8 +143,12 @@ main {
   h1 {
     @include high-text;
     @include reset-mp;
-    padding-bottom:1em;
     font-size: 2.5em;
+  }
+  h2 {
+    @include high-text;
+    font-family: var(--fontSubtitle);
+    opacity: 0.80;
   }
   p {
     @include medium-text;
@@ -176,7 +177,7 @@ main {
 }
 
 .info-content {
-  
+
   h3 {
     @include high-text;
     @include reset-mp;
@@ -212,7 +213,7 @@ main {
     @include medium-text;
     @include reset-mp;
     opacity: 0.80;
-    line-height: 3rem;
+    line-height: 1.5em;
   }
   @media screen and (min-width: 320px) {
     h2 {
@@ -246,7 +247,7 @@ main {
 }
 @media screen and (min-width: 320px) {
   .info-text {
-    max-width: 90vw;
+    max-width: 85vw;
   }
 }
 
@@ -286,5 +287,31 @@ main {
 @media screen and (min-width: 1000px) {
   .post:nth-last-child(1):nth-child(odd) {
     grid-column: 2 / span 2;
+  }
+}
+
+.project-flex {
+  @include center;
+  gap: 3rem;
+}
+@media screen and (min-width: 320px) {
+  .project-flex {
+    flex-direction: column-reverse;
+  }
+  img {
+    max-width: 100%
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-flex {
+    flex-direction: column-reverse;
+  }
+  .info-project {
+    @include center;
+
+    img {
+      max-width: 75%
+    }
   }
 }
