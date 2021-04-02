@@ -86,7 +86,21 @@ button {
   outline: transparent;
 }
 
-
+.post-text {
+  position: fixed;
+  color: var(--font-hover);
+  opacity: 0;
+  z-index: 10000;
+  transition-duration: var(--cubic-duration);
+  transition-timing-function: var(--cubicAnimation);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 115%;
+  text-align: center;
+  letter-spacing: 1.25px;
+  text-transform: capitalize;
+}
 
 .post {
   grid-column: span 2;
@@ -95,27 +109,43 @@ button {
   
   img {
     max-width: 100%;
+    transition-duration: var(--cubic-duration);
+    transition-timing-function: var(--cubicAnimation);
   }
   h2 {
     @include high-text;
     @include reset-mp;
   }
-
+  
   h3 {
     @include medium-text;
     @include reset-mp;
   }
-
+  
   a {
     filter: var(--image-filter);
     transition-duration: var(--cubic-duration);
     transition-timing-function: var(--cubicAnimation);
+    @include center;
   }
-
+  
   a:hover {
-    filter: var(--hover-filter);
     transition-duration: var(--cubic-duration);
     transition-timing-function: var(--cubicAnimation);
+    @media screen and (min-width: 1000px) {
+      .post-text {
+        opacity: 1;
+        transition-duration: var(--cubic-duration);
+        transition-timing-function: var(--cubicAnimation);
+        z-index: 10000;
+        color: var(--font-hover);
+      }
+    }
+    img {
+      filter: var(--hover-filter);
+      transition-duration: var(--cubic-duration);
+      transition-timing-function: var(--cubicAnimation);
+    }
   }
 }
 
