@@ -489,6 +489,7 @@ main p {
   width: 50%;
   -webkit-filter: var(--profile-shadow);
           filter: var(--profile-shadow);
+  height: auto;
 }
 
 .info-content h3 {
