@@ -337,6 +337,7 @@ button {
 
 .post img {
   max-width: 100%;
+  border-radius: 4px;
   -webkit-transition-duration: var(--cubic-duration);
           transition-duration: var(--cubic-duration);
   -webkit-transition-timing-function: var(--cubicAnimation);
