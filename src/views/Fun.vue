@@ -1,11 +1,11 @@
 <template>
-  <div class="about">
-    <h1>I am a designer based in Gothenburg. My goal is to create solutions to problems we all face every day.</h1>
+  <div class="fun">
+    <h1>Here is a showcase of some of my smaller and fun projects.</h1>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.about {
+.fun {
   grid-column: 2/-2;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -13,6 +13,6 @@
 }
 h1 {
   text-align: left;
-  grid-column: 1/-2;
+  grid-column: 1 / -2;
 }
 </style>

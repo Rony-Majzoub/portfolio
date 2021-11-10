@@ -1,0 +1,56 @@
+<template>
+  <div class="projects">
+    <intro-text class="intro" role="digital designer"/>
+    <lottie-animation
+      path="arrow.json"
+      :loop="false"
+      :autoPlay="true"
+      :speed="1"
+      :width="144"
+      :height="144"
+      class="arrow"
+    />
+    <project-card-right title="RecyPie" description="A solution to an ongoing problem towards our environment." image="recypie.png"/>
+    <project-card-left title="Buratino" description="An efficient conversion from a physical tool to a digital & modern one." image="buratino.png"/>
+  </div>
+</template>
+
+<style lang="scss">
+.projects {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: 1fr;
+  grid-column: 2 / -2;
+}
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-column: 1 / -1;
+}
+.arrow {
+  transform:translateY(-100%);
+  grid-column: 1 / -1;
+}
+.project {
+  grid-column: 1 / -1;
+}
+</style>
+
+<script>
+// @ is an alias to /src
+import IntroText from '../components/IntroText.vue'
+import ProjectCardRight from '../components/ProjectCardRight.vue'
+import ProjectCardLeft from '../components/ProjectCardLeft.vue'
+import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue"; // import lottie-vuejs
+
+export default {
+  name: 'Projects',
+  components: {
+    IntroText,
+    ProjectCardRight,
+    ProjectCardLeft,
+    LottieAnimation
+  }
+}
+</script>
