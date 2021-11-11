@@ -72,7 +72,7 @@ footer {
   margin-bottom: 0px;
   div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
     a {
       @include h6;
@@ -92,6 +92,9 @@ footer {
 @include breakpoint(sm) {
   footer {
     flex-direction: row;
+    div {
+      flex-direction: row;
+    }
   }
 }
 h1 {
