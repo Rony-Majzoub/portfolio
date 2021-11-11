@@ -57,8 +57,9 @@ body {
 }
 footer {
   width: 100%;
+  gap: 2rem;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 5rem;
@@ -86,6 +87,11 @@ footer {
   p {
     @include overline;
     color: var(--cameo-pink);
+  }
+}
+@include breakpoint(sm) {
+  footer {
+    flex-direction: row;
   }
 }
 h1 {
