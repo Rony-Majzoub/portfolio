@@ -24,13 +24,16 @@ h1 {
 </style>
 
 <script>
+// The script responsible for showing different roles.
 export default {
   name: 'IntroText',
   data() {
     return {
+      // The different roles to choose from.
       role: ['digital designer', 'UI designer', 'UX designer', 'web developer', '3D artist', 'product designer', 'motion designer', 'quick learner', 'problem solver',]
     }
   },
+  // The time that each role stays on screen in milliseconds.
   mounted(){
     window.setInterval(()=>{
       this.pollPerson();
