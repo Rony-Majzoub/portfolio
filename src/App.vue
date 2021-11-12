@@ -148,7 +148,7 @@ a {
     line-height: var(--heading-line-height);
     text-align: right;
     letter-spacing: 0.1px;
-    transition: $sharp-curve-timing-function 250ms !important;
+    transition: var(--animation-curve) 250ms !important;
     
   }
   img {
@@ -159,7 +159,7 @@ a {
 .router-link-active {
   // text-decoration: underline !important;
   color: var(--unbleached-silk) !important;
-  transition: $sharp-curve-timing-function 250ms !important;
+  transition: var(--animation-curve) 250ms !important;
 }
 .navigation-items {
   grid-column: 12;
@@ -192,7 +192,7 @@ a {
 .fade-in-up-leave-to {
   opacity: 0;
   animation-duration: .2s;
-  animation-timing-function: $sharp-curve-timing-function;
+  animation-timing-function: var(--animation-curve);
   animation-fill-mode: both;
   animation-name: fadeOutDown;
 }
@@ -205,7 +205,7 @@ a {
 .fade-in-up-enter-to {
   opacity: 0;
   animation-duration: .5s;
-  animation-timing-function: $sharp-curve-timing-function;
+  animation-timing-function: var(--animation-curve);
   animation-fill-mode: both;
   animation-name: fadeInUp;
 }

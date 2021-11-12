@@ -68,11 +68,16 @@ section {
     @include button;
     font-size: 1.25rem;
     max-width: fit-content;
-    background-color: transparent;
+    background-color: var(--eggplant);
     border: none;
     box-shadow:inset 0px 0px 0px 2px var(--pastel-pink);
     padding: 1rem 2rem;
     color: var(--pastel-pink);
+    transition: var(--animation-curve) 250ms;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: var(--black-coffee)
   }
   p {
     @include subtitle-1;
@@ -112,10 +117,6 @@ img {
   height: 100%;
   display: inline-block;
   background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%);
-  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 250ms;
-}
-.overlay:hover:after {
-  background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%), var(--black-coffee);
-  box-shadow:inset 0px 0px 0px 4px var(--pastel-pink);
+  transition: var(--animation-curve) 300ms;
 }
 </style>
