@@ -25,15 +25,26 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
+@include breakpoint(sm) {
+  .project {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5rem;
+    height: 50rem;
+    gap: 1rem;
+  }
+}
 .project {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 5rem;
-  height: 50rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
+
+
 section {
   height: 100%;
   display: flex;
@@ -62,7 +73,7 @@ img {
 }
 .overlay {
   transform: scaleX(1);
-  width: 60%;
+  width: 90%;
   height: 100%;
   object-fit: cover;
 }

@@ -1,15 +1,19 @@
 <template>
   <header class="navigation">
+    <router-link to="/">
     <img src="@/assets/logo.svg" alt="">
+    </router-link>
     <div class="navigation-items">
       <router-link to="/">Projects</router-link>
       <router-link to="/fun">Fun</router-link>
       <router-link to="/about">About Me</router-link>
     </div>
   </header>
-  <transition name="fade-in-up">
-    <router-view/>
-  </transition>
+  <router-view v-slot="{ Component }">
+    <transition name="fade-in-up" mode="out-in">
+      <component :is="Component" />
+    </transition>
+  </router-view>
   <footer>
     <div>
       <a href="mailto:">majzoubrony@gmail.com</a>
@@ -22,6 +26,7 @@
 </template>
 
 <style lang="scss">
+@import "@material/animation";
 @import url('https://rsms.me/inter/inter.css');
 html {
   font-size: 14px;
@@ -87,6 +92,7 @@ footer {
   p {
     @include overline;
     color: var(--cameo-pink);
+    padding-bottom: 1rem;
   }
 }
 @include breakpoint(sm) {
@@ -135,13 +141,14 @@ a {
   grid-column: 1 / -1;
   max-width: 100vw;
   a {
-    color: var(--melon);
+    color: var(--cameo-pink);
     text-decoration: none;
-    font-size: var(--text-sm);
+    font-size: var(--text-md);
     font-weight: 500;
     line-height: var(--heading-line-height);
     text-align: right;
     letter-spacing: 0.1px;
+    transition: $sharp-curve-timing-function 250ms !important;
     
   }
   img {
@@ -150,7 +157,9 @@ a {
   }
 }
 .router-link-active {
-  text-decoration: underline;
+  // text-decoration: underline !important;
+  color: var(--unbleached-silk) !important;
+  transition: $sharp-curve-timing-function 250ms !important;
 }
 .navigation-items {
   grid-column: 12;
@@ -169,10 +178,23 @@ a {
     opacity: 1
   }
 }
+@keyframes fadeOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+
+  to {
+    transform: translate3d(0, 0px, 0);
+  }
+}
 
 .fade-in-up-leave-to {
   opacity: 0;
-  transition: opacity .1s;
+  animation-duration: .2s;
+  animation-timing-function: $sharp-curve-timing-function;
+  animation-fill-mode: both;
+  animation-name: fadeOutDown;
 }
 
 .fade-in-up-enter {
@@ -183,6 +205,7 @@ a {
 .fade-in-up-enter-to {
   opacity: 0;
   animation-duration: .5s;
+  animation-timing-function: $sharp-curve-timing-function;
   animation-fill-mode: both;
   animation-name: fadeInUp;
 }
