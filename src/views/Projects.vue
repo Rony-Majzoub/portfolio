@@ -11,8 +11,8 @@
       class="arrow"
     />
     <main class="project-grid">
-      <project-card-right title="RecyPie" description="A solution to an ongoing problem towards our environment." image="recypie.png"/>
-      <project-card-left title="Buratino" description="An efficient conversion from a physical tool to a digital & modern one." image="buratino.png"/>
+      <project-card-right title="RecyPie" description="A solution to an ongoing problem towards our environment." category="UI & UX Design" image="recypie.png"/>
+      <project-card-left title="Buratino" description="An efficient conversion from a physical tool to a digital & modern one." category="Web Development" image="buratino.png"/>
     </main>
   </div>
 </template>

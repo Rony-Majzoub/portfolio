@@ -14,7 +14,7 @@
       <component :is="Component" />
     </transition>
   </router-view>
-  <footer>
+  <footer class="page-footer">
     <div>
       <a href="mailto:">majzoubrony@gmail.com</a>
       <a href="tel:+">46722960295</a>
@@ -33,6 +33,7 @@ html {
 }
 * {
   box-sizing: border-box;
+  font-family: var(--font-primary);
 }
 body {
   background-color: var(--black-coffee);
@@ -42,7 +43,6 @@ body {
   position: relative;
   display: grid;
   max-width: 100vw;
-  font-family: var(--font-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -60,7 +60,7 @@ body {
     grid-template-rows: 1fr;
   }
 }
-footer {
+.page-footer {
   width: 100%;
   gap: 2rem;
   display: flex;
@@ -96,7 +96,7 @@ footer {
   }
 }
 @include breakpoint(sm) {
-  footer {
+  .page-footer {
     flex-direction: row;
     div {
       flex-direction: row;

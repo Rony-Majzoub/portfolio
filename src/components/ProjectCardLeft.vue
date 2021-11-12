@@ -4,10 +4,16 @@
       <img :src="require(`../assets/img/${image}`)" />
     </div>
     <section>
-      <h2>{{ title }}</h2>
-      <h6>
-        {{ description }}
-      </h6>
+      <header class="project-header">
+        <h2>{{ title }}</h2>
+        <h6>
+          {{ description }}
+        </h6>
+      </header>
+      <footer class="project-footer">
+        <p>{{ category }}</p>
+        <button>Läs Mer</button>
+      </footer>
     </section>
   </article>
 </template>
@@ -18,6 +24,7 @@ export default {
   props: {
     title: String,
     description: String,
+    category: String,
     image: String
   }
 }
@@ -25,33 +32,52 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
-@include breakpoint(sm) {
-  .project {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-bottom: 5rem;
-    height: 50rem;
-    gap: 1rem;
-  }
-}
 .project {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 5rem;
+  height: 40rem;
 }
-
-
 section {
-  height: 100%;
+  height: calc(100% - 4rem);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
   gap: 1rem;
+  background-color: var(--eggplant);
+  padding: 2rem;
+  flex-grow: 1;
+  flex-basis: 40%;
+  box-sizing: content-box;
+}
+.project-header {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.project-footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  button {
+    @include button;
+    font-size: 1.25rem;
+    max-width: fit-content;
+    background-color: transparent;
+    border: none;
+    box-shadow:inset 0px 0px 0px 2px var(--pastel-pink);
+    padding: 1rem 2rem;
+    color: var(--pastel-pink);
+  }
+  p {
+    @include subtitle-1;
+    @include reset-mp;
+  }
 }
 h2 {
   font-weight: 500;
@@ -60,10 +86,8 @@ h2 {
   text-align: left;
   letter-spacing: -0.5px;
 }
-
 h6 {
   text-align: left;
-  max-width: 90%;
   color: var(--pastel-pink);
 }
 img {
@@ -73,9 +97,10 @@ img {
 }
 .overlay {
   transform: scaleX(1);
-  width: 90%;
   height: 100%;
   object-fit: cover;
+  flex-grow: 2;
+  flex-basis: 60%;
 }
 .overlay:after {
   position: absolute;
