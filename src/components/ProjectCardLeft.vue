@@ -5,27 +5,33 @@
     </div>
     <section>
       <header class="project-header">
+        <p class="tag">{{ tag }}</p>
         <h2>{{ title }}</h2>
-        <h6>
+        <p>
           {{ description }}
-        </h6>
+        </p>
       </header>
       <footer class="project-footer">
+        <project-button/>
         <p>{{ category }}</p>
-        <button>Läs Mer</button>
       </footer>
     </section>
   </article>
 </template>
 
 <script>
+import ProjectButton from './ProjectButton.vue'
 export default {
   name: 'ProjectCardLeft',
   props: {
     title: String,
     description: String,
     category: String,
+    tag: String,
     image: String
+  },
+  components: {
+    ProjectButton
   }
 }
 </script>
@@ -46,12 +52,13 @@ section {
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 1rem;
   background-color: var(--eggplant);
   padding: 2rem;
   flex-grow: 1;
   flex-basis: 40%;
   box-sizing: content-box;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  background: linear-gradient(0deg, #363040 1%, rgba(78, 64, 79, 0) 100%) var(--eggplant);
 }
 .project-header {
   display: flex;
@@ -61,44 +68,32 @@ section {
 .project-footer {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: baseline;
-  button {
-    @include button;
-    font-size: 1.25rem;
-    max-width: fit-content;
-    background-color: var(--eggplant);
-    border: none;
-    box-shadow:inset 0px 0px 0px 2px var(--pastel-pink);
-    padding: 1rem 2rem;
-    color: var(--pastel-pink);
-    transition: var(--animation-curve) 250ms;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: var(--black-coffee)
-  }
   p {
-    @include subtitle-1;
-    @include reset-mp;
+    @include subtitle-2;
+    color: var(--pastel-pink);
   }
 }
 h2 {
-  font-weight: 500;
-  font-size: var(--text-xxxl);
-  line-height: var(--heading-line-height);
   text-align: left;
-  letter-spacing: -0.5px;
+  color: var(--melon)
 }
-h6 {
+p {
+  @include subtitle-2;
   text-align: left;
   color: var(--pastel-pink);
+}
+.tag {
+  text-align: left;
+  @include overline;
 }
 img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
 }
 .overlay {
   transform: scaleX(1);
@@ -116,7 +111,7 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%);
+  background: linear-gradient(0deg, #363040 1%, rgba(78, 64, 79, 0) 100%);
   transition: var(--animation-curve) 300ms;
 }
 </style>

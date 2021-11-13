@@ -9,9 +9,9 @@
   grid-column: 2/-2;
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: 1fr;
 }
 h1 {
+  color: var(--melon);
   text-align: left;
   grid-column: 1/-2;
 }

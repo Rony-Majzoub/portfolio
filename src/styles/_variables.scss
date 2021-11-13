@@ -1,6 +1,7 @@
 :root {
 
   --animation-curve: cubic-bezier(0.45, 0.1, 0.25, 1);
+  --border-radius: 1.25rem;
 
   /* Text-size styles */
   /* base size: body-1---helvetica -neue -regular (16px) */
@@ -88,81 +89,81 @@ $breakpoints: (
   font-weight: 500;
   font-size: var(--text-xxxxxl);
   line-height: var(--heading-line-height);
-  letter-spacing: -1.5px; 
+  letter-spacing: -0.11rem; 
   @include reset-mp;
 }
 @mixin h2 {
   font-weight: 500;
   font-size: var(--text-xxxxl);
   line-height: var(--heading-line-height);
-  letter-spacing: -0.5px;
+  letter-spacing: -0.04rem;
   @include reset-mp;
 }
 @mixin h3 {
   font-weight: 500;
-  font-size: var(--text-xxxxl);
+  font-size: var(--text-xxxl);
   line-height: var(--heading-line-height);
   @include reset-mp;
 }
 @mixin h4 {
   font-weight: 500;
-  font-size: 2.125rem;
+  font-size: var(--text-xxl);
   line-height: var(--heading-line-height);
   @include reset-mp;
   
 }
 @mixin h5 {
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: var(--text-xl);
   line-height: var(--heading-line-height);
   letter-spacing: 0.18px;
   @include reset-mp;
 }
 @mixin h6 {
-  font-weight: bold;
-  font-size: 1.25rem;
+  font-weight: 700;
+  font-size: var(--text-xl);
   line-height: var(--heading-line-height);
-  letter-spacing: 0.15px;
+  letter-spacing: 0.01rem;
   @include reset-mp;
 }
 @mixin subtitle-1 {
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: var(--text-md);
   line-height: var(--body-line-height);
-  letter-spacing: 0.15px;
+  letter-spacing: 0.005rem;
   @include reset-mp;
 }
 @mixin subtitle-2 {
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: var(--text-md);
   line-height: var(--body-line-height);
-  letter-spacing: 0.1px;
+  letter-spacing: 0.01rem;
   @include reset-mp;
 }
 @mixin body-1 {
-  font-weight: bold;
-  font-size: 1rem;
+  font-weight: 400;
+  font-size: var(--text-md);
   line-height: var(--body-line-height);
   letter-spacing: 0.5px; 
   @include reset-mp;
 }
 @mixin body-2 {
-  font-weight: bold;
-  font-size: 0.875rem;
+  font-weight: 400;
+  font-size: var(--text-sm);
   line-height: var(--body-line-height);
   letter-spacing: 0.25px;
   @include reset-mp;
 }
 @mixin button {
   font-weight: 500;
-  font-size: 0.875rem;
+  font-size: var(--text-md);
   line-height: var(--body-line-height);
-  letter-spacing: 1.25px;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
   @include reset-mp;
 }
 @mixin caption {
-  font-weight: bold;
+  font-weight: 400;
   font-size: 0.75rem;
   line-height: var(--body-line-height);
   letter-spacing: 0.4px;
@@ -170,7 +171,7 @@ $breakpoints: (
 }
 @mixin overline {
   font-weight: 500;
-  font-size: 0.625rem;
+  font-size: var(--text-sm);
   line-height: var(--body-line-height);
   letter-spacing: 1.5px;
   text-transform: uppercase;

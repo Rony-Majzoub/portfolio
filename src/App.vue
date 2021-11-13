@@ -11,7 +11,7 @@
   </header>
   <router-view v-slot="{ Component }">
     <transition name="fade-in-up" mode="out-in">
-      <component :is="Component" />
+      <component :is="Component"/>
     </transition>
   </router-view>
   <footer class="page-footer">
@@ -45,19 +45,17 @@ body {
   max-width: 100vw;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: var(--melon);
   min-height: 100vh;
-  padding-bottom: 7.5rem;
+  padding-bottom: 5rem;
   padding-top: 10rem;
 }
+
 @include breakpoint(sm) {
   html {
     font-size: 14px;
   }
   #app {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 1fr;
   }
 }
 .page-footer {
@@ -80,17 +78,18 @@ body {
     flex-direction: column;
     gap: 1rem;
     a {
-      @include h6;
+      @include subtitle-1;
       font-weight: 400;
       text-decoration: none;
       color: var(--melon);
     }
     .social-media {
-      font-weight: 700;
+      font-weight: 500;
     }
   }
   p {
     @include overline;
+    font-size: var(--text-xs);
     color: var(--cameo-pink);
     padding-bottom: 1rem;
   }
@@ -141,13 +140,13 @@ a {
   grid-column: 1 / -1;
   max-width: 100vw;
   a {
+    @include subtitle-1;
     color: var(--cameo-pink);
     text-decoration: none;
     font-size: var(--text-md);
     font-weight: 500;
     line-height: var(--heading-line-height);
     text-align: right;
-    letter-spacing: 0.1px;
     transition: var(--animation-curve) 250ms !important;
     
   }
@@ -196,12 +195,6 @@ a {
   animation-fill-mode: both;
   animation-name: fadeOutDown;
 }
-
-.fade-in-up-enter {
-  opacity: 0;
-  transform: translate3d(0, 40px, 0);
-}
-
 .fade-in-up-enter-to {
   opacity: 0;
   animation-duration: .5s;

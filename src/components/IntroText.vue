@@ -4,7 +4,7 @@
     <h1>
       My name is Rony Majzoub.
       <br>
-      I'm a <u>{{ role[0] }}</u>.
+      I'm a <u>{{ role[0] }}.</u>
     </h1>
   </div>
 </template>
@@ -13,13 +13,9 @@
 div {
   height: calc(100vh - 15rem);
 }
-
 h1 {
-  font-weight: 500;
-  font-size: var(--text-xxxxxl);
-  line-height: var(--heading-line-height);
   text-align: center;
-  letter-spacing: -1.5px;
+  color: var(--melon)
 }
 </style>
 
