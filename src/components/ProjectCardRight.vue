@@ -46,7 +46,7 @@ export default {
   height: 35rem;
   transition: var(--animation-curve) 250ms;
   border-radius: var(--border-radius);
-  background: linear-gradient(0deg, #363040 1%, rgba(78, 64, 79, 0) 100%) var(--eggplant);
+  background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%) var(--eggplant);
 }
 section {
   display: flex;
@@ -113,7 +113,7 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  background: linear-gradient(0deg, #363040 1%, rgba(78, 64, 79, 0) 100%);
+  background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%);
   transition: var(--animation-curve) 250ms;
 }
 
