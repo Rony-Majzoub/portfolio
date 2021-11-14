@@ -40,26 +40,27 @@ export default {
 <style lang="scss" scoped>
 .project {
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 5rem;
-  height: 40rem;
+  height: 35rem;
+  transition: var(--animation-curve) 250ms;
+  border-radius: var(--border-radius);
+  background: linear-gradient(0deg, #363040 1%, rgba(78, 64, 79, 0) 100%) var(--eggplant);
 }
 section {
-  height: calc(100% - 4rem);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
-  background-color: var(--eggplant);
-  padding: 2rem;
+  padding: 1rem;
   flex-grow: 1;
   flex-basis: 40%;
   box-sizing: content-box;
-  border-radius: var(--border-radius) 0 0 var(--border-radius);
-  background: linear-gradient(0deg, #363040 1%, rgba(78, 64, 79, 0) 100%) var(--eggplant);
-}
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  background-color: transparent;
+  transition: var(--animation-curve) 250ms;
+  }
 .project-header {
   display: flex;
   flex-direction: column;
@@ -78,29 +79,30 @@ section {
 }
 h2 {
   text-align: left;
-  color: var(--melon)
+  color: var(--unbleached-silk);
 }
 p {
   @include subtitle-2;
   text-align: left;
-  color: var(--pastel-pink);
+  color: var(--melon)
 }
 .tag {
   text-align: left;
   @include overline;
+  color: var(--melon)
 }
 img {
   max-width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
 }
 .overlay {
   transform: scaleX(1);
   height: 100%;
   object-fit: cover;
-  flex-grow: 2;
-  flex-basis: 60%;
+  flex-grow: 1;
+  flex-basis: 0%;
 }
 .overlay:after {
   position: absolute;
@@ -112,6 +114,44 @@ img {
   height: 100%;
   display: inline-block;
   background: linear-gradient(0deg, #363040 1%, rgba(78, 64, 79, 0) 100%);
-  transition: var(--animation-curve) 300ms;
+  opacity: 100%;
+  transition: var(--animation-curve) 250ms;
+}
+
+@include breakpoint(sm){
+  .project {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 40rem;
+  }
+  .project:hover {
+    box-shadow:
+    5.9px 11.8px 15.7px hsla(263, 20%, 10%, 0.049),
+    12px 24px 24px hsla(263, 20%, 10%, 0.1);
+    section {
+      background-position-y: 100px;
+      background-color: var(--eggplant);
+    }
+    .overlay:after {
+      opacity: 0%;
+    }
+  }
+  section {
+  height: calc(100% - 4rem);
+  padding: 2rem;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  }
+  img {
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  }
+  .overlay {
+    transform: scaleX(1);
+    height: 100%;
+    object-fit: cover;
+    flex-grow: 2;
+    flex-basis: 60%;
+  }
+
 }
 </style>

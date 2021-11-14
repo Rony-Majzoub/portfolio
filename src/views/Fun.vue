@@ -17,12 +17,10 @@
 .fun-grid {
   margin-top: 5rem;
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
   grid-column: 2/-2;
-  gap: 1rem;
+  gap: 7.5rem;
 }
 h1 {
-  color: var(--melon);
   text-align: left;
   grid-column: 1 / -2;
 }

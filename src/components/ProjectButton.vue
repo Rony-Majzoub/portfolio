@@ -16,13 +16,20 @@ button {
   background-color: transparent;
   border: none;
   box-shadow:inset 0px 0px 0px 2px var(--pastel-pink);
-  padding: 1.5rem 5rem;
+  padding: 1rem 2rem;
   color: var(--pastel-pink);
   transition: var(--animation-curve) 250ms;
   cursor: pointer;
   border-radius: 4rem;
 }
 button:hover {
-  background-color: var(--eggplant);
+  background-color: var(--unbleached-silk);
+  box-shadow:inset 0px 0px 0px 2px var(--unbleached-silk);
+  color: var(--eggplant);
+}
+@include breakpoint(sm) {
+  button {
+    padding: 1.5rem 3rem;
+  }
 }
 </style>

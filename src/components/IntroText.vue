@@ -11,11 +11,14 @@
 
 <style lang="scss" scoped>
 div {
-  height: calc(100vh - 15rem);
+  height: calc(100vh - 20rem);
+  margin-bottom: 10rem;
 }
 h1 {
   text-align: center;
-  color: var(--melon)
+}
+u::selection {
+  color: var(--eggplant);
 }
 </style>
 

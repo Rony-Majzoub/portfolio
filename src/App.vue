@@ -1,12 +1,14 @@
 <template>
   <header class="navigation">
-    <router-link to="/">
-    <img src="@/assets/logo.svg" alt="">
-    </router-link>
-    <div class="navigation-items">
-      <router-link to="/">Projects</router-link>
-      <router-link to="/fun">Fun</router-link>
-      <router-link to="/about">About Me</router-link>
+    <div class="navigation-row">
+      <router-link to="/">
+      <img src="@/assets/logo.svg" alt="">
+      </router-link>
+      <div class="navigation-items">
+        <router-link to="/">Projects</router-link>
+        <router-link to="/fun">Fun</router-link>
+        <router-link to="/about">About Me</router-link>
+      </div>
     </div>
   </header>
   <router-view v-slot="{ Component }">
@@ -29,11 +31,15 @@
 @import "@material/animation";
 @import url('https://rsms.me/inter/inter.css');
 html {
-  font-size: 14px;
+  font-size: 12px;
 }
 * {
   box-sizing: border-box;
   font-family: var(--font-primary);
+}
+*::selection {
+  color: var(--eggplant);
+  background-color: var(--unbleached-silk);
 }
 body {
   background-color: var(--black-coffee);
@@ -46,17 +52,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  padding-bottom: 5rem;
+  padding-bottom: 10rem;
   padding-top: 10rem;
-}
-
-@include breakpoint(sm) {
-  html {
-    font-size: 14px;
-  }
-  #app {
-    grid-template-columns: repeat(12, 1fr);
-  }
+  grid-template-columns: repeat(12, 1fr);
 }
 .page-footer {
   width: 100%;
@@ -64,6 +62,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   justify-content: space-between;
   padding: 1rem 5rem;
   position: absolute;
@@ -94,31 +93,29 @@ body {
     padding-bottom: 1rem;
   }
 }
-@include breakpoint(sm) {
-  .page-footer {
-    flex-direction: row;
-    div {
-      flex-direction: row;
-    }
-  }
-}
 h1 {
   @include h1;
+  color: var(--unbleached-silk);
 }
 h2 {
   @include h2;
+  color: var(--unbleached-silk);
 }
 h3 {
   @include h3;
+  color: var(--unbleached-silk);
 }
 h4 {
   @include h4;
+  color: var(--unbleached-silk);
 }
 h5 {
   @include h5;
+  color: var(--unbleached-silk);
 }
 h6 {
   @include h6;
+  color: var(--unbleached-silk);
 }
 
 
@@ -127,18 +124,25 @@ a {
 }
 
 .navigation {
-  background-color: var(--black-coffee);
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1 / -1;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 10;
+  padding: 1rem 0;
+  background-color: var(--black-coffee);
+}
+
+.navigation-row {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem 5rem;
-  grid-column: 1 / -1;
+  grid-column: 2 / -2;
   max-width: 100vw;
+  align-items: center;
   a {
     @include subtitle-1;
     color: var(--cameo-pink);
@@ -156,7 +160,7 @@ a {
   }
 }
 .router-link-active {
-  // text-decoration: underline !important;
+  text-decoration: underline !important;
   color: var(--unbleached-silk) !important;
   transition: var(--animation-curve) 250ms !important;
 }
@@ -201,5 +205,16 @@ a {
   animation-timing-function: var(--animation-curve);
   animation-fill-mode: both;
   animation-name: fadeInUp;
+}
+@include breakpoint(sm) {
+  .page-footer {
+    flex-direction: row;
+    div {
+      flex-direction: row;
+    }
+  }
+  html {
+    font-size: 14px;
+  }
 }
 </style>
