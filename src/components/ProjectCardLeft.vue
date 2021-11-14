@@ -114,7 +114,6 @@ img {
   height: 100%;
   display: inline-block;
   background: linear-gradient(0deg, #363040 1%, rgba(78, 64, 79, 0) 100%);
-  opacity: 100%;
   transition: var(--animation-curve) 250ms;
 }
 
