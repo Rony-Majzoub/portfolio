@@ -32,7 +32,7 @@
 .arrow {
   transform:translateY(-100%);
   grid-column: 1 / -1;
-  margin-top: 10rem !important;
+  margin-top: 5rem !important;
 }
 .project-grid {
   grid-column: 1 / -1;
