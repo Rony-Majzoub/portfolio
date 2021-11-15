@@ -18,12 +18,14 @@
   </router-view>
   <footer class="page-footer">
     <div>
-      <a href="mailto:">majzoubrony@gmail.com</a>
-      <a href="tel:+">46722960295</a>
-      <a href="" class="social-media">LinkedIn</a>
-      <a href="" class="social-media">Instagram</a>
+      <div>
+        <a href="mailto:">majzoubrony@gmail.com</a>
+        <a href="tel:+">072 296 02 95</a>
+        <a href="" class="social-media">LinkedIn</a>
+        <a href="" class="social-media">Instagram</a>
+      </div>
+      <p>Copyright 2021 Rony Majzoub</p>
     </div>
-    <p>Copyright 2021 Rony Majzoub</p>
   </footer>
 </template>
 
@@ -31,7 +33,7 @@
 @import "@material/animation";
 @import url('https://rsms.me/inter/inter.css');
 html {
-  font-size: 12px;
+  font-size: 14px;
 }
 * {
   box-sizing: border-box;
@@ -208,9 +210,16 @@ a {
 }
 @include breakpoint(sm) {
   .page-footer {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column: 2 / -2;
+    padding: 1rem 0;
+    height: initial;
     div {
+      grid-column: 1 / -1;
       flex-direction: row;
+      justify-content: space-between;
+      gap: 2rem;
     }
   }
   html {

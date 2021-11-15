@@ -21,6 +21,7 @@ button {
   transition: var(--animation-curve) 250ms;
   cursor: pointer;
   border-radius: 4rem;
+  font-size: var(--text-sm);
 }
 button:hover {
   background-color: var(--unbleached-silk);
@@ -30,6 +31,7 @@ button:hover {
 @include breakpoint(sm) {
   button {
     padding: 1.5rem 3rem;
+    font-size: var(--text-md);
   }
 }
 </style>

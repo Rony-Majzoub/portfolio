@@ -12,7 +12,6 @@
 <style lang="scss" scoped>
 div {
   height: calc(100vh - 20rem);
-  margin-bottom: 10rem;
 }
 h1 {
   text-align: center;
