@@ -12,8 +12,8 @@
     </div>
   </header>
   <router-view v-slot="{ Component }">
-    <transition name="fade-in-up" mode="out-in">
-      <component :is="Component"/>
+    <transition name="fade-in-up">
+      <component :is="Component" v-cloak/>
     </transition>
   </router-view>
   <footer class="page-footer">
@@ -175,6 +175,7 @@ a {
 }
 @keyframes fadeInUp {
   from {
+    opacity: 0;
     transform: translate3d(0, 40px, 0);
   }
 
@@ -191,6 +192,7 @@ a {
 
   to {
     transform: translate3d(0, 0px, 0);
+    opacity: 0;
   }
 }
 
@@ -204,6 +206,7 @@ a {
 .fade-in-up-enter-to {
   opacity: 0;
   animation-duration: .5s;
+  animation-delay: .2s;
   animation-timing-function: var(--animation-curve);
   animation-fill-mode: both;
   animation-name: fadeInUp;
@@ -226,4 +229,5 @@ a {
     font-size: 14px;
   }
 }
+[v-cloak] { display:none !important; }
 </style>
