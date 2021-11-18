@@ -80,12 +80,12 @@ body {
     gap: 1rem;
     a {
       @include subtitle-1;
-      font-weight: 400;
+      font-weight: 500;
       text-decoration: none;
       color: var(--melon);
     }
     .social-media {
-      font-weight: 500;
+      font-weight: 700;
     }
   }
   p {

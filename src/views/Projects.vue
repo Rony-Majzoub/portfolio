@@ -12,7 +12,7 @@
     />
     <main class="project-grid">
       <project-card-right title="RecyPie" description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?" category="UI & UX Design" tag="Visual Concept" image="recypie.png"/>
-      <project-card-left title="Buratino" description="After many years of renting their premises to customers, Buratino searched for a replacement for their aging physical instruction manual. After half a year in development, we delivered a solution that is now in use." category="Web Development" tag="Website" image="buratino.png"/>
+      <project-card-left title="Buratino" description="After many years of renting their premises to customers, Buratino searched for a replacement for their aging physical instruction manual. After half a year of development, we delivered a solution that is now in use." category="Web Development" tag="Website" image="buratino.png"/>
     </main>
   </div>
 </template>
@@ -33,6 +33,7 @@
   transform:translateY(-100%);
   grid-column: 1 / -1;
   margin-top: 5rem !important;
+  background-color: transparent;
 }
 .project-grid {
   grid-column: 1 / -1;
