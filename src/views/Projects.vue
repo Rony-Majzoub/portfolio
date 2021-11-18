@@ -9,6 +9,7 @@
       :width="144"
       :height="144"
       class="arrow"
+      id="projects"
     />
     <main class="project-grid">
       <project-card-right title="RecyPie" description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?" category="UI & UX Design" tag="Visual Concept" image="recypie.png"/>

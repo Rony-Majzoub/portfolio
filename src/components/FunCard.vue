@@ -8,43 +8,39 @@
       <p>
         {{ description }}
       </p>
-      <project-button class="fun-button"/>
     </section>
   </article>
 </template>
 
 
 <script>
-import ProjectButton from './ProjectButton.vue'
 export default {
-  name: 'FunCardLeft',
+  name: 'FunCard',
   props: {
     title: String,
     description: String,
     image: String
   },
-  components: {
-    ProjectButton
-  }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style lang="scss" scoped>
 .project {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 1rem;
+  width: 25vmax;
+  height: 25vmax;
+  position: relative;
+  cursor: pointer;
 }
 section {
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-items: center;
+  position: absolute;
+  bottom: 1rem;
+  left: 0rem;
+  width: 100%;
   gap: 0.5rem;
 }
 h3 {
@@ -52,9 +48,9 @@ h3 {
   text-align: left;
 }
 p {
-  @include subtitle-2;
   text-align: left;
-  color: var(--pastel-pink);
+  @include overline;
+  color: var(--pastel-pink)
 }
 img {
   max-width: 100%;
@@ -62,16 +58,13 @@ img {
   object-fit: cover;
   border-radius: var(--border-radius);
 }
-.fun-button {
-  background-color: transparent;
-  margin-top: 1rem;
-}
 .overlay {
   transform: scaleX(1);
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: var(--border-radius);
+  position: relative;
 }
 .overlay:after {
   position: absolute;
@@ -82,30 +75,27 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%);
-  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 250ms;
+  background: linear-gradient(0deg, #363040 -1%, rgba(78, 64, 79, 0) 100%);
+  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
   border-radius: var(--border-radius);
 }
-.overlay:hover:after {
-  border-radius: var(--border-radius);
-  background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%), var(--black-coffee);
-  box-shadow: 0px 0px 0px 4px var(--pastel-pink);
+.project:hover {
+  .overlay:after {
+    border-radius: var(--border-radius);
+    background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%), var(--black-coffee);
+    box-shadow: 0px 0px 0px 4px var(--pastel-pink);
+  }
 }
 @include breakpoint(sm) {
-  .project {
-    flex-direction: row-reverse;
-    height: 30rem;
-  }
-  .fun-button {
-    margin-top: 2rem;
-  }
-  .overlay {
-    width: 40%;
-  }
   .overlay:hover:after {
     border-radius: var(--border-radius);
     background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%), var(--black-coffee);
     box-shadow: 0px 0px 0px 4px var(--pastel-pink);
+  }
+  section {
+    align-items: flex-start;
+    left: 1rem;
+    width: 90%;
   }
 }
 </style>

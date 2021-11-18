@@ -50,6 +50,7 @@ p {
   }
   h6 {
     color: var(--pastel-pink);
+    font-weight: 500;
   }
 }
 </style>

@@ -144,7 +144,7 @@ $breakpoints: (
   font-weight: 400;
   font-size: var(--text-md);
   line-height: var(--body-line-height);
-  letter-spacing: 0.5px; 
+  letter-spacing: 0.036rem; 
   @include reset-mp;
 }
 @mixin body-2 {

@@ -21,11 +21,16 @@ const routes = [
 const router = createRouter({
   history: createWebHashHistory(),
   routes,
-  scrollBehavior (savedPosition) {
-    return savedPosition || new Promise((resolve)=>{
-      setTimeout(()=> resolve({ top: 0}), 200)
-    })
-
+  scrollBehavior (to) {
+    if (to.hash) {
+      const height = window.innerHeight;
+      return window.scrollTo({ 
+        top: height - 50, left: 0, 
+        behavior: 'smooth' 
+      })
+    } else {
+      return { behavior: 'auto', left: 0, top: 0 }
+    }
   }
 })
 

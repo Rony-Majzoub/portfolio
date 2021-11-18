@@ -2,8 +2,12 @@
   <div class="fun">
     <h1>Here is a showcase of some of my smaller and more fun projects.</h1>
     <main class="fun-grid">
-      <fun-card-right title="RecyPie" description="A solution to an ongoing problem towards our environment." image="recypie.png"/>
-      <fun-card-left title="Buratino" description="An efficient conversion from a physical tool to a digital & modern one." image="buratino.png"/>
+      <fun-card title="Buratino" description="Website" image="buratino.png"/>
+      <fun-card title="RecyPie" description="Digital Prototype" image="recypie.png"/>
+      <fun-card title="Buratino" description="Website" image="buratino.png"/>
+      <fun-card title="RecyPie" description="Digital Prototype" image="recypie.png"/>
+      <fun-card title="Buratino" description="Website" image="buratino.png"/>
+      <fun-card title="RecyPie" description="Digital Prototype" image="recypie.png"/>
     </main>
   </div>
 </template>
@@ -15,10 +19,12 @@
   grid-template-columns: repeat(10, 1fr);
 }
 .fun-grid {
-  margin-top: 5rem;
   display: grid;
-  grid-column: 2/-2;
-  gap: 7.5rem;
+  grid-template-columns: repeat( auto-fit, minmax(20vmax, 1fr) );
+  gap: 4rem;
+  grid-column: 1/-1;
+  padding-top: 5rem;
+  justify-items: center;
 }
 h1 {
   text-align: left;
@@ -27,14 +33,12 @@ h1 {
 </style>
 
 <script>
-import FunCardRight from '../components/FunCardRight.vue'
-import FunCardLeft from '../components/FunCardLeft.vue'
+import FunCard from '../components/FunCard.vue'
 
 export default {
   name: 'Fun',
   components: {
-    FunCardRight,
-    FunCardLeft
+    FunCard
   }
 }
 </script>

@@ -1,11 +1,11 @@
 <template>
   <header class="navigation">
     <div class="navigation-row">
-      <router-link to="/">
+      <router-link :to="{ path: '/', hash: '#projects' }">
       <img src="@/assets/logo.svg" alt="">
       </router-link>
       <div class="navigation-items">
-        <router-link to="/">Projects</router-link>
+        <router-link :to="{ path: '/', hash: '#projects' }">Projects</router-link>
         <router-link to="/fun">Fun</router-link>
         <router-link to="/about">About Me</router-link>
       </div>
