@@ -1,7 +1,7 @@
 <template>
   <header class="navigation">
     <div class="navigation-row">
-      <router-link :to="{ path: '/', hash: '#projects' }">
+      <router-link to="/">
       <img src="@/assets/logo.svg" alt="">
       </router-link>
       <div class="navigation-items">
@@ -34,6 +34,7 @@
 @import url('https://rsms.me/inter/inter.css');
 html {
   font-size: 14px;
+  scroll-behavior: smooth;
 }
 * {
   box-sizing: border-box;
