@@ -29,7 +29,7 @@ const router = createRouter({
         behavior: 'smooth' 
       })
     } else {
-      return { behavior: 'auto', left: 0, top: 0 }
+      return { behavior: 'smooth', left: 0, top: 0 }
     }
   }
 })
