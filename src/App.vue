@@ -166,7 +166,7 @@ a {
 }
 .router-link-active {
   text-decoration: underline !important;
-  color: var(--unbleached-silk) !important;
+  color: var(--black-coffee) !important;
   transition: var(--animation-curve) 250ms !important;
 }
 @keyframes fadeInUp {
@@ -213,6 +213,11 @@ a {
   }
 }
 @include breakpoint(md) {
+  .router-link-active {
+    text-decoration: underline !important;
+    color: var(--unbleached-silk) !important;
+    transition: var(--animation-curve) 250ms !important;
+  }
   .navigation-items {
     grid-column: 12;
     display: flex;

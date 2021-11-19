@@ -38,7 +38,7 @@ export default {
     position: fixed;
     right: -100%;
     top: 0rem;
-    background-color: var(--eggplant);
+    background-color: var(--seashell);
     width: 100%;
     text-align: right;
     transition-duration: 0.3s;
@@ -60,6 +60,7 @@ export default {
     @include h1;
     grid-column: 1 / -2;
     height: 50%;
+    color: var(--eggplant);
 }
 
 .hamburger {
