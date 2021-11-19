@@ -136,6 +136,13 @@ img {
       opacity: 0%;
     }
   }
+  .project-header {
+    align-items: flex-start;
+    text-align: left;
+    p {
+      text-align: left;
+    }
+  }
   section {
   height: calc(100% - 4rem);
   padding: 2rem;
