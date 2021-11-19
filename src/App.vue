@@ -66,7 +66,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   padding-bottom: 5rem;
-  padding-top: 10rem;
+  padding-top: 7.5rem;
   grid-template-columns: repeat(12, 1fr);
 }
 .page-footer {
@@ -166,7 +166,7 @@ a {
 }
 .router-link-active {
   text-decoration: underline !important;
-  color: var(--black-coffee) !important;
+  color: var(--unbleached-silk) !important;
   transition: var(--animation-curve) 250ms !important;
 }
 @keyframes fadeInUp {
@@ -209,6 +209,7 @@ a {
 }
 @include breakpoint(sm) {
   #app {
+    padding-top: 10rem;
     padding-bottom: 10rem;
   }
 }
