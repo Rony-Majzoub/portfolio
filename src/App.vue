@@ -5,9 +5,10 @@
       <img src="@/assets/logo.svg" alt="">
       </router-link>
       <div class="navigation-items">
-        <router-link :to="{ path: '/', hash: '#projects' }">Projects</router-link>
-        <router-link to="/fun">Fun</router-link>
-        <router-link to="/about">About Me</router-link>
+        <router-link class="nav-desktop" :to="{ path: '/', hash: '#projects' }" >Projects</router-link>
+        <router-link class="nav-desktop" to="/fun">Fun</router-link>
+        <router-link class="nav-desktop" to="/about">About Me</router-link>
+        <sidebar></sidebar>
       </div>
     </div>
   </header>
@@ -28,6 +29,15 @@
     </div>
   </footer>
 </template>
+
+<script>
+import Sidebar from './components/Sidebar.vue';
+export default {
+  components: {
+    Sidebar
+  }
+}
+</script>
 
 <style lang="scss">
 @import "@material/animation";
@@ -55,7 +65,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
-  padding-bottom: 10rem;
+  padding-bottom: 5rem;
   padding-top: 10rem;
   grid-template-columns: repeat(12, 1fr);
 }
@@ -146,16 +156,8 @@ a {
   grid-column: 2 / -2;
   max-width: 100vw;
   align-items: center;
-  a {
-    @include subtitle-1;
-    color: var(--cameo-pink);
-    text-decoration: none;
-    font-size: var(--text-md);
-    font-weight: 500;
-    line-height: var(--heading-line-height);
-    text-align: right;
-    transition: var(--animation-curve) 250ms !important;
-    
+  .nav-desktop {
+    display: none;
   }
   img {
     grid-column: 1;
@@ -166,13 +168,6 @@ a {
   text-decoration: underline !important;
   color: var(--unbleached-silk) !important;
   transition: var(--animation-curve) 250ms !important;
-}
-.navigation-items {
-  grid-column: 12;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1em;
 }
 @keyframes fadeInUp {
   from {
@@ -213,6 +208,29 @@ a {
   animation-name: fadeInUp;
 }
 @include breakpoint(sm) {
+  #app {
+    padding-bottom: 10rem;
+  }
+}
+@include breakpoint(md) {
+  .navigation-items {
+    grid-column: 12;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+  }
+  .nav-desktop {
+    display: inline !important;
+    @include subtitle-1;
+    color: var(--cameo-pink);
+    text-decoration: none;
+    font-size: var(--text-md);
+    font-weight: 500;
+    line-height: var(--heading-line-height);
+    text-align: right;
+    transition: var(--animation-curve) 250ms !important;
+  }
   .page-footer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);

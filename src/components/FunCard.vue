@@ -86,7 +86,7 @@ img {
     box-shadow: 0px 0px 0px 4px var(--pastel-pink);
   }
 }
-@include breakpoint(sm) {
+@include breakpoint(md) {
   .overlay:hover:after {
     border-radius: var(--border-radius);
     background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%), var(--black-coffee);

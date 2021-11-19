@@ -28,7 +28,7 @@ button:hover {
   box-shadow:inset 0px 0px 0px 2px var(--unbleached-silk);
   color: var(--eggplant);
 }
-@include breakpoint(sm) {
+@include breakpoint(md) {
   button {
     padding: 1.5rem 3rem;
     font-size: var(--text-md);

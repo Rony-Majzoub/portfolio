@@ -51,6 +51,7 @@ p {
   color: var(--melon);
   text-align: left;
   grid-column: 1/-1;
+  max-width: 65ch;
 }
 .skills {
   display: flex;
@@ -78,7 +79,7 @@ p {
     }
   }
 }
-@include breakpoint(sm) {
+@include breakpoint(md) {
   h1 {
     grid-column: 1 / -5;
   }

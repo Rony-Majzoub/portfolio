@@ -103,6 +103,7 @@ img {
   object-fit: cover;
   flex-grow: 1;
   flex-basis: 0%;
+  cursor: pointer;
 }
 .overlay:after {
   position: absolute;
@@ -117,7 +118,7 @@ img {
   transition: var(--animation-curve) 250ms;
 }
 
-@include breakpoint(sm){
+@include breakpoint(md){
   .project {
     flex-direction: row-reverse;
     justify-content: space-between;
