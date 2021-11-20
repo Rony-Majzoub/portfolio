@@ -1,5 +1,4 @@
 :root {
-
   --animation-curve: cubic-bezier(0.45, 0.1, 0.25, 1);
   --border-radius: 1.25rem;
 
@@ -18,9 +17,6 @@
   --button: 0.88rem;
   --caption: 0.75rem;
   --overline: 0.62rem;
-
-  
-  
   
   /* Color styles */
   --seashell: #FFF1EB;
@@ -31,7 +27,7 @@
   --eggplant: #4E404F;
   --black-coffee: #363040;
   // font family
-  --font-primary: 'Neue Haas Grotesk Text Pro', 'Inter var', Helvetica Neue, Arial, system-ui, sans-serif;
+  --font-primary: 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Arial, system-ui, sans-serif;
   
   // font size
   --text-base-size: 1rem; // body font-size
@@ -170,7 +166,7 @@ $breakpoints: (
   @include reset-mp;
 }
 @mixin overline {
-  font-weight: 500;
+  font-weight: 400;
   font-size: var(--text-sm);
   line-height: var(--body-line-height);
   letter-spacing: 1.5px;

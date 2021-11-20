@@ -41,6 +41,7 @@ export default {
 
 <style lang="scss">
 @import "@material/animation";
+@import url("https://use.typekit.net/sdt4vtw.css");
 @import url('https://rsms.me/inter/inter.css');
 html {
   font-size: 14px;
