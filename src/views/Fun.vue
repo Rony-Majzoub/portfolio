@@ -2,12 +2,12 @@
   <div class="fun">
     <h1>Here is a showcase of some of my smaller and more fun projects.</h1>
     <main class="fun-grid">
-      <fun-card title="Buratino" description="Website" image="buratino.png"/>
-      <fun-card title="RecyPie" description="Digital Prototype" image="recypie.png"/>
-      <fun-card title="Buratino" description="Website" image="buratino.png"/>
-      <fun-card title="RecyPie" description="Digital Prototype" image="recypie.png"/>
-      <fun-card title="Buratino" description="Website" image="buratino.png"/>
-      <fun-card title="RecyPie" description="Digital Prototype" image="recypie.png"/>
+      <fun-card title="Buratino" tag="Website" image="buratino.png"/>
+      <fun-card title="RecyPie" tag="Digital Prototype" image="recypie.png"/>
+      <fun-card title="Buratino" tag="Website" image="buratino.png"/>
+      <fun-card title="RecyPie" tag="Digital Prototype" image="recypie.png"/>
+      <fun-card title="Buratino" tag="Website" image="buratino.png"/>
+      <fun-card title="RecyPie" tag="Digital Prototype" image="recypie.png"/>
     </main>
   </div>
 </template>

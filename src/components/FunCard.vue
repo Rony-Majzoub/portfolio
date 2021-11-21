@@ -1,12 +1,12 @@
 <template>
   <article class="project">
     <div class="overlay">
-      <img :src="require(`../assets/img/${image}`)" />
+      <img :src="require(`../assets/img/${image}`)" :alt="`${ title }`"/>
     </div>
     <section>
       <h3>{{ title }}</h3>
       <p>
-        {{ description }}
+        {{ tag }}
       </p>
     </section>
   </article>
@@ -17,9 +17,18 @@
 export default {
   name: 'FunCard',
   props: {
-    title: String,
-    description: String,
-    image: String
+    title: {
+      default: "Project Title",
+     type: String
+    },
+    tag: {
+      default: "Project Tag",
+      type: String
+    },
+    image: {
+      default: "recypie.png",
+      type: String
+    }
   },
 }
 </script>

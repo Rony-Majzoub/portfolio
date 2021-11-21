@@ -1,7 +1,7 @@
 <template>
   <article class="project">
     <div class="overlay">
-      <img :src="require(`../assets/img/${image}`)" />
+      <img :src="require(`../assets/img/${image}`)" :alt="`${ title }`"/>
     </div>
     <section>
       <header class="project-header">
