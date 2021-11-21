@@ -24,11 +24,26 @@ import ProjectButton from './ProjectButton.vue'
 export default {
   name: 'ProjectCardRight',
   props: {
-    title: String,
-    description: String,
-    category: String,
-    tag: String,
-    image: String
+    title: {
+      default: "Project Title",
+     type: String
+    },
+    description: {
+      default: "The brief summary of the project.",
+    type: String
+    },
+    category: {
+      default: "Category",
+      type: String
+    },
+    tag: {
+      default: "Project Tag",
+      type: String
+    },
+    image: {
+      default: "recypie.png",
+      type: String
+    }
   },
   components: {
     ProjectButton
@@ -46,7 +61,7 @@ export default {
   height: 35rem;
   transition: var(--animation-curve) 250ms;
   border-radius: var(--border-radius);
-  background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%) var(--eggplant);
+  background: var(--dark-gradient) var(--eggplant);
 }
 section {
   display: flex;
@@ -114,7 +129,7 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%);
+  background: var(--dark-gradient);
   transition: var(--animation-curve) 250ms;
 }
 

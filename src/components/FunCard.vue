@@ -75,14 +75,14 @@ img {
   width: 100%;
   height: 100%;
   display: inline-block;
-  background: linear-gradient(0deg, #363040 -1%, rgba(78, 64, 79, 0) 100%);
+  background: var(--dark-gradient);
   transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
   border-radius: var(--border-radius);
 }
 .project:hover {
   .overlay:after {
     border-radius: var(--border-radius);
-    background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%), var(--black-coffee);
+    background: var(--dark-gradient), var(--black-coffee);
     box-shadow: 0px 0px 0px 4px var(--pastel-pink);
   }
 }
