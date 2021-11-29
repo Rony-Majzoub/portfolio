@@ -15,6 +15,16 @@ const routes = [
     path: '/about',
     name: 'About',
     component: () => import( /* webpackChunkName: "about" */ "../views/About")
+  },
+  {
+    path: '/recypie',
+    name: 'RecyPie',
+    component: () => import( /* webpackChunkName: "recypie" */ "../views/RecyPie")
+  },
+  {
+    path: '/buratino',
+    name: 'Buratino',
+    component: () => import( /* webpackChunkName: "buratino" */ "../views/Buratino")
   }
 ]
 

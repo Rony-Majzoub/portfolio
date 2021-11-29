@@ -1,8 +1,8 @@
 <template>
   <article class="project">
-    <div class="overlay">
+    <router-link :to="`/${ link }`" class="overlay">
       <img :src="require(`../assets/img/${image}`)" :alt="`${ title }`"/>
-    </div>
+    </router-link>
     <section>
       <header class="project-header">
         <p class="tag">{{ tag }}</p>
@@ -12,7 +12,7 @@
         </p>
       </header>
       <footer class="project-footer">
-        <project-button/>
+        <project-button :to="`/${ link }`"/>
         <p>{{ category }}</p>
       </footer>
     </section>
@@ -43,6 +43,10 @@ export default {
     image: {
       default: "recypie.png",
       type: String
+    },
+    link: {
+      default: "",
+      type: String
     }
   },
   components: {
@@ -57,7 +61,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   height: 35rem;
   transition: var(--animation-curve) 250ms;
   border-radius: var(--border-radius);
@@ -67,7 +70,6 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   padding: 1rem;
   flex-grow: 1;
   flex-basis: 40%;
