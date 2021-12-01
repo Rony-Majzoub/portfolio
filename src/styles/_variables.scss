@@ -45,9 +45,10 @@
   --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
   --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
   --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
-  --text-xxxl: calc(var(--text-xxl) * var(--text-scale-ratio));
-  --text-xxxxl: calc(var(--text-xxxl) * var(--text-scale-ratio));
-  --text-xxxxxl: calc(var(--text-xxxxl) * var(--text-scale-ratio));
+  --text-3xl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  --text-4xl: calc(var(--text-3xl) * var(--text-scale-ratio));
+  --text-5xl: calc(var(--text-4xl) * var(--text-scale-ratio));
+  --text-6xl: calc(var(--text-5xl) * var(--text-scale-ratio));
   
   
   // unit - don't modify unless you want to change the typography unit (e.g., from Rem to Em units)
@@ -84,21 +85,21 @@ $breakpoints: (
 }
 @mixin h1 {
   font-weight: 500;
-  font-size: var(--text-xxxxxl);
+  font-size: var(--text-5xl);
   line-height: var(--heading-line-height);
   letter-spacing: -0.11rem; 
   @include reset-mp;
 }
 @mixin h2 {
   font-weight: 500;
-  font-size: var(--text-xxxxl);
+  font-size: var(--text-4xl);
   line-height: var(--heading-line-height);
   letter-spacing: -0.04rem;
   @include reset-mp;
 }
 @mixin h3 {
   font-weight: 500;
-  font-size: var(--text-xxxl);
+  font-size: var(--text-3xl);
   line-height: var(--heading-line-height);
   @include reset-mp;
 }

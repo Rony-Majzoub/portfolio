@@ -74,8 +74,8 @@ p {
     justify-content: flex-end;
     align-items: center;
     img {
-      height: var(--text-xxxxl);
-      width: var(--text-xxxxl);
+      height: var(--text-4xl);
+      width: var(--text-4xl);
     }
   }
 }
