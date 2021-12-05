@@ -78,7 +78,7 @@ body {
   opacity: 0.5;
   width: 100%;
   height: 100%;
-  background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/1295275/background-noise.png');
+  background: url('./assets/img/background-noise.png');
   animation: 0.2s infinite noise;
   pointer-events: none;
 }
