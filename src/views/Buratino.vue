@@ -1,106 +1,93 @@
 <template>
-  <div class="about">
-    <h1>I am a designer based in Gothenburg. My goal is to create solutions to problems we all face every day.</h1>
-    <img class="profile pfp-desktop" src="@/assets/pfp.jpg" alt="">
-    <p>
-      In a sea of competition, I strive to differentiate myself by focusing on what matters the most. The user. There is no point in designing a fancy application if it is unusable. For every project I create, I keep the visual design to an absolute minimum, with very few colors, intending to include users of all kinds, as well as make concrete decisions in the early phases. When it comes to visual design, I aim to create minimal designs, with as few obtrusions as possible. Why should form follow function, when both can co-exist?
-      <br><br>
-      For a well-designed product, each party involved in its creation must be in almost perfect harmony. But a team like that is very hard to come by, which is why I’ve focused on expanding my skill set in different fields, to not only be more flexible and ambitious in my work, but also communicate more effectively with other teammates with different specialties.
-    </p>
-    <img class="profile pfp-mobile" src="@/assets/pfp.jpg" alt="">
-    <div class="skills">
-      <h2>My skillset</h2>
-      <div class="skill-role"><h6>Digital Designer</h6><img src="@/assets/figma.svg" alt=""></div>
-      <div class="skill-role"><h6>UX Designer</h6><img src="@/assets/figma.svg" alt=""></div>
-      <div class="skill-role"><h6>Front-end Developer</h6><img src="@/assets/vue.svg" alt=""></div>
-      <div class="skill-role"><h6>Motion Designer</h6><img src="@/assets/ae.svg" alt=""></div>
-      <div class="skill-role"><h6>3D Artist</h6><img src="@/assets/blender.svg" alt=""></div>
+  <div class="projects">
+    <ProjectTitle 
+    info="2020/2021 - Web Development"
+    title="Buratino Instruktino"
+    brief="Create a digital replacement for a physical instruction manual."
+    />
+    <div class="image hero">
+      <img src="@/assets/img/buratino.png" alt="">
     </div>
+    <ProjectTags 
+    client="Buratino AB" 
+    team="Rony Majzoub, Casper Hansen, Viggo Fredriksson" 
+    role="UI/UX Designer, CSS Developer" 
+    duration="8 months" 
+    tools="Figma, Adobe Illustrator, Visual Studio Code"
+    category1="Web Development" 
+    category2="UI Design" 
+    category3="UX Design" 
+    category4="User Testing" 
+    category5="Logo Design" 
+    />
+    <main class="project-grid">
+      <ColumnRight 
+      title="Background" 
+      description="As part of a work sample for applying to Yrgo Digital Designer, our goal was to create a digital solution to our assigned problem." 
+      />
+      <ColumnLeft 
+      title="The problem" 
+      description="Worldwide, over a third of all produced food is wasted and thrown away. 
+      By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal through digital means?" 
+      />
+      <ColumnRight 
+      title="The solution" 
+      description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
+      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
+      to further support the idea of lowering the amount of food waste of the user." 
+      />
+      <div class="image">
+        <img src="@/assets/img/buratino.png" alt="">
+      </div>
+    </main>
   </div>
 </template>
 
+<script>
+import ProjectTags from '@/components/Project/ProjectTags.vue'
+import ProjectTitle from '@/components/Project/ProjectTitle.vue'
+import ColumnLeft from '@/components/Project/ColumnLeft.vue'
+import ColumnRight from '@/components/Project/ColumnRight.vue'
+
+export default {
+  name: 'Buratino',
+  components: {
+    ProjectTags,
+    ProjectTitle,
+    ColumnLeft,
+    ColumnRight
+  }
+}
+</script>
+
 <style lang="scss" scoped>
-.about {
-  grid-column: 2/-2;
+.projects {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
-  row-gap: 2rem;
+  grid-column: 2 / -2;
 }
-.profile {
-  grid-column: 8/-1;
-  width: 75%;
-  justify-self: flex-end;
-  border-radius: var(--border-radius);
-  box-shadow: 0px 0px 0px 4px var(--melon);
+.project-grid {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: repeat(10, 1fr);
+  row-gap: 5rem;
 }
-.pfp-desktop {
-  display: none;
+.hero {
+  margin: 3rem 0 5rem 0;
 }
-.pfp-mobile {
-  display: block;
-  grid-column: 2/-2;
-  width: 100%;
-  justify-self: center;
-}
-h1 {
-  text-align: left;
-  grid-column: 1/-1;
-}
-p {
-  @include body-1;
-  color: var(--melon);
-  text-align: left;
-  grid-column: 1/-1;
-  max-width: 65ch;
-}
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  grid-column: 1/-1;
-  text-align: right;
-  h2 {
-    color: var(--melon);
-    text-decoration: underline;
-  }
-  h6 {
-    color: var(--pastel-pink);
-    font-weight: 500;
-  }
-  .skill-role {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: flex-end;
-    align-items: center;
-    img {
-      height: var(--text-xxxxl);
-      width: var(--text-xxxxl);
-    }
-  }
-}
-@include breakpoint(md) {
-  h1 {
-    grid-column: 1 / -5;
-  }
-  p {
-    grid-column: 1 / -6;
-  }
-  .pfp-desktop {
-    display: block;
-    grid-column: 8/-1;
-    width: 75%;
-    justify-self: flex-end;
-  }
-  .pfp-mobile {
-    display: none;
-  }
-  .skills {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  grid-column: 8/-1;
-  text-align: right;
+.image {
+  grid-column: 1 / -1;
+  position: relative;
+  padding: 0rem 0 56.25% 0;
+  max-width: 100%;
+  max-height: 50%;
+  img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: center 60%;
   }
 }
 </style>
+

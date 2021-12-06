@@ -25,6 +25,11 @@ const routes = [
     path: '/buratino',
     name: 'Buratino',
     component: () => import( /* webpackChunkName: "buratino" */ "../views/Buratino")
+  },
+  {
+    path: '/smoove',
+    name: 'Smoove',
+    component: () => import( /* webpackChunkName: "smoove" */ "../views/Smoove")
   }
 ]
 

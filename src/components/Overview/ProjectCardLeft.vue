@@ -1,7 +1,7 @@
 <template>
   <article class="project">
     <router-link :to="`/${ link }`" class="overlay">
-      <img :src="require(`../assets/img/${image}`)" :alt="`${ title }`"/>
+      <img :src="require(`@/assets/img/${image}`)" :alt="`${ title }`"/>
     </router-link>
     <section>
       <header class="project-header">
@@ -22,7 +22,7 @@
 <script>
 import ProjectButton from './ProjectButton.vue'
 export default {
-  name: 'ProjectCardRight',
+  name: 'ProjectCardLeft',
   props: {
     title: {
       default: "Project Title",
@@ -86,7 +86,7 @@ section {
 .project-footer {
   width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-between;
   align-items: baseline;
   p {
@@ -95,21 +95,21 @@ section {
   }
 }
 h2 {
-  text-align: right;
+  text-align: left;
   color: var(--unbleached-silk);
 }
 p {
   @include subtitle-2;
-  text-align: right;
+  text-align: left;
   color: var(--melon)
 }
 .tag {
-  text-align: right;
+  text-align: left;
   @include overline;
   color: var(--melon)
 }
 img {
-  max-width: 100%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -135,9 +135,9 @@ img {
   transition: var(--animation-curve) 250ms;
 }
 
-@include breakpoint(md) {
+@include breakpoint(md){
   .project {
-    flex-direction: row;
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: flex-start;
     height: 40rem;
@@ -154,20 +154,13 @@ img {
       opacity: 0%;
     }
   }
-  .project-header {
-    align-items: flex-start;
-    text-align: left;
-    p {
-      text-align: left;
-    }
-  }
   section {
   height: calc(100% - 4rem);
   padding: 2rem;
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
   }
   img {
-    border-radius: var(--border-radius) 0 0 var(--border-radius);
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
   }
   .overlay {
     transform: scaleX(1);
@@ -176,5 +169,6 @@ img {
     flex-grow: 2;
     flex-basis: 60%;
   }
+
 }
 </style>

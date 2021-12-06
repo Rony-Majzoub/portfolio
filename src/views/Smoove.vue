@@ -1,23 +1,24 @@
 <template>
   <div class="projects">
     <ProjectTitle 
-    info="2021 - UI & UX Design"
-    title="RecyPie"
-    brief="Create and design a modern, digital solution to a global problem."
+    info="2021 - UI/UX & Product Design"
+    title="Smoove"
+    brief="Create and design a landing page for a premium, custom vehicle."
     />
     <div class="image hero">
-      <img src="@/assets/img/recypie.png" alt="">
+      <img src="@/assets/img/smoove-park.jpg" alt="">
     </div>
     <ProjectTags 
     client="Yrgo DD21" 
-    team="Myself" 
-    role="UI Designer" 
-    duration="2 months" 
-    tools="Figma" 
+    team="Rony Majzoub, Linrinna Lindström, Per-Emil Lundqvist, Alexander Mellby, Oliver Davis, Albin Andersson" 
+    role="UI/UX Designer, Creative Director" 
+    duration="1 month" 
+    tools="Figma, Adobe After Effects, Adobe Illustrator"
     category1="UI Design" 
     category2="UX Design" 
-    category3="User Testing" 
-    category4="Prototyping" 
+    category3="Product Design" 
+    category4="Motion Design" 
+    category5="Web Design" 
     />
     <main class="project-grid">
       <ColumnRight 
@@ -36,7 +37,7 @@
       to further support the idea of lowering the amount of food waste of the user." 
       />
       <div class="image">
-        <img src="@/assets/img/recypie.png" alt="">
+        <img src="@/assets/img/smoove.jpg" alt="">
       </div>
     </main>
   </div>
@@ -49,7 +50,7 @@ import ColumnLeft from '@/components/Project/ColumnLeft.vue'
 import ColumnRight from '@/components/Project/ColumnRight.vue'
 
 export default {
-  name: 'RecyPie',
+  name: 'Smoove',
   components: {
     ProjectTags,
     ProjectTitle,

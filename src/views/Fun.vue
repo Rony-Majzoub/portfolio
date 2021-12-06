@@ -33,7 +33,7 @@ h1 {
 </style>
 
 <script>
-import FunCard from '../components/FunCard.vue'
+import FunCard from '@/components/Fun/FunCard.vue'
 
 export default {
   name: 'Fun',

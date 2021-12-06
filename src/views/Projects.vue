@@ -13,8 +13,9 @@
       />
     </router-link>
     <main class="project-grid">
-      <project-card-right link="recypie" title="RecyPie" description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?" category="UI & UX Design" tag="Visual Concept" image="recypie.png"/>
-      <project-card-left link="buratino" title="Buratino" description="After many years of renting their premises to customers, Buratino searched for a replacement for their aging physical instruction manual. After half a year of development, we delivered a solution that is now in use." category="Web Development" tag="Website" image="buratino.png"/>
+      <project-card-right link="smoove" title="Smoove" description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?" category="UI/UX & Product Design" tag="Product Development" image="smoove-park.jpg"/>
+      <project-card-left link="recypie" title="RecyPie" description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?" category="UI & UX Design" tag="Visual Concept" image="recypie.png"/>
+      <project-card-right link="buratino" title="Buratino Instruktino" description="After many years of renting their premises to customers, Buratino searched for a replacement for their aging physical instruction manual. After half a year of development, we delivered a solution that is now in use." category="Web Development" tag="Website" image="buratino.png"/>
       <project-card-right></project-card-right>
       <project-card-left></project-card-left>
     </main>
@@ -51,9 +52,9 @@
 
 <script>
 // @ is an alias to /src
-import IntroText from '../components/IntroText.vue'
-import ProjectCardRight from '../components/ProjectCardRight.vue'
-import ProjectCardLeft from '../components/ProjectCardLeft.vue'
+import IntroText from '@/components/IntroText.vue'
+import ProjectCardRight from '@/components/Overview/ProjectCardRight.vue'
+import ProjectCardLeft from '@/components/Overview/ProjectCardLeft.vue'
 import LottieAnimation from "lottie-vuejs/src/LottieAnimation.vue"; // import lottie-vuejs
 
 export default {
