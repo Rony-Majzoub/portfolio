@@ -56,11 +56,14 @@ export default {
     right: 0;
 }
 .nav-item {
-    text-decoration: none;
     @include h1;
     grid-column: 1 / -2;
     height: 50%;
     color: var(--cameo-pink);
+    text-decoration: underline !important;
+    text-underline-offset: auto !important;
+    text-decoration-thickness: 4px !important; 
+    text-decoration-color: transparent !important;
 }
 
 .hamburger {

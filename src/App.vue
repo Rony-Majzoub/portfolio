@@ -211,7 +211,7 @@ a {
   }
 }
 .router-link-active {
-  text-decoration: underline !important;
+  text-decoration-color: var(--unbleached-silk) !important;
   color: var(--unbleached-silk) !important;
   transition: var(--animation-curve) 250ms !important;
 }
@@ -262,6 +262,7 @@ a {
 @include breakpoint(md) {
   .router-link-active {
     text-decoration: underline !important;
+    text-decoration-color: var(--unbleached-silk) !important;
     color: var(--unbleached-silk) !important;
     transition: var(--animation-curve) 250ms !important;
   }
@@ -276,7 +277,9 @@ a {
     display: inline !important;
     @include subtitle-1;
     color: var(--cameo-pink);
-    text-decoration: none;
+    text-underline-offset: 0.25em !important;
+    text-decoration-thickness: 2px !important; 
+    text-decoration-color: transparent;
     font-size: var(--text-md);
     font-weight: 500;
     line-height: var(--heading-line-height);
