@@ -1,29 +1,29 @@
 <template>
   <div class="hero-title">
-    <p class="hero-info">{{info}}</p>
-    <h1>{{title}}</h1>
-    <h6>{{brief}}</h6>
+    <p class="hero-info">{{ info }}</p>
+    <h1>{{ title }}</h1>
+    <h6>{{ brief }}</h6>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'ProjectTitle',
+  name: "ProjectTitle",
   props: {
     info: {
       default: "",
-      type: String
+      type: String,
     },
     title: {
       default: "",
-      type: String
+      type: String,
     },
     brief: {
       default: "",
-      type: String
-    }
-  }
-}
+      type: String,
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -39,7 +39,7 @@ export default {
     color: var(--pastel-pink);
   }
   h1 {
-    font-size: var(--text-6xl)
+    font-size: var(--text-6xl);
   }
   p {
     @include overline;

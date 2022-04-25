@@ -1,7 +1,7 @@
 <template>
   <article class="project">
-    <router-link :to="`/${ link }`" class="overlay">
-      <img :src="(`src/assets/img/${image}`)" :alt="`${ title }`"/>
+    <router-link :to="`/${link}`" class="overlay">
+      <img :src="`src/assets/img/${image}`" :alt="`${title}`" />
     </router-link>
     <section>
       <header class="project-header">
@@ -12,7 +12,7 @@
         </p>
       </header>
       <footer class="project-footer">
-        <project-button :to="`/${ link }`"/>
+        <project-button :to="`/${link}`" />
         <p>{{ category }}</p>
       </footer>
     </section>
@@ -20,39 +20,39 @@
 </template>
 
 <script>
-import ProjectButton from './ProjectButton.vue'
+import ProjectButton from "./ProjectButton.vue";
 export default {
-  name: 'ProjectCardRight',
+  name: "ProjectCardRight",
+  components: {
+    ProjectButton,
+  },
   props: {
     title: {
       default: "Project Title",
-     type: String
+      type: String,
     },
     description: {
       default: "The brief summary of the project.",
-    type: String
+      type: String,
     },
     category: {
       default: "Category",
-      type: String
+      type: String,
     },
     tag: {
       default: "Project Tag",
-      type: String
+      type: String,
     },
     image: {
       default: "recypie.png",
-      type: String
+      type: String,
     },
     link: {
       default: "",
-      type: String
-    }
+      type: String,
+    },
   },
-  components: {
-    ProjectButton
-  }
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -77,7 +77,7 @@ section {
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   background-color: transparent;
   transition: var(--animation-curve) 250ms;
-  }
+}
 .project-header {
   display: flex;
   flex-direction: column;
@@ -101,12 +101,12 @@ h2 {
 p {
   @include subtitle-2;
   text-align: right;
-  color: var(--melon)
+  color: var(--melon);
 }
 .tag {
   text-align: right;
   @include overline;
-  color: var(--melon)
+  color: var(--melon);
 }
 img {
   width: 100%;
@@ -144,9 +144,8 @@ img {
     height: 40rem;
   }
   .project:hover {
-    box-shadow:
-    5.9px 11.8px 15.7px hsla(263, 20%, 10%, 0.049),
-    12px 24px 24px hsla(263, 20%, 10%, 0.1);
+    box-shadow: 5.9px 11.8px 15.7px hsla(263, 20%, 10%, 0.049),
+      12px 24px 24px hsla(263, 20%, 10%, 0.1);
     section {
       background-position-y: 100px;
       background-color: var(--eggplant);
@@ -166,9 +165,9 @@ img {
     }
   }
   section {
-  height: calc(100% - 4rem);
-  padding: 2rem;
-  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+    height: calc(100% - 4rem);
+    padding: 2rem;
+    border-radius: 0 var(--border-radius) var(--border-radius) 0;
   }
   img {
     border-radius: var(--border-radius) 0 0 var(--border-radius);

@@ -1,24 +1,24 @@
 <template>
   <section class="column-left">
-      <h2 class="problem-title">{{title}}</h2>
-      <p class="problem-text">{{description}}</p>
+    <h2 class="problem-title">{{ title }}</h2>
+    <p class="problem-text">{{ description }}</p>
   </section>
 </template>
 
 <script>
 export default {
-  name: 'ColumnLeft',
+  name: "ColumnLeft",
   props: {
     title: {
       default: "",
-      type: String
+      type: String,
     },
     description: {
       default: "",
-      type: String
-    }
-  }
-}
+      type: String,
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -30,7 +30,7 @@ export default {
   grid-column: 1 / -1;
 }
 .problem-title {
-  color: var(--unbleached-silk)
+  color: var(--unbleached-silk);
 }
 .problem-text {
   @include body-1;

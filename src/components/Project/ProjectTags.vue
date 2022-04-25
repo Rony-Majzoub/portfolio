@@ -3,33 +3,33 @@
     <div class="hero-text">
       <div class="hero-subtitle">
         <p class="subtitle-header">Client</p>
-        <p class="subtitle-text">{{client}}</p>
+        <p class="subtitle-text">{{ client }}</p>
       </div>
       <div class="hero-subtitle">
         <p class="subtitle-header">Team</p>
-        <p class="subtitle-text">{{team}}</p>
+        <p class="subtitle-text">{{ team }}</p>
       </div>
       <div class="hero-subtitle">
         <p class="subtitle-header">Role</p>
-        <p class="subtitle-text">{{role}}</p>
+        <p class="subtitle-text">{{ role }}</p>
       </div>
       <div class="hero-subtitle">
         <p class="subtitle-header">Duration</p>
-        <p class="subtitle-text">{{duration}}</p>
+        <p class="subtitle-text">{{ duration }}</p>
       </div>
       <div class="hero-subtitle">
         <p class="subtitle-header">Tools used</p>
-        <p class="subtitle-text">{{tools}}</p>
+        <p class="subtitle-text">{{ tools }}</p>
       </div>
     </div>
     <div class="hero-text">
       <div class="hero-subtitle">
         <p class="subtitle-header">Project includes</p>
-        <p class="subtitle-text">{{category1}}</p>
-        <p class="subtitle-text">{{category2}}</p>
-        <p class="subtitle-text">{{category3}}</p>
-        <p class="subtitle-text">{{category4}}</p>
-        <p class="subtitle-text">{{category5}}</p>
+        <p class="subtitle-text">{{ category1 }}</p>
+        <p class="subtitle-text">{{ category2 }}</p>
+        <p class="subtitle-text">{{ category3 }}</p>
+        <p class="subtitle-text">{{ category4 }}</p>
+        <p class="subtitle-text">{{ category5 }}</p>
       </div>
     </div>
   </section>
@@ -37,50 +37,50 @@
 
 <script>
 export default {
-  name: 'ProjectTags',
+  name: "ProjectTags",
   props: {
     client: {
       default: "",
-      type: String
+      type: String,
     },
     team: {
       default: "",
-      type: String
+      type: String,
     },
     role: {
       default: "",
-      type: String
+      type: String,
     },
     duration: {
       default: "",
-      type: String
+      type: String,
     },
     tools: {
       default: "",
-      type: String
+      type: String,
     },
     category1: {
       default: "",
-      type: String
+      type: String,
     },
     category2: {
       default: "",
-      type: String
+      type: String,
     },
     category3: {
       default: "",
-      type: String
+      type: String,
     },
     category4: {
       default: "",
-      type: String
+      type: String,
     },
     category5: {
       default: "",
-      type: String
-    }
-  }
-}
+      type: String,
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -114,7 +114,7 @@ export default {
 .subtitle-header {
   @include h6;
   font-weight: 500;
-  color: var(--unbleached-silk)
+  color: var(--unbleached-silk);
 }
 .subtitle-text {
   @include body-2;

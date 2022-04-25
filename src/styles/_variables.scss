@@ -17,29 +17,32 @@
   --button: 0.88rem;
   --caption: 0.75rem;
   --overline: 0.62rem;
-  
+
   /* Color styles */
-  --seashell: #FFF1EB;
-  --unbleached-silk: #FFD6BF;
-  --melon: #FFC1B2;
-  --pastel-pink: #E5A0A3;
-  --cameo-pink: #DBAFB8;
-  --eggplant: #4E404F;
+  --seashell: #fff1eb;
+  --unbleached-silk: #ffd6bf;
+  --melon: #ffc1b2;
+  --pastel-pink: #e5a0a3;
+  --cameo-pink: #dbafb8;
+  --eggplant: #4e404f;
   --black-coffee: #363040;
   --dark-gradient: linear-gradient(0deg, #363040 -2%, rgba(78, 64, 79, 0) 100%);
   // font family
-  --font-primary: 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Arial, system-ui, sans-serif;
-  
+  --font-primary: "neue-haas-grotesk-text", "Inter var", Helvetica Neue, Arial,
+    system-ui, sans-serif;
+
   // font size
   --text-base-size: 1rem; // body font-size
   --text-scale-ratio: 1.15; // multiplier used to generate the type scale values 👇
-  
+
   // line-height
   --body-line-height: 1.4;
   --heading-line-height: 1.2;
-  
+
   // type scale
-  --text-xs: calc((var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio));
+  --text-xs: calc(
+    (var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio)
+  );
   --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
   --text-md: calc(var(--text-sm) * var(--text-scale-ratio));
   --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
@@ -49,26 +52,32 @@
   --text-4xl: calc(var(--text-3xl) * var(--text-scale-ratio));
   --text-5xl: calc(var(--text-4xl) * var(--text-scale-ratio));
   --text-6xl: calc(var(--text-5xl) * var(--text-scale-ratio));
-  
-  
+
   // unit - don't modify unless you want to change the typography unit (e.g., from Rem to Em units)
   --text-unit: var(--text-base-size); // if Em units → --text-unit: 1em;
 }
 
-
 $breakpoints: (
-  xs: 32rem, // ~512px
-  sm: 48rem, // ~768px
-  md: 64rem, // ~1024px
-  lg: 80rem, // ~1280px
-  xl: 90rem  // ~1440px
-  ) !default;
-  
-  @mixin breakpoint($breakpoint, $logic: false) {
-    @if( $logic ) {
-    @media #{$logic} and (min-width: map-get($map: $breakpoints, $key: $breakpoint)) { @content; }
+  xs: 32rem,
+  // ~512px
+  sm: 48rem,
+  // ~768px
+  md: 64rem,
+  // ~1024px
+  lg: 80rem,
+  // ~1280px
+  xl: 90rem // ~1440px,,
+) !default;
+
+@mixin breakpoint($breakpoint, $logic: false) {
+  @if ($logic) {
+    @media #{$logic} and (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+      @content;
+    }
   } @else {
-    @media (min-width: map-get($map: $breakpoints, $key: $breakpoint)) { @content; }
+    @media (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+      @content;
+    }
   }
 }
 
@@ -87,7 +96,7 @@ $breakpoints: (
   font-weight: 500;
   font-size: var(--text-5xl);
   line-height: var(--heading-line-height);
-  letter-spacing: -0.11rem; 
+  letter-spacing: -0.11rem;
   @include reset-mp;
 }
 @mixin h2 {
@@ -108,7 +117,6 @@ $breakpoints: (
   font-size: var(--text-xxl);
   line-height: var(--heading-line-height);
   @include reset-mp;
-  
 }
 @mixin h5 {
   font-weight: 500;
@@ -142,7 +150,7 @@ $breakpoints: (
   font-weight: 400;
   font-size: var(--text-md);
   line-height: var(--body-line-height);
-  letter-spacing: 0.036rem; 
+  letter-spacing: 0.036rem;
   @include reset-mp;
 }
 @mixin body-2 {

@@ -1,17 +1,17 @@
 <template>
-  <router-link :to="`/${ link }`" class="button">Read More</router-link>
+  <router-link :to="`/${link}`" class="button">Read More</router-link>
 </template>
 
 <script>
 export default {
-  name: 'ProjectButton',
+  name: "ProjectButton",
   props: {
     link: {
       default: "",
-      type: String
-    }
-  }
-}
+      type: String,
+    },
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -21,7 +21,7 @@ export default {
   width: fit-content;
   background-color: transparent;
   border: none;
-  box-shadow:inset 0px 0px 0px 2px var(--pastel-pink);
+  box-shadow: inset 0px 0px 0px 2px var(--pastel-pink);
   padding: 1rem 2rem;
   color: var(--pastel-pink) !important;
   transition: var(--animation-curve) 250ms;
@@ -32,7 +32,7 @@ export default {
 }
 .button:hover {
   background-color: var(--unbleached-silk);
-  box-shadow:inset 0px 0px 0px 2px var(--unbleached-silk);
+  box-shadow: inset 0px 0px 0px 2px var(--unbleached-silk);
   color: var(--eggplant) !important;
 }
 @include breakpoint(md) {

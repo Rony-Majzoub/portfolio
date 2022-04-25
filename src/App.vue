@@ -2,10 +2,12 @@
   <header class="navigation">
     <div class="navigation-row">
       <router-link to="/">
-      <img src="@/assets/logo.svg" alt="">
+        <img src="@/assets/logo.svg" alt="" />
       </router-link>
       <div class="navigation-items">
-        <router-link class="nav-desktop" :to="{ path: '/', hash: '#projects' }" >Projects</router-link>
+        <router-link class="nav-desktop" :to="{ path: '/', hash: '#projects' }">
+          Projects
+        </router-link>
         <router-link class="nav-desktop" to="/fun">Fun</router-link>
         <router-link class="nav-desktop" to="/about">About Me</router-link>
         <sidebar></sidebar>
@@ -14,7 +16,7 @@
   </header>
   <router-view v-slot="{ Component }">
     <transition name="fade-in-up">
-      <component :is="Component" v-cloak/>
+      <component :is="Component" v-cloak />
     </transition>
   </router-view>
   <footer class="page-footer">
@@ -31,17 +33,17 @@
 </template>
 
 <script>
-import Sidebar from '@/components/Sidebar.vue';
+import Sidebar from "@/components/Sidebar.vue";
 export default {
   components: {
-    Sidebar
-  }
-}
+    Sidebar,
+  },
+};
 </script>
 
 <style lang="scss">
 @import url("https://use.typekit.net/sdt4vtw.css");
-@import url('https://rsms.me/inter/inter.css');
+@import url("https://rsms.me/inter/inter.css");
 html {
   font-size: 14px;
   scroll-behavior: smooth;
@@ -78,43 +80,44 @@ body {
   opacity: 0.5;
   width: 100%;
   height: 100%;
-  background: url('./assets/img/background-noise.png');
+  background: url("./assets/img/background-noise.png");
   animation: 0.2s infinite noise;
   pointer-events: none;
 }
 
 @keyframes noise {
-  0%, 100% {
-      background-position: 0 0;
+  0%,
+  100% {
+    background-position: 0 0;
   }
   10% {
-      background-position: -5% -10%;
+    background-position: -5% -10%;
   }
   20% {
-      background-position: -15% 5%;
+    background-position: -15% 5%;
   }
   30% {
-      background-position: 7% -25%;
+    background-position: 7% -25%;
   }
   40% {
-      background-position: 20% 25%;
+    background-position: 20% 25%;
   }
   50% {
-      background-position: -25% 10%;
+    background-position: -25% 10%;
   }
   60% {
-      background-position: 15% 5%;
+    background-position: 15% 5%;
   }
   70% {
-      background-position: 0% 15%;
+    background-position: 0% 15%;
   }
   80% {
-      background-position: 25% 35%;
+    background-position: 25% 35%;
   }
   90% {
-      background-position: -10% 10%;
+    background-position: -10% 10%;
   }
-}  
+}
 .page-footer {
   width: 100%;
   gap: 2rem;
@@ -177,7 +180,6 @@ h6 {
   color: var(--unbleached-silk);
 }
 
-
 a {
   color: var(--unbleached-silk);
 }
@@ -223,7 +225,7 @@ a {
 
   to {
     transform: translate3d(0, 0, 0);
-    opacity: 1
+    opacity: 1;
   }
 }
 @keyframes fadeOutDown {
@@ -240,15 +242,15 @@ a {
 
 .fade-in-up-leave-to {
   opacity: 0;
-  animation-duration: .2s;
+  animation-duration: 0.2s;
   animation-timing-function: var(--animation-curve);
   animation-fill-mode: both;
   animation-name: fadeOutDown;
 }
 .fade-in-up-enter-to {
   opacity: 0;
-  animation-duration: .5s;
-  animation-delay: .2s;
+  animation-duration: 0.5s;
+  animation-delay: 0.2s;
   animation-timing-function: var(--animation-curve);
   animation-fill-mode: both;
   animation-name: fadeInUp;
@@ -278,7 +280,7 @@ a {
     @include subtitle-1;
     color: var(--cameo-pink);
     text-underline-offset: 0.25em !important;
-    text-decoration-thickness: 2px !important; 
+    text-decoration-thickness: 2px !important;
     text-decoration-color: transparent;
     font-size: var(--text-md);
     font-weight: 500;
@@ -303,5 +305,7 @@ a {
     font-size: 14px;
   }
 }
-[v-cloak] { display:none !important; }
+[v-cloak] {
+  display: none !important;
+}
 </style>

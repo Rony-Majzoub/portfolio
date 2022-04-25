@@ -1,7 +1,7 @@
 <template>
   <article class="project">
     <div class="overlay">
-      <img :src="(`src/assets/img/${image}`)" :alt="`${ title }`"/>
+      <img :src="`src/assets/img/${image}`" :alt="`${title}`" />
     </div>
     <section>
       <h3>{{ title }}</h3>
@@ -12,25 +12,24 @@
   </article>
 </template>
 
-
 <script>
 export default {
-  name: 'FunCard',
+  name: "FunCard",
   props: {
     title: {
       default: "Project Title",
-     type: String
+      type: String,
     },
     tag: {
       default: "Project Tag",
-      type: String
+      type: String,
     },
     image: {
       default: "recypie.png",
-      type: String
-    }
+      type: String,
+    },
   },
-}
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -59,7 +58,7 @@ h3 {
 p {
   text-align: left;
   @include overline;
-  color: var(--pastel-pink)
+  color: var(--pastel-pink);
 }
 img {
   max-width: 100%;
@@ -98,7 +97,8 @@ img {
 @include breakpoint(md) {
   .overlay:hover:after {
     border-radius: var(--border-radius);
-    background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%), var(--black-coffee);
+    background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%),
+      var(--black-coffee);
     box-shadow: 0px 0px 0px 4px var(--pastel-pink);
   }
   section {
