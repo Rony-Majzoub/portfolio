@@ -4,32 +4,32 @@ const routes = [
   {
     path: '/',
     name: 'Projects',
-    component: () => import( /* webpackChunkName: "projects" */ "../views/Projects")
+    component: () => import("@/views/Projects.vue")
   },
   {
     path: '/fun',
     name: 'Fun',
-    component: () => import( /* webpackChunkName: "fun" */ "../views/Fun")
+    component: () => import("@/views/Fun.vue")
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import( /* webpackChunkName: "about" */ "../views/About")
+    component: () => import("@/views/About.vue")
   },
   {
     path: '/recypie',
     name: 'RecyPie',
-    component: () => import( /* webpackChunkName: "recypie" */ "../views/RecyPie")
+    component: () => import("@/views/RecyPie.vue")
   },
   {
     path: '/buratino',
     name: 'Buratino',
-    component: () => import( /* webpackChunkName: "buratino" */ "../views/Buratino")
+    component: () => import("@/views/Buratino.vue")
   },
   {
     path: '/smoove',
     name: 'Smoove',
-    component: () => import( /* webpackChunkName: "smoove" */ "../views/Smoove")
+    component: () => import("@/views/Smoove.vue")
   }
 ]
 
