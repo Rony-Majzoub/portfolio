@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="text-4xl lg:text-7xl font-medium text-unbleached-silk text-center">
+    <h1 class="text-4xl lg:text-7xl font-medium text-unbleached-silk text-center tracking-tight antialiased">
       My name is Rony Majzoub.
       <br />
       I'm a
@@ -46,7 +46,7 @@ export default {
 
 <style lang="scss" scoped>
 div {
-  height: calc(100vh - 20rem);
+  height: calc(100vh - 15rem);
 }
 u::selection {
   color: var(--eggplant);

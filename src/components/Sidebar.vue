@@ -1,10 +1,10 @@
 <template>
-  <div class="nav-menu lg:hidden">
-    <router-link :to="{ path: '/', hash: '#projects' }" class="nav-item">
+  <div class="nav-menu fixed left-full top-0 bg-eggplant w-full text-right duration-300 ease-in-out m-0 h-screen grid grid-cols-12 grid-rows-[repeat(3,_5rem)]  col-span-full pt-28 lg:hidden">
+    <router-link :to="{ path: '/', hash: '#projects' }" class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
       Projects
     </router-link>
-    <router-link to="/fun" class="nav-item">Fun</router-link>
-    <router-link to="/about" class="nav-item">About Me</router-link>
+    <router-link to="/fun" class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">Fun</router-link>
+    <router-link to="/about" class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">About Me</router-link>
   </div>
   <div class="hamburger lg:hidden">
     <span class="bar"></span>
@@ -35,37 +35,10 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-.nav-menu {
-  position: fixed;
-  right: -100%;
-  top: 0rem;
-  background-color: var(--eggplant);
-  width: 100%;
-  text-align: right;
-  transition-duration: 0.3s;
-  transition-timing-function: var(--animation-curve);
-  margin: 0;
-  height: 100vh;
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(3, 5rem);
-  grid-column: 1 / -1;
-  padding-top: 7.5rem;
-}
 
+<style lang="scss">
 .nav-menu.active {
-  right: 0;
-}
-.nav-item {
-  @include h1;
-  grid-column: 1 / -2;
-  height: 50%;
-  color: var(--cameo-pink);
-  text-decoration: underline !important;
-  text-underline-offset: auto !important;
-  text-decoration-thickness: 4px !important;
-  text-decoration-color: transparent !important;
+  left: 0;
 }
 
 .hamburger {
@@ -92,13 +65,4 @@ export default {
   transition: all 0.3s var(--animation-curve);
   background-color: var(--melon);
 }
-
-// @include breakpoint(md) {
-//   .hamburger {
-//     display: none;
-//   }
-//   .nav-menu {
-//     display: none;
-//   }
-// }
 </style>

@@ -1,15 +1,15 @@
 <template>
-  <header class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 py-4 bg-black-coffee z-10">
+  <header class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 py-3 bg-black-coffee z-10">
     <div class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
         <img class="h-11 col-span-1" src="@/assets/logo.svg" alt="" />
       </router-link>
       <div class="navigation-items flex col-span-full flex-row gap-4">
-        <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide" :to="{ path: '/', hash: '#projects' }">
+        <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide antialiased" :to="{ path: '/', hash: '#projects' }">
           Projects
         </router-link>
-        <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide" to="/fun">Fun</router-link>
-        <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide" to="/about">About Me</router-link>
+        <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide antialiased" to="/fun">Fun</router-link>
+        <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide antialiased" to="/about">About Me</router-link>
         <sidebar></sidebar>
       </div>
     </div>
@@ -22,12 +22,12 @@
   <footer class="page-footer w-full gap-8 flex flex-col items-center text-center justify-between py-4 px-20 absolute h-12 bg-black-coffee bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 lg:h-auto">
     <div class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
       <div class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
-        <a href="mailto:" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide">majzoubrony@gmail.com</a>
-        <a href="tel:+" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide">072 296 02 95</a>
-        <a href="" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide">LinkedIn</a>
-        <a href="" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide">Instagram</a>
+        <a href="mailto:" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide antialiased">majzoubrony@gmail.com</a>
+        <a href="tel:+" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide antialiased">072 296 02 95</a>
+        <a href="" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">LinkedIn</a>
+        <a href="" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">Instagram</a>
       </div>
-      <p class="font-normal text-xs tracking-widest uppercase text-cameo-pink pb-4">Copyright 2021 Rony Majzoub</p>
+      <p class="font-normal text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">Copyright 2021 Rony Majzoub</p>
     </div>
   </footer>
 </template>

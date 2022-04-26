@@ -1,22 +1,34 @@
 <template>
-  <article class="project">
-    <router-link :to="`/${link}`" class="overlay">
-      <img :src="`src/assets/img/${image}`" :alt="`${title}`" />
-    </router-link>
-    <section>
-      <header class="project-header">
-        <p class="tag">{{ tag }}</p>
-        <h2>{{ title }}</h2>
-        <p>
+  <figure class="lg:flex bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128">
+    <div class="overflow-hidden lg:w-7/12 flex-none lg:rounded-none lg:rounded-l-xl rounded-t-xl">
+      <img class="object-cover w-full h-96 lg:h-full" :src="`src/assets/img/${image}`" :alt="`${title}`" />
+    </div>
+    <div class="pt-6 mb-16 p-8 text-right lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full">
+      <figcaption class="space-y-2 lg:space-y-4">
+        <div class="text-melon font-normal text-xs lg:text-sm tracking-widest uppercase antialiased">
+          {{ tag }}
+        </div>
+        <div class="text-unbleached-silk font-medium text-5xl lg:text-6xl antialiased">
+          {{ title }}
+        </div>
+      </figcaption>
+      <blockquote>
+        <p class="text-base lg:text-lg font-normal text-melon">
           {{ description }}
         </p>
-      </header>
-      <footer class="project-footer">
-        <project-button :to="`/${link}`" />
-        <p>{{ category }}</p>
+      </blockquote>
+      <project-button class="float-right lg:absolute lg:bottom-8 lg:left-8 lg:hidden"></project-button>
+      <footer class="hidden w-full h-full lg:flex items-end">
+        <div class="flex items-baseline w-full justify-between">
+          <project-button class=""></project-button>
+          <p class="hidden lg:flex lg:text-lg font-medium tracking-wide text-pastel-pink">
+            {{ category }}
+          </p>
+
+        </div>
       </footer>
-    </section>
-  </article>
+    </div>
+  </figure>
 </template>
 
 <script>
@@ -25,7 +37,7 @@ export default {
   name: "ProjectCardRight",
   components: {
     ProjectButton,
-  },
+},
   props: {
     title: {
       default: "Project Title",
@@ -54,130 +66,3 @@ export default {
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-.project {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 35rem;
-  transition: var(--animation-curve) 250ms;
-  border-radius: var(--border-radius);
-  background: var(--dark-gradient) var(--eggplant);
-}
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 1rem;
-  flex-grow: 1;
-  flex-basis: 40%;
-  box-sizing: content-box;
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-  background-color: transparent;
-  transition: var(--animation-curve) 250ms;
-}
-.project-header {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.project-footer {
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
-  p {
-    @include subtitle-2;
-    color: var(--pastel-pink);
-  }
-}
-h2 {
-  text-align: right;
-  color: var(--unbleached-silk);
-}
-p {
-  @include subtitle-2;
-  text-align: right;
-  color: var(--melon);
-}
-.tag {
-  text-align: right;
-  @include overline;
-  color: var(--melon);
-}
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 60%;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-}
-.overlay {
-  transform: scaleX(1);
-  height: 100%;
-  object-fit: cover;
-  flex-grow: 1;
-  flex-basis: 0%;
-  cursor: pointer;
-}
-.overlay:after {
-  position: absolute;
-  content: "";
-  z-index: 10;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  background: var(--dark-gradient);
-  transition: var(--animation-curve) 250ms;
-}
-
-@include breakpoint(md) {
-  .project {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    height: 40rem;
-  }
-  .project:hover {
-    box-shadow: 5.9px 11.8px 15.7px hsla(263, 20%, 10%, 0.049),
-      12px 24px 24px hsla(263, 20%, 10%, 0.1);
-    section {
-      background-position-y: 100px;
-      background-color: var(--eggplant);
-    }
-    .overlay:after {
-      opacity: 0%;
-    }
-  }
-  .project-header {
-    align-items: flex-start;
-    text-align: left;
-    p {
-      text-align: left;
-    }
-    h2 {
-      text-align: left;
-    }
-  }
-  section {
-    height: calc(100% - 4rem);
-    padding: 2rem;
-    border-radius: 0 var(--border-radius) var(--border-radius) 0;
-  }
-  img {
-    border-radius: var(--border-radius) 0 0 var(--border-radius);
-  }
-  .overlay {
-    transform: scaleX(1);
-    height: 100%;
-    object-fit: cover;
-    flex-grow: 2;
-    flex-basis: 60%;
-  }
-}
-</style>

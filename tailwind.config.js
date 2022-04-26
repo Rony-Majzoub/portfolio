@@ -13,6 +13,15 @@ module.exports = {
         'dark-gradient': 'linear-gradient(0deg, #363040 -2%, rgba(78, 64, 79, 0) 100%)',
 
       },
+      transitionTimingFunction: {
+        'in-expo': 'cubic-bezier(0.95, 0.05, 0.795, 0.035)',
+        'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
+        'custom': 'cubic-bezier(0.45, 0.1, 0.25, 1)'
+      },
+      spacing: {
+        '128': '32rem',
+        '144': '36rem',
+      }
     },
   },
   plugins: [],

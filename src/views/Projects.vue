@@ -1,8 +1,7 @@
-/* eslint-disable vue/attribute-hyphenation */
 <template>
-  <div class="projects">
-    <IntroText class="intro" />
-    <router-link class="arrow" :to="{ path: '/', hash: '#projects' }">
+  <div class="projects grid grid-cols-10 col-start-2 col-end-[-2]">
+    <IntroText class="intro flex justify-center items-center col-span-full" />
+    <router-link class="arrow -translate-y-full col-span-full mt-20 bg-transparent justify-self-center" :to="{ path: '/', hash: '#projects' }">
       <Vue3Lottie
         ref="projects"
         :animation-link="('src/assets/arrow.json')"
@@ -11,7 +10,7 @@
         :speed="1"
         :width="144"/>
     </router-link>
-    <main class="project-grid">
+    <main class="project-grid col-span-full flex flex-col justify-center gap-40">
       <ProjectCardRight
         link="smoove"
         title="Smoove"
@@ -57,31 +56,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.projects {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-column: 2 / -2;
-}
-.intro {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  grid-column: 1 / -1;
-}
-.arrow {
-  transform: translateY(-100%);
-  grid-column: 1 / -1;
-  margin-top: 5rem !important;
-  background-color: transparent;
-  justify-self: center;
-}
-.project-grid {
-  grid-column: 1 / -1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 10rem;
-}
-</style>
