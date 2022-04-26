@@ -1,5 +1,5 @@
 <template>
-  <figure class="lg:flex bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128">
+  <figure class="lg:flex bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 shadow-lg">
     <div class="overflow-hidden lg:w-7/12 flex-none lg:rounded-none lg:rounded-l-xl rounded-t-xl">
       <img class="object-cover w-full h-96 lg:h-full" :src="`src/assets/img/${image}`" :alt="`${title}`" />
     </div>
