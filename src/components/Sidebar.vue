@@ -1,12 +1,12 @@
 <template>
-  <div class="nav-menu">
+  <div class="nav-menu lg:hidden">
     <router-link :to="{ path: '/', hash: '#projects' }" class="nav-item">
       Projects
     </router-link>
     <router-link to="/fun" class="nav-item">Fun</router-link>
     <router-link to="/about" class="nav-item">About Me</router-link>
   </div>
-  <div class="hamburger">
+  <div class="hamburger lg:hidden">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
@@ -93,12 +93,12 @@ export default {
   background-color: var(--melon);
 }
 
-@include breakpoint(md) {
-  .hamburger {
-    display: none;
-  }
-  .nav-menu {
-    display: none;
-  }
-}
+// @include breakpoint(md) {
+//   .hamburger {
+//     display: none;
+//   }
+//   .nav-menu {
+//     display: none;
+//   }
+// }
 </style>

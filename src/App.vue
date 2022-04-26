@@ -1,15 +1,15 @@
 <template>
-  <header class="navigation">
-    <div class="navigation-row">
+  <header class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 py-4 bg-black-coffee z-10">
+    <div class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
-        <img src="@/assets/logo.svg" alt="" />
+        <img class="h-11 col-span-1" src="@/assets/logo.svg" alt="" />
       </router-link>
-      <div class="navigation-items">
-        <router-link class="nav-desktop" :to="{ path: '/', hash: '#projects' }">
+      <div class="navigation-items flex col-span-full flex-row gap-4">
+        <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide" :to="{ path: '/', hash: '#projects' }">
           Projects
         </router-link>
-        <router-link class="nav-desktop" to="/fun">Fun</router-link>
-        <router-link class="nav-desktop" to="/about">About Me</router-link>
+        <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide" to="/fun">Fun</router-link>
+        <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide" to="/about">About Me</router-link>
         <sidebar></sidebar>
       </div>
     </div>
@@ -19,15 +19,15 @@
       <component :is="Component" v-cloak />
     </transition>
   </router-view>
-  <footer class="page-footer">
-    <div>
-      <div>
-        <a href="mailto:">majzoubrony@gmail.com</a>
-        <a href="tel:+">072 296 02 95</a>
-        <a href="" class="social-media">LinkedIn</a>
-        <a href="" class="social-media">Instagram</a>
+  <footer class="page-footer w-full gap-8 flex flex-col items-center text-center justify-between py-4 px-20 absolute h-12 bg-black-coffee bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 lg:h-auto">
+    <div class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
+      <div class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
+        <a href="mailto:" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide">majzoubrony@gmail.com</a>
+        <a href="tel:+" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide">072 296 02 95</a>
+        <a href="" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide">LinkedIn</a>
+        <a href="" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide">Instagram</a>
       </div>
-      <p>Copyright 2021 Rony Majzoub</p>
+      <p class="font-normal text-xs tracking-widest uppercase text-cameo-pink pb-4">Copyright 2021 Rony Majzoub</p>
     </div>
   </footer>
 </template>
@@ -44,32 +44,16 @@ export default {
 <style lang="scss">
 @import url("https://use.typekit.net/sdt4vtw.css");
 @import url("https://rsms.me/inter/inter.css");
-html {
-  font-size: 14px;
-  scroll-behavior: smooth;
-}
+// // html {
+// //   font-size: 14px;
+// //   scroll-behavior: smooth;
+// // }
 * {
-  box-sizing: border-box;
   font-family: var(--font-primary);
 }
 *::selection {
   color: var(--eggplant);
   background-color: var(--unbleached-silk);
-}
-body {
-  background-color: var(--black-coffee);
-  @include reset-mp;
-}
-#app {
-  position: relative;
-  display: grid;
-  max-width: 100vw;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  min-height: 100vh;
-  padding-bottom: 5rem;
-  padding-top: 7.5rem;
-  grid-template-columns: repeat(12, 1fr);
 }
 #app:after {
   content: "";
@@ -118,100 +102,6 @@ body {
     background-position: -10% 10%;
   }
 }
-.page-footer {
-  width: 100%;
-  gap: 2rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-  padding: 1rem 5rem;
-  position: absolute;
-  height: 3rem;
-  background-color: var(--black-coffee);
-  bottom: 0px;
-  left: 0;
-  right: 0;
-  margin-bottom: 0px;
-  div {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    a {
-      @include subtitle-1;
-      font-weight: 500;
-      text-decoration: none;
-      color: var(--melon);
-    }
-    .social-media {
-      font-weight: 700;
-    }
-  }
-  p {
-    @include overline;
-    font-size: var(--text-xs);
-    color: var(--cameo-pink);
-    padding-bottom: 1rem;
-  }
-}
-h1 {
-  @include h1;
-  color: var(--unbleached-silk);
-}
-h2 {
-  @include h2;
-  color: var(--unbleached-silk);
-}
-h3 {
-  @include h3;
-  color: var(--unbleached-silk);
-}
-h4 {
-  @include h4;
-  color: var(--unbleached-silk);
-}
-h5 {
-  @include h5;
-  color: var(--unbleached-silk);
-}
-h6 {
-  @include h6;
-  color: var(--unbleached-silk);
-}
-
-a {
-  color: var(--unbleached-silk);
-}
-
-.navigation {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-column: 1 / -1;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
-  padding: 1rem 0;
-  background-color: var(--black-coffee);
-}
-
-.navigation-row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  grid-column: 2 / -2;
-  max-width: 100vw;
-  align-items: center;
-  .nav-desktop {
-    display: none;
-  }
-  img {
-    grid-column: 1;
-    height: 3rem;
-  }
-}
 .router-link-active {
   text-decoration-color: var(--unbleached-silk) !important;
   color: var(--unbleached-silk) !important;
@@ -255,57 +145,57 @@ a {
   animation-fill-mode: both;
   animation-name: fadeInUp;
 }
-@include breakpoint(sm) {
-  #app {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-  }
-}
-@include breakpoint(md) {
-  .router-link-active {
-    text-decoration: underline !important;
-    text-decoration-color: var(--unbleached-silk) !important;
-    color: var(--unbleached-silk) !important;
-    transition: var(--animation-curve) 250ms !important;
-  }
-  .navigation-items {
-    grid-column: 12;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
-  }
-  .nav-desktop {
-    display: inline !important;
-    @include subtitle-1;
-    color: var(--cameo-pink);
-    text-underline-offset: 0.25em !important;
-    text-decoration-thickness: 2px !important;
-    text-decoration-color: transparent;
-    font-size: var(--text-md);
-    font-weight: 500;
-    line-height: var(--heading-line-height);
-    text-align: right;
-    transition: var(--animation-curve) 250ms !important;
-  }
-  .page-footer {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column: 2 / -2;
-    padding: 1rem 0;
-    height: initial;
-    div {
-      grid-column: 1 / -1;
-      flex-direction: row;
-      justify-content: space-between;
-      gap: 2rem;
-    }
-  }
-  html {
-    font-size: 14px;
-  }
-}
-[v-cloak] {
-  display: none !important;
-}
-</style>
+// @include breakpoint(sm) {
+//   #app {
+//     padding-top: 10rem;
+//     padding-bottom: 10rem;
+//   }
+// }
+// @include breakpoint(md) {
+//   .router-link-active {
+//     text-decoration: underline !important;
+//     text-decoration-color: var(--unbleached-silk) !important;
+//     color: var(--unbleached-silk) !important;
+//     transition: var(--animation-curve) 250ms !important;
+//   }
+//   .navigation-items {
+//     grid-column: 12;
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     gap: 1em;
+//   }
+//   .nav-desktop {
+//     display: inline !important;
+//     @include subtitle-1;
+//     color: var(--cameo-pink);
+//     text-underline-offset: 0.25em !important;
+//     text-decoration-thickness: 2px !important;
+//     text-decoration-color: transparent;
+//     font-size: var(--text-md);
+//     font-weight: 500;
+//     line-height: var(--heading-line-height);
+//     text-align: right;
+//     transition: var(--animation-curve) 250ms !important;
+//   }
+//   .page-footer {
+//     display: grid;
+//     grid-template-columns: repeat(12, 1fr);
+//     grid-column: 2 / -2;
+//     padding: 1rem 0;
+//     height: initial;
+//     div {
+//       grid-column: 1 / -1;
+//       flex-direction: row;
+//       justify-content: space-between;
+//       gap: 2rem;
+//     }
+//   }
+//   html {
+//     font-size: 14px;
+//   }
+// }
+// [v-cloak] {
+//   display: none !important;
+// }
+// </style>
