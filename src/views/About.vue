@@ -4,7 +4,7 @@
       I am a designer based in Gothenburg. My goal is to create solutions to
       problems we all face every day.
     </h1>
-    <img class="profile pfp-desktop" src="public/assets/pfp.jpg" alt="" />
+    <img class="profile pfp-desktop" src="/assets/pfp.jpg" alt="" />
     <p>
       In a sea of competition, I strive to differentiate myself by focusing on
       what matters the most. The user. There is no point in designing a fancy
@@ -23,28 +23,28 @@
       communicate more effectively with other teammates with different
       specialties.
     </p>
-    <img class="profile pfp-mobile" src="public/assets/pfp.jpg" alt="" />
+    <img class="profile pfp-mobile" src="/assets/pfp.jpg" alt="" />
     <div class="skills">
       <h2>My skillset</h2>
       <div class="skill-role">
         <h6>Digital Designer</h6>
-        <img src="public/assets/figma.svg" alt="" />
+        <img src="/assets/figma.svg" alt="" />
       </div>
       <div class="skill-role">
         <h6>UX Designer</h6>
-        <img src="public/assets/figma.svg" alt="" />
+        <img src="/assets/figma.svg" alt="" />
       </div>
       <div class="skill-role">
         <h6>Front-end Developer</h6>
-        <img src="public/assets/vue.svg" alt="" />
+        <img src="/assets/vue.svg" alt="" />
       </div>
       <div class="skill-role">
         <h6>Motion Designer</h6>
-        <img src="public/assets/ae.svg" alt="" />
+        <img src="/assets/ae.svg" alt="" />
       </div>
       <div class="skill-role">
         <h6>3D Artist</h6>
-        <img src="public/assets/blender.svg" alt="" />
+        <img src="/assets/blender.svg" alt="" />
       </div>
     </div>
   </div>

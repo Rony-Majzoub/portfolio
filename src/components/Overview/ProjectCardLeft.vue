@@ -1,7 +1,7 @@
 <template>
   <article class="project">
     <router-link :to="`/${link}`" class="overlay">
-      <img :src="`public/assets/img/${image}`" :alt="`${title}`" />
+      <img :src="`/assets/img/${image}`" :alt="`${title}`" />
     </router-link>
     <section>
       <header class="project-header">
