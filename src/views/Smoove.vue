@@ -5,7 +5,7 @@
       title="Smoove"
       brief="Create and design a landing page for a premium, custom vehicle." />
     <div class="image hero">
-      <img src="@/assets/img/smoove-park.jpg" alt="" />
+      <img src="/assets/img/smoove-park.jpg" alt="" />
     </div>
     <ProjectTags
       client="Yrgo DD21"
@@ -32,7 +32,7 @@
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <div class="image">
-        <img src="@/assets/img/smoove.jpg" alt="" />
+        <img src="/assets/img/smoove.jpg" alt="" />
       </div>
     </main>
   </div>

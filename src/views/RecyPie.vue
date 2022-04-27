@@ -5,7 +5,7 @@
       title="RecyPie"
       brief="Create and design a modern, digital solution to a global problem." />
     <div class="image hero">
-      <img src="@/assets/img/recypie.png" alt="" />
+      <img src="/assets/img/recypie.png" alt="" />
     </div>
     <ProjectTags
       client="Yrgo DD21"
@@ -31,7 +31,7 @@
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <div class="image">
-        <img src="@/assets/img/recypie.png" alt="" />
+        <img src="/assets/img/recypie.png" alt="" />
       </div>
     </main>
   </div>

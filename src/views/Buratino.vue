@@ -5,7 +5,7 @@
       title="Buratino Instruktino"
       brief="Create a digital replacement for a physical instruction manual." />
     <div class="image hero">
-      <img src="@/assets/img/buratino.png" alt="" />
+      <img src="/assets/img/buratino.png" alt="" />
     </div>
     <ProjectTags
       client="Buratino AB"
@@ -32,7 +32,7 @@
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <div class="image">
-        <img src="@/assets/img/buratino.png" alt="" />
+        <img src="/assets/img/buratino.png" alt="" />
       </div>
     </main>
   </div>
