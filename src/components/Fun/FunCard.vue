@@ -1,15 +1,11 @@
 <template>
-  <article class="project">
-    <div class="overlay">
-      <img :src="`/assets/img/${image}`" :alt="`${title}`" />
+  <div class="cursor-pointer relative w-full h-64 rounded-lg overflow-hidden group transition-all ease-in-out" @click="$router.push(`/${link}`)">
+    <img :src="`/assets/img/${image}`" :alt="`${title}`" class="object-cover w-full h-full" />
+    <div class="transition-all ease-in-out absolute flex flex-col gap-1 lg:gap-2 justify-end pb-4 w-full h-full bottom-0 inset-x-0 text-center lg:text-left lg:pl-4 bg-gradient-to-t from-gradient1 to-gradient2 before:bg-eggplant before:opacity-0 before:border-4 before:content-['Visit_Project'] before:text-center before:flex before:justify-center before:items-center before:text-3xl before:underline before:underline-offset-8 before:decoration-4 before:normal-case before:antialiased before:text-melon before:font-medium before:border-pastel-pink before:rounded-lg group-hover:before:opacity-100 before:left-0 before:top-0 before:w-full before:h-full before:transition-opacity before:ease-in-out before:absolute">
+      <h2 class="text-melon font-medium text-2xl lg:text-4xl z-10">{{ title }}</h2>
+      <p class="text-pastel-pink font-normal text-xs lg:text-sm tracking-widest uppercase antialiased z-10">{{ tag }}</p>
     </div>
-    <section>
-      <h3>{{ title }}</h3>
-      <p>
-        {{ tag }}
-      </p>
-    </section>
-  </article>
+  </div>
 </template>
 
 <script>
@@ -28,83 +24,10 @@ export default {
       default: "recypie.png",
       type: String,
     },
+    link: {
+      default: "",
+      type: String,
+    },
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-.project {
-  width: 25vmax;
-  height: 25vmax;
-  position: relative;
-  cursor: pointer;
-}
-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  position: absolute;
-  bottom: 1rem;
-  left: 0rem;
-  width: 100%;
-  gap: 0.5rem;
-}
-h3 {
-  color: var(--melon);
-  text-align: left;
-}
-p {
-  text-align: left;
-  @include overline;
-  color: var(--pastel-pink);
-}
-img {
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-}
-.overlay {
-  transform: scaleX(1);
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: var(--border-radius);
-  position: relative;
-}
-.overlay:after {
-  position: absolute;
-  content: "";
-  z-index: 10;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 100%;
-  display: inline-block;
-  background: var(--dark-gradient);
-  transition: cubic-bezier(0.25, 0.46, 0.45, 0.94) 200ms;
-  border-radius: var(--border-radius);
-}
-.project:hover {
-  .overlay:after {
-    border-radius: var(--border-radius);
-    background: var(--dark-gradient), var(--black-coffee);
-    box-shadow: 0px 0px 0px 4px var(--pastel-pink);
-  }
-}
-@include breakpoint(md) {
-  .overlay:hover:after {
-    border-radius: var(--border-radius);
-    background: linear-gradient(0deg, #363040 -13.67%, rgba(78, 64, 79, 0) 100%),
-      var(--black-coffee);
-    box-shadow: 0px 0px 0px 4px var(--pastel-pink);
-  }
-  section {
-    align-items: flex-start;
-    left: 1rem;
-    width: 90%;
-  }
-}
-</style>

@@ -64,7 +64,7 @@ export default {
   opacity: 0.5;
   width: 100%;
   height: 100%;
-  background: url("./assets/img/background-noise.png");
+  background: url("/assets/img/background-noise.png");
   animation: 0.2s infinite noise;
   pointer-events: none;
 }

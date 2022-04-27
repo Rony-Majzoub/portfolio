@@ -1,5 +1,5 @@
 <template>
-  <router-link :to="`/${link}`" class="button">Read More</router-link>
+  <button class="transition-all ease-in-out font-medium text-sm tracking-widest uppercase border-2 border-pastel-pink text-pastel-pink py-4 px-8 xl:text-lg whitespace-nowrap text-center rounded-full hover:bg-unbleached-silk hover:border-unbleached-silk hover:text-eggplant">Read More</button>
 </template>
 
 <script>
@@ -13,32 +13,3 @@ export default {
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-.button {
-  @include button;
-  width: fit-content;
-  background-color: transparent;
-  border: none;
-  box-shadow: inset 0px 0px 0px 2px var(--pastel-pink);
-  padding: 1rem 2rem;
-  color: var(--pastel-pink) !important;
-  transition: var(--animation-curve) 250ms;
-  cursor: pointer;
-  border-radius: 4rem;
-  font-size: var(--text-sm);
-  text-decoration: none !important;
-}
-.button:hover {
-  background-color: var(--unbleached-silk);
-  box-shadow: inset 0px 0px 0px 2px var(--unbleached-silk);
-  color: var(--eggplant) !important;
-}
-@include breakpoint(md) {
-  .button {
-    padding: 1.5rem 3rem;
-    font-size: var(--text-md);
-  }
-}
-</style>

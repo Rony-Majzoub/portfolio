@@ -1,9 +1,9 @@
 <template>
-  <figure class="lg:flex bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 shadow-lg">
+  <figure class="lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 shadow-lg">
     <div class="overflow-hidden lg:w-7/12 flex-none lg:rounded-none lg:rounded-l-xl rounded-t-xl">
       <img class="object-cover w-full h-96 lg:h-full" :src="`/assets/img/${image}`" :alt="`${title}`" />
     </div>
-    <div class="pt-6 mb-16 p-8 text-right lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full">
+    <div class="pt-6 p-8 text-right lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full">
       <figcaption class="space-y-2 lg:space-y-4">
         <div class="text-melon font-normal text-xs lg:text-sm tracking-widest uppercase antialiased">
           {{ tag }}
@@ -17,14 +17,13 @@
           {{ description }}
         </p>
       </blockquote>
-      <project-button class="float-right lg:absolute lg:bottom-8 lg:left-8 lg:hidden"></project-button>
+      <project-button class="float-right lg:absolute lg:bottom-8 lg:left-8 lg:hidden" @click="$router.push(`/${link}`)"></project-button>
       <footer class="hidden w-full h-full lg:flex items-end">
-        <div class="flex items-baseline w-full justify-between">
-          <project-button class=""></project-button>
-          <p class="hidden lg:flex lg:text-lg font-medium tracking-wide text-pastel-pink">
+        <div class="flex flex-row items-end xl:items-baseline  w-full justify-between">
+          <project-button @click="$router.push(`/${link}`)"></project-button>
+          <p class="hidden lg:flex lg:text-lg font-medium tracking-wide text-pastel-pink text-right">
             {{ category }}
           </p>
-
         </div>
       </footer>
     </div>

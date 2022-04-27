@@ -10,7 +10,8 @@ module.exports = {
         'cameo-pink': '#dbafb8',
         'eggplant': '#4e404f',
         'black-coffee': '#363040',
-        'dark-gradient': 'linear-gradient(0deg, #363040 -2%, rgba(78, 64, 79, 0) 100%)',
+        'gradient1': 'rgba(54,48,64,0.95)',
+        'gradient2': 'rgba(78,64,79,0)',
 
       },
       transitionTimingFunction: {
@@ -21,7 +22,17 @@ module.exports = {
       spacing: {
         '128': '32rem',
         '144': '36rem',
-      }
+      },
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(0, 1fr))',
+        'auto-fill': 'repeat(auto-fill, minmax(0, 1fr))',
+        // Complex site-specific column configuration
+        'fun': 'repeat(auto-fit, minmax(25vmax, 1fr))',
+      },
+      gridTemplateRows: {
+        'auto-fit': 'repeat(auto-fit, minmax(0, 1fr))',
+        'auto-fill': 'repeat(auto-fill, minmax(0, 1fr))',
+      },
     },
   },
   plugins: [],

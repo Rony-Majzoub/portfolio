@@ -1,13 +1,13 @@
 <template>
-  <div class="fun">
-    <h1>Here is a showcase of some of my smaller and more fun projects.</h1>
-    <main class="fun-grid">
-      <fun-card title="Buratino" tag="Website" image="buratino.png" />
-      <fun-card title="RecyPie" tag="Digital Prototype" image="recypie.png" />
-      <fun-card title="Buratino" tag="Website" image="buratino.png" />
-      <fun-card title="RecyPie" tag="Digital Prototype" image="recypie.png" />
-      <fun-card title="Buratino" tag="Website" image="buratino.png" />
-      <fun-card title="RecyPie" tag="Digital Prototype" image="recypie.png" />
+  <div class="grid col-start-2 col-end-[-2] grid-cols-10">
+    <h1 class="text-5xl lg:text-6xl font-medium text-unbleached-silk col-start-1 col-end-[-2]">Here is a showcase of some of my smaller and more fun projects.</h1>
+    <main class="grid col-span-full gap-8 justify-items-center grid-cols-fun pt-20">
+      <fun-card title="Buratino" tag="Website" image="buratino.png" link="buratino" />
+      <fun-card title="RecyPie" tag="Digital Prototype" image="recypie.png" link="recypie"/>
+      <fun-card title="Buratino" tag="Website" image="buratino.png" link="buratino"/>
+      <fun-card title="RecyPie" tag="Digital Prototype" image="recypie.png" link="recypie"/>
+      <fun-card title="Buratino" tag="Website" image="buratino.png" link="buratino"/>
+      <fun-card title="RecyPie" tag="Digital Prototype" image="recypie.png" link="recypie"/>
     </main>
   </div>
 </template>
@@ -22,23 +22,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.fun {
-  grid-column: 2/-2;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-}
-.fun-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20vmax, 1fr));
-  gap: 4rem;
-  grid-column: 1/-1;
-  padding-top: 5rem;
-  justify-items: center;
-}
-h1 {
-  text-align: left;
-  grid-column: 1 / -2;
-}
-</style>
