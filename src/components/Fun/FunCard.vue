@@ -1,7 +1,7 @@
 <template>
   <article class="project">
     <div class="overlay">
-      <img :src="`src/assets/img/${image}`" :alt="`${title}`" />
+      <img :src="`public/assets/img/${image}`" :alt="`${title}`" />
     </div>
     <section>
       <h3>{{ title }}</h3>

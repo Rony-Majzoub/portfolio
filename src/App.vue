@@ -2,7 +2,7 @@
   <header class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 py-3 bg-black-coffee z-10">
     <div class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
-        <img class="h-11 col-span-1" src="@/assets/logo.svg" alt="" />
+        <img class="h-11 col-span-1" src="public/assets/logo.svg" alt="" />
       </router-link>
       <div class="navigation-items flex col-span-full flex-row gap-4">
         <router-link class="nav-desktop hidden lg:inline transition-all text-cameo-pink underline underline-offset-4 decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide antialiased" :to="{ path: '/', hash: '#projects' }">

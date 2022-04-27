@@ -4,7 +4,7 @@
     <router-link class="arrow -translate-y-full col-span-full mt-20 bg-transparent justify-self-center" :to="{ path: '/', hash: '#projects' }">
       <Vue3Lottie
         ref="projects"
-        :animation-link="('src/assets/arrow.json')"
+        :animation-link="('public/assets/arrow.json')"
         :loop="false"
         :auto-play="true"
         :speed="1"
