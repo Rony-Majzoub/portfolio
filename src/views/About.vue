@@ -1,11 +1,11 @@
 <template>
-  <div class="about">
-    <h1>
+  <div class="col-start-2 col-end-[-2] grid grid-cols-10 gap-y-8">
+    <h1 class="text-4xl lg:text-6xl xl:text-7xl font-medium text-unbleached-silk col-span-full lg:col-end-[-5] xl:col-end-[-5] text-left h-min">
       I am a designer based in Gothenburg. My goal is to create solutions to
       problems we all face every day.
     </h1>
-    <img class="profile pfp-desktop" src="/assets/pfp.jpg" alt="" />
-    <p>
+    <img class="hidden lg:block col-start-8 lg:col-start-7 col-end-[-1] xl:w-8/12 justify-self-end rounded-xl border-4 border-melon" src="/assets/pfp.jpg" alt="" />
+    <p class="font-normal text-base tracking-wide text-melon text-left col-span-full max-w-prose lg:col-end-[-6]">
       In a sea of competition, I strive to differentiate myself by focusing on
       what matters the most. The user. There is no point in designing a fancy
       application if it is unusable. For every project I create, I keep the
@@ -23,115 +23,29 @@
       communicate more effectively with other teammates with different
       specialties.
     </p>
-    <img class="profile pfp-mobile" src="/assets/pfp.jpg" alt="" />
-    <div class="skills">
-      <h2>My skillset</h2>
-      <div class="skill-role">
-        <h6>Digital Designer</h6>
-        <img src="/assets/figma.svg" alt="" />
+    <img class="lg:hidden col-start-2 col-end-[-2] w-full justify-self-center rounded-xl border-4 border-melon" src="/assets/pfp.jpg" alt="" />
+    <div class="flex flex-col gap-4 col-span-full text-left lg:text-right lg:col-start-8 lg:col-end-[-1]">
+      <h2 class="text-4xl lg:text-5xl font-medium text-melon underline mb-2">My skillset</h2>
+      <div class="flex flex-row-reverse gap-4 justify-end items-center lg:flex-row">
+        <h3 class="text-lg font-normal uppercase tracking-widest text-pastel-pink">Digital Designer</h3>
+        <img class="h-12 w-12" src="/assets/figma.svg" alt="" />
       </div>
-      <div class="skill-role">
-        <h6>UX Designer</h6>
-        <img src="/assets/figma.svg" alt="" />
+      <div class="flex flex-row-reverse gap-4 justify-end items-center lg:flex-row">
+        <h3 class="text-lg font-normal uppercase tracking-widest text-pastel-pink">UX Designer</h3>
+        <img class="h-12 w-12" src="/assets/figma.svg" alt="" />
       </div>
-      <div class="skill-role">
-        <h6>Front-end Developer</h6>
-        <img src="/assets/vue.svg" alt="" />
+      <div class="flex flex-row-reverse gap-4 justify-end items-center lg:flex-row">
+        <h3 class="text-lg font-normal uppercase tracking-widest text-pastel-pink">Front-end Developer</h3>
+        <img class="h-12 w-12" src="/assets/vue.svg" alt="" />
       </div>
-      <div class="skill-role">
-        <h6>Motion Designer</h6>
-        <img src="/assets/ae.svg" alt="" />
+      <div class="flex flex-row-reverse gap-4 justify-end items-center lg:flex-row">
+        <h3 class="text-lg font-normal uppercase tracking-widest text-pastel-pink">Motion Designer</h3>
+        <img class="h-12 w-12" src="/assets/ae.svg" alt="" />
       </div>
-      <div class="skill-role">
-        <h6>3D Artist</h6>
-        <img src="/assets/blender.svg" alt="" />
+      <div class="flex flex-row-reverse gap-4 justify-end items-center lg:flex-row">
+        <h3 class="text-lg font-normal uppercase tracking-widest text-pastel-pink">3D Artist</h3>
+        <img class="h-12 w-12" src="/assets/blender.svg" alt="" />
       </div>
     </div>
   </div>
 </template>
-
-<style lang="scss" scoped>
-.about {
-  grid-column: 2/-2;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  row-gap: 2rem;
-}
-.profile {
-  grid-column: 8/-1;
-  width: 75%;
-  justify-self: flex-end;
-  border-radius: var(--border-radius);
-  box-shadow: 0px 0px 0px 4px var(--melon);
-}
-.pfp-desktop {
-  display: none;
-}
-.pfp-mobile {
-  display: block;
-  grid-column: 2/-2;
-  width: 100%;
-  justify-self: center;
-}
-h1 {
-  text-align: left;
-  grid-column: 1/-1;
-}
-p {
-  @include body-1;
-  color: var(--melon);
-  text-align: left;
-  grid-column: 1/-1;
-  max-width: 65ch;
-}
-.skills {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  grid-column: 1/-1;
-  text-align: right;
-  h2 {
-    color: var(--melon);
-    text-decoration: underline;
-  }
-  h6 {
-    color: var(--pastel-pink);
-    font-weight: 500;
-  }
-  .skill-role {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    justify-content: flex-end;
-    align-items: center;
-    img {
-      height: var(--text-4xl);
-      width: var(--text-4xl);
-    }
-  }
-}
-@include breakpoint(md) {
-  h1 {
-    grid-column: 1 / -5;
-  }
-  p {
-    grid-column: 1 / -6;
-  }
-  .pfp-desktop {
-    display: block;
-    grid-column: 8/-1;
-    width: 75%;
-    justify-self: flex-end;
-  }
-  .pfp-mobile {
-    display: none;
-  }
-  .skills {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    grid-column: 8/-1;
-    text-align: right;
-  }
-}
-</style>

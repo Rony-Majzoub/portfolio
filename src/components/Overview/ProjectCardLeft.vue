@@ -1,7 +1,7 @@
 <template>
-  <figure class="lg:flex-row-reverse flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 shadow-lg">
+  <figure class="relative lg:flex-row-reverse flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 transition-all ease-in-out duration-300 hover:-translate-y-1 group">
     <div class="overflow-hidden lg:w-7/12 flex-none lg:rounded-none lg:rounded-r-xl rounded-t-xl">
-      <img class="object-cover w-full h-96 lg:h-full" :src="`/assets/img/${image}`" :alt="`${title}`" />
+      <img class="object-cover w-full h-96 lg:h-full cursor-pointer" :src="`/assets/img/${image}`" :alt="`${title}`" @click="$router.push(`/${link}`)"/>
     </div>
     <div class="pt-6 p-8 text-left lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full">
       <figcaption class="space-y-2 lg:space-y-4">
@@ -27,6 +27,14 @@
         </div>
       </footer>
     </div>
+    <figure class="lg:flex-row-reverse flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 absolute w-full h-full left-0 top-0 z-[-10] blur-xl contrast-100 opacity-0 group-hover:opacity-25 transition-opacity ease-in-out duration-300">
+      <div class="overflow-hidden lg:w-7/12 flex-none lg:rounded-none lg:rounded-r-xl rounded-t-xl">
+        <img class="object-cover w-full h-96 lg:h-full cursor-pointer" :src="`/assets/img/${image}`" :alt="`${title}`" @click="$router.push(`/${link}`)"/>
+      </div>
+      <div class="pt-6 p-8 text-left lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full">
+      </div>
+      
+    </figure>
   </figure>
 </template>
 

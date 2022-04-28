@@ -1,8 +1,8 @@
 <template>
-  <div class="hero-title">
-    <p class="hero-info">{{ info }}</p>
-    <h1>{{ title }}</h1>
-    <h6>{{ brief }}</h6>
+  <div class="col-span-full flex flex-col gap-8 pb-10 text-center">
+    <p class="text-pastel-pink tracking-widest font-normal text-base uppercase antialiased">{{ info }}</p>
+    <h1 class=" text-7xl font-medium text-unbleached-silk">{{ title }}</h1>
+    <h2 class="text-melon text-xl font-medium">{{ brief }}</h2>
   </div>
 </template>
 
