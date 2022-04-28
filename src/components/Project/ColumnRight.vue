@@ -1,7 +1,7 @@
 <template>
-  <section class="column-right">
-    <h2 class="problem-title">{{ title }}</h2>
-    <p class="problem-text">{{ description }}</p>
+  <section class="flex flex-col gap-4 col-span-full lg:col-start-5 lg:col-end-[span_5]">
+    <h2 class="font-medium text-3xl lg:text-5xl text-unbleached-silk">{{ title }}</h2>
+    <p class="font-normal text-base text-melon">{{ description }}</p>
   </section>
 </template>
 
@@ -20,25 +20,3 @@ export default {
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-.column-right {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  grid-column: 1 / -1;
-}
-.problem-title {
-  color: var(--unbleached-silk);
-}
-.problem-text {
-  @include body-1;
-  color: var(--melon);
-}
-@include breakpoint(md) {
-  .column-right {
-    grid-column: 5 / span 5;
-  }
-}
-</style>

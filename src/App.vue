@@ -22,10 +22,10 @@
   <footer class="page-footer w-full gap-8 flex flex-col items-center text-center justify-between py-4 px-20 absolute h-12 bg-black-coffee bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 lg:h-auto">
     <div class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
       <div class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
-        <a href="mailto:" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide antialiased">majzoubrony@gmail.com</a>
-        <a href="tel:+" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide antialiased">072 296 02 95</a>
-        <a href="" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">LinkedIn</a>
-        <a href="" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">Instagram</a>
+        <a href="mailto:majzoubrony@gmail.com" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide antialiased">majzoubrony@gmail.com</a>
+        <a href="tel:+46722960295" class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide antialiased">072 296 02 95</a>
+        <a href="https://www.linkedin.com/in/rony-majzoub" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">LinkedIn</a>
+        <a href="https://www.instagram.com/rony.majzoub/" class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">Instagram</a>
       </div>
       <p class="font-normal text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">Copyright 2021 Rony Majzoub</p>
     </div>

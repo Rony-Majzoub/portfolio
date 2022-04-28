@@ -1,12 +1,10 @@
 <template>
-  <div class="projects">
+  <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
       info="2021 - UI & UX Design"
       title="RecyPie"
       brief="Create and design a modern, digital solution to a global problem." />
-    <div class="image hero">
-      <img src="/assets/img/recypie.png" alt="" />
-    </div>
+    <ProjectImage class="mt-12 mb-20" image="recypie.png" alt-text="RecyPie" />
     <ProjectTags
       client="Yrgo DD21"
       team="Myself"
@@ -17,7 +15,7 @@
       category2="UX Design"
       category3="User Testing"
       category4="Prototyping" />
-    <main class="project-grid">
+    <main class="grid col-span-full grid-cols-10 gap-y-20">
       <ColumnRight
         title="Background"
         description="As part of a work sample for applying to Yrgo Digital Designer, our goal was to create a digital solution to our assigned problem." />
@@ -30,9 +28,7 @@
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
-      <div class="image">
-        <img src="/assets/img/recypie.png" alt="" />
-      </div>
+      <ProjectImage image="recypie.png" alt-text="RecyPie" />
     </main>
   </div>
 </template>
@@ -42,6 +38,7 @@ import ProjectTags from "@/components/Project/ProjectTags.vue";
 import ProjectTitle from "@/components/Project/ProjectTitle.vue";
 import ColumnLeft from "@/components/Project/ColumnLeft.vue";
 import ColumnRight from "@/components/Project/ColumnRight.vue";
+import ProjectImage from "../components/Project/ProjectImage.vue";
 
 export default {
   name: "RecyPie",
@@ -50,37 +47,7 @@ export default {
     ProjectTitle,
     ColumnLeft,
     ColumnRight,
+    ProjectImage,
   },
 };
 </script>
-
-<style lang="scss" scoped>
-.projects {
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-column: 2 / -2;
-}
-.project-grid {
-  display: grid;
-  grid-column: 1 / -1;
-  grid-template-columns: repeat(10, 1fr);
-  row-gap: 5rem;
-}
-.hero {
-  margin: 3rem 0 5rem 0;
-}
-.image {
-  grid-column: 1 / -1;
-  position: relative;
-  padding: 0rem 0 56.25% 0;
-  max-width: 100%;
-  max-height: 50%;
-  img {
-    position: absolute;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    object-position: center 60%;
-  }
-}
-</style>

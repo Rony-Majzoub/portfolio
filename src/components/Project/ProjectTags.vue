@@ -1,35 +1,64 @@
 <template>
-  <section class="hero-tags">
-    <div class="hero-text">
-      <div class="hero-subtitle">
-        <p class="subtitle-header">Client</p>
-        <p class="subtitle-text">{{ client }}</p>
+  <section
+    class="grid grid-cols-2 w-full col-span-full pb-20 gap-x-4 justify-self-start lg:col-start-2 lg:col-end-[-2]">
+    <div class="flex flex-col col-span-1 gap-8 pb-10">
+      <div class="flex flex-col gap-2">
+        <p class="text-xl md:text-2xl font-medium text-unbleached-silk">
+          Client
+        </p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ client }}
+        </p>
       </div>
-      <div class="hero-subtitle">
-        <p class="subtitle-header">Team</p>
-        <p class="subtitle-text">{{ team }}</p>
+      <div class="flex flex-col gap-2">
+        <p class="text-xl md:text-2xl font-medium text-unbleached-silk">Team</p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ team }}
+        </p>
       </div>
-      <div class="hero-subtitle">
-        <p class="subtitle-header">Role</p>
-        <p class="subtitle-text">{{ role }}</p>
+      <div class="flex flex-col gap-2">
+        <p class="text-xl md:text-2xl font-medium text-unbleached-silk">Role</p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ role }}
+        </p>
       </div>
-      <div class="hero-subtitle">
-        <p class="subtitle-header">Duration</p>
-        <p class="subtitle-text">{{ duration }}</p>
+      <div class="flex flex-col gap-2">
+        <p class="text-xl md:text-2xl font-medium text-unbleached-silk">
+          Duration
+        </p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ duration }}
+        </p>
       </div>
-      <div class="hero-subtitle">
-        <p class="subtitle-header">Tools used</p>
-        <p class="subtitle-text">{{ tools }}</p>
+      <div class="flex flex-col gap-2">
+        <p class="text-xl md:text-2xl font-medium text-unbleached-silk">
+          Tools used
+        </p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ tools }}
+        </p>
       </div>
     </div>
-    <div class="hero-text">
-      <div class="hero-subtitle">
-        <p class="subtitle-header">Project includes</p>
-        <p class="subtitle-text">{{ category1 }}</p>
-        <p class="subtitle-text">{{ category2 }}</p>
-        <p class="subtitle-text">{{ category3 }}</p>
-        <p class="subtitle-text">{{ category4 }}</p>
-        <p class="subtitle-text">{{ category5 }}</p>
+    <div class="flex flex-col col-span-1 gap-8 pb-10 justify-self-end">
+      <div class="flex flex-col gap-2">
+        <p class="text-xl md:text-2xl font-medium text-unbleached-silk">
+          Project includes
+        </p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ category1 }}
+        </p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ category2 }}
+        </p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ category3 }}
+        </p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ category4 }}
+        </p>
+        <p class="font-medium text-base md:text-lg text-melon max-w-prose">
+          {{ category5 }}
+        </p>
       </div>
     </div>
   </section>
@@ -82,50 +111,3 @@ export default {
   },
 };
 </script>
-
-<!-- Add "scoped" attribute to limit CSS to this component only -->
-<style lang="scss" scoped>
-.hero-tags {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  width: 100%;
-  grid-column: 1 /-1;
-  padding-bottom: 5rem;
-  column-gap: 1rem;
-}
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  grid-column: span 1;
-  gap: 2rem;
-  padding-bottom: 2.5rem;
-}
-.hero-text:first-child {
-  justify-self: start;
-}
-.hero-text:last-child {
-  justify-self: end;
-}
-.hero-subtitle {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-.subtitle-header {
-  @include h6;
-  font-weight: 500;
-  color: var(--unbleached-silk);
-}
-.subtitle-text {
-  @include body-2;
-  font-weight: 700;
-  font-size: 1.15rem;
-  color: var(--melon);
-  max-width: 40ch;
-}
-@include breakpoint(md) {
-  .hero-tags {
-    grid-column: 3 / -3;
-  }
-}
-</style>
