@@ -1,6 +1,7 @@
 <template>
   <div>
-    <h1 class="text-4xl md:text-6xl lg:text-7xl font-medium text-unbleached-silk text-center tracking-tight antialiased">
+    <h1
+      class="text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl 4xl:text-9xl font-medium text-unbleached-silk text-center tracking-tight antialiased">
       My name is Rony Majzoub.
       <br />
       I'm a

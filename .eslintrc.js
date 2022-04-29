@@ -8,4 +8,3 @@ module.exports = {
     // 'vue/no-unused-vars': 'error'
   },
 };
-

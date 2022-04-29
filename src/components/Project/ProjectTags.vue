@@ -1,6 +1,6 @@
 <template>
   <section
-    class="grid grid-cols-2 w-full col-span-full pb-20 gap-x-4 justify-self-start lg:col-start-2 lg:col-end-[-2]">
+    class="grid grid-cols-2 w-full col-span-full pb-8 lg:pb-16 gap-x-4 justify-self-start lg:col-start-2 lg:col-end-[-2]">
     <div class="flex flex-col col-span-1 gap-8 pb-10">
       <div class="flex flex-col gap-2">
         <p class="text-xl md:text-2xl font-medium text-unbleached-silk">

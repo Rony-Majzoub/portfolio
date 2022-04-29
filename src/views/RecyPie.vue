@@ -4,7 +4,7 @@
       info="2021 - UI & UX Design"
       title="RecyPie"
       brief="Create and design a modern, digital solution to a global problem." />
-    <ProjectImage class="mt-12 mb-20" image="recypie.png" alt-text="RecyPie" />
+    <ProjectImage class="mb-10" image="recypie.png" alt-text="RecyPie" />
     <ProjectTags
       client="Yrgo DD21"
       team="Myself"
@@ -15,7 +15,7 @@
       category2="UX Design"
       category3="User Testing"
       category4="Prototyping" />
-    <main class="grid col-span-full grid-cols-10 gap-y-20">
+    <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
         description="As part of a work sample for applying to Yrgo Digital Designer, our goal was to create a digital solution to our assigned problem." />

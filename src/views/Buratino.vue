@@ -5,7 +5,7 @@
       title="Buratino Instruktino"
       brief="Create a digital replacement for a physical instruction manual." />
     <ProjectImage
-      class="mt-12 mb-20"
+      class="mb-10"
       image="buratino.png"
       alt-text="Buratino Instruktino" />
     <ProjectTags
@@ -19,7 +19,7 @@
       category3="UX Design"
       category4="User Testing"
       category5="Logo Design" />
-    <main class="grid col-span-full grid-cols-10 gap-y-20">
+    <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
         description="As part of a work sample for applying to Yrgo Digital Designer, our goal was to create a digital solution to our assigned problem." />

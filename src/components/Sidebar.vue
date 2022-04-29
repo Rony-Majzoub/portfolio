@@ -1,10 +1,21 @@
 <template>
-  <div class="nav-menu fixed left-full top-0 bg-eggplant w-full text-right duration-300 ease-in-out m-0 h-screen grid grid-cols-12 grid-rows-[repeat(3,_5rem)]  col-span-full pt-28 lg:hidden">
-    <router-link :to="{ path: '/', hash: '#projects' }" class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
+  <div
+    class="nav-menu fixed left-full top-0 bg-eggplant w-full text-right duration-300 ease-in-out m-0 h-screen grid grid-cols-12 grid-rows-[repeat(3,_5rem)] col-span-full pt-28 lg:hidden">
+    <router-link
+      :to="{ path: '/', hash: '#projects' }"
+      class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
       Projects
     </router-link>
-    <router-link to="/fun" class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">Fun</router-link>
-    <router-link to="/about" class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">About Me</router-link>
+    <router-link
+      to="/fun"
+      class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
+      Fun
+    </router-link>
+    <router-link
+      to="/about"
+      class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
+      About Me
+    </router-link>
   </div>
   <div class="hamburger lg:hidden">
     <span class="bar"></span>
