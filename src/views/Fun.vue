@@ -12,40 +12,30 @@
         image="buratino.png"
         link="buratino" />
       <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        link="buratino" />
+        title="RecyPie"
+        tag="Digital Prototype"
+        image="recypie.png"
+        link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
         link="buratino" />
       <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        link="buratino" />
+        title="RecyPie"
+        tag="Digital Prototype"
+        image="recypie.png"
+        link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
         link="buratino" />
       <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        link="buratino" />
-      <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        link="buratino" />
-      <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        link="buratino" />
+        title="RecyPie"
+        tag="Digital Prototype"
+        image="recypie.png"
+        link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
@@ -76,6 +66,21 @@
         tag="Digital Prototype"
         image="recypie.png"
         link="recypie" />
+      <fun-card
+        title="Buratino"
+        tag="Website"
+        image="buratino.png"
+        link="buratino" />
+      <fun-card
+        title="RecyPie"
+        tag="Digital Prototype"
+        image="recypie.png"
+        link="recypie" />
+      <fun-card
+        title="Buratino"
+        tag="Website"
+        image="buratino.png"
+        link="buratino" />
     </main>
   </div>
 </template>

@@ -1,5 +1,6 @@
 <template>
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
+    <BackButton />
     <ProjectTitle
       info="2020/2021 - Web Development"
       title="Buratino Instruktino"
@@ -43,6 +44,7 @@ import ProjectTitle from "@/components/Project/ProjectTitle.vue";
 import ColumnLeft from "@/components/Project/ColumnLeft.vue";
 import ColumnRight from "@/components/Project/ColumnRight.vue";
 import ProjectImage from "../components/Project/ProjectImage.vue";
+import BackButton from "@/components/BackButton.vue";
 
 export default {
   name: "Buratino",
@@ -52,6 +54,7 @@ export default {
     ColumnLeft,
     ColumnRight,
     ProjectImage,
+    BackButton,
   },
 };
 </script>

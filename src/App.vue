@@ -80,6 +80,7 @@ export default {
 @import url("https://rsms.me/inter/inter.css");
 html {
   scroll-behavior: smooth;
+  scrollbar-gutter: stable;
 }
 * {
   font-family: var(--font-primary);
