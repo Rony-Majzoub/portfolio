@@ -1,31 +1,66 @@
 <template>
-  <div
-    class="nav-menu fixed left-full top-0 bg-eggplant w-full text-right duration-300 ease-in-out m-0 h-screen grid grid-cols-12 grid-rows-[repeat(3,_5rem)] col-span-full pt-28 lg:hidden">
-    <router-link
-      :to="{ path: '/', hash: '#projects' }"
-      class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
-      Projects
-    </router-link>
-    <router-link
-      to="/fun"
-      class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
-      Fun
-    </router-link>
-    <router-link
-      to="/about"
-      class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
-      About Me
-    </router-link>
-  </div>
-  <div class="hamburger lg:hidden">
+  <transition name="slide-fade">
+    <div
+      class="nav-menu fixed left-full top-0 bg-eggplant will-change-[transform,_display] w-full text-right duration-300 ease-in-out m-0 h-screen grid grid-cols-12 grid-rows-[repeat(3,_5rem)] col-span-full pt-28 lg:hidden">
+      <router-link
+        :to="{ path: '/', hash: '#projects' }"
+        class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
+        Projects
+      </router-link>
+      <router-link
+        to="/fun"
+        class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
+        Fun
+      </router-link>
+      <router-link
+        to="/about"
+        class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-medium text-4xl tracking-tighter">
+        About Me
+      </router-link>
+    </div>
+  </transition>
+  <!-- <button class="hamburger lg:hidden z-10" @click="show = !show">
     <span class="bar"></span>
     <span class="bar"></span>
     <span class="bar"></span>
-  </div>
+  </button> -->
+  <button class="hamburger lg:hidden z-10">
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg">
+      <rect
+        x="6"
+        y="14"
+        width="28"
+        height="3"
+        fill="white"
+        class="burger-top" />
+      <rect
+        x="6"
+        y="23"
+        width="28"
+        height="3"
+        fill="white"
+        class="burger-middle" />
+      <rect
+        x="6"
+        y="31"
+        width="28"
+        height="3"
+        fill="white"
+        class="burger-bottom" />
+    </svg>
+  </button>
 </template>
 <script>
 export default {
   name: "Sidebar",
+  data() {
+    return { show: true };
+  },
   mounted() {
     const hamburger = document.querySelector(".hamburger");
     const navMenu = document.querySelector(".nav-menu");
@@ -48,6 +83,12 @@ export default {
 </script>
 
 <style lang="scss">
+.slide-fade-enter-from {
+  transform: translateX(100vw);
+}
+.slide-fade-leave-to {
+  transform: translateX(100vw);
+}
 .nav-menu.active {
   left: 0;
 }

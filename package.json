@@ -12,7 +12,9 @@
   },
   "dependencies": {
     "@vitejs/plugin-vue": "^1.6.1",
+    "animejs": "^3.2.1",
     "core-js": "^3.6.5",
+    "motion": "^10.8.1",
     "vite": "^2.5.4",
     "vue": "^3.0.0",
     "vue-router": "^4.0.0-0",

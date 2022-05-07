@@ -1,7 +1,8 @@
 <template>
   <div
     class="projects grid grid-cols-10 col-start-2 col-end-[-2] place-items-center">
-    <IntroText class="intro flex justify-center items-center col-span-full" />
+    <IntroText
+      class="flex justify-center items-center flex-wrap content-center col-span-full" />
     <router-link
       class="arrow -translate-y-full col-span-full mt-20 bg-transparent justify-self-center"
       :to="{ path: '/', hash: '#projects' }">

@@ -39,6 +39,9 @@ module.exports = {
         "auto-fit": "repeat(auto-fit, minmax(0, 1fr))",
         "auto-fill": "repeat(auto-fill, minmax(0, 1fr))",
       },
+      backgroundImage: {
+        "gradient-dot": "radial-gradient( rgba(0,0,0,0) 1px,#363040 1px )",
+      },
     },
   },
   plugins: [],

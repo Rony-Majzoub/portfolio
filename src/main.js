@@ -1,14 +1,29 @@
 import { createApp } from "vue";
+import anime from "animejs/lib/anime.es.js";
 import App from "./App.vue";
 import "./index.css";
-// import Vue3Lottie from 'vue3-lottie'
 import router from "./router";
-
-// import 'vue3-lottie/dist/style.css'
-
 const app = createApp(App);
 
+app.directive("anime", {
+  beforeMount(targets, binding, vnode) {
+    var opts = Object.assign({}, binding.value, { targets: targets });
+    anime(opts);
+  },
+  updated(targets, binding) {
+    var opts = Object.assign({}, binding.value, { targets: targets });
+    anime(opts);
+  },
+});
+
+Object.defineProperties(app.config.globalProperties, {
+  $anime: {
+    get() {
+      return anime;
+    },
+  },
+});
+
 app.use(router);
-// app.use(Vue3Lottie);
 
 app.mount("#app");

@@ -1,13 +1,23 @@
 <template>
-  <div>
-    <h1
-      class="text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl 4xl:text-9xl font-medium text-unbleached-silk text-center tracking-tight antialiased">
-      My name is Rony Majzoub.
-      <br />
-      I'm a
+  <h1
+    class="ml13 max-w-4xl text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl 4xl:text-9xl font-medium text-unbleached-silk text-left tracking-tight antialiased">
+    <!-- My name is Rony Majzoub. -->
+    <span class="word">My&nbsp;</span>
+    <span class="word">name&nbsp;</span>
+    <span class="word">is&nbsp;</span>
+    <span class="word">Rony&nbsp;</span>
+    <span class="word">Majzoub.&nbsp;</span>
+    <hr class="basis-ful w-full h-0 m-0 border-0" />
+
+    <span class="word">I'm&nbsp;</span>
+    <span class="word">a&nbsp;</span>
+    <span class="word">
       <u>{{ role[0] }}.</u>
-    </h1>
-  </div>
+    </span>
+    <br />
+    <!-- I'm a
+    <u>{{ role[0] }}.</u> -->
+  </h1>
 </template>
 
 <script>
@@ -32,6 +42,23 @@ export default {
   },
   // The time that each role stays on screen in milliseconds.
   mounted() {
+    const targets = this.$el;
+    // Wrap every letter in a span
+    // var textWrapper = document.querySelector(".ml13");
+    // textWrapper.innerHTML = textWrapper.textContent.replace(
+    //   /\S/g,
+    //   "<span class='letter'>$&</span>"
+    // );
+
+    this.$anime.timeline({}).add({
+      targets: ".ml13 .word",
+      translateY: [100, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutQuint",
+      duration: 1000,
+      delay: (el, i) => 300 + 50 * i,
+    });
     window.setInterval(() => {
       this.pollPerson();
     }, 350);
@@ -46,10 +73,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
+h1 {
   height: calc(100vh - 15rem);
 }
 u::selection {
   color: var(--eggplant);
+}
+.ml13 .word {
+  display: inline-block;
+  line-height: 1em;
 }
 </style>
