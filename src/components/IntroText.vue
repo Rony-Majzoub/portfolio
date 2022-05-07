@@ -14,7 +14,8 @@
       <span class="word whitespace-nowrap">a&nbsp;</span>
       <hr class="basis-ful w-full h-0 m-0 border-0 block sm:hidden" />
 
-      <span class="word whitespace-nowrap text-melon underline decoration-8">
+      <span
+        class="word whitespace-nowrap text-melon underline decoration-4 md:decoration-8">
         {{ role[0] }}.
       </span>
       <br />
