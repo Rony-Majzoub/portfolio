@@ -6,7 +6,9 @@
       <div
         class="overflow-hidden lg:w-7/12 flex-none lg:rounded-none lg:rounded-l-xl rounded-t-xl">
         <img
-          class="object-cover w-full h-96 lg:h-full cursor-pointer"
+          class="object-cover w-full h-96 lg:h-full cursor-pointer text-[0]"
+          width="512"
+          height="512"
           :src="`/assets/img/${image}`"
           :alt="`${title}`"
           @click="$router.push(`/${link}`)" />
@@ -17,7 +19,7 @@
     <div
       class="overflow-hidden lg:w-7/12 flex-none lg:rounded-none lg:rounded-l-xl rounded-t-xl">
       <img
-        class="object-cover w-full h-96 lg:h-full cursor-pointer"
+        class="object-cover w-full h-96 lg:h-full cursor-pointer text-[0]"
         :src="`/assets/img/${image}`"
         :alt="`${title}`"
         @click="$router.push(`/${link}`)" />
@@ -26,16 +28,16 @@
       class="pt-6 p-8 text-right lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full">
       <figcaption class="space-y-2 lg:space-y-4">
         <div
-          class="text-melon font-normal text-xs lg:text-sm tracking-widest uppercase antialiased">
+          class="text-melon font-medium text-xs lg:text-sm tracking-widest uppercase antialiased">
           {{ tag }}
         </div>
         <div
-          class="text-unbleached-silk font-medium text-5xl lg:text-6xl antialiased">
+          class="text-unbleached-silk font-bold text-5xl lg:text-6xl antialiased">
           {{ title }}
         </div>
       </figcaption>
       <blockquote>
-        <p class="text-base lg:text-lg font-normal text-melon">
+        <p class="text-base lg:text-lg font-medium text-melon">
           {{ description }}
         </p>
       </blockquote>
@@ -47,7 +49,7 @@
           class="flex flex-row items-end xl:items-baseline w-full justify-between">
           <project-button @click="$router.push(`/${link}`)"></project-button>
           <p
-            class="hidden lg:flex lg:text-lg font-medium tracking-wide text-pastel-pink text-right">
+            class="hidden lg:flex lg:text-lg font-semibold tracking-wide text-pastel-pink text-right">
             {{ category }}
           </p>
         </div>

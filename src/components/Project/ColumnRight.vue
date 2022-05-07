@@ -1,10 +1,10 @@
 <template>
   <section
     class="flex flex-col gap-4 col-span-full lg:col-start-5 lg:col-end-[span_5]">
-    <h2 class="font-medium text-3xl lg:text-5xl text-unbleached-silk">
+    <h2 class="font-bold text-3xl lg:text-5xl text-unbleached-silk">
       {{ title }}
     </h2>
-    <p class="font-normal text-base text-melon">{{ description }}</p>
+    <p class="font-medium text-base text-melon">{{ description }}</p>
   </section>
 </template>
 

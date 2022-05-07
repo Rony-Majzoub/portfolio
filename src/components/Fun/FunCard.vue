@@ -5,15 +5,17 @@
     <img
       :src="`/assets/img/${image}`"
       :alt="`${title}`"
-      class="object-cover w-full h-full" />
+      width="384"
+      height="256"
+      class="object-cover w-full h-full text-[0]" />
     <div
       :title="`Explore ${title}`"
-      class="transition-all ease-in-out absolute flex flex-col gap-1 lg:gap-2 justify-end pb-4 w-full h-full bottom-0 inset-x-0 text-center lg:text-left lg:pl-4 bg-gradient-to-t from-gradient1 to-gradient2 before:bg-eggplant before:opacity-0 before:border-4 before:content-[attr(title)] before:text-center before:flex before:justify-center before:items-center before:text-2xl before:underline before:underline-offset-8 before:decoration-4 before:normal-case before:antialiased before:text-melon before:font-medium before:border-pastel-pink before:rounded-lg group-hover:before:opacity-100 before:left-0 before:top-0 before:w-full before:h-full before:transition-opacity before:ease-in-out before:absolute">
-      <h2 class="text-melon font-medium text-2xl lg:text-4xl z-10">
+      class="transition-all ease-in-out absolute flex flex-col gap-1 justify-end pb-4 w-full h-full bottom-0 inset-x-0 text-center lg:text-left lg:pl-4 bg-gradient-to-t from-gradient1 to-gradient2 before:bg-eggplant before:opacity-0 before:border-4 before:content-[attr(title)] before:text-center before:flex before:justify-center before:items-center before:text-2xl before:underline before:underline-offset-8 before:decoration-4 before:normal-case before:antialiased before:text-melon before:font-bold before:border-pastel-pink before:rounded-lg group-hover:before:opacity-100 before:left-0 before:top-0 before:w-full before:h-full before:transition-opacity before:ease-in-out before:absolute">
+      <h2 class="text-melon font-bold text-2xl lg:text-4xl z-10">
         {{ title }}
       </h2>
       <p
-        class="text-pastel-pink font-normal text-xs lg:text-sm tracking-widest uppercase antialiased z-10">
+        class="text-pastel-pink font-semibold text-xs lg:text-sm tracking-widest uppercase antialiased z-10">
         {{ tag }}
       </p>
     </div>

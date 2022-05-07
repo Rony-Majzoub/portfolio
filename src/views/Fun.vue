@@ -1,7 +1,7 @@
 <template>
   <div class="grid col-start-2 col-end-[-2] grid-cols-10">
     <h1
-      class="text-5xl lg:text-6xl font-medium text-unbleached-silk col-start-1 col-end-[-2]">
+      class="text-5xl lg:text-6xl font-bold text-unbleached-silk col-start-1 col-end-[-2]">
       Here is a showcase of some of my smaller and more fun projects.
     </h1>
     <main

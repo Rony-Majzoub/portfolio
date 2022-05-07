@@ -8,17 +8,17 @@
       </router-link>
       <div class="navigation-items flex col-span-full flex-row gap-4">
         <router-link
-          class="nav-desktop hidden lg:inline transition-all duration-200 text-cameo-pink underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide antialiased"
+          class="nav-desktop hidden lg:inline transition-all duration-200 text-cameo-pink underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold text-right tracking-wide antialiased"
           :to="{ path: '/', hash: '#projects' }">
           Projects
         </router-link>
         <router-link
-          class="nav-desktop hidden lg:inline transition-all duration-200 text-cameo-pink underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide antialiased"
+          class="nav-desktop hidden lg:inline transition-all duration-200 text-cameo-pink underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold text-right tracking-wide antialiased"
           to="/fun">
           Fun
         </router-link>
         <router-link
-          class="nav-desktop hidden lg:inline transition-all duration-200 text-cameo-pink underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-medium text-right tracking-wide antialiased"
+          class="nav-desktop hidden lg:inline transition-all duration-200 text-cameo-pink underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold text-right tracking-wide antialiased"
           to="/about">
           About Me
         </router-link>
@@ -39,27 +39,27 @@
         class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
         <a
           href="mailto:majzoubrony@gmail.com"
-          class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide antialiased">
+          class="text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">
           majzoubrony@gmail.com
         </a>
         <a
           href="tel:+46722960295"
-          class="text-melon font-medium no-underline text-sm lg:text-base tracking-wide antialiased">
+          class="text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">
           072 296 02 95
         </a>
         <a
           href="https://www.linkedin.com/in/rony-majzoub"
-          class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">
+          class="social-media text-melon font-extrabold no-underline text-sm lg:text-base tracking-wide antialiased">
           LinkedIn
         </a>
         <a
           href="https://www.instagram.com/rony.majzoub/"
-          class="social-media text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">
+          class="social-media text-melon font-extrabold no-underline text-sm lg:text-base tracking-wide antialiased">
           Instagram
         </a>
       </div>
       <p
-        class="font-normal text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">
+        class="font-semibold text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">
         Copyright 2021 Rony Majzoub
       </p>
     </div>
