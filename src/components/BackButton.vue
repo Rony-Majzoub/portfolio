@@ -1,8 +1,8 @@
 <template>
   <a
     v-anime="{
-      translateX: '-=20',
-      opacity: '+=1',
+      translateX: '-20',
+      opacity: '+1',
       duration: 250,
       delay: 1000,
       easing: 'easeInOutExpo',

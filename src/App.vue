@@ -102,6 +102,11 @@ html {
   animation: 0.2s infinite noise;
   pointer-events: none;
 }
+.nav-desktop.router-link-active {
+  text-decoration-color: var(--unbleached-silk) !important;
+  color: var(--unbleached-silk) !important;
+  transition: var(--animation-curve) 250ms !important;
+}
 
 @keyframes noise {
   0%,
@@ -136,11 +141,7 @@ html {
     background-position: -10% 10%;
   }
 }
-.router-link-active {
-  text-decoration-color: var(--unbleached-silk) !important;
-  color: var(--unbleached-silk) !important;
-  transition: var(--animation-curve) 250ms !important;
-}
+
 @keyframes fadeInUp {
   from {
     opacity: 0;

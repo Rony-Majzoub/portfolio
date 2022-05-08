@@ -1,20 +1,20 @@
 <template>
   <transition name="slide-fade">
     <div
-      class="nav-menu fixed left-full top-0 bg-eggplant will-change-[transform,_display] w-full text-right duration-300 ease-in-out m-0 h-screen grid grid-cols-12 grid-rows-[repeat(3,_5rem)] col-span-full pt-28 lg:hidden">
+      class="nav-menu fixed left-full top-0 bg-eggplant will-change-[transform,_display] w-full text-right duration-300 ease-in-out m-0 flex flex-col items-end gap-8 h-screen col-span-full pt-28 pr-[10vw] lg:hidden">
       <router-link
         :to="{ path: '/', hash: '#projects' }"
-        class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-semibold text-4xl tracking-tighter">
+        class="nav-item origin-right bg-black-coffee text-cameo-pink no-underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] w-fit p-4 font-semibold text-4xl tracking-tighter">
         Projects
       </router-link>
       <router-link
         to="/fun"
-        class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-semibold text-4xl tracking-tighter">
+        class="nav-item origin-right bg-black-coffee text-cameo-pink no-underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] w-fit p-4 font-semibold text-4xl tracking-tighter">
         Fun
       </router-link>
       <router-link
         to="/about"
-        class="nav-item text-cameo-pink underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] font-semibold text-4xl tracking-tighter">
+        class="nav-item origin-right bg-black-coffee text-cameo-pink no-nderline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] w-fit p-4 font-semibold text-4xl tracking-tighter">
         About Me
       </router-link>
     </div>
@@ -24,7 +24,7 @@
     <span class="bar"></span>
     <span class="bar"></span>
   </button> -->
-  <button class="hamburger lg:hidden z-10">
+  <button class="hamburger lg:hidden p-1 z-10">
     <svg
       width="40"
       height="40"
@@ -99,7 +99,7 @@ export default {
         {
           targets: ".burger-top",
           autoplay: false,
-          rotate: "45deg",
+          rotate: "+=45deg",
           easing: "easeInOutBack",
           duration: 400,
         },
@@ -109,7 +109,7 @@ export default {
         {
           targets: ".burger-middle",
           autoplay: false,
-          rotate: "45deg",
+          rotate: "+=45deg",
           opacity: 0,
           easing: "easeInOutBack",
           duration: 400,
@@ -120,12 +120,21 @@ export default {
         {
           targets: ".burger-bottom",
           autoplay: false,
-          rotate: "-45deg",
+          rotate: "-=45deg",
           easing: "easeInOutBack",
           duration: 400,
         },
         "-=400"
       );
+    var navAnimation = anime.timeline({ autoplay: false }).add({
+      targets: ".nav-item",
+      translateX: ["250", "0"],
+      delay: anime.stagger(300, { start: 50, from: "first" }),
+      backgroundColor: ["#4e404f", "#363040"],
+      direction: "alternate",
+      easing: "easeOutQuint",
+      duration: 300,
+    });
 
     hamburger.addEventListener("click", mobileMenu);
     navLink.forEach((n) => n.addEventListener("click", closeMenu));
@@ -133,25 +142,84 @@ export default {
     function mobileMenu() {
       hamburger.classList.toggle("active");
       navMenu.classList.toggle("active");
-      burgerAnimation.play();
-      burgerAnimation.finished.then(() => {
+      if (burgerAnimation.began) {
         burgerAnimation.reverse();
-      });
+
+        if (
+          burgerAnimation.progress === 100 &&
+          burgerAnimation.direction === "reverse"
+        ) {
+          burgerAnimation.completed = false;
+        }
+      }
+
+      if (burgerAnimation.paused) {
+        burgerAnimation.play();
+      }
+      if (navAnimation.began) {
+        navAnimation.reverse();
+
+        if (
+          navAnimation.progress === 100 &&
+          navAnimation.direction === "reverse"
+        ) {
+          navAnimation.completed = false;
+        }
+      }
+
+      if (navAnimation.paused) {
+        navAnimation.play();
+      }
     }
 
     function closeMenu() {
       hamburger.classList.remove("active");
       navMenu.classList.remove("active");
-      burgerAnimation.play();
-      burgerAnimation.finished.then(() => {
+      if (burgerAnimation.began) {
         burgerAnimation.reverse();
-      });
+
+        if (
+          burgerAnimation.progress === 100 &&
+          burgerAnimation.direction === "reverse"
+        ) {
+          burgerAnimation.completed = false;
+        }
+      }
+
+      if (burgerAnimation.paused) {
+        burgerAnimation.play();
+      }
+      if (navAnimation.began) {
+        navAnimation.reverse();
+
+        if (
+          navAnimation.progress === 100 &&
+          navAnimation.direction === "reverse"
+        ) {
+          navAnimation.completed = false;
+        }
+      }
+
+      if (navAnimation.paused) {
+        navAnimation.play();
+      }
     }
   },
 };
 </script>
 
 <style lang="scss">
+.nav-item.router-link-active {
+  text-decoration-color: var(--unbleached-silk) !important;
+  color: var(--eggplant) !important;
+  background-color: var(--unbleached-silk) !important;
+  // transition: var(--animation-curve) 250ms !important;
+}
+.nav-item {
+  transition-timing-function: var(--animation-curve);
+  transition-duration: 100ms;
+  transition-property: background-color;
+}
 .slide-fade-enter-from {
   transform: translateX(100vw);
 }
