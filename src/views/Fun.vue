@@ -1,11 +1,11 @@
 <template>
   <div class="grid col-start-2 col-end-[-2] grid-cols-10">
     <h1
-      class="text-5xl lg:text-6xl font-bold text-unbleached-silk col-start-1 col-end-[-2]">
-      Here is a showcase of some of my smaller and more fun projects.
+      class="title-text text-4xl sm:text-5xl lg:text-6xl font-bold text-unbleached-silk col-span-full sm:col-start-1 sm:col-end-[-2]">
+      Here lies some of my smaller and more fun projects.
     </h1>
     <main
-      class="grid col-span-full gap-8 sm:gap-6 lg:gap-5 justify-items-center grid-cols-fun 3xl:grid-cols-funxl 5xl:grid-cols-funxxl pt-20">
+      class="grid col-span-full gap-8 sm:gap-6 lg:gap-5 justify-items-center grid-cols-fun 3xl:grid-cols-funxl 5xl:grid-cols-funxxl pt-10 sm:pt-20">
       <fun-card
         title="Buratino"
         tag="Website"
@@ -108,5 +108,28 @@ export default {
   components: {
     FunCard,
   },
+  mounted() {
+    // Wrap every letter in a span
+    var textWrapper = document.querySelector(".title-text");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S+/g,
+      "<span class='word'>$&</span>"
+    );
+    this.$anime.timeline({}).add({
+      targets: ".title-text .word",
+      translateY: [50, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutQuint",
+      duration: 1000,
+      delay: (el, i) => 300 + 25 * i,
+    });
+  },
 };
 </script>
+<style lang="scss">
+.title-text .word {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>

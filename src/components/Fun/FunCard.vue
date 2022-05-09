@@ -5,11 +5,11 @@
     <!-- Image Element -->
     <!-- Blurred Placeholder Image (Cloudinary) -->
     <img
-      :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+      :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
       :alt="`${title}`"
       width="384"
       height="256"
-      class="cld-responsive absolute object-cover w-full h-full text-[0] bg-cameo-pink" />
+      class="cld-responsive absolute object-cover w-full h-full text-[0] bg-eggplant" />
     <!-- Sharp Final Image (Cloudinary) -->
     <img
       :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"

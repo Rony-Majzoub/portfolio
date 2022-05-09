@@ -10,7 +10,7 @@
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
           class="cld-responsive absolute object-cover w-full h-96 lg:h-full cursor-pointer text-[0]"
-          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           @click="$router.push(`/${link}`)" />
       </div>
@@ -22,8 +22,8 @@
       class="relative overflow-hidden lg:w-7/12 flex-none h-96 lg:h-auto lg:rounded-none lg:rounded-l-xl rounded-t-xl">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
-        class="cld-responsive absolute object-cover w-full h-96 lg:h-full cursor-pointer text-[0] bg-cameo-pink"
-        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640,e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+        class="cld-responsive absolute object-cover w-full h-96 lg:h-full cursor-pointer text-[0] bg-eggplant"
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480,e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
         :alt="`${title}`"
         @click="$router.push(`/${link}`)" />
       <!-- Sharp Final Image (Cloudinary) -->

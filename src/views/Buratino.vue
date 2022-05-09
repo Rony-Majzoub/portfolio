@@ -34,7 +34,10 @@
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
-      <ProjectImage image="buratino.png" alt-text="Buratino Instruktino" />
+      <ProjectImage
+        image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png"
+        alt-text="Buratino Instruktino" />
     </main>
   </div>
 </template>

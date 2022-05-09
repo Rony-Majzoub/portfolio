@@ -4,8 +4,8 @@ c
     class="lg:col-start-2 lg:col-end-[-2] col-span-full relative aspect-video">
     <!-- Blurred Placeholder Image (Cloudinary) -->
     <img
-      :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
-      class="cld-responsive absolute object-cover object-[center_60%] w-full max-h-full rounded-lg bg-cameo-pink" />
+      :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+      class="cld-responsive absolute object-cover object-[center_60%] w-full max-h-full rounded-lg bg-eggplant" />
     <!-- Sharp Final Image (Cloudinary) -->
     <img
       :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"

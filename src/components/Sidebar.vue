@@ -73,7 +73,7 @@ export default {
         autoplay: false,
         y: "+=7",
         easing: "easeInOutBack",
-        duration: 400,
+        duration: 350,
       })
       .add(
         {
@@ -81,9 +81,9 @@ export default {
           autoplay: false,
           y: "-=2",
           easing: "easeInOutBack",
-          duration: 400,
+          duration: 350,
         },
-        "-=400"
+        "-=350"
       )
       .add(
         {
@@ -91,9 +91,9 @@ export default {
           autoplay: false,
           y: "-=10",
           easing: "easeInOutBack",
-          duration: 400,
+          duration: 350,
         },
-        "-=400"
+        "-=350"
       )
       .add(
         {
@@ -101,9 +101,9 @@ export default {
           autoplay: false,
           rotate: "+=45deg",
           easing: "easeInOutBack",
-          duration: 400,
+          duration: 350,
         },
-        "-=200"
+        "-=175"
       )
       .add(
         {
@@ -112,9 +112,9 @@ export default {
           rotate: "+=45deg",
           opacity: 0,
           easing: "easeInOutBack",
-          duration: 400,
+          duration: 350,
         },
-        "-=400"
+        "-=350"
       )
       .add(
         {
@@ -122,14 +122,14 @@ export default {
           autoplay: false,
           rotate: "-=45deg",
           easing: "easeInOutBack",
-          duration: 400,
+          duration: 350,
         },
-        "-=400"
+        "-=350"
       );
     var navAnimation = anime.timeline({ autoplay: false }).add({
       targets: ".nav-item",
       translateX: ["250", "0"],
-      delay: anime.stagger(300, { start: 50, from: "first" }),
+      delay: anime.stagger(100, { start: 50, from: "first" }),
       backgroundColor: ["#4e404f", "#363040"],
       direction: "alternate",
       easing: "easeOutQuint",

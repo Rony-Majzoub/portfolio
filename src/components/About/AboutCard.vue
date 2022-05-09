@@ -13,7 +13,7 @@
           alt="" /> -->
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
-          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           width="384"
           height="552"
           class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full" />
@@ -32,7 +32,7 @@
         alt="Profile Picture" /> -->
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
-        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
         width="384"
         height="552"
         class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0] bg-black" />
