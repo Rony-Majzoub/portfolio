@@ -38,7 +38,7 @@ export default {
         "UX designer",
         "web developer",
         "3D artist",
-        "product designer",
+        // "product designer",
         "motion designer",
         "quick learner",
         "problem solver",
@@ -66,7 +66,7 @@ export default {
     window.setInterval(() => {
       this.pollPerson();
       // The time that each role stays on screen in milliseconds.
-    }, 350);
+    }, 400);
   },
   methods: {
     pollPerson() {
