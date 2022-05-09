@@ -14,8 +14,11 @@
         :speed="1"
         :width="144" />
     </router-link>
-    <main
-      class="project-grid col-span-full flex flex-col justify-center gap-40">
+    <main class="project-grid col-span-full flex flex-col justify-center">
+      <h1
+        class="project-text text-4xl sm:text-5xl lg:text-6xl font-bold text-unbleached-silk text-left tracking-tight antialiased mb-8 sm:mb-16">
+        Here are some of my projects.
+      </h1>
       <ProjectCardRight
         link="smoove"
         title="Smoove"
@@ -62,5 +65,28 @@ export default {
     ProjectCardLeft,
     Vue3Lottie,
   },
+  mounted() {
+    // Wrap every word in a span
+    var textWrapper = document.querySelector(".project-text");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S+/g,
+      "<span class='word'>$&</span>"
+    );
+    this.$anime.timeline({}).add({
+      targets: ".project-text .word",
+      translateY: [50, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutQuint",
+      duration: 1000,
+      delay: (el, i) => 300 + 25 * i,
+    });
+  },
 };
 </script>
+<style lang="scss">
+.project-text .word {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>

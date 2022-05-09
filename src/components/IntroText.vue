@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1
-      class="ml13 max-w-4xl text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl 4xl:text-9xl font-bold text-unbleached-silk text-left tracking-tight antialiased">
+      class="intro-text max-w-4xl text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl 4xl:text-9xl font-bold text-unbleached-silk text-left tracking-tight antialiased">
       <!-- My name is Rony Majzoub. -->
       <span class="word">My&nbsp;</span>
       <span class="word">name&nbsp;</span>
@@ -45,7 +45,6 @@ export default {
       ],
     };
   },
-  // The time that each role stays on screen in milliseconds.
   mounted() {
     const targets = this.$el;
     // Wrap every letter in a span
@@ -56,7 +55,7 @@ export default {
     // );
 
     this.$anime.timeline({}).add({
-      targets: ".ml13 .word",
+      targets: ".intro-text .word",
       translateY: [100, 0],
       translateZ: 0,
       opacity: [0, 1],
@@ -66,6 +65,7 @@ export default {
     });
     window.setInterval(() => {
       this.pollPerson();
+      // The time that each role stays on screen in milliseconds.
     }, 350);
   },
   methods: {
@@ -84,7 +84,7 @@ div {
 u::selection {
   color: var(--eggplant);
 }
-.ml13 .word {
+.intro-text .word {
   display: inline-block;
   line-height: 1em;
 }

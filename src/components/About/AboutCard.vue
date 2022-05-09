@@ -50,7 +50,8 @@
           class="text-pastel-pink font-medium text-xs lg:text-sm tracking-widest uppercase antialiased">
           About Me
         </div>
-        <h1 class="text-unbleached-silk font-bold text-5xl antialiased">
+        <h1
+          class="about-text text-unbleached-silk font-bold text-5xl lg:text-6xl antialiased">
           Rony Majzoub
         </h1>
       </figcaption>
@@ -114,6 +115,27 @@ export default {
       this.style.transition = "opacity 1s";
       this.style.opacity = "1";
     }
+    // Wrap every word in a span
+    var textWrapper = document.querySelector(".about-text");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S+/g,
+      "<span class='word'>$&</span>"
+    );
+    this.$anime.timeline({}).add({
+      targets: ".about-text .word",
+      translateY: [25, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutQuint",
+      duration: 1000,
+      delay: (el, i) => 300 + 25 * i,
+    });
   },
 };
 </script>
+<style lang="scss">
+.about-text .word {
+  display: inline-block;
+  line-height: 1em;
+}
+</style>

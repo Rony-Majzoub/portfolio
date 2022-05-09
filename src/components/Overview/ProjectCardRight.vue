@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="max-w-screen-2xl relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 transition-transform ease-in-out duration-300 hover:-translate-y-1 group transform-gpu">
+    class="max-w-screen-2xl relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 transition-transform ease-in-out duration-300 hover:-translate-y-1 group transform-gpu mb-40">
     <!-- Blurred element behind Card -->
     <figure
       class="lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 absolute w-full h-full left-0 top-0 z-[-10] blur-xl contrast-150 mix-blend-lighten opacity-0 group-hover:opacity-25 will-change-[opacity,_filter] transition-opacity ease-in-out duration-300 transform-gpu">
