@@ -38,7 +38,7 @@
         class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0] bg-black" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
-        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_3.0/${imageLink}`"
         width="384"
         height="552"
         class="cld-responsive high-def absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0]" />
@@ -102,9 +102,17 @@ export default {
     },
   },
   mounted() {
+    function myBreakpoints(width) {
+      // width - the current width of the containing element
+      return 10 * Math.ceil(width / 10);
+    }
     var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
-    // replace 'demo' with your cloud name in the line above
+    cl.config({
+      breakpoints: myBreakpoints,
+      responsive_use_breakpoints: "resize",
+    });
     cl.responsive();
+
     const images = document.getElementsByClassName("high-def");
     for (let image of images) {
       image.addEventListener("load", fadeImg);
