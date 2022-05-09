@@ -4,7 +4,9 @@
       class="text-pastel-pink tracking-widest font-semibold text-base uppercase antialiased">
       {{ info }}
     </p>
-    <h1 class="text-7xl font-bold text-unbleached-silk">{{ title }}</h1>
+    <h1 class="text-6xl sm:text-7xl font-bold text-unbleached-silk">
+      {{ title }}
+    </h1>
     <h2 class="text-melon text-xl font-semibold">{{ brief }}</h2>
   </div>
 </template>

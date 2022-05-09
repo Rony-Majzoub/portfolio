@@ -1,23 +1,23 @@
 import { createRouter, createWebHashHistory } from "vue-router";
-import Projects from "@/views/Projects.vue";
-import Fun from "@/views/Fun.vue";
-import About from "@/views/About.vue";
+// import Projects from "@/views/Projects.vue";
+// import Fun from "@/views/Fun.vue";
+// import About from "@/views/About.vue";
 
 const routes = [
   {
     path: "/",
     name: "Projects",
-    component: Projects,
+    component: () => import("@/views/Projects.vue"),
   },
   {
     path: "/fun",
     name: "Fun",
-    component: Fun,
+    component: () => import("@/views/Fun.vue"),
   },
   {
     path: "/about",
     name: "About",
-    component: About,
+    component: () => import("@/views/About.vue"),
   },
   {
     path: "/recypie",

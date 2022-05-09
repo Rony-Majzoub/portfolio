@@ -65,7 +65,7 @@
       </div>
       <p
         class="font-semibold text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">
-        Copyright 2021 Rony Majzoub
+        Copyright {{ new Date().getFullYear() }} Rony Majzoub
       </p>
     </div>
   </footer>

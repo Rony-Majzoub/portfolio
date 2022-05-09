@@ -1,6 +1,5 @@
 <template>
-  <div
-    class="col-span-full grid grid-cols-10 gap-y-8 place-items-center overflow-hidden py-12">
+  <div class="col-span-full grid grid-cols-10 place-items-center">
     <AboutCard />
   </div>
 </template>
