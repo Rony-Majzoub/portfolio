@@ -22,21 +22,24 @@
         description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
         category="UI/UX & Product Design"
         tag="Product Development"
-        image="smoove-park.jpg" />
+        image="smoove-park.jpg"
+        image-link="v1652044733/portfolio/smoove-park_llfnlq.jpg" />
       <ProjectCardLeft
         link="recypie"
         title="RecyPie"
         description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
         category="UI & UX Design"
         tag="Visual Concept"
-        image="recypie.png" />
+        image="recypie.png"
+        image-link="v1652044733/portfolio/recypie_vrzeuf.png" />
       <ProjectCardRight
         link="buratino"
         title="Buratino Instruktino"
         description="After many years of renting their premises to customers, Buratino searched for a replacement for their aging physical instruction manual. After half a year of development, we delivered a solution that is now in use."
         category="Web Development"
         tag="Website"
-        image="buratino.png" />
+        image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png" />
       <ProjectCardRight></ProjectCardRight>
       <ProjectCardLeft></ProjectCardLeft>
     </main>

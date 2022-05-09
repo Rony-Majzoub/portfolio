@@ -5,7 +5,11 @@
       info="2021 - UI & UX Design"
       title="RecyPie"
       brief="Create and design a modern, digital solution to a global problem." />
-    <ProjectImage class="mb-10" image="recypie.png" alt-text="RecyPie" />
+    <ProjectImage
+      class="mb-10"
+      image="recypie.png"
+      image-link="v1652044733/portfolio/recypie_vrzeuf.png"
+      alt-text="RecyPie" />
     <ProjectTags
       client="Yrgo DD21"
       team="Myself"

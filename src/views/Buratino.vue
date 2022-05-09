@@ -8,6 +8,7 @@
     <ProjectImage
       class="mb-10"
       image="buratino.png"
+      image-link="v1652044733/portfolio/buratino_lzsy5p.png"
       alt-text="Buratino Instruktino" />
     <ProjectTags
       client="Buratino AB"

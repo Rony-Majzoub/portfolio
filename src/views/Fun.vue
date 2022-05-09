@@ -10,76 +10,91 @@
         title="Buratino"
         tag="Website"
         image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png"
         link="buratino" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
+        image-link="v1652044733/portfolio/recypie_vrzeuf.png"
         link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png"
         link="buratino" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
+        image-link="v1652044733/portfolio/recypie_vrzeuf.png"
         link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png"
         link="buratino" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
+        image-link="v1652044733/portfolio/recypie_vrzeuf.png"
         link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png"
         link="buratino" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
+        image-link="v1652044733/portfolio/recypie_vrzeuf.png"
         link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png"
         link="buratino" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
+        image-link="v1652044733/portfolio/recypie_vrzeuf.png"
         link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png"
         link="buratino" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
+        image-link="v1652044733/portfolio/recypie_vrzeuf.png"
         link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png"
         link="buratino" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
+        image-link="v1652044733/portfolio/recypie_vrzeuf.png"
         link="recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
+        image-link="v1652044733/portfolio/buratino_lzsy5p.png"
         link="buratino" />
     </main>
   </div>

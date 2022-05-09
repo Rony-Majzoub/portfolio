@@ -1,26 +1,36 @@
 <template>
   <figure
     class="max-w-screen-2xl relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 transition-transform ease-in-out duration-300 hover:-translate-y-1 group transform-gpu">
+    <!-- Blurred element behind Card -->
     <figure
       class="lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 absolute w-full h-full left-0 top-0 z-[-10] blur-xl contrast-150 mix-blend-lighten opacity-0 group-hover:opacity-25 will-change-[opacity,_filter] transition-opacity ease-in-out duration-300 transform-gpu">
+      <!-- Image Container -->
       <div
-        class="overflow-hidden lg:w-7/12 flex-none lg:rounded-none lg:rounded-l-xl rounded-t-xl">
+        class="relative overflow-hidden lg:w-7/12 flex-none h-full lg:rounded-none lg:rounded-l-xl rounded-t-xl">
+        <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
-          class="object-cover w-full h-96 lg:h-full cursor-pointer text-[0]"
-          width="512"
-          height="512"
-          :src="`/assets/img/${image}`"
+          class="cld-responsive absolute object-cover w-full h-96 lg:h-full cursor-pointer text-[0]"
+          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           @click="$router.push(`/${link}`)" />
       </div>
       <div
         class="pt-6 p-8 text-right lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full"></div>
     </figure>
+    <!-- Image Container -->
     <div
-      class="overflow-hidden lg:w-7/12 flex-none lg:rounded-none lg:rounded-l-xl rounded-t-xl">
+      class="relative overflow-hidden lg:w-7/12 flex-none h-96 lg:h-auto lg:rounded-none lg:rounded-l-xl rounded-t-xl">
+      <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
-        class="object-cover w-full h-96 lg:h-full cursor-pointer text-[0]"
+        class="cld-responsive absolute object-cover w-full h-96 lg:h-full cursor-pointer text-[0] bg-cameo-pink"
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640,e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+        :alt="`${title}`"
+        @click="$router.push(`/${link}`)" />
+      <!-- Sharp Final Image (Cloudinary) -->
+      <img
+        class="cld-responsive high-def absolute object-cover w-full h-96 lg:h-full cursor-pointer text-[0]"
         :src="`/assets/img/${image}`"
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
         :alt="`${title}`"
         @click="$router.push(`/${link}`)" />
     </div>
@@ -60,6 +70,7 @@
 
 <script>
 import ProjectButton from "./ProjectButton.vue";
+import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
 export default {
   name: "ProjectCardRight",
   components: {
@@ -86,10 +97,28 @@ export default {
       default: "recypie.png",
       type: String,
     },
+    imageLink: {
+      default: "v1652044733/portfolio/recypie_vrzeuf.png",
+      type: String,
+    },
     link: {
       default: "",
       type: String,
     },
+  },
+  mounted() {
+    var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
+    cl.responsive();
+    const images = document.getElementsByClassName("high-def");
+    for (let image of images) {
+      image.addEventListener("load", fadeImg);
+      image.style.opacity = "0";
+    }
+
+    function fadeImg() {
+      this.style.transition = "opacity 1s";
+      this.style.opacity = "1";
+    }
   },
 };
 </script>

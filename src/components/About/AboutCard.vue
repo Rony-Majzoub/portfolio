@@ -1,28 +1,47 @@
 <template>
   <figure
     class="relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-start-2 col-end-[-2] lg:min-h-128 lg:h-fit w-full max-w-6xl transition-all ease-in-out duration-300 hover:-translate-y-1 group transform-gpu">
+    <!-- Blurred element behind Card -->
     <figure
       class="lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full absolute w-full h-full left-0 top-0 z-[-10] blur-xl contrast-200 mix-blend-lighten opacity-0 group-hover:opacity-50 will-change-[opacity,_filter] transition-opacity ease-in-out duration-300 transform-gpu">
+      <!-- Image Container -->
       <div
-        class="h-full overflow-hidden w-full lg:w-4/12 lg:rounded-none lg:rounded-l-xl rounded-t-xl lg:max-w-fit">
-        <img
+        class="h-full relative overflow-hidden w-full lg:w-4/12 lg:rounded-none lg:rounded-l-xl rounded-t-xl lg:max-w-fit">
+        <!-- <img
           class="object-cover object-[center_20%] w-full h-96 lg:h-full"
           src="/assets/pfp.jpg"
-          alt="" />
+          alt="" /> -->
+        <!-- Blurred Placeholder Image (Cloudinary) -->
+        <img
+          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+          width="384"
+          height="552"
+          class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full" />
       </div>
       <div
         class="pt-6 p-8 text-left lg:mb-0 w-full gap-4 flex flex-col justify-between h-full max-w-prose"></div>
     </figure>
+    <!-- Image Container -->
     <div
-      class="overflow-hidden w-full lg:w-4/12 lg:rounded-none lg:rounded-l-xl rounded-t-xl lg:max-w-fit">
-      <img
+      class="relative overflow-hidden w-full lg:w-4/12 h-96 lg:h-auto lg:rounded-none lg:rounded-l-xl rounded-t-xl">
+      <!-- <img
         class="object-cover object-[center_20%] w-full h-96 lg:h-full text-[0]"
         width="384"
         height="552"
         src="/assets/pfp.jpg"
-        alt="Profile Picture" />
-      <div
-        class="top-0 left-0 object-cover object-[center_20%] w-full lg:w-96 h-96 lg:h-full bg-black hidden lg:block"></div>
+        alt="Profile Picture" /> -->
+      <!-- Blurred Placeholder Image (Cloudinary) -->
+      <img
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_640/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+        width="384"
+        height="552"
+        class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0] bg-black" />
+      <!-- Sharp Final Image (Cloudinary) -->
+      <img
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+        width="384"
+        height="552"
+        class="cld-responsive high-def absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0]" />
     </div>
     <div
       class="pt-6 p-8 text-left lg:mb-0 w-full gap-4 flex flex-col justify-between h-full max-w-prose">
@@ -68,6 +87,7 @@
 
 <script>
 import AboutPill from "@/components/About/AboutPill.vue";
+import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
 
 export default {
   name: "AboutCard",
@@ -75,10 +95,25 @@ export default {
     AboutPill,
   },
   props: {
-    link: {
-      default: "",
+    imageLink: {
+      default: "v1652044758/portfolio/pfp_o5mrxd.jpg",
       type: String,
     },
+  },
+  mounted() {
+    var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
+    // replace 'demo' with your cloud name in the line above
+    cl.responsive();
+    const images = document.getElementsByClassName("high-def");
+    for (let image of images) {
+      image.addEventListener("load", fadeImg);
+      image.style.opacity = "0";
+    }
+
+    function fadeImg() {
+      this.style.transition = "opacity 1s";
+      this.style.opacity = "1";
+    }
   },
 };
 </script>

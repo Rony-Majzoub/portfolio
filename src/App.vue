@@ -4,7 +4,12 @@
     <div
       class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
-        <img class="h-11 col-span-1" src="/assets/logo.svg" alt="" />
+        <img
+          class="h-11 col-span-1"
+          src="/assets/logo.svg"
+          alt="Rony Majzoub Logo"
+          width="72"
+          height="44" />
       </router-link>
       <div class="navigation-items flex col-span-full flex-row gap-4">
         <router-link
