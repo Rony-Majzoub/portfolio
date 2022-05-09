@@ -8,7 +8,7 @@
     <ProjectImage
       class="mb-10"
       image="smoove-park.jpg"
-      image-link="v1652044733/portfolio/smoove-park_llfnlq.jpg"
+      image-link="v1652044733/portfolio/cover/smoove.jpg"
       alt-text="Smoove Park" />
     <ProjectTags
       client="Yrgo DD21"

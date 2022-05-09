@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-start-2 col-end-[-2] lg:min-h-128 lg:h-fit w-full max-w-6xl transition-all ease-in-out duration-300 hover:-translate-y-1 group transform-gpu">
+    class="relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-start-1 col-end-[-1] sm:col-start-2 sm:col-end-[-2] lg:min-h-128 lg:h-fit w-full max-w-6xl transition-all ease-in-out duration-300 hover:-translate-y-1 group transform-gpu">
     <!-- Blurred element behind Card -->
     <figure
       class="lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full absolute w-full h-full left-0 top-0 z-[-10] blur-xl contrast-200 mix-blend-lighten opacity-0 group-hover:opacity-50 will-change-[opacity,_filter] transition-opacity ease-in-out duration-300 transform-gpu">
@@ -16,6 +16,7 @@
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           width="384"
           height="552"
+          src="/assets/pfp.jpg"
           class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full" />
       </div>
       <div
@@ -35,12 +36,14 @@
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
         width="384"
         height="552"
+        src="/assets/pfp.jpg"
         class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0] bg-black" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_3.0/${imageLink}`"
         width="384"
         height="552"
+        src="/assets/pfp.jpg"
         class="cld-responsive high-def absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0]" />
     </div>
     <div

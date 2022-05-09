@@ -9,8 +9,9 @@
         class="relative overflow-hidden lg:w-7/12 flex-none h-full lg:rounded-none lg:rounded-r-xl rounded-t-xl">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
-          class="cld-responsive absolute object-cover w-full h-96 lg:h-full cursor-pointer text-[0]"
+          class="cld-responsive absolute object-cover w-full h-64 lg:h-full cursor-pointer text-[0]"
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+          :src="`/assets/img/${image}`"
           :alt="`${title}`"
           @click="$router.push(`/${link}`)" />
       </div>
@@ -19,16 +20,17 @@
     </figure>
     <!-- Image Container -->
     <div
-      class="relative overflow-hidden lg:w-7/12 flex-none lg:rounded-none h-96 lg:h-auto lg:rounded-r-xl rounded-t-xl">
+      class="relative overflow-hidden lg:w-7/12 flex-none lg:rounded-none h-64 lg:h-auto lg:rounded-r-xl rounded-t-xl">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
-        class="cld-responsive absolute object-cover w-full h-96 lg:h-full cursor-pointer text-[0] bg-eggplant"
+        class="cld-responsive absolute object-cover w-full h-64 lg:h-full cursor-pointer text-[0] bg-eggplant"
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480,e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+        :src="`/assets/img/${image}`"
         :alt="`${title}`"
         @click="$router.push(`/${link}`)" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
-        class="cld-responsive high-def absolute object-cover w-full h-96 lg:h-full cursor-pointer text-[0]"
+        class="cld-responsive high-def absolute object-cover w-full h-64 lg:h-full cursor-pointer text-[0]"
         :src="`/assets/img/${image}`"
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
         :alt="`${title}`"
@@ -98,7 +100,7 @@ export default {
       type: String,
     },
     imageLink: {
-      default: "v1652044733/portfolio/recypie_vrzeuf.png",
+      default: "v1652044733/portfolio/cover/recypie.png",
       type: String,
     },
     link: {

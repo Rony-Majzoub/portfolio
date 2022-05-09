@@ -37,7 +37,7 @@ export default {
     );
     this.$anime.timeline({}).add({
       targets: ".info-text .word",
-      translateY: [75, 0],
+      translateY: [50, 0],
       translateZ: 0,
       opacity: [0, 1],
       easing: "easeOutQuint",
@@ -51,7 +51,7 @@ export default {
     );
     this.$anime.timeline({}).add({
       targets: ".title-text .word",
-      translateY: [100, 0],
+      translateY: [50, 0],
       translateZ: 0,
       opacity: [0, 1],
       easing: "easeOutQuint",
@@ -65,7 +65,7 @@ export default {
     );
     this.$anime.timeline({}).add({
       targets: ".brief-text .word",
-      translateY: [75, 0],
+      translateY: [50, 0],
       translateZ: 0,
       opacity: [0, 1],
       easing: "easeOutQuint",

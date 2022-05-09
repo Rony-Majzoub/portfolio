@@ -26,7 +26,7 @@
         category="UI/UX & Product Design"
         tag="Product Development"
         image="smoove-park.jpg"
-        image-link="v1652044733/portfolio/smoove-park_llfnlq.jpg" />
+        image-link="v1652044733/portfolio/cover/smoove.jpg" />
       <ProjectCardLeft
         link="recypie"
         title="RecyPie"
@@ -34,7 +34,7 @@
         category="UI & UX Design"
         tag="Visual Concept"
         image="recypie.png"
-        image-link="v1652044733/portfolio/recypie_vrzeuf.png" />
+        image-link="v1652044733/portfolio/cover/recypie.png" />
       <ProjectCardRight
         link="buratino"
         title="Buratino Instruktino"
@@ -42,7 +42,7 @@
         category="Web Development"
         tag="Website"
         image="buratino.png"
-        image-link="v1652044733/portfolio/buratino_lzsy5p.png" />
+        image-link="v1652044733/portfolio/cover/buratino.png" />
       <ProjectCardRight></ProjectCardRight>
       <ProjectCardLeft></ProjectCardLeft>
     </main>

@@ -44,23 +44,28 @@
         class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
         <a
           href="mailto:majzoubrony@gmail.com"
-          class="text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">
+          class="text-melon transition-all duration-200 font-bold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
           majzoubrony@gmail.com
         </a>
         <a
           href="tel:+46722960295"
-          class="text-melon font-bold no-underline text-sm lg:text-base tracking-wide antialiased">
+          class="text-melon transition-all duration-200 font-bold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
           072 296 02 95
         </a>
         <a
           href="https://www.linkedin.com/in/rony-majzoub"
-          class="social-media text-melon font-extrabold no-underline text-sm lg:text-base tracking-wide antialiased">
+          class="social-media text-melon transition-all duration-200 font-extrabold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
           LinkedIn
         </a>
         <a
           href="https://www.instagram.com/rony.majzoub/"
-          class="social-media text-melon font-extrabold no-underline text-sm lg:text-base tracking-wide antialiased">
+          class="social-media text-melon transition-all duration-200 font-extrabold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
           Instagram
+        </a>
+        <a
+          href="https://www.instagram.com/rony.majzoub/"
+          class="social-media text-melon transition-all duration-200 font-extrabold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
+          &#9432; About this Website
         </a>
       </div>
       <p
