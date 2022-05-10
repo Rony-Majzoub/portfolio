@@ -32,7 +32,7 @@
     </div>
   </header>
   <router-view v-slot="{ Component }">
-    <transition name="fade-in-up">
+    <transition name="fade-in-up" appear>
       <component :is="Component" v-cloak />
     </transition>
   </router-view>
