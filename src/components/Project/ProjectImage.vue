@@ -1,13 +1,13 @@
 c
 <template>
   <div
-    class="lg:col-start-2 lg:col-end-[-2] col-span-full relative aspect-video">
+    class="lg:col-start-2 lg:col-end-[-2] col-span-full relative aspect-video bg-eggplant">
     <!-- Blurred Placeholder Image (Cloudinary) -->
     <img
       :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
       :src="`/assets/img/${image}`"
       :alt="`${altText}`"
-      class="cld-responsive absolute object-cover object-[center_60%] w-full max-h-full rounded-lg bg-eggplant" />
+      class="cld-responsive absolute object-cover object-[center_60%] w-full max-h-full rounded-lg" />
     <!-- Sharp Final Image (Cloudinary) -->
     <img
       :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"

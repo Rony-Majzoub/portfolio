@@ -56,6 +56,11 @@ import ProjectCardRight from "@/components/Overview/ProjectCardRight.vue";
 import ProjectCardLeft from "@/components/Overview/ProjectCardLeft.vue";
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
+// import { defineAsyncComponent } from "vue";
+
+// const AsyncComp = defineAsyncComponent(() =>
+//   import("./components/MyComponent.vue")
+// );
 
 export default {
   name: "Projects",
