@@ -5,9 +5,9 @@
       class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
         <img
-          class="h-11 col-span-1"
+          class="h-11 col-span-1 text-melon font-semibold"
           src="/assets/logo.svg"
-          alt="Rony Majzoub Logo"
+          alt="Rony Majzoub"
           width="72"
           height="44" />
       </router-link>
@@ -32,7 +32,7 @@
     </div>
   </header>
   <router-view v-slot="{ Component }">
-    <transition name="fade-in-up" appear>
+    <transition :css="false" appear @enter="enterElement" @leave="leaveElement">
       <component :is="Component" v-cloak />
     </transition>
   </router-view>
@@ -82,6 +82,30 @@ export default {
   components: {
     Sidebar,
   },
+  methods: {
+    enterElement(el, done) {
+      console.log(el);
+      this.$anime({
+        targets: el,
+        translate3dY: [40, 0],
+        opacity: [0, 1],
+        duration: 500,
+        delay: 300,
+        easing: "easeOutCubic",
+        complete: done,
+      });
+    },
+    leaveElement(el, done) {
+      this.$anime({
+        targets: el,
+        translate3dY: [0, 20],
+        opacity: [1, 0],
+        duration: 200,
+        easing: "easeInQuint",
+        complete: done,
+      });
+    },
+  },
 };
 </script>
 
@@ -103,12 +127,15 @@ html {
   content: "";
   z-index: 999;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: -50%;
+  left: -50%;
+  right: -50%;
+  bottom: -50%;
   opacity: 0.5;
-  width: 100vw;
-  height: 100vh;
-  background: url("/assets/img/background-noise.png");
+  width: 200%;
+  height: 200vh;
+  background: transparent url("/assets/img/background-noise.png") repeat 0 0;
+  background-repeat: repeat;
   animation: 0.2s infinite noise;
   pointer-events: none;
 }
@@ -119,77 +146,79 @@ html {
 }
 
 @keyframes noise {
-  0%,
-  100% {
-    background-position: 0 0;
+  0% {
+    transform: translate3d(0, 0, 0);
   }
   10% {
-    background-position: -5% -10%;
+    transform: translate3d(-5%, -10%, 0);
   }
   20% {
-    background-position: -15% 5%;
+    transform: translate3d(-15%, 5%, 0);
   }
   30% {
-    background-position: 7% -25%;
+    transform: translate3d(7%, -25%, 0);
   }
   40% {
-    background-position: 20% 25%;
+    transform: translate3d(20%, 25%, 0);
   }
   50% {
-    background-position: -25% 10%;
+    transform: translate3d(-25%, 10%, 0);
   }
   60% {
-    background-position: 15% 5%;
+    transform: translate3d(15%, 5%, 0);
   }
   70% {
-    background-position: 0% 15%;
+    transform: translate3d(0, 15%, 0);
   }
   80% {
-    background-position: 25% 35%;
+    transform: translate3d(25%, 35%, 0);
   }
   90% {
-    background-position: -10% 10%;
+    transform: translate3d(10%, 5%, 0);
   }
-}
-
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translate3d(0, 40px, 0);
-  }
-
-  to {
+  100% {
     transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-@keyframes fadeOutDown {
-  from {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-
-  to {
-    transform: translate3d(0, 0px, 0);
-    opacity: 0;
   }
 }
 
-.fade-in-up-leave-to {
-  opacity: 0;
-  animation-duration: 0.2s;
-  animation-timing-function: var(--animation-curve);
-  animation-fill-mode: both;
-  animation-name: fadeOutDown;
-}
-.fade-in-up-enter-to {
-  opacity: 0;
-  animation-duration: 0.5s;
-  animation-delay: 0.2s;
-  animation-timing-function: var(--animation-curve);
-  animation-fill-mode: both;
-  animation-name: fadeInUp;
-}
+// @keyframes fadeInUp {
+//   from {
+//     opacity: 0;
+//     transform: translate3d3d(0, 40px, 0);
+//   }
+
+//   to {
+//     transform: translate3d3d(0, 0, 0);
+//     opacity: 1;
+//   }
+// }
+// @keyframes fadeOutDown {
+//   from {
+//     transform: translate3d3d(0, 0, 0);
+//     opacity: 1;
+//   }
+
+//   to {
+//     transform: translate3d3d(0, 0px, 0);
+//     opacity: 0;
+//   }
+// }
+
+// .fade-in-up-leave-to {
+//   opacity: 0;
+//   animation-duration: 0.2s;
+//   animation-timing-function: var(--animation-curve);
+//   animation-fill-mode: both;
+//   animation-name: fadeOutDown;
+// }
+// .fade-in-up-enter-to {
+//   opacity: 0;
+//   animation-duration: 0.5s;
+//   animation-delay: 0.2s;
+//   animation-timing-function: var(--animation-curve);
+//   animation-fill-mode: both;
+//   animation-name: fadeInUp;
+// }
 // @include breakpoint(sm) {
 //   #app {
 //     padding-top: 10rem;

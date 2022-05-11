@@ -1,7 +1,7 @@
 c
 <template>
   <div
-    class="lg:col-start-2 lg:col-end-[-2] col-span-full relative aspect-video bg-eggplant">
+    class="lg:col-start-2 lg:col-end-[-2] col-span-full relative aspect-video rounded-lg bg-eggplant">
     <!-- Blurred Placeholder Image (Cloudinary) -->
     <img
       :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
