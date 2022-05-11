@@ -87,7 +87,7 @@ export default {
       console.log(el);
       this.$anime({
         targets: el,
-        translate3dY: [40, 0],
+        translateY: [40, 0],
         opacity: [0, 1],
         duration: 500,
         delay: 300,
@@ -98,7 +98,7 @@ export default {
     leaveElement(el, done) {
       this.$anime({
         targets: el,
-        translate3dY: [0, 20],
+        translateY: [0, 20],
         opacity: [1, 0],
         duration: 200,
         easing: "easeInQuint",
