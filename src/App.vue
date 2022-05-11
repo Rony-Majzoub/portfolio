@@ -150,34 +150,34 @@ html {
     transform: translate3d(0, 0, 0);
   }
   10% {
-    transform: translate3d(-5%, -10%, 0);
+    transform: translate3d(-5%, -5%, 0);
   }
   20% {
-    transform: translate3d(-15%, 5%, 0);
+    transform: translate3d(-10%, 5%, 0);
   }
   30% {
-    transform: translate3d(7%, -25%, 0);
+    transform: translate3d(5%, -10%, 0);
   }
   40% {
-    transform: translate3d(20%, 25%, 0);
+    transform: translate3d(-5%, 15%, 0);
   }
   50% {
-    transform: translate3d(-25%, 10%, 0);
+    transform: translate3d(-10%, 5%, 0);
   }
   60% {
-    transform: translate3d(15%, 5%, 0);
+    transform: translate3d(15%, 0, 0);
   }
   70% {
-    transform: translate3d(0, 15%, 0);
+    transform: translate3d(0, 10%, 0);
   }
   80% {
-    transform: translate3d(25%, 35%, 0);
+    transform: translate3d(-15%, 0, 0);
   }
   90% {
     transform: translate3d(10%, 5%, 0);
   }
   100% {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(5%, 0, 0);
   }
 }
 
