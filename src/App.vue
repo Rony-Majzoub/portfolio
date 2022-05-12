@@ -84,7 +84,6 @@ export default {
   },
   methods: {
     enterElement(el, done) {
-      console.log(el);
       this.$anime({
         targets: el,
         translateY: [40, 0],

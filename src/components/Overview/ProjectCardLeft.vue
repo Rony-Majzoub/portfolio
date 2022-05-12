@@ -55,11 +55,14 @@
       </blockquote>
       <project-button
         class="float-left lg:absolute lg:bottom-8 lg:right-8 lg:hidden"
+        :short-title="shortTitle"
         @click="$router.push(`/${link}`)"></project-button>
       <footer class="hidden w-full h-full lg:flex items-end">
         <div
           class="flex flex-row-reverse items-end xl:items-baseline w-full justify-between">
-          <project-button @click="$router.push(`/${link}`)"></project-button>
+          <project-button
+            :short-title="shortTitle"
+            @click="$router.push(`/${link}`)"></project-button>
           <p
             class="hidden lg:flex lg:text-lg font-semibold tracking-wide text-pastel-pink text-left">
             {{ category }}
@@ -105,6 +108,10 @@ export default {
     },
     link: {
       default: "",
+      type: String,
+    },
+    shortTitle: {
+      default: "Project",
       type: String,
     },
   },

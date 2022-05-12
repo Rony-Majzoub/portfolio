@@ -17,6 +17,7 @@
           width="384"
           height="552"
           src="/assets/pfp.jpg"
+          role="presentation"
           class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full" />
       </div>
       <div
@@ -37,6 +38,7 @@
         width="384"
         height="552"
         src="/assets/pfp.jpg"
+        alt="Rony Majzoub Picture Low-Resolution"
         class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0] bg-black" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
@@ -44,6 +46,7 @@
         width="384"
         height="552"
         src="/assets/pfp.jpg"
+        alt="Rony Majzoub Picture High-Resolution"
         class="cld-responsive high-def absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0]" />
     </div>
     <div
@@ -71,10 +74,10 @@
         </p>
       </blockquote>
       <footer class="flex flex-col gap-4 pt-4 lg:pt-8">
-        <h3
+        <h2
           class="text-unbleached-silk font-bold text-lg lg:text-xl tracking-wider uppercase antialiased">
           Interests
-        </h3>
+        </h2>
         <div class="flex flex-row flex-wrap gap-4">
           <AboutPill skill="Digital Design" />
           <AboutPill skill="UX/UI Design" />

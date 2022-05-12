@@ -4,8 +4,9 @@
     <IntroText
       class="flex justify-center items-center flex-wrap content-center col-span-full" />
     <router-link
-      class="arrow -translate-y-full col-span-full mt-20 bg-transparent justify-self-center"
+      class="arrow -translate-y-full col-span-full mt-20 bg-transparent justify-self-center text-[0] text-melon"
       :to="{ path: '/', hash: '#projects' }">
+      View All Projects
       <Vue3Lottie
         ref="projects"
         :animation-link="'/assets/arrow.json'"
@@ -22,6 +23,7 @@
       <ProjectCardRight
         link="smoove"
         title="Smoove"
+        short-title="Smoove"
         description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
         category="UI/UX & Product Design"
         tag="Product Development"
@@ -30,6 +32,7 @@
       <ProjectCardLeft
         link="recypie"
         title="RecyPie"
+        short-title="RecyPie"
         description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
         category="UI & UX Design"
         tag="Visual Concept"
@@ -38,6 +41,7 @@
       <ProjectCardRight
         link="buratino"
         title="Buratino Instruktino"
+        short-title="Buratino"
         description="After many years of renting their premises to customers, Buratino searched for a replacement for their aging physical instruction manual. After half a year of development, we delivered a solution that is now in use."
         category="Web Development"
         tag="Website"

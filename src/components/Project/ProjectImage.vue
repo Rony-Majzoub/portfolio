@@ -1,4 +1,3 @@
-c
 <template>
   <div
     class="lg:col-start-2 lg:col-end-[-2] col-span-full relative aspect-video rounded-lg bg-eggplant">
