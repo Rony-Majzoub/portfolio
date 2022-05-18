@@ -9,7 +9,7 @@
       </p>
     </div>
     <div
-      class="snap-x snap-mandatory flex flex-row items-center overflow-x-scroll w-full h-full gap-4 p-2 lg:gap-8 lg:p-4 rounded-lg bg-eggplant">
+      class="snap-x snap-mandatory flex flex-row items-center overflow-x-scroll w-full h-full gap-4 p-2 lg:gap-6 lg:p-4 rounded-xl bg-eggplant border-[6px] border-cameo-pink">
       <ProjectImage
         class="w-[80%] snap-center shrink-0"
         image="smoove.jpg"
