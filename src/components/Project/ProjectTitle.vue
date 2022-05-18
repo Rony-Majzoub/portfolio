@@ -76,6 +76,7 @@ export default {
 };
 </script>
 <style lang="scss">
+// Display inline-block so word-animation works.
 .word {
   display: inline-block;
   line-height: 1em;

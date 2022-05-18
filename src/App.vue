@@ -1,6 +1,6 @@
 <template>
   <header
-    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 py-3 z-50 bg-transparent bg-gradient-dot bg-[length:8px_8px]">
+    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 py-3 z-50 bg-transparent bg-gradient-dot bg-[length:10px_10px]">
     <div
       class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
@@ -179,97 +179,4 @@ html {
     transform: translate3d(5%, 0, 0);
   }
 }
-
-// @keyframes fadeInUp {
-//   from {
-//     opacity: 0;
-//     transform: translate3d3d(0, 40px, 0);
-//   }
-
-//   to {
-//     transform: translate3d3d(0, 0, 0);
-//     opacity: 1;
-//   }
-// }
-// @keyframes fadeOutDown {
-//   from {
-//     transform: translate3d3d(0, 0, 0);
-//     opacity: 1;
-//   }
-
-//   to {
-//     transform: translate3d3d(0, 0px, 0);
-//     opacity: 0;
-//   }
-// }
-
-// .fade-in-up-leave-to {
-//   opacity: 0;
-//   animation-duration: 0.2s;
-//   animation-timing-function: var(--animation-curve);
-//   animation-fill-mode: both;
-//   animation-name: fadeOutDown;
-// }
-// .fade-in-up-enter-to {
-//   opacity: 0;
-//   animation-duration: 0.5s;
-//   animation-delay: 0.2s;
-//   animation-timing-function: var(--animation-curve);
-//   animation-fill-mode: both;
-//   animation-name: fadeInUp;
-// }
-// @include breakpoint(sm) {
-//   #app {
-//     padding-top: 10rem;
-//     padding-bottom: 10rem;
-//   }
-// }
-// @include breakpoint(md) {
-//   .router-link-active {
-//     text-decoration: underline !important;
-//     text-decoration-color: var(--unbleached-silk) !important;
-//     color: var(--unbleached-silk) !important;
-//     transition: var(--animation-curve) 250ms !important;
-//   }
-//   .navigation-items {
-//     grid-column: 12;
-//     display: flex;
-//     flex-direction: row;
-//     align-items: center;
-//     gap: 1em;
-//   }
-//   .nav-desktop {
-//     display: inline !important;
-//     @include subtitle-1;
-//     color: var(--cameo-pink);
-//     text-underline-offset: 0.25em !important;
-//     text-decoration-thickness: 2px !important;
-//     text-decoration-color: transparent;
-//     font-size: var(--text-md);
-//     font-weight: 500;
-//     line-height: var(--heading-line-height);
-//     text-align: right;
-//     transition: var(--animation-curve) 250ms !important;
-//   }
-//   .page-footer {
-//     display: grid;
-//     grid-template-columns: repeat(12, 1fr);
-//     grid-column: 2 / -2;
-//     padding: 1rem 0;
-//     height: initial;
-//     div {
-//       grid-column: 1 / -1;
-//       flex-direction: row;
-//       justify-content: space-between;
-//       gap: 2rem;
-//     }
-//   }
-//   html {
-//     font-size: 14px;
-//   }
-// }
-// [v-cloak] {
-//   display: none !important;
-// }
-//
 </style>

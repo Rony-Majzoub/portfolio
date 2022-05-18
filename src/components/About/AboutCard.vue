@@ -118,13 +118,13 @@ export default {
       responsive_use_breakpoints: "resize",
     });
     cl.responsive();
-
+    // Get the high-res image and hide it initially.
     const images = document.getElementsByClassName("high-def");
     for (let image of images) {
       image.addEventListener("load", fadeImg);
       image.style.opacity = "0";
     }
-
+    // Fade in high-res image on-load.
     function fadeImg() {
       this.style.transition = "opacity 1s";
       this.style.opacity = "1";
@@ -148,6 +148,7 @@ export default {
 };
 </script>
 <style lang="scss">
+// Display inline-block so word-animation works.
 .about-text .word {
   display: inline-block;
   line-height: 1em;

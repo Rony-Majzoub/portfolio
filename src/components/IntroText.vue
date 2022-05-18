@@ -84,6 +84,7 @@ div {
 u::selection {
   color: var(--eggplant);
 }
+// Display inline-block so word-animation works.
 .intro-text .word {
   display: inline-block;
   line-height: 1em;

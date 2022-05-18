@@ -28,7 +28,7 @@
         category="UI/UX & Product Design"
         tag="Product Development"
         image="smoove-park.jpg"
-        image-link="v1652044733/portfolio/cover/smoove.jpg" />
+        image-link="v1652044733/portfolio/smoove/smoove.jpg" />
       <ProjectCardLeft
         link="recypie"
         title="RecyPie"
@@ -37,7 +37,7 @@
         category="UI & UX Design"
         tag="Visual Concept"
         image="recypie.png"
-        image-link="v1652044733/portfolio/cover/recypie.png" />
+        image-link="v1652044733/portfolio/recypie/recypie.png" />
       <ProjectCardRight
         link="buratino"
         title="Buratino Instruktino"
@@ -46,7 +46,7 @@
         category="Web Development"
         tag="Website"
         image="buratino.png"
-        image-link="v1652044733/portfolio/cover/buratino.png" />
+        image-link="v1652044733/portfolio/buratino/buratino.png" />
       <ProjectCardRight></ProjectCardRight>
       <ProjectCardLeft></ProjectCardLeft>
     </main>
@@ -94,6 +94,7 @@ export default {
 };
 </script>
 <style lang="scss">
+// Display inline-block so word-animation works.
 .project-text .word {
   display: inline-block;
   line-height: 1em;

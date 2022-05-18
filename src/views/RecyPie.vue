@@ -8,7 +8,7 @@
     <ProjectImage
       class="mb-10"
       image="recypie.png"
-      image-link="v1652044733/portfolio/cover/recypie.png"
+      image-link="v1652044733/portfolio/recypie/recypie.png"
       alt-text="RecyPie" />
     <ProjectTags
       client="Yrgo DD21"
@@ -35,7 +35,7 @@
       to further support the idea of lowering the amount of food waste of the user." />
       <ProjectImage
         image="recypie.png"
-        image-link="v1652044733/portfolio/cover/recypie.png"
+        image-link="v1652044733/portfolio/recypie/recypie.png"
         alt-text="RecyPie" />
     </main>
   </div>

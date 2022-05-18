@@ -19,12 +19,7 @@
       </router-link>
     </div>
   </transition>
-  <!-- <button class="hamburger lg:hidden z-10" @click="show = !show">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
-  </button> -->
-  <button class="hamburger lg:hidden p-1 z-10">
+  <button class="hamburger lg:hidden block cursor-pointer p-1 z-10">
     <svg
       width="40"
       height="40"
@@ -228,30 +223,5 @@ export default {
 }
 .nav-menu.active {
   left: 0;
-}
-
-.hamburger {
-  display: block;
-  cursor: pointer;
-}
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0;
-}
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
-}
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3s var(--animation-curve);
-  background-color: var(--melon);
 }
 </style>

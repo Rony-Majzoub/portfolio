@@ -103,7 +103,7 @@ export default {
       type: String,
     },
     imageLink: {
-      default: "v1652044733/portfolio/cover/recypie.png",
+      default: "v1652044733/portfolio/recypie/recypie.png",
       type: String,
     },
     link: {

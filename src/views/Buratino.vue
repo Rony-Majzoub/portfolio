@@ -8,7 +8,7 @@
     <ProjectImage
       class="mb-10"
       image="buratino.png"
-      image-link="v1652044733/portfolio/cover/buratino.png"
+      image-link="v1652044733/portfolio/buratino/buratino.png"
       alt-text="Buratino Instruktino" />
     <ProjectTags
       client="Buratino AB"
@@ -36,7 +36,7 @@
       to further support the idea of lowering the amount of food waste of the user." />
       <ProjectImage
         image="buratino.png"
-        image-link="v1652044733/portfolio/cover/buratino.png"
+        image-link="v1652044733/portfolio/buratino/buratino.png"
         alt-text="Buratino Instruktino" />
     </main>
   </div>
