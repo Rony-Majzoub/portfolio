@@ -34,6 +34,11 @@ const routes = [
     name: "Smoove",
     component: () => import("@/views/Smoove.vue"),
   },
+  {
+    path: "/futureexperiencelab",
+    name: "FutureExperienceLab",
+    component: () => import("@/views/FutureExperienceLab.vue"),
+  },
 ];
 
 const router = createRouter({

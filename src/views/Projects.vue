@@ -20,6 +20,15 @@
         class="project-text text-4xl sm:text-5xl lg:text-6xl font-bold text-unbleached-silk text-left tracking-tight antialiased mb-8 sm:mb-16">
         Here are some of my larger projects.
       </h1>
+      <ProjectCardLeft
+        link="futureexperiencelab"
+        title="Future Experience Lab"
+        short-title="F.E.L."
+        description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
+        category="UI/UX & Product Design"
+        tag="Product Development"
+        image="fel_hero2.png"
+        image-link="v1652949383/portfolio/fel/fel_hero2.png" />
       <ProjectCardRight
         link="smoove"
         title="Smoove"
