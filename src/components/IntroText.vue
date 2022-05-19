@@ -80,6 +80,7 @@ export default {
 <style lang="scss" scoped>
 div {
   height: calc(100vh - 15rem);
+  min-height: 65vh;
 }
 u::selection {
   color: var(--eggplant);
