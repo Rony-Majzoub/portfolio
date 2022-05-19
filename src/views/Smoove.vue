@@ -37,7 +37,17 @@
         alt-text="Smoove Sketches and Greyboxes"
         description="The early sketches and greyboxes from the Figma prototypes." />
       <ColumnLeft
-        title="My solution"
+        title="The solution"
+        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
+      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
+      to further support the idea of lowering the amount of food waste of the user." />
+      <ProjectImage
+        image="smoove_moodboard.png"
+        image-link="v1652885422/portfolio/smoove/smoove_moodboard.png"
+        alt-text="Smoove Moodboard"
+        description="Our moodboard that would communicate our vision clearly to our Developers and CG-Designers." />
+      <ColumnLeft
+        title="Pre-planning"
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
@@ -57,12 +67,12 @@
         alt-text="Our Review Process of 3D Images."
         description="Our review process for the delivery of 3D-images from our Computer Graphics Designers." />
       <ColumnRight
-        title="Assets for Web Developers"
+        title="Designing for the Web"
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <ColumnRight
-        title="Collab with CG-Designers"
+        title="DD meets CG"
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
@@ -82,9 +92,6 @@
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <ProjectGallery
-        image="smoove.jpg"
-        image-link="v1652044734/portfolio/smoove/smoove_road.jpg"
-        alt-text="Smoove"
         title="Render Gallery"
         description="The final 3D-renders that are used in the production site." />
     </main>
@@ -110,6 +117,50 @@ export default {
     ProjectImage,
     ProjectGallery,
     BackButton,
+  },
+  // Send Gallery Array down to ProjectGallery component for dynamic images.
+  provide() {
+    // use function syntax so that we can access `this`
+    return {
+      pictures: this.pictures,
+    };
+  },
+  // Data-list of images to be shown in ProjectGallery.
+  data() {
+    return {
+      pictures: [
+        {
+          url: "v1652044734/portfolio/smoove/smoove_road.jpg",
+          alt: "Motorcycle driving down a long road, at sunset.",
+          src: "smoove.jpg",
+        },
+        {
+          url: "v1652863280/portfolio/smoove/smoove_helmet.png",
+          alt: "A motorcycle helmet placed on a road.",
+          src: "smoove_helmet.png",
+        },
+        {
+          url: "v1652863281/portfolio/smoove/smoove_studio.png",
+          alt: "A glowing motorcycle parked inside a studio.",
+          src: "smoove_studio.png",
+        },
+        {
+          url: "v1652863280/portfolio/smoove/smoove_watch.png",
+          alt: "A digital watch hanging from a motorcycle handle.",
+          src: "smoove_watch.png",
+        },
+        {
+          url: "v1652863376/portfolio/smoove/smoove_wheel.png",
+          alt: "A close-up picture of a motorcycle wheel arch.",
+          src: "smoove_wheel.png",
+        },
+        {
+          url: "v1652863280/portfolio/smoove/smoove_field.png",
+          alt: "A motorcycle and a driver parked in an open field.",
+          src: "smoove_field.png",
+        },
+      ],
+    };
   },
 };
 </script>

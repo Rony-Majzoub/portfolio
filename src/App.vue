@@ -1,6 +1,6 @@
 <template>
   <header
-    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 py-3 z-50 bg-transparent bg-gradient-dot bg-[length:10px_10px]">
+    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 pb-2 pt-3 z-50 bg-transparent bg-gradient-dot bg-[length:8px_8px]">
     <div
       class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
