@@ -1,6 +1,6 @@
 <template>
   <div
-    class="projects grid grid-cols-10 col-start-2 col-end-[-2] place-items-center">
+    class="projects grid grid-cols-10 col-start-2 col-end-[-2] place-items-center -mb-28">
     <IntroText
       class="flex justify-center items-center flex-wrap content-center col-span-full" />
     <router-link
@@ -20,7 +20,7 @@
         class="project-text text-4xl sm:text-5xl lg:text-6xl font-bold text-unbleached-silk text-left tracking-tight antialiased mb-8 sm:mb-16">
         Here are some of my larger projects.
       </h1>
-      <ProjectCardLeft
+      <ProjectCardRight
         link="futureexperiencelab"
         title="Future Experience Lab"
         short-title="F.E.L."
@@ -29,7 +29,7 @@
         tag="Website"
         image="fel_hero2.png"
         image-link="v1652949383/portfolio/fel/fel_hero2.png" />
-      <ProjectCardRight
+      <ProjectCardLeft
         link="smoove"
         title="Smoove"
         short-title="Smoove"
@@ -38,6 +38,15 @@
         tag="Product Development"
         image="smoove-park.jpg"
         image-link="v1652044733/portfolio/smoove/smoove.jpg" />
+      <ProjectCardRight
+        link="mojo"
+        title="Mojo"
+        short-title="Mojo"
+        description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
+        category="UX & Product Design"
+        tag="Graphic Profile"
+        image="mojo_hero.png"
+        image-link="v1653061123/portfolio/mojo/mojo_hero.png" />
       <ProjectCardLeft
         link="recypie"
         title="RecyPie"
@@ -56,8 +65,6 @@
         tag="Website"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png" />
-      <ProjectCardRight></ProjectCardRight>
-      <ProjectCardLeft></ProjectCardLeft>
     </main>
   </div>
 </template>

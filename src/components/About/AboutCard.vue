@@ -63,14 +63,12 @@
       </figcaption>
       <blockquote>
         <p class="text-base lg:text-lg font-semibold text-melon max-w-prose">
-          In a sea of competition, I strive to differentiate myself by focusing
-          on what matters the most. The user. There is no point in designing a
-          fancy application if it is unusable. For every project I create, I
-          keep the visual design to an absolute minimum, with very few colors,
-          intending to include users of all kinds, as well as make concrete
-          decisions in the early phases. When it comes to visual design, I aim
-          to create minimal designs, with as few obtrusions as possible. Why
-          should form follow function, when both can co-exist?
+          I'm a multidisciplinary digital designer, who loves to design visual
+          prototypes for apps & websites, but also code them too!
+          <br />
+          I've got a knack for animating things, as well as messing about with
+          3D-projects and dissect the behind-the-scenes for my favorite
+          videogames in my spare time.
         </p>
       </blockquote>
       <footer class="flex flex-col gap-4 pt-4 lg:pt-8">

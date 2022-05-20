@@ -39,6 +39,11 @@ const routes = [
     name: "FutureExperienceLab",
     component: () => import("@/views/FutureExperienceLab.vue"),
   },
+  {
+    path: "/mojo",
+    name: "Mojo",
+    component: () => import("@/views/Mojo.vue"),
+  },
 ];
 
 const router = createRouter({

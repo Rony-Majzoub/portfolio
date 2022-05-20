@@ -21,7 +21,7 @@
       :alt="`${altText}`" /> -->
     </div>
     <div class="flex flex-row justify-between">
-      <p class="text-cameo-pink font-medium">
+      <p class="text-cameo-pink font-medium text-sm lg:text-base">
         {{ description }}
       </p>
       <a

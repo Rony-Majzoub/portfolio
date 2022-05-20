@@ -142,31 +142,37 @@ export default {
         {
           url: "v1652044734/portfolio/smoove/smoove_road.jpg",
           alt: "Motorcycle driving down a long road, at sunset.",
+          imageText: "Motorcycle driving down a long road, at sunset.",
           src: "smoove.jpg",
         },
         {
           url: "v1652863280/portfolio/smoove/smoove_helmet.png",
           alt: "A motorcycle helmet placed on a road.",
+          imageText: "A motorcycle helmet placed on a road.",
           src: "smoove_helmet.png",
         },
         {
           url: "v1652863281/portfolio/smoove/smoove_studio.png",
           alt: "A glowing motorcycle parked inside a studio.",
+          imageText: "A glowing motorcycle parked inside a studio.",
           src: "smoove_studio.png",
         },
         {
           url: "v1652863280/portfolio/smoove/smoove_watch.png",
           alt: "A digital watch hanging from a motorcycle handle.",
+          imageText: "A digital watch hanging from a motorcycle handle.",
           src: "smoove_watch.png",
         },
         {
           url: "v1652863376/portfolio/smoove/smoove_wheel.png",
           alt: "A close-up picture of a motorcycle wheel arch.",
+          imageText: "A close-up picture of a motorcycle wheel arch.",
           src: "smoove_wheel.png",
         },
         {
           url: "v1652863280/portfolio/smoove/smoove_field.png",
           alt: "A motorcycle and a driver parked in an open field.",
+          imageText: "A motorcycle and a driver parked in an open field.",
           src: "smoove_field.png",
         },
       ],

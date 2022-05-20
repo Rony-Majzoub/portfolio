@@ -9,20 +9,21 @@
       </p>
     </div>
     <div
-      class="snap-x snap-proximity flex flex-row items-center overflow-x-scroll w-full h-full gap-4 p-2 lg:gap-6 lg:p-4 rounded-lg lg:rounded-xl bg-eggplant border-4 lg:border-[6px] border-cameo-pink">
+      class="snap-x snap-proximity flex flex-row items-start overflow-x-scroll w-full h-full gap-4 p-2 lg:gap-6 lg:p-8 rounded-lg lg:rounded-xl bg-eggplant">
       <ProjectImage
         v-for="picture in pictures"
         :key="picture.id"
         class="w-[80%] snap-center shrink-0"
         :image="picture.src"
         :image-link="picture.url"
-        :alt-text="picture.alt" />
+        :alt-text="picture.alt"
+        :description="picture.imageText" />
     </div>
-    <div class="flex flex-row justify-between">
+    <!-- <div class="flex flex-row justify-between">
       <p class="text-cameo-pink font-medium">
         {{ imageText }}
       </p>
-    </div>
+    </div> -->
   </div>
 </template>
 <script>

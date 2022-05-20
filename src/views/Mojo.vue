@@ -2,22 +2,22 @@
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <BackButton />
     <ProjectTitle
-      info="2022 - UI/UX & Web Design"
-      title="Future Experience Lab"
-      brief="Create and design a landing page for Future Experience Lab, a hybrid workshop for creativity." />
+      info="2021 - UX & Product Design"
+      title="Mojo"
+      brief="Create and deliver a graphic profile for a start-up company." />
     <ProjectImage
       class="mb-10"
-      image="fel_hero2.png"
-      image-link="v1652949383/portfolio/fel/fel_hero2.png"
-      alt-text="Future Experience Lab Icon"
-      link-text="View Website"
-      link="https://rony-majzoub-fel.netlify.app" />
+      image="mojo_hero.jpg"
+      image-link="v1653061123/portfolio/mojo/mojo_hero.png"
+      alt-text="Mojo Hero Image"
+      link-text="View Graphic Profile"
+      link="https://www.figma.com/proto/JW1asOCvRC6oo5sgLUfnoB/Mojo-(Showreel)?page-id=653%3A918&node-id=676%3A1492&viewport=2303%2C274%2C0.28&scaling=contain&starting-point-node-id=676%3A1492" />
     <ProjectTags
-      client="Yrgo DD21, Future Experiece Lab"
-      team="Rony Majzoub, Juna Jakobsson, Marcus Hägerstrand, Nema Vinkeloe Uuskyla"
-      role="UI/UX Designer"
-      duration="2 weeks"
-      tools="Figma"
+      client="Yrgo DD21, Chalmers Encubator"
+      team="Rony Majzoub, Emma Norman, Madeleine Möller Ståhl"
+      role="UX Designer, Project Lead"
+      duration="2 months"
+      tools="Figma, Adobe Illustrator"
       category1="UI Design"
       category2="UX Design"
       category3="Product Design"
@@ -31,45 +31,30 @@
         description="Worldwide, over a third of all produced food is wasted and thrown away. 
       By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal through digital means?" />
       <ProjectImage
-        image="fel_skiss.png"
-        image-link="v1652994219/portfolio/fel/fel_skiss.png"
-        alt-text="Future Experience Lab Sketches"
-        description="The early desktop & mobile sketches for the main layout of the website." />
-      <ProjectImage
-        image="fel_greybox.png"
-        image-link="v1652994219/portfolio/fel/fel_greybox.png"
-        alt-text="Future Experience Lab Greyboxes"
-        description="Digital greyboxes for how components, images & sections should be placed on the website." />
+        image="mojo_inspiration.png"
+        image-link="v1653071265/portfolio/mojo/mojo_inspiration.png"
+        alt-text="Inspiration for the market of Mojo."
+        description="The early inspiration pieces for narrowing down the feel and market of Mojo." />
       <ColumnLeft
         title="The solution"
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <ProjectImage
-        image="fel_moodboard.png"
-        image-link="v1652994210/portfolio/fel/fel_moodboard.png"
-        alt-text="Smoove Moodboard"
-        description="This moodboard represents the feelings we strived to achieve on the final website." />
+        image="mojo_moodboard.png"
+        image-link="v1653038272/portfolio/mojo/mojo_moodboard.png"
+        alt-text="Mojo Moodboard"
+        description="Our moodboard that would communicate our vision clearly to our client." />
       <ColumnLeft
         title="Pre-planning"
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <ProjectImage
-        image="fel_components.png"
-        image-link="v1652996443/portfolio/fel/fel_components.png"
-        alt-text="Components that were created for our Web Developers."
-        description="The mobile & desktop components that we designed for our Web Developers." />
-      <ProjectImage
-        image="fel_stylesheet.png"
-        image-link="v1653003599/portfolio/fel/fel_stylesheet.png"
-        alt-text="Stylesheet created for our Web Developers."
-        description="Our stylesheet that we applied throughout our entire project." />
-      <ProjectImage
-        image="fel_delivery.png"
-        image-link="v1653003559/portfolio/fel/fel_delivery.png"
-        alt-text="Our Review Process of 3D Images."
-        description="Our delivery process of components, illustrations and layouts to our Web Developers." />
+        image="mojo_logo.png"
+        image-link="v1653038272/portfolio/mojo/mojo_logo.png"
+        alt-text="All the different logos we pitched and redesigned during the project."
+        description="All the different logos we pitched and redesigned during the project." />
       <ColumnRight
         title="Designing for the Web"
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
@@ -81,10 +66,10 @@
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <ProjectImage
-        image="fel_prototype.png"
-        image-link="v1653003373/portfolio/fel/fel_prototype.png"
-        alt-text="Final Prototypes in Figma."
-        description="Snapshots of our final Figma-prototypes." />
+        image="mojo_profile.png"
+        image-link="v1653038272/portfolio/mojo/mojo_profile.png"
+        alt-text="Condensed version of the Graphic Profile."
+        description="This is a condensed version of the final graphic profile that we delivered to our client." />
       <ColumnLeft
         title="Final Prototypes"
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
@@ -95,6 +80,9 @@
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
+      <ProjectGallery
+        title="Graphic Profile"
+        description="The entire Graphic Profile that we delivered to our client." />
     </main>
   </div>
 </template>
@@ -109,7 +97,7 @@ import ProjectGallery from "../components/Project/ProjectGallery.vue";
 import BackButton from "@/components/BackButton.vue";
 
 export default {
-  name: "FutureExperienceLab",
+  name: "Mojo",
   components: {
     ProjectTags,
     ProjectTitle,
@@ -131,34 +119,16 @@ export default {
     return {
       pictures: [
         {
-          url: "v1652044734/portfolio/smoove/smoove_road.jpg",
-          alt: "Motorcycle driving down a long road, at sunset.",
-          src: "smoove.jpg",
+          url: "v1653080906/portfolio/mojo/mojo_website1.png",
+          alt: "Hero Image of Website",
+          imageText: "First section of our proposed website.",
+          src: "mojo_website1.png",
         },
         {
-          url: "v1652863280/portfolio/smoove/smoove_helmet.png",
-          alt: "A motorcycle helmet placed on a road.",
-          src: "smoove_helmet.png",
-        },
-        {
-          url: "v1652863281/portfolio/smoove/smoove_studio.png",
-          alt: "A glowing motorcycle parked inside a studio.",
-          src: "smoove_studio.png",
-        },
-        {
-          url: "v1652863280/portfolio/smoove/smoove_watch.png",
-          alt: "A digital watch hanging from a motorcycle handle.",
-          src: "smoove_watch.png",
-        },
-        {
-          url: "v1652863376/portfolio/smoove/smoove_wheel.png",
-          alt: "A close-up picture of a motorcycle wheel arch.",
-          src: "smoove_wheel.png",
-        },
-        {
-          url: "v1652863280/portfolio/smoove/smoove_field.png",
-          alt: "A motorcycle and a driver parked in an open field.",
-          src: "smoove_field.png",
+          url: "v1653080906/portfolio/mojo/mojo_website2.png",
+          alt: "Second Section of Website",
+          imageText: "Second section of the website.",
+          src: "mojo_website2.png",
         },
       ],
     };

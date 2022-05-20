@@ -114,6 +114,7 @@ export default {
 html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
+  height: 100%;
 }
 * {
   font-family: var(--font-primary);
