@@ -25,8 +25,8 @@
         title="Future Experience Lab"
         short-title="F.E.L."
         description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
-        category="UI/UX & Product Design"
-        tag="Product Development"
+        category="UI/UX & Web Design"
+        tag="Website"
         image="fel_hero2.png"
         image-link="v1652949383/portfolio/fel/fel_hero2.png" />
       <ProjectCardRight

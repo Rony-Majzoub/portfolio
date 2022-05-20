@@ -11,7 +11,7 @@
       image-link="v1652949383/portfolio/fel/fel_hero2.png"
       alt-text="Future Experience Lab Icon"
       link-text="View Website"
-      link="https://fel-grupp11.netlify.app/" />
+      link="https://rony-majzoub-fel.netlify.app" />
     <ProjectTags
       client="Yrgo DD21, Future Experiece Lab"
       team="Rony Majzoub, Juna Jakobsson, Marcus Hägerstrand, Nema Vinkeloe Uuskyla"
@@ -31,18 +31,23 @@
         description="Worldwide, over a third of all produced food is wasted and thrown away. 
       By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal through digital means?" />
       <ProjectImage
-        image="smoove_greybox.png"
-        image-link="v1652792014/portfolio/smoove/smoove_greybox.png"
-        alt-text="Smoove Sketches and Greyboxes"
-        description="The early sketches and greyboxes from the Figma prototypes." />
+        image="fel_skiss.png"
+        image-link="v1652994219/portfolio/fel/fel_skiss.png"
+        alt-text="Future Experience Lab Sketches"
+        description="The early sketches for the main layout of the website." />
+      <ProjectImage
+        image="fel_greybox.png"
+        image-link="v1652994219/portfolio/fel/fel_greybox.png"
+        alt-text="Future Experience Lab Greyboxes"
+        description="Digital greyboxes for how components, images & sections should be placed on the website." />
       <ColumnLeft
         title="The solution"
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <ProjectImage
-        image="smoove_moodboard.png"
-        image-link="v1652885422/portfolio/smoove/smoove_moodboard.png"
+        image="fel_moodboard.png"
+        image-link="v1652994210/portfolio/fel/fel_moodboard.png"
         alt-text="Smoove Moodboard"
         description="Our moodboard that would communicate our vision clearly to our Developers and CG-Designers." />
       <ColumnLeft
@@ -51,18 +56,18 @@
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <ProjectImage
-        image="smoove_components.png"
-        image-link="v1652792652/portfolio/smoove/smoove_components.png"
+        image="fel_components.png"
+        image-link="v1652996443/portfolio/fel/fel_components.png"
         alt-text="Components that were created for our Web Developers."
         description="The components that we designed for our Web Developers." />
       <ProjectImage
-        image="smoove_stylesheet.png"
-        image-link="v1652792494/portfolio/smoove/smoove_stylesheet.png"
+        image="fel_stylesheet.png"
+        image-link="v1653003599/portfolio/fel/fel_stylesheet.png"
         alt-text="Stylesheet created for our Web Developers."
         description="Our stylesheet that we applied throughout our entire project." />
       <ProjectImage
-        image="smoove_review.png"
-        image-link="v1652793007/portfolio/smoove/smoove_review.png"
+        image="fel_delivery.png"
+        image-link="v1653003559/portfolio/fel/fel_delivery.png"
         alt-text="Our Review Process of 3D Images."
         description="Our review process for the delivery of 3D-images from our Computer Graphics Designers." />
       <ColumnRight
@@ -76,8 +81,8 @@
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
       <ProjectImage
-        image="smoove_prototype.png"
-        image-link="v1652792170/portfolio/smoove/smoove_prototype.png"
+        image="fel_prototype.png"
+        image-link="v1653003373/portfolio/fel/fel_prototype.png"
         alt-text="Final Prototypes in Figma."
         description="Snapshots of our final Figma-prototypes." />
       <ColumnLeft
@@ -90,9 +95,6 @@
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
-      <ProjectGallery
-        title="Render Gallery"
-        description="The final 3D-renders that are used in the production site." />
     </main>
   </div>
 </template>

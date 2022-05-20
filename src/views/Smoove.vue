@@ -11,7 +11,7 @@
       image-link="v1652044733/portfolio/smoove/smoove.jpg"
       alt-text="Smoove Park"
       link-text="View Website"
-      link="https://eggie.love/smoove/" />
+      link="https://rony-majzoub-smoove.netlify.app" />
     <ProjectTags
       client="Yrgo DD21"
       team="Rony Majzoub, Linrinna Lindström, Per-Emil Lundqvist, Alexander Mellby, Oliver Davis, Albin Andersson"
@@ -32,10 +32,20 @@
         description="Worldwide, over a third of all produced food is wasted and thrown away. 
       By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal through digital means?" />
       <ProjectImage
+        image="smoove_skiss1.png"
+        image-link="v1653003924/portfolio/smoove/smoove_skiss1.png"
+        alt-text="Smoove Desktop Sketches"
+        description="The early desktop sketches from the Figma prototypes." />
+      <ProjectImage
+        image="smoove_skiss2.png"
+        image-link="v1653003924/portfolio/smoove/smoove_skiss2.png"
+        alt-text="Smoove Mobile Sketches"
+        description="The early mobile sketches from the Figma prototypes." />
+      <ProjectImage
         image="smoove_greybox.png"
-        image-link="v1652792014/portfolio/smoove/smoove_greybox.png"
-        alt-text="Smoove Sketches and Greyboxes"
-        description="The early sketches and greyboxes from the Figma prototypes." />
+        image-link="v1653005687/portfolio/smoove/smoove_greybox.png"
+        alt-text="Smoove Mobile Sketches"
+        description="Digital greyboxes for how components, images & sections should be placed on the website." />
       <ColumnLeft
         title="The solution"
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 

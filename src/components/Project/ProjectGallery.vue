@@ -18,6 +18,11 @@
         :image-link="picture.url"
         :alt-text="picture.alt" />
     </div>
+    <div class="flex flex-row justify-between">
+      <p class="text-cameo-pink font-medium">
+        {{ imageText }}
+      </p>
+    </div>
   </div>
 </template>
 <script>
@@ -37,6 +42,10 @@ export default {
       type: String,
     },
     description: {
+      default: "",
+      type: String,
+    },
+    imageText: {
       default: "",
       type: String,
     },
