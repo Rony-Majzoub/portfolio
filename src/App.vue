@@ -123,61 +123,61 @@ html {
   color: var(--eggplant);
   background-color: var(--unbleached-silk);
 }
-#app:after {
-  content: "";
-  z-index: 999;
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  right: -50%;
-  bottom: -50%;
-  opacity: 0.5;
-  width: 200%;
-  height: 200vh;
-  background: transparent url("/assets/img/background-noise.png") repeat 0 0;
-  background-repeat: repeat;
-  animation: 0.2s infinite noise;
-  pointer-events: none;
-}
+// #app:after {
+//   content: "";
+//   z-index: 999;
+//   position: fixed;
+//   top: -50%;
+//   left: -50%;
+//   right: -50%;
+//   bottom: -50%;
+//   opacity: 0.5;
+//   width: 200%;
+//   height: 200vh;
+//   background: transparent url("/assets/img/background-noise.png") repeat 0 0;
+//   background-repeat: repeat;
+//   animation: 0.2s infinite noise;
+//   pointer-events: none;
+// }
 .nav-desktop.router-link-active {
   text-decoration-color: var(--unbleached-silk) !important;
   color: var(--unbleached-silk) !important;
   transition: var(--animation-curve) 250ms !important;
 }
 
-@keyframes noise {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  10% {
-    transform: translate3d(-5%, -5%, 0);
-  }
-  20% {
-    transform: translate3d(-10%, 5%, 0);
-  }
-  30% {
-    transform: translate3d(5%, -10%, 0);
-  }
-  40% {
-    transform: translate3d(-5%, 15%, 0);
-  }
-  50% {
-    transform: translate3d(-10%, 5%, 0);
-  }
-  60% {
-    transform: translate3d(15%, 0, 0);
-  }
-  70% {
-    transform: translate3d(0, 10%, 0);
-  }
-  80% {
-    transform: translate3d(-15%, 0, 0);
-  }
-  90% {
-    transform: translate3d(10%, 5%, 0);
-  }
-  100% {
-    transform: translate3d(5%, 0, 0);
-  }
-}
+// @keyframes noise {
+//   0% {
+//     transform: translate3d(0, 0, 0);
+//   }
+//   10% {
+//     transform: translate3d(-5%, -5%, 0);
+//   }
+//   20% {
+//     transform: translate3d(-10%, 5%, 0);
+//   }
+//   30% {
+//     transform: translate3d(5%, -10%, 0);
+//   }
+//   40% {
+//     transform: translate3d(-5%, 15%, 0);
+//   }
+//   50% {
+//     transform: translate3d(-10%, 5%, 0);
+//   }
+//   60% {
+//     transform: translate3d(15%, 0, 0);
+//   }
+//   70% {
+//     transform: translate3d(0, 10%, 0);
+//   }
+//   80% {
+//     transform: translate3d(-15%, 0, 0);
+//   }
+//   90% {
+//     transform: translate3d(10%, 5%, 0);
+//   }
+//   100% {
+//     transform: translate3d(5%, 0, 0);
+//   }
+// }
 </style>
