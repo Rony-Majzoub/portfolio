@@ -18,7 +18,7 @@
           height="552"
           src="/assets/pfp.jpg"
           role="presentation"
-          class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full" />
+          class="cld-responsive absolute object-cover sm:object-scale-down lg:object-cover object-[center_20%] w-full h-96 lg:h-full" />
       </div>
       <div
         class="pt-6 p-8 text-left lg:mb-0 w-full gap-4 flex flex-col justify-between h-full max-w-prose"></div>
@@ -39,7 +39,7 @@
         height="552"
         src="/assets/pfp.jpg"
         alt="Rony Majzoub Picture Low-Resolution"
-        class="cld-responsive absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0] bg-black" />
+        class="cld-responsive absolute object-cover sm:object-scale-down lg:object-cover object-[center_20%] w-full h-96 lg:h-full text-[0] bg-[#070707]" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_3.0/${imageLink}`"
@@ -47,7 +47,7 @@
         height="552"
         src="/assets/pfp.jpg"
         alt="Rony Majzoub Picture High-Resolution"
-        class="cld-responsive high-def absolute object-cover object-[center_20%] w-full h-96 lg:h-full text-[0]" />
+        class="cld-responsive high-def absolute object-cover sm:object-scale-down lg:object-cover object-[center_20%] w-full h-96 lg:h-full text-[0]" />
     </div>
     <div
       class="pt-6 p-8 text-left lg:mb-0 w-full gap-4 flex flex-col justify-between h-full max-w-prose">
@@ -101,7 +101,7 @@ export default {
   },
   props: {
     imageLink: {
-      default: "v1652044758/portfolio/pfp_o5mrxd.jpg",
+      default: "v1653220647/portfolio/pfp_new.jpg",
       type: String,
     },
   },
