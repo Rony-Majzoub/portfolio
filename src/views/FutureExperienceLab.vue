@@ -13,7 +13,7 @@
       link-text="View Website"
       link="https://rony-majzoub-fel.netlify.app" />
     <ProjectTags
-      client="Yrgo DD21, Future Experiece Lab"
+      client="Yrgo DD21, Future Experience Lab"
       team="Rony Majzoub, Juna Jakobsson, Marcus Hägerstrand, Nema Vinkeloe Uuskyla"
       role="UI/UX Designer"
       duration="2 weeks"
@@ -25,11 +25,10 @@
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
-        description="As part of a work sample for applying to Yrgo Digital Designer, our goal was to create a digital solution to our assigned problem." />
+        description='When Future Experience Lab reached out to Yrgo, they sought after a website to augment their "Hybrid Workhop Experience", with a touch of "controlled chaos". Our goal was to strike that balance, and deliver a website prototype.' />
       <ColumnLeft
         title="The problem"
-        description="Worldwide, over a third of all produced food is wasted and thrown away. 
-      By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal through digital means?" />
+        description='The client had many ideas in mind when delivering their brief. Key points were "Controlled Chaos", "Hybrid Workshop" and "Place for Creativity." How could we deliver those feelings in a static website, with a tight deadline, punk aesthetic and an abstract brief?' />
       <ProjectImage
         image="fel_skiss.png"
         image-link="v1652994219/portfolio/fel/fel_skiss.png"
@@ -42,9 +41,7 @@
         description="Digital greyboxes for how components, images & sections should be placed on the website." />
       <ColumnLeft
         title="The solution"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        description="The solution was a landing page that would showcase the projects and workshops that Future Experience Lab have contributed towards. The website was broken up into different sections to better communicate the different aspects of Future Experience Lab. A variety of images, illustrations and stylistic choices were used to create a chaotic feel, while also utilizing pre-defined grids and whitespace, to subconsciously organize that chaos." />
       <ProjectImage
         image="fel_moodboard.png"
         image-link="v1652994210/portfolio/fel/fel_moodboard.png"
@@ -52,9 +49,8 @@
         description="This moodboard represents the feelings we strived to achieve on the final website." />
       <ColumnLeft
         title="Pre-planning"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        description="After being presented with the project brief, we tried to narrow down what exactly the goal of the website was. We also wanted to narrow down what the exact target group of this website was, and what they valued. We presented these questions to the client, and tried to shape the project around those key points.
+        Early on, we created a Moodboard for visualizing how a chaotic, yet readable website might look like. We narrowed it down towards a dark color scheme, with strong and contrasting colors used wisely to grab attention. We also found that simple, primitive shapes could be used to add some dynamic flare into the website, which is something we added to the moodboard." />
       <ProjectImage
         image="fel_components.png"
         image-link="v1652996443/portfolio/fel/fel_components.png"
@@ -71,15 +67,23 @@
         alt-text="Our Review Process of 3D Images."
         description="Our delivery process of components, illustrations and layouts to our Web Developers." />
       <ColumnRight
-        title="Designing for the Web"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        title="Our stylesheet"
+        description="The final stylesheet has a focus on three key areas - fonts, colors and patterns. 
+        When it comes to fonts, we decided on a heavy, punk-like font for all titles and headers, to contribute towards a more heavy feel. We also used a lighter font for all body text, that was more readable, which made the site feel more professional and controlled.
+        
+        For our brand colors, we chose three strong colors, with two additional text & background colors. 
+        The green color was our main color, to be used on main elements, such as CTA-Buttons. 
+        The orange color was our secondary color, which was used on certain elements that needed to stick out, but not to the degree of the main color. 
+        The pink color was our tertiary color, often used on patterns and backgrounds to give off a more dynamic feel.
+
+        Throughout the website, we also use a variety of primitive shapes as decorative backgrounds. These are used in conjunction with our brand colors, to give off a feeling of chaos, as well as spice up the background as a whole.
+        " />
       <ColumnRight
-        title="DD meets CG"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        title="Designing for the Web"
+        description="For this project, we teamed up with the Web Developer class at Yrgo, who were responsible for coding and implementing our designs to the web. That's why we had to carefully adapt our working schedule to accomodate agile development with our Web Developers.
+
+        Our first method was to deliver sections one-by-one in a timely manner, with greyboxes and large visual elements coming first. With each passing day, we'd deliver other sections of the site, that they could implement in a modular manner. We'd also communicate if any changes to previous deliveries had been made.
+        Our second method was to utilize Components and Color/Text Styles extensively in Figma, to better allow for reusable code in the final website. This drastically cut down the time needed to code the website, while also giving a more consistent design to the entire prototype." />
       <ProjectImage
         image="fel_prototype.png"
         image-link="v1653003373/portfolio/fel/fel_prototype.png"
@@ -87,14 +91,11 @@
         description="Snapshots of our final Figma-prototypes." />
       <ColumnLeft
         title="Final Prototypes"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        description="The final prototypes were made in Figma, with fine-tuned desktop and mobile variants. The prototypes were also made with a responsive layout in mind, both for larger and smaller screens. We provided multiple pages, assets and illustrations that were used in the final website. " />
       <ColumnLeft
         title="Learnings"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        description="We gained more experience on how to work under a tight deadline, and what to prioritize in those cases. We also gained better understanding for how Web Developers work, and their requirements.
+        For future projects, we'd focus on getting more prep-time as designers, so we could deliver assets to our Web Developers immediately, instead of them having to wait without any tasks at hand. We'd also like to perform more extensive user testing, to further refine our design and layout, but the time constraints did not allow this." />
     </main>
   </div>
 </template>

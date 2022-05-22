@@ -24,7 +24,9 @@
         link="futureexperiencelab"
         title="Future Experience Lab"
         short-title="F.E.L."
-        description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
+        description='When Future Experience Lab reached out to Yrgo, 
+        they sought after a website to augment their "Hybrid Workhop Experience", 
+        with a touch of "controlled chaos". Our goal was to strike that balance, and deliver a website prototype.'
         category="UI/UX & Web Design"
         tag="Website"
         image="fel_hero2.png"
@@ -33,7 +35,9 @@
         link="smoove"
         title="Smoove"
         short-title="Smoove"
-        description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
+        description="As the automotive industry reaches further into the digital market,
+        our goal was to create and design a styilistic profile, website and vehicle,
+        derived from a feeling that we wanted to present, every step of the way."
         category="UI/UX & Product Design"
         tag="Product Development"
         image="smoove-park.jpg"
@@ -42,7 +46,9 @@
         link="mojo"
         title="Mojo"
         short-title="Mojo"
-        description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
+        description="Today, a large portion of the world lack a clean and modern method for cooking. 
+        The result is extensive deforestation, hours of extra labor, and harmful emissions.
+        However, through a collaboration with a start-up Chalmers-Incubator company, a solution is in sight."
         category="UX & Product Design"
         tag="Graphic Profile"
         image="mojo_hero.png"
@@ -51,20 +57,24 @@
         link="recypie"
         title="RecyPie"
         short-title="RecyPie"
-        description="Worldwide, over a third of all produced food is wasted and thrown away. By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal?"
+        description="Worldwide, over a third of all produced food is wasted and thrown away. 
+        By 2030, the UN plans to reduce the global amount of food waste per person by 50%. 
+        How can we construct a digital service to contribute towards that goal?"
         category="UI & UX Design"
         tag="Visual Concept"
         image="recypie.png"
         image-link="v1652044733/portfolio/recypie/recypie.png" />
-      <ProjectCardRight
+      <!-- <ProjectCardRight
         link="buratino"
         title="Buratino Instruktino"
         short-title="Buratino"
-        description="After many years of renting their premises to customers, Buratino searched for a replacement for their aging physical instruction manual. After half a year of development, we delivered a solution that is now in use."
+        description="After many years of renting their premises to customers,
+        Buratino searched for a replacement to their aging physical instruction manual. 
+        After half a year of development, we delivered a solution that is now in use."
         category="Web Development"
         tag="Website"
         image="buratino.png"
-        image-link="v1652044733/portfolio/buratino/buratino.png" />
+        image-link="v1652044733/portfolio/buratino/buratino.png" /> -->
     </main>
   </div>
 </template>

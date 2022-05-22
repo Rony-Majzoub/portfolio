@@ -4,7 +4,9 @@
     <h2 class="font-bold text-3xl lg:text-5xl text-unbleached-silk">
       {{ title }}
     </h2>
-    <p class="font-medium text-base lg:text-lg text-melon">{{ description }}</p>
+    <p class="font-medium text-base lg:text-lg whitespace-pre-line text-melon">
+      {{ description }}
+    </p>
   </section>
 </template>
 
