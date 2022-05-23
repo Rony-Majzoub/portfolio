@@ -16,7 +16,7 @@
       </div>
       <fun-card
         title="Buratino"
-        tag="Website"
+        tag="Website & App"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="buratino" />
@@ -123,7 +123,7 @@
         link="anvilrender" />
       <fun-card
         title="NTI-Awards 2020"
-        tag="Modelling & Materials"
+        tag="Modelling & Rendering"
         image="nti_awards.jpg"
         image-link="v1653259075/portfolio/fun/nti_awards.jpg"
         link="nti_awards" />

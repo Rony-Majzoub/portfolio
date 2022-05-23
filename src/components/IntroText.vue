@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="h-full flex items-center justify-center">
     <h1
       class="intro-text max-w-4xl text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl 4xl:text-9xl font-bold text-unbleached-silk text-left tracking-tight antialiased">
       <!-- My name is Rony Majzoub. -->
@@ -15,7 +15,7 @@
       <hr class="basis-ful w-full h-0 m-0 border-0 block sm:hidden" />
 
       <span
-        class="word whitespace-nowrap text-melon underline decoration-4 md:decoration-8">
+        class="word whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant text-eggplant p-4 bg-unbleached-silk decoration-4 md:decoration-8">
         {{ role[0] }}.
       </span>
       <br />
@@ -78,16 +78,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-div {
-  height: calc(100vh - 15rem);
-  min-height: 65vh;
-}
 u::selection {
   color: var(--eggplant);
 }
 // Display inline-block so word-animation works.
 .intro-text .word {
   display: inline-block;
-  line-height: 1em;
+  line-height: 1.2em;
 }
 </style>

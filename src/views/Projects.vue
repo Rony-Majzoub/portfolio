@@ -1,20 +1,21 @@
 <template>
   <div
     class="projects grid grid-cols-10 col-start-2 col-end-[-2] place-items-center -mb-28">
-    <IntroText
-      class="flex justify-center items-center flex-wrap content-center col-span-full" />
-    <router-link
-      class="arrow -translate-y-full col-span-full mt-20 bg-transparent justify-self-center text-[0] text-melon"
-      :to="{ path: '/', hash: '#projects' }">
-      View All Projects
-      <Vue3Lottie
-        ref="projects"
-        :animation-link="'/assets/arrow.json'"
-        :loop="false"
-        :auto-play="true"
-        :speed="1"
-        :width="144" />
-    </router-link>
+    <div class="h-screen col-span-full flex flex-col justify-end">
+      <IntroText class="grow" />
+      <router-link
+        class="arrow -translate-y-full col-span-full mt-20 bg-transparent text-[0] text-melon"
+        :to="{ path: '/', hash: '#projects' }">
+        View All Projects
+        <Vue3Lottie
+          ref="projects"
+          :animation-link="'/assets/arrow.json'"
+          :loop="false"
+          :auto-play="true"
+          :speed="1"
+          :width="144" />
+      </router-link>
+    </div>
     <main class="project-grid col-span-full flex flex-col justify-center">
       <h1
         class="project-text text-4xl sm:text-5xl lg:text-6xl font-bold text-unbleached-silk text-left tracking-tight antialiased mb-8 sm:mb-16">

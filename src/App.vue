@@ -123,6 +123,9 @@ html {
   color: var(--eggplant);
   background-color: var(--unbleached-silk);
 }
+[v-cloak] {
+  display: none;
+}
 // #app:after {
 //   content: "";
 //   z-index: 999;

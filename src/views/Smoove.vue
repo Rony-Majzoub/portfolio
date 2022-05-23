@@ -26,11 +26,10 @@
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
-        description="As part of a work sample for applying to Yrgo Digital Designer, our goal was to create a digital solution to our assigned problem." />
+        description="As the automotive industry reaches further into the digital market, our goal was to create and design a styilistic profile, website and vehicle, derived from a feeling that we wanted to present, every step of the way." />
       <ColumnLeft
         title="The problem"
-        description="Worldwide, over a third of all produced food is wasted and thrown away. 
-      By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal through digital means?" />
+        description="We were tasked with not only becoming the Project Leads, having to direct our Web Developers and Computer Graphics Designers with clear instructions and feedback. But we were also tasked with fulfilling our roles as Digital Designers, with UI-designs and UX-research being major key-points of the project." />
       <ProjectImage
         image="smoove_skiss1.png"
         image-link="v1653003924/portfolio/smoove/smoove_skiss1.png"
@@ -46,11 +45,6 @@
         image-link="v1653005687/portfolio/smoove/smoove_greybox.png"
         alt-text="Smoove Mobile Sketches"
         description="Digital greyboxes for how components, images & sections should be placed on the website." />
-      <ColumnLeft
-        title="The solution"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
       <ProjectImage
         image="smoove_moodboard.png"
         image-link="v1652885422/portfolio/smoove/smoove_moodboard.png"
@@ -58,9 +52,11 @@
         description="Our moodboard that would communicate our vision clearly to our Developers and CG-Designers." />
       <ColumnLeft
         title="Pre-planning"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        description="With the enormous task at hand, we set off by drawing hand-sketches of how this landing page would look like, and the main features we wanted for the Web Developers to implement. We also created a moodboard, so we could decide on what type of vehicle and materials the CG-Designers would use. Later on, we created digital Greyboxes based on our initial sketches, and refined the layout and content of the site. " />
+      <ColumnRight
+        title="Bold but Friendly"
+        description="After doing extensive research, we created a few Personas that would represent the type of people that would drive our vehicle. We felt that a motorcycle should empower the driver, but also accomodate all types of people, both men and women.
+        That's why we chose a more golden and warm color scheme. We found that other, more saturated colors were very gendered, and a bit too bombastic. A gold main color, with warm undertones gave us the neutrality we were after, while still offering a modern, powerful and exciting feeling to the driver." />
       <ProjectImage
         image="smoove_components.png"
         image-link="v1652792652/portfolio/smoove/smoove_components.png"
@@ -78,14 +74,12 @@
         description="Our review process for the delivery of 3D-images from our Computer Graphics Designers." />
       <ColumnRight
         title="Designing for the Web"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
-      <ColumnRight
+        description="For this project, we teamed up with the Web Developer class at Yrgo, who were responsible for coding and implementing our designs to the web. This proved to be difficult, due to the various responsibilities that we had to bear during the entire project.
+
+        When designing the website, we split the site up into multiple sections, to ease the delivery both for our Web Developers, but also for our CG-Designers. We would put a considerable amount of time working on Components and a Stylesheet, so our Web Developers could reuse code quickly and efficiently." />
+      <ColumnLeft
         title="DD meets CG"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        description="Collaborating with CG-Designers was a new, albeit refreshing challenge. Given that their renders required several hours of render-time, we had less room to iterate on their delivered images. We also had to nail down how big these images were in both size, and aspect-ratio, because of the camera framing, and the positioning in the website." />
       <ProjectImage
         image="smoove_prototype.png"
         image-link="v1652792170/portfolio/smoove/smoove_prototype.png"
