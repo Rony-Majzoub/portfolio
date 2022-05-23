@@ -21,29 +21,29 @@
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="buratino" />
       <fun-card
-        title="RecyPie"
+        title="Vacina"
         tag="Digital Prototype"
-        image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="recypie" />
+        image="vacina.png"
+        image-link="v1653260886/portfolio/fun/vacina/vacina.png"
+        link="vacina" />
       <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="buratino" />
+        title="Shuu"
+        tag="Website Prototype"
+        image="shuu_hero.png"
+        image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
+        link="shuu" />
       <fun-card
-        title="RecyPie"
+        title="Polestar Website"
+        tag="Website Prototype"
+        image="polestar_website.png"
+        image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
+        link="polestar_website" />
+      <fun-card
+        title="Information Screen"
         tag="Digital Prototype"
-        image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="recypie" />
-      <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="buratino" />
+        image="connected.png"
+        image-link="v1653262038/portfolio/fun/connected/connected.png"
+        link="connected" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
@@ -86,41 +86,47 @@
         </p>
       </div>
       <fun-card
-        title="RecyPie"
-        tag="Digital Prototype"
-        image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="recypie" />
+        title="So Good"
+        tag="Product Visualization"
+        image="so_good.png"
+        image-link="v1653258131/portfolio/fun/so_good/so_good.png"
+        link="so_good" />
       <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="buratino" />
+        title="Donut Render"
+        tag="Modelling & Rendering"
+        image="donut_render.jpg"
+        image-link="v1653259075/portfolio/fun/donut_render.jpg"
+        link="donut_render" />
       <fun-card
-        title="RecyPie"
-        tag="Digital Prototype"
-        image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="recypie" />
+        title="Donut Night Render"
+        tag="Modelling & Rendering"
+        image="donut_night_render.png"
+        image-link="v1653259523/portfolio/fun/Donut_Night_Render.png"
+        link="donut_night" />
       <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="buratino" />
+        title="Project Punk"
+        tag="Modelling & Rendering"
+        image="project_punk.jpg"
+        image-link="v1653259074/portfolio/fun/project_punk.jpg"
+        link="project_punk" />
       <fun-card
-        title="RecyPie"
-        tag="Digital Prototype"
-        image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="recypie" />
+        title="Brick Wall"
+        tag="Rendering"
+        image="brick_wall.jpg"
+        image-link="v1653259074/portfolio/fun/Brick_Wall.jpg"
+        link="brick_wall" />
       <fun-card
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="buratino" />
+        title="Anvil Render"
+        tag="Modelling & Materials"
+        image="anvilrender.jpg"
+        image-link="v1653259517/portfolio/fun/anvilrender.jpg"
+        link="anvilrender" />
+      <fun-card
+        title="NTI-Awards 2020"
+        tag="Modelling & Materials"
+        image="nti_awards.jpg"
+        image-link="v1653259075/portfolio/fun/nti_awards.jpg"
+        link="nti_awards" />
     </main>
   </div>
 </template>

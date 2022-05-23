@@ -90,12 +90,13 @@
         alt-text="Final Prototypes in Figma."
         description="Snapshots of our final Figma-prototypes." />
       <ColumnLeft
-        title="Final Prototypes"
+        title="Final prototypes"
         description="The final prototypes were made in Figma, with fine-tuned desktop and mobile variants. The prototypes were also made with a responsive layout in mind, both for larger and smaller screens. We provided multiple pages, assets and illustrations that were used in the final website. " />
       <ColumnLeft
         title="Learnings"
         description="We gained more experience on how to work under a tight deadline, and what to prioritize in those cases. We also gained better understanding for how Web Developers work, and their requirements.
-        For future projects, we'd focus on getting more prep-time as designers, so we could deliver assets to our Web Developers immediately, instead of them having to wait without any tasks at hand. We'd also like to perform more extensive user testing, to further refine our design and layout, but the time constraints did not allow this." />
+        For future projects, we'd focus on getting more prep-time as designers, so we could deliver assets to our Web Developers immediately, instead of them having to wait without any tasks at hand. We'd also like to perform more extensive user testing, to further refine our design and layout, but the time constraints did not allow this.
+        Overall, we were very satisfied with the project, and felt that there was a lot of potential if we were to continue with the project." />
     </main>
   </div>
 </template>
