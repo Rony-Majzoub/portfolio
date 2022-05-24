@@ -27,7 +27,7 @@ const routes = [
   {
     path: "/buratino",
     name: "Buratino",
-    component: () => import("@/views/Buratino.vue"),
+    component: () => import("@/views/Fun/Buratino.vue"),
   },
   {
     path: "/smoove",
@@ -43,6 +43,61 @@ const routes = [
     path: "/mojo",
     name: "Mojo",
     component: () => import("@/views/Mojo.vue"),
+  },
+  {
+    path: "/vacina",
+    name: "Vacina",
+    component: () => import("@/views/Fun/Vacina.vue"),
+  },
+  {
+    path: "/shuu",
+    name: "Shuu",
+    component: () => import("@/views/Fun/Shuu.vue"),
+  },
+  {
+    path: "/polestar_website",
+    name: "PolestarWebsite",
+    component: () => import("@/views/Fun/PolestarWebsite.vue"),
+  },
+  {
+    path: "/info_screen",
+    name: "InfoScreen",
+    component: () => import("@/views/Fun/InfoScreen.vue"),
+  },
+  {
+    path: "/so_good",
+    name: "SoGood",
+    component: () => import("@/views/Fun/SoGood.vue"),
+  },
+  {
+    path: "/donut_render",
+    name: "DonutRender",
+    component: () => import("@/views/Fun/DonutRender.vue"),
+  },
+  {
+    path: "/donut_night",
+    name: "DonutNightRender",
+    component: () => import("@/views/Fun/DonutNightRender.vue"),
+  },
+  {
+    path: "/project_punk",
+    name: "ProjectPunk",
+    component: () => import("@/views/Fun/ProjectPunk.vue"),
+  },
+  {
+    path: "/brick_wall",
+    name: "BrickWall",
+    component: () => import("@/views/Fun/BrickWall.vue"),
+  },
+  {
+    path: "/anvil_render",
+    name: "AnvilRender",
+    component: () => import("@/views/Fun/AnvilRender.vue"),
+  },
+  {
+    path: "/nti_awards",
+    name: "NTIAwards",
+    component: () => import("@/views/Fun/NTIAwards.vue"),
   },
 ];
 

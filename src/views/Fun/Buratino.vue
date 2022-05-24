@@ -47,7 +47,7 @@ import ProjectTags from "@/components/Project/ProjectTags.vue";
 import ProjectTitle from "@/components/Project/ProjectTitle.vue";
 import ColumnLeft from "@/components/Project/ColumnLeft.vue";
 import ColumnRight from "@/components/Project/ColumnRight.vue";
-import ProjectImage from "../components/Project/ProjectImage.vue";
+import ProjectImage from "@/components/Project/ProjectImage.vue";
 import BackButton from "@/components/BackButton.vue";
 
 export default {

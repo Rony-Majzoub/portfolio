@@ -43,7 +43,7 @@
         tag="Digital Prototype"
         image="connected.png"
         image-link="v1653262038/portfolio/fun/connected/connected.png"
-        link="connected" />
+        link="info_screen" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
@@ -120,7 +120,7 @@
         tag="Modelling & Materials"
         image="anvilrender.jpg"
         image-link="v1653259517/portfolio/fun/anvilrender.jpg"
-        link="anvilrender" />
+        link="anvil_render" />
       <fun-card
         title="NTI-Awards 2020"
         tag="Modelling & Rendering"

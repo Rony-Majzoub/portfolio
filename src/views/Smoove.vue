@@ -170,5 +170,22 @@ export default {
       ],
     };
   },
+  beforeCreate() {
+    document.querySelector("body").setAttribute("style", "background:#201d26");
+    document
+      .querySelector("header")
+      .setAttribute(
+        "style",
+        "background: radial-gradient( rgba(0,0,0,0) 1px,#201d26 1px ) 0px 0px/8px 8px"
+      );
+    document
+      .querySelector(".page-footer")
+      .setAttribute("style", "background: #201d26");
+  },
+  beforeUnmount() {
+    document.querySelector("body").setAttribute("style", "");
+    document.querySelector("header").setAttribute("style", "");
+    document.querySelector(".page-footer").setAttribute("style", "");
+  },
 };
 </script>

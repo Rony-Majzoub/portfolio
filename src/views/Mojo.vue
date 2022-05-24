@@ -133,5 +133,22 @@ export default {
       ],
     };
   },
+  beforeCreate() {
+    document.querySelector("body").setAttribute("style", "background:#2d3033");
+    document
+      .querySelector("header")
+      .setAttribute(
+        "style",
+        "background: radial-gradient( rgba(0,0,0,0) 1px,#2d3033 1px ) 0px 0px/8px 8px"
+      );
+    document
+      .querySelector(".page-footer")
+      .setAttribute("style", "background:#2d3033");
+  },
+  beforeUnmount() {
+    document.querySelector("body").setAttribute("style", "");
+    document.querySelector("header").setAttribute("style", "");
+    document.querySelector(".page-footer").setAttribute("style", "");
+  },
 };
 </script>

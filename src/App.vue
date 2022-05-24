@@ -1,6 +1,6 @@
 <template>
   <header
-    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 pb-2 pt-3 z-50 bg-transparent bg-gradient-dot bg-[length:8px_8px]">
+    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 pb-2 pt-3 z-50 bg-transparent bg-gradient-dot bg-[length:8px_8px] duration-500 ease-out-expo">
     <div
       class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
@@ -37,7 +37,7 @@
     </transition>
   </router-view>
   <footer
-    class="page-footer w-full gap-8 flex flex-col items-center text-center justify-between py-4 px-20 absolute h-12 bg-black-coffee bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0">
+    class="page-footer w-full gap-8 flex flex-col items-center text-center justify-between py-4 px-20 absolute h-12 bg-black-coffee bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 duration-500 ease-out-expo">
     <div
       class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
       <div
