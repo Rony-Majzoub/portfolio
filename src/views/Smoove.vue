@@ -26,7 +26,7 @@
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
-        description="As the automotive industry reaches further into the digital market, our goal was to create and design a styilistic profile, website and vehicle, derived from a feeling that we wanted to present, every step of the way." />
+        description="As the automotive industry reaches further into the digital market, our goal was to create and design a stylistic profile, website and vehicle, derived from a feeling that we wanted to present, every step of the way." />
       <ColumnLeft
         title="The problem"
         description="We were tasked with not only becoming the Project Leads, having to direct our Web Developers and Computer Graphics Designers with clear instructions and feedback. But we were also tasked with fulfilling our roles as Digital Designers, with UI-designs and UX-research being major key-points of the project." />
@@ -40,6 +40,9 @@
         image-link="v1653003924/portfolio/smoove/smoove_skiss2.png"
         alt-text="Smoove Mobile Sketches"
         description="The early mobile sketches from the Figma prototypes." />
+      <ColumnLeft
+        title="Pre-planning"
+        description="With the enormous task at hand, we set off by drawing hand-sketches of how this landing page would look like, and the main features we wanted for the Web Developers to implement. We also created a moodboard, so we could decide on what type of vehicle and materials the CG-Designers would use. Later on, we created digital Greyboxes based on our initial sketches, and refined the layout and content of the site. " />
       <ProjectImage
         image="smoove_greybox.png"
         image-link="v1653005687/portfolio/smoove/smoove_greybox.png"
@@ -50,9 +53,6 @@
         image-link="v1652885422/portfolio/smoove/smoove_moodboard.png"
         alt-text="Smoove Moodboard"
         description="Our moodboard that would communicate our vision clearly to our Developers and CG-Designers." />
-      <ColumnLeft
-        title="Pre-planning"
-        description="With the enormous task at hand, we set off by drawing hand-sketches of how this landing page would look like, and the main features we wanted for the Web Developers to implement. We also created a moodboard, so we could decide on what type of vehicle and materials the CG-Designers would use. Later on, we created digital Greyboxes based on our initial sketches, and refined the layout and content of the site. " />
       <ColumnRight
         title="Bold but Friendly"
         description="After doing extensive research, we created a few Personas that would represent the type of people that would drive our vehicle. We felt that a motorcycle should empower the driver, but also accomodate all types of people, both men and women.
@@ -87,14 +87,12 @@
         description="Snapshots of our final Figma-prototypes." />
       <ColumnLeft
         title="Final Prototypes"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        description="The final prototypes were made in Figma, with fine-tuned desktop and mobile variants. We both adjusted the amount of content shown, and also used different images depending on the device. An intro-animation in After Effects was created by me, which was exported as a Lottie-file and used in the final site on first load." />
       <ColumnLeft
         title="Learnings"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
+        description="We learned how to oversee and lead an entire project, with multiple members each having different roles. We also gained a better understanding of the challenges that both Web Developers and CG-Designers face during projects, and how to make their tasks easier to handle.
+        As Designers, we also got a better look at what exactly goes into designing a products, and all the different steps required to go from feeling to final delivery. This allowed us to better prioritize the important aspects of a project, while leaving less important parts for another day.
+        Overall, we were reasonably happy with the work we managed to deliver with our CG-Designers. When it comes to the website, there were a few cases of mismanagement, which did leave a few things to be desired in the final product. We definitely learned a thing or two from these missteps, and we've made sure to better prepare for those challenges in the future." />
       <ProjectGallery
         title="Render Gallery"
         description="The final 3D-renders that are used in the production site." />

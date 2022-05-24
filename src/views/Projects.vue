@@ -37,7 +37,7 @@
         title="Smoove"
         short-title="Smoove"
         description="As the automotive industry reaches further into the digital market,
-        our goal was to create and design a styilistic profile, website and vehicle,
+        our goal was to create and design a stylistic profile, website and vehicle,
         derived from a feeling that we wanted to present, every step of the way."
         category="UI/UX & Product Design"
         tag="Product Development"

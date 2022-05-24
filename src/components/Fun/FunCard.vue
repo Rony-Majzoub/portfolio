@@ -5,7 +5,7 @@
     <!-- Image Element -->
     <!-- Blurred Placeholder Image (Cloudinary) -->
     <img
-      :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+      :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
       :alt="`${title}`"
       width="384"
       height="256"
