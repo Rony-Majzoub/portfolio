@@ -170,6 +170,7 @@ export default {
       ],
     };
   },
+  // Style the body, header and footer on load.
   beforeCreate() {
     document.querySelector("body").setAttribute("style", "background:#201d26");
     document
@@ -182,10 +183,27 @@ export default {
       .querySelector(".page-footer")
       .setAttribute("style", "background: #201d26");
   },
+  // Style the text and background colors to brand colors.
+  mounted() {
+    var nav = document.querySelectorAll(".nav-item");
+    for (var i = 0; i < nav.length; i++) {
+      nav[i].setAttribute("style", "background:#201d26;");
+    }
+    document
+      .querySelector(".nav-menu")
+      .setAttribute("style", "background:#363040");
+  },
+  // Remove all the added styles, and return to default.
   beforeUnmount() {
     document.querySelector("body").setAttribute("style", "");
     document.querySelector("header").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
+
+    var nav = document.querySelectorAll(".nav-item");
+    for (var i = 0; i < nav.length; i++) {
+      nav[i].setAttribute("style", "");
+    }
+    document.querySelector(".nav-menu").setAttribute("style", "");
   },
 };
 </script>

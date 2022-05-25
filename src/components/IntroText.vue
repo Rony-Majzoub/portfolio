@@ -6,8 +6,8 @@
       <span class="word">My&nbsp;</span>
       <span class="word">name&nbsp;</span>
       <span class="word">is&nbsp;</span>
-      <span class="word text-melon">Rony&nbsp;</span>
-      <span class="word text-melon">Majzoub.&nbsp;</span>
+      <span class="word melon">Rony&nbsp;</span>
+      <span class="word melon">Majzoub.&nbsp;</span>
       <hr class="basis-ful w-full h-0 m-0 border-0" />
 
       <span class="word whitespace-nowrap">I'm&nbsp;</span>
@@ -15,7 +15,7 @@
       <hr class="basis-ful w-full h-0 m-0 border-0 block sm:hidden" />
 
       <span
-        class="word whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant text-eggplant p-4 bg-unbleached-silk decoration-4 md:decoration-8">
+        class="word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant text-eggplant p-4 bg-unbleached-silk decoration-4 md:decoration-8">
         {{ role[0] }}.
       </span>
       <br />
@@ -85,5 +85,14 @@ u::selection {
 .intro-text .word {
   display: inline-block;
   line-height: 1.2em;
+}
+.word {
+  color: var(--unbleached-silk);
+}
+.melon {
+  color: var(--melon);
+}
+.role {
+  color: var(--eggplant);
 }
 </style>

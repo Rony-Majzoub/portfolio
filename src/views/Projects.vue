@@ -54,7 +54,7 @@
         tag="Graphic Profile"
         image="mojo_hero.png"
         image-link="v1653061123/portfolio/mojo/mojo_hero.png" />
-      <ProjectCardLeft
+      <!-- <ProjectCardLeft
         link="recypie"
         title="RecyPie"
         short-title="RecyPie"
@@ -64,7 +64,7 @@
         category="UI & UX Design"
         tag="Visual Concept"
         image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png" />
+        image-link="v1652044733/portfolio/recypie/recypie.png" /> -->
       <!-- <ProjectCardRight
         link="buratino"
         title="Buratino Instruktino"

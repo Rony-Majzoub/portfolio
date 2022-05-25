@@ -15,6 +15,12 @@
         </p>
       </div>
       <fun-card
+        title="RecyPie"
+        tag="Digital Prototype"
+        image="recypie.png"
+        image-link="v1652044733/portfolio/recypie/recypie.png"
+        link="recypie" />
+      <fun-card
         title="Buratino"
         tag="Website & App"
         image="buratino.png"
@@ -44,12 +50,6 @@
         image="connected.png"
         image-link="v1653262038/portfolio/fun/connected/connected.png"
         link="info_screen" />
-      <fun-card
-        title="RecyPie"
-        tag="Digital Prototype"
-        image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="recypie" />
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
           Motion Graphics

@@ -32,21 +32,21 @@
         width="28"
         height="3"
         fill="white"
-        class="burger-top origin-center fill-unbleached-silk" />
+        class="burger-top burger origin-center fill-unbleached-silk" />
       <rect
         x="6"
         y="20"
         width="28"
         height="3"
         fill="white"
-        class="burger-middle origin-center fill-unbleached-silk" />
+        class="burger-middle burger origin-center fill-unbleached-silk" />
       <rect
         x="6"
         y="28"
         width="28"
         height="3"
         fill="white"
-        class="burger-bottom origin-center fill-unbleached-silk" />
+        class="burger-bottom burger origin-center fill-unbleached-silk" />
     </svg>
   </button>
 </template>
@@ -125,7 +125,8 @@ export default {
       targets: ".nav-item",
       translateX: ["250", "0"],
       delay: anime.stagger(100, { start: 50, from: "first" }),
-      backgroundColor: ["#4e404f", "#363040"],
+      // backgroundColor: ["#4e404f", "#363040"],
+      opacity: [0, 1],
       direction: "alternate",
       easing: "easeOutQuint",
       duration: 300,

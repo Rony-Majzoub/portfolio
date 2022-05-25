@@ -133,22 +133,86 @@ export default {
       ],
     };
   },
+  // Style the body, header and footer on load.
   beforeCreate() {
-    document.querySelector("body").setAttribute("style", "background:#2d3033");
+    document.querySelector("body").setAttribute("style", "background:#fef8ea");
+    document
+      .querySelector(".nav-menu")
+      .setAttribute("style", "background:#fef8ea");
     document
       .querySelector("header")
       .setAttribute(
         "style",
-        "background: radial-gradient( rgba(0,0,0,0) 1px,#2d3033 1px ) 0px 0px/8px 8px"
+        "background: radial-gradient( rgba(0,0,0,0) 1px,#fef8ea 1px ) 0px 0px/8px 8px"
       );
     document
       .querySelector(".page-footer")
-      .setAttribute("style", "background:#2d3033");
+      .setAttribute("style", "background:#fef8ea");
   },
+  // Style the text and background colors to brand colors.
+  mounted() {
+    var melon = document.querySelectorAll(".text-melon");
+    for (var i = 0; i < melon.length; i++) {
+      melon[i].setAttribute("style", "color: #00060D");
+    }
+    var silk = document.querySelectorAll(".text-unbleached-silk");
+    for (var i = 0; i < silk.length; i++) {
+      silk[i].setAttribute("style", "color: #F2770C");
+    }
+    var cameo = document.querySelectorAll(".text-cameo-pink");
+    for (var i = 0; i < cameo.length; i++) {
+      cameo[i].setAttribute("style", "color: #9700B0");
+    }
+    var pastel = document.querySelectorAll(".text-pastel-pink");
+    for (var i = 0; i < pastel.length; i++) {
+      pastel[i].setAttribute("style", "color: #9700B0");
+    }
+    var eggplant = document.querySelectorAll(".bg-eggplant");
+    for (var i = 0; i < eggplant.length; i++) {
+      eggplant[i].setAttribute("style", "background: #f7b276");
+    }
+    var burger = document.querySelectorAll(".burger");
+    for (var i = 0; i < burger.length; i++) {
+      burger[i].setAttribute("style", "fill:#F2770C");
+    }
+    var nav = document.querySelectorAll(".nav-item");
+    for (var i = 0; i < nav.length; i++) {
+      nav[i].setAttribute("style", "color:#9700b0; background:#fef8ea;");
+    }
+    document
+      .querySelector(".nav-menu")
+      .setAttribute("style", "background:#f7b276");
+  },
+  // Remove all the added styles, and return to default.
   beforeUnmount() {
     document.querySelector("body").setAttribute("style", "");
     document.querySelector("header").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
+    var burger = document.querySelectorAll(".burger");
+    for (var i = 0; i < burger.length; i++) {
+      burger[i].setAttribute("style", "");
+    }
+    var melon = document.querySelectorAll(".text-melon");
+    for (var i = 0; i < melon.length; i++) {
+      melon[i].setAttribute("style", "");
+    }
+    var silk = document.querySelectorAll(".text-unbleached-silk");
+    for (var i = 0; i < silk.length; i++) {
+      silk[i].setAttribute("style", "");
+    }
+    var cameo = document.querySelectorAll(".text-cameo-pink");
+    for (var i = 0; i < cameo.length; i++) {
+      cameo[i].setAttribute("style", "");
+    }
+    var pastel = document.querySelectorAll(".text-pastel-pink");
+    for (var i = 0; i < pastel.length; i++) {
+      pastel[i].setAttribute("style", "");
+    }
+    var eggplant = document.querySelectorAll(".bg-eggplant");
+    for (var i = 0; i < eggplant.length; i++) {
+      eggplant[i].setAttribute("style", "");
+    }
+    document.querySelector(".nav-menu").setAttribute("style", "");
   },
 };
 </script>

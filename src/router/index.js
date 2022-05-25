@@ -22,7 +22,7 @@ const routes = [
   {
     path: "/recypie",
     name: "RecyPie",
-    component: () => import("@/views/RecyPie.vue"),
+    component: () => import("@/views/Fun/RecyPie.vue"),
   },
   {
     path: "/buratino",
