@@ -33,10 +33,6 @@
         description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
       and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
       to further support the idea of lowering the amount of food waste of the user." />
-      <ProjectImage
-        image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png"
-        alt-text="RecyPie" />
     </main>
   </div>
 </template>
