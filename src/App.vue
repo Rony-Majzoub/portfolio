@@ -63,7 +63,7 @@
           Instagram
         </a>
         <a
-          href="https://www.instagram.com/rony.majzoub/"
+          href=""
           class="social-media text-melon transition-all duration-200 font-extrabold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
           &#9432; About this Website
         </a>
