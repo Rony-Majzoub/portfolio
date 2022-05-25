@@ -127,6 +127,6 @@ export default {
   line-height: 1em;
 }
 .project-text {
-  color: var(--unbleached-silk);
+  color: var(--unbleached-silk) !important;
 }
 </style>
