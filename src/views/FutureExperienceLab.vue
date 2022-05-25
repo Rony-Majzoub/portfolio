@@ -118,53 +118,9 @@ export default {
     ColumnLeft,
     ColumnRight,
     ProjectImage,
-    ProjectGallery,
     BackButton,
   },
-  // Send Gallery Array down to ProjectGallery component for dynamic images.
-  provide() {
-    // use function syntax so that we can access `this`
-    return {
-      pictures: this.pictures,
-    };
-  },
-  // Data-list of images to be shown in ProjectGallery.
-  data() {
-    return {
-      pictures: [
-        {
-          url: "v1652044734/portfolio/smoove/smoove_road.jpg",
-          alt: "Motorcycle driving down a long road, at sunset.",
-          src: "smoove.jpg",
-        },
-        {
-          url: "v1652863280/portfolio/smoove/smoove_helmet.png",
-          alt: "A motorcycle helmet placed on a road.",
-          src: "smoove_helmet.png",
-        },
-        {
-          url: "v1652863281/portfolio/smoove/smoove_studio.png",
-          alt: "A glowing motorcycle parked inside a studio.",
-          src: "smoove_studio.png",
-        },
-        {
-          url: "v1652863280/portfolio/smoove/smoove_watch.png",
-          alt: "A digital watch hanging from a motorcycle handle.",
-          src: "smoove_watch.png",
-        },
-        {
-          url: "v1652863376/portfolio/smoove/smoove_wheel.png",
-          alt: "A close-up picture of a motorcycle wheel arch.",
-          src: "smoove_wheel.png",
-        },
-        {
-          url: "v1652863280/portfolio/smoove/smoove_field.png",
-          alt: "A motorcycle and a driver parked in an open field.",
-          src: "smoove_field.png",
-        },
-      ],
-    };
-  },
+
   beforeCreate() {
     document.querySelector("body").setAttribute("style", "background:#212121");
     document
@@ -176,6 +132,10 @@ export default {
     document
       .querySelector(".page-footer")
       .setAttribute("style", "background: #212121");
+    // var els = document.getElementsByClassName("text-melon");
+    // for (var i = 0; i < els.length; i++) {
+    //   els[i].setAttribute("style", "color: #fff");
+    // }
   },
   beforeUnmount() {
     document.querySelector("body").setAttribute("style", "");

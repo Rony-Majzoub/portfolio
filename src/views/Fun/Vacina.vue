@@ -3,7 +3,7 @@
     <BackButton />
     <ProjectTitle
       info="2021 - UX/UI Design"
-      title="Buratino Instruktino"
+      title="Vacina"
       brief="Create and design a digital app to improve the experience and ease of vaccinating." />
     <ProjectImage
       class="mb-10"
