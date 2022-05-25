@@ -1,13 +1,13 @@
 <template>
   <div class="h-full flex items-center justify-center">
     <h1
-      class="intro-text max-w-4xl text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl 4xl:text-9xl font-bold text-unbleached-silk text-left tracking-tight antialiased">
+      class="intro-text max-w-4xl text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl 4xl:text-9xl font-bold !text-unbleached-silk text-left tracking-tight antialiased">
       <!-- My name is Rony Majzoub. -->
       <span class="word">My&nbsp;</span>
       <span class="word">name&nbsp;</span>
       <span class="word">is&nbsp;</span>
-      <span class="word melon">Rony&nbsp;</span>
-      <span class="word melon">Majzoub.&nbsp;</span>
+      <span class="word !text-melon">Rony&nbsp;</span>
+      <span class="word !text-melon">Majzoub.&nbsp;</span>
       <hr class="basis-ful w-full h-0 m-0 border-0" />
 
       <span class="word whitespace-nowrap">I'm&nbsp;</span>
@@ -15,7 +15,7 @@
       <hr class="basis-ful w-full h-0 m-0 border-0 block sm:hidden" />
 
       <span
-        class="word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant text-eggplant p-4 bg-unbleached-silk decoration-4 md:decoration-8">
+        class="word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant p-4 bg-unbleached-silk decoration-4 md:decoration-8">
         {{ role[0] }}.
       </span>
       <br />
@@ -85,14 +85,5 @@ u::selection {
 .intro-text .word {
   display: inline-block;
   line-height: 1.2em;
-}
-.word {
-  color: var(--unbleached-silk);
-}
-.melon {
-  color: var(--melon);
-}
-.role {
-  color: var(--eggplant);
 }
 </style>

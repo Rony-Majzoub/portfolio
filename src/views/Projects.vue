@@ -18,7 +18,7 @@
     </div>
     <main class="project-grid col-span-full flex flex-col justify-center">
       <h1
-        class="project-text text-4xl sm:text-5xl lg:text-6xl font-bold text-unbleached-silk text-left tracking-tight antialiased mb-8 sm:mb-16">
+        class="project-text text-4xl sm:text-5xl lg:text-6xl font-bold !text-unbleached-silk text-left tracking-tight antialiased mb-8 sm:mb-16">
         Here are some of my larger projects.
       </h1>
       <ProjectCardRight
@@ -125,8 +125,5 @@ export default {
 .project-text .word {
   display: inline-block;
   line-height: 1em;
-}
-.project-text {
-  color: var(--unbleached-silk) !important;
 }
 </style>
