@@ -126,4 +126,7 @@ export default {
   display: inline-block;
   line-height: 1em;
 }
+.project-text {
+  color: var(--unbleached-silk);
+}
 </style>
