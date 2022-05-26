@@ -9,7 +9,9 @@
       class="mb-10"
       image="buratino.png"
       image-link="v1652044733/portfolio/buratino/buratino.png"
-      alt-text="Buratino Instruktino" />
+      alt-text="Buratino Instruktino"
+      link-text="View Website"
+      link="https://app.buratino.se/" />
     <ProjectTags
       client="Buratino AB"
       team="Rony Majzoub, Casper Hansen, Viggo Fredriksson"

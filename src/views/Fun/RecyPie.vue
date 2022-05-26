@@ -9,7 +9,9 @@
       class="mb-10"
       image="recypie.png"
       image-link="v1652044733/portfolio/recypie/recypie.png"
-      alt-text="RecyPie" />
+      alt-text="RecyPie"
+      link-text="View Prototype"
+      link="https://www.figma.com/proto/XxGihqfhy88PjYtPlCpXSd/RecyPie-(Showreel)?page-id=0%3A1&node-id=181%3A3379&viewport=248%2C371%2C0.09&scaling=scale-down&starting-point-node-id=181%3A3379&show-proto-sidebar=1" />
     <ProjectTags
       client="Yrgo DD21"
       team="Myself"
@@ -20,20 +22,7 @@
       category2="UX Design"
       category3="User Testing"
       category4="Prototyping" />
-    <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
-      <ColumnRight
-        title="Background"
-        description="As part of a work sample for applying to Yrgo Digital Designer, our goal was to create a digital solution to our assigned problem." />
-      <ColumnLeft
-        title="The problem"
-        description="Worldwide, over a third of all produced food is wasted and thrown away. 
-      By 2030, the UN plans to reduce the global amount of food waste per person by 50%. How can we contribute towards that goal through digital means?" />
-      <ColumnRight
-        title="The solution"
-        description="My solution was to design a prototype of a mobile app that takes a given list of ingredients, 
-      and outputs multiple personalised recipes based on those ingredients. Secondary features, such as favorites and tips were added, 
-      to further support the idea of lowering the amount of food waste of the user." />
-    </main>
+    <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
 

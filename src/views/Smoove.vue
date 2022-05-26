@@ -189,6 +189,10 @@ export default {
     for (var i = 0; i < nav.length; i++) {
       nav[i].setAttribute("style", "background:#201d26;");
     }
+    var eggplant = document.querySelectorAll(".bg-eggplant");
+    for (var i = 0; i < eggplant.length; i++) {
+      eggplant[i].setAttribute("style", "background: #363040");
+    }
     document
       .querySelector(".nav-menu")
       .setAttribute("style", "background:#363040");

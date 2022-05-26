@@ -1,4 +1,8 @@
-import { createRouter, createWebHashHistory } from "vue-router";
+import {
+  createRouter,
+  createWebHashHistory,
+  createMemoryHistory,
+} from "vue-router";
 // import Projects from "@/views/Projects.vue";
 // import Fun from "@/views/Fun.vue";
 // import About from "@/views/About.vue";

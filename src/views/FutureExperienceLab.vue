@@ -71,18 +71,13 @@
         description="The final stylesheet has a focus on three key areas - fonts, colors and patterns. 
         When it comes to fonts, we decided on a heavy, punk-like font for all titles and headers, to contribute towards a more heavy feel. We also used a lighter font for all body text, that was more readable, which made the site feel more professional and controlled.
         
-        For our brand colors, we chose three strong colors, with two additional text & background colors. 
-        The green color was our main color, to be used on main elements, such as CTA-Buttons. 
-        The orange color was our secondary color, which was used on certain elements that needed to stick out, but not to the degree of the main color. 
-        The pink color was our tertiary color, often used on patterns and backgrounds to give off a more dynamic feel.
-
-        Throughout the website, we also use a variety of primitive shapes as decorative backgrounds. These are used in conjunction with our brand colors, to give off a feeling of chaos, as well as spice up the background as a whole.
+        For our brand colors, we chose three strong colors, with two additional text & background colors. Throughout the website, we also use a variety of primitive shapes as decorative backgrounds. These are used in conjunction with our brand colors, to give off a feeling of chaos, as well as spice up the background as a whole.
         " />
       <ColumnRight
         title="Designing for the Web"
         description="For this project, we teamed up with the Web Developer class at Yrgo, who were responsible for coding and implementing our designs to the web. That's why we had to carefully adapt our working schedule to accomodate agile development with our Web Developers.
 
-        Our first method was to deliver sections one-by-one in a timely manner, with greyboxes and large visual elements coming first. With each passing day, we'd deliver other sections of the site, that they could implement in a modular manner. We'd also communicate if any changes to previous deliveries had been made.
+        Our first method was to deliver sections one-by-one in a timely manner, with greyboxes and large visual elements coming first. We'd also communicate if any changes to previous deliveries had been made.
         Our second method was to utilize Components and Color/Text Styles extensively in Figma, to better allow for reusable code in the final website. This drastically cut down the time needed to code the website, while also giving a more consistent design to the entire prototype." />
       <ProjectImage
         image="fel_prototype.png"
