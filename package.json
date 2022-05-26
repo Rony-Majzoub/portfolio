@@ -19,7 +19,7 @@
     "vite": "^2.5.4",
     "vue": "^3.0.0",
     "vue-meta": "^3.0.0-alpha.10",
-    "vue-router": "^4.0.0-0",
+    "vue-router": "^4.0.13",
     "vue3-lottie": "^2.1.0"
   },
   "devDependencies": {
@@ -30,7 +30,9 @@
     "postcss": "^8.4.12",
     "prettier": "2.6.2",
     "sass": "^1.43.4",
-    "tailwindcss": "^3.0.24"
+    "tailwindcss": "^3.0.24",
+    "vite-plugin-pages": "^0.23.0",
+    "vite-plugin-pages-sitemap": "^1.2.2"
   },
   "eslintConfig": {
     "root": true,
