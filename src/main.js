@@ -3,6 +3,7 @@ import anime from "animejs/lib/anime.es.js";
 import App from "./App.vue";
 import "./index.css";
 import router from "./router";
+import RouterPrefetch from "vue-router-prefetch";
 const app = createApp(App);
 
 app.directive("anime", {
@@ -25,5 +26,6 @@ Object.defineProperties(app.config.globalProperties, {
 });
 
 app.use(router);
+app.use(RouterPrefetch);
 
 app.mount("#app");

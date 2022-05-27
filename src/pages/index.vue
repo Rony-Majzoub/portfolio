@@ -4,7 +4,7 @@
     <div class="h-screen col-span-full flex flex-col items-center justify-end">
       <IntroText class="grow" />
       <router-link
-        class="arrow min-h-[144px] -translate-y-full w-fit p-4 flex justify-center mt-20 bg-transparent text-[0] text-melon"
+        class="arrow min-h-[144px] -translate-y-full w-fit p-4 pb-16 flex justify-center mt-12 bg-transparent text-[0] text-melon"
         :to="{ path: '/', hash: '#projects' }">
         View All Projects
         <!-- <Vue3Lottie

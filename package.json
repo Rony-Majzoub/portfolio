@@ -18,7 +18,8 @@
     "vite": "^2.5.4",
     "vue": "^3.0.0",
     "vue-meta": "^3.0.0-alpha.10",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.15",
+    "vue-router-prefetch": "^2.0.2"
   },
   "devDependencies": {
     "@iconify/json": "^2.1.51",
