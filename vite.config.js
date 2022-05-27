@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
 import generateSitemap from "vite-plugin-pages-sitemap";
+import Components from "unplugin-vue-components/vite";
 
 const path = require("path");
 export default defineConfig({
@@ -20,6 +21,9 @@ export default defineConfig({
           routes,
           readable: true,
         }),
+    }),
+    Components({
+      /* options */
     }),
   ],
   resolve: {

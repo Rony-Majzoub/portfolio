@@ -132,13 +132,8 @@
 </template>
 
 <script>
-import FunCard from "@/components/Fun/FunCard.vue";
-
 export default {
   name: "Fun",
-  components: {
-    FunCard,
-  },
   mounted() {
     // Wrap every word in a span
     var textWrapper = document.querySelector(".fun-text");

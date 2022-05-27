@@ -5,12 +5,7 @@
 </template>
 
 <script>
-import AboutCard from "@/components/About/AboutCard.vue";
-
 export default {
   name: "About",
-  components: {
-    AboutCard,
-  },
 };
 </script>

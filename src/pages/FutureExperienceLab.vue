@@ -97,24 +97,8 @@
 </template>
 
 <script>
-import ProjectTags from "@/components/Project/ProjectTags.vue";
-import ProjectTitle from "@/components/Project/ProjectTitle.vue";
-import ColumnLeft from "@/components/Project/ColumnLeft.vue";
-import ColumnRight from "@/components/Project/ColumnRight.vue";
-import ProjectImage from "../components/Project/ProjectImage.vue";
-import ProjectGallery from "../components/Project/ProjectGallery.vue";
-import BackButton from "@/components/BackButton.vue";
-
 export default {
   name: "FutureExperienceLab",
-  components: {
-    ProjectTags,
-    ProjectTitle,
-    ColumnLeft,
-    ColumnRight,
-    ProjectImage,
-    BackButton,
-  },
   // Style the body, header and footer on load.
   beforeCreate() {
     document.querySelector("body").setAttribute("style", "background:#212121");

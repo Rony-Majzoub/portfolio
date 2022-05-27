@@ -88,25 +88,8 @@
 </template>
 
 <script>
-import ProjectTags from "@/components/Project/ProjectTags.vue";
-import ProjectTitle from "@/components/Project/ProjectTitle.vue";
-import ColumnLeft from "@/components/Project/ColumnLeft.vue";
-import ColumnRight from "@/components/Project/ColumnRight.vue";
-import ProjectImage from "../components/Project/ProjectImage.vue";
-import ProjectGallery from "../components/Project/ProjectGallery.vue";
-import BackButton from "@/components/BackButton.vue";
-
 export default {
   name: "Mojo",
-  components: {
-    ProjectTags,
-    ProjectTitle,
-    ColumnLeft,
-    ColumnRight,
-    ProjectImage,
-    ProjectGallery,
-    BackButton,
-  },
   // Send Gallery Array down to ProjectGallery component for dynamic images.
   provide() {
     // use function syntax so that we can access `this`

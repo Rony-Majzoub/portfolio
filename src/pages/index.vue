@@ -82,9 +82,9 @@
 
 <script>
 // @ is an alias to /src
-import IntroText from "@/components/IntroText.vue";
-import ProjectCardRight from "@/components/Overview/ProjectCardRight.vue";
-import ProjectCardLeft from "@/components/Overview/ProjectCardLeft.vue";
+// import IntroText from "@/components/IntroText.vue";
+// import ProjectCardRight from "@/components/Overview/ProjectCardRight.vue";
+// import ProjectCardLeft from "@/components/Overview/ProjectCardLeft.vue";
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
 // import { defineAsyncComponent } from "vue";
@@ -101,9 +101,9 @@ export default {
   //   };
   // },
   components: {
-    IntroText,
-    ProjectCardRight,
-    ProjectCardLeft,
+    // IntroText,
+    // ProjectCardRight,
+    // ProjectCardLeft,
     Vue3Lottie,
   },
   mounted() {
