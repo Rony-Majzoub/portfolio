@@ -14,37 +14,37 @@
           The usual stuff, you know?
         </p>
       </div>
-      <fun-card
+      <FunCard
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
         image-link="v1652044733/portfolio/recypie/recypie.png"
         link="fun/recypie" />
-      <fun-card
+      <FunCard
         title="Buratino"
         tag="Website & App"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="fun/buratino" />
-      <fun-card
+      <FunCard
         title="Vacina"
         tag="Digital Prototype"
         image="vacina.png"
         image-link="v1653260886/portfolio/fun/vacina/vacina.png"
         link="fun/vacina" />
-      <fun-card
+      <FunCard
         title="Shuu"
         tag="Website Prototype"
         image="shuu_hero.png"
         image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
         link="fun/shuu" />
-      <fun-card
+      <FunCard
         title="Polestar Website"
         tag="Website Prototype"
         image="polestar_website.png"
         image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
         link="fun/polestarwebsite" />
-      <fun-card
+      <FunCard
         title="Information Screen"
         tag="Digital Prototype"
         image="connected.png"
@@ -59,19 +59,19 @@
         </p>
       </div>
 
-      <fun-card
+      <FunCard
         title="Buratino"
         tag="Website"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="fun/buratino" />
-      <fun-card
+      <FunCard
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
         image-link="v1652044733/portfolio/recypie/recypie.png"
         link="fun/recypie" />
-      <fun-card
+      <FunCard
         title="Buratino"
         tag="Website"
         image="buratino.png"
@@ -85,43 +85,43 @@
           Expect lots of Blender & game engine experiments.
         </p>
       </div>
-      <fun-card
+      <FunCard
         title="So Good"
         tag="Product Visualization"
         image="so_good.png"
         image-link="v1653258131/portfolio/fun/so_good/so_good.png"
         link="fun/sogood" />
-      <fun-card
+      <FunCard
         title="Donut Render"
         tag="Modelling & Rendering"
         image="donut_render.jpg"
         image-link="v1653259075/portfolio/fun/donut_render.jpg"
         link="fun/donutrender" />
-      <fun-card
+      <FunCard
         title="Donut Night Render"
         tag="Modelling & Rendering"
         image="donut_night_render.png"
         image-link="v1653259523/portfolio/fun/Donut_Night_Render.png"
         link="fun/donutnightrender" />
-      <fun-card
+      <FunCard
         title="Project Punk"
         tag="Modelling & Rendering"
         image="project_punk.jpg"
         image-link="v1653259074/portfolio/fun/project_punk.jpg"
         link="fun/projectpunk" />
-      <fun-card
+      <FunCard
         title="Brick Wall"
         tag="Rendering"
         image="brick_wall.jpg"
         image-link="v1653259074/portfolio/fun/Brick_Wall.jpg"
         link="fun/brickwall" />
-      <fun-card
+      <FunCard
         title="Anvil Render"
         tag="Modelling & Materials"
         image="anvilrender.jpg"
         image-link="v1653259517/portfolio/fun/anvilrender.jpg"
         link="fun/anvilrender" />
-      <fun-card
+      <FunCard
         title="NTI-Awards 2020"
         tag="Modelling & Rendering"
         image="nti_awards.jpg"
