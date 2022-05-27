@@ -74,13 +74,13 @@
 </template>
 
 <script>
-import ProjectButton from "./ProjectButton.vue";
+// import ProjectButton from "./ProjectButton.vue";
 import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
 export default {
   name: "ProjectCardLeft",
-  components: {
-    ProjectButton,
-  },
+  // components: {
+  //   ProjectButton,
+  // },
   props: {
     title: {
       default: "Project Title",

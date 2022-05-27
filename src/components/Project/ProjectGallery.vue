@@ -28,13 +28,13 @@
 </template>
 <script>
 import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
-import ProjectImage from "@/components/Project/ProjectImage.vue";
+// import ProjectImage from "@/components/Project/ProjectImage.vue";
 
 export default {
   name: "ProjectGallery",
-  components: {
-    ProjectImage,
-  },
+  // components: {
+  //   ProjectImage,
+  // },
   // Injects the Array of images from the Main Page.
   inject: ["pictures"],
   props: {

@@ -91,14 +91,14 @@
 </template>
 
 <script>
-import AboutPill from "@/components/About/AboutPill.vue";
+// import AboutPill from "@/components/About/AboutPill.vue";
 import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
 
 export default {
   name: "AboutCard",
-  components: {
-    AboutPill,
-  },
+  // components: {
+  //   AboutPill,
+  // },
   props: {
     imageLink: {
       default: "v1653220647/portfolio/pfp_new.jpg",
