@@ -19,37 +19,37 @@
         tag="Digital Prototype"
         image="recypie.png"
         image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="recypie" />
+        link="fun/recypie" />
       <fun-card
         title="Buratino"
         tag="Website & App"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="buratino" />
+        link="fun/buratino" />
       <fun-card
         title="Vacina"
         tag="Digital Prototype"
         image="vacina.png"
         image-link="v1653260886/portfolio/fun/vacina/vacina.png"
-        link="vacina" />
+        link="fun/vacina" />
       <fun-card
         title="Shuu"
         tag="Website Prototype"
         image="shuu_hero.png"
         image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
-        link="shuu" />
+        link="fun/shuu" />
       <fun-card
         title="Polestar Website"
         tag="Website Prototype"
         image="polestar_website.png"
         image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
-        link="polestar_website" />
+        link="fun/polestarwebsite" />
       <fun-card
         title="Information Screen"
         tag="Digital Prototype"
         image="connected.png"
         image-link="v1653262038/portfolio/fun/connected/connected.png"
-        link="info_screen" />
+        link="fun/infoscreen" />
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
           Motion Graphics
@@ -64,19 +64,19 @@
         tag="Website"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="buratino" />
+        link="fun/buratino" />
       <fun-card
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
         image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="recypie" />
+        link="fun/recypie" />
       <fun-card
         title="Buratino"
         tag="Website"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="buratino" />
+        link="fun/buratino" />
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
           3D-Rendering
@@ -90,43 +90,43 @@
         tag="Product Visualization"
         image="so_good.png"
         image-link="v1653258131/portfolio/fun/so_good/so_good.png"
-        link="so_good" />
+        link="fun/sogood" />
       <fun-card
         title="Donut Render"
         tag="Modelling & Rendering"
         image="donut_render.jpg"
         image-link="v1653259075/portfolio/fun/donut_render.jpg"
-        link="donut_render" />
+        link="fun/donutrender" />
       <fun-card
         title="Donut Night Render"
         tag="Modelling & Rendering"
         image="donut_night_render.png"
         image-link="v1653259523/portfolio/fun/Donut_Night_Render.png"
-        link="donut_night" />
+        link="fun/donutnightrender" />
       <fun-card
         title="Project Punk"
         tag="Modelling & Rendering"
         image="project_punk.jpg"
         image-link="v1653259074/portfolio/fun/project_punk.jpg"
-        link="project_punk" />
+        link="fun/projectpunk" />
       <fun-card
         title="Brick Wall"
         tag="Rendering"
         image="brick_wall.jpg"
         image-link="v1653259074/portfolio/fun/Brick_Wall.jpg"
-        link="brick_wall" />
+        link="fun/brickwall" />
       <fun-card
         title="Anvil Render"
         tag="Modelling & Materials"
         image="anvilrender.jpg"
         image-link="v1653259517/portfolio/fun/anvilrender.jpg"
-        link="anvil_render" />
+        link="fun/anvilrender" />
       <fun-card
         title="NTI-Awards 2020"
         tag="Modelling & Rendering"
         image="nti_awards.jpg"
         image-link="v1653259075/portfolio/fun/nti_awards.jpg"
-        link="nti_awards" />
+        link="fun/ntiawards" />
     </main>
   </div>
 </template>

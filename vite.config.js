@@ -9,6 +9,7 @@ export default defineConfig({
   plugins: [
     vue(),
     Pages({
+      dirs: { dir: "src/pages", baseRoute: "" },
       onRoutesGenerated: (routes) => generateSitemap({ routes }),
     }),
   ],

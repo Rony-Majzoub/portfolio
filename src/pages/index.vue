@@ -95,11 +95,11 @@ import "vue3-lottie/dist/style.css";
 
 export default {
   name: "Projects",
-  metaInfo() {
-    return {
-      title: "My Options API title",
-    };
-  },
+  // metaInfo() {
+  //   return {
+  //     title: "My Options API title",
+  //   };
+  // },
   components: {
     IntroText,
     ProjectCardRight,
