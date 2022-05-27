@@ -132,8 +132,14 @@
 </template>
 
 <script>
+import { defineAsyncComponent, ref } from "vue";
 export default {
   name: "Fun",
+  components: {
+    FunCard: defineAsyncComponent(() =>
+      import("../components/Fun/FunCard.vue")
+    ),
+  },
   mounted() {
     // Wrap every word in a span
     var textWrapper = document.querySelector(".fun-text");

@@ -87,7 +87,7 @@
 // import ProjectCardLeft from "@/components/Overview/ProjectCardLeft.vue";
 import { Vue3Lottie } from "vue3-lottie";
 import "vue3-lottie/dist/style.css";
-// import { defineAsyncComponent } from "vue";
+import { defineAsyncComponent, ref } from "vue";
 
 // const AsyncComp = defineAsyncComponent(() =>
 //   import("./components/MyComponent.vue")
@@ -101,9 +101,15 @@ export default {
   //   };
   // },
   components: {
+    ProjectCardLeft: defineAsyncComponent(() =>
+      import("../components/Overview/ProjectCardLeft.vue")
+    ),
+    ProjectCardRight: defineAsyncComponent(() =>
+      import("../components/Overview/ProjectCardRight.vue")
+    ),
     // IntroText,
-    // ProjectCardRight,
-    // ProjectCardLeft,
+    // ProjectCardRight: ProjectCardRight,
+    // ProjectCardLeft: ProjectCardLeft,
     Vue3Lottie,
   },
   mounted() {
