@@ -14,7 +14,12 @@ export default defineConfig({
         { dir: "src/features/**/pages", baseRoute: "features" },
         { dir: "src/admin/pages", baseRoute: "admin" },
       ],
-      onRoutesGenerated: (routes) => generateSitemap({ routes }),
+      onRoutesGenerated: (routes) =>
+        generateSitemap({
+          hostname: "https://rony-majzoub.netlify.app/",
+          routes,
+          readable: true,
+        }),
     }),
   ],
   resolve: {

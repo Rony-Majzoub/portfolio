@@ -1,6 +1,6 @@
 import {
   createRouter,
-  createWebHashHistory,
+  createWebHistory,
   createMemoryHistory,
 } from "vue-router";
 import routes from "~pages";
@@ -107,7 +107,7 @@ import routes from "~pages";
 // ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   scrollBehavior(to) {
     if (to.hash) {
