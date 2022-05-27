@@ -1,9 +1,10 @@
+import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
 import generateSitemap from "vite-plugin-pages-sitemap";
 
 const path = require("path");
-export default {
+export default defineConfig({
   //...
   plugins: [
     vue(),
@@ -31,4 +32,4 @@ export default {
       },
     },
   },
-};
+});
