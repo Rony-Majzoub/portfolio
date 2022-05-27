@@ -1,7 +1,7 @@
 <template>
-  <div
+  <router-link
     class="cursor-pointer relative h-64 max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md hover:-translate-y-1 transform-gpu"
-    @click="$router.push(`/${link}`)">
+    :to="{ path: `/${link}` }">
     <!-- Image Element -->
     <!-- Blurred Placeholder Image (Cloudinary) -->
     <img
@@ -35,7 +35,7 @@
         {{ tag }}
       </p>
     </div>
-  </div>
+  </router-link>
 </template>
 
 <script>

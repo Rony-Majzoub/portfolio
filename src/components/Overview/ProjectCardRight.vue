@@ -5,37 +5,36 @@
     <figure
       class="lg:flex-row flex flex-col !bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 absolute w-full h-full left-0 top-0 z-[-10] blur-xl contrast-150 mix-blend-lighten opacity-0 group-hover:opacity-25 will-change-[opacity,_filter] transition-opacity ease-in-out duration-300 transform-gpu">
       <!-- Image Container -->
-      <div
-        class="relative overflow-hidden lg:w-7/12 flex-none h-full lg:rounded-none lg:rounded-l-xl rounded-t-xl">
+      <router-link
+        class="relative overflow-hidden lg:w-7/12 flex-none h-full lg:rounded-none lg:rounded-l-xl rounded-t-xl"
+        :to="{ path: `/${link}` }">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
           class="cld-responsive absolute object-cover w-full h-64 lg:h-full cursor-pointer text-[0]"
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           :src="`/assets/img/${image}`"
-          :alt="`${title}`"
-          @click="$router.push(`/${link}`)" />
-      </div>
+          :alt="`${title}`" />
+      </router-link>
       <div
         class="pt-6 p-8 text-right lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full"></div>
     </figure>
     <!-- Image Container -->
-    <div
-      class="relative overflow-hidden lg:w-7/12 flex-none h-64 lg:h-auto lg:rounded-none lg:rounded-l-xl rounded-t-xl">
+    <router-link
+      class="relative overflow-hidden lg:w-7/12 flex-none h-64 lg:h-auto lg:rounded-none lg:rounded-l-xl rounded-t-xl"
+      :to="{ path: `/${link}` }">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
         class="cld-responsive absolute object-cover w-full h-64 lg:h-full cursor-pointer text-[0] !bg-eggplant"
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480,e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
-        :alt="`${title}`"
-        @click="$router.push(`/${link}`)" />
+        :alt="`${title}`" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
         class="cld-responsive high-def absolute object-cover w-full h-64 lg:h-full cursor-pointer text-[0]"
         :src="`/assets/img/${image}`"
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
-        :alt="`${title}`"
-        @click="$router.push(`/${link}`)" />
-    </div>
+        :alt="`${title}`" />
+    </router-link>
     <div
       class="pt-6 p-8 text-right lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full">
       <figcaption class="space-y-2 lg:space-y-4">
