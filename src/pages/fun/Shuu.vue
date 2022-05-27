@@ -12,7 +12,9 @@
       alt-text="Shuu" />
     <ProjectTags
       client="Yrgo DD21"
-      team="Rony Majzoub, Christofer Schwarz, Linnea Kvammen"
+      team="Rony Majzoub, 
+      Christofer Schwarz, 
+      Linnea Kvammen"
       role="UI/UX Designer"
       duration="6 hours"
       tools="Figma"

@@ -14,7 +14,9 @@
       link="https://app.buratino.se/" />
     <ProjectTags
       client="Buratino AB"
-      team="Rony Majzoub, Casper Hansen, Viggo Fredriksson"
+      team="Rony Majzoub, 
+      Casper Hansen, 
+      Viggo Fredriksson"
       role="UI/UX Designer, CSS Developer"
       duration="8 months"
       tools="Figma, Adobe Illustrator, Visual Studio Code"

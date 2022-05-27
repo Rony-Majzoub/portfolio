@@ -10,7 +10,8 @@
       </div>
       <div class="flex flex-col gap-2">
         <p class="text-xl md:text-2xl font-bold text-unbleached-silk">Team</p>
-        <p class="font-semibold text-base md:text-lg text-melon max-w-prose">
+        <p
+          class="font-semibold text-base md:text-lg text-melon max-w-prose whitespace-pre-line leading-8 md:leading-8">
           {{ team }}
         </p>
       </div>

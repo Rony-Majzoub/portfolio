@@ -14,7 +14,7 @@
       link="https://www.figma.com/proto/XxGihqfhy88PjYtPlCpXSd/RecyPie-(Showreel)?page-id=0%3A1&node-id=181%3A3379&viewport=248%2C371%2C0.09&scaling=scale-down&starting-point-node-id=181%3A3379&show-proto-sidebar=1" />
     <ProjectTags
       client="Yrgo DD21"
-      team="Myself"
+      team="Rony Majzoub"
       role="UI Designer"
       duration="2 months"
       tools="Figma"

@@ -14,7 +14,10 @@
       link="https://rony-majzoub-fel.netlify.app" />
     <ProjectTags
       client="Yrgo DD21, Future Experience Lab"
-      team="Rony Majzoub, Juna Jakobsson, Marcus Hägerstrand, Nema Vinkeloe Uuskyla"
+      team="Rony Majzoub, 
+      Juna Jakobsson, 
+      Marcus Hägerstrand, 
+      Nema Vinkeloe Uuskyla"
       role="UI/UX Designer"
       duration="2 weeks"
       tools="Figma"

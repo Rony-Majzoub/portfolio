@@ -14,7 +14,9 @@
       link="https://www.figma.com/proto/JW1asOCvRC6oo5sgLUfnoB/Mojo-(Showreel)?page-id=653%3A918&node-id=676%3A1492&viewport=2303%2C274%2C0.28&scaling=contain&starting-point-node-id=676%3A1492" />
     <ProjectTags
       client="Yrgo DD21, Chalmers Encubator"
-      team="Rony Majzoub, Emma Norman, Madeleine Möller Ståhl"
+      team="Rony Majzoub, 
+      Emma Norman, 
+      Madeleine Möller Ståhl"
       role="UX Designer, Project Lead"
       duration="2 months"
       tools="Figma, Adobe Illustrator"

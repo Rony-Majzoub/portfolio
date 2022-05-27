@@ -3,15 +3,15 @@
     <h1
       class="intro-text max-w-4xl text-4xl md:text-6xl lg:text-7xl 3xl:text-8xl 4xl:text-9xl font-bold !text-unbleached-silk text-left tracking-tight antialiased">
       <!-- My name is Rony Majzoub. -->
-      <span class="word">My&nbsp;</span>
-      <span class="word">name&nbsp;</span>
-      <span class="word">is&nbsp;</span>
-      <span class="word !text-melon">Rony&nbsp;</span>
-      <span class="word !text-melon">Majzoub.&nbsp;</span>
+      <span class="word !text-melon">My&nbsp;</span>
+      <span class="word !text-melon">name&nbsp;</span>
+      <span class="word !text-melon">is&nbsp;</span>
+      <span class="word !text-unbleached-silk">Rony&nbsp;</span>
+      <span class="word !text-unbleached-silk">Majzoub.&nbsp;</span>
       <hr class="basis-ful w-full h-0 m-0 border-0" />
 
-      <span class="word whitespace-nowrap">I'm&nbsp;</span>
-      <span class="word whitespace-nowrap">a&nbsp;</span>
+      <span class="word !text-melon whitespace-nowrap">I'm&nbsp;</span>
+      <span class="word !text-melon whitespace-nowrap">a&nbsp;</span>
       <hr class="basis-ful w-full h-0 m-0 border-0 block sm:hidden" />
 
       <span

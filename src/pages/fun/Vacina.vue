@@ -14,7 +14,8 @@
       link="https://www.figma.com/proto/jfnsuqMbfLqnUqfpXwBepc/Vacina-(Showreel)?page-id=7%3A141&node-id=23%3A125&viewport=238%2C509%2C0.17&scaling=scale-down&starting-point-node-id=23%3A125" />
     <ProjectTags
       client="Yrgo DD21"
-      team="Rony Majzoub, Linnea Kvammen"
+      team="Rony Majzoub, 
+      Linnea Kvammen"
       role="UI/UX Designer"
       duration="2 weeks"
       tools="Figma"

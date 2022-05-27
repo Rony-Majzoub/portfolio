@@ -12,7 +12,12 @@
       alt-text="Polestar Website" />
     <ProjectTags
       client="Polestar"
-      team="Rony Majzoub, Matthew Blaxland, Emil Torvaldsson, Emil Jerkersson, Juna Jakobsson, Tom-Christian Stokka"
+      team="Rony Majzoub, 
+      Matthew Blaxland, 
+      Emil Torvaldsson, 
+      Emil Jerkersson, 
+      Juna Jakobsson, 
+      Tom-Christian Stokka"
       role="UI/UX Designer"
       duration="6 hours"
       tools="Figma"

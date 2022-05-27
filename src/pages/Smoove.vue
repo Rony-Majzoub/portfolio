@@ -14,7 +14,12 @@
       link="https://rony-majzoub-smoove.netlify.app" />
     <ProjectTags
       client="Yrgo DD21"
-      team="Rony Majzoub, Linrinna Lindström, Per-Emil Lundqvist, Alexander Mellby, Oliver Davis, Albin Andersson"
+      team="Rony Majzoub, 
+      Linrinna Lindström, 
+      Per-Emil Lundqvist, 
+      Alexander Mellby, 
+      Oliver Davis, 
+      Albin Andersson"
       role="UI/UX Designer, Creative Director"
       duration="1 month"
       tools="Figma, Adobe After Effects, Adobe Illustrator"
