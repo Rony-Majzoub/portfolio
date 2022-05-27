@@ -12,11 +12,7 @@ export default defineConfig({
   plugins: [
     Vue(),
     Pages({
-      dirs: [
-        { dir: "src/pages", baseRoute: "" },
-        { dir: "src/features/**/pages", baseRoute: "features" },
-        { dir: "src/admin/pages", baseRoute: "admin" },
-      ],
+      dirs: [{ dir: "src/pages", baseRoute: "" }],
       onRoutesGenerated: (routes) =>
         generateSitemap({
           hostname: "https://rony-majzoub.netlify.app/#/",
@@ -41,6 +37,20 @@ export default defineConfig({
         // example : additionalData: `@import "./src/design/styles/variables";`
         // dont need include file extend .scss
         additionalData: `@import "./src/styles/_variables";`,
+      },
+    },
+  },
+  build: {
+    rollupOptions: {
+      // https://rollupjs.org/guide/en/#outputmanualchunks
+      output: {
+        manualChunks: {
+          "main-chunk": [
+            "./src/pages/index.vue",
+            "./src/pages/Fun.vue",
+            "./src/pages/About.vue",
+          ],
+        },
       },
     },
   },
