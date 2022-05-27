@@ -97,8 +97,14 @@
 </template>
 
 <script>
+import { defineAsyncComponent } from "vue";
 export default {
   name: "FutureExperienceLab",
+  components: {
+    ProjectImage: defineAsyncComponent(() =>
+      import("../components/Project/ProjectImage.vue")
+    ),
+  },
   // Style the body, header and footer on load.
   beforeCreate() {
     document.querySelector("body").setAttribute("style", "background:#212121");

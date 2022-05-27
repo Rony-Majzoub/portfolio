@@ -101,8 +101,17 @@
 </template>
 
 <script>
+import { defineAsyncComponent } from "vue";
 export default {
   name: "Smoove",
+  components: {
+    ProjectImage: defineAsyncComponent(() =>
+      import("../components/Project/ProjectImage.vue")
+    ),
+    ProjectGallery: defineAsyncComponent(() =>
+      import("../components/Project/ProjectGallery.vue")
+    ),
+  },
   // Send Gallery Array down to ProjectGallery component for dynamic images.
   provide() {
     // use function syntax so that we can access `this`
