@@ -1,19 +1,20 @@
 <template>
   <div
     class="projects grid grid-cols-10 col-start-2 col-end-[-2] place-items-center -mb-28">
-    <div class="h-screen col-span-full flex flex-col justify-end">
+    <div class="h-screen col-span-full flex flex-col items-center justify-end">
       <IntroText class="grow" />
       <router-link
-        class="arrow min-h-[144px] -translate-y-full col-span-full mt-20 bg-transparent text-[0] text-melon"
+        class="arrow min-h-[144px] -translate-y-full w-fit p-4 flex justify-center mt-20 bg-transparent text-[0] text-melon"
         :to="{ path: '/', hash: '#projects' }">
         View All Projects
-        <Vue3Lottie
+        <!-- <Vue3Lottie
           ref="projects"
           :animation-link="'/assets/arrow.json'"
           :loop="false"
           :auto-play="true"
           :speed="1"
-          :width="144" />
+          :width="144" /> -->
+        <i-ic:round-keyboard-arrow-down class="w-32 h-32" />
       </router-link>
     </div>
     <main class="project-grid col-span-full flex flex-col justify-center">
@@ -85,8 +86,8 @@
 // import IntroText from "@/components/IntroText.vue";
 // import ProjectCardRight from "@/components/Overview/ProjectCardRight.vue";
 // import ProjectCardLeft from "@/components/Overview/ProjectCardLeft.vue";
-import { Vue3Lottie } from "vue3-lottie";
-import "vue3-lottie/dist/style.css";
+// import { Vue3Lottie } from "vue3-lottie";
+// import "vue3-lottie/dist/style.css";
 import { defineAsyncComponent, ref } from "vue";
 
 // const AsyncComp = defineAsyncComponent(() =>
@@ -110,9 +111,17 @@ export default {
     // IntroText,
     // ProjectCardRight: ProjectCardRight,
     // ProjectCardLeft: ProjectCardLeft,
-    Vue3Lottie,
+    // Vue3Lottie,
   },
   mounted() {
+    this.$anime({
+      targets: ".arrow",
+      translateY: [-200, -130],
+      opacity: [0, 1],
+      duration: 1000,
+      delay: 3000,
+      easing: "easeOutExpo",
+    });
     // Wrap every word in a span
     var textWrapper = document.querySelector(".project-text");
     textWrapper.innerHTML = textWrapper.textContent.replace(

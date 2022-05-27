@@ -1,14 +1,16 @@
 import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
+import Vue from "@vitejs/plugin-vue";
 import Pages from "vite-plugin-pages";
 import generateSitemap from "vite-plugin-pages-sitemap";
 import Components from "unplugin-vue-components/vite";
+import Icons from "unplugin-icons/vite";
+import IconsResolver from "unplugin-icons/resolver";
 
 const path = require("path");
 export default defineConfig({
   //...
   plugins: [
-    vue(),
+    Vue(),
     Pages({
       dirs: [
         { dir: "src/pages", baseRoute: "" },
@@ -23,8 +25,9 @@ export default defineConfig({
         }),
     }),
     Components({
-      /* options */
+      resolvers: [IconsResolver()],
     }),
+    Icons(),
   ],
   resolve: {
     alias: {
