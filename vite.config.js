@@ -28,7 +28,7 @@ export default defineConfig({
         // return 'async'
 
         // Load main pages synchronously, all other pages are async.
-        return filepath.includes("index", "About", "Fun") ? "sync" : "async";
+        return filepath.includes("index", "about", "fun") ? "sync" : "async";
       },
     }),
     Components({
