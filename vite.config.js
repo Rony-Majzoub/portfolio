@@ -19,6 +19,17 @@ export default defineConfig({
           routes,
           readable: true,
         }),
+      importMode(filepath, options) {
+        // default resolver
+        // for (const page of options.dirs) {
+        //   if (page.baseRoute === '' && filepath.startsWith(`/${page.dir}/index`))
+        //     return 'sync'
+        // }
+        // return 'async'
+
+        // Load main pages synchronously, all other pages are async.
+        return filepath.includes("index", "About", "Fun") ? "sync" : "async";
+      },
     }),
     Components({
       resolvers: [IconsResolver()],
