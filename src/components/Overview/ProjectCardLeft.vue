@@ -1,23 +1,6 @@
 <template>
   <figure
-    class="max-w-screen-2xl relative lg:flex-row-reverse flex flex-col !bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 transition-transform ease-in-out duration-300 hover:-translate-y-1 group transform-gpu mb-40">
-    <!-- Blurred element behind Card -->
-    <figure
-      class="lg:flex-row-reverse flex flex-col !bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 absolute w-full h-full left-0 top-0 z-[-10] blur-xl contrast-150 mix-blend-lighten opacity-0 group-hover:opacity-25 will-change-[opacity,_filter] transition-opacity ease-in-out duration-300 transform-gpu">
-      <!-- Image Container -->
-      <router-link
-        class="relative overflow-hidden lg:w-7/12 flex-none h-full lg:rounded-none lg:rounded-r-xl rounded-t-xl"
-        :to="{ path: `/${link}` }">
-        <!-- Blurred Placeholder Image (Cloudinary) -->
-        <img
-          class="cld-responsive absolute object-cover w-full h-64 lg:h-full cursor-pointer text-[0]"
-          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
-          :src="`/assets/img/${image}`"
-          :alt="`${title}`" />
-      </router-link>
-      <div
-        class="pt-6 p-8 text-left lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col lg:h-full"></div>
-    </figure>
+    class="max-w-screen-2xl relative lg:flex-row-reverse flex flex-col !bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#2b212c] mb-40">
     <!-- Image Container -->
     <router-link
       class="relative overflow-hidden lg:w-7/12 flex-none lg:rounded-none h-64 lg:h-auto lg:rounded-r-xl rounded-t-xl"

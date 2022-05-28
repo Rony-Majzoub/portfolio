@@ -1,6 +1,28 @@
 <template>
   <figure
-    class="relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-start-1 col-end-[-1] sm:col-start-2 sm:col-end-[-2] lg:min-h-128 lg:h-fit w-full max-w-6xl transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#2d1f2e]">
+    class="relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-start-1 col-end-[-1] sm:col-start-2 sm:col-end-[-2] lg:min-h-128 lg:h-fit w-full max-w-6xl transition-all ease-in-out duration-300 hover:-translate-y-1 group transform-gpu">
+    <!-- Blurred element behind Card -->
+    <figure
+      class="lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-span-full absolute w-full h-full left-0 top-0 z-[-10] blur-xl contrast-200 mix-blend-lighten opacity-0 group-hover:opacity-50 will-change-[opacity,_filter] transition-opacity ease-in-out duration-300 transform-gpu">
+      <!-- Image Container -->
+      <div
+        class="h-full relative overflow-hidden w-full lg:w-4/12 lg:rounded-none lg:rounded-l-xl rounded-t-xl lg:max-w-fit">
+        <!-- <img
+          class="object-cover object-[center_20%] w-full h-96 lg:h-full"
+          src="/assets/pfp.jpg"
+          alt="" /> -->
+        <!-- Blurred Placeholder Image (Cloudinary) -->
+        <img
+          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+          width="384"
+          height="552"
+          src="/assets/pfp.jpg"
+          role="presentation"
+          class="cld-responsive absolute object-cover sm:object-scale-down lg:object-cover object-[center_20%] w-full h-96 lg:h-full" />
+      </div>
+      <div
+        class="pt-6 p-8 text-left lg:mb-0 w-full gap-4 flex flex-col justify-between h-full max-w-prose"></div>
+    </figure>
     <!-- Image Container -->
     <div
       class="relative overflow-hidden w-full lg:w-4/12 h-96 lg:h-auto lg:rounded-none lg:rounded-l-xl rounded-t-xl">

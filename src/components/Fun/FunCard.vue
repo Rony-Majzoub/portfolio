@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="cursor-pointer relative h-64 max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md hover:-translate-y-1 transform-gpu"
+    class="cursor-pointer relative h-64 max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] hover:-translate-y-1 transform-gpu"
     :to="{ path: `/${link}` }">
     <!-- Image Element -->
     <!-- Blurred Placeholder Image (Cloudinary) -->
