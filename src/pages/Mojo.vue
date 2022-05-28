@@ -1,6 +1,6 @@
 <template>
+  <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
-    <BackButton />
     <ProjectTitle
       info="2021/2022 - UX & Product Design"
       title="Mojo"
@@ -130,9 +130,9 @@ export default {
   // Style the body, header and footer on load.
   beforeCreate() {
     document.querySelector("body").setAttribute("style", "background:#fef8ea");
-    document
-      .querySelector(".nav-menu")
-      .setAttribute("style", "background:#fef8ea");
+    // document
+    //   .querySelector(".nav-menu")
+    //   .setAttribute("style", "background:#fef8ea");
     document
       .querySelector("header")
       .setAttribute(
@@ -165,27 +165,27 @@ export default {
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "background: #f7b276");
     }
-    var burger = document.querySelectorAll(".burger");
-    for (var i = 0; i < burger.length; i++) {
-      burger[i].setAttribute("style", "fill:#F2770C");
-    }
-    var nav = document.querySelectorAll(".nav-item");
-    for (var i = 0; i < nav.length; i++) {
-      nav[i].setAttribute("style", "color:#9700b0; background:#fef8ea;");
-    }
-    document
-      .querySelector(".nav-menu")
-      .setAttribute("style", "background:#f7b276");
+    // var burger = document.querySelectorAll(".burger");
+    // for (var i = 0; i < burger.length; i++) {
+    //   burger[i].setAttribute("style", "fill:#F2770C");
+    // }
+    // var nav = document.querySelectorAll(".nav-item");
+    // for (var i = 0; i < nav.length; i++) {
+    //   nav[i].setAttribute("style", "color:#9700b0; background:#fef8ea;");
+    // }
+    // document
+    //   .querySelector(".nav-menu")
+    //   .setAttribute("style", "background:#f7b276");
   },
   // Remove all the added styles, and return to default.
   beforeUnmount() {
     document.querySelector("body").setAttribute("style", "");
     document.querySelector("header").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
-    var burger = document.querySelectorAll(".burger");
-    for (var i = 0; i < burger.length; i++) {
-      burger[i].setAttribute("style", "");
-    }
+    // var burger = document.querySelectorAll(".burger");
+    // for (var i = 0; i < burger.length; i++) {
+    //   burger[i].setAttribute("style", "");
+    // }
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute("style", "");
@@ -206,7 +206,7 @@ export default {
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "");
     }
-    document.querySelector(".nav-menu").setAttribute("style", "");
+    // document.querySelector(".nav-menu").setAttribute("style", "");
   },
 };
 </script>

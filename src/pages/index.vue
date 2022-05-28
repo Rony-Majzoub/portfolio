@@ -42,7 +42,7 @@
         derived from a feeling that we wanted to present, every step of the way."
         category="UI/UX & Product Design"
         tag="Product Development"
-        image="smoove-park.jpg"
+        image="smoove_park.jpg"
         image-link="v1652044733/portfolio/smoove/smoove.jpg" />
       <ProjectCardRight
         link="mojo"

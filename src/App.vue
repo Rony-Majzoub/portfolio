@@ -27,7 +27,6 @@
           to="/about">
           About Me
         </router-link>
-        <sidebar></sidebar>
       </div>
     </div>
   </header>
@@ -36,6 +35,7 @@
       <component :is="Component" v-cloak />
     </transition>
   </router-view>
+  <navbar></navbar>
   <footer
     class="page-footer w-full gap-8 flex flex-col items-center text-center justify-between py-4 px-20 absolute h-12 bg-black-coffee bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 duration-500 ease-out-expo">
     <div

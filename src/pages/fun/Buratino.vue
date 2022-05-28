@@ -1,6 +1,6 @@
 <template>
+  <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
-    <BackButton />
     <ProjectTitle
       info="2020/2021 - Web Development"
       title="Buratino Instruktino"

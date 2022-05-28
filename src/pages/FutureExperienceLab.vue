@@ -1,6 +1,6 @@
 <template>
+  <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
-    <BackButton />
     <ProjectTitle
       info="2022 - UI/UX & Web Design"
       title="Future Experience Lab"
@@ -143,17 +143,17 @@ export default {
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "background: #333333");
     }
-    var burger = document.querySelectorAll(".burger");
-    for (var i = 0; i < burger.length; i++) {
-      burger[i].setAttribute("style", "fill:#fbc2d3");
-    }
-    var nav = document.querySelectorAll(".nav-item");
-    for (var i = 0; i < nav.length; i++) {
-      nav[i].setAttribute("style", "color:#fbc2d3; background:#212121;");
-    }
-    document
-      .querySelector(".nav-menu")
-      .setAttribute("style", "background:#333333");
+    // var burger = document.querySelectorAll(".burger");
+    // for (var i = 0; i < burger.length; i++) {
+    //   burger[i].setAttribute("style", "fill:#fbc2d3");
+    // }
+    // var nav = document.querySelectorAll(".nav-item");
+    // for (var i = 0; i < nav.length; i++) {
+    //   nav[i].setAttribute("style", "color:#fbc2d3; background:#212121;");
+    // }
+    // document
+    //   .querySelector(".nav-menu")
+    //   .setAttribute("style", "background:#333333");
   },
   // Remove all the added styles, and return to default.
   beforeUnmount() {
@@ -180,15 +180,15 @@ export default {
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "");
     }
-    var nav = document.querySelectorAll(".nav-item");
-    for (var i = 0; i < nav.length; i++) {
-      nav[i].setAttribute("style", "");
-    }
-    var burger = document.querySelectorAll(".burger");
-    for (var i = 0; i < burger.length; i++) {
-      burger[i].setAttribute("style", "");
-    }
-    document.querySelector(".nav-menu").setAttribute("style", "");
+    // var nav = document.querySelectorAll(".nav-item");
+    // for (var i = 0; i < nav.length; i++) {
+    //   nav[i].setAttribute("style", "");
+    // }
+    // var burger = document.querySelectorAll(".burger");
+    // for (var i = 0; i < burger.length; i++) {
+    //   burger[i].setAttribute("style", "");
+    // }
+    // document.querySelector(".nav-menu").setAttribute("style", "");
   },
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
+  <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
-    <BackButton />
     <ProjectTitle
       info="2021 - UI/UX & Product Design"
       title="Smoove"
@@ -182,29 +182,33 @@ export default {
   },
   // Style the text and background colors to brand colors.
   mounted() {
-    var nav = document.querySelectorAll(".nav-item");
-    for (var i = 0; i < nav.length; i++) {
-      nav[i].setAttribute("style", "background:#201d26;");
-    }
+    // var nav = document.querySelectorAll(".nav-item");
+    // for (var i = 0; i < nav.length; i++) {
+    //   nav[i].setAttribute("style", "background:#201d26;");
+    // }
     var eggplant = document.querySelectorAll(".bg-eggplant");
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "background: #363040");
     }
-    document
-      .querySelector(".nav-menu")
-      .setAttribute("style", "background:#363040");
+    // document
+    //   .querySelector(".nav-menu")
+    //   .setAttribute("style", "background:#363040");
   },
   // Remove all the added styles, and return to default.
   beforeUnmount() {
     document.querySelector("body").setAttribute("style", "");
     document.querySelector("header").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
-
-    var nav = document.querySelectorAll(".nav-item");
-    for (var i = 0; i < nav.length; i++) {
-      nav[i].setAttribute("style", "");
+    var eggplant = document.querySelectorAll(".bg-eggplant");
+    for (var i = 0; i < eggplant.length; i++) {
+      eggplant[i].setAttribute("style", "");
     }
-    document.querySelector(".nav-menu").setAttribute("style", "");
+
+    // var nav = document.querySelectorAll(".nav-item");
+    // for (var i = 0; i < nav.length; i++) {
+    //   nav[i].setAttribute("style", "");
+    // }
+    // document.querySelector(".nav-menu").setAttribute("style", "");
   },
 };
 </script>

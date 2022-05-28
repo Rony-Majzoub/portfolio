@@ -1,24 +1,22 @@
 <template>
-  <transition name="slide-fade">
-    <div
-      class="nav-menu fixed left-full top-0 bg-eggplant will-change-[transform,_display] w-full text-right duration-300 ease-in-out m-0 flex flex-col items-end gap-8 h-screen col-span-full pt-28 pr-[10vw] lg:hidden">
-      <router-link
-        :to="{ path: '/', hash: '#projects' }"
-        class="nav-item origin-right bg-black-coffee text-cameo-pink no-underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] w-fit p-4 font-semibold text-4xl tracking-tighter">
-        Projects
-      </router-link>
-      <router-link
-        to="/fun"
-        class="nav-item origin-right bg-black-coffee text-cameo-pink no-underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] w-fit p-4 font-semibold text-4xl tracking-tighter">
-        Fun
-      </router-link>
-      <router-link
-        to="/about"
-        class="nav-item origin-right bg-black-coffee text-cameo-pink no-nderline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] w-fit p-4 font-semibold text-4xl tracking-tighter">
-        About Me
-      </router-link>
-    </div>
-  </transition>
+  <div
+    class="nav-menu fixed left-full top-0 bg-eggplant will-change-[transform,_display] w-full text-right duration-300 ease-in-out m-0 flex flex-col items-end gap-8 h-screen col-span-full pt-28 pr-[10vw] lg:hidden">
+    <router-link
+      :to="{ path: '/', hash: '#projects' }"
+      class="nav-item origin-right bg-black-coffee text-cameo-pink no-underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] w-fit p-4 font-semibold text-4xl tracking-tighter">
+      Projects
+    </router-link>
+    <router-link
+      to="/fun"
+      class="nav-item origin-right bg-black-coffee text-cameo-pink no-underline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] w-fit p-4 font-semibold text-4xl tracking-tighter">
+      Fun
+    </router-link>
+    <router-link
+      to="/about"
+      class="nav-item origin-right bg-black-coffee text-cameo-pink no-nderline underline-offset-auto decoration-4 decoration-transparent col-start-1 col-end-[-2] w-fit p-4 font-semibold text-4xl tracking-tighter">
+      About Me
+    </router-link>
+  </div>
   <button class="hamburger lg:hidden block cursor-pointer p-1 z-10">
     <svg
       width="40"

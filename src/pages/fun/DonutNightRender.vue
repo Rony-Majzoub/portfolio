@@ -1,6 +1,6 @@
 <template>
+  <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
-    <BackButton />
     <ProjectTitle
       info="2017 - 3D Rendering"
       title="Donut Night Render"
