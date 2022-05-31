@@ -7,7 +7,7 @@
       brief="Create and deliver a graphic profile for a start-up company." />
     <ProjectImage
       class="mb-10"
-      image="mojo_hero.jpg"
+      image="mojo_hero.png"
       image-link="v1653061123/portfolio/mojo/mojo_hero.png"
       alt-text="Mojo Hero Image"
       link-text="View Graphic Profile"
@@ -165,6 +165,12 @@ export default {
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "background: #f7b276");
     }
+    document
+      .querySelector(".navbar")
+      .setAttribute(
+        "style",
+        "border-color: #9700B0; background-color: #f7b276"
+      );
     // var burger = document.querySelectorAll(".burger");
     // for (var i = 0; i < burger.length; i++) {
     //   burger[i].setAttribute("style", "fill:#F2770C");
@@ -182,6 +188,7 @@ export default {
     document.querySelector("body").setAttribute("style", "");
     document.querySelector("header").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
+    document.querySelector(".navbar").setAttribute("style", "");
     // var burger = document.querySelectorAll(".burger");
     // for (var i = 0; i < burger.length; i++) {
     //   burger[i].setAttribute("style", "");

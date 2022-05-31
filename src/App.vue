@@ -30,16 +30,18 @@
       </div>
     </div>
   </header>
-  <router-view v-slot="{ Component }">
-    <transition :css="false" appear @enter="enterElement" @leave="leaveElement">
-      <component :is="Component" v-cloak />
+  <router-view v-slot="{ Component, route }">
+    <transition name="fade-in-up" appear>
+      <div :key="route.name" class="grid-cols-12 min-h-[95vh] grid pb-28 pt-28">
+        <component :is="Component" v-cloak />
+      </div>
     </transition>
   </router-view>
   <navbar></navbar>
   <footer
     class="page-footer w-full gap-8 flex flex-col items-center text-center justify-between py-4 px-20 absolute h-12 bg-black-coffee bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 duration-500 ease-out-expo">
     <div
-      class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
+      class="flex flex-col gap-4 lg:col-start-2 lg:col-end-[-2] lg:flex-row lg:justify-between lg:gap-8">
       <div
         class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
         <a
@@ -82,29 +84,29 @@ export default {
   // components: {
   //   Sidebar,
   // },
-  methods: {
-    enterElement(el, done) {
-      this.$anime({
-        targets: el,
-        translateY: [40, 0],
-        opacity: [0, 1],
-        duration: 500,
-        delay: 300,
-        easing: "easeOutCubic",
-        complete: done,
-      });
-    },
-    leaveElement(el, done) {
-      this.$anime({
-        targets: el,
-        translateY: [0, 20],
-        opacity: [1, 0],
-        duration: 200,
-        easing: "easeInQuint",
-        complete: done,
-      });
-    },
-  },
+  // methods: {
+  //   enterElement(el, done) {
+  //     this.$anime({
+  //       targets: el,
+  //       translateY: [40, 0],
+  //       opacity: [0, 1],
+  //       duration: 500,
+  //       delay: 300,
+  //       easing: "easeOutCubic",
+  //       complete: done,
+  //     });
+  //   },
+  //   leaveElement(el, done) {
+  //     this.$anime({
+  //       targets: el,
+  //       translateY: [0, 20],
+  //       opacity: [1, 0],
+  //       duration: 200,
+  //       easing: "easeInQuint",
+  //       complete: done,
+  //     });
+  //   },
+  // },
 };
 </script>
 
@@ -126,6 +128,43 @@ html {
 [v-cloak] {
   display: none;
 }
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 25px, 0);
+    opacity: 0;
+  }
+}
+.fade-in-up-leave-active {
+  opacity: 0;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0); //EaseInQuint
+  animation-fill-mode: both;
+  animation-name: fadeOutDown;
+}
+.fade-in-up-enter-active {
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-delay: 0.3s;
+  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
+
 // #app:after {
 //   content: "";
 //   z-index: 999;

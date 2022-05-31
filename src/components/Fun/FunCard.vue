@@ -7,6 +7,7 @@
     <img
       :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
       :alt="`${title}`"
+      :src="`/assets/img/${image}`"
       width="384"
       height="256"
       class="cld-responsive absolute object-cover w-full h-full text-[0] bg-eggplant" />
@@ -14,6 +15,7 @@
     <img
       :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
       :alt="`${title}`"
+      :src="`/assets/img/${image}`"
       width="384"
       height="256"
       class="cld-responsive high-def absolute object-cover w-full h-full text-[0]" />
@@ -39,7 +41,7 @@
 </template>
 
 <script>
-import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
+// import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
 export default {
   name: "FunCard",
   props: {
@@ -64,19 +66,19 @@ export default {
       type: String,
     },
   },
-  mounted() {
-    var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
-    cl.responsive();
-    const images = document.getElementsByClassName("high-def");
-    for (let image of images) {
-      image.addEventListener("load", fadeImg);
-      image.style.opacity = "0";
-    }
+  // mounted() {
+  //   var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
+  //   cl.responsive();
+  //   const images = document.getElementsByClassName("high-def");
+  //   for (let image of images) {
+  //     image.addEventListener("load", fadeImg);
+  //     image.style.opacity = "0";
+  //   }
 
-    function fadeImg() {
-      this.style.transition = "opacity 1s";
-      this.style.opacity = "1";
-    }
-  },
+  //   function fadeImg() {
+  //     this.style.transition = "opacity 1s";
+  //     this.style.opacity = "1";
+  //   }
+  // },
 };
 </script>

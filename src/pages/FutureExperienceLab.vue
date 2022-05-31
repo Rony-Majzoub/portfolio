@@ -143,6 +143,12 @@ export default {
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "background: #333333");
     }
+    document
+      .querySelector(".navbar")
+      .setAttribute(
+        "style",
+        "border-color: #fbc2d3; background-color: #333333"
+      );
     // var burger = document.querySelectorAll(".burger");
     // for (var i = 0; i < burger.length; i++) {
     //   burger[i].setAttribute("style", "fill:#fbc2d3");
@@ -160,6 +166,7 @@ export default {
     document.querySelector("body").setAttribute("style", "");
     document.querySelector("header").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
+    document.querySelector(".navbar").setAttribute("style", "");
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute("style", "");

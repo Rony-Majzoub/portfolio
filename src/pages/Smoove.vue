@@ -190,6 +190,9 @@ export default {
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "background: #363040");
     }
+    document
+      .querySelector(".navbar")
+      .setAttribute("style", "border-color: ffc1b2; background-color: #363040");
     // document
     //   .querySelector(".nav-menu")
     //   .setAttribute("style", "background:#363040");
@@ -199,6 +202,7 @@ export default {
     document.querySelector("body").setAttribute("style", "");
     document.querySelector("header").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
+    document.querySelector(".navbar").setAttribute("style", "");
     var eggplant = document.querySelectorAll(".bg-eggplant");
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "");
