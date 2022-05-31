@@ -64,16 +64,20 @@
           class="social-media text-melon transition-all duration-200 font-extrabold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
           Instagram
         </a>
-        <a
+        <!-- <a
           href=""
           class="social-media text-melon transition-all duration-200 font-extrabold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
           &#9432; About this Website
-        </a>
+        </a> -->
       </div>
       <p
         class="font-semibold text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">
-        Copyright {{ new Date().getFullYear() }} Rony Majzoub
+        This Website is Designed and Programmed entirely by me.
       </p>
+      <!-- <p
+        class="font-semibold text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">
+        Copyright {{ new Date().getFullYear() }} Rony Majzoub
+      </p> -->
     </div>
   </footer>
 </template>

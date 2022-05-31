@@ -2,7 +2,7 @@
   <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
-      info="2021 - UI/UX & Product Design"
+      info="2021 – UI/UX & Product Design"
       title="Smoove"
       brief="Create and design a landing page for a premium, custom vehicle." />
     <ProjectImage
@@ -100,7 +100,7 @@
         Overall, we were reasonably happy with the work we managed to deliver with our CG-Designers. When it comes to the website, there were a few cases of mismanagement, which did leave a few things to be desired in the final product. We definitely learned a thing or two from these missteps, and we've made sure to better prepare for those challenges in the future." />
       <ProjectGallery
         title="Render Gallery"
-        description="The final 3D-renders that are used in the production site." />
+        description="The final 3D-renders that are used in the production site, created by our CG-Designers." />
     </main>
   </div>
 </template>

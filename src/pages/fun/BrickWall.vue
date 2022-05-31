@@ -2,7 +2,7 @@
   <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
-      info="2017 - 3D Rendering"
+      info="2017 – 3D Rendering"
       title="Brick Wall"
       brief="Create a 3D-image by only utilizing a high-quality texture." />
     <ProjectImage

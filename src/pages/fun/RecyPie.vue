@@ -2,7 +2,7 @@
   <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
-      info="2021 - UI & UX Design"
+      info="2021 – UI & UX Design"
       title="RecyPie"
       brief="Create and design a modern, digital solution to a global problem." />
     <ProjectImage

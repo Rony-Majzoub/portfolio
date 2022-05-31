@@ -2,7 +2,7 @@
   <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
-      info="2017 - 3D Rendering"
+      info="2017 – 3D Rendering"
       title="Donut Render"
       brief="Create a 3D-scene, featuring a mix of modelling, materials, lighting, rendering and camera work." />
     <ProjectImage

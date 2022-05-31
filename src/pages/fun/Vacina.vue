@@ -2,7 +2,7 @@
   <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
-      info="2021 - UX/UI Design"
+      info="2021 – UX/UI Design"
       title="Vacina"
       brief="Create and design a digital app to improve the experience and ease of vaccinating." />
     <ProjectImage

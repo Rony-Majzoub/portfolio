@@ -2,7 +2,7 @@
   <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
-      info="2021/2022 - UX & Product Design"
+      info="2021/2022 – UX & Product Design"
       title="Mojo"
       brief="Create and deliver a graphic profile for a start-up company." />
     <ProjectImage
@@ -13,7 +13,7 @@
       link-text="View Graphic Profile"
       link="https://www.figma.com/proto/JW1asOCvRC6oo5sgLUfnoB/Mojo-(Showreel)?page-id=653%3A918&node-id=676%3A1492&viewport=2303%2C274%2C0.28&scaling=contain&starting-point-node-id=676%3A1492" />
     <ProjectTags
-      client="Yrgo DD21, Chalmers Encubator"
+      client="Yrgo DD21, Mojo"
       team="Rony Majzoub, 
       Emma Norman, 
       Madeleine Möller Ståhl"

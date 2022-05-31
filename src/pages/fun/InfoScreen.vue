@@ -2,7 +2,7 @@
   <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
-      info="2020 - UX/UI Design"
+      info="2020 – UX/UI Design"
       title="Information Screen"
       brief="Create a digital information screen, for improving a student's daily life." />
     <ProjectImage

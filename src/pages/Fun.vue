@@ -15,11 +15,23 @@
         </p>
       </div>
       <FunCard
+        title="Shuu"
+        tag="Website Prototype"
+        image="shuu_hero.png"
+        image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
+        link="fun/shuu" />
+      <FunCard
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
         image-link="v1652044733/portfolio/recypie/recypie.png"
         link="fun/recypie" />
+      <FunCard
+        title="Polestar Website"
+        tag="Website Prototype"
+        image="polestar_website.png"
+        image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
+        link="fun/polestarwebsite" />
       <FunCard
         title="Buratino"
         tag="Website & App"
@@ -33,18 +45,6 @@
         image-link="v1653260886/portfolio/fun/vacina/vacina.png"
         link="fun/vacina" />
       <FunCard
-        title="Shuu"
-        tag="Website Prototype"
-        image="shuu_hero.png"
-        image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
-        link="fun/shuu" />
-      <FunCard
-        title="Polestar Website"
-        tag="Website Prototype"
-        image="polestar_website.png"
-        image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
-        link="fun/polestarwebsite" />
-      <FunCard
         title="Information Screen"
         tag="Digital Prototype"
         image="connected.png"
@@ -52,7 +52,7 @@
         link="fun/infoscreen" />
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
-          Motion Graphics
+          Animation
         </h2>
         <p class="text-melon text-base sm:text-lg font-medium">
           Because who doesn't like to make things move?
@@ -66,17 +66,17 @@
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="fun/buratino" />
       <FunCard
-        title="RecyPie"
-        tag="Digital Prototype"
-        image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="fun/recypie" />
+        title="Puck Animation"
+        tag="3D Animation"
+        image="puck_animation.png"
+        image-link="v1653998300/portfolio/fun/puck_animation.png"
+        link="fun/puckanimation" />
       <FunCard
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="fun/buratino" />
+        title="Spices of Gaming"
+        tag="Motion Graphics"
+        image="spices_of_gaming_thumbnail.png"
+        image-link="v1654003231/portfolio/fun/spices_of_gaming_thumbnail.png"
+        link="fun/spicesofgaming" />
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
           3D-Rendering
