@@ -41,7 +41,7 @@
 </template>
 
 <script>
-// import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
+import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
 export default {
   name: "FunCard",
   props: {
@@ -66,19 +66,19 @@ export default {
       type: String,
     },
   },
-  // mounted() {
-  //   var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
-  //   cl.responsive();
-  //   const images = document.getElementsByClassName("high-def");
-  //   for (let image of images) {
-  //     image.addEventListener("load", fadeImg);
-  //     image.style.opacity = "0";
-  //   }
+  mounted() {
+    var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
+    cl.responsive();
+    const images = document.getElementsByClassName("high-def");
+    for (let image of images) {
+      image.addEventListener("load", fadeImg);
+      image.style.opacity = "0";
+    }
 
-  //   function fadeImg() {
-  //     this.style.transition = "opacity 1s";
-  //     this.style.opacity = "1";
-  //   }
-  // },
+    function fadeImg() {
+      this.style.transition = "opacity 1s";
+      this.style.opacity = "1";
+    }
+  },
 };
 </script>
