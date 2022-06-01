@@ -8,7 +8,7 @@
       easing: 'easeInOutExpo',
     }"
     class="z-50 hidden h-fit w-max fixed top-6 right-[5vw] lg:static lg:flex cursor-pointer transition-all duration-200 flex-column items-end"
-    role="navigation"
+    role="button"
     aria-label="Back"
     @click="$router.back()">
     <i-ic:round-keyboard-arrow-down
@@ -27,7 +27,7 @@
       easing: 'easeInOutExpo',
     }"
     class="z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer transition-all duration-200 flex flex-column items-end"
-    role="navigation"
+    role="button"
     aria-label="Back"
     @click="$router.back()">
     <i-ic:round-keyboard-arrow-down
