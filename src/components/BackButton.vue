@@ -8,6 +8,8 @@
       easing: 'easeInOutExpo',
     }"
     class="z-50 hidden h-fit w-max fixed top-6 right-[5vw] lg:static lg:flex cursor-pointer transition-all duration-200 flex-column items-end"
+    role="navigation"
+    aria-label="Back"
     @click="$router.back()">
     <i-ic:round-keyboard-arrow-down
       class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
@@ -25,6 +27,8 @@
       easing: 'easeInOutExpo',
     }"
     class="z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer transition-all duration-200 flex flex-column items-end"
+    role="navigation"
+    aria-label="Back"
     @click="$router.back()">
     <i-ic:round-keyboard-arrow-down
       class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
