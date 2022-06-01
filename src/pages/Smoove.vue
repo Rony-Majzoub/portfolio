@@ -61,6 +61,7 @@
       <ColumnRight
         title="Bold but Friendly"
         description="After doing extensive research, we created a few Personas that would represent the type of people that would drive our vehicle. We felt that a motorcycle should empower the driver, but also accomodate all types of people, both men and women.
+        
         That's why we chose a more golden and warm color scheme. We found that other, more saturated colors were very gendered, and a bit too bombastic. A gold main color, with warm undertones gave us the neutrality we were after, while still offering a modern, powerful and exciting feeling to the driver." />
       <ProjectImage
         image="smoove_components.png"
@@ -96,7 +97,9 @@
       <ColumnLeft
         title="Learnings"
         description="We learned how to oversee and lead an entire project, with multiple members each having different roles. We also gained a better understanding of the challenges that both Web Developers and CG-Designers face during projects, and how to make their tasks easier to handle.
+        
         As Designers, we also got a better look at what exactly goes into designing a products, and all the different steps required to go from feeling to final delivery. This allowed us to better prioritize the important aspects of a project, while leaving less important parts for another day.
+        
         Overall, we were reasonably happy with the work we managed to deliver with our CG-Designers. When it comes to the website, there were a few cases of mismanagement, which did leave a few things to be desired in the final product. We definitely learned a thing or two from these missteps, and we've made sure to better prepare for those challenges in the future." />
       <ProjectGallery
         title="Render Gallery"

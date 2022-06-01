@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="max-w-screen-2xl relative lg:flex-row-reverse flex flex-col !bg-eggplant rounded-xl lg:p-0 col-span-full lg:h-128 transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#2b212c] mb-40">
+    class="max-w-screen-2xl relative lg:flex-row-reverse flex flex-col !bg-eggplant rounded-xl lg:p-0 col-start-2 col-end-[-2] lg:h-128 transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#2b212c] mb-40">
     <!-- Image Container -->
     <router-link
       class="relative overflow-hidden lg:w-7/12 flex-none lg:rounded-none h-64 lg:h-auto lg:rounded-r-xl rounded-t-xl"

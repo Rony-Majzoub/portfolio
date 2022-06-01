@@ -53,8 +53,8 @@
       <ColumnLeft
         title="Pre-planning"
         description="We started by researching how the market stands today, and how other brands solved their own problems. The truth is that most brands in this market were seriously lacking, in regards to style and readability. It was clear that we had to do a lot of work to come up with original ideas, and execute them in this project.
-        We did extensive research regarding what types of colors, shapes and font-styles we would use, and how different cultures around the world would interpret those style choices.
-        We later applied these learnings in three separate Moodboards, and pitched them early-on to the clients, and used their feedback to create concrete assets and (later on) a fully-fledged graphic profile." />
+        
+        We did extensive research regarding what types of colors, shapes and font-styles we would use, and how different cultures around the world would interpret those style choices. We later applied these learnings in three separate Moodboards, and pitched them early-on to the clients, and used their feedback to create concrete assets and (later on) a fully-fledged graphic profile." />
 
       <ProjectImage
         image="mojo_logo.png"
@@ -75,11 +75,13 @@
       <ColumnLeft
         title="Final delivery"
         description="In the end, we managed to deliver a graphic profile, which consisted of three parts - the logo, the colors, and the fonts. We also delivered stylistic guidelines and rules for how to best follow their own graphic profile. These guidelines were focused on accessibility, and brand identity.
+        
         We also delivered a digital example of how a future website might look like, as shown at the bottom of this page, as well as Microsoft Office themes that they could use in PowerPoint and Word, which followed their graphic profile." />
 
       <ColumnLeft
         title="Learnings"
         description="As the majority of the work was done during isolation from the COVID-19 pandemic, we had to drastically adapt our communication strategies. It was certainly difficult trying to work with a client, only through digital means. That resulted in a few cases of miscommunication, which were understandable, given the circumstances.
+        
         We've learned a lot about how to communicate with a client, how and when to pitch ideas to them, and how much we should show or hide from them, until a later date." />
 
       <ProjectGallery

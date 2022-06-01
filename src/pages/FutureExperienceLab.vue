@@ -53,6 +53,7 @@
       <ColumnLeft
         title="Pre-planning"
         description="After being presented with the project brief, we tried to narrow down what exactly the goal of the website was. We also wanted to narrow down what the exact target group of this website was, and what they valued. We presented these questions to the client, and tried to shape the project around those key points.
+        
         Early on, we created a Moodboard for visualizing how a chaotic, yet readable website might look like. We narrowed it down towards a dark color scheme, with strong and contrasting colors used wisely to grab attention. We also found that simple, primitive shapes could be used to add some dynamic flare into the website, which is something we added to the moodboard." />
       <ProjectImage
         image="fel_components.png"
@@ -71,8 +72,7 @@
         description="Our delivery process of components, illustrations and layouts to our Web Developers." />
       <ColumnRight
         title="Our stylesheet"
-        description="The final stylesheet has a focus on three key areas - fonts, colors and patterns. 
-        When it comes to fonts, we decided on a heavy, punk-like font for all titles and headers, to contribute towards a more heavy feel. We also used a lighter font for all body text, that was more readable, which made the site feel more professional and controlled.
+        description="The final stylesheet has a focus on three key areas - fonts, colors and patterns. When it comes to fonts, we decided on a heavy, punk-like font for all titles and headers, to contribute towards a more heavy feel. We also used a lighter font for all body text, that was more readable, which made the site feel more professional and controlled.
         
         For our brand colors, we chose three strong colors, with two additional text & background colors. Throughout the website, we also use a variety of primitive shapes as decorative backgrounds. These are used in conjunction with our brand colors, to give off a feeling of chaos, as well as spice up the background as a whole.
         " />
@@ -93,8 +93,8 @@
       <ColumnLeft
         title="Learnings"
         description="We gained more experience on how to work under a tight deadline, and what to prioritize in those cases. We also gained better understanding for how Web Developers work, and their requirements.
-        For future projects, we'd focus on getting more prep-time as designers, so we could deliver assets to our Web Developers immediately, instead of them having to wait without any tasks at hand. We'd also like to perform more extensive user testing, to further refine our design and layout, but the time constraints did not allow this.
-        Overall, we were very satisfied with the project, and felt that there was a lot of potential if we were to continue with the project." />
+        
+        For future projects, we'd focus on getting more prep-time as designers, so we could deliver assets to our Web Developers immediately, instead of them having to wait without any tasks at hand. We'd also like to perform more extensive user testing, to further refine our design and layout, but the time constraints did not allow this. Overall, we were very satisfied with the project, and felt that there was a lot of potential if we were to continue with the project." />
     </main>
   </div>
 </template>

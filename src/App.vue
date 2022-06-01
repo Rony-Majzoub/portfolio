@@ -5,11 +5,11 @@
       class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
         <img
-          class="h-11 col-span-1 text-melon font-semibold"
+          class="w-20 col-span-1 text-melon font-semibold"
           src="/assets/logo.svg"
           alt="Rony Majzoub"
-          width="72"
-          height="44" />
+          width="96"
+          height="59" />
       </router-link>
       <div class="navigation-items flex col-span-full flex-row gap-4">
         <router-link
@@ -72,7 +72,7 @@
       </div>
       <p
         class="font-semibold text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">
-        This Website is Designed and Programmed entirely by me.
+        This Website was Designed and Programmed entirely by Rony Majzoub.
       </p>
       <!-- <p
         class="font-semibold text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">
