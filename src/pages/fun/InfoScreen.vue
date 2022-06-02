@@ -14,7 +14,7 @@
       link="https://www.figma.com/proto/u42r5PXx0GWbZ49rgq1ODa/I'm-Connected-(Showreel)?page-id=0%3A1&node-id=84%3A673&viewport=250%2C541%2C0.14&scaling=scale-down&starting-point-node-id=84%3A673" />
 
     <ProjectTags
-      client="NTI-Gymnasiet"
+      client="NTI-Johanneberg"
       team="Rony Majzoub"
       role="UI/UX Designer"
       duration="2 months"

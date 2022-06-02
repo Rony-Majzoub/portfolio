@@ -11,7 +11,7 @@
       image-link="v1653259074/portfolio/fun/project_punk.jpg"
       alt-text="Project Punk" />
     <ProjectTags
-      client="Buratino AB"
+      client="N/A"
       team="Rony Majzoub"
       role="3D Artist"
       duration="2 months"

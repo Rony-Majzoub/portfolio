@@ -60,12 +60,6 @@
       </div>
 
       <FunCard
-        title="Buratino"
-        tag="Website"
-        image="buratino.png"
-        image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="fun/buratino" />
-      <FunCard
         title="Puck Animation"
         tag="3D Animation"
         image="puck_animation.png"
@@ -92,13 +86,19 @@
         image-link="v1653258131/portfolio/fun/so_good/so_good.png"
         link="fun/sogood" />
       <FunCard
-        title="Donut Render"
+        title="Dark Forest"
+        tag="Rendering"
+        image="Unity_Forest.png"
+        image-link="v1654173537/portfolio/fun/Unity_Forest.png"
+        link="fun/unityforest" />
+      <FunCard
+        title="Donut Morning"
         tag="Modelling & Rendering"
         image="donut_render.jpg"
         image-link="v1653259075/portfolio/fun/donut_render.jpg"
         link="fun/donutrender" />
       <FunCard
-        title="Donut Night Render"
+        title="Donut Night"
         tag="Modelling & Rendering"
         image="donut_night_render.png"
         image-link="v1653259523/portfolio/fun/Donut_Night_Render.png"

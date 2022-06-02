@@ -3,7 +3,7 @@
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
       info="2017 – 3D Rendering"
-      title="Donut Render"
+      title="Donut Morning"
       brief="Create a 3D-scene, featuring a mix of modelling, materials, lighting, rendering and camera work." />
     <ProjectImage
       class="mb-10"

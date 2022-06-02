@@ -2,20 +2,20 @@
   <BackButton />
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
-      info="2020 – 3D Rendering"
-      title="NTI-Awards 2020"
-      brief="Submit a rendered 3D-scene to a competition at NTI-Johanneberg." />
+      info="2022 – 3D Rendering"
+      title="Dark Forest"
+      brief="Create a graphically impressive scene in Unity Engine, with the use of pre-existing 3D-assets." />
     <ProjectImage
       class="mb-10"
-      image="nti_awards.jpg"
-      image-link="v1653259075/portfolio/fun/nti_awards.jpg"
-      alt-text="NTI Awards" />
+      image="Unity_Forest.png"
+      image-link="v1654173537/portfolio/fun/Unity_Forest.png"
+      alt-text="Unity Forest" />
     <ProjectTags
-      client="NTI-Johanneberg"
+      client="N/A"
       team="Rony Majzoub"
       role="3D Artist"
-      duration="3 weeks"
-      tools="Blender"
+      duration="2 weeks"
+      tools="Unity Engine"
       category1="3D Rendering"
       category2="3D Materials"
       category3="3D Modelling"
@@ -26,6 +26,6 @@
 
 <script>
 export default {
-  name: "NTIAwards",
+  name: "UnityForest",
 };
 </script>
