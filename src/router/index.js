@@ -1,8 +1,4 @@
-import {
-  createRouter,
-  createWebHashHistory,
-  createMemoryHistory,
-} from "vue-router";
+import { createRouter, createWebHistory } from "vue-router";
 import routes from "~pages";
 // import Projects from "@/views/Projects.vue";
 // import Fun from "@/views/Fun.vue";
@@ -107,7 +103,7 @@ import routes from "~pages";
 // ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   scrollBehavior(to) {
     if (to.hash) {

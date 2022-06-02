@@ -15,7 +15,7 @@ export default defineConfig({
       dirs: [{ dir: "src/pages", baseRoute: "" }],
       onRoutesGenerated: (routes) =>
         generateSitemap({
-          hostname: "https://rony-majzoub.netlify.app/#/",
+          hostname: "https://rony-majzoub.netlify.app/",
           routes,
           readable: true,
         }),
