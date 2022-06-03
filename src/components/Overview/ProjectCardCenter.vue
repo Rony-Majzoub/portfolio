@@ -7,7 +7,9 @@
       :src="`/assets/img/${video}`"
       :data-src="`https://res.cloudinary.com/rony-majzoub/video/upload/${videoLink}`"
       :alt="`${title}`"
-      controls />
+      controls
+      width="1920"
+      height="1080" />
     <div class="pt-6 p-8 text-left w-full space-y-2">
       <div
         class="!text-unbleached-silk font-bold text-5xl lg:text-6xl antialiased">
