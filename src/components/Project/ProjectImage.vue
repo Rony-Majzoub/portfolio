@@ -1,5 +1,6 @@
 <template>
-  <div class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-2">
+  <div
+    class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-2 animation-item">
     <div class="relative aspect-video rounded-lg bg-eggplant">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img

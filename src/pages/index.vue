@@ -156,4 +156,7 @@ export default {
   display: inline-block;
   line-height: 1em;
 }
+.project-card {
+  opacity: 0;
+}
 </style>

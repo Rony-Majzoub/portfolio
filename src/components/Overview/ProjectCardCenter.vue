@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="max-w-screen-2xl relative flex flex-col col-span-full lg:col-start-2 lg:col-end-[-2] xl:col-start-3 xl:col-end-[-3] !bg-eggplant rounded-none lg:rounded-xl transition-all ease-in-out duration-300 lg:hover:-translate-y-1 shadow-2xl lg:shadow-xl lg:hover:shadow-2xl lg:hover:shadow-melon shadow-unbleached-silk lg:shadow-unbleached-silk mb-40">
+    class="max-w-screen-2xl relative flex flex-col col-span-full lg:col-start-2 lg:col-end-[-2] xl:col-start-3 xl:col-end-[-3] !bg-eggplant rounded-none lg:rounded-xl transition-all ease-in-out duration-300 lg:hover:-translate-y-1 shadow-2xl lg:shadow-xl lg:hover:shadow-2xl lg:hover:shadow-melon shadow-unbleached-silk lg:shadow-unbleached-silk mb-40 animation-item">
     <!-- Sharp Final Video (Cloudinary) -->
     <video
       class="cld-responsive aspect-video rounded-none lg:rounded-t-xl bg-unbleached-silk"

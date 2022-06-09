@@ -1,6 +1,6 @@
 <template>
   <section
-    class="flex flex-col gap-4 col-span-full lg:col-start-2 lg:col-end-[span_5] max-w-[60ch]">
+    class="flex flex-col gap-4 col-span-full lg:col-start-2 lg:col-end-[span_5] max-w-[60ch] animation-item">
     <h2 class="font-bold text-3xl lg:text-5xl text-unbleached-silk">
       {{ title }}
     </h2>
