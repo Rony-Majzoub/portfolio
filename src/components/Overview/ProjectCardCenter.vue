@@ -9,7 +9,8 @@
       :alt="`${title}`"
       controls
       width="1920"
-      height="1080" />
+      height="1080"
+      poster="/assets/img/showreel_poster.png" />
     <div class="pt-6 p-8 text-left w-full space-y-2">
       <div
         class="!text-unbleached-silk font-bold text-5xl lg:text-6xl antialiased">
