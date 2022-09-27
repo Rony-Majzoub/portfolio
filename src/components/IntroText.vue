@@ -1,7 +1,7 @@
 <template>
   <div class="h-full flex items-center justify-center">
     <h1
-      class="intro-text max-w-4xl 2xl:max-w-6xl 3xl:max-w-6xl 5xl:max-w-[100rem] text-4xl md:text-6xl lg:text-7xl 2xl:text-8xl 5xl:text-9xl font-bold !text-unbleached-silk text-left tracking-tight antialiased">
+      class="intro-text max-w-4xl 2xl:max-w-6xl 3xl:max-w-6xl 5xl:max-w-[100rem] text-4xl md:text-6xl lg:text-7xl 5xl:text-9xl font-bold !text-unbleached-silk text-left tracking-tight antialiased">
       <!-- My name is Rony Majzoub. -->
       <span class="word !text-melon">My&nbsp;</span>
       <span class="word !text-melon">name&nbsp;</span>
