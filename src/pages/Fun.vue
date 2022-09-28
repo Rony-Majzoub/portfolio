@@ -15,17 +15,17 @@
         </p>
       </div>
       <FunCard
-        title="Shuu"
-        tag="Website Prototype"
-        image="shuu_hero.png"
-        image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
-        link="fun/shuu" />
-      <FunCard
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie.png"
         image-link="v1652044733/portfolio/recypie/recypie.png"
         link="fun/recypie" />
+      <FunCard
+        title="Shuu"
+        tag="Website Prototype"
+        image="shuu_hero.png"
+        image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
+        link="fun/shuu" />
       <FunCard
         title="Polestar Website"
         tag="Website Prototype"
@@ -39,17 +39,17 @@
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="fun/buratino" />
       <FunCard
-        title="Vacina"
-        tag="Digital Prototype"
-        image="vacina.png"
-        image-link="v1653260886/portfolio/fun/vacina/vacina.png"
-        link="fun/vacina" />
-      <FunCard
         title="Information Screen"
         tag="Digital Prototype"
         image="connected.png"
         image-link="v1653262038/portfolio/fun/connected/connected.png"
         link="fun/infoscreen" />
+      <FunCard
+        title="Vacina"
+        tag="Digital Prototype"
+        image="vacina.png"
+        image-link="v1653260886/portfolio/fun/vacina/vacina.png"
+        link="fun/vacina" />
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
           Animation
