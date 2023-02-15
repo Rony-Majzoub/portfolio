@@ -118,6 +118,7 @@ export default {
 
 <style lang="scss">
 @import url("https://use.typekit.net/sdt4vtw.css");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
 // @import url("https://rsms.me/inter/inter.css");
 html {
   scroll-behavior: smooth;

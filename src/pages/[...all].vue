@@ -1,16 +1,18 @@
 <template>
+  <HomeButton />
   <div class="grid col-start-2 col-end-[-2] grid-cols-10">
-    <div class="col-span-full flex justify-center items-center flex-col">
+    <div
+      class="col-span-full flex justify-center items-center flex-col gap-2 lg:gap-8">
       <h1
-        class="text-center w-full text-8xl sm:text-8xl lg:text-9xl font-bold text-unbleached-silk col-span-full sm:col-start-1 sm:col-end-[-2]">
+        class="text-center w-full text-5xl sm:text-8xl lg:text-9xl font-medium text-white col-span-full sm:col-start-1 sm:col-end-[-2] font-['IBM_Plex_Mono'] selection:text-black selection:bg-white">
         404
       </h1>
       <h2
-        class="lg:hidden inline-block word-text text-center w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 3xl:text-7xl font-bold text-melon col-span-full sm:col-start-1 sm:col-end-[-2]">
+        class="lg:hidden inline-block word-text text-center w-full text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl font-medium text-white col-span-full sm:col-start-1 sm:col-end-[-2] font-['IBM_Plex_Mono'] [&>span]:font-['IBM_Plex_Mono'] selection:text-black selection:bg-white">
         This is not the page you are looking for.
       </h2>
       <h2
-        class="invisible lg:visible inline-block letter-text text-center w-full text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl 3xl:text-7xl font-bold text-melon col-span-full sm:col-start-1 sm:col-end-[-2]">
+        class="invisible lg:visible inline-block letter-text text-center w-full text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 3xl:text-6xl font-medium text-white col-span-full sm:col-start-1 sm:col-end-[-2] font-['IBM_Plex_Mono'] [&>span]:font-['IBM_Plex_Mono'] selection:text-black selection:bg-white">
         This is not the page you are looking for.
       </h2>
     </div>
@@ -20,9 +22,100 @@
 <script>
 export default {
   name: "404",
+  // Style the body, header and footer on load.
+  beforeCreate() {
+    document.querySelector("body").setAttribute("style", "background:#121212");
+    document
+      .querySelector("header")
+      .setAttribute(
+        "style",
+        "background: radial-gradient( rgba(0,0,0,0) 1px,#121212 1px ) 0px 0px/8px 8px"
+      );
+    document
+      .querySelector(".page-footer")
+      .setAttribute("style", "background: #121212");
+  },
   mounted() {
     this.word();
     this.letter();
+    // Style the text and background colors to brand colors.
+    var melon = document.querySelectorAll(".text-melon");
+    for (var i = 0; i < melon.length; i++) {
+      melon[i].setAttribute(
+        "style",
+        "color: #ffffff; font-family: 'IBM Plex Mono'"
+      );
+    }
+    var silk = document.querySelectorAll(".text-unbleached-silk");
+    for (var i = 0; i < silk.length; i++) {
+      silk[i].setAttribute(
+        "style",
+        "color: #ffffff; font-family: 'IBM Plex Mono'"
+      );
+    }
+    var cameo = document.querySelectorAll(".text-cameo-pink");
+    for (var i = 0; i < cameo.length; i++) {
+      cameo[i].setAttribute(
+        "style",
+        "color: #ffffff; font-family: 'IBM Plex Mono'"
+      );
+    }
+    var pastel = document.querySelectorAll(".text-pastel-pink");
+    for (var i = 0; i < pastel.length; i++) {
+      pastel[i].setAttribute(
+        "style",
+        "color: #ffffff; font-family: 'IBM Plex Mono'"
+      );
+    }
+    var eggplant = document.querySelectorAll(".bg-eggplant");
+    for (var i = 0; i < eggplant.length; i++) {
+      eggplant[i].setAttribute(
+        "style",
+        "background: #ffffff; font-family: 'IBM Plex Mono'"
+      );
+    }
+    document
+      .querySelector(".navbar")
+      .setAttribute(
+        "style",
+        "border-color: #ffffff; background-color: #333333"
+      );
+  },
+  // Remove all the added styles, and return to default.
+  beforeUnmount() {
+    document.querySelector("body").setAttribute("style", "");
+    document.querySelector("header").setAttribute("style", "");
+    document.querySelector(".page-footer").setAttribute("style", "");
+    document.querySelector(".navbar").setAttribute("style", "");
+    var melon = document.querySelectorAll(".text-melon");
+    for (var i = 0; i < melon.length; i++) {
+      melon[i].setAttribute("style", "");
+    }
+    var silk = document.querySelectorAll(".text-unbleached-silk");
+    for (var i = 0; i < silk.length; i++) {
+      silk[i].setAttribute("style", "");
+    }
+    var cameo = document.querySelectorAll(".text-cameo-pink");
+    for (var i = 0; i < cameo.length; i++) {
+      cameo[i].setAttribute("style", "");
+    }
+    var pastel = document.querySelectorAll(".text-pastel-pink");
+    for (var i = 0; i < pastel.length; i++) {
+      pastel[i].setAttribute("style", "");
+    }
+    var eggplant = document.querySelectorAll(".bg-eggplant");
+    for (var i = 0; i < eggplant.length; i++) {
+      eggplant[i].setAttribute("style", "");
+    }
+    // var nav = document.querySelectorAll(".nav-item");
+    // for (var i = 0; i < nav.length; i++) {
+    //   nav[i].setAttribute("style", "");
+    // }
+    // var burger = document.querySelectorAll(".burger");
+    // for (var i = 0; i < burger.length; i++) {
+    //   burger[i].setAttribute("style", "");
+    // }
+    // document.querySelector(".nav-menu").setAttribute("style", "");
   },
   methods: {
     word() {
