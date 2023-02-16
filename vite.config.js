@@ -2,7 +2,7 @@ import { defineConfig } from "vite";
 import Vue from "@vitejs/plugin-vue";
 import { resolve } from "path";
 import Pages from "vite-plugin-pages";
-import generateSitemap from "vite-plugin-pages-sitemap";
+// import generateSitemap from "vite-plugin-pages-sitemap";
 import Components from "unplugin-vue-components/vite";
 import Icons from "unplugin-icons/vite";
 import IconsResolver from "unplugin-icons/resolver";
@@ -16,13 +16,13 @@ const config = defineConfig({
         { dir: resolve(__dirname, "./src/pages"), baseRoute: "" },
         { dir: resolve(__dirname, ".src/pages/[...all].vue"), baseRoute: "/*" },
       ],
-      onRoutesGenerated: (routes) =>
-        generateSitemap({
-          hostname: "https://rony-majzoub.netlify.app/",
-          routes,
-          readable: true,
-          exclude: ["/[...all]"],
-        }),
+      // onRoutesGenerated: (routes) =>
+      //   generateSitemap({
+      //     hostname: "https://rony-majzoub.netlify.app/",
+      //     routes,
+      //     readable: true,
+      //     exclude: ["/[...all]"],
+      //   }),
       importMode(filepath, options) {
         // default resolver
         // for (const page of options.dirs) {

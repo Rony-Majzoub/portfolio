@@ -19,7 +19,7 @@
     "vite": "^2.5.4",
     "vue": "^3.0.0",
     "vue-meta": "^3.0.0-alpha.10",
-    "vue-router": "^4.0.15",
+    "vue-router": "^4.0.13",
     "vue-router-prefetch": "^2.0.2"
   },
   "devDependencies": {
@@ -35,7 +35,7 @@
     "unplugin-icons": "^0.14.3",
     "unplugin-vue-components": "^0.19.6",
     "vite-plugin-pages": "^0.23.0",
-    "vite-plugin-pages-sitemap": "^1.2.2"
+    "vite-plugin-pages-sitemap": "^1.4.5"
   },
   "eslintConfig": {
     "root": true,
