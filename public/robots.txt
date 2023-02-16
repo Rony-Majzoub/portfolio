@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
+Disallow: /contact
+Disallow: /connected
+Disallow: /buratinoweb
+Disallow: /buratino19
+Disallow: /recypie
+Disallow: /buratino21
 
 Sitemap: https://rony-majzoub.netlify.app/sitemap.xml
