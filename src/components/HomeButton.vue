@@ -8,7 +8,7 @@
       delay: 1000,
       easing: 'easeInOutExpo',
     }"
-    class="z-50 hidden h-fit w-max fixed top-28 left-[0vw] lg:flex cursor-pointer transition-all duration-200 flex-column items-end"
+    class="z-50 hidden h-fit w-max fixed top-28 left-[0vw] lg:flex cursor-pointer transition-all duration-200 flex-column items-center"
     role="button"
     aria-label="Home"
     @click="$router.push('/')">
@@ -28,7 +28,7 @@
       delay: 1000,
       easing: 'easeInOutExpo',
     }"
-    class="z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer transition-all duration-200 flex flex-column items-end"
+    class="z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer transition-all duration-200 flex flex-column items-center"
     role="button"
     aria-label="Home"
     @click="$router.push('/')">
