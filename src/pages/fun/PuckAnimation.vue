@@ -4,12 +4,14 @@
     <ProjectTitle
       info="2022 – 3D Animation"
       title="Puck Animation"
-      brief="Create a looping 3D Animation in Blender." />
+      brief="Recreate a looping 3D Animation in Blender, originally created by Andreas Wannerstedt." />
     <ProjectVideo
       class="mb-10"
       video="Puck_Render.mp4"
       video-link="v1654000302/portfolio/fun/Puck_Render.mp4"
-      alt-text="Puck Animation" />
+      alt-text="Puck Animation"
+      link-text="View Inspiration"
+      link="https://andreaswannerstedt.se/oddly-satisfying-vol8" />
     <ProjectTags
       client="Yrgo DD21"
       team="Rony Majzoub"
