@@ -1,6 +1,8 @@
 <template>
   <div class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-2">
-    <div class="card-background relative aspect-video rounded-lg bg-eggplant">
+    <div
+      class="relative aspect-video rounded-lg bg-eggplant"
+      :style="{ backgroundColor: bgColor }">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
@@ -86,8 +88,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-.card-background {
-  background-color: v-bind(bgColor);
-}
-</style>
