@@ -9,7 +9,8 @@
       class="mb-10"
       image="anvilrender.jpg"
       image-link="v1653259517/portfolio/fun/anvilrender.jpg"
-      alt-text="Anvil Render" />
+      alt-text="Anvil Render"
+      bg-color="#2b2c2c" />
     <ProjectTags
       client="N/A"
       team="Rony Majzoub"

@@ -9,7 +9,8 @@
       class="mb-10"
       image="Unity_Forest.png"
       image-link="v1654173537/portfolio/fun/Unity_Forest.png"
-      alt-text="Unity Forest" />
+      alt-text="Unity Forest"
+      bg-color="#1a1f30" />
     <ProjectTags
       client="N/A"
       team="Rony Majzoub"

@@ -11,7 +11,8 @@
       image-link="v1652949383/portfolio/fel/fel_hero2.png"
       alt-text="Future Experience Lab Icon"
       link-text="View Website"
-      link="https://rony-majzoub-fel.netlify.app" />
+      link="https://rony-majzoub-fel.netlify.app"
+      bg-color="#242424" />
     <ProjectTags
       client="Yrgo DD21, Future Experience Lab"
       team="Rony Majzoub, 

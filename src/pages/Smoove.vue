@@ -11,7 +11,8 @@
       image-link="v1652044733/portfolio/smoove/smoove.jpg"
       alt-text="Smoove Park"
       link-text="View Website"
-      link="https://rony-majzoub-smoove.netlify.app" />
+      link="https://rony-majzoub-smoove.netlify.app"
+      bg-color="#464145" />
     <ProjectTags
       client="Yrgo DD21"
       team="Rony Majzoub, 

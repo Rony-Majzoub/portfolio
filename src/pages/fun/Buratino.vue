@@ -11,7 +11,8 @@
       image-link="v1652044733/portfolio/buratino/buratino.png"
       alt-text="Buratino Instruktino"
       link-text="View Website"
-      link="https://app.buratino.se/" />
+      link="https://app.buratino.se/"
+      bg-color="#ba0909" />
     <ProjectTags
       client="Buratino AB"
       team="Rony Majzoub, 

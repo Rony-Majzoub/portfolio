@@ -9,7 +9,8 @@
       class="mb-10"
       image="so_good.png"
       image-link="v1653258131/portfolio/fun/so_good/so_good.png"
-      alt-text="So Good" />
+      alt-text="So Good"
+      bg-color="#e280c7" />
     <ProjectTags
       client="Yrgo DD21"
       team="Rony Majzoub"

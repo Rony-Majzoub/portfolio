@@ -19,37 +19,43 @@
         tag="Digital Prototype"
         image="recypie.png"
         image-link="v1652044733/portfolio/recypie/recypie.png"
-        link="fun/recypie" />
+        link="fun/recypie"
+        bg-color="#b1e0c7" />
       <FunCard
         title="Shuu"
         tag="Website Prototype"
         image="shuu_hero.png"
         image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
-        link="fun/shuu" />
+        link="fun/shuu"
+        bg-color="#252221" />
       <FunCard
         title="Polestar Website"
         tag="Website Prototype"
         image="polestar_website.png"
         image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
-        link="fun/polestarwebsite" />
+        link="fun/polestarwebsite"
+        bg-color="#eaeae8" />
       <FunCard
         title="Buratino"
         tag="Website & App"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="fun/buratino" />
+        link="fun/buratino"
+        bg-color="#ba0909" />
       <FunCard
         title="Information Screen"
         tag="Digital Prototype"
         image="connected.png"
         image-link="v1653262038/portfolio/fun/connected/connected.png"
-        link="fun/infoscreen" />
+        link="fun/infoscreen"
+        bg-color="#242323" />
       <FunCard
         title="Vacina"
         tag="Digital Prototype"
         image="vacina.png"
         image-link="v1653260886/portfolio/fun/vacina/vacina.png"
-        link="fun/vacina" />
+        link="fun/vacina"
+        bg-color="#a2d1fa" />
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
           Animation
@@ -64,13 +70,15 @@
         tag="3D Animation"
         image="puck_animation.png"
         image-link="v1653998300/portfolio/fun/puck_animation.png"
-        link="fun/puckanimation" />
+        link="fun/puckanimation"
+        bg-color="#c1a693" />
       <FunCard
         title="Spices of Gaming"
         tag="Motion Graphics"
         image="spices_of_gaming_thumbnail.png"
         image-link="v1654003231/portfolio/fun/spices_of_gaming_thumbnail.png"
-        link="fun/spicesofgaming" />
+        link="fun/spicesofgaming"
+        bg-color="#3c3444" />
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
           3D-Rendering
@@ -84,49 +92,57 @@
         tag="Product Visualization"
         image="so_good.png"
         image-link="v1653258131/portfolio/fun/so_good/so_good.png"
-        link="fun/sogood" />
+        link="fun/sogood"
+        bg-color="#e280c7" />
       <FunCard
         title="Dark Forest"
         tag="Rendering"
         image="Unity_Forest.png"
         image-link="v1654173537/portfolio/fun/Unity_Forest.png"
-        link="fun/unityforest" />
+        link="fun/unityforest"
+        bg-color="#1a1f30" />
       <FunCard
         title="Donut Morning"
         tag="Modelling & Rendering"
         image="donut_render.jpg"
         image-link="v1653259075/portfolio/fun/donut_render.jpg"
-        link="fun/donutrender" />
+        link="fun/donutrender"
+        bg-color="#c5b8bc" />
       <FunCard
         title="Donut Night"
         tag="Modelling & Rendering"
         image="donut_night_render.png"
         image-link="v1653259523/portfolio/fun/Donut_Night_Render.png"
-        link="fun/donutnightrender" />
+        link="fun/donutnightrender"
+        bg-color="#14191e" />
       <FunCard
         title="Project Punk"
         tag="Modelling & Rendering"
         image="project_punk.jpg"
         image-link="v1653259074/portfolio/fun/project_punk.jpg"
-        link="fun/projectpunk" />
+        link="fun/projectpunk"
+        bg-color="#3e2a21" />
       <FunCard
         title="Brick Wall"
         tag="Rendering"
         image="brick_wall.jpg"
         image-link="v1653259074/portfolio/fun/Brick_Wall.jpg"
-        link="fun/brickwall" />
+        link="fun/brickwall"
+        bg-color="#4d443f" />
       <FunCard
         title="Anvil Render"
         tag="Modelling & Materials"
         image="anvilrender.jpg"
         image-link="v1653259517/portfolio/fun/anvilrender.jpg"
-        link="fun/anvilrender" />
+        link="fun/anvilrender"
+        bg-color="#2b2c2c" />
       <FunCard
         title="NTI-Awards 2020"
         tag="Modelling & Rendering"
         image="nti_awards.jpg"
         image-link="v1653259075/portfolio/fun/nti_awards.jpg"
-        link="fun/ntiawards" />
+        link="fun/ntiawards"
+        bg-color="#3c302d" />
     </main>
   </div>
 </template>

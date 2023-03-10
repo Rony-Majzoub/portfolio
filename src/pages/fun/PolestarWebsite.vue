@@ -10,7 +10,7 @@
       image="polestar_website.png"
       image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
       alt-text="Polestar Website"
-      bg-color="#FFFFFF" />
+      bg-color="#eaeae8" />
     <ProjectTags
       client="Polestar"
       team="Rony Majzoub, 

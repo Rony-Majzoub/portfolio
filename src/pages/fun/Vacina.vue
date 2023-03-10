@@ -11,7 +11,8 @@
       image-link="v1653260886/portfolio/fun/vacina/vacina.png"
       alt-text="Vacina"
       link-text="View Prototype"
-      link="https://www.figma.com/proto/jfnsuqMbfLqnUqfpXwBepc/Vacina-(Showreel)?page-id=7%3A141&node-id=23%3A125&viewport=238%2C509%2C0.17&scaling=scale-down&starting-point-node-id=23%3A125" />
+      link="https://www.figma.com/proto/jfnsuqMbfLqnUqfpXwBepc/Vacina-(Showreel)?page-id=7%3A141&node-id=23%3A125&viewport=238%2C509%2C0.17&scaling=scale-down&starting-point-node-id=23%3A125"
+      bg-color="#a2d1fa" />
     <ProjectTags
       client="Yrgo DD21"
       team="Rony Majzoub, 

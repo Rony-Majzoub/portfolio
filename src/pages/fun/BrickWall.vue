@@ -9,7 +9,8 @@
       class="mb-10"
       image="brick_wall.jpg"
       image-link="v1653259074/portfolio/fun/Brick_Wall.jpg"
-      alt-text="Brick Wall" />
+      alt-text="Brick Wall"
+      bg-color="#4d443f" />
     <ProjectTags
       client="N/A"
       team="Rony Majzoub"

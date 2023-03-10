@@ -9,7 +9,8 @@
       class="mb-10"
       image="donut_night_render.png"
       image-link="v1653259523/portfolio/fun/Donut_Night_Render.png"
-      alt-text="Donut Night Render" />
+      alt-text="Donut Night Render"
+      bg-color="#14191e" />
     <ProjectTags
       client="N/A"
       team="Rony Majzoub"

@@ -10,7 +10,7 @@
       :src="`/assets/img/${image}`"
       width="384"
       height="256"
-      class="cld-responsive absolute object-cover w-full h-full text-[0] bg-eggplant" />
+      class="card-background cld-responsive absolute object-cover w-full h-full text-[0] bg-eggplant" />
     <!-- Sharp Final Image (Cloudinary) -->
     <img
       :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
@@ -65,6 +65,10 @@ export default {
       default: "",
       type: String,
     },
+    bgColor: {
+      default: "var(--eggplant)",
+      type: String,
+    },
   },
   mounted() {
     var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
@@ -82,3 +86,8 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+.card-background {
+  background-color: v-bind(bgColor);
+}
+</style>

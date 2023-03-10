@@ -9,7 +9,8 @@
       class="mb-10"
       image="shuu_hero.png"
       image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
-      alt-text="Shuu" />
+      alt-text="Shuu"
+      bg-color="#252221" />
     <ProjectTags
       client="Yrgo DD21"
       team="Rony Majzoub, 

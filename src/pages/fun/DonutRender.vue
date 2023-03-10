@@ -9,7 +9,8 @@
       class="mb-10"
       image="donut_render.jpg"
       image-link="v1653259075/portfolio/fun/donut_render.jpg"
-      alt-text="Donut Render" />
+      alt-text="Donut Render"
+      bg-color="#c5b8bc" />
     <ProjectTags
       client="N/A"
       team="Rony Majzoub"

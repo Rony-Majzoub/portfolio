@@ -9,7 +9,8 @@
       class="mb-10"
       video="spices_of_gaming.mp4"
       video-link="v1654003119/portfolio/fun/spices_of_gaming.mp4"
-      alt-text="Spices of Gaming" />
+      alt-text="Spices of Gaming"
+      bg-color="#3c3444" />
     <ProjectTags
       client="Yrgo DD21"
       team="Rony Majzoub"

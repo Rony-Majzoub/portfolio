@@ -11,7 +11,8 @@
       image-link="v1653061123/portfolio/mojo/mojo_hero.png"
       alt-text="Mojo Hero Image"
       link-text="View Graphic Profile"
-      link="https://www.figma.com/proto/JW1asOCvRC6oo5sgLUfnoB/Mojo-(Showreel)?page-id=653%3A918&node-id=676%3A1492&viewport=2303%2C274%2C0.28&scaling=contain&starting-point-node-id=676%3A1492" />
+      link="https://www.figma.com/proto/JW1asOCvRC6oo5sgLUfnoB/Mojo-(Showreel)?page-id=653%3A918&node-id=676%3A1492&viewport=2303%2C274%2C0.28&scaling=contain&starting-point-node-id=676%3A1492"
+      bg-color="#f29b4b" />
     <ProjectTags
       client="Yrgo DD21, Mojo"
       team="Rony Majzoub, 

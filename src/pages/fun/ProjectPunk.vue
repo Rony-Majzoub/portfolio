@@ -9,7 +9,8 @@
       class="mb-10"
       image="project_punk.jpg"
       image-link="v1653259074/portfolio/fun/project_punk.jpg"
-      alt-text="Project Punk" />
+      alt-text="Project Punk"
+      bg-color="#3e2a21" />
     <ProjectTags
       client="N/A"
       team="Rony Majzoub"

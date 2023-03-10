@@ -11,7 +11,8 @@
       video-link="v1654000302/portfolio/fun/Puck_Render.mp4"
       alt-text="Puck Animation"
       link-text="View Inspiration"
-      link="https://andreaswannerstedt.se/oddly-satisfying-vol8" />
+      link="https://andreaswannerstedt.se/oddly-satisfying-vol8"
+      bg-color="#c1a693" />
     <ProjectTags
       client="Yrgo DD21"
       team="Rony Majzoub"

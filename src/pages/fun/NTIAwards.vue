@@ -9,7 +9,8 @@
       class="mb-10"
       image="nti_awards.jpg"
       image-link="v1653259075/portfolio/fun/nti_awards.jpg"
-      alt-text="NTI Awards" />
+      alt-text="NTI Awards"
+      bg-color="#3c302d" />
     <ProjectTags
       client="NTI-Johanneberg"
       team="Rony Majzoub"
