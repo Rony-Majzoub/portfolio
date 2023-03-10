@@ -11,7 +11,8 @@
       image-link="v1652044733/portfolio/recypie/recypie.png"
       alt-text="RecyPie"
       link-text="View Prototype"
-      link="https://www.figma.com/proto/XxGihqfhy88PjYtPlCpXSd/RecyPie-(Showreel)?page-id=0%3A1&node-id=181%3A3379&viewport=248%2C371%2C0.09&scaling=scale-down&starting-point-node-id=181%3A3379&show-proto-sidebar=1" />
+      link="https://www.figma.com/proto/XxGihqfhy88PjYtPlCpXSd/RecyPie-(Showreel)?page-id=0%3A1&node-id=181%3A3379&viewport=248%2C371%2C0.09&scaling=scale-down&starting-point-node-id=181%3A3379&show-proto-sidebar=1"
+      bg-color="#b1e0c7" />
     <ProjectTags
       client="Yrgo DD21"
       team="Rony Majzoub"

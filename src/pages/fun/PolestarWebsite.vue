@@ -9,7 +9,8 @@
       class="mb-10"
       image="polestar_website.png"
       image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
-      alt-text="Polestar Website" />
+      alt-text="Polestar Website"
+      bg-color="#FFFFFF" />
     <ProjectTags
       client="Polestar"
       team="Rony Majzoub, 

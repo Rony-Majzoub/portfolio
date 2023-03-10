@@ -1,6 +1,6 @@
 <template>
   <div class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-2">
-    <div class="relative aspect-video rounded-lg bg-eggplant">
+    <div class="video-card relative aspect-video rounded-lg bg-eggplant">
       <!-- Sharp Final Video (Cloudinary) -->
       <video
         :data-src="`https://res.cloudinary.com/rony-majzoub/video/upload/${videoLink}`"
@@ -59,6 +59,10 @@ export default {
       default: "",
       type: String,
     },
+    bgColor: {
+      default: "var(--eggplant)",
+      type: String,
+    },
   },
   mounted() {
     var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
@@ -66,3 +70,8 @@ export default {
   },
 };
 </script>
+<style lang="scss">
+.video-card {
+  background-color: v-bind(bgColor);
+}
+</style>
