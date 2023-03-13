@@ -10,7 +10,8 @@
       :src="`/assets/img/${image}`"
       width="384"
       height="256"
-      class="card-background cld-responsive absolute object-cover w-full h-full text-[0] bg-eggplant" />
+      class="cld-responsive absolute object-cover w-full h-full text-[0] bg-eggplant"
+      :style="{ backgroundColor: bgColor }" />
     <!-- Sharp Final Image (Cloudinary) -->
     <img
       :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
@@ -86,8 +87,3 @@ export default {
   },
 };
 </script>
-<style lang="scss">
-.card-background {
-  background-color: v-bind(bgColor);
-}
-</style>
