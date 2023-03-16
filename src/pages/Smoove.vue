@@ -15,20 +15,9 @@
       bg-color="#464145" />
     <ProjectTags
       client="Yrgo DD21"
-      team="Rony Majzoub, 
-      Linrinna Lindström, 
-      Per-Emil Lundqvist, 
-      Alexander Mellby, 
-      Oliver Davis, 
-      Albin Andersson"
       role="UI/UX Designer, Creative Director"
       duration="1 month"
-      tools="Figma, Adobe After Effects, Adobe Illustrator"
-      category1="UI Design"
-      category2="UX Design"
-      category3="Product Design"
-      category4="Motion Design"
-      category5="Web Design" />
+      tools="Figma, Adobe After Effects, Adobe Illustrator" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
@@ -122,10 +111,13 @@ export default {
     ),
   },
   // Send Gallery Array down to ProjectGallery component for dynamic images.
+  // Recover the data sent by components, to fill the props up.
   provide() {
     // use function syntax so that we can access `this`
     return {
       pictures: this.pictures,
+      team: this.team,
+      categories: this.categories,
     };
   },
   // Data-list of images to be shown in ProjectGallery.
@@ -167,6 +159,46 @@ export default {
           alt: "A motorcycle and a driver parked in an open field.",
           imageText: "A motorcycle and a driver parked in an open field.",
           src: "smoove_field.png",
+        },
+      ],
+      // Data-list of names and portfolio-links to be shown in ProjectTags.
+      team: [
+        {
+          teamName: "Rony Majzoub",
+        },
+        {
+          teamName: "Linrinna Lindström",
+          portfolioLink: "https://www.linrinnalindstrom.com/",
+        },
+        {
+          teamName: "Per-Emil Lundqvist",
+        },
+        {
+          teamName: "Alexander Mellby",
+        },
+        {
+          teamName: "Oliver Davis",
+        },
+        {
+          teamName: "Albin Andersson",
+        },
+      ],
+      // Data-list of categories to be shown in ProjectTags.
+      categories: [
+        {
+          categoryName: "UI Design",
+        },
+        {
+          categoryName: "UX Design",
+        },
+        {
+          categoryName: "Product Design",
+        },
+        {
+          categoryName: "Motion Design",
+        },
+        {
+          categoryName: "Web Design",
         },
       ],
     };

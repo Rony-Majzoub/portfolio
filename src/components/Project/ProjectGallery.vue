@@ -22,22 +22,13 @@
         :description="picture.imageText"
         :bg-color="picture.imageColor" />
     </div>
-    <!-- <div class="flex flex-row justify-between">
-      <p class="text-cameo-pink font-medium">
-        {{ imageText }}
-      </p>
-    </div> -->
   </div>
 </template>
 <script>
 import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
-// import ProjectImage from "@/components/Project/ProjectImage.vue";
 
 export default {
   name: "ProjectGallery",
-  // components: {
-  //   ProjectImage,
-  // },
   // Injects the Array of images from the Main Page.
   inject: ["pictures"],
   props: {

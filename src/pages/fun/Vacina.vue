@@ -15,15 +15,9 @@
       bg-color="#a2d1fa" />
     <ProjectTags
       client="Yrgo DD21"
-      team="Rony Majzoub, 
-      Linnea Kvammen"
       role="UI/UX Designer"
       duration="2 weeks"
-      tools="Figma"
-      category1="UI Design"
-      category2="UX Design"
-      category3="User Testing"
-      category4="Logo Design" />
+      tools="Figma" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -31,5 +25,42 @@
 <script>
 export default {
   name: "Vacina",
+  // Recover the data sent by components, to fill the props up.
+  provide() {
+    // use function syntax so that we can access `this`
+    return {
+      team: this.team,
+      categories: this.categories,
+    };
+  },
+  data() {
+    return {
+      // Data-list of names and portfolio-links to be shown in ProjectTags.
+      team: [
+        {
+          teamName: "Rony Majzoub",
+        },
+        {
+          teamName: "Linnea Kvammen",
+          portfolioLink: "https://www.kvammen.se/",
+        },
+      ],
+      // Data-list of categories to be shown in ProjectTags.
+      categories: [
+        {
+          categoryName: "UI Design",
+        },
+        {
+          categoryName: "UX Design",
+        },
+        {
+          categoryName: "User Testing",
+        },
+        {
+          categoryName: "Logo Design",
+        },
+      ],
+    };
+  },
 };
 </script>

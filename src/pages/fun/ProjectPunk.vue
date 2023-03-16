@@ -18,14 +18,9 @@
       bg-color="#3e2a21" /> -->
     <ProjectTags
       client="N/A"
-      team="Rony Majzoub"
       role="3D Artist"
       duration="2 months"
-      tools="Blender"
-      category1="3D Rendering"
-      category2="3D Materials"
-      category3="3D Modelling"
-      category4="3D Lighting" />
+      tools="Blender" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -35,10 +30,13 @@ export default {
   name: "ProjectPunk",
 
   // Send Gallery Array down to ProjectGallery component for dynamic images.
+  // Recover the data sent by components, to fill the props up.
   provide() {
     // use function syntax so that we can access `this`
     return {
       pictures: this.pictures,
+      team: this.team,
+      categories: this.categories,
     };
   },
   // Data-list of images to be shown in ProjectGallery.
@@ -58,6 +56,27 @@ export default {
           imageText: "",
           src: "nti_awards.jpg",
           imageColor: "#3c302d",
+        },
+      ],
+      // Data-list of names and portfolio-links to be shown in ProjectTags.
+      team: [
+        {
+          teamName: "Rony Majzoub",
+        },
+      ],
+      // Data-list of categories to be shown in ProjectTags.
+      categories: [
+        {
+          categoryName: "3D Animation",
+        },
+        {
+          categoryName: "3D Materials",
+        },
+        {
+          categoryName: "3D Modelling",
+        },
+        {
+          categoryName: "3D Lighting",
         },
       ],
     };

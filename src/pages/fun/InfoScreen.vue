@@ -16,13 +16,9 @@
 
     <ProjectTags
       client="NTI-Johanneberg"
-      team="Rony Majzoub"
       role="UI/UX Designer"
       duration="2 months"
-      tools="Figma"
-      category1="UI Design"
-      category2="UX Design"
-      category3="User Testing" />
+      tools="Figma" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -30,5 +26,35 @@
 <script>
 export default {
   name: "InfoScreen",
+  // Recover the data sent by components, to fill the props up.
+  provide() {
+    // use function syntax so that we can access `this`
+    return {
+      team: this.team,
+      categories: this.categories,
+    };
+  },
+  data() {
+    return {
+      // Data-list of names and portfolio-links to be shown in ProjectTags.
+      team: [
+        {
+          teamName: "Rony Majzoub",
+        },
+      ],
+      // Data-list of categories to be shown in ProjectTags.
+      categories: [
+        {
+          categoryName: "UI Design",
+        },
+        {
+          categoryName: "UX Design",
+        },
+        {
+          categoryName: "User Testing",
+        },
+      ],
+    };
+  },
 };
 </script>

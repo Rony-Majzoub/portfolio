@@ -15,16 +15,9 @@
       bg-color="#f29b4b" />
     <ProjectTags
       client="Yrgo DD21, Mojo"
-      team="Rony Majzoub, 
-      Emma Norman, 
-      Madeleine Möller Ståhl"
       role="UX Designer, Project Lead"
       duration="2 months"
-      tools="Figma, Adobe Illustrator"
-      category1="UI Design"
-      category2="UX Design"
-      category3="Product Design"
-      category4="Web Design" />
+      tools="Figma, Adobe Illustrator" />
 
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
@@ -109,6 +102,8 @@ export default {
     // use function syntax so that we can access `this`
     return {
       pictures: this.pictures,
+      team: this.team,
+      categories: this.categories,
     };
   },
   // Data-list of images to be shown in ProjectGallery.
@@ -126,6 +121,35 @@ export default {
           alt: "Second Section of Website",
           imageText: "Second section of the website.",
           src: "mojo_website2.png",
+        },
+      ],
+      // Data-list of names and portfolio-links to be shown in ProjectTags.
+      team: [
+        {
+          teamName: "Rony Majzoub",
+        },
+        {
+          teamName: "Emma Norman",
+          portfolioLink: "https://emmanorman.webflow.io/",
+        },
+        {
+          teamName: "Madeleine Möller Ståhl",
+          portfolioLink: "https://madeleinemollerstahl.webflow.io/",
+        },
+      ],
+      // Data-list of categories to be shown in ProjectTags.
+      categories: [
+        {
+          categoryName: "UI Design",
+        },
+        {
+          categoryName: "UX Design",
+        },
+        {
+          categoryName: "Product Design",
+        },
+        {
+          categoryName: "Web Design",
         },
       ],
     };

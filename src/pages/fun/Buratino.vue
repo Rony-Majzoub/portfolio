@@ -15,17 +15,9 @@
       bg-color="#ba0909" />
     <ProjectTags
       client="Buratino AB"
-      team="Rony Majzoub, 
-      Casper Hansen, 
-      Viggo Fredriksson"
       role="UI/UX Designer, CSS Developer"
       duration="8 months"
-      tools="Figma, Adobe Illustrator, Visual Studio Code"
-      category1="Web Development"
-      category2="UI Design"
-      category3="UX Design"
-      category4="User Testing"
-      category5="Logo Design" />
+      tools="Figma, Adobe Illustrator, Visual Studio Code" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -33,5 +25,47 @@
 <script>
 export default {
   name: "Buratino",
+  // Recover the data sent by components, to fill the props up.
+  provide() {
+    // use function syntax so that we can access `this`
+    return {
+      team: this.team,
+      categories: this.categories,
+    };
+  },
+  data() {
+    return {
+      // Data-list of names and portfolio-links to be shown in ProjectTags.
+      team: [
+        {
+          teamName: "Rony Majzoub",
+        },
+        {
+          teamName: "Casper Hansen",
+        },
+        {
+          teamName: "Viggo Fredriksson",
+        },
+      ],
+      // Data-list of categories to be shown in ProjectTags.
+      categories: [
+        {
+          categoryName: "Web Development",
+        },
+        {
+          categoryName: "UI Design",
+        },
+        {
+          categoryName: "UX Design",
+        },
+        {
+          categoryName: "User Testing",
+        },
+        {
+          categoryName: "Logo Design",
+        },
+      ],
+    };
+  },
 };
 </script>
