@@ -3,10 +3,10 @@
     class="cursor-pointer flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
     :to="{ path: `/${link}` }"
     :style="{ backgroundColor: bgColor }">
-    <div class="flex flex-1 justify-center items-center p-6 pb-0">
+    <div class="flex flex-1 justify-center items-center p-10 pb-0">
       <!-- Image Element -->
       <div
-        class="max-w-full max-h-full flex-auto rounded-lg overflow-hidden group-hover:-translate-y-1 group-hover:shadow-2xl shadow-[#2f2730] transition-all ease-in-out duration-300 transform-gpu">
+        class="max-w-full max-h-full flex-auto rounded-lg overflow-hidden group-hover:-translate-y-1 group-hover:shadow-2xl shadow-xl group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300 transform-gpu">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
@@ -27,9 +27,9 @@
     </div>
     <!-- Text Element -->
     <div
-      class="transition-all ease-in-out flex flex-row justify-between items-baseline pb-6 bottom-0 inset-x-0 text-left px-6">
+      class="transition-all ease-in-out flex flex-row justify-between items-baseline pb-4 bottom-0 inset-x-0 text-left px-6">
       <h2
-        class="hidden sm:block text-melon font-bold text-lg xl:text-xl z-10"
+        class="text-melon font-bold text-lg xl:text-xl z-10"
         :style="{ color: titleColor }">
         {{ title }}
       </h2>
@@ -44,9 +44,9 @@
       </p>
     </div>
   </router-link>
-  <h2 class="block sm:hidden text-melon font-bold text-lg xl:text-xl z-10">
+  <!-- <h2 class="hidden text-melon font-bold text-lg xl:text-xl z-10">
     {{ title }}
-  </h2>
+  </h2> -->
 </template>
 
 <script>
