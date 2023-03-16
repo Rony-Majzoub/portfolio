@@ -29,7 +29,7 @@
     <div
       class="transition-all ease-in-out flex flex-row justify-between items-baseline pb-6 bottom-0 inset-x-0 text-left px-6">
       <h2
-        class="text-melon font-bold text-xl xl:text-2xl z-10"
+        class="hidden sm:block text-melon font-bold text-lg xl:text-xl z-10"
         :style="{ color: titleColor }">
         {{ title }}
       </h2>
@@ -38,12 +38,15 @@
         {{ tag }}
       </p> -->
       <p
-        class="sm:block hidden text-pastel-pink text-right font-semibold text-xs xl:text-sm tracking-widest uppercase antialiased -mr-2 opacity-0 group-hover:opacity-100 group-hover:mr-3 transition-all ease-in-out duration-300"
+        class="sm:block hidden text-pastel-pink text-right font-semibold text-xs tracking-widest uppercase antialiased -mr-2 opacity-0 group-hover:opacity-100 group-hover:mr-3 transition-all ease-in-out duration-300"
         :style="{ color: subtitleColor }">
         View case
       </p>
     </div>
   </router-link>
+  <h2 class="block sm:hidden text-melon font-bold text-lg xl:text-xl z-10">
+    {{ title }}
+  </h2>
 </template>
 
 <script>
