@@ -5,12 +5,17 @@
       info="2018 – 3D Rendering"
       title="Project Punk"
       brief="Create a 3D-scene that would visualize the idea for an upcoming gaming project." />
-    <ProjectImage
+    <ProjectGallery
+      class="mb-10"
+      title=""
+      description=""
+      gallery-color="var(--eggplant)" />
+    <!-- <ProjectImage
       class="mb-10"
       image="project_punk.jpg"
       image-link="v1653259074/portfolio/fun/project_punk.jpg"
       alt-text="Project Punk"
-      bg-color="#3e2a21" />
+      bg-color="#3e2a21" /> -->
     <ProjectTags
       client="N/A"
       team="Rony Majzoub"
@@ -28,5 +33,34 @@
 <script>
 export default {
   name: "ProjectPunk",
+
+  // Send Gallery Array down to ProjectGallery component for dynamic images.
+  provide() {
+    // use function syntax so that we can access `this`
+    return {
+      pictures: this.pictures,
+    };
+  },
+  // Data-list of images to be shown in ProjectGallery.
+  data() {
+    return {
+      pictures: [
+        {
+          url: "v1653259074/portfolio/fun/project_punk.jpg",
+          alt: "Project Punk",
+          imageText: "",
+          src: "project_punk.jpg",
+          imageColor: "#3e2a21",
+        },
+        {
+          url: "v1653259075/portfolio/fun/nti_awards.jpg",
+          alt: "NTI Awards",
+          imageText: "",
+          src: "nti_awards.jpg",
+          imageColor: "#3c302d",
+        },
+      ],
+    };
+  },
 };
 </script>

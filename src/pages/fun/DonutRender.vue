@@ -3,14 +3,13 @@
   <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
       info="2017 – 3D Rendering"
-      title="Donut Morning"
-      brief="Create a 3D-scene, featuring a mix of modelling, materials, lighting, rendering and camera work." />
-    <ProjectImage
+      title="Donut Scene"
+      brief="Create the iconic 3D-donut scene in Blender, featuring a mix of modelling, materials, lighting, rendering and camera work." />
+    <ProjectGallery
       class="mb-10"
-      image="donut_render.jpg"
-      image-link="v1653259075/portfolio/fun/donut_render.jpg"
-      alt-text="Donut Render"
-      bg-color="#c5b8bc" />
+      title=""
+      description=""
+      gallery-color="var(--eggplant)" />
     <ProjectTags
       client="N/A"
       team="Rony Majzoub"
@@ -28,5 +27,33 @@
 <script>
 export default {
   name: "DonutRender",
+  // Send Gallery Array down to ProjectGallery component for dynamic images.
+  provide() {
+    // use function syntax so that we can access `this`
+    return {
+      pictures: this.pictures,
+    };
+  },
+  // Data-list of images to be shown in ProjectGallery.
+  data() {
+    return {
+      pictures: [
+        {
+          url: "v1653259075/portfolio/fun/donut_render.jpg",
+          alt: "Donut Morning",
+          imageText: "Scene set in the morning.",
+          src: "donut_render.jpg",
+          imageColor: "#c5b8bc",
+        },
+        {
+          url: "v1653259523/portfolio/fun/Donut_Night_Render.png",
+          alt: "Donut Night",
+          imageText: "Alternate scene set in the night.",
+          src: "donut_night_render.png",
+          imageColor: "#14191e",
+        },
+      ],
+    };
+  },
 };
 </script>

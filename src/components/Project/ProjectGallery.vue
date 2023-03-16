@@ -10,7 +10,8 @@
       </p>
     </div>
     <div
-      class="snap-x snap-proximity flex flex-row items-start overflow-x-scroll w-full h-full gap-4 p-2 lg:gap-6 lg:p-8 rounded-lg lg:rounded-xl bg-eggplant">
+      class="snap-x snap-proximity flex flex-row items-start overflow-x-scroll w-full h-full gap-4 p-2 lg:gap-6 lg:p-8 rounded-lg lg:rounded-xl bg-eggplant"
+      :style="{ backgroundColor: galleryColor }">
       <ProjectImage
         v-for="picture in pictures"
         :key="picture.id"
@@ -18,7 +19,8 @@
         :image="picture.src"
         :image-link="picture.url"
         :alt-text="picture.alt"
-        :description="picture.imageText" />
+        :description="picture.imageText"
+        :bg-color="picture.imageColor" />
     </div>
     <!-- <div class="flex flex-row justify-between">
       <p class="text-cameo-pink font-medium">
@@ -49,6 +51,14 @@ export default {
     },
     imageText: {
       default: "",
+      type: String,
+    },
+    imageColor: {
+      default: "var(--eggplant)",
+      type: String,
+    },
+    galleryColor: {
+      default: "var(--eggplant)",
       type: String,
     },
   },

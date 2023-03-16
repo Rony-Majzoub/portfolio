@@ -5,7 +5,7 @@
       Here lies some of my smaller and more fun projects.
     </h1>
     <main
-      class="grid col-span-full gap-6 lg:gap-5 justify-items-center grid-cols-fun 3xl:grid-cols-funxl 5xl:grid-cols-funxxl pt-8 sm:pt-16">
+      class="grid col-span-full gap-6 lg:gap-5 justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-8 sm:pt-16">
       <div class="col-span-full place-self-start">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
           UI/UX Design
@@ -20,7 +20,9 @@
         image="recypie.png"
         image-link="v1652044733/portfolio/recypie/recypie.png"
         link="fun/recypie"
-        bg-color="#b1e0c7" />
+        bg-color="#b1e0c7"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
       <FunCard
         title="Shuu"
         tag="Website Prototype"
@@ -34,7 +36,9 @@
         image="polestar_website.png"
         image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
         link="fun/polestarwebsite"
-        bg-color="#eaeae8" />
+        bg-color="#eaeae8"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
       <FunCard
         title="Buratino"
         tag="Website & App"
@@ -55,7 +59,10 @@
         image="vacina.png"
         image-link="v1653260886/portfolio/fun/vacina/vacina.png"
         link="fun/vacina"
-        bg-color="#a2d1fa" />
+        bg-color="#a2d1fa"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
+
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
           Animation
@@ -71,7 +78,9 @@
         image="puck_animation.png"
         image-link="v1653998300/portfolio/fun/puck_animation.png"
         link="fun/puckanimation"
-        bg-color="#c1a693" />
+        bg-color="#c1a693"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
       <FunCard
         title="Spices of Gaming"
         tag="Motion Graphics"
@@ -93,7 +102,9 @@
         image="so_good.png"
         image-link="v1653258131/portfolio/fun/so_good/so_good.png"
         link="fun/sogood"
-        bg-color="#e280c7" />
+        bg-color="#e280c7"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
       <FunCard
         title="Dark Forest"
         tag="Rendering"
@@ -102,19 +113,21 @@
         link="fun/unityforest"
         bg-color="#1a1f30" />
       <FunCard
-        title="Donut Morning"
+        title="Donut Scene"
         tag="Modelling & Rendering"
         image="donut_render.jpg"
         image-link="v1653259075/portfolio/fun/donut_render.jpg"
         link="fun/donutrender"
-        bg-color="#c5b8bc" />
-      <FunCard
+        bg-color="#c5b8bc"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
+      <!-- <FunCard
         title="Donut Night"
         tag="Modelling & Rendering"
         image="donut_night_render.png"
         image-link="v1653259523/portfolio/fun/Donut_Night_Render.png"
         link="fun/donutnightrender"
-        bg-color="#14191e" />
+        bg-color="#14191e" /> -->
       <FunCard
         title="Project Punk"
         tag="Modelling & Rendering"
@@ -136,13 +149,13 @@
         image-link="v1653259517/portfolio/fun/anvilrender.jpg"
         link="fun/anvilrender"
         bg-color="#2b2c2c" />
-      <FunCard
+      <!-- <FunCard
         title="NTI-Awards 2020"
         tag="Modelling & Rendering"
         image="nti_awards.jpg"
         image-link="v1653259075/portfolio/fun/nti_awards.jpg"
         link="fun/ntiawards"
-        bg-color="#3c302d" />
+        bg-color="#3c302d" /> -->
     </main>
   </div>
 </template>

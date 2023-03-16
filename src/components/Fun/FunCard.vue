@@ -1,41 +1,46 @@
 <template>
   <router-link
-    class="cursor-pointer relative h-64 max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] hover:-translate-y-1 transform-gpu"
-    :to="{ path: `/${link}` }">
-    <!-- Image Element -->
-    <!-- Blurred Placeholder Image (Cloudinary) -->
-    <img
-      :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
-      :alt="`${title}`"
-      :src="`/assets/img/${image}`"
-      width="384"
-      height="256"
-      class="cld-responsive absolute object-cover w-full h-full text-[0] bg-eggplant"
-      :style="{ backgroundColor: bgColor }" />
-    <!-- Sharp Final Image (Cloudinary) -->
-    <img
-      :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
-      :alt="`${title}`"
-      :src="`/assets/img/${image}`"
-      width="384"
-      height="256"
-      class="cld-responsive high-def absolute object-cover w-full h-full text-[0]" />
-    <!-- <img
-      :src="`/assets/img/${image}`"
-      :alt="`${title}`"
-      width="384"
-      height="256"
-      class="object-cover w-full h-full text-[0]" /> -->
-    <!-- Hover Element -->
+    class="cursor-pointer flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
+    :to="{ path: `/${link}` }"
+    :style="{ backgroundColor: bgColor }">
+    <div class="flex flex-1 justify-center items-center p-6 pb-0">
+      <!-- Image Element -->
+      <div
+        class="max-w-full max-h-full rounded-lg overflow-hidden group-hover:-translate-y-1 group-hover:shadow-2xl shadow-[#2f2730] transition-all ease-in-out duration-300 transform-gpu">
+        <!-- Blurred Placeholder Image (Cloudinary) -->
+        <img
+          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+          :alt="`${title}`"
+          :src="`/assets/img/${image}`"
+          width="384"
+          height="216"
+          class="cld-responsive relative object-contain w-full h-full text-[0]" />
+        <!-- Sharp Final Image (Cloudinary) -->
+        <img
+          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+          :alt="`${title}`"
+          :src="`/assets/img/${image}`"
+          width="384"
+          height="216"
+          class="cld-responsive high-def absolute top-0 left-0 object-contain w-full h-full text-[0]" />
+      </div>
+    </div>
+    <!-- Text Element -->
     <div
-      :title="`Explore ${title}`"
-      class="transition-all ease-in-out absolute flex flex-col gap-1 justify-end pb-4 w-full h-full bottom-0 inset-x-0 text-center lg:text-left lg:pl-4 bg-gradient-to-t from-gradient1 to-gradient2 before:bg-eggplant before:opacity-0 before:border-4 before:content-[attr(title)] before:text-center before:flex before:justify-center before:items-center before:text-2xl before:underline before:underline-offset-8 before:decoration-4 before:normal-case before:antialiased before:text-melon before:font-bold before:border-pastel-pink before:rounded-lg group-hover:before:opacity-100 before:left-0 before:top-0 before:w-full before:h-full before:transition-opacity before:ease-in-out before:absolute">
-      <h2 class="text-melon font-bold text-2xl lg:text-4xl z-10">
+      class="transition-all ease-in-out flex flex-row justify-between items-baseline pb-6 bottom-0 inset-x-0 text-left px-6">
+      <h2
+        class="text-melon font-bold text-xl xl:text-2xl z-10"
+        :style="{ color: titleColor }">
         {{ title }}
       </h2>
-      <p
+      <!-- <p
         class="text-pastel-pink font-semibold text-xs lg:text-sm tracking-widest uppercase antialiased z-10">
         {{ tag }}
+      </p> -->
+      <p
+        class="sm:block hidden text-pastel-pink text-right font-semibold text-xs xl:text-sm tracking-widest uppercase antialiased -mr-2 opacity-0 group-hover:opacity-100 group-hover:mr-3 transition-all ease-in-out duration-300"
+        :style="{ color: subtitleColor }">
+        View case
       </p>
     </div>
   </router-link>
@@ -68,6 +73,14 @@ export default {
     },
     bgColor: {
       default: "var(--eggplant)",
+      type: String,
+    },
+    titleColor: {
+      default: "var(--melon)",
+      type: String,
+    },
+    subtitleColor: {
+      default: "var(--pastel-pink)",
       type: String,
     },
   },
