@@ -1,6 +1,6 @@
 <template>
   <BackButton />
-  <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
+  <div class="grid grid-cols-12 col-start-2 col-end-[-2]">
     <ProjectTitle
       info="2022 – UI/UX & Web Design"
       title="Future Experience Lab"
@@ -18,7 +18,8 @@
       role="UI/UX Designer"
       duration="2 weeks"
       tools="Figma" />
-    <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
+    <main
+      class="grid col-start-2 col-end-[-2] grid-cols-12 gap-x-8 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
         description='When Future Experience Lab reached out to Yrgo, they sought after a website to augment their "Hybrid Workhop Experience", with a touch of "controlled chaos". Our goal was to strike that balance, and deliver a website prototype.' />
@@ -48,7 +49,7 @@
         description="After being presented with the project brief, we tried to narrow down what exactly the goal of the website was. We also wanted to narrow down what the exact target group of this website was, and what they valued. We presented these questions to the client, and tried to shape the project around those key points.
         
         Early on, we created a Moodboard for visualizing how a chaotic, yet readable website might look like. We narrowed it down towards a dark color scheme, with strong and contrasting colors used wisely to grab attention. We also found that simple, primitive shapes could be used to add some dynamic flare into the website, which is something we added to the moodboard." />
-      <ProjectImage
+      <ProjectImageFull
         image="fel_components.png"
         image-link="v1652996443/portfolio/fel/fel_components.png"
         alt-text="Components that were created for our Web Developers."
@@ -58,7 +59,7 @@
         image-link="v1653003599/portfolio/fel/fel_stylesheet.png"
         alt-text="Stylesheet created for our Web Developers."
         description="Our stylesheet that we applied throughout our entire project." />
-      <ProjectImage
+      <ProjectImageHalf
         image="fel_delivery.png"
         image-link="v1653003559/portfolio/fel/fel_delivery.png"
         alt-text="Our Review Process of 3D Images."
@@ -75,14 +76,14 @@
 
         Our first method was to deliver sections one-by-one in a timely manner, with greyboxes and large visual elements coming first. We'd also communicate if any changes to previous deliveries had been made.
         Our second method was to utilize Components and Color/Text Styles extensively in Figma, to better allow for reusable code in the final website. This drastically cut down the time needed to code the website, while also giving a more consistent design to the entire prototype." />
-      <ProjectImage
+      <ColumnLeft
+        title="Final prototypes"
+        description="The final prototypes were made in Figma, with fine-tuned desktop and mobile variants. The prototypes were also made with a responsive layout in mind, both for larger and smaller screens. We provided multiple pages, assets and illustrations that were used in the final website. " />
+      <ProjectImageHalf
         image="fel_prototype.png"
         image-link="v1653003373/portfolio/fel/fel_prototype.png"
         alt-text="Final Prototypes in Figma."
         description="Snapshots of our final Figma-prototypes." />
-      <ColumnLeft
-        title="Final prototypes"
-        description="The final prototypes were made in Figma, with fine-tuned desktop and mobile variants. The prototypes were also made with a responsive layout in mind, both for larger and smaller screens. We provided multiple pages, assets and illustrations that were used in the final website. " />
       <ColumnLeft
         title="Learnings"
         description="We gained more experience on how to work under a tight deadline, and what to prioritize in those cases. We also gained better understanding for how Web Developers work, and their requirements.

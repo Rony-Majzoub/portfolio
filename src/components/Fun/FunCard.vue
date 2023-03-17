@@ -1,6 +1,6 @@
 <template>
   <router-link
-    class="cursor-pointer flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
+    class="cursor-pointer flex flex-col bg-eggplant aspect-[4/3] max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
     :to="{ path: `/${link}` }"
     :style="{ backgroundColor: bgColor }">
     <div class="flex flex-1 justify-center items-center p-10 pb-0">
