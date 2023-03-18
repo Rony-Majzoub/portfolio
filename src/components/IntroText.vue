@@ -13,14 +13,20 @@
       <span class="word !text-melon whitespace-nowrap">I'm&nbsp;</span>
       <span class="word !text-melon whitespace-nowrap">a&nbsp;</span>
       <hr class="basis-ful w-full h-0 m-0 border-0 block sm:hidden" />
-
+      <!-- <div
+        class="role-box word min-w-fit inline-block text-justify bg-unbleached-silk"
+        :style="'width: ' + role[0].width + '%'">
+        <span
+          class="word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant p-4 decoration-4 md:decoration-8 transform-gpu">
+          {{ role[0].name }}.
+        </span>
+      </div> -->
       <span
-        class="word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant p-4 bg-unbleached-silk decoration-4 md:decoration-8">
-        {{ role[0] }}.
+        :style="'width: ' + role[0].width + '%'"
+        class="word role max-[880px]:!w-fit whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 decoration-4 md:decoration-8 transform-gpu">
+        {{ role[0].name }}.
       </span>
       <br />
-      <!-- I'm a
-      <u>{{ role[0] }}.</u> -->
     </h1>
   </div>
 </template>
@@ -33,15 +39,15 @@ export default {
     return {
       // The different roles to choose from.
       role: [
-        "digital designer",
-        "UI designer",
-        "UX designer",
-        "web developer",
-        "3D artist",
+        { name: "digital designer", width: "63" },
+        { name: "UI designer", width: "48" },
+        { name: "UX designer", width: "52" },
+        { name: "web developer", width: "62" },
+        { name: "3D artist", width: "38" },
         // "product designer",
-        "motion designer",
-        "quick learner",
-        "problem solver",
+        { name: "motion designer", width: "67" },
+        { name: "quick learner", width: "55" },
+        { name: "problem solver", width: "62" },
       ],
     };
   },
@@ -66,7 +72,7 @@ export default {
     window.setInterval(() => {
       this.pollPerson();
       // The time that each role stays on screen in milliseconds.
-    }, 400);
+    }, 600);
   },
   methods: {
     pollPerson() {
@@ -85,5 +91,11 @@ u::selection {
 .intro-text .word {
   display: inline-block;
   line-height: 1.2em;
+}
+.role,
+.role-box {
+  transition-property: width;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
+  transition-duration: 300ms;
 }
 </style>

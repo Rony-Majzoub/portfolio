@@ -24,14 +24,14 @@
         Here are some of my larger projects.
       </h1>
       <div class="grid grid-cols-12 col-span-full place-items-center">
-        <ProjectCardCenter
+        <!-- <ProjectCardCenter
           title="Showreel"
           short-title="Showreel"
           description="Want the TL;DR on what I do? Just watch my Showreel!"
           category="Motion Deisgn"
           tag="Showreel"
           video="Showreel_Final_H264.mp4"
-          video-link="v1653263740/portfolio/Showreel_Final_H264.mp4" />
+          video-link="v1653263740/portfolio/Showreel_Final_H264.mp4" /> -->
         <ProjectCardRight
           link="futureexperiencelab"
           title="Future Experience Lab"
