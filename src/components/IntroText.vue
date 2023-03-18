@@ -21,6 +21,7 @@
           {{ role[0].name }}.
         </span>
       </div> -->
+      <!-- The width dynamically changes based on the width-percentage property given to each role. -->
       <span
         :style="'width: ' + role[0].width + '%'"
         class="word role max-[880px]:!w-fit whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 decoration-4 md:decoration-8 transform-gpu">
@@ -37,7 +38,7 @@ export default {
   name: "IntroText",
   data() {
     return {
-      // The different roles to choose from.
+      // The different roles to choose from. The width property is used on desktop as a percentage.
       role: [
         { name: "digital designer", width: "63" },
         { name: "UI designer", width: "48" },
@@ -92,6 +93,7 @@ u::selection {
   display: inline-block;
   line-height: 1.2em;
 }
+// The transition for the text-box with a dynamic width.
 .role,
 .role-box {
   transition-property: width;
