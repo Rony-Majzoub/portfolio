@@ -2,7 +2,7 @@
   <div
     class="lg:col-start-auto lg:col-end-[span_6] col-span-full flex flex-col gap-2">
     <div
-      class="flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
+      class="flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
       :style="{ backgroundColor: bgColor }">
       <div class="flex flex-1 justify-center items-center p-8">
         <!-- Image Element -->
@@ -33,7 +33,7 @@
       </p>
       <a
         v-if="linkText"
-        class="text-right cursor-pointer transition-all duration-200 text-melon underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-base font-bold tracking-wide antialiased"
+        class="text-right cursor-pointer transition-all duration-200 text-melon underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-base font-bold antialiased"
         :href="link"
         target="_blank">
         {{ linkText }} &rarr;

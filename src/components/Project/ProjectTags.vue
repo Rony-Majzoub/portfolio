@@ -3,13 +3,13 @@
     class="grid grid-cols-2 w-full col-span-full pb-8 lg:pb-16 gap-x-4 justify-self-start lg:col-start-2 lg:col-end-[-2]">
     <div class="flex flex-col col-span-1 gap-8 pb-10">
       <div class="flex flex-col gap-2">
-        <p class="text-xl md:text-2xl font-bold text-unbleached-silk">Client</p>
-        <p class="font-semibold text-base md:text-lg text-melon max-w-prose">
+        <p class="text-lg font-bold text-unbleached-silk">Client</p>
+        <p class="font-normal text-base text-melon max-w-prose">
           {{ client }}
         </p>
       </div>
       <div class="flex flex-col gap-2">
-        <p class="text-xl md:text-2xl font-bold text-unbleached-silk">Team</p>
+        <p class="text-lg font-bold text-unbleached-silk">Team</p>
 
         <div v-for="teammate in team" :key="teammate.id" class="h-min w-fit">
           <!-- If portfolioLink is non-empty, create a. Else, create span. -->
@@ -17,43 +17,37 @@
             :is="teammate.portfolioLink ? 'a' : 'span'"
             :href="teammate.portfolioLink || ''"
             target="_blank"
-            class="name-link font-semibold text-md md:text-lg text-melon max-w-prose whitespace-pre-line leading-8 md:leading-8 transition-all duration-200">
+            class="name-link font-normal text-base text-melon max-w-prose whitespace-pre-line transition-all duration-200">
             {{ teammate.teamName }}
           </component>
         </div>
       </div>
       <div class="flex flex-col gap-2">
-        <p class="text-xl md:text-2xl font-bold text-unbleached-silk">Role</p>
-        <p class="font-semibold text-base md:text-lg text-melon max-w-prose">
+        <p class="text-lg font-bold text-unbleached-silk">Role</p>
+        <p class="font-normal text-base text-melon max-w-prose">
           {{ role }}
         </p>
       </div>
       <div class="flex flex-col gap-2">
-        <p class="text-xl md:text-2xl font-bold text-unbleached-silk">
-          Duration
-        </p>
-        <p class="font-semibold text-base md:text-lg text-melon max-w-prose">
+        <p class="text-lg font-bold text-unbleached-silk">Duration</p>
+        <p class="font-normal text-base text-melon max-w-prose">
           {{ duration }}
         </p>
       </div>
       <div class="flex flex-col gap-2">
-        <p class="text-xl md:text-2xl font-bold text-unbleached-silk">
-          Tools used
-        </p>
-        <p class="font-semibold text-base md:text-lg text-melon max-w-prose">
+        <p class="text-lg font-bold text-unbleached-silk">Tools used</p>
+        <p class="font-normal text-base text-melon max-w-prose">
           {{ tools }}
         </p>
       </div>
     </div>
     <div class="flex flex-col col-span-1 gap-8 pb-10 justify-self-end">
       <div class="flex flex-col gap-2">
-        <p class="text-xl md:text-2xl font-bold text-unbleached-silk">
-          Project includes
-        </p>
+        <p class="text-lg font-bold text-unbleached-silk">Project includes</p>
         <p
           v-for="category in categories"
           :key="category.id"
-          class="font-semibold text-base md:text-lg text-melon max-w-prose">
+          class="font-normal text-base text-melon max-w-prose">
           {{ category.categoryName }}
         </p>
       </div>

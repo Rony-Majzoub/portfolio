@@ -31,16 +31,16 @@
       class="pt-6 p-8 text-left lg:mb-0 w-full gap-4 flex flex-col justify-between h-full max-w-prose">
       <figcaption class="space-y-2 lg:space-y-4">
         <div
-          class="text-pastel-pink font-medium text-xs lg:text-sm tracking-widest uppercase antialiased">
+          class="text-pastel-pink font-semibold text-xs lg:text-sm tracking-widest uppercase antialiased">
           About Me
         </div>
         <h1
-          class="about-text text-unbleached-silk font-bold text-5xl lg:text-6xl antialiased">
+          class="about-text text-unbleached-silk font-extrabold text-5xl lg:text-6xl antialiased">
           Rony Majzoub
         </h1>
       </figcaption>
       <blockquote>
-        <p class="text-base lg:text-lg font-semibold text-melon max-w-prose">
+        <p class="text-base lg:text-lg font-base text-melon max-w-prose">
           I'm a multidisciplinary digital designer, who loves to design visual
           prototypes for apps & websites, but also code them too!
           <br />
@@ -52,7 +52,7 @@
       <footer class="flex flex-col gap-4 pt-4 lg:pt-8">
         <h2
           class="text-unbleached-silk font-bold text-lg lg:text-xl tracking-wider uppercase antialiased">
-          Interests
+          My Interests
         </h2>
         <div class="flex flex-row flex-wrap gap-4">
           <AboutPill skill="Digital Design" />

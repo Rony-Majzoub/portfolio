@@ -20,7 +20,7 @@
     </div>
     <main class="project-grid grid grid-cols-12 col-span-full">
       <h1
-        class="project-text col-start-2 col-end-[-2] text-4xl sm:text-5xl lg:text-6xl font-bold !text-unbleached-silk text-left tracking-tight antialiased mb-8 sm:mb-16">
+        class="project-text col-start-2 col-end-[-2] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold !text-unbleached-silk text-left tracking-tight antialiased mb-8 sm:mb-16">
         Here are some of my larger projects.
       </h1>
       <div class="grid grid-cols-12 col-span-full place-items-center">

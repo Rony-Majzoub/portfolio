@@ -1,7 +1,7 @@
 <template>
   <div class="h-full flex items-center justify-center">
     <h1
-      class="intro-text max-w-4xl 2xl:max-w-6xl 3xl:max-w-6xl 5xl:max-w-[100rem] text-4xl md:text-6xl lg:text-7xl 5xl:text-9xl font-bold !text-unbleached-silk text-left tracking-tight antialiased">
+      class="intro-text max-w-4xl 2xl:max-w-6xl 3xl:max-w-7xl 5xl:max-w-[100rem] text-[8vw] leading-8 sm:text-[6vw] lg:text-[5vw] xl:text-[4vw] 5xl:text-9xl font-extrabold !text-unbleached-silk text-left tracking-tight antialiased">
       <!-- My name is Rony Majzoub. -->
       <span class="word !text-melon">My&nbsp;</span>
       <span class="word !text-melon">name&nbsp;</span>
@@ -13,18 +13,18 @@
       <span class="word !text-melon whitespace-nowrap">I'm&nbsp;</span>
       <span class="word !text-melon whitespace-nowrap">a&nbsp;</span>
       <hr class="basis-ful w-full h-0 m-0 border-0 block sm:hidden" />
-      <!-- <div
-        class="role-box word min-w-fit inline-block text-justify bg-unbleached-silk"
-        :style="'width: ' + role[0].width + '%'">
-        <span
-          class="word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant p-4 decoration-4 md:decoration-8 transform-gpu">
-          {{ role[0].name }}.
-        </span>
-      </div> -->
+      <!-- Mobile Variant (extra width) -->
       <!-- The width dynamically changes based on the width-percentage property given to each role. -->
       <span
-        :style="'width: ' + role[0].width + '%'"
-        class="word role max-[880px]:!w-fit whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 decoration-4 md:decoration-8 transform-gpu">
+        :style="'width: ' + role[0].mobileWidth + '%'"
+        class="sm:!hidden word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 pr-16 decoration-4 md:decoration-8 transform-gpu">
+        {{ role[0].name }}.
+      </span>
+      <!-- Desktop Variant (normal width) -->
+      <!-- The width dynamically changes based on the width-percentage property given to each role. -->
+      <span
+        :style="'width: ' + role[0].desktopWidth + '%'"
+        class="!hidden sm:!inline-block word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 5xl:p-8 decoration-4 md:decoration-8 transform-gpu">
         {{ role[0].name }}.
       </span>
       <br />
@@ -38,17 +38,17 @@ export default {
   name: "IntroText",
   data() {
     return {
-      // The different roles to choose from. The width property is used on desktop as a percentage.
+      // The different roles to choose from. The width property is used as a percentage.
       role: [
-        { name: "digital designer", width: "63" },
-        { name: "UI designer", width: "48" },
-        { name: "UX designer", width: "52" },
-        { name: "web developer", width: "62" },
-        { name: "3D artist", width: "38" },
+        { name: "digital designer", desktopWidth: "63", mobileWidth: "80" },
+        { name: "UI designer", desktopWidth: "48", mobileWidth: "63" },
+        { name: "UX designer", desktopWidth: "52", mobileWidth: "67" },
+        { name: "web developer", desktopWidth: "62", mobileWidth: "78" },
+        { name: "3D artist", desktopWidth: "38", mobileWidth: "50" },
         // "product designer",
-        { name: "motion designer", width: "67" },
-        { name: "quick learner", width: "55" },
-        { name: "problem solver", width: "62" },
+        { name: "motion designer", desktopWidth: "67", mobileWidth: "83" },
+        { name: "quick learner", desktopWidth: "55", mobileWidth: "70" },
+        { name: "problem solver", desktopWidth: "62", mobileWidth: "79" },
       ],
     };
   },

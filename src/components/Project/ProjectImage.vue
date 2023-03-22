@@ -28,7 +28,7 @@
       </p>
       <a
         v-if="linkText"
-        class="text-right cursor-pointer transition-all duration-200 text-melon underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-base font-bold tracking-wide antialiased"
+        class="text-right cursor-pointer transition-all duration-200 text-melon underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-base font-bold antialiased"
         :href="link"
         target="_blank">
         {{ linkText }} &rarr;

@@ -1,16 +1,16 @@
 <template>
   <div class="grid col-start-2 col-end-[-2] grid-cols-10">
     <h1
-      class="fun-text text-4xl sm:text-5xl lg:text-6xl font-bold text-unbleached-silk col-span-full sm:col-start-1 sm:col-end-[-2]">
+      class="fun-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-unbleached-silk col-span-full sm:col-start-1 sm:col-end-[-2]">
       Here lies some of my smaller and more fun projects.
     </h1>
     <main
       class="grid col-span-full gap-6 lg:gap-5 justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-8 sm:pt-16">
       <div class="col-span-full place-self-start">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-melon">
           UI/UX Design
         </h2>
-        <p class="text-melon text-base sm:text-lg font-medium">
+        <p class="text-melon text-base sm:text-lg font-normal">
           The usual stuff, you know?
         </p>
       </div>
@@ -64,10 +64,10 @@
         subtitle-color="var(--black-coffee)" />
 
       <div class="col-span-full place-self-start pt-8">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-melon">
           Animation
         </h2>
-        <p class="text-melon text-base sm:text-lg font-medium">
+        <p class="text-melon text-base sm:text-lg font-normal">
           Because who doesn't like to make things move?
         </p>
       </div>
@@ -89,10 +89,10 @@
         link="fun/spicesofgaming"
         bg-color="#3c3444" />
       <div class="col-span-full place-self-start pt-8">
-        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-melon">
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-melon">
           3D-Rendering
         </h2>
-        <p class="text-melon text-base sm:text-lg font-medium">
+        <p class="text-melon text-base sm:text-lg font-normal">
           Expect lots of Blender & game engine experiments.
         </p>
       </div>

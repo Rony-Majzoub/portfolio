@@ -1,13 +1,14 @@
 <template>
   <div class="col-span-full flex flex-col gap-6 pb-10 text-center">
     <p
-      class="info-text text-pastel-pink tracking-widest font-semibold text-base uppercase antialiased">
+      class="info-text text-pastel-pink tracking-widest font-semibold text-sm uppercase antialiased">
       {{ info }}
     </p>
-    <h1 class="title-text text-6xl sm:text-7xl font-bold text-unbleached-silk">
+    <h1
+      class="title-text text-4xl sm:text-5xl md:text-6xl font-extrabold text-unbleached-silk">
       {{ title }}
     </h1>
-    <h2 class="brief-text text-melon text-xl font-semibold">{{ brief }}</h2>
+    <p class="brief-text text-melon text-base font-normal">{{ brief }}</p>
   </div>
 </template>
 

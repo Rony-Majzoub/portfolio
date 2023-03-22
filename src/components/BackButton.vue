@@ -15,7 +15,7 @@
     <i-ic:round-keyboard-arrow-down
       class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
     <p
-      class="text-right inline text-unbleached-silk underline underline-offset-2 transition-all duration-200 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold tracking-wide antialiased">
+      class="text-right inline text-unbleached-silk underline underline-offset-2 transition-all duration-200 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-extrabold antialiased">
       Go Back
     </p>
   </div>
@@ -35,7 +35,7 @@
     <i-ic:round-keyboard-arrow-down
       class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
     <p
-      class="text-right inline text-unbleached-silk underline underline-offset-2 transition-all duration-200 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold tracking-wide antialiased">
+      class="text-right inline text-unbleached-silk underline underline-offset-2 transition-all duration-200 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-extrabold antialiased">
       Go Back
     </p>
   </div>
