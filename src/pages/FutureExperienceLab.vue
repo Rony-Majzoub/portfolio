@@ -160,6 +160,10 @@ export default {
   },
   // Style the text and background colors to brand colors.
   mounted() {
+    var logo = document.querySelectorAll(".fill-melon");
+    for (var i = 0; i < logo.length; i++) {
+      logo[i].setAttribute("style", "fill: #73e586");
+    }
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute("style", "color: #f6f6f6");
@@ -258,6 +262,10 @@ export default {
     document.querySelector("header").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
     document.querySelector(".navbar").setAttribute("style", "");
+    var logo = document.querySelectorAll(".fill-melon");
+    for (var i = 0; i < logo.length; i++) {
+      logo[i].setAttribute("style", "");
+    }
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute("style", "");

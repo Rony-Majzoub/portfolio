@@ -172,6 +172,10 @@ export default {
   },
   // Style the text and background colors to brand colors.
   mounted() {
+    var logo = document.querySelectorAll(".fill-melon");
+    for (var i = 0; i < logo.length; i++) {
+      logo[i].setAttribute("style", "fill: #F2770C");
+    }
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute("style", "color: #00060D");
@@ -274,6 +278,10 @@ export default {
     // for (var i = 0; i < burger.length; i++) {
     //   burger[i].setAttribute("style", "");
     // }
+    var logo = document.querySelectorAll(".fill-melon");
+    for (var i = 0; i < logo.length; i++) {
+      logo[i].setAttribute("style", "");
+    }
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute("style", "");

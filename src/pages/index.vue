@@ -23,7 +23,8 @@
         class="project-text col-start-2 col-end-[-2] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold !text-unbleached-silk text-left tracking-tight antialiased mb-8 sm:mb-16">
         Here are some of my larger projects.
       </h1>
-      <div class="grid grid-cols-12 col-span-full place-items-center">
+      <div
+        class="grid grid-cols-12 col-span-full gap-y-40 pb-40 place-items-center">
         <!-- <ProjectCardCenter
           title="Showreel"
           short-title="Showreel"
