@@ -37,7 +37,7 @@
       </blockquote>
       <!-- Mobile Bottom Row (Button) -->
       <project-button
-        class="float-right lg:absolute lg:bottom-8 lg:left-8 lg:hidden"
+        class="float-left lg:absolute lg:bottom-8 lg:left-8 lg:hidden"
         :short-title="shortTitle"
         @click="$router.push(`/${link}`)"></project-button>
       <!-- Desktop Bottom Row (Button + Category) -->
