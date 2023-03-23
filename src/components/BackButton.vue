@@ -15,7 +15,7 @@
     <i-ic:round-keyboard-arrow-down
       class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
     <p
-      class="text-right inline text-unbleached-silk underline underline-offset-2 transition-all duration-200 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-extrabold antialiased">
+      class="nav-back relative text-right inline text-unbleached-silk transition-all duration-200 text-lg font-extrabold antialiased">
       Go Back
     </p>
   </div>
@@ -35,7 +35,7 @@
     <i-ic:round-keyboard-arrow-down
       class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
     <p
-      class="text-right inline text-unbleached-silk underline underline-offset-2 transition-all duration-200 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-extrabold antialiased">
+      class="nav-back relative text-right inline text-unbleached-silk transition-all duration-200 text-lg font-extrabold antialiased">
       Go Back
     </p>
   </div>
@@ -45,3 +45,23 @@ export default {
   name: "BackButton",
 };
 </script>
+<style lang="scss">
+.nav-back::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 4px;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: top right;
+  transition: transform 300ms;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
+}
+
+.nav-back:hover::before {
+  transform: scaleX(1);
+}
+</style>

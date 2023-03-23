@@ -13,17 +13,17 @@
       </router-link>
       <div class="navigation-items flex col-span-full flex-row gap-4">
         <router-link
-          class="nav-desktop hidden lg:inline transition-all duration-200 text-cameo-pink underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold text-right tracking-wide antialiased"
+          class="nav-desktop relative hidden lg:inline transition-all duration-200 text-cameo-pink text-lg font-bold text-right antialiased"
           :to="{ path: '/', hash: '#projects' }">
           Projects
         </router-link>
         <router-link
-          class="nav-desktop hidden lg:inline transition-all duration-200 text-cameo-pink underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold text-right tracking-wide antialiased"
+          class="nav-desktop relative hidden lg:inline transition-all duration-200 text-cameo-pink text-lg font-bold text-right antialiased"
           to="/fun">
           Fun
         </router-link>
         <router-link
-          class="nav-desktop hidden lg:inline transition-all duration-200 text-cameo-pink underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold text-right tracking-wide antialiased"
+          class="nav-desktop relative hidden lg:inline transition-all duration-200 text-cameo-pink text-lg font-bold text-right antialiased"
           to="/about">
           About Me
         </router-link>
@@ -41,41 +41,63 @@
   </router-view>
   <navbar></navbar>
   <footer
-    class="page-footer w-full gap-8 flex flex-col items-center text-center justify-between p-4 absolute lg:h-12 bg-black-coffee bottom-24 lg:bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 duration-500 ease-out-expo">
+    class="page-footer relative flex justify-center items-center lg:h-auto bg-black-coffee bottom-32 lg:bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 duration-500 ease-out-expo">
     <div
-      class="flex flex-col gap-4 lg:col-start-2 lg:col-end-[-2] lg:flex-row lg:justify-between lg:gap-8">
-      <div
-        class="flex flex-col gap-4 lg:col-span-full lg:flex-row lg:justify-between lg:gap-8">
-        <a
-          href="mailto:majzoubrony@gmail.com"
-          class="text-melon transition-all duration-200 font-bold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
-          majzoubrony@gmail.com
-        </a>
-        <a
-          href="tel:+46722960295"
-          class="text-melon transition-all duration-200 font-bold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
-          072 296 02 95
-        </a>
-        <a
-          href="https://www.linkedin.com/in/rony-majzoub"
-          class="social-media text-melon transition-all duration-200 font-extrabold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
-          LinkedIn
-        </a>
-        <a
-          href="https://www.instagram.com/rony.majzoub/"
-          class="social-media text-melon transition-all duration-200 font-extrabold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
-          Instagram
-        </a>
-        <!-- <a
-          href=""
-          class="social-media text-melon transition-all duration-200 font-extrabold underline underline-offset-2 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-sm lg:text-base tracking-wide antialiased">
-          &#9432; About this Website
-        </a> -->
+      class="footer-overline text-eggplant relative flex flex-col gap-4 max-lg:w-4/5 lg:col-start-1 lg:col-end-[-1] lg:flex-row lg:justify-between lg:gap-12 lg:mx-32">
+      <div class="flex flex-col gap-1">
+        <p class="text-unbleached-silk font-extrabold text-base lg:text-lg">
+          Copyright
+        </p>
+        <div class="flex flex-row gap-2">
+          <p
+            class="font-semibold text-xs tracking-widest uppercase text-cameo-pink antialiased">
+            © {{ new Date().getFullYear() }} Rony Majzoub
+          </p>
+        </div>
       </div>
-      <p
-        class="font-semibold text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">
-        This Website was Designed and Programmed entirely by Rony Majzoub.
-      </p>
+      <div class="flex flex-col gap-1">
+        <p class="text-unbleached-silk font-extrabold text-base lg:text-lg">
+          Contact
+        </p>
+        <div class="flex flex-row gap-2">
+          <a
+            href="mailto:majzoubrony@gmail.com"
+            class="nav-contact relative text-cameo-pink hover:text-unbleached-silk transition-colors font-semibold text-sm lg:text-base antialiased">
+            majzoubrony@gmail.com
+          </a>
+          <p
+            class="text-cameo-pink font-semibold text-sm lg:text-base antialiased">
+            –
+          </p>
+          <a
+            href="tel:+46722960295"
+            class="nav-contact relative text-cameo-pink hover:text-unbleached-silk transition-colors font-semibold text-sm lg:text-base antialiased">
+            072 296 02 95
+          </a>
+        </div>
+      </div>
+      <div class="flex flex-col gap-1">
+        <p class="text-unbleached-silk font-extrabold text-base lg:text-lg">
+          Social media
+        </p>
+        <div class="flex flex-row gap-2">
+          <a
+            href="https://www.linkedin.com/in/rony-majzoub"
+            class="nav-contact relative social-media text-cameo-pink hover:text-unbleached-silk transition-colors font-semibold text-sm lg:text-base antialiased">
+            LinkedIn
+          </a>
+          <p
+            class="text-cameo-pink font-semibold text-sm lg:text-base antialiased">
+            –
+          </p>
+          <a
+            href="https://www.instagram.com/rony.majzoub/"
+            class="nav-contact relative social-media text-cameo-pink hover:text-unbleached-silk transition-colors font-semibold text-sm lg:text-base antialiased">
+            Instagram
+          </a>
+        </div>
+      </div>
+
       <!-- <p
         class="font-semibold text-xs tracking-widest uppercase text-cameo-pink pb-4 antialiased">
         Copyright {{ new Date().getFullYear() }} Rony Majzoub
@@ -188,10 +210,48 @@ html {
 //   animation: 0.2s infinite noise;
 //   pointer-events: none;
 // }
+
+.nav-desktop::before,
+.nav-contact::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 4px;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: all 300ms;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
+}
+.nav-contact::before {
+  bottom: 2px;
+}
+
+.nav-desktop:hover::before,
+.nav-contact:hover::before {
+  transform: scaleX(1);
+}
+
 .nav-desktop.router-link-active {
   text-decoration-color: var(--unbleached-silk) !important;
   color: var(--unbleached-silk) !important;
   transition: var(--animation-curve) 250ms !important;
+}
+.nav-desktop.router-link-active::before {
+  background-color: var(--unbleached-silk);
+  transform: scaleX(1);
+}
+.footer-overline::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  top: -16px;
+  left: 0;
+  background-color: currentColor;
 }
 
 // @keyframes noise {
