@@ -13,9 +13,9 @@
     aria-label="Home"
     @click="$router.push('/')">
     <i-ic:round-keyboard-arrow-down
-      class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
+      class="rotate-90 inline w-8 h-8 text-white" />
     <p
-      class="text-right inline text-unbleached-silk underline underline-offset-2 transition-all duration-200 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold tracking-wide antialiased">
+      class="nav-home relative text-right inline text-white transition-all duration-300 text-lg font-extrabold font-['IBM_Plex_Mono'] antialiased">
       Return Home
     </p>
   </div>
@@ -33,9 +33,9 @@
     aria-label="Home"
     @click="$router.push('/')">
     <i-ic:round-keyboard-arrow-down
-      class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
+      class="rotate-90 inline w-8 h-8 text-white" />
     <p
-      class="text-right inline text-unbleached-silk underline underline-offset-2 transition-all duration-200 hover:underline-offset-4 hover:decoration-inherit decoration-transparent decoration-2 text-lg font-bold tracking-wide antialiased">
+      class="nav-home relative text-right inline text-white transition-all duration-300 text-lg font-extrabold font-['IBM_Plex_Mono'] antialiased">
       Return Home
     </p>
   </div>
@@ -45,3 +45,23 @@ export default {
   name: "HomeButton",
 };
 </script>
+<style lang="scss">
+.nav-home::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: top right;
+  transition: transform 300ms;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
+}
+
+.nav-home:hover::before {
+  transform: scaleX(1);
+}
+</style>

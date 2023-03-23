@@ -17,7 +17,7 @@
             :is="teammate.portfolioLink ? 'a' : 'span'"
             :href="teammate.portfolioLink || ''"
             target="_blank"
-            class="name-link font-normal text-base text-melon max-w-prose whitespace-pre-line transition-all duration-200">
+            class="name-link relative font-normal text-base text-melon max-w-prose whitespace-pre-line transition-all duration-300">
             {{ teammate.teamName }}
           </component>
         </div>
@@ -97,14 +97,22 @@ export default {
 </script>
 <!-- The link-styling is handled without Tailwind, for targetting only elements with .name-link and link-elements. -->
 <style lang="scss">
-a.name-link {
-  text-decoration-line: underline;
-  text-underline-offset: 2px;
-  text-decoration-thickness: 2px;
-  text-decoration-color: transparent;
+a.name-link::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 0px;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 300ms;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
 }
-a.name-link:hover {
-  text-decoration-color: inherit;
-  text-underline-offset: 4px;
+
+a.name-link:hover::before {
+  transform: scaleX(1);
 }
 </style>

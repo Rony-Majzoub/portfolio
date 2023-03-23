@@ -28,7 +28,7 @@
       </p>
       <a
         v-if="linkText"
-        class="nav-text relative text-right cursor-pointer transition-all duration-200 text-melon text-base font-bold antialiased"
+        class="nav-text relative text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
         :href="link"
         target="_blank">
         {{ linkText }} &rarr;

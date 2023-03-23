@@ -15,7 +15,7 @@
     <i-ic:round-keyboard-arrow-down
       class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
     <p
-      class="nav-back relative text-right inline text-unbleached-silk transition-all duration-200 text-lg font-extrabold antialiased">
+      class="nav-back relative text-right inline text-unbleached-silk transition-all duration-300 text-lg font-extrabold antialiased">
       Go Back
     </p>
   </div>
@@ -35,7 +35,7 @@
     <i-ic:round-keyboard-arrow-down
       class="rotate-90 inline w-8 h-8 text-unbleached-silk" />
     <p
-      class="nav-back relative text-right inline text-unbleached-silk transition-all duration-200 text-lg font-extrabold antialiased">
+      class="nav-back relative text-right inline text-unbleached-silk transition-all duration-300 text-lg font-extrabold antialiased">
       Go Back
     </p>
   </div>

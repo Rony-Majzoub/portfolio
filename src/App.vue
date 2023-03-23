@@ -13,17 +13,17 @@
       </router-link>
       <div class="navigation-items flex col-span-full flex-row gap-4">
         <router-link
-          class="nav-desktop relative hidden lg:inline transition-all duration-200 text-cameo-pink text-lg font-bold text-right antialiased"
+          class="nav-desktop relative hidden lg:inline transition-all duration-300 text-cameo-pink text-lg font-bold text-right antialiased"
           :to="{ path: '/', hash: '#projects' }">
           Projects
         </router-link>
         <router-link
-          class="nav-desktop relative hidden lg:inline transition-all duration-200 text-cameo-pink text-lg font-bold text-right antialiased"
+          class="nav-desktop relative hidden lg:inline transition-all duration-300 text-cameo-pink text-lg font-bold text-right antialiased"
           to="/fun">
           Fun
         </router-link>
         <router-link
-          class="nav-desktop relative hidden lg:inline transition-all duration-200 text-cameo-pink text-lg font-bold text-right antialiased"
+          class="nav-desktop relative hidden lg:inline transition-all duration-300 text-cameo-pink text-lg font-bold text-right antialiased"
           to="/about">
           About Me
         </router-link>
@@ -43,7 +43,10 @@
   <footer
     class="page-footer relative flex justify-center items-center lg:h-auto bg-black-coffee bottom-32 lg:bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 duration-500 ease-out-expo">
     <div
-      class="footer-overline text-eggplant relative flex flex-col gap-4 max-lg:w-4/5 lg:col-start-1 lg:col-end-[-1] lg:flex-row lg:justify-between lg:gap-12 lg:mx-32">
+      class="relative flex flex-col gap-4 max-lg:w-4/5 lg:col-start-1 lg:col-end-[-1] lg:flex-row lg:justify-between lg:gap-12 lg:mx-32">
+      <!-- Footer Overline -->
+      <div class="bg-eggplant absolute w-full -top-4 h-[2px]"></div>
+      <!-- Footer Content -->
       <div class="flex flex-col gap-1">
         <p class="text-unbleached-silk font-extrabold text-base lg:text-lg">
           Copyright
@@ -62,7 +65,7 @@
         <div class="flex flex-row gap-2">
           <a
             href="mailto:majzoubrony@gmail.com"
-            class="nav-contact relative text-cameo-pink hover:text-unbleached-silk transition-colors font-semibold text-sm lg:text-base antialiased">
+            class="nav-contact relative text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
             majzoubrony@gmail.com
           </a>
           <p
@@ -71,7 +74,7 @@
           </p>
           <a
             href="tel:+46722960295"
-            class="nav-contact relative text-cameo-pink hover:text-unbleached-silk transition-colors font-semibold text-sm lg:text-base antialiased">
+            class="nav-contact relative text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
             072 296 02 95
           </a>
         </div>
@@ -83,7 +86,7 @@
         <div class="flex flex-row gap-2">
           <a
             href="https://www.linkedin.com/in/rony-majzoub"
-            class="nav-contact relative social-media text-cameo-pink hover:text-unbleached-silk transition-colors font-semibold text-sm lg:text-base antialiased">
+            class="nav-contact relative social-media text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
             LinkedIn
           </a>
           <p
@@ -92,7 +95,7 @@
           </p>
           <a
             href="https://www.instagram.com/rony.majzoub/"
-            class="nav-contact relative social-media text-cameo-pink hover:text-unbleached-silk transition-colors font-semibold text-sm lg:text-base antialiased">
+            class="nav-contact relative social-media text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
             Instagram
           </a>
         </div>
