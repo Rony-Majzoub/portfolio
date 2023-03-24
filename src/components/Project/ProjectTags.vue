@@ -1,48 +1,60 @@
 <template>
   <section
-    class="grid grid-cols-2 w-full col-span-full pb-8 lg:pb-16 gap-x-4 justify-self-start lg:col-start-2 lg:col-end-[-2]">
-    <div class="flex flex-col col-span-1 gap-8 pb-10">
-      <div class="flex flex-col gap-2">
-        <p class="text-lg font-bold text-unbleached-silk">Client</p>
-        <p class="font-normal text-base text-melon max-w-prose">
-          {{ client }}
-        </p>
-      </div>
-      <div class="flex flex-col gap-2">
-        <p class="text-lg font-bold text-unbleached-silk">Team</p>
-
-        <div v-for="teammate in team" :key="teammate.id" class="h-min w-fit">
-          <!-- If portfolioLink is non-empty, create a. Else, create span. -->
-          <component
-            :is="teammate.portfolioLink ? 'a' : 'span'"
-            :href="teammate.portfolioLink || ''"
-            target="_blank"
-            class="name-link relative font-normal text-base text-melon max-w-prose whitespace-pre-line transition-all duration-300">
-            {{ teammate.teamName }}
-          </component>
+    class="flex flex-row w-full col-span-full pb-8 lg:pb-16 gap-x-4 justify-self-start lg:col-start-2 lg:col-end-[-2]">
+    <div class="flex flex-row w-full justify-between gap-8 pb-10">
+      <div class="flex flex-col gap-8 pb-10 lg:flex-[0.625]">
+        <div class="flex flex-col gap-2">
+          <p class="text-lg font-bold text-unbleached-silk">Client</p>
+          <p class="font-normal text-base text-melon max-w-prose">
+            {{ client }}
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-lg font-bold text-unbleached-silk">Team</p>
+          <div class="h-min w-fit">
+            <router-link
+              to="/about"
+              class="name-link relative font-bold text-lg leading-6 text-melon max-w-prose whitespace-pre-line transition-all duration-300">
+              Rony Majzoub
+            </router-link>
+          </div>
+          <div v-for="teammate in team" :key="teammate.id" class="h-min w-fit">
+            <!-- If portfolioLink is non-empty, create a. Else, create span. -->
+            <component
+              :is="teammate.portfolioLink ? 'a' : 'span'"
+              :href="teammate.portfolioLink || ''"
+              target="_blank"
+              class="name-link relative font-normal text-base text-melon max-w-prose whitespace-pre-line transition-all duration-300">
+              {{ teammate.teamName }}
+            </component>
+          </div>
         </div>
       </div>
-      <div class="flex flex-col gap-2">
-        <p class="text-lg font-bold text-unbleached-silk">Role</p>
-        <p class="font-normal text-base text-melon max-w-prose">
-          {{ role }}
-        </p>
+      <div
+        class="flex flex-col gap-8 pb-10 w-fit lg:justify-between lg:flex-row lg:flex-1">
+        <div class="flex flex-col gap-2">
+          <p class="text-lg font-bold text-unbleached-silk">My role</p>
+          <p class="font-normal text-base text-melon max-w-prose">
+            {{ role }}
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-lg font-bold text-unbleached-silk">Duration</p>
+          <p class="font-normal text-base text-melon max-w-prose">
+            {{ duration }}
+          </p>
+        </div>
+        <div class="flex flex-col gap-2">
+          <p class="text-lg font-bold text-unbleached-silk">Tools used</p>
+          <p
+            v-for="tool in tools"
+            :key="tool.id"
+            class="font-normal text-base text-melon max-w-prose">
+            {{ tool.toolName }}
+          </p>
+        </div>
       </div>
-      <div class="flex flex-col gap-2">
-        <p class="text-lg font-bold text-unbleached-silk">Duration</p>
-        <p class="font-normal text-base text-melon max-w-prose">
-          {{ duration }}
-        </p>
-      </div>
-      <div class="flex flex-col gap-2">
-        <p class="text-lg font-bold text-unbleached-silk">Tools used</p>
-        <p class="font-normal text-base text-melon max-w-prose">
-          {{ tools }}
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-col col-span-1 gap-8 pb-10 justify-self-end">
-      <div class="flex flex-col gap-2">
+      <!-- <div class="flex flex-col gap-2">
         <p class="text-lg font-bold text-unbleached-silk">Project includes</p>
         <p
           v-for="category in categories"
@@ -50,7 +62,7 @@
           class="font-normal text-base text-melon max-w-prose">
           {{ category.categoryName }}
         </p>
-      </div>
+      </div> -->
     </div>
   </section>
 </template>
@@ -58,9 +70,9 @@
 <script>
 export default {
   name: "ProjectTags",
-  // Send "team" & "categories" Arrays down to the component,
+  // Send "team", "categories" & "tools" Arrays down to the component,
   // that later gets provided() and used.
-  inject: ["team", "categories"],
+  inject: ["team", "categories", "tools"],
   // The properties of the component.
   props: {
     client: {
@@ -83,11 +95,10 @@ export default {
       default: "",
       type: String,
     },
-    tools: {
+    toolName: {
       default: "",
       type: String,
     },
-
     categoryName: {
       default: "",
       type: String,

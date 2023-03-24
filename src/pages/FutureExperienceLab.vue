@@ -108,15 +108,13 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
     return {
       // Data-list of names and portfolio-links to be shown in ProjectTags.
       team: [
-        {
-          teamName: "Rony Majzoub",
-        },
         {
           teamName: "Juna Jakobsson",
           portfolioLink: "https://www.junajakobsson.com/",
@@ -141,6 +139,12 @@ export default {
         },
         {
           categoryName: "Web Design",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Figma",
         },
       ],
     };

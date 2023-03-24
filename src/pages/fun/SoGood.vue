@@ -14,8 +14,7 @@
     <ProjectTags
       client="Yrgo DD21"
       role="Product Designer, 3D Artist"
-      duration="1 month"
-      tools="Adobe Illustrator, Adobe Dimensions" />
+      duration="1 month" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -29,6 +28,7 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
@@ -46,6 +46,15 @@ export default {
         },
         {
           categoryName: "3D Rendering",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Adobe Illustrator",
+        },
+        {
+          toolName: "Adobe Dimensions",
         },
       ],
     };

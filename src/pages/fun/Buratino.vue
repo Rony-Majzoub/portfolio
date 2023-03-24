@@ -16,8 +16,7 @@
     <ProjectTags
       client="Buratino AB"
       role="UI/UX Designer, CSS Developer"
-      duration="8 months"
-      tools="Figma, Adobe Illustrator, Visual Studio Code" />
+      duration="8 months" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -31,6 +30,7 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
@@ -63,6 +63,18 @@ export default {
         },
         {
           categoryName: "Logo Design",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Figma",
+        },
+        {
+          toolName: "Adobe Illustrator",
+        },
+        {
+          toolName: "Visual Studio Code",
         },
       ],
     };

@@ -17,8 +17,7 @@
     <ProjectTags
       client="NTI-Johanneberg"
       role="UI/UX Designer"
-      duration="2 months"
-      tools="Figma" />
+      duration="2 months" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -32,6 +31,7 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
@@ -52,6 +52,12 @@ export default {
         },
         {
           categoryName: "User Testing",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Figma",
         },
       ],
     };

@@ -11,11 +11,7 @@
       image-link="v1653259517/portfolio/fun/anvilrender.jpg"
       alt-text="Anvil Render"
       bg-color="#2b2c2c" />
-    <ProjectTags
-      client="N/A"
-      role="3D Artist"
-      duration="1 week"
-      tools="Blender" />
+    <ProjectTags client="N/A" role="3D Artist" duration="1 week" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -29,20 +25,21 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
     return {
-      // Data-list of names and portfolio-links to be shown in ProjectTags.
-      team: [
-        {
-          teamName: "Rony Majzoub",
-        },
-      ],
       // Data-list of categories to be shown in ProjectTags.
       categories: [
         {
           categoryName: "3D Rendering",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Blender",
         },
       ],
     };

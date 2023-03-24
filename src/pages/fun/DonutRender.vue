@@ -10,11 +10,7 @@
       title=""
       description=""
       gallery-color="var(--eggplant)" />
-    <ProjectTags
-      client="N/A"
-      role="3D Artist"
-      duration="2 weeks"
-      tools="Blender" />
+    <ProjectTags client="N/A" role="3D Artist" duration="2 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -29,6 +25,7 @@ export default {
       pictures: this.pictures,
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   // Data-list of images to be shown in ProjectGallery.
@@ -69,6 +66,12 @@ export default {
         },
         {
           categoryName: "3D Lighting",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Blender",
         },
       ],
     };

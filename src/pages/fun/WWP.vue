@@ -14,8 +14,7 @@
     <ProjectTags
       client="World Wide Padel"
       role="Motion Designer"
-      duration="2 weeks"
-      tools="Adobe After Effects, Adobe Illustrator" />
+      duration="2 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -29,6 +28,7 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
@@ -50,6 +50,15 @@ export default {
         },
         {
           categoryName: "2D Animation",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Adobe After Effects",
+        },
+        {
+          toolName: "Adobe Illustrator",
         },
       ],
     };

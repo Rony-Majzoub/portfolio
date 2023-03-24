@@ -29,6 +29,7 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
@@ -49,6 +50,12 @@ export default {
         },
         {
           categoryName: "3D Lighting",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Blender",
         },
       ],
     };

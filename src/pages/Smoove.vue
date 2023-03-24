@@ -16,8 +16,7 @@
     <ProjectTags
       client="Yrgo DD21"
       role="UI/UX Designer, Creative Director"
-      duration="1 month"
-      tools="Figma, Adobe After Effects, Adobe Illustrator" />
+      duration="1 month" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
@@ -118,6 +117,7 @@ export default {
       pictures: this.pictures,
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   // Data-list of images to be shown in ProjectGallery.
@@ -199,6 +199,18 @@ export default {
         },
         {
           categoryName: "Web Design",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Figma",
+        },
+        {
+          toolName: "Adobe After Effects",
+        },
+        {
+          toolName: "Adobe Illustrator",
         },
       ],
     };

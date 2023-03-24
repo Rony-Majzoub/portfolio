@@ -11,11 +11,7 @@
       image-link="v1654173537/portfolio/fun/Unity_Forest.png"
       alt-text="Unity Forest"
       bg-color="#1a1f30" />
-    <ProjectTags
-      client="N/A"
-      role="3D Artist"
-      duration="2 weeks"
-      tools="Unity Engine" />
+    <ProjectTags client="N/A" role="3D Artist" duration="2 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -29,6 +25,7 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
@@ -52,6 +49,12 @@ export default {
         },
         {
           categoryName: "3D Lighting",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Unity Engine",
         },
       ],
     };

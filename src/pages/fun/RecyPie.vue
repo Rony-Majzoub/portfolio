@@ -13,11 +13,7 @@
       link-text="View Prototype"
       link="https://www.figma.com/proto/XxGihqfhy88PjYtPlCpXSd/RecyPie-(Showreel)?page-id=0%3A1&node-id=181%3A3379&viewport=248%2C371%2C0.09&scaling=scale-down&starting-point-node-id=181%3A3379&show-proto-sidebar=1"
       bg-color="#b1e0c7" />
-    <ProjectTags
-      client="Yrgo DD21"
-      role="UI Designer"
-      duration="2 months"
-      tools="Figma" />
+    <ProjectTags client="Yrgo DD21" role="UI Designer" duration="2 months" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -31,6 +27,7 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
@@ -54,6 +51,12 @@ export default {
         },
         {
           categoryName: "Prototyping",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Figma",
         },
       ],
     };

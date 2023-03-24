@@ -16,8 +16,7 @@
     <ProjectTags
       client="Yrgo DD21, Mojo"
       role="UX Designer, Project Lead"
-      duration="2 months"
-      tools="Figma, Adobe Illustrator" />
+      duration="2 months" />
 
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
@@ -104,6 +103,7 @@ export default {
       pictures: this.pictures,
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   // Data-list of images to be shown in ProjectGallery.
@@ -150,6 +150,15 @@ export default {
         },
         {
           categoryName: "Web Design",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Figma",
+        },
+        {
+          toolName: "Adobe Illustrator",
         },
       ],
     };

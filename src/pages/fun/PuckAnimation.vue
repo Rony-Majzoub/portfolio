@@ -13,11 +13,7 @@
       link-text="View Inspiration"
       link="https://andreaswannerstedt.se/oddly-satisfying-vol8"
       bg-color="#c1a693" />
-    <ProjectTags
-      client="Yrgo DD21"
-      role="3D Artist"
-      duration="1 week"
-      tools="Blender" />
+    <ProjectTags client="Yrgo DD21" role="3D Artist" duration="1 week" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -31,6 +27,7 @@ export default {
     return {
       team: this.team,
       categories: this.categories,
+      tools: this.tools,
     };
   },
   data() {
@@ -51,6 +48,12 @@ export default {
         },
         {
           categoryName: "3D Lighting",
+        },
+      ],
+      // Data-list of tools to be shown in ProjectTags.
+      tools: [
+        {
+          toolName: "Blender",
         },
       ],
     };
