@@ -35,9 +35,6 @@ export default {
       // Data-list of names and portfolio-links to be shown in ProjectTags.
       team: [
         {
-          teamName: "Rony Majzoub",
-        },
-        {
           teamName: "Linnea Kvammen",
           portfolioLink: "https://www.kvammen.se/",
         },

@@ -55,12 +55,7 @@ export default {
           imageColor: "#3c302d",
         },
       ],
-      // Data-list of names and portfolio-links to be shown in ProjectTags.
-      team: [
-        {
-          teamName: "Rony Majzoub",
-        },
-      ],
+
       // Data-list of categories to be shown in ProjectTags.
       categories: [
         {
