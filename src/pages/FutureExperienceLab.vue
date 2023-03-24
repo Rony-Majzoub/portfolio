@@ -1,6 +1,6 @@
 <template>
   <BackButton />
-  <div class="grid grid-cols-12 col-start-2 col-end-[-2]">
+  <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
     <ProjectTitle
       info="2022 – UI/UX & Web Design"
       title="Future Experience Lab"
@@ -16,10 +16,8 @@
     <ProjectTags
       client="Yrgo DD21, Future Experience Lab"
       role="UI/UX Designer"
-      duration="2 weeks"
-      tools="Figma" />
-    <main
-      class="grid col-start-2 col-end-[-2] grid-cols-12 gap-x-8 gap-y-8 lg:gap-y-16">
+      duration="2 weeks" />
+    <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
         description='When Future Experience Lab reached out to Yrgo, they sought after a website to augment their "Hybrid Workhop Experience", with a touch of "controlled chaos". Our goal was to strike that balance, and deliver a website prototype.' />
