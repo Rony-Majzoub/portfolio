@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="max-w-screen-2xl relative lg:flex-row-reverse flex flex-col !bg-eggplant rounded-xl overflow-hidden lg:p-0 col-start-2 col-end-[-2] transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#2b212c] animation-item">
+    class="max-w-screen-2xl relative lg:flex-row-reverse flex flex-col !bg-eggplant rounded-xl overflow-hidden lg:p-0 col-start-2 col-end-[-2] transition-all ease-in-out duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-[#2b212c] animation-item transform-gpu">
     <!-- Image Container -->
     <router-link
       class="relative overflow-hidden lg:w-7/12 aspect-video flex-none h-auto w-full"
