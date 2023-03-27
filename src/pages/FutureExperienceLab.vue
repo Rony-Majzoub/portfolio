@@ -24,16 +24,18 @@
       <ColumnLeft
         title="The problem"
         description='The client had many ideas in mind when delivering their brief. Key points were "Controlled Chaos", "Hybrid Workshop" and "Place for Creativity." How could we deliver those feelings in a static website, with a tight deadline, punk aesthetic and an abstract brief?' />
-      <ProjectImage
-        image="fel_skiss.png"
-        image-link="v1652994219/portfolio/fel/fel_skiss.png"
-        alt-text="Future Experience Lab Sketches"
-        description="The early desktop & mobile sketches for the main layout of the website." />
-      <ProjectImage
-        image="fel_greybox.png"
-        image-link="v1652994219/portfolio/fel/fel_greybox.png"
-        alt-text="Future Experience Lab Greyboxes"
-        description="Digital greyboxes for how components, images & sections should be placed on the website." />
+      <div class="col-start-2 col-end-[-2] flex flex-row justify-between gap-8">
+        <ProjectImageHalf
+          image="fel_skiss.png"
+          image-link="v1652994219/portfolio/fel/fel_skiss.png"
+          alt-text="Future Experience Lab Sketches"
+          description="The early desktop & mobile sketches for the main layout of the website." />
+        <ProjectImageHalf
+          image="fel_greybox.png"
+          image-link="v1652994219/portfolio/fel/fel_greybox.png"
+          alt-text="Future Experience Lab Greyboxes"
+          description="Digital greyboxes for how components, images & sections should be placed on the website." />
+      </div>
       <ColumnLeft
         title="The solution"
         description="The solution was a landing page that would showcase the projects and workshops that Future Experience Lab have contributed towards. The website was broken up into different sections to better communicate the different aspects of Future Experience Lab. A variety of images, illustrations and stylistic choices were used to create a chaotic feel, while also utilizing pre-defined grids and whitespace, to subconsciously organize that chaos." />
@@ -47,17 +49,19 @@
         description="After being presented with the project brief, we tried to narrow down what exactly the goal of the website was. We also wanted to narrow down what the exact target group of this website was, and what they valued. We presented these questions to the client, and tried to shape the project around those key points.
         
         Early on, we created a Moodboard for visualizing how a chaotic, yet readable website might look like. We narrowed it down towards a dark color scheme, with strong and contrasting colors used wisely to grab attention. We also found that simple, primitive shapes could be used to add some dynamic flare into the website, which is something we added to the moodboard." />
+      <div class="col-start-2 col-end-[-2] flex flex-row justify-between">
+        <ProjectImageHalf
+          image="fel_components.png"
+          image-link="v1652996443/portfolio/fel/fel_components.png"
+          alt-text="Components that were created for our Web Developers."
+          description="The mobile & desktop components that we designed for our Web Developers." />
+        <ProjectImageHalf
+          image="fel_stylesheet.png"
+          image-link="v1653003599/portfolio/fel/fel_stylesheet.png"
+          alt-text="Stylesheet created for our Web Developers."
+          description="Our stylesheet that we applied throughout our entire project." />
+      </div>
       <ProjectImageFull
-        image="fel_components.png"
-        image-link="v1652996443/portfolio/fel/fel_components.png"
-        alt-text="Components that were created for our Web Developers."
-        description="The mobile & desktop components that we designed for our Web Developers." />
-      <ProjectImage
-        image="fel_stylesheet.png"
-        image-link="v1653003599/portfolio/fel/fel_stylesheet.png"
-        alt-text="Stylesheet created for our Web Developers."
-        description="Our stylesheet that we applied throughout our entire project." />
-      <ProjectImageHalf
         image="fel_delivery.png"
         image-link="v1653003559/portfolio/fel/fel_delivery.png"
         alt-text="Our Review Process of 3D Images."
@@ -93,12 +97,14 @@
 
 <script>
 import { defineAsyncComponent } from "vue";
+import ProjectImageHalf from "../components/Project/ProjectImageHalf.vue";
 export default {
   name: "FutureExperienceLab",
   components: {
     ProjectImage: defineAsyncComponent(() =>
       import("../components/Project/ProjectImage.vue")
     ),
+    ProjectImageHalf,
   },
   // Recover the data sent by components, to fill the props up.
   provide() {
@@ -168,19 +174,31 @@ export default {
     }
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
-      melon[i].setAttribute("style", "color: #f6f6f6");
+      melon[i].setAttribute(
+        "style",
+        "color: #f6f6f6; font-family: 'Satoshi-Variable';"
+      );
     }
     var silk = document.querySelectorAll(".text-unbleached-silk");
     for (var i = 0; i < silk.length; i++) {
-      silk[i].setAttribute("style", "color: #73e586");
+      silk[i].setAttribute(
+        "style",
+        "color: #73e586; font-family: 'Poster Gothic ATF'; font-weight: 600;"
+      );
     }
     var cameo = document.querySelectorAll(".text-cameo-pink");
     for (var i = 0; i < cameo.length; i++) {
-      cameo[i].setAttribute("style", "color: #fbc2d3");
+      cameo[i].setAttribute(
+        "style",
+        "color: #fbc2d3; font-family: 'Satoshi-Variable';"
+      );
     }
     var pastel = document.querySelectorAll(".text-pastel-pink");
     for (var i = 0; i < pastel.length; i++) {
-      pastel[i].setAttribute("style", "color: #ffb038");
+      pastel[i].setAttribute(
+        "style",
+        "color: #ffb038; font-family: 'Satoshi-Variable';"
+      );
     }
     var eggplant = document.querySelectorAll(".bg-eggplant");
     for (var i = 0; i < eggplant.length; i++) {

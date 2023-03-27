@@ -34,7 +34,7 @@ export default {
     var infoWrapper = document.querySelector(".info-text");
     infoWrapper.innerHTML = infoWrapper.textContent.replace(
       /\S+/g,
-      "<span class='word'>$&</span>"
+      "<span class='word text-pastel-pink'>$&</span>"
     );
     this.$anime.timeline({}).add({
       targets: ".info-text .word",
@@ -48,7 +48,7 @@ export default {
     var titleWrapper = document.querySelector(".title-text");
     titleWrapper.innerHTML = titleWrapper.textContent.replace(
       /\S+/g,
-      "<span class='word'>$&</span>"
+      "<span class='word text-unbleached-silk'>$&</span>"
     );
     this.$anime.timeline({}).add({
       targets: ".title-text .word",
@@ -62,7 +62,7 @@ export default {
     var briefWrapper = document.querySelector(".brief-text");
     briefWrapper.innerHTML = briefWrapper.textContent.replace(
       /\S+/g,
-      "<span class='word'>$&</span>"
+      "<span class='word text-melon'>$&</span>"
     );
     this.$anime.timeline({}).add({
       targets: ".brief-text .word",

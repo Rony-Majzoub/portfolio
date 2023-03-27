@@ -184,19 +184,31 @@ export default {
     }
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
-      melon[i].setAttribute("style", "color: #00060D");
+      melon[i].setAttribute(
+        "style",
+        "color: #00060D; font-family: 'Nunito-Variable';"
+      );
     }
     var silk = document.querySelectorAll(".text-unbleached-silk");
     for (var i = 0; i < silk.length; i++) {
-      silk[i].setAttribute("style", "color: #F2770C");
+      silk[i].setAttribute(
+        "style",
+        "color: #F2770C; font-family: 'Nunito Sans'; font-weight: 700;"
+      );
     }
     var cameo = document.querySelectorAll(".text-cameo-pink");
     for (var i = 0; i < cameo.length; i++) {
-      cameo[i].setAttribute("style", "color: #9700B0");
+      cameo[i].setAttribute(
+        "style",
+        "color: #9700B0; font-family: 'Nunito-Variable';"
+      );
     }
     var pastel = document.querySelectorAll(".text-pastel-pink");
     for (var i = 0; i < pastel.length; i++) {
-      pastel[i].setAttribute("style", "color: #9700B0");
+      pastel[i].setAttribute(
+        "style",
+        "color: #9700B0; font-family: 'Nunito-Variable';"
+      );
     }
     var eggplant = document.querySelectorAll(".bg-eggplant");
     for (var i = 0; i < eggplant.length; i++) {

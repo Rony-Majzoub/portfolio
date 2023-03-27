@@ -148,7 +148,22 @@ export default {
 <style lang="scss">
 @import url("https://use.typekit.net/sdt4vtw.css");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&display=swap");
 // @import url("https://rsms.me/inter/inter.css");
+
+@font-face {
+  font-family: "Satoshi-Variable";
+  font-display: swap;
+  src: local("Satoshi-Variable"),
+    url(./fonts/satoshi_variable/Satoshi-Variable.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Nunito-Variable";
+  font-display: swap;
+  src: local("Nunito-Variable"),
+    url(./fonts/nunito_variable/Nunito-Variable.ttf) format("truetype");
+}
+
 html {
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
