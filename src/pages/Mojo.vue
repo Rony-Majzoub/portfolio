@@ -186,28 +186,28 @@ export default {
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute(
         "style",
-        "color: #00060D; font-family: 'Nunito-Variable';"
+        "color: #00060D; font-family: 'Nunito-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', 'Inter', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     var silk = document.querySelectorAll(".text-unbleached-silk");
     for (var i = 0; i < silk.length; i++) {
       silk[i].setAttribute(
         "style",
-        "color: #F2770C; font-family: 'Nunito Sans'; font-weight: 700;"
+        "color: #F2770C; font-family: 'Nunito Sans', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', 'Inter', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 700;"
       );
     }
     var cameo = document.querySelectorAll(".text-cameo-pink");
     for (var i = 0; i < cameo.length; i++) {
       cameo[i].setAttribute(
         "style",
-        "color: #9700B0; font-family: 'Nunito-Variable';"
+        "color: #9700B0; font-family: 'Nunito-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', 'Inter', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     var pastel = document.querySelectorAll(".text-pastel-pink");
     for (var i = 0; i < pastel.length; i++) {
       pastel[i].setAttribute(
         "style",
-        "color: #9700B0; font-family: 'Nunito-Variable';"
+        "color: #9700B0; font-family: 'Nunito-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', 'Inter', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     var eggplant = document.querySelectorAll(".bg-eggplant");

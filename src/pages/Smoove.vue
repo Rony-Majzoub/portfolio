@@ -235,6 +235,34 @@ export default {
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "background: #363040");
     }
+    var melon = document.querySelectorAll(".text-melon");
+    for (var i = 0; i < melon.length; i++) {
+      melon[i].setAttribute(
+        "style",
+        "font-family: 'Inter var', 'Inter', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+      );
+    }
+    var silk = document.querySelectorAll(".text-unbleached-silk");
+    for (var i = 0; i < silk.length; i++) {
+      silk[i].setAttribute(
+        "style",
+        "font-family: 'DM-Sans', 'Inter var', 'Inter', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+      );
+    }
+    var cameo = document.querySelectorAll(".text-cameo-pink");
+    for (var i = 0; i < cameo.length; i++) {
+      cameo[i].setAttribute(
+        "style",
+        "font-family: 'Inter var', 'Inter', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+      );
+    }
+    var pastel = document.querySelectorAll(".text-pastel-pink");
+    for (var i = 0; i < pastel.length; i++) {
+      pastel[i].setAttribute(
+        "style",
+        "font-family: 'Inter var', 'Inter', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+      );
+    }
     document
       .querySelector(".navbar")
       .setAttribute("style", "border-color: ffc1b2; background-color: #363040");
@@ -305,6 +333,22 @@ export default {
     var eggplant = document.querySelectorAll(".bg-eggplant");
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "");
+    }
+    var melon = document.querySelectorAll(".text-melon");
+    for (var i = 0; i < melon.length; i++) {
+      melon[i].setAttribute("style", "");
+    }
+    var silk = document.querySelectorAll(".text-unbleached-silk");
+    for (var i = 0; i < silk.length; i++) {
+      silk[i].setAttribute("style", "");
+    }
+    var cameo = document.querySelectorAll(".text-cameo-pink");
+    for (var i = 0; i < cameo.length; i++) {
+      cameo[i].setAttribute("style", "");
+    }
+    var pastel = document.querySelectorAll(".text-pastel-pink");
+    for (var i = 0; i < pastel.length; i++) {
+      pastel[i].setAttribute("style", "");
     }
 
     // var nav = document.querySelectorAll(".nav-item");
