@@ -1,9 +1,9 @@
 <template>
-  <div class="col-start-2 col-end-[-2] flex flex-col gap-2">
+  <div class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col gap-2">
     <div
       class="flex flex-col bg-eggplant max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
       :style="{ backgroundColor: bgColor }">
-      <div class="flex flex-1 justify-center items-center p-16">
+      <div class="flex flex-1 justify-center items-center p-8 sm:p-16">
         <!-- Image Element -->
         <div
           class="max-w-full max-h-full flex-auto rounded-lg overflow-hidden shadow-2xl shadow-[rgb(0,0,0)]/30 transition-all ease-in-out duration-300 transform-gpu">

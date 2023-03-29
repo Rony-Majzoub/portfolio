@@ -1,5 +1,6 @@
 <template>
-  <section class="flex flex-col gap-4 max-w-[65ch] animation-item">
+  <section
+    class="flex flex-col gap-4 max-lg:col-span-full max-w-[65ch] animation-item">
     <h2 class="font-bold text-3xl lg:text-5xl text-unbleached-silk">
       {{ title }}
     </h2>

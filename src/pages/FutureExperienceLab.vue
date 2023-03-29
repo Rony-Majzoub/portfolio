@@ -25,17 +25,31 @@
         title="The problem"
         description='The client had many ideas in mind when delivering their brief. Key points were "Controlled Chaos", "Hybrid Workshop" and "Place for Creativity." How could we deliver those feelings in a static website, with a tight deadline, punk aesthetic and an abstract brief?' />
       <div
-        class="col-start-2 col-end-[-2] grid grid-flow-col auto-cols-[1fr] gap-8">
+        class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectImageHalf
           image="fel_skiss.png"
           image-link="v1652994219/portfolio/fel/fel_skiss.png"
           alt-text="Future Experience Lab Sketches"
-          description="The early desktop & mobile sketches for the main layout of the website." />
+          description="The early desktop & mobile sketches for the main layout of the website."
+          class="max-lg:hidden" />
         <ProjectImageHalf
           image="fel_greybox.png"
           image-link="v1652994219/portfolio/fel/fel_greybox.png"
           alt-text="Future Experience Lab Greyboxes"
-          description="Digital greyboxes for how components, images & sections should be placed on the website." />
+          description="Digital greyboxes for how components, images & sections should be placed on the website."
+          class="max-lg:hidden" />
+        <ProjectImageFull
+          image="fel_skiss.png"
+          image-link="v1652994219/portfolio/fel/fel_skiss.png"
+          alt-text="Future Experience Lab Sketches"
+          description="The early desktop & mobile sketches for the main layout of the website."
+          class="lg:hidden" />
+        <ProjectImageFull
+          image="fel_greybox.png"
+          image-link="v1652994219/portfolio/fel/fel_greybox.png"
+          alt-text="Future Experience Lab Greyboxes"
+          description="Digital greyboxes for how components, images & sections should be placed on the website."
+          class="lg:hidden" />
       </div>
       <ColumnLeft
         title="The solution"
@@ -63,7 +77,7 @@
         alt-text="Stylesheet created for our Web Developers."
         description="Our stylesheet that we applied throughout our entire project." />
       <div
-        class="col-start-2 col-end-[-2] grid grid-flow-col auto-cols-[1fr] gap-8">
+        class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ColumnHalf
           title="Designing for the Web"
           description="For this project, we teamed up with the Web Developer class at Yrgo, who were responsible for coding and implementing our designs to the web. That's why we had to carefully adapt our working schedule to accomodate agile development with our Web Developers.
@@ -74,7 +88,14 @@
           image="fel_components.png"
           image-link="v1652996443/portfolio/fel/fel_components.png"
           alt-text="Components that were created for our Web Developers."
-          description="The mobile & desktop components that we designed for our Web Developers." />
+          description="The mobile & desktop components that we designed for our Web Developers."
+          class="max-lg:hidden" />
+        <ProjectImageFull
+          image="fel_components.png"
+          image-link="v1652996443/portfolio/fel/fel_components.png"
+          alt-text="Components that were created for our Web Developers."
+          description="The mobile & desktop components that we designed for our Web Developers."
+          class="lg:hidden" />
       </div>
       <ProjectImageFull
         image="fel_delivery.png"
