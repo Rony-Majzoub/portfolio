@@ -27,7 +27,7 @@
         title="The problem"
         description="After getting to speak with the client, we were informed of two distinct target groups that we had to design for. The first are the investors that would actually fund their project. The second are the people in Africa, that would use the products made possible by this brand. This was not going to be easy." />
 
-      <ProjectImage
+      <ProjectImageFull
         image="mojo_inspiration.png"
         image-link="v1653071265/portfolio/mojo/mojo_inspiration.png"
         alt-text="Inspiration for the market of Mojo."
@@ -37,7 +37,7 @@
         title="The solution"
         description="Our solution was to design a graphic profile that was minimalistic, and slightly modern in its appearance, while also not delving too deep towards a corporate style. We wanted to develop trust between the brand and the end users, while also giving a slightly playful vibe, to play into the African culture that is so prominent in the target countries." />
 
-      <ProjectImage
+      <ProjectImageFull
         image="mojo_moodboard.png"
         image-link="v1653038272/portfolio/mojo/mojo_moodboard.png"
         alt-text="Mojo Moodboard"
@@ -49,7 +49,7 @@
         
         We did extensive research regarding what types of colors, shapes and font-styles we would use, and how different cultures around the world would interpret those style choices. We later applied these learnings in three separate Moodboards, and pitched them early-on to the clients, and used their feedback to create concrete assets and (later on) a fully-fledged graphic profile." />
 
-      <ProjectImage
+      <ProjectImageFull
         image="mojo_logo.png"
         image-link="v1653038272/portfolio/mojo/mojo_logo.png"
         alt-text="All the different logos we pitched and redesigned during the project."
@@ -59,11 +59,11 @@
         title="Working with clients"
         description="A large portion of the project went into designing the logo for Mojo. As the clients always had the final say, we had to pitch our logo ideas to them each time, and use their feedback to improve upon our ideas. A lot of iterating had to be done, because of how crucial a good logo was to their own project." />
 
-      <ProjectImage
+      <ProjectImageFull
         image="mojo_profile.png"
         image-link="v1653038272/portfolio/mojo/mojo_profile.png"
         alt-text="Condensed version of the Graphic Profile."
-        description="This is a condensed version of the final graphic profile that we delivered to our client." />
+        description="A condensed version of the final graphic profile that we delivered to our client." />
 
       <ColumnLeft
         title="Final delivery"

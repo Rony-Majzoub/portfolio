@@ -1,6 +1,5 @@
 <template>
-  <section
-    class="flex flex-col gap-4 col-span-full lg:col-start-2 lg:col-end-[span_6] max-w-[65ch] animation-item">
+  <section class="flex flex-col gap-4 max-w-[65ch] animation-item">
     <h2 class="font-bold text-3xl lg:text-5xl text-unbleached-silk">
       {{ title }}
     </h2>
@@ -13,7 +12,7 @@
 
 <script>
 export default {
-  name: "ColumnRight",
+  name: "ColumnHalf",
   props: {
     title: {
       default: "",

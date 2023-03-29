@@ -1,30 +1,26 @@
 <template>
-  <div class="col-start-2 col-end-[-2] flex flex-col gap-2">
+  <div class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-2">
     <div
-      class="flex flex-col bg-eggplant max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
+      class="relative aspect-video rounded-lg shadow-md bg-eggplant transform-gpu"
       :style="{ backgroundColor: bgColor }">
-      <div class="flex flex-1 justify-center items-center p-16">
-        <!-- Image Element -->
-        <div
-          class="max-w-full max-h-full flex-auto rounded-lg overflow-hidden shadow-2xl shadow-[rgb(0,0,0)]/30 transition-all ease-in-out duration-300 transform-gpu">
-          <!-- Blurred Placeholder Image (Cloudinary) -->
-          <img
-            :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
-            :alt="`${altText}`"
-            :src="`/assets/img/${image}`"
-            width="384"
-            height="216"
-            class="cld-responsive relative object-contain w-full h-full text-[0]" />
-          <!-- Sharp Final Image (Cloudinary) -->
-          <img
-            :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
-            :alt="`${altText}`"
-            :src="`/assets/img/${image}`"
-            width="384"
-            height="216"
-            class="cld-responsive high-def absolute top-0 left-0 object-contain w-full h-full text-[0]" />
-        </div>
-      </div>
+      <!-- Blurred Placeholder Image (Cloudinary) -->
+      <img
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+        :src="`/assets/img/${image}`"
+        :alt="`${altText}`"
+        class="cld-responsive absolute object-cover object-[center_60%] w-full h-full rounded-lg text-[0]" />
+      <!-- Sharp Final Image (Cloudinary) -->
+      <img
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+        :src="`/assets/img/${image}`"
+        :alt="`${altText}`"
+        class="cld-responsive high-def absolute object-cover object-[center_60%] w-full h-full rounded-lg text-[0]" />
+      <!-- <img
+      class="object-cover object-[center_60%] w-full max-h-full rounded-lg"
+      width="1280"
+      height="720"
+      :src="`/assets/img/${image}`"
+      :alt="`${altText}`" /> -->
     </div>
     <div class="flex flex-row justify-between">
       <p class="text-cameo-pink font-normal text-sm lg:text-base">
@@ -40,11 +36,11 @@
     </div>
   </div>
 </template>
-
 <script>
 import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
+
 export default {
-  name: "ProjectImageFull",
+  name: "ProjectImageGallery",
   props: {
     image: {
       default: "",
@@ -77,6 +73,7 @@ export default {
   },
   mounted() {
     var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
+    // replace 'demo' with your cloud name in the line above
     cl.responsive();
     const images = document.getElementsByClassName("high-def");
     for (let image of images) {
@@ -98,7 +95,7 @@ export default {
   display: block;
   width: 100%;
   height: 2px;
-  bottom: 4px;
+  bottom: 0px;
   left: 0;
   background-color: currentColor;
   transform: scaleX(0);

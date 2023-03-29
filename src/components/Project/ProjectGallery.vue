@@ -1,7 +1,7 @@
 <template>
   <div
-    class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-2 animation-item">
-    <div class="col-span-full place-self-start pt-8">
+    class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-4 animation-item">
+    <div class="col-span-full place-self-start pt-8 flex flex-col gap-1">
       <h2 class="text-3xl lg:text-5xl font-bold text-unbleached-silk">
         {{ title }}
       </h2>
@@ -10,9 +10,9 @@
       </p>
     </div>
     <div
-      class="snap-x snap-proximity flex flex-row items-start overflow-x-scroll w-full h-full gap-4 p-2 lg:gap-6 lg:p-8 rounded-lg lg:rounded-xl bg-eggplant"
+      class="snap-x snap-proximity flex flex-row items-start overflow-x-scroll w-full h-full gap-4 p-2 lg:gap-6 lg:p-8 rounded-lg lg:rounded-xl shadow-md bg-eggplant transform-gpu"
       :style="{ backgroundColor: galleryColor }">
-      <ProjectImage
+      <ProjectImageGallery
         v-for="picture in pictures"
         :key="picture.id"
         class="w-[80%] snap-center shrink-0"

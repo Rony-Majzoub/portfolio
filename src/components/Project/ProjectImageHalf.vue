@@ -1,46 +1,43 @@
+<!-- This element should only be used inside a grid-parent inside the project-page. -->
 <template>
-  <div
-    class="lg:col-start-2 lg:col-end-[span_5] col-span-full h-fit flex flex-col gap-2 pb-16">
+  <div class="flex flex-col gap-2">
     <div
-      class="lg:col-start-2 lg:col-end-[span_5] col-span-full relative flex flex-col gap-2">
-      <div
-        class="flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
-        :style="{ backgroundColor: bgColor }">
-        <div class="flex flex-1 justify-center items-center p-8">
-          <!-- Image Element -->
-          <div
-            class="max-w-full max-h-full flex-auto rounded-lg overflow-hidden shadow-2xl shadow-[rgb(0,0,0)]/30 transition-all ease-in-out duration-300 transform-gpu">
-            <!-- Blurred Placeholder Image (Cloudinary) -->
-            <img
-              :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
-              :alt="`${altText}`"
-              :src="`/assets/img/${image}`"
-              width="384"
-              height="216"
-              class="cld-responsive relative object-contain w-full h-full text-[0]" />
-            <!-- Sharp Final Image (Cloudinary) -->
-            <img
-              :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
-              :alt="`${altText}`"
-              :src="`/assets/img/${image}`"
-              width="384"
-              height="216"
-              class="cld-responsive high-def absolute top-0 left-0 object-contain w-full h-full text-[0]" />
-          </div>
+      class="flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
+      :style="{ backgroundColor: bgColor }">
+      <div class="flex flex-1 justify-center items-center p-8">
+        <!-- Image Element -->
+        <div
+          class="max-w-full max-h-full flex-auto rounded-lg overflow-hidden shadow-2xl shadow-[rgb(0,0,0)]/30 transition-all ease-in-out duration-300 transform-gpu">
+          <!-- Blurred Placeholder Image (Cloudinary) -->
+          <img
+            :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+            :alt="`${altText}`"
+            :src="`/assets/img/${image}`"
+            width="384"
+            height="216"
+            class="cld-responsive relative object-contain w-full h-full text-[0]" />
+          <!-- Sharp Final Image (Cloudinary) -->
+          <img
+            :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+            :alt="`${altText}`"
+            :src="`/assets/img/${image}`"
+            width="384"
+            height="216"
+            class="cld-responsive high-def absolute top-0 left-0 object-contain w-full h-full text-[0]" />
         </div>
       </div>
-      <div class="flex flex-row absolute justify-between top-full pt-2 pb-16">
-        <p class="text-cameo-pink font-normal text-sm lg:text-base">
-          {{ description }}
-        </p>
-        <a
-          v-if="linkText"
-          class="nav-text relative text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
-          :href="link"
-          target="_blank">
-          {{ linkText }} &rarr;
-        </a>
-      </div>
+    </div>
+    <div class="flex flex-row justify-between">
+      <p class="text-cameo-pink font-normal text-sm lg:text-base">
+        {{ description }}
+      </p>
+      <a
+        v-if="linkText"
+        class="nav-text relative text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
+        :href="link"
+        target="_blank">
+        {{ linkText }} &rarr;
+      </a>
     </div>
   </div>
 </template>

@@ -166,8 +166,16 @@ export default {
 @font-face {
   font-family: "DM-Sans";
   font-display: swap;
+  font-weight: 500;
   src: local("DM-Sans"),
     url(./fonts/dm_sans/DMSans-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "DM-Sans";
+  font-display: swap;
+  font-weight: 400;
+  src: local("DM-Sans"),
+    url(./fonts/dm_sans/DMSans-Regular.ttf) format("truetype");
 }
 
 html {
