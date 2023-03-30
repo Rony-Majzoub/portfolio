@@ -1,7 +1,8 @@
 <template>
-  <div class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col gap-2">
+  <div
+    class="col-span-full lg:col-start-2 lg:col-end-[-2] max-lg:place-self-center max-lg:w-screen flex flex-col gap-2">
     <div
-      class="flex flex-col bg-eggplant max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
+      class="flex flex-col bg-eggplant max-w-full w-full lg:rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
       :style="{ backgroundColor: bgColor }">
       <div class="flex flex-1 justify-center items-center p-8 sm:p-16">
         <!-- Image Element -->
@@ -26,7 +27,7 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-row justify-between">
+    <div class="flex flex-row justify-between max-lg:px-4">
       <p class="text-cameo-pink font-normal text-sm lg:text-base">
         {{ description }}
       </p>

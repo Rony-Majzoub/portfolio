@@ -1,6 +1,7 @@
 <template>
   <BackButton />
-  <div class="grid grid-cols-10 col-start-2 col-end-[-2]">
+  <div
+    class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
       info="2020/2021 – Web Development"
       title="Buratino Instruktino"

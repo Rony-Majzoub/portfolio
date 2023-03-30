@@ -23,7 +23,7 @@
       :src="`/assets/img/${image}`"
       :alt="`${altText}`" /> -->
     </div>
-    <div class="flex flex-row justify-between px-4">
+    <div class="flex flex-row justify-between max-lg:px-4">
       <p class="text-cameo-pink font-normal text-sm lg:text-base">
         {{ description }}
       </p>
