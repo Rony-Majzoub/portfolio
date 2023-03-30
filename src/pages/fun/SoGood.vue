@@ -11,10 +11,7 @@
       image-link="v1653258131/portfolio/fun/so_good/so_good.png"
       alt-text="So Good"
       bg-color="#e280c7" />
-    <ProjectTags
-      client="Yrgo DD21"
-      role="Product Designer, 3D Artist"
-      duration="1 month" />
+    <ProjectTags client="Yrgo DD21" duration="1 month" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -29,6 +26,7 @@ export default {
       team: this.team,
       categories: this.categories,
       tools: this.tools,
+      roles: this.roles,
     };
   },
   data() {
@@ -49,6 +47,15 @@ export default {
         },
         {
           toolName: "Adobe Dimensions",
+        },
+      ],
+      // Data-list of roles to be shown in ProjectTags.
+      roles: [
+        {
+          roleName: "Product Designer",
+        },
+        {
+          roleName: "3D Artist",
         },
       ],
     };

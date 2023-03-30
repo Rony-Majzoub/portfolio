@@ -11,7 +11,7 @@
       image-link="v1653261546/portfolio/fun/polestar_website/polestar_website.png"
       alt-text="Polestar Website"
       bg-color="#eaeae8" />
-    <ProjectTags client="Polestar" role="UI/UX Designer" duration="6 hours" />
+    <ProjectTags client="Polestar" duration="6 hours" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -25,6 +25,7 @@ export default {
       team: this.team,
       categories: this.categories,
       tools: this.tools,
+      roles: this.roles,
     };
   },
   data() {
@@ -65,6 +66,12 @@ export default {
       tools: [
         {
           toolName: "Figma",
+        },
+      ],
+      // Data-list of roles to be shown in ProjectTags.
+      roles: [
+        {
+          roleName: "UI/UX Designer",
         },
       ],
     };

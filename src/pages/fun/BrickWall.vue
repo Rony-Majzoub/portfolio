@@ -11,11 +11,7 @@
       image-link="v1653259074/portfolio/fun/Brick_Wall.jpg"
       alt-text="Brick Wall"
       bg-color="#4d443f" />
-    <ProjectTags
-      client="N/A"
-      role="3D Artist"
-      duration="1 week"
-      tools="Blender" />
+    <ProjectTags client="N/A" duration="1 week" tools="Blender" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -30,6 +26,7 @@ export default {
       team: this.team,
       categories: this.categories,
       tools: this.tools,
+      roles: this.roles,
     };
   },
   data() {
@@ -50,6 +47,12 @@ export default {
       tools: [
         {
           toolName: "Blender",
+        },
+      ],
+      // Data-list of roles to be shown in ProjectTags.
+      roles: [
+        {
+          roleName: "3D Artist",
         },
       ],
     };

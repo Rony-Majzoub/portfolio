@@ -14,10 +14,7 @@
       link="https://www.figma.com/proto/u42r5PXx0GWbZ49rgq1ODa/I'm-Connected-(Showreel)?page-id=0%3A1&node-id=84%3A673&viewport=250%2C541%2C0.14&scaling=scale-down&starting-point-node-id=84%3A673"
       bg-color="#242323" />
 
-    <ProjectTags
-      client="NTI-Johanneberg"
-      role="UI/UX Designer"
-      duration="2 months" />
+    <ProjectTags client="NTI-Johanneberg" duration="2 months" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -32,6 +29,7 @@ export default {
       team: this.team,
       categories: this.categories,
       tools: this.tools,
+      roles: this.roles,
     };
   },
   data() {
@@ -52,6 +50,12 @@ export default {
       tools: [
         {
           toolName: "Figma",
+        },
+      ],
+      // Data-list of roles to be shown in ProjectTags.
+      roles: [
+        {
+          roleName: "UI/UX Designer",
         },
       ],
     };

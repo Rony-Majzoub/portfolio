@@ -13,10 +13,7 @@
       link-text="View Website"
       link="https://rony-majzoub-fel.netlify.app"
       bg-color="#242424" />
-    <ProjectTags
-      client="Yrgo DD21, Future Experience Lab"
-      role="UI/UX Designer"
-      duration="2 weeks" />
+    <ProjectTags client="Yrgo DD21, Future Experience Lab" duration="2 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnLeft
         title="Background"
@@ -137,6 +134,7 @@ export default {
       team: this.team,
       categories: this.categories,
       tools: this.tools,
+      roles: this.roles,
     };
   },
   data() {
@@ -173,6 +171,12 @@ export default {
       tools: [
         {
           toolName: "Figma",
+        },
+      ],
+      // Data-list of roles to be shown in ProjectTags.
+      roles: [
+        {
+          roleName: "UI/UX Designer",
         },
       ],
     };

@@ -34,8 +34,11 @@
         class="flex flex-col gap-8 pb-10 w-fit lg:justify-between lg:flex-row lg:flex-1">
         <div class="flex flex-col gap-2">
           <p class="text-lg font-bold text-unbleached-silk">My role</p>
-          <p class="font-normal text-base text-melon max-w-prose">
-            {{ role }}
+          <p
+            v-for="role in roles"
+            :key="role.id"
+            class="font-normal text-base text-melon max-w-prose">
+            {{ role.roleName }}
           </p>
         </div>
         <div class="flex flex-col gap-2">
@@ -72,7 +75,7 @@ export default {
   name: "ProjectTags",
   // Send "team", "categories" & "tools" Arrays down to the component,
   // that later gets provided() and used.
-  inject: ["team", "categories", "tools"],
+  inject: ["team", "categories", "tools", "roles"],
   // The properties of the component.
   props: {
     client: {
@@ -87,7 +90,7 @@ export default {
       default: "",
       type: String,
     },
-    role: {
+    roleName: {
       default: "",
       type: String,
     },

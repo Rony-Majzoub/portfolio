@@ -13,10 +13,7 @@
       link-text="View Website"
       link="https://rony-majzoub-smoove.netlify.app"
       bg-color="#464145" />
-    <ProjectTags
-      client="Yrgo DD21"
-      role="UI/UX Designer, Creative Director"
-      duration="1 month" />
+    <ProjectTags client="Yrgo DD21" duration="1 month" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnLeft
         title="Background"
@@ -162,6 +159,7 @@ export default {
       team: this.team,
       categories: this.categories,
       tools: this.tools,
+      roles: this.roles,
     };
   },
   // Data-list of images to be shown in ProjectGallery.
@@ -252,6 +250,15 @@ export default {
         },
         {
           toolName: "Adobe Illustrator",
+        },
+      ],
+      // Data-list of roles to be shown in ProjectTags.
+      roles: [
+        {
+          roleName: "UI/UX Designer",
+        },
+        {
+          roleName: "Creative Director",
         },
       ],
     };

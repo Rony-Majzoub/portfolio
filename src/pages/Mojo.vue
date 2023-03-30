@@ -13,10 +13,7 @@
       link-text="View Graphic Profile"
       link="https://www.figma.com/proto/JW1asOCvRC6oo5sgLUfnoB/Mojo-(Showreel)?page-id=653%3A918&node-id=676%3A1492&viewport=2303%2C274%2C0.28&scaling=contain&starting-point-node-id=676%3A1492"
       bg-color="#f29b4b" />
-    <ProjectTags
-      client="Yrgo DD21, Mojo"
-      role="UX Designer, Project Lead"
-      duration="2 months" />
+    <ProjectTags client="Yrgo DD21, Mojo" duration="2 months" />
 
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
@@ -104,6 +101,7 @@ export default {
       team: this.team,
       categories: this.categories,
       tools: this.tools,
+      roles: this.roles,
     };
   },
   // Data-list of images to be shown in ProjectGallery.
@@ -156,6 +154,15 @@ export default {
         },
         {
           toolName: "Adobe Illustrator",
+        },
+      ],
+      // Data-list of roles to be shown in ProjectTags.
+      roles: [
+        {
+          roleName: "UX Designer",
+        },
+        {
+          roleName: "Project Lead",
         },
       ],
     };

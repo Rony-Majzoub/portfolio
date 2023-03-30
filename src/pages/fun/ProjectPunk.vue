@@ -16,7 +16,7 @@
       image-link="v1653259074/portfolio/fun/project_punk.jpg"
       alt-text="Project Punk"
       bg-color="#3e2a21" /> -->
-    <ProjectTags client="N/A" role="3D Artist" duration="2 months" />
+    <ProjectTags client="N/A" duration="2 months" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -34,6 +34,7 @@ export default {
       team: this.team,
       categories: this.categories,
       tools: this.tools,
+      roles: this.roles,
     };
   },
   // Data-list of images to be shown in ProjectGallery.
@@ -75,6 +76,12 @@ export default {
       tools: [
         {
           toolName: "Blender",
+        },
+      ],
+      // Data-list of roles to be shown in ProjectTags.
+      roles: [
+        {
+          roleName: "3D Artist",
         },
       ],
     };

@@ -13,10 +13,7 @@
       link-text="View Website"
       link="https://app.buratino.se/"
       bg-color="#ba0909" />
-    <ProjectTags
-      client="Buratino AB"
-      role="UI/UX Designer, CSS Developer"
-      duration="8 months" />
+    <ProjectTags client="Buratino AB" duration="8 months" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
@@ -31,6 +28,7 @@ export default {
       team: this.team,
       categories: this.categories,
       tools: this.tools,
+      roles: this.roles,
     };
   },
   data() {
@@ -72,6 +70,15 @@ export default {
         },
         {
           toolName: "Visual Studio Code",
+        },
+      ],
+      // Data-list of roles to be shown in ProjectTags.
+      roles: [
+        {
+          roleName: "UI/UX Designer",
+        },
+        {
+          roleName: "Web Developer",
         },
       ],
     };
