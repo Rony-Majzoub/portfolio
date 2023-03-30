@@ -31,84 +31,104 @@
 export default {
   name: "Navbar",
   data() {
-    return { show: true };
+    return {
+      show: true,
+      pill: "",
+      navProjects: "",
+      projectsWidth: "",
+      projectsHeight: "",
+      projectsPositionX: "",
+      projectsPositionY: "",
+      navFun: "",
+      funWidth: "",
+      funHeight: "",
+      funPositionX: "",
+      funPositionY: "",
+      navAbout: "",
+      aboutWidth: "",
+      aboutHeight: "",
+      aboutPositionX: "",
+      aboutPositionY: "",
+    };
   },
-  // watch: {
-  //   $route(to, from) {
-  //     requestAnimationFrame(() => {
-  //       this.matchWidth();
-  //     });
-  //   },
-  // },
   watch: {
     $route: function () {
       // Check if given route is true, if it is then hide Nav.
       if (this.$route.path === "/") {
-        this.matchWidthProjects();
+        this.pillProjects();
       } else if (this.$route.path === "/fun") {
-        this.matchWidthFun();
+        this.pillFun();
       } else if (this.$route.path === "/about") {
-        this.matchWidthAbout();
+        this.pillAbout();
       } else {
-        this.matchWidthHide();
+        this.pillHide();
       }
     },
   },
+  mounted() {
+    this.pillStart();
+  },
 
   methods: {
-    matchWidth() {
-      let routerItem = document.querySelector(".router-link-exact-active");
-      let pill = document.querySelector(".pill-bg");
-      var width = routerItem.scrollWidth;
-      var positionX = routerItem.clientLeft;
-      var positionY = routerItem.clientTop;
-      console.log(width, positionX, positionY);
+    pillStart() {
+      this.pill = document.querySelector(".pill-bg");
+      this.navProjects = document.querySelector(".nav-projects");
+      this.projectsWidth = this.navProjects.scrollWidth;
+      this.projectsHeight = this.navProjects.scrollHeight;
+      this.projectsPositionX = this.navProjects.offsetLeft;
+      this.projectsPositionY = this.navProjects.offsetTop;
+      this.navFun = document.querySelector(".nav-fun");
+      this.funWidth = this.navFun.scrollWidth;
+      this.funHeight = this.navFun.scrollHeight;
+      this.funPositionX = this.navFun.offsetLeft;
+      this.funPositionY = this.navFun.offsetTop;
+      this.navAbout = document.querySelector(".nav-about");
+      this.aboutWidth = this.navAbout.scrollWidth;
+      this.aboutHeight = this.navAbout.scrollHeight;
+      this.aboutPositionX = this.navAbout.offsetLeft;
+      this.aboutPositionY = this.navAbout.offsetTop;
     },
-    matchWidthProjects() {
-      let routerItem = document.querySelector(".nav-projects");
-      let pill = document.querySelector(".pill-bg");
-      var width = routerItem.scrollWidth;
-      var height = routerItem.scrollHeight;
-      var positionX = routerItem.offsetLeft;
-      var positionY = routerItem.offsetTop;
-      pill.style.opacity = 1;
-      pill.style.width = width + 40 + "px";
-      pill.style.height = height + "px";
-      pill.style.left = positionX - 20 + "px";
-      // pill.style.top = positionY + "px";
-      console.log(width, height, positionX, positionY);
+    pillProjects() {
+      this.pill.style.opacity = 1;
+      this.pill.style.width = this.projectsWidth + 40 + "px";
+      this.pill.style.height = this.projectsHeight + "px";
+      this.pill.style.left = this.projectsPositionX - 20 + "px";
+      // this.pill.style.top = this.projectsPositionY + "px";
+      console.log(
+        this.projectsWidth,
+        this.projectsHeight,
+        this.projectsPositionX,
+        this.projectsPositionY
+      );
     },
-    matchWidthFun() {
-      let routerItem = document.querySelector(".nav-fun");
-      let pill = document.querySelector(".pill-bg");
-      var width = routerItem.scrollWidth;
-      var height = routerItem.scrollHeight;
-      var positionX = routerItem.offsetLeft;
-      var positionY = routerItem.offsetTop;
-      pill.style.opacity = 1;
-      pill.style.width = width + 40 + "px";
-      pill.style.height = height + "px";
-      pill.style.left = positionX - 20 + "px";
-      // pill.style.top = positionY + "px";
-      console.log(width, height, positionX, positionY);
+    pillFun() {
+      this.pill.style.opacity = 1;
+      this.pill.style.width = this.funWidth + 40 + "px";
+      this.pill.style.height = this.funHeight + "px";
+      this.pill.style.left = this.funPositionX - 20 + "px";
+      // this.pill.style.top = this.funPositionY + "px";
+      console.log(
+        this.funWidth,
+        this.funHeight,
+        this.funPositionX,
+        this.funPositionY
+      );
     },
-    matchWidthAbout() {
-      let routerItem = document.querySelector(".nav-about");
-      let pill = document.querySelector(".pill-bg");
-      var width = routerItem.scrollWidth;
-      var height = routerItem.scrollHeight;
-      var positionX = routerItem.offsetLeft;
-      var positionY = routerItem.offsetTop;
-      pill.style.opacity = 1;
-      pill.style.width = width + 40 + "px";
-      pill.style.height = height + "px";
-      pill.style.left = positionX - 20 + "px";
-      // pill.style.top = positionY + "px";
-      console.log(width, height, positionX, positionY);
+    pillAbout() {
+      this.pill.style.opacity = 1;
+      this.pill.style.width = this.aboutWidth + 40 + "px";
+      this.pill.style.height = this.aboutHeight + "px";
+      this.pill.style.left = this.aboutPositionX - 20 + "px";
+      // this.pill.style.top = this.aboutPositionY + "px";
+      console.log(
+        this.aboutWidth,
+        this.aboutHeight,
+        this.aboutPositionX,
+        this.aboutPositionY
+      );
     },
-    matchWidthHide() {
-      let pill = document.querySelector(".pill-bg");
-      pill.style.opacity = 0;
+    pillHide() {
+      this.pill.style.opacity = 0;
     },
   },
 };
@@ -124,7 +144,7 @@ export default {
   position: absolute;
   transition-property: all;
   transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
-  transition-duration: 300ms;
+  transition-duration: 250ms;
 }
 // .pill-projects {
 //   top: 50%;
