@@ -25,17 +25,31 @@
         title="The problem"
         description="We were tasked with not only becoming the Project Leads, having to direct our Web Developers and Computer Graphics Designers with clear instructions and feedback. But we were also tasked with fulfilling our roles as Digital Designers, with UI-designs and UX-research being major key-points of the project." />
       <div
-        class="col-start-2 col-end-[-2] grid grid-flow-col auto-cols-[1fr] gap-8">
+        class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectImageHalf
           image="smoove_skiss1.png"
           image-link="v1653003924/portfolio/smoove/smoove_skiss1.png"
           alt-text="Smoove Desktop Sketches"
-          description="The early desktop sketches from the Figma prototypes." />
+          description="The early desktop sketches from the Figma prototypes."
+          class="max-lg:hidden" />
         <ProjectImageHalf
           image="smoove_skiss2.png"
           image-link="v1653003924/portfolio/smoove/smoove_skiss2.png"
           alt-text="Smoove Mobile Sketches"
-          description="The early mobile sketches from the Figma prototypes." />
+          description="The early mobile sketches from the Figma prototypes."
+          class="max-lg:hidden" />
+        <ProjectImageFull
+          image="smoove_skiss1.png"
+          image-link="v1653003924/portfolio/smoove/smoove_skiss1.png"
+          alt-text="Smoove Desktop Sketches"
+          description="The early desktop sketches from the Figma prototypes."
+          class="lg:hidden" />
+        <ProjectImageFull
+          image="smoove_skiss2.png"
+          image-link="v1653003924/portfolio/smoove/smoove_skiss2.png"
+          alt-text="Smoove Mobile Sketches"
+          description="The early mobile sketches from the Figma prototypes."
+          class="lg:hidden" />
       </div>
       <ColumnLeft
         title="Pre-planning"
@@ -51,20 +65,34 @@
         
         That's why we chose a more golden and warm color scheme. We found that other, more saturated colors were very gendered, and a bit too bombastic. A gold main color, with warm undertones gave us the neutrality we were after, while still offering a modern, powerful and exciting feeling to the driver." />
       <div
-        class="col-start-2 col-end-[-2] grid grid-flow-col auto-cols-[1fr] gap-8">
+        class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectImageHalf
           image="smoove_stylesheet.png"
           image-link="v1652792494/portfolio/smoove/smoove_stylesheet.png"
           alt-text="Stylesheet created for our Web Developers."
-          description="Our stylesheet that we applied throughout our entire project." />
+          description="Our stylesheet that we applied throughout our entire project."
+          class="max-lg:hidden" />
         <ProjectImageHalf
           image="smoove_moodboard.png"
           image-link="v1652885422/portfolio/smoove/smoove_moodboard.png"
           alt-text="Smoove Moodboard"
-          description="Our moodboard that would communicate our vision clearly to our Developers and CG-Designers." />
+          description="Our moodboard that would communicate our vision clearly to our Developers and CG-Designers."
+          class="max-lg:hidden" />
+        <ProjectImageFull
+          image="smoove_stylesheet.png"
+          image-link="v1652792494/portfolio/smoove/smoove_stylesheet.png"
+          alt-text="Stylesheet created for our Web Developers."
+          description="Our stylesheet that we applied throughout our entire project."
+          class="lg:hidden" />
+        <ProjectImageFull
+          image="smoove_moodboard.png"
+          image-link="v1652885422/portfolio/smoove/smoove_moodboard.png"
+          alt-text="Smoove Moodboard"
+          description="Our moodboard that would communicate our vision clearly to our Developers and CG-Designers."
+          class="lg:hidden" />
       </div>
       <div
-        class="col-start-2 col-end-[-2] grid grid-flow-col auto-cols-[1fr] gap-8">
+        class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ColumnHalf
           title="Designing for the Web"
           description="For this project, we teamed up with the Web Developer class at Yrgo, who were responsible for coding and implementing our designs to the web. This proved to be difficult, due to the various responsibilities that we had to bear during the entire project.
@@ -74,7 +102,14 @@
           image="smoove_components.png"
           image-link="v1652792652/portfolio/smoove/smoove_components.png"
           alt-text="Components that were created for our Web Developers."
-          description="The components that we designed for our Web Developers." />
+          description="The components that we designed for our Web Developers."
+          class="max-lg:hidden" />
+        <ProjectImageFull
+          image="smoove_components.png"
+          image-link="v1652792652/portfolio/smoove/smoove_components.png"
+          alt-text="Components that were created for our Web Developers."
+          description="The components that we designed for our Web Developers."
+          class="lg:hidden" />
       </div>
       <ColumnLeft
         title="DD meets CG"
