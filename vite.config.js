@@ -55,9 +55,9 @@ const config = defineConfig({
       output: {
         manualChunks: {
           "main-chunk": [
-            "./src/pages/index",
-            "./src/pages/Fun",
-            "./src/pages/About",
+            "./src/pages/index.vue",
+            "./src/pages/Fun.vue",
+            "./src/pages/About.vue",
           ],
         },
       },
