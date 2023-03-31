@@ -1,6 +1,6 @@
 <!-- This element should only be used inside a grid-parent inside the project-page. -->
 <template>
-  <div class="flex flex-col gap-2">
+  <div class="flex flex-col gap-2 animation-item">
     <div
       class="flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
       :style="{ backgroundColor: bgColor }">

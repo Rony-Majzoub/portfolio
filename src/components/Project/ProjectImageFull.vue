@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-span-full lg:col-start-2 lg:col-end-[-2] max-lg:place-self-center max-lg:w-screen flex flex-col gap-2">
+    class="col-span-full lg:col-start-2 lg:col-end-[-2] max-lg:place-self-center max-lg:w-screen flex flex-col gap-2 animation-item">
     <div
       class="flex flex-col bg-eggplant max-w-full w-full lg:rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
       :style="{ backgroundColor: bgColor }">

@@ -49,6 +49,7 @@ export default {
       aboutHeight: "",
       aboutPositionX: "",
       aboutPositionY: "",
+      pillPadding: 15,
     };
   },
   watch: {
@@ -66,10 +67,31 @@ export default {
     },
   },
   mounted() {
+    // // Register an event listener when the Vue component is ready
+    // window.addEventListener("resize", this.onResize);
     this.pillStart();
   },
-
+  // beforeUnmount() {
+  //   // Unregister the event listener before destroying this Vue instance
+  //   window.removeEventListener("resize", this.onResize);
+  // },
   methods: {
+    // onResize(event) {
+    //   console.log("window has been resized", event);
+    //   this.pillStart();
+    //   this.$watch("$route", ($route) => {
+    //     // Check if given route is true, if it is then hide Nav.
+    //     if ($route.path === "/") {
+    //       this.pillProjects();
+    //     } else if ($route.path === "/fun") {
+    //       this.pillFun();
+    //     } else if ($route.path === "/about") {
+    //       this.pillAbout();
+    //     } else {
+    //       this.pillHide();
+    //     }
+    //   });
+    // },
     pillStart() {
       this.pill = document.querySelector(".pill-bg");
       this.navProjects = document.querySelector(".nav-projects");
@@ -90,9 +112,9 @@ export default {
     },
     pillProjects() {
       this.pill.style.opacity = 1;
-      this.pill.style.width = this.projectsWidth + 40 + "px";
+      this.pill.style.width = this.projectsWidth + this.pillPadding * 2 + "px";
       this.pill.style.height = this.projectsHeight + "px";
-      this.pill.style.left = this.projectsPositionX - 20 + "px";
+      this.pill.style.left = this.projectsPositionX - this.pillPadding + "px";
       // this.pill.style.top = this.projectsPositionY + "px";
       console.log(
         this.projectsWidth,
@@ -103,9 +125,9 @@ export default {
     },
     pillFun() {
       this.pill.style.opacity = 1;
-      this.pill.style.width = this.funWidth + 40 + "px";
+      this.pill.style.width = this.funWidth + this.pillPadding * 2 + "px";
       this.pill.style.height = this.funHeight + "px";
-      this.pill.style.left = this.funPositionX - 20 + "px";
+      this.pill.style.left = this.funPositionX - this.pillPadding + "px";
       // this.pill.style.top = this.funPositionY + "px";
       console.log(
         this.funWidth,
@@ -116,9 +138,9 @@ export default {
     },
     pillAbout() {
       this.pill.style.opacity = 1;
-      this.pill.style.width = this.aboutWidth + 40 + "px";
+      this.pill.style.width = this.aboutWidth + this.pillPadding * 2 + "px";
       this.pill.style.height = this.aboutHeight + "px";
-      this.pill.style.left = this.aboutPositionX - 20 + "px";
+      this.pill.style.left = this.aboutPositionX - this.pillPadding + "px";
       // this.pill.style.top = this.aboutPositionY + "px";
       console.log(
         this.aboutWidth,

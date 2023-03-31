@@ -120,9 +120,6 @@ export default {
     ProjectCardRight: defineAsyncComponent(() =>
       import("../components/Overview/ProjectCardRight.vue")
     ),
-    ProjectCardCenter: defineAsyncComponent(() =>
-      import("../components/Overview/ProjectCardCenter.vue")
-    ),
   },
   mounted() {
     this.$anime({

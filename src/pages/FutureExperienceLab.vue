@@ -119,14 +119,30 @@
 
 <script>
 import { defineAsyncComponent } from "vue";
-import ProjectImageHalf from "../components/Project/ProjectImageHalf.vue";
 export default {
   name: "FutureExperienceLab",
   components: {
     ProjectImage: defineAsyncComponent(() =>
       import("../components/Project/ProjectImage.vue")
     ),
-    ProjectImageHalf,
+    ProjectImageHalf: defineAsyncComponent(() =>
+      import("../components/Project/ProjectImageHalf.vue")
+    ),
+    ProjectImageFull: defineAsyncComponent(() =>
+      import("../components/Project/ProjectImageFull.vue")
+    ),
+    ProjectTags: defineAsyncComponent(() =>
+      import("../components/Project/ProjectTags.vue")
+    ),
+    ProjectTitle: defineAsyncComponent(() =>
+      import("../components/Project/ProjectTitle.vue")
+    ),
+    ColumnHalf: defineAsyncComponent(() =>
+      import("../components/Project/ColumnHalf.vue")
+    ),
+    ColumnLeft: defineAsyncComponent(() =>
+      import("../components/Project/ColumnLeft.vue")
+    ),
   },
   // Recover the data sent by components, to fill the props up.
   provide() {
@@ -239,17 +255,6 @@ export default {
         "style",
         "border-color: #fbc2d3; background-color: #333333"
       );
-    // var burger = document.querySelectorAll(".burger");
-    // for (var i = 0; i < burger.length; i++) {
-    //   burger[i].setAttribute("style", "fill:#fbc2d3");
-    // }
-    // var nav = document.querySelectorAll(".nav-item");
-    // for (var i = 0; i < nav.length; i++) {
-    //   nav[i].setAttribute("style", "color:#fbc2d3; background:#212121;");
-    // }
-    // document
-    //   .querySelector(".nav-menu")
-    //   .setAttribute("style", "background:#333333");
     const callback = (entries) => {
       // The entries variable will contain the list of
       // elements that you are observing. When ever
@@ -335,15 +340,6 @@ export default {
     for (var i = 0; i < eggplant.length; i++) {
       eggplant[i].setAttribute("style", "");
     }
-    // var nav = document.querySelectorAll(".nav-item");
-    // for (var i = 0; i < nav.length; i++) {
-    //   nav[i].setAttribute("style", "");
-    // }
-    // var burger = document.querySelectorAll(".burger");
-    // for (var i = 0; i < burger.length; i++) {
-    //   burger[i].setAttribute("style", "");
-    // }
-    // document.querySelector(".nav-menu").setAttribute("style", "");
   },
 };
 </script>

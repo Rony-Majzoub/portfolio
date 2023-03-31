@@ -147,8 +147,26 @@ export default {
     ProjectImage: defineAsyncComponent(() =>
       import("../components/Project/ProjectImage.vue")
     ),
+    ProjectImageHalf: defineAsyncComponent(() =>
+      import("../components/Project/ProjectImageHalf.vue")
+    ),
+    ProjectImageFull: defineAsyncComponent(() =>
+      import("../components/Project/ProjectImageFull.vue")
+    ),
     ProjectGallery: defineAsyncComponent(() =>
       import("../components/Project/ProjectGallery.vue")
+    ),
+    ProjectTags: defineAsyncComponent(() =>
+      import("../components/Project/ProjectTags.vue")
+    ),
+    ProjectTitle: defineAsyncComponent(() =>
+      import("../components/Project/ProjectTitle.vue")
+    ),
+    ColumnHalf: defineAsyncComponent(() =>
+      import("../components/Project/ColumnHalf.vue")
+    ),
+    ColumnLeft: defineAsyncComponent(() =>
+      import("../components/Project/ColumnLeft.vue")
     ),
   },
   // Send Gallery Array down to ProjectGallery component for dynamic images.

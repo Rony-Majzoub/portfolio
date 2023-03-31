@@ -45,7 +45,8 @@
   </router-view>
   <navbar></navbar>
   <footer
-    class="page-footer relative flex justify-center items-center lg:h-auto bg-black-coffee bottom-32 lg:bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 duration-500 ease-out-expo">
+    class="page-footer relative flex justify-center items-center lg:h-auto bg-black-coffee bottom-32 lg:bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0"
+    :class="[footerClass]">
     <div
       class="relative flex flex-col gap-4 max-lg:w-4/5 lg:col-start-1 lg:col-end-[-1] lg:flex-row lg:justify-between lg:gap-12 lg:mx-32">
       <!-- Footer Overline -->
@@ -66,19 +67,19 @@
         <p class="text-unbleached-silk font-extrabold text-base lg:text-lg">
           Contact
         </p>
-        <div class="flex flex-row gap-2">
+        <div class="flex flex-col lg:flex-row gap-2">
           <a
             href="mailto:majzoubrony@gmail.com"
-            class="nav-contact relative text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
+            class="nav-contact w-fit relative text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
             majzoubrony@gmail.com
           </a>
           <p
-            class="text-cameo-pink font-semibold text-sm lg:text-base antialiased">
+            class="text-cameo-pink font-semibold text-sm lg:text-base max-lg:hidden antialiased">
             –
           </p>
           <a
             href="tel:+46722960295"
-            class="nav-contact relative text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
+            class="nav-contact w-fit relative text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
             072 296 02 95
           </a>
         </div>
@@ -114,8 +115,81 @@
 </template>
 
 <script>
-// import Sidebar from "@/components/Sidebar.vue";
 export default {
+  data() {
+    return {
+      footerClass: "",
+    };
+  },
+  beforeMount() {
+    this.handleResize();
+    window.addEventListener("resize", this.handleResize);
+  },
+  mounted() {
+    const callback = (entries) => {
+      // The entries variable will contain the list of
+      // elements that you are observing. When ever
+      // intersection occurs, you need to do forEach loop
+      // to find which one intersected.
+      // For this we check a flag on the element called "isIntersecting"
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          console.log("The element is intersecting >");
+          //If intersecting then attach keyframe animation.
+          //We do this by assigning the data attribute
+          //we coded in the markup to the style.animation
+          //of the element
+          this.$anime({
+            targets: entry.target,
+            translateY: [40, 0],
+            opacity: [0, 1],
+            duration: 1000,
+            delay: 250,
+            easing: "easeOutQuint",
+          });
+        } else {
+          //We take of the animation if not in view
+          this.$anime({
+            targets: entry.target,
+            opacity: 0,
+          });
+        }
+      });
+    };
+
+    //1]Create a new intersectionObserver object,
+    //which will accept a callback function as
+    //a parameter.
+    let options = {
+      threshold: 0.1,
+      rootMargin: "20px",
+    };
+
+    let observer = new IntersectionObserver(callback, options);
+
+    //2]Select all elements that have ".animate"
+    //class.In our case we have three
+    //elements (.image,<p> and h<2>).
+
+    const animationItems = document.querySelectorAll(".main-animation-item");
+
+    //3]Loop through selected elements and add to the
+    //observer watch list.
+
+    animationItems.forEach((item) => {
+      observer.observe(item);
+    });
+  },
+  unmounted() {
+    window.removeEventListener("resize", this.handleResize);
+  },
+  methods: {
+    handleResize() {
+      this.footerClass = window.matchMedia("(max-width: 1024px)").matches
+        ? ""
+        : "main-animation-item";
+    },
+  },
   // components: {
   //   Sidebar,
   // },
