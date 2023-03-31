@@ -70,13 +70,6 @@ export default {
     // // Register an event listener when the Vue component is ready
     // window.addEventListener("resize", this.onResize);
     this.pillStart();
-    this.$anime({
-      targets: ".navbar",
-      translateY: [120, 0],
-      duration: 1000,
-      delay: 250,
-      easing: "easeOutQuint",
-    });
   },
   // beforeUnmount() {
   //   // Unregister the event listener before destroying this Vue instance
