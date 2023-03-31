@@ -137,6 +137,8 @@ export default {
         };
         // perform the initial check
         query.onchange();
+      } else {
+        document.querySelector(".footer-animation").style.position = "";
       }
     },
   },
