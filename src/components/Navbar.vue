@@ -1,6 +1,6 @@
 <template>
   <div
-    class="navbar lg:hidden border-4 border-pastel-pink col-span-full p-4 bg-eggplant rounded-full fixed inset-x-0 bottom-6 z-50 mx-auto w-4/5 shadow-md shadow-[#2b212c]/50 duration-300 ease-in-out">
+    class="navbar lg:hidden border-4 border-pastel-pink col-span-full p-4 bg-eggplant rounded-full fixed inset-x-0 bottom-6 z-50 mx-auto w-4/5 shadow-md shadow-[#2b212c]/50">
     <div
       class="pill-bg bg-melon absolute rounded-full top-1/2 -translate-y-1/2 py-5 origin-center -z-10"
       :class="{
@@ -70,6 +70,13 @@ export default {
     // // Register an event listener when the Vue component is ready
     // window.addEventListener("resize", this.onResize);
     this.pillStart();
+    this.$anime({
+      targets: ".navbar",
+      translateY: [120, 0],
+      duration: 1000,
+      delay: 250,
+      easing: "easeOutQuint",
+    });
   },
   // beforeUnmount() {
   //   // Unregister the event listener before destroying this Vue instance
