@@ -2,13 +2,13 @@
   <!-- Desktop Version -->
   <div
     v-anime="{
-      translateX: [150, 120],
+      translateX: '-40',
       opacity: '+1',
-      duration: 250,
+      duration: 500,
       delay: 1000,
-      easing: 'easeInOutExpo',
+      easing: 'easeOutQuint',
     }"
-    class="z-50 hidden h-fit w-max fixed top-28 left-[0vw] lg:flex cursor-pointer transition-all duration-200 flex-column items-center"
+    class="nav-home-container z-50 hidden h-fit w-max fixed top-28 left-[9vw] lg:flex cursor-pointer flex-column items-center"
     role="button"
     aria-label="Home"
     @click="$router.push('/')">
@@ -24,11 +24,11 @@
     v-anime="{
       translateX: '-20',
       opacity: '+1',
-      duration: 250,
+      duration: 500,
       delay: 1000,
-      easing: 'easeInOutExpo',
+      easing: 'easeOutQuint',
     }"
-    class="z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer transition-all duration-200 flex flex-column items-center"
+    class="nav-home-container z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer flex flex-column items-center"
     role="button"
     aria-label="Home"
     @click="$router.push('/')">
@@ -61,7 +61,7 @@ export default {
   transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
 }
 
-.nav-home:hover::before {
+.nav-home-container:hover .nav-home::before {
   transform: scaleX(1);
 }
 </style>

@@ -8,7 +8,7 @@
       delay: 1000,
       easing: 'easeOutQuint',
     }"
-    class="z-50 hidden h-fit w-max fixed top-28 left-[9vw] lg:flex cursor-pointer flex-column items-end"
+    class="nav-back-container z-50 hidden h-fit w-max fixed top-28 left-[9vw] lg:flex cursor-pointer flex-column items-end"
     role="button"
     aria-label="Back"
     @click="$router.back()">
@@ -28,7 +28,7 @@
       delay: 1000,
       easing: 'easeOutQuint',
     }"
-    class="z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer flex flex-column items-end"
+    class="nav-back-container z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer flex flex-column items-end"
     role="button"
     aria-label="Back"
     @click="$router.back()">
@@ -61,7 +61,7 @@ export default {
   transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
 }
 
-.nav-back:hover::before {
+.nav-back-container:hover .nav-back::before {
   transform: scaleX(1);
 }
 </style>
