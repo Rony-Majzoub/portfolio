@@ -11,7 +11,7 @@
         class="cld-responsive relative object-cover w-full h-full text-[0] aspect-video" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
-        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
         :alt="`${altText}`"
         class="cld-responsive high-def absolute top-0 left-0 object-cover w-full h-full text-[0] aspect-video" />

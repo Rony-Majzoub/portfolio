@@ -18,7 +18,7 @@
             class="cld-responsive relative object-contain w-full h-full text-[0]" />
           <!-- Sharp Final Image (Cloudinary) -->
           <img
-            :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+            :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
             :alt="`${altText}`"
             :src="`/assets/img/${image}`"
             width="384"

@@ -1,7 +1,9 @@
 <template>
   <div
     class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-4 animation-item">
-    <div class="col-span-full place-self-start pt-8 flex flex-col gap-1">
+    <div
+      v-if="title.length"
+      class="col-span-full place-self-start pt-8 flex flex-col gap-1">
       <h2 class="text-3xl lg:text-5xl font-bold text-unbleached-silk">
         {{ title }}
       </h2>

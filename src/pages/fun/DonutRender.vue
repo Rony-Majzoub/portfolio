@@ -30,9 +30,9 @@ export default {
       roles: this.roles,
     };
   },
-  // Data-list of images to be shown in ProjectGallery.
   data() {
     return {
+      // Data-list of images to be shown in ProjectGallery.
       pictures: [
         {
           url: "v1653259075/portfolio/fun/donut_render.jpg",

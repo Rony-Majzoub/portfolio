@@ -1,5 +1,6 @@
 <template>
-  <div class="col-span-full flex flex-col gap-6 pb-10 text-center">
+  <div
+    class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col gap-4 pb-10 text-left">
     <p
       class="info-text text-pastel-pink tracking-widest font-semibold text-sm uppercase antialiased">
       {{ info }}

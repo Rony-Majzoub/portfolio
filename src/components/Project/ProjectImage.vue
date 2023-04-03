@@ -1,8 +1,8 @@
 <template>
   <div
-    class="lg:col-start-2 lg:col-end-[-2] lg:rounded-lg overflow-hidden max-lg:w-screen col-span-full flex flex-col gap-2">
+    class="lg:col-start-2 lg:col-end-[-2] max-lg:w-screen col-span-full flex flex-col gap-2">
     <div
-      class="relative aspect-video bg-eggplant"
+      class="relative aspect-video lg:rounded-lg overflow-hidden bg-eggplant"
       :style="{ backgroundColor: bgColor }">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
@@ -12,7 +12,7 @@
         class="cld-responsive absolute object-cover object-[center_60%] w-full h-full text-[0]" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
-        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+        :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
         :alt="`${altText}`"
         class="cld-responsive high-def absolute object-cover object-[center_60%] w-full h-full text-[0]" />
