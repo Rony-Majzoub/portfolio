@@ -39,6 +39,10 @@ export default {
     this.word();
     this.letter();
     // Style the text and background colors to brand colors.
+    var logo = document.querySelectorAll(".fill-melon");
+    for (var i = 0; i < logo.length; i++) {
+      logo[i].setAttribute("style", "fill: #ffffff");
+    }
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute(
@@ -87,6 +91,10 @@ export default {
     document.querySelector("header").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
     document.querySelector(".navbar").setAttribute("style", "");
+    var logo = document.querySelectorAll(".fill-melon");
+    for (var i = 0; i < logo.length; i++) {
+      logo[i].setAttribute("style", "");
+    }
     var melon = document.querySelectorAll(".text-melon");
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute("style", "");

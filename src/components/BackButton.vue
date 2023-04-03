@@ -5,7 +5,7 @@
       translateX: '-40',
       opacity: '+1',
       duration: 500,
-      delay: 1000,
+      delay: 1200,
       easing: 'easeOutQuint',
     }"
     class="nav-back-container z-50 hidden h-fit w-max fixed top-28 left-[9vw] lg:flex cursor-pointer flex-column items-end"
@@ -25,7 +25,7 @@
       translateX: '-20',
       opacity: '+1',
       duration: 500,
-      delay: 1000,
+      delay: 1200,
       easing: 'easeOutQuint',
     }"
     class="nav-back-container z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer flex flex-column items-end"
