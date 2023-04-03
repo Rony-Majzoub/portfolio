@@ -2,13 +2,13 @@
   <!-- Desktop Version -->
   <div
     v-anime="{
-      translateX: [150, 120],
+      translateX: '-40',
       opacity: '+1',
-      duration: 250,
+      duration: 500,
       delay: 1000,
-      easing: 'easeInOutExpo',
+      easing: 'easeOutQuint',
     }"
-    class="z-50 hidden h-fit w-max fixed top-28 left-[0vw] lg:flex cursor-pointer transition-all duration-200 flex-column items-end"
+    class="z-50 hidden h-fit w-max fixed top-28 left-[9vw] lg:flex cursor-pointer flex-column items-end"
     role="button"
     aria-label="Back"
     @click="$router.back()">
@@ -24,11 +24,11 @@
     v-anime="{
       translateX: '-20',
       opacity: '+1',
-      duration: 250,
+      duration: 500,
       delay: 1000,
-      easing: 'easeInOutExpo',
+      easing: 'easeOutQuint',
     }"
-    class="z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer transition-all duration-200 flex flex-column items-end"
+    class="z-50 h-fit w-max fixed top-6 right-[5vw] lg:static lg:hidden cursor-pointer flex flex-column items-end"
     role="button"
     aria-label="Back"
     @click="$router.back()">
