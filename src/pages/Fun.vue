@@ -14,11 +14,11 @@
           The usual stuff, you know?
         </p>
       </div>
-      <FunCard
+      <FunCardMobile
         title="RecyPie"
         tag="Digital Prototype"
-        image="recypie.png"
-        image-link="v1652044733/portfolio/recypie/recypie.png"
+        image="recypie_mobile.png"
+        image-link="v1680528618/portfolio/recypie/recypie_mobile.png"
         link="fun/recypie"
         bg-color="#b1e0c7"
         title-color="var(--eggplant)"
