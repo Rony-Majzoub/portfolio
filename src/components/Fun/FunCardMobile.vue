@@ -13,17 +13,17 @@
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
-          width="384"
-          height="216"
-          class="cld-responsive absolute inset-0 object-contain mx-auto w-auto h-full text-[0] rounded-lg overflow-hidden border-2 border-black" />
+          width="216"
+          height="384"
+          class="cld-responsive absolute inset-0 object-contain mx-auto w-auto h-full text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden" />
         <!-- Sharp Final Image (Cloudinary) -->
         <img
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
-          width="384"
-          height="216"
-          class="cld-responsive high-def absolute inset-0 object-contain mx-auto w-auto h-full text-[0] rounded-lg overflow-hidden border-2 border-black" />
+          width="216"
+          height="384"
+          class="cld-responsive high-def absolute inset-0 object-contain mx-auto w-auto h-full text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-black" />
       </div>
     </div>
     <!-- Text Element -->
