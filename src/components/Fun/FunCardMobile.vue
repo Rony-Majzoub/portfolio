@@ -23,7 +23,11 @@
           :src="`/assets/img/${image}`"
           width="216"
           height="384"
-          class="cld-responsive high-def absolute inset-0 object-contain mx-auto w-auto h-full text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-black" />
+          class="cld-responsive high-def absolute inset-0 object-contain mx-auto w-auto h-full text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden"
+          :class="{
+            [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-black`]:
+              deviceBorder,
+          }" />
       </div>
     </div>
     <!-- Text Element -->
@@ -86,6 +90,10 @@ export default {
     subtitleColor: {
       default: "var(--pastel-pink)",
       type: String,
+    },
+    deviceBorder: {
+      default: false,
+      type: Boolean,
     },
   },
   mounted() {

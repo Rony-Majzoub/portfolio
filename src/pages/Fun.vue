@@ -22,7 +22,8 @@
         link="fun/recypie"
         bg-color="#b1e0c7"
         title-color="var(--eggplant)"
-        subtitle-color="var(--black-coffee)" />
+        subtitle-color="var(--black-coffee)"
+        :device-border="true" />
       <FunCard
         title="Shuu"
         tag="Website Prototype"
@@ -52,7 +53,8 @@
         image="connected.png"
         image-link="v1653262038/portfolio/fun/connected/connected.png"
         link="fun/infoscreen"
-        bg-color="#242323" />
+        bg-color="#242323"
+        :device-border="false" />
       <FunCard
         title="Vacina"
         tag="Digital Prototype"

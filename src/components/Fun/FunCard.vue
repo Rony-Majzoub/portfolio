@@ -6,7 +6,7 @@
     <div class="flex flex-1 justify-center items-center p-10 pb-0">
       <!-- Image Element -->
       <div
-        class="max-w-full max-h-full flex-auto rounded-lg overflow-hidden group-hover:-translate-y-1 group-hover:shadow-2xl shadow-xl group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300 transform-gpu">
+        class="max-w-full max-h-full flex-auto rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw] overflow-hidden group-hover:-translate-y-1 group-hover:shadow-2xl shadow-xl group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300 transform-gpu">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
@@ -14,7 +14,7 @@
           :src="`/assets/img/${image}`"
           width="384"
           height="216"
-          class="cld-responsive relative object-contain w-full h-full text-[0]" />
+          class="cld-responsive relative object-contain w-full h-full text-[0] rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw]" />
         <!-- Sharp Final Image (Cloudinary) -->
         <img
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
@@ -22,7 +22,11 @@
           :src="`/assets/img/${image}`"
           width="384"
           height="216"
-          class="cld-responsive high-def absolute top-0 left-0 object-contain w-full h-full text-[0]" />
+          class="cld-responsive high-def absolute top-0 left-0 object-contain w-full h-full text-[0] rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw]"
+          :class="{
+            [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-black`]:
+              deviceBorder,
+          }" />
       </div>
     </div>
     <!-- Text Element -->
@@ -85,6 +89,10 @@ export default {
     subtitleColor: {
       default: "var(--pastel-pink)",
       type: String,
+    },
+    deviceBorder: {
+      default: false,
+      type: Boolean,
     },
   },
   mounted() {
