@@ -14,7 +14,11 @@
           :src="`/assets/img/${image}`"
           width="384"
           height="216"
-          class="cld-responsive relative object-contain w-full h-full text-[0] rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw]" />
+          class="cld-responsive relative object-contain w-full h-full text-[0] rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw]"
+          :class="{
+            [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-transparent`]:
+              deviceBorder,
+          }" />
         <!-- Sharp Final Image (Cloudinary) -->
         <img
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"

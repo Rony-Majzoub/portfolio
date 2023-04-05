@@ -47,14 +47,14 @@
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="fun/buratino"
         bg-color="#ba0909" />
-      <FunCard
+      <FunCardMobile
         title="Information Screen"
         tag="Digital Prototype"
-        image="connected.png"
-        image-link="v1653262038/portfolio/fun/connected/connected.png"
+        image="connected_splitscreen.png"
+        image-link="v1680698934/portfolio/fun/connected/connected_splitscreen.png"
         link="fun/infoscreen"
         bg-color="#242323"
-        :device-border="false" />
+        :device-border="true" />
       <FunCard
         title="Vacina"
         tag="Digital Prototype"
