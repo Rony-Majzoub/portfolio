@@ -49,20 +49,20 @@ const config = defineConfig({
       },
     },
   },
-  build: {
-    rollupOptions: {
-      // https://rollupjs.org/guide/en/#outputmanualchunks
-      output: {
-        manualChunks: {
-          "main-chunk": [
-            "./src/pages/index.vue",
-            "./src/pages/Fun.vue",
-            "./src/pages/About.vue",
-          ],
-        },
-      },
-    },
-  },
+  // build: {
+  //   rollupOptions: {
+  //     // https://rollupjs.org/guide/en/#outputmanualchunks
+  //     output: {
+  //       manualChunks: {
+  //         "main-chunk": [
+  //           "./src/pages/index.vue",
+  //           "./src/pages/Fun.vue",
+  //           "./src/pages/About.vue",
+  //         ],
+  //       },
+  //     },
+  //   },
+  // },
 });
 
 export default config;
