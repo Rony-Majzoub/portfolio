@@ -157,6 +157,8 @@ export default {
   font-family: "Satoshi-Variable";
   font-display: swap;
   src: local("Satoshi Variable"),
+    url(./fonts/satoshi_variable/Satoshi-Variable.woff2) format("woff2"),
+    url(./fonts/satoshi_variable/Satoshi-Variable.woff) format("woff"),
     url(./fonts/satoshi_variable/Satoshi-Variable.ttf) format("truetype");
 }
 // @font-face {
