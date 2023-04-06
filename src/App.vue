@@ -149,34 +149,36 @@ export default {
 @import url("https://use.typekit.net/sdt4vtw.css");
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
 @import url("https://rsms.me/inter/inter.css");
 
 @font-face {
   font-family: "Satoshi-Variable";
   font-display: swap;
-  src: local("Satoshi-Variable"),
+  src: local("Satoshi Variable"),
     url(./fonts/satoshi_variable/Satoshi-Variable.ttf) format("truetype");
 }
-@font-face {
-  font-family: "Nunito-Variable";
-  font-display: swap;
-  src: local("Nunito-Variable"),
-    url(./fonts/nunito_variable/Nunito-Variable.ttf) format("truetype");
-}
-@font-face {
-  font-family: "DM-Sans";
-  font-display: swap;
-  font-weight: 500;
-  src: local("DM-Sans"),
-    url(./fonts/dm_sans/DMSans-Medium.ttf) format("truetype");
-}
-@font-face {
-  font-family: "DM-Sans";
-  font-display: swap;
-  font-weight: 400;
-  src: local("DM-Sans"),
-    url(./fonts/dm_sans/DMSans-Regular.ttf) format("truetype");
-}
+// @font-face {
+//   font-family: "Nunito-Variable";
+//   font-display: swap;
+//   src: local("Nunito Variable"),
+//     url(./fonts/nunito_variable/Nunito-Variable.ttf) format("truetype");
+// }
+// @font-face {
+//   font-family: "DM-Sans";
+//   font-display: swap;
+//   font-weight: 500;
+//   src: local("DM Sans-Medium"),
+//     url(./fonts/dm_sans/DMSans-Medium.ttf) format("truetype");
+// }
+// @font-face {
+//   font-family: "DM-Sans";
+//   font-display: swap;
+//   font-weight: 400;
+//   src: local("DM Sans-Regular"),
+//     url(./fonts/dm_sans/DMSans-Regular.ttf) format("truetype");
+// }
 
 html {
   scroll-behavior: smooth;

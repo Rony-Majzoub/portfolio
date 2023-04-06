@@ -221,28 +221,28 @@ export default {
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute(
         "style",
-        "color: #f6f6f6; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', 'Inter', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        "color: #f6f6f6; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     var silk = document.querySelectorAll(".text-unbleached-silk");
     for (var i = 0; i < silk.length; i++) {
       silk[i].setAttribute(
         "style",
-        "color: #73e586; font-family: 'poster-gothic-atf', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', 'Inter', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
+        "color: #73e586; font-family: 'poster-gothic-atf', 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
       );
     }
     var cameo = document.querySelectorAll(".text-cameo-pink");
     for (var i = 0; i < cameo.length; i++) {
       cameo[i].setAttribute(
         "style",
-        "color: #fbc2d3; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', 'Inter', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        "color: #fbc2d3; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     var pastel = document.querySelectorAll(".text-pastel-pink");
     for (var i = 0; i < pastel.length; i++) {
       pastel[i].setAttribute(
         "style",
-        "color: #ffb038; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', 'Inter', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        "color: #ffb038; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     var eggplant = document.querySelectorAll(".bg-eggplant");

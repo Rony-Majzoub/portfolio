@@ -309,28 +309,28 @@ export default {
     for (var i = 0; i < melon.length; i++) {
       melon[i].setAttribute(
         "style",
-        "font-family: 'Inter var', 'Inter', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        "font-family: 'Inter var', 'DM Sans', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     var silk = document.querySelectorAll(".text-unbleached-silk");
     for (var i = 0; i < silk.length; i++) {
       silk[i].setAttribute(
         "style",
-        "font-family: 'DM-Sans', 'Inter var', 'Inter', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        "font-family: 'DM Sans', 'Inter var', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     var cameo = document.querySelectorAll(".text-cameo-pink");
     for (var i = 0; i < cameo.length; i++) {
       cameo[i].setAttribute(
         "style",
-        "font-family: 'DM-Sans', 'Inter var', 'Inter', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        "font-family: 'DM Sans', 'Inter var', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     var pastel = document.querySelectorAll(".text-pastel-pink");
     for (var i = 0; i < pastel.length; i++) {
       pastel[i].setAttribute(
         "style",
-        "font-family: 'DM-Sans', 'Inter var', 'Inter', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        "font-family: 'DM Sans', 'Inter var', 'articulat-cf', 'neue-haas-grotesk-text', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
       );
     }
     document
