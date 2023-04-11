@@ -202,11 +202,8 @@ export default {
   beforeCreate() {
     document.querySelector("body").setAttribute("style", "background:#212121");
     document
-      .querySelector("header")
-      .setAttribute(
-        "style",
-        "background: radial-gradient( rgba(0,0,0,0) 1px,#212121 1px ) 0px 0px/8px 8px"
-      );
+      .querySelector(".navigation-overlay")
+      .setAttribute("style", "background: #212121");
     document
       .querySelector(".page-footer")
       .setAttribute("style", "background: #212121");
@@ -313,7 +310,7 @@ export default {
   // Remove all the added styles, and return to default.
   beforeUnmount() {
     document.querySelector("body").setAttribute("style", "");
-    document.querySelector("header").setAttribute("style", "");
+    document.querySelector(".navigation-overlay").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
     document.querySelector(".navbar").setAttribute("style", "");
     var logo = document.querySelectorAll(".fill-melon");

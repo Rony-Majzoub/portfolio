@@ -1,6 +1,8 @@
 <template>
   <header
-    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 pb-2 pt-3 z-50 bg-transparent bg-gradient-dot bg-[length:8px_8px] duration-500 ease-out-expo">
+    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 pb-2 pt-3 z-50 duration-500 ease-out-expo">
+    <div
+      class="navigation-overlay absolute w-full h-full bg-black-coffee -z-50 duration-500 ease-out-expo"></div>
     <div
       class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
@@ -291,6 +293,11 @@ html {
   top: -16px;
   left: 0;
   background-color: currentColor;
+}
+
+.navigation-overlay {
+  mask-image: radial-gradient(rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 1) 1px);
+  mask-size: 8px 8px;
 }
 
 // @keyframes noise {

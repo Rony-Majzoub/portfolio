@@ -187,11 +187,8 @@ export default {
     //   .querySelector(".nav-menu")
     //   .setAttribute("style", "background:#fef8ea");
     document
-      .querySelector("header")
-      .setAttribute(
-        "style",
-        "background: radial-gradient( rgba(0,0,0,0) 1px,#fef8ea 1px ) 0px 0px/8px 8px"
-      );
+      .querySelector(".navigation-overlay")
+      .setAttribute("style", "background: #fef8ea");
     document
       .querySelector(".page-footer")
       .setAttribute("style", "background:#fef8ea");
@@ -309,7 +306,7 @@ export default {
   // Remove all the added styles, and return to default.
   beforeUnmount() {
     document.querySelector("body").setAttribute("style", "");
-    document.querySelector("header").setAttribute("style", "");
+    document.querySelector(".navigation-overlay").setAttribute("style", "");
     document.querySelector(".page-footer").setAttribute("style", "");
     document.querySelector(".navbar").setAttribute("style", "");
     // var burger = document.querySelectorAll(".burger");
