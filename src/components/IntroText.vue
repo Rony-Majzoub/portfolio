@@ -16,16 +16,16 @@
       <!-- Mobile Variant (extra width) -->
       <!-- The width dynamically changes based on the width-percentage property given to each role. -->
       <span
-        :style="'width: ' + role[0].mobileWidth + '%'"
+        :style="'width: ' + role[role.length - 1].mobileWidth + '%'"
         class="sm:!hidden word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 pr-16 decoration-4 md:decoration-8 transform-gpu">
-        {{ role[0].name }}.
+        {{ role[role.length - 1].name }}.
       </span>
       <!-- Desktop Variant (normal width) -->
       <!-- The width dynamically changes based on the width-percentage property given to each role. -->
       <span
-        :style="'width: ' + role[0].desktopWidth + '%'"
+        :style="'width: ' + role[role.length - 1].desktopWidth + '%'"
         class="!hidden sm:!inline-block word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 5xl:p-8 decoration-4 md:decoration-8 transform-gpu">
-        {{ role[0].name }}.
+        {{ role[role.length - 1].name }}.
       </span>
       <br />
     </h1>
@@ -42,11 +42,11 @@ export default {
       role: [
         { name: "digital designer", desktopWidth: "63", mobileWidth: "80" },
         { name: "UI designer", desktopWidth: "48", mobileWidth: "63" },
-        { name: "UX designer", desktopWidth: "52", mobileWidth: "67" },
+        { name: "motion designer", desktopWidth: "67", mobileWidth: "83" },
         { name: "web developer", desktopWidth: "62", mobileWidth: "78" },
+        { name: "UX designer", desktopWidth: "52", mobileWidth: "67" },
         { name: "3D artist", desktopWidth: "38", mobileWidth: "50" },
         // "product designer",
-        { name: "motion designer", desktopWidth: "67", mobileWidth: "83" },
         { name: "quick learner", desktopWidth: "55", mobileWidth: "70" },
         { name: "problem solver", desktopWidth: "62", mobileWidth: "79" },
       ],
