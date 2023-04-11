@@ -42,9 +42,9 @@ export default {
       role: [
         { name: "digital designer", desktopWidth: "63", mobileWidth: "80" },
         { name: "UI designer", desktopWidth: "48", mobileWidth: "63" },
+        { name: "UX designer", desktopWidth: "52", mobileWidth: "67" },
         { name: "motion designer", desktopWidth: "67", mobileWidth: "83" },
         { name: "web developer", desktopWidth: "62", mobileWidth: "78" },
-        { name: "UX designer", desktopWidth: "52", mobileWidth: "67" },
         { name: "3D artist", desktopWidth: "38", mobileWidth: "50" },
         // "product designer",
         { name: "quick learner", desktopWidth: "55", mobileWidth: "70" },
