@@ -43,7 +43,7 @@
       </div>
     </transition>
   </router-view>
-  <navbar></navbar>
+  <navbarOld></navbarOld>
   <footer
     class="page-footer relative flex justify-center items-center lg:h-auto bg-black-coffee bottom-32 lg:bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 footer-animation">
     <div
