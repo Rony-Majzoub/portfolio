@@ -1,6 +1,6 @@
 <template>
   <header
-    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 pb-2 pt-3 z-50 duration-500 ease-out-expo">
+    class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 pb-2 pt-3 z-40 duration-500 ease-out-expo">
     <div
       class="navigation-overlay absolute w-full h-full bg-black-coffee -z-50 duration-500 ease-out-expo"></div>
     <div
