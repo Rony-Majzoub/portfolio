@@ -14,7 +14,7 @@
       link-text="View Prototype"
       link="https://www.figma.com/proto/aUlHTd0IJNcnLPpsiRhlhD/FemTech-Design-(Personal-Copy)?page-id=1229%3A944&node-id=1253-4966&viewport=-2762%2C454%2C0.14&scaling=scale-down&starting-point-node-id=1253%3A4966"
       bg-color="#A191F2" />
-    <ProjectTags client="Yrgo DD21, WIT Ventures" duration="6 weeks" />
+    <ProjectTags client="Yrgo DD21, DAYA, OTII Health" duration="6 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>
