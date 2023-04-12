@@ -14,7 +14,7 @@
           <div class="h-min w-fit">
             <router-link
               to="/about"
-              class="name-link relative font-bold text-lg leading-6 text-melon max-w-prose whitespace-pre-line transition-all duration-300">
+              class="name-link relative font-normal text-base text-melon max-w-prose whitespace-pre-line transition-all duration-300">
               Rony Majzoub
             </router-link>
           </div>

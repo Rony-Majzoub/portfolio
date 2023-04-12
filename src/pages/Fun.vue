@@ -15,6 +15,17 @@
         </p>
       </div>
       <FunCardMobile
+        title="Otii"
+        tag="Digital Prototype"
+        image="otii_mobile.png"
+        image-link="v1681288212/portfolio/fun/otii/otii_mobile.png"
+        link="fun/otii"
+        bg-color="#A191F2"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)"
+        device-color="#BFB2FF"
+        :device-border="true" />
+      <FunCardMobile
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie_mobile.png"
@@ -40,13 +51,13 @@
         bg-color="#eaeae8"
         title-color="var(--eggplant)"
         subtitle-color="var(--black-coffee)" />
-      <FunCard
+      <!-- <FunCard
         title="Buratino"
         tag="Website & App"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="fun/buratino"
-        bg-color="#ba0909" />
+        bg-color="#ba0909" /> -->
       <FunCardMobile
         title="Information Screen"
         tag="Digital Prototype"
