@@ -229,7 +229,7 @@ export default {
           portfolioLink: "https://www.linrinnalindstrom.com/",
         },
         {
-          teamName: "Per-Emil Lundqvist",
+          teamName: "Albin Andersson",
         },
         {
           teamName: "Alexander Mellby",
@@ -238,7 +238,7 @@ export default {
           teamName: "Oliver Davis",
         },
         {
-          teamName: "Albin Andersson",
+          teamName: "Per-Emil Lundqvist",
         },
       ],
       // Data-list of categories to be shown in ProjectTags.
