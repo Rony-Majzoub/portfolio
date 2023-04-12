@@ -6,7 +6,7 @@
     <div class="flex flex-1 justify-center items-center p-10 pb-0">
       <!-- Image Element -->
       <div
-        class="max-w-full max-h-full flex-auto rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw] overflow-hidden group-hover:-translate-y-1 group-hover:shadow-2xl shadow-xl group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300 transform-gpu">
+        class="max-w-full max-h-full flex-auto rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw] overflow-hidden lg:group-hover:-translate-y-1 lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300 transform-gpu">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
@@ -46,7 +46,7 @@
         {{ tag }}
       </p> -->
       <p
-        class="sm:block hidden text-pastel-pink text-right font-semibold text-xs tracking-widest uppercase antialiased -mr-2 opacity-0 group-hover:opacity-100 group-hover:mr-3 transition-all ease-in-out duration-300"
+        class="sm:block hidden text-pastel-pink text-right font-semibold text-xs tracking-widest uppercase antialiased -mr-2 opacity-0 lg:group-hover:opacity-100 lg:group-hover:mr-3 transition-all ease-in-out duration-300"
         :style="{ color: subtitleColor }">
         View case
       </p>

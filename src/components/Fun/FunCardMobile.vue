@@ -7,7 +7,7 @@
       class="flex flex-1 justify-center items-center p-6 pb-3 lg:p-10 lg:pb-6">
       <!-- Image Element -->
       <div
-        class="max-h-full h-full relative flex-auto rounded-lg overflow-hidden group-hover:-translate-y-1 drop-shadow-xl group-hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)] transition-all ease-in-out duration-300 transform-gpu">
+        class="max-h-full h-full relative flex-auto rounded-lg overflow-hidden lg:group-hover:-translate-y-1 drop-shadow-xl lg:group-hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)] transition-all ease-in-out duration-300 transform-gpu">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
@@ -48,7 +48,7 @@
         {{ tag }}
       </p> -->
       <p
-        class="sm:block hidden text-pastel-pink text-right font-semibold text-xs tracking-widest uppercase antialiased -mr-2 opacity-0 group-hover:opacity-100 group-hover:mr-3 transition-all ease-in-out duration-300"
+        class="sm:block hidden text-pastel-pink text-right font-semibold text-xs tracking-widest uppercase antialiased -mr-2 opacity-0 lg:group-hover:opacity-100 lg:group-hover:mr-3 transition-all ease-in-out duration-300"
         :style="{ color: subtitleColor }">
         View case
       </p>
