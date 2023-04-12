@@ -21,7 +21,7 @@
         image-link="v1681288212/portfolio/fun/otii/otii_mobile.png"
         link="fun/otii"
         bg-color="#A191F2"
-        title-color="var(--eggplant)"
+        title-color="var(--black-coffee)"
         subtitle-color="var(--black-coffee)"
         device-color="#BFB2FF"
         :device-border="true" />
