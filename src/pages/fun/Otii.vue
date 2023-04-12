@@ -47,6 +47,10 @@ export default {
           teamName: "Samuel Boquist",
           portfolioLink: "https://www.samuelboquist.se/",
         },
+        {
+          teamName: "Grace O'Donnell",
+          portfolioLink: "https://www.linkedin.com/in/grace-emma-o-donnell/",
+        },
       ],
       // Data-list of categories to be shown in ProjectTags.
       categories: [
