@@ -1,5 +1,6 @@
 <template>
-  <div class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-2">
+  <div
+    class="lg:col-start-2 lg:col-end-[-2] max-lg:w-screen col-span-full flex flex-col gap-2">
     <div
       class="relative aspect-video rounded-lg bg-eggplant"
       :style="{ backgroundColor: bgColor }">

@@ -13,8 +13,8 @@
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
-          width="216"
-          height="384"
+          width="432"
+          height="768"
           class="cld-responsive object-contain relative inset-0 text-[0] w-auto h-full rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-transparent`]:
@@ -25,8 +25,8 @@
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
-          width="216"
-          height="384"
+          width="432"
+          height="768"
           class="cld-responsive high-def object-contain w-auto mx-auto h-full absolute inset-0 text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8`]:
