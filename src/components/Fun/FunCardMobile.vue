@@ -1,13 +1,13 @@
 <template>
   <router-link
-    class="cursor-pointer flex flex-col bg-eggplant aspect-[4/3] max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
+    class="cursor-pointer flex flex-col items-center bg-eggplant aspect-[4/3] w-full h-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
     :to="{ path: `/${link}` }"
     :style="{ backgroundColor: bgColor }">
     <div
-      class="flex flex-1 justify-center items-center p-6 pb-3 lg:p-10 lg:pb-6">
+      class="flex justify-center flex-1 min-h-0 min-w-0 h-auto max-w-fit max-h-fit p-6 pb-3 lg:p-10 lg:pb-6">
       <!-- Image Element -->
       <div
-        class="max-h-full h-full relative flex-auto rounded-lg overflow-hidden lg:group-hover:-translate-y-1 drop-shadow-xl lg:group-hover:drop-shadow-[0_25px_25px_rgba(0,0,0,0.25)] transition-all ease-in-out duration-300 transform-gpu">
+        class="flex justify-center rounded-lg lg:group-hover:-translate-y-1 transition-all ease-in-out duration-300 transform-gpu">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
@@ -15,7 +15,7 @@
           :src="`/assets/img/${image}`"
           width="216"
           height="384"
-          class="cld-responsive absolute inset-0 object-contain mx-auto w-auto h-full text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden"
+          class="cld-responsive object-contain relative inset-0 text-[0] w-auto h-full rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-transparent`]:
               deviceBorder,
@@ -27,7 +27,7 @@
           :src="`/assets/img/${image}`"
           width="216"
           height="384"
-          class="cld-responsive high-def absolute inset-0 object-contain mx-auto w-auto h-full text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden"
+          class="cld-responsive high-def object-contain w-auto mx-auto h-full absolute inset-0 text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8`]:
               deviceBorder,
@@ -37,7 +37,7 @@
     </div>
     <!-- Text Element -->
     <div
-      class="transition-all ease-in-out flex flex-row justify-between items-baseline pb-4 bottom-0 inset-x-0 text-left px-6">
+      class="transition-all ease-in-out flex flex-row justify-between items-baseline self-stretch pb-4 bottom-0 inset-x-0 text-left px-6">
       <h2
         class="text-melon font-bold text-lg xl:text-xl z-10"
         :style="{ color: titleColor }">
