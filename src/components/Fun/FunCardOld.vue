@@ -1,21 +1,20 @@
 <template>
   <router-link
-    class="cursor-pointer flex flex-col items-center bg-eggplant aspect-[4/3] w-full h-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
+    class="cursor-pointer flex flex-col bg-eggplant aspect-[4/3] max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
     :to="{ path: `/${link}` }"
     :style="{ backgroundColor: bgColor }">
-    <div
-      class="flex justify-center flex-1 min-h-0 min-w-0 h-auto max-w-fit max-h-fit p-6 pb-3 lg:p-10 lg:pb-6">
+    <div class="flex flex-1 justify-center items-center p-10 pb-0">
       <!-- Image Element -->
       <div
-        class="flex justify-center items-center rounded-lg lg:group-hover:-translate-y-1 transition-all ease-in-out duration-300 transform-gpu">
+        class="max-w-full max-h-full flex-auto rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw] overflow-hidden lg:group-hover:-translate-y-1 lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300 transform-gpu">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
-          width="432"
-          height="768"
-          class="cld-responsive object-contain relative text-[0] w-auto max-w-full h-fit max-h-full rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300"
+          width="768"
+          height="432"
+          class="cld-responsive relative object-contain w-full h-full text-[0] rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw]"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-transparent`]:
               deviceBorder,
@@ -25,19 +24,18 @@
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
-          width="432"
-          height="768"
-          class="cld-responsive high-def object-contain w-auto max-w-full h-fit min-h-fit max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden"
+          width="768"
+          height="432"
+          class="cld-responsive high-def absolute top-0 left-0 object-contain w-full h-full text-[0] rounded-lg sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.70vw]"
           :class="{
-            [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8`]:
+            [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-black`]:
               deviceBorder,
-          }"
-          :style="{ borderColor: deviceColor }" />
+          }" />
       </div>
     </div>
     <!-- Text Element -->
     <div
-      class="transition-all ease-in-out flex flex-row justify-between items-baseline self-stretch pb-4 bottom-0 inset-x-0 text-left px-6">
+      class="transition-all ease-in-out flex flex-row justify-between items-baseline pb-4 bottom-0 inset-x-0 text-left px-6">
       <h2
         class="text-melon font-bold text-lg xl:text-xl z-10"
         :style="{ color: titleColor }">
@@ -62,7 +60,7 @@
 <script>
 import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
 export default {
-  name: "FunCard",
+  name: "FunCardOld",
   props: {
     title: {
       default: "Project Title",
@@ -94,10 +92,6 @@ export default {
     },
     subtitleColor: {
       default: "var(--pastel-pink)",
-      type: String,
-    },
-    deviceColor: {
-      default: "#000000",
       type: String,
     },
     deviceBorder: {

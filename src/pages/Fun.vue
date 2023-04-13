@@ -14,7 +14,7 @@
           The usual stuff, you know?
         </p>
       </div>
-      <FunCardMobile
+      <FunCard
         title="Otii"
         tag="Digital Prototype"
         image="otii_mobile.png"
@@ -25,7 +25,7 @@
         subtitle-color="var(--black-coffee)"
         device-color="#BFB2FF"
         :device-border="true" />
-      <FunCardMobile
+      <FunCard
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie_mobile.png"
@@ -58,7 +58,7 @@
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="fun/buratino"
         bg-color="#ba0909" /> -->
-      <FunCardMobile
+      <FunCard
         title="Information Screen"
         tag="Digital Prototype"
         image="connected_splitscreen.png"
@@ -85,7 +85,7 @@
         </p>
       </div>
 
-      <FunCardMobile
+      <FunCard
         title="10A Arkitektur"
         tag="2D Animation"
         image="10a_thumbnail.png"
