@@ -1,21 +1,23 @@
 <template>
   <div
-    class="lg:col-start-2 lg:col-end-[-2] max-lg:w-screen col-span-full flex flex-col gap-2">
+    class="lg:col-start-2 lg:col-end-[-2] max-lg:w-screen col-span-full h-full w-full flex flex-col gap-2">
     <div
-      class="relative aspect-video lg:rounded-lg overflow-hidden bg-eggplant"
+      class="relative md:aspect-video lg:rounded-lg h-auto w-full overflow-hidden bg-eggplant"
       :style="{ backgroundColor: bgColor }">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
         :alt="`${altText}`"
-        class="cld-responsive absolute object-cover object-[center_60%] w-full h-full text-[0]" />
+        width="768"
+        height="432"
+        class="cld-responsive relative md:absolute object-contain md:object-cover object-[center_60%] w-full h-auto md:h-full text-[0]" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
         :alt="`${altText}`"
-        class="cld-responsive high-def absolute object-cover object-[center_60%] w-full h-full text-[0]" />
+        class="cld-responsive high-def inset-0 absolute object-contain md:object-cover object-[center_60%] w-full h-auto md:h-full text-[0]" />
       <!-- <img
       class="object-cover object-[center_60%] w-full max-h-full rounded-lg"
       width="1280"

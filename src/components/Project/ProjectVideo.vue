@@ -1,15 +1,17 @@
 <template>
   <div
-    class="lg:col-start-2 lg:col-end-[-2] max-lg:w-screen col-span-full flex flex-col gap-2">
+    class="lg:col-start-2 lg:col-end-[-2] max-lg:w-screen col-span-full h-full w-full flex flex-col gap-2">
     <div
-      class="relative aspect-video rounded-lg bg-eggplant"
+      class="relative md:aspect-video lg:rounded-lg w-full h-auto overflow-hidden bg-eggplant"
       :style="{ backgroundColor: bgColor }">
       <!-- Sharp Final Video (Cloudinary) -->
       <video
         :data-src="`https://res.cloudinary.com/rony-majzoub/video/upload/${videoLink}`"
         :src="`/assets/img/${video}`"
         :alt="`${altText}`"
-        class="cld-responsive high-def absolute object-contain object-center w-full h-full rounded-lg text-[0]"
+        width="768"
+        height="432"
+        class="cld-responsive high-def relative md:absolute object-contain object-center w-full h-auto md:h-full lg:rounded-lg text-[0]"
         controls />
       <!-- <img
       class="object-cover object-[center_60%] w-full max-h-full rounded-lg"
