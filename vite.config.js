@@ -40,15 +40,15 @@ const config = defineConfig({
     }),
     Icons(),
   ],
-  css: {
-    preprocessorOptions: {
-      scss: {
-        // example : additionalData: `@import "./src/design/styles/variables";`
-        // dont need include file extend .scss
-        additionalData: `@import "./src/styles/_variables";`,
-      },
-    },
-  },
+  // css: {
+  //   preprocessorOptions: {
+  //     scss: {
+  //       // example : additionalData: `@import "./src/design/styles/variables";`
+  //       // dont need include file extend .scss
+  //       additionalData: `@import "./src/styles/_variables";`,
+  //     },
+  //   },
+  // },
   // build: {
   //   rollupOptions: {
   //     // https://rollupjs.org/guide/en/#outputmanualchunks

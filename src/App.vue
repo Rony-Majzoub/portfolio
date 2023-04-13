@@ -154,6 +154,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
 @import url("https://rsms.me/inter/inter.css");
+@import "styles/variables";
 
 @font-face {
   font-family: "Satoshi-Variable";
