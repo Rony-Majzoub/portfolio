@@ -1,22 +1,22 @@
 :root {
   --animation-curve: cubic-bezier(0.45, 0.1, 0.25, 1);
-  --border-radius: 1.25rem;
+  // --border-radius: 1.25rem;
 
-  /* Text-size styles */
-  /* base size: body-1---helvetica -neue -regular (16px) */
-  --h1: 6rem;
-  --h2: 3.75rem;
-  --h3: 3rem;
-  --h4: 2.12rem;
-  --h5: 1.5rem;
-  --h6: 1.25rem;
-  --subtitle-1: 1rem;
-  --subtitle-2: 0.88rem;
-  --body-1: 1rem;
-  --body-2: 0.88rem;
-  --button: 0.88rem;
-  --caption: 0.75rem;
-  --overline: 0.62rem;
+  // /* Text-size styles */
+  // /* base size: body-1---helvetica -neue -regular (16px) */
+  // --h1: 6rem;
+  // --h2: 3.75rem;
+  // --h3: 3rem;
+  // --h4: 2.12rem;
+  // --h5: 1.5rem;
+  // --h6: 1.25rem;
+  // --subtitle-1: 1rem;
+  // --subtitle-2: 0.88rem;
+  // --body-1: 1rem;
+  // --body-2: 0.88rem;
+  // --button: 0.88rem;
+  // --caption: 0.75rem;
+  // --overline: 0.62rem;
 
   /* Color styles */
   --seashell: #fff1eb;
@@ -31,155 +31,155 @@
   --font-primary: "articulat-cf", "neue-haas-grotesk-text", "Inter var", Helvetica Neue, Helvetica, Arial,
     system-ui, sans-serif;
 
-  // font size
-  --text-base-size: 1rem; // body font-size
-  --text-scale-ratio: 1.15; // multiplier used to generate the type scale values 👇
+  // // font size
+  // --text-base-size: 1rem; // body font-size
+  // --text-scale-ratio: 1.15; // multiplier used to generate the type scale values 👇
 
-  // line-height
-  --body-line-height: 1.4;
-  --heading-line-height: 1.2;
+  // // line-height
+  // --body-line-height: 1.4;
+  // --heading-line-height: 1.2;
 
-  // type scale
-  --text-xs: calc(
-    (var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio)
-  );
-  --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
-  --text-md: calc(var(--text-sm) * var(--text-scale-ratio));
-  --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
-  --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
-  --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
-  --text-3xl: calc(var(--text-xxl) * var(--text-scale-ratio));
-  --text-4xl: calc(var(--text-3xl) * var(--text-scale-ratio));
-  --text-5xl: calc(var(--text-4xl) * var(--text-scale-ratio));
-  --text-6xl: calc(var(--text-5xl) * var(--text-scale-ratio));
+  // // type scale
+  // --text-xs: calc(
+  //   (var(--text-unit) / var(--text-scale-ratio)) / var(--text-scale-ratio)
+  // );
+  // --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+  // --text-md: calc(var(--text-sm) * var(--text-scale-ratio));
+  // --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+  // --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+  // --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+  // --text-3xl: calc(var(--text-xxl) * var(--text-scale-ratio));
+  // --text-4xl: calc(var(--text-3xl) * var(--text-scale-ratio));
+  // --text-5xl: calc(var(--text-4xl) * var(--text-scale-ratio));
+  // --text-6xl: calc(var(--text-5xl) * var(--text-scale-ratio));
 
-  // unit - don't modify unless you want to change the typography unit (e.g., from Rem to Em units)
-  --text-unit: var(--text-base-size); // if Em units → --text-unit: 1em;
-}
-
-$breakpoints: (
-  xs: 32rem,
-  // ~512px
-  sm: 48rem,
-  // ~768px
-  md: 64rem,
-  // ~1024px
-  lg: 80rem,
-  // ~1280px
-  xl: 90rem // ~1440px,,,
-) !default;
-
-@mixin breakpoint($breakpoint, $logic: false) {
-  @if ($logic) {
-    @media #{$logic} and (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
-      @content;
-    }
-  } @else {
-    @media (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
-      @content;
-    }
-  }
+  // // unit - don't modify unless you want to change the typography unit (e.g., from Rem to Em units)
+  // --text-unit: var(--text-base-size); // if Em units → --text-unit: 1em;
 }
 
-@mixin reset-mp {
-  padding: 0;
-  margin: 0;
-}
+// $breakpoints: (
+//   xs: 32rem,
+//   // ~512px
+//   sm: 48rem,
+//   // ~768px
+//   md: 64rem,
+//   // ~1024px
+//   lg: 80rem,
+//   // ~1280px
+//   xl: 90rem // ~1440px,,,
+// ) !default;
 
-@include breakpoint(md) {
-  :root {
-    --text-base-size: 1.25rem;
-    --text-scale-ratio: 1.25;
-  }
-}
-@mixin h1 {
-  font-weight: 500;
-  font-size: var(--text-5xl);
-  line-height: var(--heading-line-height);
-  letter-spacing: -0.11rem;
-  @include reset-mp;
-}
-@mixin h2 {
-  font-weight: 500;
-  font-size: var(--text-4xl);
-  line-height: var(--heading-line-height);
-  letter-spacing: -0.04rem;
-  @include reset-mp;
-}
-@mixin h3 {
-  font-weight: 500;
-  font-size: var(--text-3xl);
-  line-height: var(--heading-line-height);
-  @include reset-mp;
-}
-@mixin h4 {
-  font-weight: 500;
-  font-size: var(--text-xxl);
-  line-height: var(--heading-line-height);
-  @include reset-mp;
-}
-@mixin h5 {
-  font-weight: 500;
-  font-size: var(--text-xl);
-  line-height: var(--heading-line-height);
-  letter-spacing: 0.18px;
-  @include reset-mp;
-}
-@mixin h6 {
-  font-weight: 700;
-  font-size: var(--text-xl);
-  line-height: var(--heading-line-height);
-  letter-spacing: 0.01rem;
-  @include reset-mp;
-}
-@mixin subtitle-1 {
-  font-weight: 400;
-  font-size: var(--text-md);
-  line-height: var(--body-line-height);
-  letter-spacing: 0.005rem;
-  @include reset-mp;
-}
-@mixin subtitle-2 {
-  font-weight: 500;
-  font-size: var(--text-md);
-  line-height: var(--body-line-height);
-  letter-spacing: 0.01rem;
-  @include reset-mp;
-}
-@mixin body-1 {
-  font-weight: 400;
-  font-size: var(--text-md);
-  line-height: var(--body-line-height);
-  letter-spacing: 0.036rem;
-  @include reset-mp;
-}
-@mixin body-2 {
-  font-weight: 400;
-  font-size: var(--text-sm);
-  line-height: var(--body-line-height);
-  letter-spacing: 0.25px;
-  @include reset-mp;
-}
-@mixin button {
-  font-weight: 500;
-  font-size: var(--text-md);
-  line-height: var(--body-line-height);
-  letter-spacing: 0.1rem;
-  text-transform: uppercase;
-  @include reset-mp;
-}
-@mixin caption {
-  font-weight: 400;
-  font-size: 0.75rem;
-  line-height: var(--body-line-height);
-  letter-spacing: 0.4px;
-  @include reset-mp;
-}
-@mixin overline {
-  font-weight: 400;
-  font-size: var(--text-sm);
-  line-height: var(--body-line-height);
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  @include reset-mp;
-}
+// @mixin breakpoint($breakpoint, $logic: false) {
+//   @if ($logic) {
+//     @media #{$logic} and (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+//       @content;
+//     }
+//   } @else {
+//     @media (min-width: map-get($map: $breakpoints, $key: $breakpoint)) {
+//       @content;
+//     }
+//   }
+// }
+
+// @mixin reset-mp {
+//   padding: 0;
+//   margin: 0;
+// }
+
+// @include breakpoint(md) {
+//   :root {
+//     --text-base-size: 1.25rem;
+//     --text-scale-ratio: 1.25;
+//   }
+// }
+// @mixin h1 {
+//   font-weight: 500;
+//   font-size: var(--text-5xl);
+//   line-height: var(--heading-line-height);
+//   letter-spacing: -0.11rem;
+//   @include reset-mp;
+// }
+// @mixin h2 {
+//   font-weight: 500;
+//   font-size: var(--text-4xl);
+//   line-height: var(--heading-line-height);
+//   letter-spacing: -0.04rem;
+//   @include reset-mp;
+// }
+// @mixin h3 {
+//   font-weight: 500;
+//   font-size: var(--text-3xl);
+//   line-height: var(--heading-line-height);
+//   @include reset-mp;
+// }
+// @mixin h4 {
+//   font-weight: 500;
+//   font-size: var(--text-xxl);
+//   line-height: var(--heading-line-height);
+//   @include reset-mp;
+// }
+// @mixin h5 {
+//   font-weight: 500;
+//   font-size: var(--text-xl);
+//   line-height: var(--heading-line-height);
+//   letter-spacing: 0.18px;
+//   @include reset-mp;
+// }
+// @mixin h6 {
+//   font-weight: 700;
+//   font-size: var(--text-xl);
+//   line-height: var(--heading-line-height);
+//   letter-spacing: 0.01rem;
+//   @include reset-mp;
+// }
+// @mixin subtitle-1 {
+//   font-weight: 400;
+//   font-size: var(--text-md);
+//   line-height: var(--body-line-height);
+//   letter-spacing: 0.005rem;
+//   @include reset-mp;
+// }
+// @mixin subtitle-2 {
+//   font-weight: 500;
+//   font-size: var(--text-md);
+//   line-height: var(--body-line-height);
+//   letter-spacing: 0.01rem;
+//   @include reset-mp;
+// }
+// @mixin body-1 {
+//   font-weight: 400;
+//   font-size: var(--text-md);
+//   line-height: var(--body-line-height);
+//   letter-spacing: 0.036rem;
+//   @include reset-mp;
+// }
+// @mixin body-2 {
+//   font-weight: 400;
+//   font-size: var(--text-sm);
+//   line-height: var(--body-line-height);
+//   letter-spacing: 0.25px;
+//   @include reset-mp;
+// }
+// @mixin button {
+//   font-weight: 500;
+//   font-size: var(--text-md);
+//   line-height: var(--body-line-height);
+//   letter-spacing: 0.1rem;
+//   text-transform: uppercase;
+//   @include reset-mp;
+// }
+// @mixin caption {
+//   font-weight: 400;
+//   font-size: 0.75rem;
+//   line-height: var(--body-line-height);
+//   letter-spacing: 0.4px;
+//   @include reset-mp;
+// }
+// @mixin overline {
+//   font-weight: 400;
+//   font-size: var(--text-sm);
+//   line-height: var(--body-line-height);
+//   letter-spacing: 1.5px;
+//   text-transform: uppercase;
+//   @include reset-mp;
+// }

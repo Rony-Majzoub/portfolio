@@ -8,7 +8,7 @@
         :data-src="`https://res.cloudinary.com/rony-majzoub/video/upload/${videoLink}`"
         :src="`/assets/img/${video}`"
         :alt="`${altText}`"
-        class="cld-responsive high-def absolute object-cover object-[center_60%] w-full h-full rounded-lg text-[0]"
+        class="cld-responsive high-def absolute object-contain object-center w-full h-full rounded-lg text-[0]"
         controls />
       <!-- <img
       class="object-cover object-[center_60%] w-full max-h-full rounded-lg"

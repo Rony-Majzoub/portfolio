@@ -8,11 +8,11 @@
       brief="Animate a custom logo, as well as animating social media content." />
     <ProjectVideo
       class="mb-10"
-      video="spices_of_gaming.mp4"
-      video-link="v1654003119/portfolio/fun/spices_of_gaming.mp4"
-      alt-text="Spices of Gaming"
-      bg-color="#3c3444" />
-    <ProjectTags client="Yrgo DD21" duration="2 weeks" />
+      video="10a_logo_animation.mp4"
+      video-link="v1681303739/portfolio/fun/10a/10a_logo_animation.mp4"
+      alt-text="10A Animation"
+      bg-color="#000000" />
+    <ProjectTags client="10A Arkitektur" duration="2 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
 </template>

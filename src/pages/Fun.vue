@@ -85,6 +85,13 @@
         </p>
       </div>
 
+      <FunCardMobile
+        title="10A Arkitektur"
+        tag="2D Animation"
+        image="10a_thumbnail.png"
+        image-link="v1681303738/portfolio/fun/10a/10a_thumbnail.png"
+        link="fun/10a"
+        bg-color="var(--eggplant)" />
       <FunCard
         title="Puck Animation"
         tag="3D Animation"
