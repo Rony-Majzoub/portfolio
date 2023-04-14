@@ -5,7 +5,7 @@
       Here lies some of my smaller and more fun projects.
     </h1>
     <main
-      class="grid col-span-full gap-6 lg:gap-5 justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 pt-8 sm:pt-16">
+      class="grid col-span-full gap-6 lg:gap-5 justify-items-center grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 3xl:grid-cols-4 5xl:grid-cols-5 pt-8 sm:pt-16">
       <div class="col-span-full place-self-start">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-melon">
           UI/UX Design

@@ -10,12 +10,12 @@
         class="flex justify-center items-center w-full rounded-lg lg:group-hover:-translate-y-1 transition-all ease-in-out duration-300 transform-gpu">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
-          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
+          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
           width="432"
           height="768"
-          class="cld-responsive object-contain relative text-[0] w-auto max-w-full h-fit max-h-full rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 transition-all ease-in-out duration-300"
+          class="cld-responsive object-contain relative text-[0] w-auto max-w-full h-fit max-h-full rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-transparent`]:
               deviceBorder,
@@ -27,7 +27,7 @@
           :src="`/assets/img/${image}`"
           width="432"
           height="768"
-          class="cld-responsive high-def object-contain w-auto max-w-full h-fit min-h-fit max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden"
+          class="cld-responsive high-def opacity-0 object-contain w-auto max-w-full h-fit min-h-fit max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 [transition:opacity_1s,_box-shadow_300ms] !ease-in-out"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8`]:
               deviceBorder,
@@ -115,7 +115,6 @@ export default {
     }
 
     function fadeImg() {
-      this.style.transition = "opacity 1s";
       this.style.opacity = "1";
     }
   },
