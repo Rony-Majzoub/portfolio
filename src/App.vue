@@ -37,7 +37,7 @@
     </div>
   </header>
   <router-view v-slot="{ Component, route }">
-    <transition name="fade-in-up" appear>
+    <transition appear :css="false" @enter="enterElement" @leave="leaveElement">
       <div
         :key="route.name"
         class="grid-cols-12 min-h-[89vh] grid pb-52 lg:pb-28 pt-28">
@@ -144,6 +144,29 @@ export default {
       }
     },
   },
+  methods: {
+    enterElement(el, done) {
+      this.$anime({
+        targets: el,
+        translateY: [50, 0],
+        opacity: [0, 1],
+        duration: 500,
+        delay: 300,
+        easing: "easeOutCubic",
+        complete: done,
+      });
+    },
+    leaveElement(el, done) {
+      this.$anime({
+        targets: el,
+        translateY: [0, 25],
+        opacity: [1, 0],
+        duration: 200,
+        easing: "easeInQuint",
+        complete: done,
+      });
+    },
+  },
 };
 </script>
 
@@ -200,41 +223,41 @@ html {
   display: none;
 }
 
-@keyframes fadeInUp {
-  from {
-    transform: translate3d(0, 50px, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-@keyframes fadeOutDown {
-  from {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-  to {
-    transform: translate3d(0, 25px, 0);
-    opacity: 0;
-  }
-}
-.fade-in-up-leave-active {
-  opacity: 0;
-  animation-duration: 0.2s;
-  animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0); //EaseInQuint
-  animation-fill-mode: both;
-  animation-name: fadeOutDown;
-}
-.fade-in-up-enter-active {
-  opacity: 0;
-  animation-duration: 0.5s;
-  animation-delay: 0.3s;
-  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
-  animation-fill-mode: both;
-  animation-name: fadeInUp;
-}
+// @keyframes fadeInUp {
+//   from {
+//     transform: translate3d(0, 50px, 0);
+//     opacity: 0;
+//   }
+//   to {
+//     transform: translate3d(0, 0, 0);
+//     opacity: 1;
+//   }
+// }
+// @keyframes fadeOutDown {
+//   from {
+//     transform: translate3d(0, 0, 0);
+//     opacity: 1;
+//   }
+//   to {
+//     transform: translate3d(0, 25px, 0);
+//     opacity: 0;
+//   }
+// }
+// .fade-in-up-leave-active {
+//   opacity: 0;
+//   animation-duration: 0.2s;
+//   animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0); //EaseInQuint
+//   animation-fill-mode: both;
+//   animation-name: fadeOutDown;
+// }
+// .fade-in-up-enter-active {
+//   opacity: 0;
+//   animation-duration: 0.5s;
+//   animation-delay: 0.3s;
+//   animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
+//   animation-fill-mode: both;
+//   animation-name: fadeInUp;
+// }
 
 // #app:after {
 //   content: "";
