@@ -169,6 +169,11 @@ html {
   scrollbar-gutter: stable;
   height: 100%;
 }
+@media (max-width: 640px) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
 * {
   font-family: var(--font-primary);
 }
