@@ -116,7 +116,7 @@ const router = createRouter({
     } else {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve({ top: 0, left: 0 });
+          resolve({ top: 0, left: 0, behavior: "smooth" });
         }, 250);
       });
     }

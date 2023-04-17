@@ -169,11 +169,6 @@ html {
   scrollbar-gutter: stable;
   height: 100%;
 }
-@media (max-width: 640px) {
-  html {
-    scroll-behavior: auto !important;
-  }
-}
 * {
   font-family: var(--font-primary);
 }
@@ -183,35 +178,6 @@ html {
 }
 [v-cloak] {
   display: none;
-}
-@media (prefers-reduced-motion) {
-  .fade-in-up-leave-active {
-    animation-name: fadeOutDownReducedMotion !important;
-  }
-  .fade-in-up-enter-active {
-    animation-duration: 0.35s !important;
-    animation-name: fadeInUpReducedMotion !important;
-  }
-}
-@keyframes fadeInUpReducedMotion {
-  from {
-    transform: translate3d(0, -20px, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0, 0px, 0);
-    opacity: 1;
-  }
-}
-@keyframes fadeOutDownReducedMotion {
-  from {
-    transform: translate3d(0, 0px, 0);
-    opacity: 1;
-  }
-  to {
-    transform: translate3d(0, 10px, 0);
-    opacity: 0;
-  }
 }
 @keyframes fadeInUp {
   from {
@@ -247,6 +213,68 @@ html {
   animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
   animation-fill-mode: both;
   animation-name: fadeInUp;
+}
+@media (prefers-reduced-motion) {
+  .fade-in-up-leave-active {
+    animation-name: fadeOutDownReducedMotion !important;
+  }
+  .fade-in-up-enter-active {
+    animation-duration: 0.35s !important;
+    animation-name: fadeInUpReducedMotion !important;
+  }
+}
+@media (max-width: 640px) {
+  .fade-in-up-leave-active {
+    opacity: 0;
+    animation-duration: 0.2s;
+    animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0); //EaseInQuint
+    animation-fill-mode: both;
+    animation-name: fadeOutDownMobile;
+  }
+  .fade-in-up-enter-active {
+    opacity: 0;
+    animation-duration: 0.3s;
+    animation-delay: 0.25s;
+    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
+    animation-fill-mode: both;
+    animation-name: fadeInUpMobile;
+  }
+}
+@keyframes fadeInUpReducedMotion {
+  from {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeOutDownReducedMotion {
+  from {
+    transform: translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+  }
+}
+@keyframes fadeInUpMobile {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeOutDownMobile {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 .nav-desktop::before,
 .nav-contact::before {
