@@ -179,9 +179,38 @@ html {
 [v-cloak] {
   display: none;
 }
+@media (prefers-reduced-motion) {
+  .fade-in-up-leave-active {
+    animation-name: fadeOutDownReducedMotion !important;
+  }
+  .fade-in-up-enter-active {
+    animation-duration: 0.35s !important;
+    animation-name: fadeInUpReducedMotion !important;
+  }
+}
+@keyframes fadeInUpReducedMotion {
+  from {
+    transform: translate3d(0, -20px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeOutDownReducedMotion {
+  from {
+    transform: translate3d(0, 0px, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 10px, 0);
+    opacity: 0;
+  }
+}
 @keyframes fadeInUp {
   from {
-    transform: translate3d(0, -50px, 0);
+    transform: translate3d(0, -40px, 0);
     opacity: 0;
   }
   to {
@@ -195,7 +224,7 @@ html {
     opacity: 1;
   }
   to {
-    transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 20px, 0);
     opacity: 0;
   }
 }
