@@ -148,7 +148,7 @@ export default {
     enterElement(el, done) {
       this.$anime({
         targets: el,
-        translateY: [50, 0],
+        translateY: [40, 0],
         opacity: [0, 1],
         duration: 500,
         delay: 300,
@@ -159,7 +159,7 @@ export default {
     leaveElement(el, done) {
       this.$anime({
         targets: el,
-        translateY: [0, 25],
+        translateY: [0, 20],
         opacity: [1, 0],
         duration: 200,
         easing: "easeInQuint",
