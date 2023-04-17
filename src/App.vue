@@ -181,21 +181,21 @@ html {
 }
 @keyframes fadeInUp {
   from {
-    transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, -50px, 0);
     opacity: 0;
   }
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0px, 0);
     opacity: 1;
   }
 }
 @keyframes fadeOutDown {
   from {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0px, 0);
     opacity: 1;
   }
   to {
-    transform: translate3d(0, 25px, 0);
+    transform: translate3d(0, 50px, 0);
     opacity: 0;
   }
 }
