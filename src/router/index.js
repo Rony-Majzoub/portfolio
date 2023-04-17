@@ -111,13 +111,13 @@ const router = createRouter({
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve({ top: height - 50, left: 0, behavior: "smooth" });
-        }, 200);
+        }, 250);
       });
     } else {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
           resolve({ top: 0, left: 0, behavior: "smooth" });
-        }, 200);
+        }, 250);
       });
     }
     // if (to.hash) {

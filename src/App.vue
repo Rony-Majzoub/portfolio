@@ -37,7 +37,7 @@
     </div>
   </header>
   <router-view v-slot="{ Component, route }">
-    <transition appear :css="false" @enter="enterElement" @leave="leaveElement">
+    <transition name="fade-in-up" appear>
       <div
         :key="route.name"
         class="grid-cols-12 min-h-[89vh] grid pb-52 lg:pb-28 pt-28">
@@ -144,29 +144,6 @@ export default {
       }
     },
   },
-  methods: {
-    enterElement(el, done) {
-      this.$anime({
-        targets: el,
-        translateY: [40, 0],
-        opacity: [0, 1],
-        duration: 500,
-        delay: 300,
-        easing: "easeOutCubic",
-        complete: done,
-      });
-    },
-    leaveElement(el, done) {
-      this.$anime({
-        targets: el,
-        translateY: [0, 20],
-        opacity: [1, 0],
-        duration: 200,
-        easing: "easeInQuint",
-        complete: done,
-      });
-    },
-  },
 };
 </script>
 
@@ -186,26 +163,6 @@ export default {
     url(./fonts/satoshi_variable/Satoshi-Variable.woff2) format("woff2"),
     url(./fonts/satoshi_variable/Satoshi-Variable.ttf) format("truetype");
 }
-// @font-face {
-//   font-family: "Nunito-Variable";
-//   font-display: swap;
-//   src: local("Nunito Variable"),
-//     url(./fonts/nunito_variable/Nunito-Variable.ttf) format("truetype");
-// }
-// @font-face {
-//   font-family: "DM-Sans";
-//   font-display: swap;
-//   font-weight: 500;
-//   src: local("DM Sans-Medium"),
-//     url(./fonts/dm_sans/DMSans-Medium.ttf) format("truetype");
-// }
-// @font-face {
-//   font-family: "DM-Sans";
-//   font-display: swap;
-//   font-weight: 400;
-//   src: local("DM Sans-Regular"),
-//     url(./fonts/dm_sans/DMSans-Regular.ttf) format("truetype");
-// }
 
 html {
   scroll-behavior: smooth;
@@ -222,60 +179,41 @@ html {
 [v-cloak] {
   display: none;
 }
-
-// @keyframes fadeInUp {
-//   from {
-//     transform: translate3d(0, 50px, 0);
-//     opacity: 0;
-//   }
-//   to {
-//     transform: translate3d(0, 0, 0);
-//     opacity: 1;
-//   }
-// }
-// @keyframes fadeOutDown {
-//   from {
-//     transform: translate3d(0, 0, 0);
-//     opacity: 1;
-//   }
-//   to {
-//     transform: translate3d(0, 25px, 0);
-//     opacity: 0;
-//   }
-// }
-// .fade-in-up-leave-active {
-//   opacity: 0;
-//   animation-duration: 0.2s;
-//   animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0); //EaseInQuint
-//   animation-fill-mode: both;
-//   animation-name: fadeOutDown;
-// }
-// .fade-in-up-enter-active {
-//   opacity: 0;
-//   animation-duration: 0.5s;
-//   animation-delay: 0.3s;
-//   animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
-//   animation-fill-mode: both;
-//   animation-name: fadeInUp;
-// }
-
-// #app:after {
-//   content: "";
-//   z-index: 999;
-//   position: fixed;
-//   top: -50%;
-//   left: -50%;
-//   right: -50%;
-//   bottom: -50%;
-//   opacity: 0.5;
-//   width: 200%;
-//   height: 200vh;
-//   background: transparent url("/assets/img/background-noise.png") repeat 0 0;
-//   background-repeat: repeat;
-//   animation: 0.2s infinite noise;
-//   pointer-events: none;
-// }
-
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 50px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+@keyframes fadeOutDown {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    transform: translate3d(0, 25px, 0);
+    opacity: 0;
+  }
+}
+.fade-in-up-leave-active {
+  opacity: 0;
+  animation-duration: 0.2s;
+  animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0); //EaseInQuint
+  animation-fill-mode: both;
+  animation-name: fadeOutDown;
+}
+.fade-in-up-enter-active {
+  opacity: 0;
+  animation-duration: 0.5s;
+  animation-delay: 0.25s;
+  animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
+  animation-fill-mode: both;
+  animation-name: fadeInUp;
+}
 .nav-desktop::before,
 .nav-contact::before {
   content: "";
@@ -293,12 +231,10 @@ html {
 .nav-contact::before {
   bottom: 2px;
 }
-
 .nav-desktop:hover::before,
 .nav-contact:hover::before {
   transform: scaleX(1);
 }
-
 .nav-desktop.router-link-active {
   text-decoration-color: var(--unbleached-silk) !important;
   color: var(--unbleached-silk) !important;
@@ -318,45 +254,8 @@ html {
   left: 0;
   background-color: currentColor;
 }
-
 .navigation-overlay {
   mask-image: radial-gradient(rgba(0, 0, 0, 0) 1px, rgba(0, 0, 0, 1) 1px);
   mask-size: 8px 8px;
 }
-
-// @keyframes noise {
-//   0% {
-//     transform: translate3d(0, 0, 0);
-//   }
-//   10% {
-//     transform: translate3d(-5%, -5%, 0);
-//   }
-//   20% {
-//     transform: translate3d(-10%, 5%, 0);
-//   }
-//   30% {
-//     transform: translate3d(5%, -10%, 0);
-//   }
-//   40% {
-//     transform: translate3d(-5%, 15%, 0);
-//   }
-//   50% {
-//     transform: translate3d(-10%, 5%, 0);
-//   }
-//   60% {
-//     transform: translate3d(15%, 0, 0);
-//   }
-//   70% {
-//     transform: translate3d(0, 10%, 0);
-//   }
-//   80% {
-//     transform: translate3d(-15%, 0, 0);
-//   }
-//   90% {
-//     transform: translate3d(10%, 5%, 0);
-//   }
-//   100% {
-//     transform: translate3d(5%, 0, 0);
-//   }
-// }
 </style>
