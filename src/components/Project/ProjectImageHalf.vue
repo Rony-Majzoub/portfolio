@@ -2,6 +2,7 @@
 <template>
   <div class="flex flex-col gap-2 animation-item">
     <div
+      v-once
       class="flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
       :style="{ backgroundColor: bgColor }">
       <div class="flex flex-1 justify-center items-center p-8">
@@ -10,6 +11,7 @@
           class="max-w-full max-h-full flex-auto rounded-lg overflow-hidden shadow-2xl shadow-[rgb(0,0,0)]/30 transition-all ease-in-out duration-300 transform-gpu">
           <!-- Blurred Placeholder Image (Cloudinary) -->
           <img
+            v-once
             :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_240/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
             :alt="`${altText}`"
             :src="`/assets/img/${image}`"
@@ -18,6 +20,7 @@
             class="cld-responsive relative object-contain w-full h-full text-[0]" />
           <!-- Sharp Final Image (Cloudinary) -->
           <img
+            v-once
             :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
             :alt="`${altText}`"
             :src="`/assets/img/${image}`"
@@ -27,12 +30,13 @@
         </div>
       </div>
     </div>
-    <div class="flex flex-row justify-between">
+    <div v-once class="flex flex-row justify-between">
       <p class="text-cameo-pink font-normal text-sm lg:text-base">
         {{ description }}
       </p>
       <a
         v-if="linkText"
+        v-once
         class="nav-text relative text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
         :href="link"
         target="_blank">

@@ -1,5 +1,6 @@
 <template>
   <router-link
+    v-once
     class="cursor-pointer flex flex-col items-center bg-eggplant aspect-[4/3] w-full h-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md shadow-[#2f2730] transform-gpu"
     :to="{ path: `/${link}` }"
     :style="{ backgroundColor: bgColor }">
@@ -10,6 +11,7 @@
         class="flex justify-center items-center w-full rounded-lg lg:group-hover:-translate-y-1 transition-all ease-in-out duration-300 transform-gpu">
         <!-- Blurred Placeholder Image (Cloudinary) -->
         <img
+          v-once
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
@@ -22,6 +24,7 @@
           }" />
         <!-- Sharp Final Image (Cloudinary) -->
         <img
+          v-once
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
@@ -39,6 +42,7 @@
     <div
       class="transition-all ease-in-out flex flex-row justify-between items-baseline self-stretch pb-4 bottom-0 inset-x-0 text-left px-6">
       <h2
+        v-once
         class="text-melon font-bold text-lg xl:text-xl z-10"
         :style="{ color: titleColor }">
         {{ title }}
@@ -48,6 +52,7 @@
         {{ tag }}
       </p> -->
       <p
+        v-once
         class="sm:block hidden text-pastel-pink text-right font-semibold text-xs tracking-widest uppercase antialiased -mr-2 opacity-0 lg:group-hover:opacity-100 lg:group-hover:mr-3 transition-all ease-in-out duration-300"
         :style="{ color: subtitleColor }">
         View case

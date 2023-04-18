@@ -1,16 +1,19 @@
 <template>
   <div class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-2">
     <div
+      v-once
       class="aspect-video rounded-lg overflow-hidden shadow-md bg-eggplant transform-gpu"
       :style="{ backgroundColor: bgColor }">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
+        v-once
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
         :alt="`${altText}`"
         class="cld-responsive relative object-cover w-full h-full text-[0] aspect-video" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
+        v-once
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
         :alt="`${altText}`"
@@ -23,11 +26,14 @@
       :alt="`${altText}`" /> -->
     </div>
     <div class="flex flex-row justify-between">
-      <p class="text-cameo-pink font-normal text-xs sm:text-sm lg:text-base">
+      <p
+        v-once
+        class="text-cameo-pink font-normal text-xs sm:text-sm lg:text-base">
         {{ description }}
       </p>
       <a
         v-if="linkText"
+        v-once
         class="nav-text relative text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
         :href="link"
         target="_blank">

@@ -12,6 +12,7 @@
         alt="Profile Picture" /> -->
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
+        v-once
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
         width="384"
         height="552"
@@ -20,6 +21,7 @@
         class="cld-responsive absolute object-cover sm:object-scale-down lg:object-cover object-[center_20%] w-full h-96 lg:h-full text-[0] bg-[#070707]" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
+        v-once
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_3.0/${imageLink}`"
         width="384"
         height="552"

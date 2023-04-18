@@ -2,10 +2,12 @@
   <div
     class="lg:col-start-2 lg:col-end-[-2] max-lg:w-screen col-span-full h-full w-full flex flex-col gap-2">
     <div
+      v-once
       class="relative md:aspect-video lg:rounded-lg w-full h-auto overflow-hidden bg-eggplant"
       :style="{ backgroundColor: bgColor }">
       <!-- Sharp Final Video (Cloudinary) -->
       <video
+        v-once
         :data-src="`https://res.cloudinary.com/rony-majzoub/video/upload/${videoLink}`"
         :src="`/assets/img/${video}`"
         :alt="`${altText}`"
@@ -21,11 +23,12 @@
       :alt="`${altText}`" /> -->
     </div>
     <div class="flex flex-row justify-between">
-      <p class="text-cameo-pink font-medium text-sm lg:text-base">
+      <p v-once class="text-cameo-pink font-medium text-sm lg:text-base">
         {{ description }}
       </p>
       <a
         v-if="linkText"
+        v-once
         class="nav-text relative text-right cursor-pointer transition-all duration-200 text-melon text-base font-bold antialiased"
         :href="link"
         target="_blank">

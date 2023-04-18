@@ -199,59 +199,12 @@ export default {
     };
   },
   // Style the body, header and footer on load.
-  beforeCreate() {
-    document.querySelector("body").setAttribute("style", "background:#212121");
-    document
-      .querySelector(".navigation-overlay")
-      .setAttribute("style", "background: #212121");
-    document
-      .querySelector(".page-footer")
-      .setAttribute("style", "background: #212121");
+  beforeMount() {
+    this.stylePageBefore();
   },
   // Style the text and background colors to brand colors.
   mounted() {
-    var logo = document.querySelectorAll(".fill-melon");
-    for (var i = 0; i < logo.length; i++) {
-      logo[i].setAttribute("style", "fill: #73e586");
-    }
-    var melon = document.querySelectorAll(".text-melon");
-    for (var i = 0; i < melon.length; i++) {
-      melon[i].setAttribute(
-        "style",
-        "color: #f6f6f6; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
-      );
-    }
-    var silk = document.querySelectorAll(".text-unbleached-silk");
-    for (var i = 0; i < silk.length; i++) {
-      silk[i].setAttribute(
-        "style",
-        "color: #73e586; font-family: 'poster-gothic-atf', 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
-      );
-    }
-    var cameo = document.querySelectorAll(".text-cameo-pink");
-    for (var i = 0; i < cameo.length; i++) {
-      cameo[i].setAttribute(
-        "style",
-        "color: #fbc2d3; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
-      );
-    }
-    var pastel = document.querySelectorAll(".text-pastel-pink");
-    for (var i = 0; i < pastel.length; i++) {
-      pastel[i].setAttribute(
-        "style",
-        "color: #ffb038; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
-      );
-    }
-    var eggplant = document.querySelectorAll(".bg-eggplant");
-    for (var i = 0; i < eggplant.length; i++) {
-      eggplant[i].setAttribute("style", "background: #333333");
-    }
-    document
-      .querySelector(".navbar")
-      .setAttribute(
-        "style",
-        "border-color: #fbc2d3; background-color: #333333"
-      );
+    this.stylePageMount();
     const callback = (entries) => {
       // The entries variable will contain the list of
       // elements that you are observing. When ever
@@ -309,34 +262,94 @@ export default {
   },
   // Remove all the added styles, and return to default.
   beforeUnmount() {
-    document.querySelector("body").setAttribute("style", "");
-    document.querySelector(".navigation-overlay").setAttribute("style", "");
-    document.querySelector(".page-footer").setAttribute("style", "");
-    document.querySelector(".navbar").setAttribute("style", "");
-    var logo = document.querySelectorAll(".fill-melon");
-    for (var i = 0; i < logo.length; i++) {
-      logo[i].setAttribute("style", "");
-    }
-    var melon = document.querySelectorAll(".text-melon");
-    for (var i = 0; i < melon.length; i++) {
-      melon[i].setAttribute("style", "");
-    }
-    var silk = document.querySelectorAll(".text-unbleached-silk");
-    for (var i = 0; i < silk.length; i++) {
-      silk[i].setAttribute("style", "");
-    }
-    var cameo = document.querySelectorAll(".text-cameo-pink");
-    for (var i = 0; i < cameo.length; i++) {
-      cameo[i].setAttribute("style", "");
-    }
-    var pastel = document.querySelectorAll(".text-pastel-pink");
-    for (var i = 0; i < pastel.length; i++) {
-      pastel[i].setAttribute("style", "");
-    }
-    var eggplant = document.querySelectorAll(".bg-eggplant");
-    for (var i = 0; i < eggplant.length; i++) {
-      eggplant[i].setAttribute("style", "");
-    }
+    this.stylePageUnmount();
+  },
+  methods: {
+    stylePageBefore() {
+      document
+        .querySelector("body")
+        .setAttribute("style", "background:#212121");
+      document
+        .querySelector(".navigation-overlay")
+        .setAttribute("style", "background: #212121");
+      document
+        .querySelector(".page-footer")
+        .setAttribute("style", "background: #212121");
+    },
+    stylePageMount() {
+      var logo = document.querySelectorAll(".fill-melon");
+      for (var i = 0; i < logo.length; i++) {
+        logo[i].setAttribute("style", "fill: #73e586");
+      }
+      var melon = document.querySelectorAll(".text-melon");
+      for (var i = 0; i < melon.length; i++) {
+        melon[i].setAttribute(
+          "style",
+          "color: #f6f6f6; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        );
+      }
+      var silk = document.querySelectorAll(".text-unbleached-silk");
+      for (var i = 0; i < silk.length; i++) {
+        silk[i].setAttribute(
+          "style",
+          "color: #73e586; font-family: 'poster-gothic-atf', 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
+        );
+      }
+      var cameo = document.querySelectorAll(".text-cameo-pink");
+      for (var i = 0; i < cameo.length; i++) {
+        cameo[i].setAttribute(
+          "style",
+          "color: #fbc2d3; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        );
+      }
+      var pastel = document.querySelectorAll(".text-pastel-pink");
+      for (var i = 0; i < pastel.length; i++) {
+        pastel[i].setAttribute(
+          "style",
+          "color: #ffb038; font-family: 'Satoshi-Variable', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+        );
+      }
+      var eggplant = document.querySelectorAll(".bg-eggplant");
+      for (var i = 0; i < eggplant.length; i++) {
+        eggplant[i].setAttribute("style", "background: #333333");
+      }
+      document
+        .querySelector(".navbar")
+        .setAttribute(
+          "style",
+          "border-color: #fbc2d3; background-color: #333333"
+        );
+    },
+    stylePageUnmount() {
+      document.querySelector("body").setAttribute("style", "");
+      document.querySelector(".navigation-overlay").setAttribute("style", "");
+      document.querySelector(".page-footer").setAttribute("style", "");
+      document.querySelector(".navbar").setAttribute("style", "");
+      var logo = document.querySelectorAll(".fill-melon");
+      for (var i = 0; i < logo.length; i++) {
+        logo[i].setAttribute("style", "");
+      }
+      var melon = document.querySelectorAll(".text-melon");
+      for (var i = 0; i < melon.length; i++) {
+        melon[i].setAttribute("style", "");
+      }
+      var silk = document.querySelectorAll(".text-unbleached-silk");
+      for (var i = 0; i < silk.length; i++) {
+        silk[i].setAttribute("style", "");
+      }
+      var cameo = document.querySelectorAll(".text-cameo-pink");
+      for (var i = 0; i < cameo.length; i++) {
+        cameo[i].setAttribute("style", "");
+      }
+      var pastel = document.querySelectorAll(".text-pastel-pink");
+      for (var i = 0; i < pastel.length; i++) {
+        pastel[i].setAttribute("style", "");
+      }
+      var eggplant = document.querySelectorAll(".bg-eggplant");
+      for (var i = 0; i < eggplant.length; i++) {
+        eggplant[i].setAttribute("style", "");
+      }
+    },
   },
 };
 </script>

@@ -2,14 +2,18 @@
   <div
     class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col gap-4 pb-10 text-left">
     <p
+      v-once
       class="info-text text-pastel-pink tracking-widest font-semibold text-sm uppercase antialiased">
       {{ info }}
     </p>
     <h1
+      v-once
       class="title-text text-4xl sm:text-5xl md:text-6xl font-extrabold text-unbleached-silk">
       {{ title }}
     </h1>
-    <p class="brief-text text-melon text-base font-normal">{{ brief }}</p>
+    <p v-once class="brief-text text-melon text-base font-normal">
+      {{ brief }}
+    </p>
   </div>
 </template>
 

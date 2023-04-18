@@ -5,7 +5,7 @@
       <div class="flex flex-col gap-8 pb-10 lg:flex-[0.625]">
         <div class="flex flex-col gap-2">
           <p class="text-lg font-bold text-unbleached-silk">Client</p>
-          <p class="font-normal text-base text-melon max-w-prose">
+          <p v-once class="font-normal text-base text-melon max-w-prose">
             {{ client }}
           </p>
         </div>
@@ -18,10 +18,15 @@
               Rony Majzoub
             </router-link>
           </div>
-          <div v-for="teammate in team" :key="teammate.id" class="h-min w-fit">
+          <div
+            v-for="teammate in team"
+            v-once
+            :key="teammate.id"
+            class="h-min w-fit">
             <!-- If portfolioLink is non-empty, create a. Else, create span. -->
             <component
               :is="teammate.portfolioLink ? 'a' : 'span'"
+              v-once
               :href="teammate.portfolioLink || ''"
               target="_blank"
               class="name-link relative font-normal text-base text-melon max-w-prose whitespace-pre-line transition-all duration-300">
@@ -36,6 +41,7 @@
           <p class="text-lg font-bold text-unbleached-silk">My role</p>
           <p
             v-for="role in roles"
+            v-once
             :key="role.id"
             class="font-normal text-base text-melon max-w-prose">
             {{ role.roleName }}
@@ -43,7 +49,7 @@
         </div>
         <div class="flex flex-col gap-2">
           <p class="text-lg font-bold text-unbleached-silk">Duration</p>
-          <p class="font-normal text-base text-melon max-w-prose">
+          <p v-once class="font-normal text-base text-melon max-w-prose">
             {{ duration }}
           </p>
         </div>
@@ -51,6 +57,7 @@
           <p class="text-lg font-bold text-unbleached-silk">Tools used</p>
           <p
             v-for="tool in tools"
+            v-once
             :key="tool.id"
             class="font-normal text-base text-melon max-w-prose">
             {{ tool.toolName }}

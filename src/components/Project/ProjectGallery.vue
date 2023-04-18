@@ -3,19 +3,22 @@
     class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-4 animation-item">
     <div
       v-if="title.length"
+      v-once
       class="col-span-full place-self-start pt-8 flex flex-col gap-1">
-      <h2 class="text-3xl lg:text-5xl font-bold text-unbleached-silk">
+      <h2 v-once class="text-3xl lg:text-5xl font-bold text-unbleached-silk">
         {{ title }}
       </h2>
-      <p class="text-melon text-base sm:text-lg font-medium">
+      <p v-once class="text-melon text-base sm:text-lg font-medium">
         {{ description }}
       </p>
     </div>
     <div
+      v-once
       class="snap-x snap-proximity flex flex-row self-center items-start overflow-x-scroll max-lg:w-screen gap-4 p-4 sm:p-8 lg:p-12 lg:gap-6 rounded-none lg:rounded-xl shadow-md bg-eggplant transform-gpu"
       :style="{ backgroundColor: galleryColor }">
       <ProjectImageGallery
         v-for="picture in pictures"
+        v-once
         :key="picture.id"
         class="w-[80%] snap-center shrink-0"
         :image="picture.src"

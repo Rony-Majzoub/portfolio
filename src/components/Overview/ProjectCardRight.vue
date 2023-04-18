@@ -3,16 +3,19 @@
     class="max-w-screen-2xl relative lg:flex-row flex flex-col !bg-eggplant rounded-xl overflow-hidden lg:p-0 col-start-2 col-end-[-2] transition-all ease-in-out duration-300 lg:hover:-translate-y-1 lg:hover:shadow-2xl lg:hover:shadow-[#2b212c] animation-item transform-gpu">
     <!-- Image Container -->
     <router-link
+      v-once
       class="relative overflow-hidden lg:w-7/12 aspect-video flex-none h-auto w-full"
       :to="{ path: `/${link}` }">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
+        v-once
         class="cld-responsive absolute object-cover w-full h-full cursor-pointer text-[0] !bg-eggplant"
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480,e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
         :alt="`${title}`" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
+        v-once
         class="cld-responsive high-def absolute object-cover w-full h-full cursor-pointer text-[0]"
         :src="`/assets/img/${image}`"
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
@@ -22,21 +25,24 @@
       class="pt-6 p-8 text-right lg:text-left lg:mb-0 w-full space-y-4 lg:flex lg:flex-col">
       <figcaption class="space-y-2 lg:space-y-4">
         <div
+          v-once
           class="!text-melon font-semibold text-xs lg:text-sm tracking-widest uppercase antialiased">
           {{ tag }}
         </div>
         <div
+          v-once
           class="!text-unbleached-silk font-extrabold text-4xl lg:text-5xl antialiased">
           {{ title }}
         </div>
       </figcaption>
       <blockquote>
-        <p class="text-base lg:text-lg font-normal !text-melon">
+        <p v-once class="text-base lg:text-lg font-normal !text-melon">
           {{ description }}
         </p>
       </blockquote>
       <!-- Mobile Bottom Row (Button) -->
       <project-button
+        v-once
         class="float-right lg:absolute lg:bottom-8 lg:left-8 lg:hidden"
         :short-title="shortTitle"
         @click="$router.push(`/${link}`)"></project-button>
@@ -45,9 +51,11 @@
         <div
           class="flex flex-row items-end xl:items-baseline w-full justify-between gap-4">
           <project-button
+            v-once
             :short-title="shortTitle"
             @click="$router.push(`/${link}`)"></project-button>
           <p
+            v-once
             class="hidden lg:flex lg:text-lg font-semibold !text-pastel-pink text-right">
             {{ category }}
           </p>
