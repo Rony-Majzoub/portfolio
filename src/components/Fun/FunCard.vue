@@ -117,10 +117,6 @@ export default {
     const query = window.matchMedia("(min-width: 1024px)");
     if (query.matches) {
       this.fadeImg();
-    } else {
-      for (let image of images) {
-        image.style.opacity = "1";
-      }
     }
   },
   methods: {
