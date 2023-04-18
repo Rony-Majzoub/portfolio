@@ -1,6 +1,6 @@
 <template>
   <div
-    class="projects grid grid-cols-10 col-span-full place-items-center -mb-28">
+    class="projects grid grid-cols-10 col-span-full place-items-center -mb-28 min-h-screen">
     <div
       class="h-screen col-start-2 col-end-[-2] flex flex-col items-center justify-end">
       <IntroText class="grow" />
@@ -100,7 +100,7 @@
 // import ProjectCardLeft from "@/components/Overview/ProjectCardLeft.vue";
 // import { Vue3Lottie } from "vue3-lottie";
 // import "vue3-lottie/dist/style.css";
-import { defineAsyncComponent, ref } from "vue";
+import { defineAsyncComponent } from "vue";
 
 // const AsyncComp = defineAsyncComponent(() =>
 //   import("./components/MyComponent.vue")

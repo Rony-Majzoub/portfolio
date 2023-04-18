@@ -165,9 +165,13 @@ export default {
 }
 
 html {
-  scroll-behavior: smooth;
   scrollbar-gutter: stable;
   height: 100%;
+}
+@media (min-width: 768px) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 * {
   font-family: var(--font-primary);

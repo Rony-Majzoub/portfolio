@@ -1,5 +1,5 @@
 <template>
-  <div class="grid col-start-2 col-end-[-2] grid-cols-10">
+  <div class="grid col-start-2 col-end-[-2] grid-cols-10 min-h-screen">
     <h1
       class="fun-text text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-unbleached-silk col-span-full sm:col-start-1 sm:col-end-[-2]">
       Here lies some of my smaller and more fun projects.
