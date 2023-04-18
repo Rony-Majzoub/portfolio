@@ -25,7 +25,7 @@
         subtitle-color="var(--black-coffee)"
         device-color="#BFB2FF"
         :device-border="true" />
-      <FunCard
+      <!-- <FunCard
         title="RecyPie"
         tag="Digital Prototype"
         image="recypie_mobile.png"
@@ -51,14 +51,14 @@
         bg-color="#eaeae8"
         title-color="var(--eggplant)"
         subtitle-color="var(--black-coffee)" />
-      <!-- <FunCard
+       <FunCard
         title="Buratino"
         tag="Website & App"
         image="buratino.png"
         image-link="v1652044733/portfolio/buratino/buratino.png"
         link="fun/buratino"
         bg-color="#ba0909" /> -->
-      <FunCard
+      <!-- <FunCard
         title="Information Screen"
         tag="Digital Prototype"
         image="connected_splitscreen.png"
@@ -74,7 +74,7 @@
         link="fun/vacina"
         bg-color="#a2d1fa"
         title-color="var(--eggplant)"
-        subtitle-color="var(--black-coffee)" />
+        subtitle-color="var(--black-coffee)" /> -->
 
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-melon">
@@ -85,7 +85,7 @@
         </p>
       </div>
 
-      <FunCard
+      <!-- <FunCard
         title="10A Arkitektur"
         tag="2D Animation"
         image="10a_thumbnail.png"
@@ -107,7 +107,7 @@
         image="spices_of_gaming_thumbnail.png"
         image-link="v1654003231/portfolio/fun/spices_of_gaming_thumbnail.png"
         link="fun/spicesofgaming"
-        bg-color="#3c3444" />
+        bg-color="#3c3444" /> -->
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-melon">
           3D-Rendering
@@ -116,7 +116,7 @@
           Expect lots of Blender & game engine experiments.
         </p>
       </div>
-      <FunCard
+      <!-- <FunCard
         title="So Good"
         tag="Product Visualization"
         image="so_good.png"
@@ -141,14 +141,14 @@
         bg-color="#c5b8bc"
         title-color="var(--eggplant)"
         subtitle-color="var(--black-coffee)" />
-      <!-- <FunCard
+       <FunCard
         title="Donut Night"
         tag="Modelling & Rendering"
         image="donut_night_render.png"
         image-link="v1653259523/portfolio/fun/Donut_Night_Render.png"
         link="fun/donutnightrender"
         bg-color="#14191e" /> -->
-      <FunCard
+      <!-- <FunCard
         title="Project Punk"
         tag="Modelling & Rendering"
         image="project_punk.jpg"
@@ -168,7 +168,8 @@
         image="anvilrender.jpg"
         image-link="v1653259517/portfolio/fun/anvilrender.jpg"
         link="fun/anvilrender"
-        bg-color="#2b2c2c" />
+        bg-color="#2b2c2c" /> -->
+
       <!-- <FunCard
         title="NTI-Awards 2020"
         tag="Modelling & Rendering"
