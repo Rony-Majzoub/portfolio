@@ -10,7 +10,7 @@
       <div
         class="flex justify-center items-center w-full rounded-lg lg:group-hover:-translate-y-1 transition-all ease-in-out duration-300 transform-gpu">
         <!-- Blurred Placeholder Image (Cloudinary) -->
-        <img
+        <!-- <img
           v-once
           :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
           :alt="`${title}`"
@@ -21,7 +21,7 @@
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8 border-transparent`]:
               deviceBorder,
-          }" />
+          }" /> -->
         <!-- Sharp Final Image (Cloudinary) -->
         <img
           v-once
@@ -30,7 +30,7 @@
           :src="`/assets/img/${image}`"
           width="432"
           height="768"
-          class="cld-responsive high-def opacity-0 object-contain w-auto max-w-full h-fit min-h-fit max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 [transition:opacity_1s,_box-shadow_300ms] !ease-in-out"
+          class="cld-responsive high-def opacity-0 object-contain w-auto max-w-full h-fit min-h-fit max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 [transition:opacity_0.5s,_box-shadow_300ms] !ease-in-out"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8`]:
               deviceBorder,
