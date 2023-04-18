@@ -181,7 +181,7 @@
 </template>
 
 <script>
-import { defineAsyncComponent, ref } from "vue";
+import { defineAsyncComponent } from "vue";
 export default {
   name: "Fun",
   components: {
