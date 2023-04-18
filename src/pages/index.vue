@@ -113,14 +113,14 @@ export default {
   //     title: "My Options API title",
   //   };
   // },
-  // components: {
-  //   ProjectCardLeft: defineAsyncComponent(() =>
-  //     import("../components/Overview/ProjectCardLeft.vue")
-  //   ),
-  //   ProjectCardRight: defineAsyncComponent(() =>
-  //     import("../components/Overview/ProjectCardRight.vue")
-  //   ),
-  // },
+  components: {
+    ProjectCardLeft: defineAsyncComponent(() =>
+      import("../components/Overview/ProjectCardLeft.vue")
+    ),
+    ProjectCardRight: defineAsyncComponent(() =>
+      import("../components/Overview/ProjectCardRight.vue")
+    ),
+  },
   mounted() {
     this.$anime({
       targets: ".arrow",
