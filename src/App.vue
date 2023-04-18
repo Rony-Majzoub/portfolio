@@ -227,13 +227,13 @@ html {
   .fade-in-up-leave-active {
     opacity: 0;
     animation-duration: 0.2s;
-    animation-timing-function: cubic-bezier(0.64, 0, 0.78, 0); //EaseInQuint
+    animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0); //EaseInCubic
     animation-fill-mode: both;
     animation-name: fadeOutDownMobile;
   }
   .fade-in-up-enter-active {
     opacity: 0;
-    animation-duration: 0.3s;
+    animation-duration: 0.4s;
     animation-delay: 0.25s;
     animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
     animation-fill-mode: both;
