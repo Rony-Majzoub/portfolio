@@ -110,13 +110,13 @@ const router = createRouter({
       const height = window.innerHeight;
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve({ top: height - 50, left: 0 });
+          resolve({ top: height - 50, left: 0, behavior: "smooth" });
         }, 250);
       });
     } else {
       return new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve({ top: 0, left: 0 });
+          resolve({ top: 0, left: 0, behavior: "smooth" });
         }, 250);
       });
     }
