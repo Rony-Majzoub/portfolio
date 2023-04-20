@@ -13,7 +13,10 @@
       alt-text="Puck Animation"
       link-text="View Inspiration"
       link="https://andreaswannerstedt.se/oddly-satisfying-vol8"
-      bg-color="#c1a693" />
+      bg-color="#c1a693"
+      :autoplay="true"
+      :loop="true"
+      :muted="true" />
     <ProjectTags client="Yrgo DD21" duration="1 week" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>

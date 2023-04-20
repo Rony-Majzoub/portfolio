@@ -14,7 +14,10 @@
         width="768"
         height="432"
         class="cld-responsive high-def relative md:absolute object-contain object-center w-full h-auto md:h-full lg:rounded-lg text-[0]"
-        controls />
+        :autoplay="autoplay"
+        :controls="controls"
+        :loop="loop"
+        :muted="muted" />
       <!-- <img
       class="object-cover object-[center_60%] w-full max-h-full rounded-lg"
       width="1280"
@@ -70,6 +73,22 @@ export default {
     bgColor: {
       default: "var(--eggplant)",
       type: String,
+    },
+    autoplay: {
+      default: false,
+      type: Boolean,
+    },
+    controls: {
+      default: true,
+      type: Boolean,
+    },
+    loop: {
+      default: false,
+      type: Boolean,
+    },
+    muted: {
+      default: false,
+      type: Boolean,
     },
   },
   mounted() {

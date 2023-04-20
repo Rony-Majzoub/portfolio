@@ -11,7 +11,10 @@
       video="10a_logo_animation.mp4"
       video-link="v1681303739/portfolio/fun/10a/10a_logo_animation.mp4"
       alt-text="10A Animation"
-      bg-color="#000000" />
+      bg-color="#000000"
+      :autoplay="true"
+      :controls="false"
+      :loop="true" />
     <ProjectTags client="10A Arkitektur" duration="2 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>

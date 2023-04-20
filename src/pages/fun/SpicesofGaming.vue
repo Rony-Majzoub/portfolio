@@ -11,7 +11,10 @@
       video="spices_of_gaming.mp4"
       video-link="v1654003119/portfolio/fun/spices_of_gaming.mp4"
       alt-text="Spices of Gaming"
-      bg-color="#3c3444" />
+      bg-color="#3c3444"
+      :autoplay="true"
+      :controls="false"
+      :loop="true" />
     <ProjectTags client="Yrgo DD21" duration="2 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
