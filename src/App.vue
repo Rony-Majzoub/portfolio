@@ -119,11 +119,13 @@
 export default {
   watch: {
     $route(to, from) {
+      // Listen to all touch and mousewheel inputs to cancel animeJS smooth-scrolling.
       document.addEventListener("touchstart", this.cancelScroll);
       document.addEventListener("touchmove", this.cancelScroll);
       document.addEventListener("touchend", this.cancelScroll);
       document.addEventListener("wheel", this.cancelScroll);
 
+      // If route-target is a hash, scroll to hash.
       if (to.hash) {
         const height = window.innerHeight;
         this.$anime({
@@ -132,7 +134,9 @@ export default {
           duration: 750,
           easing: "cubicBezier(.75,0,.2,1)",
         });
-      } else {
+      }
+      // If route-target is not a hash, scroll to top of page.
+      else {
         if (window.document.documentElement.scrollTop !== 0) {
           this.$anime({
             targets: window.document.documentElement,
@@ -142,7 +146,7 @@ export default {
           });
         }
       }
-
+      // If route-target is "about", animate the footer (only on screens of 1024px and above).
       if (this.$route.path === "/about") {
         const query = window.matchMedia("(min-width: 1024px)");
         query.onchange = (evt) => {
@@ -169,6 +173,7 @@ export default {
     },
   },
   methods: {
+    // Method to remove animeJS animation, called at the top through eventListeners.
     cancelScroll() {
       this.$anime.remove(window.document.documentElement);
     },
