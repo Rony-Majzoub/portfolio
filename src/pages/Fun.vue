@@ -190,24 +190,24 @@ export default {
     ),
   },
   mounted() {
-    const query = window.matchMedia("(min-width: 1024px)");
-    if (query.matches) {
-      // Wrap every word in a span
-      var textWrapper = document.querySelector(".fun-text");
-      textWrapper.innerHTML = textWrapper.textContent.replace(
-        /\S+/g,
-        "<span class='word'>$&</span>"
-      );
-      this.$anime.timeline({}).add({
-        targets: ".fun-text .word",
-        translateY: [50, 0],
-        translateZ: 0,
-        opacity: [0, 1],
-        easing: "easeOutQuint",
-        duration: 1000,
-        delay: (el, i) => 300 + 25 * i,
-      });
-    }
+    // const query = window.matchMedia("(min-width: 1024px)");
+    // if (query.matches) {
+    // Wrap every word in a span
+    var textWrapper = document.querySelector(".fun-text");
+    textWrapper.innerHTML = textWrapper.textContent.replace(
+      /\S+/g,
+      "<span class='word'>$&</span>"
+    );
+    this.$anime.timeline({}).add({
+      targets: ".fun-text .word",
+      translateY: [50, 0],
+      translateZ: 0,
+      opacity: [0, 1],
+      easing: "easeOutQuint",
+      duration: 1000,
+      delay: (el, i) => 300 + 25 * i,
+    });
+    // }
   },
 };
 </script>

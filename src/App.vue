@@ -223,23 +223,23 @@ html {
     animation-name: fadeInUpReducedMotion !important;
   }
 }
-@media (max-width: 640px) {
-  .fade-in-up-leave-active {
-    opacity: 0;
-    animation-duration: 0.2s;
-    animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0); //EaseInCubic
-    animation-fill-mode: both;
-    animation-name: fadeOutDownMobile;
-  }
-  .fade-in-up-enter-active {
-    opacity: 0;
-    animation-duration: 0.4s;
-    animation-delay: 0.25s;
-    animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
-    animation-fill-mode: both;
-    animation-name: fadeInUpMobile;
-  }
-}
+// @media (max-width: 640px) {
+//   .fade-in-up-leave-active {
+//     opacity: 0;
+//     animation-duration: 0.2s;
+//     animation-timing-function: cubic-bezier(0.32, 0, 0.67, 0); //EaseInCubic
+//     animation-fill-mode: both;
+//     animation-name: fadeOutDownMobile;
+//   }
+//   .fade-in-up-enter-active {
+//     opacity: 0;
+//     animation-duration: 0.4s;
+//     animation-delay: 0.25s;
+//     animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
+//     animation-fill-mode: both;
+//     animation-name: fadeInUpMobile;
+//   }
+// }
 @keyframes fadeInUpReducedMotion {
   from {
     transform: translate3d(0, -20px, 0);
