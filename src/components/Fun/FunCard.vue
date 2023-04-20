@@ -117,14 +117,17 @@ export default {
     const query = window.matchMedia("(min-width: 1024px)");
     if (query.matches) {
       this.fadeImg();
+    } else {
+      for (let image of images) {
+        image.style.opacity = "1";
+      }
     }
   },
   methods: {
     fadeImg() {
       const images = document.getElementsByClassName("high-def");
       for (let image of images) {
-        image.addEventListener("load", opacityImg);
-        image.style.opacity = "0";
+        image.addEventListener("load", opacityImg, { once: true });
       }
 
       function opacityImg() {
