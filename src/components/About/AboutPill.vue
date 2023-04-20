@@ -23,7 +23,7 @@ export default {
       opacity: [0, 1],
       easing: "easeOutQuint",
       duration: 750,
-      delay: (el, i) => 400 + 50 * i,
+      delay: (el, i) => 500 + 50 * i,
     });
   },
 };

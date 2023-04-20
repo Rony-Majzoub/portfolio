@@ -118,7 +118,31 @@
 <script>
 export default {
   watch: {
-    $route() {
+    $route(to, from) {
+      document.addEventListener("touchstart", this.cancelScroll);
+      document.addEventListener("touchmove", this.cancelScroll);
+      document.addEventListener("touchend", this.cancelScroll);
+      document.addEventListener("wheel", this.cancelScroll);
+
+      if (to.hash) {
+        const height = window.innerHeight;
+        this.$anime({
+          targets: window.document.documentElement,
+          scrollTop: height - 50,
+          duration: 750,
+          easing: "cubicBezier(.75,0,.2,1)",
+        });
+      } else {
+        if (window.document.documentElement.scrollTop !== 0) {
+          this.$anime({
+            targets: window.document.documentElement,
+            scrollTop: 0,
+            duration: 750,
+            easing: "cubicBezier(.75,0,.2,1)",
+          });
+        }
+      }
+
       if (this.$route.path === "/about") {
         const query = window.matchMedia("(min-width: 1024px)");
         query.onchange = (evt) => {
@@ -144,6 +168,11 @@ export default {
       }
     },
   },
+  methods: {
+    cancelScroll() {
+      this.$anime.remove(window.document.documentElement);
+    },
+  },
 };
 </script>
 
@@ -165,7 +194,6 @@ export default {
 }
 
 html {
-  scroll-behavior: smooth;
   scrollbar-gutter: stable;
   height: 100%;
 }

@@ -205,7 +205,7 @@ export default {
       opacity: [0, 1],
       easing: "easeOutQuint",
       duration: 1000,
-      delay: (el, i) => 300 + 25 * i,
+      delay: (el, i) => 400 + 25 * i,
     });
     // }
   },

@@ -105,32 +105,33 @@ import routes from "~pages";
 const router = createRouter({
   history: createWebHistory(),
   routes,
-  scrollBehavior(to) {
-    if (to.hash) {
-      const height = window.innerHeight;
-      return new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve({ top: height - 50, left: 0, behavior: "smooth" });
-        }, 250);
-      });
-    } else {
-      return new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve({ top: 0, left: 0, behavior: "smooth" });
-        }, 250);
-      });
-    }
-    // if (to.hash) {
-    //   const height = window.innerHeight;
-    //   return window.scrollTo({
-    //     top: height - 50,
-    //     left: 0,
-    //     behavior: "smooth",
-    //   });
-    // } else {
-    //   return { behavior: "smooth", left: 0, top: 0 };
-    // }
-  },
+  // scrollBehavior(to) {
+  //   if (to.hash) {
+  //     const height = window.innerHeight;
+  //     return new Promise((resolve, reject) => {
+  //       setTimeout(() => {
+  //         resolve({ top: height - 50, left: 0, behavior: "smooth" });
+  //       }, 250);
+  //     });
+  //   }
+  //   // else {
+  //   //   return new Promise((resolve, reject) => {
+  //   //     setTimeout(() => {
+  //   //       resolve({ top: 0, left: 0, behavior: "smooth" });
+  //   //     }, 250);
+  //   //   });
+  //   // }
+  //   // if (to.hash) {
+  //   //   const height = window.innerHeight;
+  //   //   return window.scrollTo({
+  //   //     top: height - 50,
+  //   //     left: 0,
+  //   //     behavior: "smooth",
+  //   //   });
+  //   // } else {
+  //   //   return { behavior: "smooth", left: 0, top: 0 };
+  //   // }
+  // },
 });
 
 export default router;
