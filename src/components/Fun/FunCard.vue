@@ -5,7 +5,7 @@
     :to="{ path: `/${link}` }"
     :style="{ backgroundColor: bgColor }">
     <div
-      class="flex justify-center flex-1 min-h-0 min-w-full h-auto max-w-fit max-h-fit p-6 pb-3 lg:p-10 lg:pb-6">
+      class="relative flex justify-center flex-1 min-h-0 min-w-full h-auto max-w-fit p-6 pb-3 lg:p-10 lg:pb-6">
       <!-- Image Element -->
       <div
         class="flex justify-center items-center w-full rounded-lg lg:group-hover:-translate-y-1 transition-all ease-in-out duration-300 transform-gpu">
@@ -30,7 +30,7 @@
           :src="`/assets/img/${image}`"
           width="432"
           height="768"
-          class="cld-responsive high-def lg:opacity-0 object-contain w-auto max-w-full h-fit min-h-fit max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 [transition:opacity_0.5s,_box-shadow_300ms] !ease-in-out"
+          class="cld-responsive high-def lg:opacity-0 object-contain w-auto max-w-full h-fit min-h-auto max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 [transition:opacity_0.5s,_box-shadow_300ms] !ease-in-out"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8`]:
               deviceBorder,
