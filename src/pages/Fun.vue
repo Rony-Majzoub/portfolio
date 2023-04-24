@@ -181,9 +181,14 @@
 </template>
 
 <script>
+import { defineAsyncComponent } from "vue";
 export default {
   name: "Fun",
-
+  components: {
+    FunCard: defineAsyncComponent(() =>
+      import("../components/Fun/FunCard.vue")
+    ),
+  },
   mounted() {
     // const query = window.matchMedia("(min-width: 1024px)");
     // if (query.matches) {
