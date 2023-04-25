@@ -6,5 +6,8 @@ Disallow: /buratinoweb
 Disallow: /buratino19
 Disallow: /recypie
 Disallow: /buratino21
+Disallow: /fun/buratino
+Disallow: /fun/donutnightrender
+Disallow: /fun/ntiawards
 
 Sitemap: https://rony-majzoub.netlify.app/sitemap.xml

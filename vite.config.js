@@ -22,7 +22,18 @@ const config = defineConfig({
       //     hostname: "https://rony-majzoub.netlify.app/",
       //     routes,
       //     readable: true,
-      //     exclude: ["/[...all]"],
+      //     exclude: [
+      //       "/[...all],",
+      //       "/contact",
+      //       "/connected",
+      //       "/buratinoweb",
+      //       "/buratino19",
+      //       "/buratino21",
+      //       "/fun/buratino",
+      //       "/recypie",
+      //       "/fun/donutnightrender",
+      //       "/fun/ntiawards",
+      //     ],
       //   }),
       importMode(filepath, options) {
         // default resolver
