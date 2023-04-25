@@ -3,7 +3,7 @@
   <div class="flex flex-col gap-2 animation-item">
     <div
       v-once
-      class="flex flex-col bg-eggplant aspect-square max-w-full w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
+      class="flex flex-col bg-eggplant aspect-square w-full rounded-lg overflow-hidden group transition-all ease-in-out duration-300 shadow-md transform-gpu"
       :style="{ backgroundColor: bgColor }">
       <div class="flex flex-1 justify-center items-center p-8">
         <!-- Image Element -->

@@ -93,6 +93,13 @@
         link="fun/10a"
         bg-color="var(--eggplant)" />
       <FunCard
+        title="World Wide Padel"
+        tag="2D Animation"
+        image="10a_thumbnail.png"
+        image-link="v1681303738/portfolio/fun/10a/10a_thumbnail.png"
+        link="fun/wwp"
+        bg-color="var(--eggplant)" />
+      <FunCard
         title="Puck Animation"
         tag="3D Animation"
         image="puck_animation.png"

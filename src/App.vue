@@ -201,6 +201,7 @@ export default {
 html {
   scrollbar-gutter: stable;
   height: 100%;
+  overflow-x: hidden;
 }
 * {
   font-family: var(--font-primary);
