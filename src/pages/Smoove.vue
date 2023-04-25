@@ -18,10 +18,10 @@
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnLeft
         title="Background"
-        description="As the automotive industry reaches further into the digital market, our goal was to create and design a stylistic profile, website and vehicle, derived from a feeling that we wanted to present, every step of the way." />
+        description="As the automotive industry delves deeper into the digital market, our goal was to create and design a stylish profile, website, and vehicle, derived from a feeling that we wanted to convey, every step of the way." />
       <ColumnLeft
         title="The problem"
-        description="We were tasked with not only becoming the Project Leads, having to direct our Web Developers and Computer Graphics Designers with clear instructions and feedback. But we were also tasked with fulfilling our roles as Digital Designers, with UI-designs and UX-research being major key-points of the project." />
+        description="We were tasked with becoming the Project Leads, which meant directing our Web Developers and Computer Graphics Designers with clear instructions and feedback. Additionally, we fulfilled our roles as Digital Designers, with UI-designs and UX-research being major key-points of the project." />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectImageHalf
@@ -51,7 +51,7 @@
       </div>
       <ColumnLeft
         title="Pre-planning"
-        description="With the enormous task at hand, we set off by drawing hand-sketches of how this landing page would look like, and the main features we wanted for the Web Developers to implement. We also created a moodboard, so we could decide on what type of vehicle and materials the CG-Designers would use. Later on, we created digital Greyboxes based on our initial sketches, and refined the layout and content of the site. " />
+        description="With the enormous task at hand, we began by drawing hand-sketches of how the landing page would look, along with the main features we wanted for the Web Developers to implement. We also created a Moodboard to decide on what type of vehicle and materials the CG-Designers would use. Later on, we created digital Greyboxes based on our initial sketches and refined the layout and content of the site." />
       <ProjectImageFull
         image="smoove_greybox.png"
         image-link="v1653005687/portfolio/smoove/smoove_greybox.png"
@@ -59,9 +59,9 @@
         description="Digital greyboxes for how components, images & sections should be placed on the website." />
       <ColumnLeft
         title="Bold but Friendly"
-        description="After doing extensive research, we created a few Personas that would represent the type of people that would drive our vehicle. We felt that a motorcycle should empower the driver, but also accomodate all types of people, both men and women.
+        description="After conducting extensive research, we created a few Personas that would represent the type of people that would drive our vehicle. We felt that a motorcycle should empower the driver while accommodating all types of people, both men and women.
         
-        That's why we chose a more golden and warm color scheme. We found that other, more saturated colors were very gendered, and a bit too bombastic. A gold main color, with warm undertones gave us the neutrality we were after, while still offering a modern, powerful and exciting feeling to the driver." />
+        That's why we chose a more golden and warm color scheme. We found that other, more saturated colors were very gendered and a bit too bombastic. A gold main color, with warm undertones, gave us the neutrality we were after while still offering a modern, powerful, and exciting feeling to the driver." />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectImageHalf
@@ -93,9 +93,9 @@
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ColumnHalf
           title="Designing for the Web"
-          description="For this project, we teamed up with the Web Developer class at Yrgo, who were responsible for coding and implementing our designs to the web. This proved to be difficult, due to the various responsibilities that we had to bear during the entire project.
+          description="For this project, we teamed up with the Web Developer class at Yrgo, who were responsible for coding and implementing our designs on the web. This proved difficult due to the various responsibilities that we had to bear during the entire project.
       
-      When designing the website, we split the site up into multiple sections, to ease the delivery both for our Web Developers, but also for our CG-Designers. We would put a considerable amount of time working on Components and a Stylesheet, so our Web Developers could reuse code quickly and efficiently." />
+          When designing the website, we split the site up into multiple sections to ease the delivery process for both our Web Developers and CG-Designers. We spent a considerable amount of time working on Components and a Stylesheet so our Web Developers could reuse code quickly and efficiently." />
         <ProjectImageHalf
           image="smoove_components.png"
           image-link="v1652792652/portfolio/smoove/smoove_components.png"
@@ -111,7 +111,7 @@
       </div>
       <ColumnLeft
         title="DD meets CG"
-        description="Collaborating with CG-Designers was a new, albeit refreshing challenge. Given that their renders required several hours of render-time, we had less room to iterate on their delivered images. We also had to nail down how big these images were in both size, and aspect-ratio, because of the camera framing, and the positioning in the website." />
+        description="Collaborating with CG-Designers was a new, albeit refreshing challenge. Given that their renders required several hours of render-time, we had less room to iterate on their delivered images. We also had to nail down how big these images were in both size and aspect-ratio, because of the camera framing and positioning on the website." />
       <ProjectImageFull
         image="smoove_review.png"
         image-link="v1652793007/portfolio/smoove/smoove_review.png"
@@ -119,7 +119,7 @@
         description="Our review process for the delivery of 3D-images from our Computer Graphics Designers." />
       <ColumnLeft
         title="Final Prototypes"
-        description="The final prototypes were made in Figma, with fine-tuned desktop and mobile variants. We both adjusted the amount of content shown, and also used different images depending on the device. An intro-animation in After Effects was created by me, which was exported as a Lottie-file and used in the final site on first load." />
+        description="The final prototypes were made in Figma, with fine-tuned desktop and mobile variants. We adjusted the amount of content shown and also used different images depending on the device. An intro-animation in After Effects was created by me, which was exported as a Lottie-file and used in the final site on first load." />
       <ProjectImageFull
         image="smoove_prototype.png"
         image-link="v1652792170/portfolio/smoove/smoove_prototype.png"
@@ -127,14 +127,14 @@
         description="Snapshots of our final Figma-prototypes." />
       <ColumnLeft
         title="Learnings"
-        description="We learned how to oversee and lead an entire project, with multiple members each having different roles. We also gained a better understanding of the challenges that both Web Developers and CG-Designers face during projects, and how to make their tasks easier to handle.
+        description="We learned how to oversee and lead an entire project with multiple members each having different roles. We also gained a better understanding of the challenges that both Web Developers and CG-Designers face during projects and how to make their tasks easier to handle.
         
-        As Designers, we also got a better look at what exactly goes into designing a products, and all the different steps required to go from feeling to final delivery. This allowed us to better prioritize the important aspects of a project, while leaving less important parts for another day.
+        As Designers, we also got a better look at what exactly goes into designing a product and all the different steps required to go from feeling to final delivery. This allowed us to better prioritize the important aspects of a project while leaving less important parts for another day.
         
-        Overall, we were reasonably happy with the work we managed to deliver with our CG-Designers. When it comes to the website, there were a few cases of mismanagement, which did leave a few things to be desired in the final product. We definitely learned a thing or two from these missteps, and we've made sure to better prepare for those challenges in the future." />
+        Overall, we were reasonably happy with the work we managed to deliver with our CG-Designers. When it comes to the website, there were a few cases of mismanagement, which left a few things to be desired in the final product. We definitely learned a thing or two from these missteps, and we've made sure to better prepare for those challenges in the future." />
       <ProjectGallery
         title="Render Gallery"
-        description="The final 3D-renders that are used in the production site, created by our CG-Designers." />
+        description="The final 3D-renders that are used on the production site, created by our CG-Designers." />
     </main>
   </div>
 </template>

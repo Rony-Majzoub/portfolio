@@ -19,11 +19,11 @@
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnRight
         title="Background"
-        description="Today, a large portion of the world lack a clean and modern method for cooking. The result is extensive deforestation, hours of extra labor, and harmful emissions. However, through a collaboration with a start-up Chalmers-Incubator company, a solution is in sight." />
+        description="Today, a large portion of the world lacks a clean and modern method of cooking, resulting in extensive deforestation, hours of extra labor, and harmful emissions. However, through a collaboration with a start-up Chalmers-Incubator company, a solution is in sight." />
 
       <ColumnLeft
         title="The problem"
-        description="After getting to speak with the client, we were informed of two distinct target groups that we had to design for. The first are the investors that would actually fund their project. The second are the people in Africa, that would use the products made possible by this brand. This was not going to be easy." />
+        description="After speaking with the client, we learned of two distinct target groups we had to design for: the investors who would fund the project, and the people in Africa who would use the products made possible by the brand. This was not going to be easy." />
 
       <ProjectImageFull
         image="mojo_inspiration.png"
@@ -33,7 +33,7 @@
 
       <ColumnLeft
         title="The solution"
-        description="Our solution was to design a graphic profile that was minimalistic, and slightly modern in its appearance, while also not delving too deep towards a corporate style. We wanted to develop trust between the brand and the end users, while also giving a slightly playful vibe, to play into the African culture that is so prominent in the target countries." />
+        description="Our solution was to design a graphic profile that was minimalistic and slightly modern in appearance while not delving too deep into a corporate style. We wanted to develop trust between the brand and end-users while also giving a slightly playful vibe to play into the African culture prominent in the target countries." />
 
       <ProjectImageFull
         image="mojo_moodboard.png"
@@ -43,9 +43,9 @@
 
       <ColumnLeft
         title="Pre-planning"
-        description="We started by researching how the market stands today, and how other brands solved their own problems. The truth is that most brands in this market were seriously lacking, in regards to style and readability. It was clear that we had to do a lot of work to come up with original ideas, and execute them in this project.
+        description="We began by researching how the market stood today and how other brands solved their problems. The truth is that most brands in this market were seriously lacking in terms of style and readability. It was clear that we had to do a lot of work to come up with original ideas and execute them in this project.
         
-        We did extensive research regarding what types of colors, shapes and font-styles we would use, and how different cultures around the world would interpret those style choices. We later applied these learnings in three separate Moodboards, and pitched them early-on to the clients, and used their feedback to create concrete assets and (later on) a fully-fledged graphic profile." />
+        We conducted extensive research on the types of colors, shapes, and font styles we would use and how different cultures around the world would interpret those style choices. We later applied these learnings in three separate Moodboards and pitched them early on to the clients, using their feedback to create concrete assets and a fully-fledged graphic profile later on." />
 
       <ProjectImageFull
         image="mojo_logo.png"
@@ -55,7 +55,7 @@
 
       <ColumnRight
         title="Working with clients"
-        description="A large portion of the project went into designing the logo for Mojo. As the clients always had the final say, we had to pitch our logo ideas to them each time, and use their feedback to improve upon our ideas. A lot of iterating had to be done, because of how crucial a good logo was to their own project." />
+        description="A significant portion of the project went into designing the logo for Mojo. As the clients always had the final say, we had to pitch our logo ideas to them each time and use their feedback to improve upon our ideas. A lot of iterating had to be done because of how crucial a good logo was to their project." />
 
       <ProjectImageFull
         image="mojo_profile.png"
@@ -65,15 +65,15 @@
 
       <ColumnLeft
         title="Final delivery"
-        description="In the end, we managed to deliver a graphic profile, which consisted of three parts - the logo, the colors, and the fonts. We also delivered stylistic guidelines and rules for how to best follow their own graphic profile. These guidelines were focused on accessibility, and brand identity.
+        description="In the end, we delivered a graphic profile consisting of three parts: the logo, the colors, and the fonts. We also delivered stylistic guidelines and rules for following their own graphic profile. These guidelines focused on accessibility and brand identity.
         
-        We also delivered a digital example of how a future website might look like, as shown at the bottom of this page, as well as Microsoft Office themes that they could use in PowerPoint and Word, which followed their graphic profile." />
+        We also provided a digital example of how a future website might look like, as shown at the bottom of this page, as well as Microsoft Office themes that they could use in PowerPoint and Word, which followed their graphic profile." />
 
       <ColumnLeft
         title="Learnings"
-        description="As the majority of the work was done during isolation from the COVID-19 pandemic, we had to drastically adapt our communication strategies. It was certainly difficult trying to work with a client, only through digital means. That resulted in a few cases of miscommunication, which were understandable, given the circumstances.
+        description="As the majority of the work was done during isolation from the COVID-19 pandemic, we had to drastically adapt our communication strategies. It was certainly difficult trying to work with a client only through digital means, resulting in a few cases of miscommunication, which were understandable given the circumstances.
         
-        We've learned a lot about how to communicate with a client, how and when to pitch ideas to them, and how much we should show or hide from them, until a later date." />
+        We learned a lot about how to communicate with a client, how and when to pitch ideas to them, and how much we should show or hide from them until a later date." />
 
       <ProjectGallery
         title="Website Prototype"

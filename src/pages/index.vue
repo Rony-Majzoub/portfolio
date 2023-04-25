@@ -38,8 +38,8 @@
           title="Future Experience Lab"
           short-title="F.E.L."
           description='When Future Experience Lab reached out to Yrgo, 
-          they sought after a website to augment their "Hybrid Workhop Experience", 
-          with a touch of "controlled chaos". Our goal was to strike that balance, and deliver a website prototype.'
+          they sought a website to augment their "Hybrid Workshop Experience" 
+          with a touch of "controlled chaos." Our goal was to strike that balance and deliver a website prototype.'
           category="UI/UX & Web Design"
           tag="Website"
           image="fel_hero2.png"
@@ -48,9 +48,9 @@
           link="smoove"
           title="Smoove"
           short-title="Smoove"
-          description="As the automotive industry reaches further into the digital market,
-          our goal was to create and design a stylistic profile, website and vehicle,
-          derived from a feeling that we wanted to present, every step of the way."
+          description="As the automotive industry reaches further into the digital market, 
+          our goal was to create and design a stylistic profile, website, and vehicle 
+          derived from a feeling that we wanted to convey, every step of the way."
           category="UI/UX & Product Design"
           tag="Product Development"
           image="smoove_park.jpg"
@@ -59,8 +59,8 @@
           link="mojo"
           title="Mojo"
           short-title="Mojo"
-          description="Today, a large portion of the world lack a clean and modern method for cooking. 
-          The result is extensive deforestation, hours of extra labor, and harmful emissions.
+          description="Today, a large portion of the world lacks a clean and modern method for cooking. 
+          The result is extensive deforestation, hours of extra labor, and harmful emissions. 
           However, through a collaboration with a start-up Chalmers-Incubator company, a solution is in sight."
           category="UX & Product Design"
           tag="Graphic Profile"
