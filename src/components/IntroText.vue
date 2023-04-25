@@ -17,14 +17,14 @@
       <!-- The width dynamically changes based on the width-percentage property given to each role. -->
       <span
         :style="'width: ' + role[role.length - 1].mobileWidth + '%'"
-        class="sm:!hidden word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 pr-16 decoration-4 md:decoration-8 transform-gpu">
+        class="sm:!hidden word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 pr-16 decoration-4 md:decoration-8 will-change-[width] transform-gpu">
         {{ role[role.length - 1].name }}.
       </span>
       <!-- Desktop Variant (normal width) -->
       <!-- The width dynamically changes based on the width-percentage property given to each role. -->
       <span
         :style="'width: ' + role[role.length - 1].desktopWidth + '%'"
-        class="!hidden sm:!inline-block word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 5xl:p-8 decoration-4 md:decoration-8 transform-gpu">
+        class="!hidden sm:!inline-block word role whitespace-nowrap selection:text-unbleached-silk selection:bg-eggplant !text-eggplant bg-unbleached-silk p-4 5xl:p-8 decoration-4 md:decoration-8 will-change-[width] transform-gpu">
         {{ role[role.length - 1].name }}.
       </span>
       <br />
