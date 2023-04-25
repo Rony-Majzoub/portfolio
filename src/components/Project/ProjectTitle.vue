@@ -48,7 +48,7 @@ export default {
       opacity: [0, 1],
       easing: "easeOutQuint",
       duration: 1000,
-      delay: (el, i) => 400 + 25 * i,
+      delay: this.$anime.stagger(25, { start: 400 }),
     });
     var titleWrapper = document.querySelector(".title-text");
     titleWrapper.innerHTML = titleWrapper.textContent.replace(
@@ -62,7 +62,7 @@ export default {
       opacity: [0, 1],
       easing: "easeOutQuint",
       duration: 1000,
-      delay: (el, i) => 500 + 50 * i,
+      delay: this.$anime.stagger(50, { start: 500 }),
     });
     var briefWrapper = document.querySelector(".brief-text");
     briefWrapper.innerHTML = briefWrapper.textContent.replace(
@@ -76,7 +76,7 @@ export default {
       opacity: [0, 1],
       easing: "easeOutQuint",
       duration: 1000,
-      delay: (el, i) => 600 + 20 * i,
+      delay: this.$anime.stagger(20, { start: 600 }),
     });
   },
 };

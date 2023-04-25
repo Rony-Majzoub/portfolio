@@ -33,7 +33,7 @@ export default {
       opacity: [0, 1],
       easing: "easeOutQuint",
       duration: 1000,
-      delay: (el, i) => 300 + 50 * i,
+      delay: this.$anime.stagger(50, { start: 300 }),
     });
   },
 };
