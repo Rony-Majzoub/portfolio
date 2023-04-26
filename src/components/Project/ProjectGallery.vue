@@ -14,7 +14,7 @@
     </div>
     <div
       v-once
-      class="snap-x snap-proximity flex flex-row items-start overflow-x-scroll max-lg:w-screen gap-4 p-4 sm:p-8 lg:p-12 lg:gap-6 rounded-none lg:rounded-xl shadow-md bg-eggplant transform-gpu"
+      class="snap-x snap-proximity flex flex-row items-start overflow-x-scroll max-lg:w-screen max-lg:place-self-center gap-4 p-4 sm:p-8 lg:p-12 lg:gap-6 rounded-none lg:rounded-xl shadow-md bg-eggplant transform-gpu"
       :style="{ backgroundColor: galleryColor }">
       <ProjectImageGallery
         v-for="picture in pictures"

@@ -1,10 +1,11 @@
 <template>
   <div
-    class="max-lg:col-span-full max-lg:place-self-center max-lg:w-screen flex flex-col gap-2 animation-item">
+    class="max-lg:col-span-full max-lg:place-self-center max-lg:w-screen flex flex-col gap-2 animation-item"
+    :class="{ 'single-card-columns': !dual }">
     <div
       v-once
-      class="single-card flex flex-col items-center bg-eggplant aspect-video w-full h-full lg:rounded-lg overflow-hidden shadow-md transition-all ease-in-out duration-300 transform-gpu"
-      :class="{ 'dual-card': dual }"
+      class="single-card-ratio flex flex-col items-center bg-eggplant aspect-video w-full h-auto lg:rounded-lg overflow-hidden shadow-md transition-all ease-in-out duration-300 transform-gpu"
+      :class="{ 'dual-card-ratio': dual }"
       :style="{ backgroundColor: bgColor, aspectRatio: contentRatio }">
       <div
         class="relative flex justify-center flex-1 min-h-0 min-w-full h-auto max-w-fit p-8">
@@ -14,27 +15,32 @@
           <!-- Sharp Final Image (Cloudinary) -->
           <img
             v-once
-            :src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+            :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+            :src="`/assets/img/${image}`"
             :alt="`${altText}`"
             width="432"
             height="768"
-            class="cld-responsive high-def object-contain w-auto max-w-full h-fit min-h-auto max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] shadow-2xl shadow-[rgb(0,0,0)]/30 overflow-hidden" />
+            class="cld-responsive high-def object-contain w-auto max-w-full h-fit min-h-auto max-h-full relative text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] shadow-2xl shadow-[rgb(0,0,0)]/30 overflow-hidden" />
         </div>
       </div>
     </div>
     <!-- Text Element -->
-    <div v-once class="flex flex-row justify-between max-lg:px-4">
-      <p class="text-cameo-pink font-normal text-sm lg:text-base">
-        {{ description }}
-      </p>
-      <a
-        v-if="linkText"
+    <div class="max-lg:grid grid-cols-12">
+      <div
         v-once
-        class="nav-text relative text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
-        :href="link"
-        target="_blank">
-        {{ linkText }} &rarr;
-      </a>
+        class="max-lg:col-start-2 max-lg:col-end-[-2] flex flex-row justify-between gap-4">
+        <p class="text-cameo-pink font-normal text-sm lg:text-base">
+          {{ description }}
+        </p>
+        <a
+          v-if="linkText"
+          v-once
+          class="nav-text relative whitespace-nowrap h-fit text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
+          :href="link"
+          target="_blank">
+          {{ linkText }} &rarr;
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -76,22 +82,6 @@ export default {
       default: "1 / 1",
       type: String,
     },
-    autoplay: {
-      default: false,
-      type: Boolean,
-    },
-    controls: {
-      default: true,
-      type: Boolean,
-    },
-    loop: {
-      default: false,
-      type: Boolean,
-    },
-    muted: {
-      default: false,
-      type: Boolean,
-    },
     dual: {
       default: false,
       type: Boolean,
@@ -123,13 +113,19 @@ export default {
   transform: scaleX(1);
 }
 
-.single-card {
+.single-card-ratio {
   aspect-ratio: 16 / 9;
+  @media (max-width: 1024px) {
+    aspect-ratio: auto;
+  }
 }
-.dual-card {
+.single-card-columns {
+  grid-column: 2 / -2;
+}
+.dual-card-ratio {
   aspect-ratio: 1 / 1;
   @media (max-width: 1024px) {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: auto;
   }
 }
 </style>

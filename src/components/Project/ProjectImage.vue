@@ -28,18 +28,23 @@
       :src="`/assets/img/${image}`"
       :alt="`${altText}`" /> -->
     </div>
-    <div class="flex flex-row justify-between max-lg:px-4">
-      <p v-once class="text-cameo-pink font-normal text-sm lg:text-base">
-        {{ description }}
-      </p>
-      <a
-        v-if="linkText"
+    <!-- Text Element -->
+    <div class="max-lg:grid grid-cols-12">
+      <div
         v-once
-        class="nav-text relative text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
-        :href="link"
-        target="_blank">
-        {{ linkText }} &rarr;
-      </a>
+        class="max-lg:col-start-2 max-lg:col-end-[-2] flex flex-row justify-between gap-4">
+        <p class="text-cameo-pink font-normal text-sm lg:text-base">
+          {{ description }}
+        </p>
+        <a
+          v-if="linkText"
+          v-once
+          class="nav-text relative whitespace-nowrap h-fit text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
+          :href="link"
+          target="_blank">
+          {{ linkText }} &rarr;
+        </a>
+      </div>
     </div>
   </div>
 </template>
