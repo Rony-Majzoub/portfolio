@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2021 – UX/UI Design"
+      info="2021 — UX/UI Design"
       title="Shuu"
       brief="Create a landing page for a clothing brand, in a short amount of time." />
     <ProjectImage

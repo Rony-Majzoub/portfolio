@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2018 – 3D Rendering"
+      info="2018 — 3D Rendering"
       title="Project Punk"
       brief="Create a 3D-scene that would visualize the idea for an upcoming gaming project." />
     <ProjectGallery

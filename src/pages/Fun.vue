@@ -95,10 +95,13 @@
       <FunCard
         title="World Wide Padel"
         tag="2D Animation"
-        image="10a_thumbnail.png"
-        image-link="v1681303738/portfolio/fun/10a/10a_thumbnail.png"
+        image="WWP_Scroll_Thumbnail.png"
+        image-link="v1682551104/portfolio/fun/wwp/WWP_Scroll_Thumbnail.webp"
+        device-radius="0px"
         link="fun/wwp"
-        bg-color="var(--eggplant)" />
+        bg-color="#28c25e"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
       <FunCard
         title="Puck Animation"
         tag="3D Animation"
@@ -212,7 +215,7 @@ export default {
       opacity: [0, 1],
       easing: "easeOutQuint",
       duration: 1000,
-      delay: this.$anime.stagger(25, { start: 400 }),
+      delay: this.$anime.stagger(25, { start: 200 }),
     });
     // }
   },

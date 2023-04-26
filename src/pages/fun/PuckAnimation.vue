@@ -3,13 +3,14 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2022 – 3D Animation"
+      info="2022 — 3D Animation"
       title="Puck Animation"
       brief="Recreate a looping 3D Animation in Blender, originally created by Andreas Wannerstedt." />
     <ProjectVideo
       class="mb-10"
       video="Puck_Render.mp4"
       video-link="v1654000302/portfolio/fun/Puck_Render.mp4"
+      thumbnail="puck_animation.webp"
       alt-text="Puck Animation"
       link-text="View Inspiration"
       link="https://andreaswannerstedt.se/oddly-satisfying-vol8"

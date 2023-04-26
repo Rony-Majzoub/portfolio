@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2017 – 3D Rendering"
+      info="2017 — 3D Rendering"
       title="Donut Night"
       brief="Create an alternate version of a previous render." />
     <ProjectImage

@@ -35,7 +35,7 @@
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8`]:
               deviceBorder,
           }"
-          :style="{ borderColor: deviceColor }" />
+          :style="{ borderColor: deviceColor, borderRadius: deviceRadius }" />
       </div>
     </div>
     <!-- Text Element -->
@@ -103,6 +103,10 @@ export default {
     },
     deviceColor: {
       default: "#000000",
+      type: String,
+    },
+    deviceRadius: {
+      default: "",
       type: String,
     },
     deviceBorder: {

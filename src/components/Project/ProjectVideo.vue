@@ -8,7 +8,6 @@
       <!-- Sharp Final Video (Cloudinary) -->
       <video
         v-once
-        :data-src="`https://res.cloudinary.com/rony-majzoub/video/upload/${videoLink}`"
         :src="`/assets/img/${video}`"
         :alt="`${altText}`"
         width="768"
@@ -17,7 +16,9 @@
         :autoplay="autoplay"
         :controls="controls"
         :loop="loop"
-        :muted="muted" />
+        :muted="muted"
+        :playsinline="loop"
+        :poster="`/assets/img/${thumbnail}`" />
       <!-- <img
       class="object-cover object-[center_60%] w-full max-h-full rounded-lg"
       width="1280"
@@ -49,13 +50,17 @@
 import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
 
 export default {
-  name: "ProjectImage",
+  name: "ProjectVideo",
   props: {
     video: {
       default: "",
       type: String,
     },
     videoLink: {
+      default: "",
+      type: String,
+    },
+    thumbnail: {
       default: "",
       type: String,
     },

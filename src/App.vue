@@ -37,7 +37,7 @@
     </div>
   </header>
   <router-view v-slot="{ Component, route }">
-    <transition name="fade-in-up" appear>
+    <transition name="fade-in-up" mode="out-in" appear>
       <div
         :key="route.name"
         class="grid-cols-12 min-h-[89vh] grid pb-52 lg:pb-28 pt-28">
@@ -76,7 +76,7 @@
           </a>
           <p
             class="text-cameo-pink font-semibold text-sm lg:text-base max-lg:hidden antialiased">
-            –
+            —
           </p>
           <a
             href="tel:+46722960295"
@@ -97,7 +97,7 @@
           </a>
           <p
             class="text-cameo-pink font-semibold text-sm lg:text-base antialiased">
-            –
+            —
           </p>
           <a
             href="https://www.instagram.com/rony.majzoub/"
@@ -243,7 +243,7 @@ html {
 .fade-in-up-enter-active {
   opacity: 0;
   animation-duration: 0.5s;
-  animation-delay: 0.25s;
+  animation-delay: 0.1s;
   animation-timing-function: cubic-bezier(0.33, 1, 0.68, 1); //EaseOutCubic
   animation-fill-mode: both;
   animation-name: fadeInUp;

@@ -3,14 +3,16 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2023 – Motion Design"
+      info="2023 — Motion Design"
       title="World Wide Padel"
       brief="Create a 2D animation for a Success/404 page, as well as social media content." />
     <ProjectVideo
       class="mb-10"
       video="WWP_Scroll.mp4"
+      thumbnail="WWP_Scroll.webp"
       video-link="v1682414977/portfolio/fun/wwp/WWP_Scroll_H264.mp4"
       alt-text="World Wide Padel"
+      description="Animation that conveys the use of snap-scrolling on the website."
       bg-color="#000000"
       :autoplay="true"
       :controls="false"
@@ -22,8 +24,9 @@
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectVideoNew
           video="WWP_M_404.mp4"
-          alt-text="Smoove Desktop Sketches"
-          description="The early desktop sketches from the Figma prototypes."
+          thumbnail="WWP_M_404.webp"
+          alt-text="404 Mobile Variant"
+          description="404 — Mobile Variant"
           bg-color="#e8ff0e"
           :dual="true"
           :autoplay="true"
@@ -32,8 +35,9 @@
           :muted="true" />
         <ProjectVideoNew
           video="WWP_M_Success.mp4"
-          alt-text="Smoove Mobile Sketches"
-          description="The early mobile sketches from the Figma prototypes."
+          thumbnail="WWP_M_Success.webp"
+          alt-text="Success Mobile Variant"
+          description="Success — Mobile Variant"
           bg-color="#28c25e"
           :dual="true"
           :autoplay="true"
@@ -45,9 +49,11 @@
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectVideoNew
           video="WWP_D_404.mp4"
-          alt-text="Smoove Desktop Sketches"
-          description="The early desktop sketches from the Figma prototypes."
+          thumbnail="WWP_D_404.webp"
+          alt-text="404 Desktop Variant"
+          description="404 — Desktop Variant"
           bg-color="#e8ff0e"
+          content-ratio="auto"
           :dual="true"
           :autoplay="true"
           :controls="false"
@@ -55,9 +61,11 @@
           :muted="true" />
         <ProjectVideoNew
           video="WWP_D_Success.mp4"
-          alt-text="Smoove Mobile Sketches"
-          description="The early mobile sketches from the Figma prototypes."
+          thumbnail="WWP_D_Success.webp"
+          alt-text="Success Desktop Variant"
+          description="Success — Desktop Variant"
           bg-color="#28c25e"
+          content-ratio="auto"
           :dual="true"
           :autoplay="true"
           :controls="false"

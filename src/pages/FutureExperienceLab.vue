@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2022 – UI/UX & Web Design"
+      info="2022 — UI/UX & Web Design"
       title="Future Experience Lab"
       brief="Create and design a landing page for Future Experience Lab, a hybrid workshop for creativity." />
     <ProjectImage

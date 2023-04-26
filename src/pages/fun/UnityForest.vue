@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2022 – 3D Rendering"
+      info="2022 — 3D Rendering"
       title="Dark Forest"
       brief="Create a graphically impressive scene in Unity Engine, with the use of pre-existing 3D-assets." />
     <ProjectImage

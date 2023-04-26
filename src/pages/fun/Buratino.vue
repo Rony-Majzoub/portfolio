@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2020/2021 – Web Development"
+      info="2020/2021 — Web Development"
       title="Buratino Instruktino"
       brief="Create a digital replacement for a physical instruction manual." />
     <ProjectImage

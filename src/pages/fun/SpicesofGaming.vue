@@ -3,15 +3,16 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2021 – Motion Graphics"
+      info="2021 — Motion Graphics"
       title="Spices of Gaming"
       brief="Create a 2D animation in After Effects, based off a previously made Infographic." />
     <ProjectVideo
       class="mb-10"
       video="spices_of_gaming.mp4"
       video-link="v1654003119/portfolio/fun/spices_of_gaming.mp4"
+      thumbnail="Spices_of_Gaming_Poster.webp"
       alt-text="Spices of Gaming"
-      bg-color="#3c3444"
+      bg-color="#3c3746"
       :autoplay="true"
       :controls="false"
       :loop="true" />

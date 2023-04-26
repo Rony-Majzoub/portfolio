@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2021 – UI/UX & Product Design"
+      info="2021 — UI/UX & Product Design"
       title="Smoove"
       brief="Create and design a landing page for a premium, custom vehicle." />
     <ProjectImage

@@ -3,13 +3,14 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2022/2023 – Motion Design"
+      info="2022/2023 — Motion Design"
       title="10A Arkitektur"
-      brief="Animate a custom logo, as well as animating social media content." />
+      brief="Animate the creation of a tailor-made logo." />
     <ProjectVideo
       class="mb-10"
       video="10a_logo_animation.mp4"
       video-link="v1681303739/portfolio/fun/10a/10a_logo_animation.mp4"
+      thumbnail="Grid_2px_4K.webp"
       alt-text="10A Animation"
       bg-color="#000000"
       :autoplay="true"

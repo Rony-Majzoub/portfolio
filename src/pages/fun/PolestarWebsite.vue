@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2021 – UX Design"
+      info="2021 — UX Design"
       title="Polestar Website"
       brief="Improve the User Experience of a single page of the current Polestar 2 Website." />
     <ProjectGallery

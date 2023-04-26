@@ -24,7 +24,8 @@
             :controls="controls"
             :loop="loop"
             :muted="muted"
-            :playsinline="loop" />
+            :playsinline="loop"
+            :poster="`/assets/img/${thumbnail}`" />
         </div>
       </div>
     </div>
@@ -59,6 +60,10 @@ export default {
       type: String,
     },
     videoLink: {
+      default: "",
+      type: String,
+    },
+    thumbnail: {
       default: "",
       type: String,
     },

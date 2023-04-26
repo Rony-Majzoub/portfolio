@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2021/2022 – UX & Product Design"
+      info="2021/2022 — UX & Product Design"
       title="Mojo"
       brief="Create and deliver a graphic profile for a start-up company." />
     <ProjectImage

@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2022 – Product Visualization"
+      info="2022 — Product Visualization"
       title="So Good"
       brief="Design and visualize a product in 3D." />
     <ProjectImage

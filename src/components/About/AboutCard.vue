@@ -120,7 +120,7 @@ export default {
       opacity: [0, 1],
       easing: "easeOutQuint",
       duration: 1000,
-      delay: this.$anime.stagger(25, { start: 400 }),
+      delay: this.$anime.stagger(25, { start: 200 }),
     });
   },
 };

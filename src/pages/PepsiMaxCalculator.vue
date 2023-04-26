@@ -3,7 +3,7 @@
   <div
     class="grid grid-cols-10 col-start-2 col-end-[-2] max-lg:justify-items-center">
     <ProjectTitle
-      info="2023 – UI/UX & Motion Design"
+      info="2023 — UI/UX & Motion Design"
       title="Pepsi Max Calculator"
       brief="Create and design an advanced calculator for Pepsi Max, based on an internal spreadsheet from the client." />
     <ProjectImage
