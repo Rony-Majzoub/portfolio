@@ -137,14 +137,14 @@ export default {
       }
       // If route-target is not a hash, scroll to top of page.
       else {
-        if (window.document.documentElement.scrollTop !== 0) {
-          this.$anime({
-            targets: window.document.documentElement,
-            scrollTop: 0,
-            duration: 750,
-            easing: "cubicBezier(.75,0,.2,1)",
-          });
-        }
+        // if (window.document.documentElement.scrollTop !== 0) {
+        this.$anime({
+          targets: window.document.documentElement,
+          scrollTop: 0,
+          duration: 750,
+          easing: "cubicBezier(.75,0,.2,1)",
+        });
+        // }
       }
       // If route-target is "about", animate the footer (only on screens of 1024px and above).
       if (this.$route.path === "/about") {
