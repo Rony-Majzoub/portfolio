@@ -97,7 +97,7 @@
         tag="2D Animation"
         image="WWP_Scroll_Thumbnail.png"
         image-link="v1682551104/portfolio/fun/wwp/WWP_Scroll_Thumbnail.webp"
-        device-radius="0px"
+        device-radius="4px"
         link="fun/wwp"
         bg-color="#28c25e"
         title-color="var(--eggplant)"
