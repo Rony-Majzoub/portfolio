@@ -17,7 +17,9 @@
       :autoplay="true"
       :controls="false"
       :loop="true"
-      :muted="true" />
+      :muted="true"
+      video-width="768"
+      video-height="768" />
     <ProjectTags client="World Wide Padel" duration="2 weeks" class="!pb-0" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <div

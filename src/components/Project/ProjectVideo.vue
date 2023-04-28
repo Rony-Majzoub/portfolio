@@ -10,8 +10,8 @@
         v-once
         :src="`/assets/img/${video}`"
         :alt="`${altText}`"
-        width="768"
-        height="432"
+        :width="videoWidth"
+        :height="videoHeight"
         class="cld-responsive high-def relative md:absolute object-contain object-center w-full h-auto md:h-full lg:rounded-lg text-[0]"
         :autoplay="autoplay"
         :controls="controls"
@@ -82,6 +82,14 @@ export default {
     },
     bgColor: {
       default: "var(--eggplant)",
+      type: String,
+    },
+    videoWidth: {
+      default: "768",
+      type: String,
+    },
+    videoHeight: {
+      default: "432",
       type: String,
     },
     autoplay: {

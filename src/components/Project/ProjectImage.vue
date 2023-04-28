@@ -11,8 +11,8 @@
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_480/e_blur:1000,q_auto,f_auto/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
         :alt="`${altText}`"
-        width="768"
-        height="432"
+        :width="imageWidth"
+        :height="imageHeight"
         class="cld-responsive relative md:absolute object-contain md:object-cover object-[center_60%] w-full h-auto md:h-full text-[0]" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
@@ -80,6 +80,14 @@ export default {
     },
     bgColor: {
       default: "var(--eggplant)",
+      type: String,
+    },
+    imageWidth: {
+      default: "768",
+      type: String,
+    },
+    imageHeight: {
+      default: "432",
       type: String,
     },
   },

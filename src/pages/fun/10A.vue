@@ -15,7 +15,9 @@
       bg-color="#000000"
       :autoplay="true"
       :controls="false"
-      :loop="true" />
+      :loop="true"
+      video-width="768"
+      video-height="768" />
     <ProjectTags client="10A Arkitektur" duration="2 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>

@@ -13,7 +13,9 @@
       alt-text="Smoove Park"
       link-text="View Website"
       link="https://rony-majzoub-smoove.netlify.app"
-      bg-color="#464145" />
+      bg-color="#464145"
+      image-width="432"
+      image-height="610" />
     <ProjectTags client="Yrgo DD21" duration="1 month" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnLeft
