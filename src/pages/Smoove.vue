@@ -124,7 +124,6 @@ export default {
     ProjectImageNew: defineAsyncComponent(() =>
       import("../components/Project/ProjectImageNew.vue")
     ),
-
     ProjectGallery: defineAsyncComponent(() =>
       import("../components/Project/ProjectGallery.vue")
     ),

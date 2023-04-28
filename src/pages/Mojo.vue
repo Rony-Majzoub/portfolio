@@ -25,21 +25,23 @@
         title="The problem"
         description="After speaking with the client, we learned of two distinct target groups we had to design for: the investors who would fund the project, and the people in Africa who would use the products made possible by the brand. This was not going to be easy." />
 
-      <ProjectImageFull
+      <ProjectImageNew
         image="mojo_inspiration.png"
         image-link="v1653071265/portfolio/mojo/mojo_inspiration.png"
         alt-text="Inspiration for the market of Mojo."
-        description="The early inspiration pieces for narrowing down the feel and market of Mojo." />
+        description="The early inspiration pieces for narrowing down the feel and market of Mojo."
+        :dual="false" />
 
       <ColumnLeft
         title="The solution"
         description="Our solution was to design a graphic profile that was minimalistic and slightly modern in appearance while not delving too deep into a corporate style. We wanted to develop trust between the brand and end-users while also giving a slightly playful vibe to play into the African culture prominent in the target countries." />
 
-      <ProjectImageFull
+      <ProjectImageNew
         image="mojo_moodboard.png"
         image-link="v1653038272/portfolio/mojo/mojo_moodboard.png"
         alt-text="Mojo Moodboard"
-        description="Our moodboard that would communicate our vision clearly to our client." />
+        description="Our moodboard that would communicate our vision clearly to our client."
+        :dual="false" />
 
       <ColumnLeft
         title="Pre-planning"
@@ -47,21 +49,23 @@
         
         We conducted extensive research on the types of colors, shapes, and font styles we would use and how different cultures around the world would interpret those style choices. We later applied these learnings in three separate Moodboards and pitched them early on to the clients, using their feedback to create concrete assets and a fully-fledged graphic profile later on." />
 
-      <ProjectImageFull
+      <ProjectImageNew
         image="mojo_logo.png"
         image-link="v1653038272/portfolio/mojo/mojo_logo.png"
         alt-text="All the different logos we pitched and redesigned during the project."
-        description="All the different logos we pitched and redesigned during the project." />
+        description="All the different logos we pitched and redesigned during the project."
+        :dual="false" />
 
       <ColumnRight
         title="Working with clients"
         description="A significant portion of the project went into designing the logo for Mojo. As the clients always had the final say, we had to pitch our logo ideas to them each time and use their feedback to improve upon our ideas. A lot of iterating had to be done because of how crucial a good logo was to their project." />
 
-      <ProjectImageFull
+      <ProjectImageNew
         image="mojo_profile.png"
         image-link="v1653038272/portfolio/mojo/mojo_profile.png"
         alt-text="Condensed version of the Graphic Profile."
-        description="A condensed version of the final graphic profile that we delivered to our client." />
+        description="A condensed version of the final graphic profile that we delivered to our client."
+        :dual="false" />
 
       <ColumnLeft
         title="Final delivery"
@@ -90,8 +94,8 @@ export default {
     ProjectImage: defineAsyncComponent(() =>
       import("../components/Project/ProjectImage.vue")
     ),
-    ProjectImageFull: defineAsyncComponent(() =>
-      import("../components/Project/ProjectImageFull.vue")
+    ProjectImageNew: defineAsyncComponent(() =>
+      import("../components/Project/ProjectImageNew.vue")
     ),
     ProjectGallery: defineAsyncComponent(() =>
       import("../components/Project/ProjectGallery.vue")

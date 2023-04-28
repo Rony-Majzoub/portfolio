@@ -24,39 +24,28 @@
         description='The client had many ideas in mind when delivering their brief, including "Controlled Chaos," "Hybrid Workshop," and "Place for Creativity." How could we convey these feelings in a static website, within a tight deadline, punk aesthetic and an abstract brief?' />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
-        <ProjectImageHalf
+        <ProjectImageNew
           image="fel_skiss.png"
           image-link="v1652994219/portfolio/fel/fel_skiss.png"
           alt-text="Future Experience Lab Sketches"
           description="The early desktop & mobile sketches for the main layout of the website."
-          class="max-lg:hidden" />
-        <ProjectImageHalf
+          :dual="true" />
+        <ProjectImageNew
           image="fel_greybox.png"
           image-link="v1652994219/portfolio/fel/fel_greybox.png"
           alt-text="Future Experience Lab Greyboxes"
           description="Digital greyboxes for how components, images & sections should be placed on the website."
-          class="max-lg:hidden" />
-        <ProjectImageFull
-          image="fel_skiss.png"
-          image-link="v1652994219/portfolio/fel/fel_skiss.png"
-          alt-text="Future Experience Lab Sketches"
-          description="The early desktop & mobile sketches for the main layout of the website."
-          class="lg:hidden" />
-        <ProjectImageFull
-          image="fel_greybox.png"
-          image-link="v1652994219/portfolio/fel/fel_greybox.png"
-          alt-text="Future Experience Lab Greyboxes"
-          description="Digital greyboxes for how components, images & sections should be placed on the website."
-          class="lg:hidden" />
+          :dual="true" />
       </div>
       <ColumnLeft
         title="The solution"
         description="The solution was a landing page that showcased the projects and workshops that Future Experience Lab has contributed to. The website was divided into different sections to better communicate the different aspects of Future Experience Lab. We used a variety of images, illustrations, and stylistic choices to create a chaotic feel, while also utilizing pre-defined grids and whitespace to subconsciously organize that chaos." />
-      <ProjectImageFull
+      <ProjectImageNew
         image="fel_moodboard.png"
         image-link="v1652994210/portfolio/fel/fel_moodboard.png"
         alt-text="Smoove Moodboard"
-        description="This moodboard represents the feelings we strived to achieve on the final website." />
+        description="This moodboard represents the feelings we strived to achieve on the final website."
+        :dual="false" />
       <ColumnLeft
         title="Pre-planning"
         description="After receiving the project brief, we narrowed down the website's goal and target group and what they valued. We presented these questions to the client and shaped the project around those key points.
@@ -69,11 +58,12 @@
         
         For brand colors, we chose three strong colors with two additional text and background colors. Throughout the website, we also used a variety of primitive shapes as decorative backgrounds. These are used in conjunction with our brand colors to give off a feeling of chaos and spice up the background as a whole.
         " />
-      <ProjectImageFull
+      <ProjectImageNew
         image="fel_stylesheet.png"
         image-link="v1653003599/portfolio/fel/fel_stylesheet.png"
         alt-text="Stylesheet created for our Web Developers."
-        description="Our stylesheet that we applied throughout our entire project." />
+        description="Our stylesheet that we applied throughout our entire project."
+        :dual="false" />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ColumnHalf
@@ -82,32 +72,28 @@
 
         Our first method was to deliver sections one by one in a timely manner, with greyboxes and large visual elements coming first. We also communicated if any changes had been made to previous deliveries.
         Our second method was to extensively use Components and Color/Text Styles in Figma, which allowed for reusable code in the final website. This drastically reduced the time needed to code the website while also giving a more consistent design to the entire prototype." />
-        <ProjectImageHalf
+        <ProjectImageNew
           image="fel_components.png"
           image-link="v1652996443/portfolio/fel/fel_components.png"
           alt-text="Components that were created for our Web Developers."
           description="The mobile & desktop components that we designed for our Web Developers."
-          class="max-lg:hidden" />
-        <ProjectImageFull
-          image="fel_components.png"
-          image-link="v1652996443/portfolio/fel/fel_components.png"
-          alt-text="Components that were created for our Web Developers."
-          description="The mobile & desktop components that we designed for our Web Developers."
-          class="lg:hidden" />
+          :dual="true" />
       </div>
-      <ProjectImageFull
+      <ProjectImageNew
         image="fel_delivery.png"
         image-link="v1653003559/portfolio/fel/fel_delivery.png"
         alt-text="Our Review Process of 3D Images."
-        description="Our delivery process of components, illustrations and layouts to our Web Developers." />
+        description="Our delivery process of components, illustrations and layouts to our Web Developers."
+        :dual="false" />
       <ColumnLeft
         title="Final prototypes"
         description="The final prototypes were made in Figma, with fine-tuned desktop and mobile variants. The prototypes were also made with a responsive layout in mind, both for larger and smaller screens. We provided multiple pages, assets, and illustrations that were used in the final website." />
-      <ProjectImageFull
+      <ProjectImageNew
         image="fel_prototype.png"
         image-link="v1653003373/portfolio/fel/fel_prototype.png"
         alt-text="Final Prototypes in Figma."
-        description="Snapshots of our final Figma-prototypes." />
+        description="Snapshots of our final Figma-prototypes."
+        :dual="false" />
       <ColumnLeft
         title="Learnings"
         description="We gained more experience on how to work under a tight deadline and what to prioritize in those cases. We also gained a better understanding of how Web Developers work and their requirements.
@@ -125,11 +111,8 @@ export default {
     ProjectImage: defineAsyncComponent(() =>
       import("../components/Project/ProjectImage.vue")
     ),
-    ProjectImageHalf: defineAsyncComponent(() =>
-      import("../components/Project/ProjectImageHalf.vue")
-    ),
-    ProjectImageFull: defineAsyncComponent(() =>
-      import("../components/Project/ProjectImageFull.vue")
+    ProjectImageNew: defineAsyncComponent(() =>
+      import("../components/Project/ProjectImageNew.vue")
     ),
     ProjectTags: defineAsyncComponent(() =>
       import("../components/Project/ProjectTags.vue")
