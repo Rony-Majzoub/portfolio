@@ -91,7 +91,7 @@
         image="10a_thumbnail.png"
         image-link="v1681303738/portfolio/fun/10a/10a_thumbnail.png"
         link="fun/10a"
-        bg-color="var(--eggplant)" />
+        bg-color="#191919" />
       <FunCard
         title="World Wide Padel"
         tag="2D Animation"
@@ -99,7 +99,7 @@
         image-link="v1682551104/portfolio/fun/wwp/WWP_Scroll_Thumbnail.webp"
         device-radius="4px"
         link="fun/wwp"
-        bg-color="#28c25e"
+        bg-color="#4dbf75"
         title-color="var(--eggplant)"
         subtitle-color="var(--black-coffee)" />
       <FunCard
@@ -108,7 +108,9 @@
         image="puck_animation.png"
         image-link="v1653998300/portfolio/fun/puck_animation.png"
         link="fun/puckanimation"
-        bg-color="var(--eggplant)" />
+        bg-color="#cc9c7a"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
       <FunCard
         title="Spices of Gaming"
         tag="Motion Graphics"

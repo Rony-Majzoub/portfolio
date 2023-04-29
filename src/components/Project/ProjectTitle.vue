@@ -1,6 +1,6 @@
 <template>
   <div
-    class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col gap-4 pb-10 text-left">
+    class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col justify-self-stretch gap-4 pb-10 text-left">
     <p
       v-once
       class="info-text text-pastel-pink tracking-widest font-semibold text-sm uppercase antialiased">
