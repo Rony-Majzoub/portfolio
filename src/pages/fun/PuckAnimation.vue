@@ -14,7 +14,7 @@
       alt-text="Puck Animation"
       link-text="View Inspiration"
       link="https://andreaswannerstedt.se/oddly-satisfying-vol8"
-      bg-color="#c1a693"
+      bg-color="#b2875f"
       :autoplay="true"
       :controls="false"
       :loop="true"
