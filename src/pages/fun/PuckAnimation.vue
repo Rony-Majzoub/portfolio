@@ -16,6 +16,7 @@
       link="https://andreaswannerstedt.se/oddly-satisfying-vol8"
       bg-color="#c1a693"
       :autoplay="true"
+      :controls="false"
       :loop="true"
       :muted="true" />
     <ProjectTags client="Yrgo DD21" duration="1 week" />
