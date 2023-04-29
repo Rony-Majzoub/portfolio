@@ -108,7 +108,7 @@
         image="puck_animation.png"
         image-link="v1653998300/portfolio/fun/puck_animation.png"
         link="fun/puckanimation"
-        bg-color="#34383a" />
+        bg-color="var(--eggplant)" />
       <FunCard
         title="Spices of Gaming"
         tag="Motion Graphics"
