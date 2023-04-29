@@ -108,7 +108,7 @@
         image="puck_animation.png"
         image-link="v1653998300/portfolio/fun/puck_animation.png"
         link="fun/puckanimation"
-        bg-color="#b2875f"
+        bg-color="#dec79b"
         title-color="var(--eggplant)"
         subtitle-color="var(--black-coffee)" />
       <FunCard
