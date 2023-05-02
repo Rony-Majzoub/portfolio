@@ -30,7 +30,7 @@
           :src="`/assets/img/${image}`"
           width="432"
           height="768"
-          class="cld-responsive high-def lg:opacity-0 object-contain w-auto max-w-full h-auto min-h-auto max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 [transition:opacity_0.5s,_box-shadow_300ms] !ease-in-out"
+          class="cld-responsive high-def opacity-0 object-contain w-auto max-w-full h-auto min-h-auto max-h-full absolute text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] overflow-hidden lg:group-hover:shadow-2xl shadow-xl lg:group-hover:shadow-[rgb(0,0,0)]/40 [transition:opacity_0.5s,_box-shadow_300ms] !ease-in-out"
           :class="{
             [`border-2 xl:border-[3px] 3xl:border-4 4xl:border-[6px] 5xl:border-8`]:
               deviceBorder,
@@ -117,15 +117,7 @@ export default {
   mounted() {
     var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
     cl.responsive();
-    const images = document.getElementsByClassName("high-def");
-    const query = window.matchMedia("(min-width: 1024px)");
-    if (query.matches) {
-      this.fadeImg();
-    } else {
-      for (let image of images) {
-        image.style.opacity = "1";
-      }
-    }
+    this.fadeImg();
   },
   methods: {
     fadeImg() {
