@@ -3,8 +3,8 @@
     class="lg:col-start-2 lg:col-end-[-2] max-lg:w-screen col-span-full h-full w-full flex flex-col gap-2">
     <div
       v-once
-      class="relative md:aspect-video lg:rounded-lg w-full h-auto overflow-hidden bg-eggplant"
-      :style="{ backgroundColor: bgColor }">
+      class="relative md:!aspect-video lg:rounded-lg w-full h-auto overflow-hidden bg-eggplant"
+      :style="{ backgroundColor: bgColor, aspectRatio: contentRatio }">
       <!-- Sharp Final Video (Cloudinary) -->
       <video
         v-once
@@ -82,6 +82,10 @@ export default {
     },
     bgColor: {
       default: "var(--eggplant)",
+      type: String,
+    },
+    contentRatio: {
+      default: "auto",
       type: String,
     },
     videoWidth: {

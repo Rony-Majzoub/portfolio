@@ -14,6 +14,7 @@
       alt-text="10A Animation"
       description="The creation of the new, tailor-made logo for 10A."
       bg-color="#000000"
+      content-ratio="1 / 1"
       :autoplay="true"
       :controls="false"
       :loop="true"

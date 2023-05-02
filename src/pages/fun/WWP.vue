@@ -14,6 +14,7 @@
       alt-text="Animation that conveys the use of snap-scrolling on the website."
       description="Animation that conveys the use of snap-scrolling on the website."
       bg-color="#000000"
+      content-ratio="1 / 1"
       :autoplay="true"
       :controls="false"
       :loop="true"
