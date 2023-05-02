@@ -18,7 +18,8 @@
         :loop="loop"
         :muted="muted"
         :playsinline="loop"
-        :poster="`/assets/img/${thumbnail}`" />
+        :poster="`/assets/img/${thumbnail}`"
+        disableRemotePlayback />
       <!-- <img
       class="object-cover object-[center_60%] w-full max-h-full rounded-lg"
       width="1280"

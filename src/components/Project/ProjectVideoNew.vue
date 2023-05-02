@@ -25,7 +25,8 @@
             :loop="loop"
             :muted="muted"
             :playsinline="loop"
-            :poster="`/assets/img/${thumbnail}`" />
+            :poster="`/assets/img/${thumbnail}`"
+            disableRemotePlayback />
         </div>
       </div>
     </div>
