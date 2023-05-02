@@ -17,6 +17,7 @@
       :autoplay="true"
       :controls="false"
       :loop="true"
+      :muted="true"
       video-width="768"
       video-height="768" />
     <ProjectTags client="10A Arkitektur" duration="2 weeks" class="!pb-0" />

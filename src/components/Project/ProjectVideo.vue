@@ -105,7 +105,7 @@ export default {
       type: Boolean,
     },
     muted: {
-      default: false,
+      default: true,
       type: Boolean,
     },
   },

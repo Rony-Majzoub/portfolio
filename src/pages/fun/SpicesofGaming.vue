@@ -16,6 +16,7 @@
       :autoplay="true"
       :controls="false"
       :loop="true"
+      :muted="true"
       video-width="768"
       video-height="768" />
     <ProjectTags client="Yrgo DD21" duration="2 weeks" />
