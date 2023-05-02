@@ -5,21 +5,48 @@
     <ProjectTitle
       info="2022/2023 — Motion Design"
       title="10A Arkitektur"
-      brief="Animate the creation of a tailor-made logo." />
+      brief="Animate the creation of a tailor-made logo, as well as social media content." />
     <ProjectVideo
       class="mb-10"
       video="10a_logo_animation.mp4"
       video-link="v1681303739/portfolio/fun/10a/10a_logo_animation.mp4"
-      thumbnail="Grid_2px_4K.webp"
+      thumbnail="10a_logo_thumbnail.webp"
       alt-text="10A Animation"
+      description="The creation of the new, tailor-made logo for 10A."
       bg-color="#000000"
       :autoplay="true"
       :controls="false"
       :loop="true"
       video-width="768"
       video-height="768" />
-    <ProjectTags client="10A Arkitektur" duration="2 weeks" />
-    <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
+    <ProjectTags client="10A Arkitektur" duration="2 weeks" class="!pb-0" />
+    <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
+      <div
+        class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
+        <ProjectVideoNew
+          video="10A_menu_animation.mp4"
+          thumbnail="10A_menu_thumbnail.webp"
+          alt-text="The new animated menu used on the website."
+          description="The new animated menu used on the website."
+          bg-color="#191919"
+          :dual="true"
+          :autoplay="true"
+          :controls="false"
+          :loop="true"
+          :muted="true" />
+        <ProjectVideoNew
+          video="10A_story_case.mp4"
+          thumbnail="10A_story_case_thumbnail.webp"
+          alt-text="An example of their new social media identity."
+          description="An example of their new social media identity."
+          bg-color="#191919"
+          :dual="true"
+          :autoplay="true"
+          :controls="false"
+          :loop="true"
+          :muted="true" />
+      </div>
+    </main>
   </div>
 </template>
 
