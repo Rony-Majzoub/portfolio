@@ -31,7 +31,7 @@
     <div v-if="disclaimer.length" class="max-lg:grid grid-cols-12">
       <div
         v-once
-        class="max-lg:col-start-2 max-lg:col-end-[-2] flex flex-row justify-between gap-4">
+        class="max-lg:col-start-1 max-lg:col-end-[-1] flex flex-row justify-between gap-4">
         <p class="text-cameo-pink font-normal text-sm lg:text-base">
           {{ disclaimer }}
         </p>
