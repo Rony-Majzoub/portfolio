@@ -1,10 +1,10 @@
 <template>
   <div
-    class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-4 animation-item">
+    class="lg:col-start-2 lg:col-end-[-2] col-span-full flex flex-col gap-2 animation-item">
     <div
       v-if="title.length"
       v-once
-      class="col-span-full place-self-start pt-8 flex flex-col gap-1">
+      class="col-span-full place-self-start pt-8 pb-2 flex flex-col gap-1">
       <h2 v-once class="text-3xl lg:text-5xl font-bold text-unbleached-silk">
         {{ title }}
       </h2>
@@ -27,6 +27,24 @@
         :description="picture.imageText"
         :bg-color="picture.imageColor" />
     </div>
+    <!-- Text Element -->
+    <div v-if="disclaimer.length" class="max-lg:grid grid-cols-12">
+      <div
+        v-once
+        class="max-lg:col-start-2 max-lg:col-end-[-2] flex flex-row justify-between gap-4">
+        <p class="text-cameo-pink font-normal text-sm lg:text-base">
+          {{ disclaimer }}
+        </p>
+        <a
+          v-if="linkText"
+          v-once
+          class="nav-text relative whitespace-nowrap h-fit text-right cursor-pointer transition-all duration-300 text-melon text-base font-bold antialiased"
+          :href="link"
+          target="_blank">
+          {{ linkText }} &rarr;
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 <script>
@@ -42,6 +60,18 @@ export default {
       type: String,
     },
     description: {
+      default: "",
+      type: String,
+    },
+    disclaimer: {
+      default: "",
+      type: String,
+    },
+    link: {
+      default: "",
+      type: String,
+    },
+    linkText: {
       default: "",
       type: String,
     },

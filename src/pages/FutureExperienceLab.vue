@@ -71,6 +71,7 @@
           description="For this project, we teamed up with the Web Developer class at Yrgo, who were responsible for coding and implementing our designs to the web. Therefore, we had to carefully adapt our working schedule to accommodate agile development with our Web Developers.
 
         Our first method was to deliver sections one by one in a timely manner, with greyboxes and large visual elements coming first. We also communicated if any changes had been made to previous deliveries.
+        
         Our second method was to extensively use Components and Color/Text Styles in Figma, which allowed for reusable code in the final website. This drastically reduced the time needed to code the website while also giving a more consistent design to the entire prototype." />
         <ProjectImageNew
           image="fel_components.png"

@@ -110,7 +110,8 @@
         Overall, we were reasonably happy with the work we managed to deliver with our CG-Designers. When it comes to the website, there were a few cases of mismanagement, which left a few things to be desired in the final product. We definitely learned a thing or two from these missteps, and we've made sure to better prepare for those challenges in the future." />
       <ProjectGallery
         title="Render Gallery"
-        description="The final 3D-renders that are used on the production site, created by our CG-Designers." />
+        description="The final 3D-renders that are used on the production site.*"
+        disclaimer="*These images were created by our talented CG-Designers." />
     </main>
   </div>
 </template>
