@@ -19,7 +19,7 @@
             :alt="`${altText}`"
             width="432"
             height="768"
-            class="cld-responsive high-def object-contain w-auto max-w-full h-full min-h-auto max-h-full relative text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] shadow-2xl shadow-[rgb(0,0,0)]/30 overflow-hidden"
+            class="cld-responsive high-def object-contain w-auto max-w-full h-full min-h-auto max-h-full relative text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] shadow-2xl shadow-[rgb(0,0,0)]/30 overflow-hidden transform-gpu"
             :autoplay="autoplay"
             :controls="controls"
             :loop="loop"

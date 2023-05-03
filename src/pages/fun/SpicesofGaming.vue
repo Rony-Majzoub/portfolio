@@ -12,7 +12,7 @@
       video-link="v1654003119/portfolio/fun/spices_of_gaming.mp4"
       thumbnail="Spices_of_Gaming_Poster.webp"
       alt-text="Spices of Gaming"
-      bg-color="#3c3746"
+      bg-color="transparent"
       content-ratio="1 / 1"
       :autoplay="true"
       :controls="false"
