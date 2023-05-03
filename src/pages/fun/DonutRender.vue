@@ -7,7 +7,7 @@
       title="Donut Scene"
       brief="Create the iconic 3D-donut scene in Blender, featuring a mix of modelling, materials, lighting, rendering and camera work." />
     <ProjectGallery
-      class="mb-10"
+      class="mb-8"
       title=""
       description=""
       gallery-color="var(--eggplant)" />

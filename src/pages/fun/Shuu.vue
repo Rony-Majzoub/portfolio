@@ -7,7 +7,7 @@
       title="Shuu"
       brief="Create a landing page for a clothing brand, in a short amount of time." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="shuu_hero.png"
       image-link="v1653261250/portfolio/fun/shuu/shuu_hero.png"
       alt-text="Shuu"

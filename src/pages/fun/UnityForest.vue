@@ -7,7 +7,7 @@
       title="Dark Forest"
       brief="Create a graphically impressive scene in Unity Engine, with the use of pre-existing 3D-assets." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="Unity_Forest.png"
       image-link="v1654173537/portfolio/fun/Unity_Forest.png"
       alt-text="Unity Forest"

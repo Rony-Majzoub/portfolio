@@ -7,7 +7,7 @@
       title="Information Screen"
       brief="Create a digital information screen, for improving a student's daily life." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="connected.png"
       image-link="v1653262038/portfolio/fun/connected/connected.png"
       alt-text="Information Screen"

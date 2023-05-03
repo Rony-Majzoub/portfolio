@@ -7,7 +7,7 @@
       title="Future Experience Lab"
       brief="Create and design a landing page for Future Experience Lab, a hybrid workshop for creativity." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="fel_hero2.png"
       image-link="v1652949383/portfolio/fel/fel_hero2.png"
       alt-text="Future Experience Lab Icon"

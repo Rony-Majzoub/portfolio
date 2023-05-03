@@ -7,7 +7,7 @@
       title="Brick Wall"
       brief="Create a 3D-image by only utilizing a high-quality texture." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="brick_wall.jpg"
       image-link="v1653259074/portfolio/fun/Brick_Wall.jpg"
       alt-text="Brick Wall"

@@ -7,7 +7,7 @@
       title="So Good"
       brief="Design and visualize a product in 3D." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="so_good.png"
       image-link="v1653258131/portfolio/fun/so_good/so_good.png"
       alt-text="So Good"

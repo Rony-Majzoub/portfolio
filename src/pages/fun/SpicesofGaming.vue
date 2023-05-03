@@ -7,7 +7,7 @@
       title="Spices of Gaming"
       brief="Create a 2D animation in After Effects, based off a previously made Infographic." />
     <ProjectVideo
-      class="mb-10"
+      class="mb-8"
       video="spices_of_gaming.mp4"
       video-link="v1654003119/portfolio/fun/spices_of_gaming.mp4"
       thumbnail="Spices_of_Gaming_Poster.webp"

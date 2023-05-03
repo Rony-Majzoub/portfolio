@@ -7,7 +7,7 @@
       title="Polestar Website"
       brief="Improve the User Experience of a single page of the current Polestar 2 Website." />
     <ProjectGallery
-      class="mb-10"
+      class="mb-8"
       title=""
       description=""
       gallery-color="var(--eggplant)" />

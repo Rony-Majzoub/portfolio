@@ -7,7 +7,7 @@
       title="World Wide Padel"
       brief="Create a 2D animation for a Success/404 page, as well as social media content." />
     <ProjectVideo
-      class="mb-10"
+      class="mb-8"
       video="WWP_Scroll.mp4"
       thumbnail="WWP_Scroll.webp"
       video-link="v1682414977/portfolio/fun/wwp/WWP_Scroll_H264.mp4"

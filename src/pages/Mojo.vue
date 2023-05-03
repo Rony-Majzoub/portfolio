@@ -7,7 +7,7 @@
       title="Mojo"
       brief="Create and deliver a graphic profile for a start-up company." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="mojo_hero.png"
       image-link="v1653061123/portfolio/mojo/mojo_hero.png"
       alt-text="Mojo Hero Image"

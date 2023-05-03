@@ -7,7 +7,7 @@
       title="Vacina"
       brief="Create and design a digital app to improve the experience and ease of vaccinating." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="vacina.png"
       image-link="v1653260886/portfolio/fun/vacina/vacina.png"
       alt-text="Vacina"

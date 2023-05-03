@@ -7,7 +7,7 @@
       title="Smoove"
       brief="Create and design a landing page for a premium, custom vehicle." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="smoove_park.jpg"
       image-link="v1652044733/portfolio/smoove/smoove.jpg"
       alt-text="Smoove Park"

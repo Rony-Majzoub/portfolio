@@ -7,7 +7,7 @@
       title="Anvil Render"
       brief="Model and sculpt a hi-res mesh, and bake detail into normal maps." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="anvilrender.jpg"
       image-link="v1653259517/portfolio/fun/anvilrender.jpg"
       alt-text="Anvil Render"

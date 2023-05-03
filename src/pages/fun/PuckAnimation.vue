@@ -7,7 +7,7 @@
       title="Puck Animation"
       brief="Recreate a looping 3D Animation in Blender, originally created by Andreas Wannerstedt." />
     <ProjectVideo
-      class="mb-10"
+      class="mb-8"
       video="Puck_Render.mp4"
       video-link="v1654000302/portfolio/fun/Puck_Render.mp4"
       thumbnail="puck_animation.webp"

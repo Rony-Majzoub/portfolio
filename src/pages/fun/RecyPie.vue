@@ -7,7 +7,7 @@
       title="RecyPie"
       brief="Create and design a modern, digital solution to a global problem." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="recypie.png"
       image-link="v1652044733/portfolio/recypie/recypie.png"
       alt-text="RecyPie"

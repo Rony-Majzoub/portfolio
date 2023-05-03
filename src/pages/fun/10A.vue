@@ -7,7 +7,7 @@
       title="10A Arkitektur"
       brief="Animate the creation of a tailor-made logo, as well as social media content." />
     <ProjectVideo
-      class="mb-10"
+      class="mb-8"
       video="10a_logo_animation.mp4"
       video-link="v1681303739/portfolio/fun/10a/10a_logo_animation.mp4"
       thumbnail="10a_logo_thumbnail.webp"

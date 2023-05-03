@@ -7,7 +7,7 @@
       title="Otii"
       brief="Conceptualize a mindful app that assists mothers with breastfeeding." />
     <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="otii_hero.png"
       image-link="v1681288212/portfolio/fun/otii/otii_hero.png"
       alt-text="Otii"

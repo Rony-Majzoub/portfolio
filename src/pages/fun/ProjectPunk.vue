@@ -7,12 +7,12 @@
       title="Project Punk"
       brief="Create a 3D-scene that would visualize the idea for an upcoming gaming project." />
     <ProjectGallery
-      class="mb-10"
+      class="mb-8"
       title=""
       description=""
       gallery-color="var(--eggplant)" />
     <!-- <ProjectImage
-      class="mb-10"
+      class="mb-8"
       image="project_punk.jpg"
       image-link="v1653259074/portfolio/fun/project_punk.jpg"
       alt-text="Project Punk"
