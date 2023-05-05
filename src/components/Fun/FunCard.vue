@@ -40,7 +40,7 @@
     </div>
     <!-- Text Element -->
     <div
-      class="transition-all ease-in-out flex flex-row justify-between items-baseline self-stretch pb-4 bottom-0 inset-x-0 text-left px-6">
+      class="transition-all ease-in-out flex flex-row gap-8 justify-between items-baseline self-stretch pb-4 bottom-0 inset-x-0 text-left px-6">
       <h2
         v-once
         class="text-melon font-bold text-lg xl:text-xl z-10"
@@ -53,7 +53,7 @@
       </p> -->
       <p
         v-once
-        class="sm:block hidden text-pastel-pink text-right font-semibold text-xs tracking-widest uppercase antialiased -mr-2 opacity-0 lg:group-hover:opacity-100 lg:group-hover:mr-3 transition-all ease-in-out duration-300"
+        class="sm:block hidden text-pastel-pink text-right font-semibold text-xs tracking-widest uppercase antialiased whitespace-nowrap -mr-2 opacity-0 lg:group-hover:opacity-100 lg:group-hover:-translate-x-5 transition-all ease-in-out duration-300"
         :style="{ color: subtitleColor }">
         View case
       </p>
