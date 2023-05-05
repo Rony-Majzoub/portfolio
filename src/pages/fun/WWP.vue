@@ -21,7 +21,7 @@
       :muted="true"
       video-width="768"
       video-height="768" />
-    <ProjectTags client="World Wide Padel" duration="2 weeks" class="!pb-0" />
+    <ProjectTags client="World Wide Padel" duration="2 weeks" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">

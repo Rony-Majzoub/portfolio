@@ -1,7 +1,7 @@
 <template>
   <section
-    class="flex flex-row w-full col-span-full pb-8 lg:pb-16 gap-x-4 justify-self-start lg:col-start-2 lg:col-end-[-2]">
-    <div class="flex flex-row w-full justify-between gap-8 pb-10">
+    class="flex flex-row w-full col-span-full gap-x-4 justify-self-start lg:col-start-2 lg:col-end-[-2]">
+    <div class="flex flex-row w-full justify-between gap-8 pb-6">
       <div class="flex flex-col gap-8 pb-10 lg:flex-[0.625]">
         <div class="flex flex-col gap-2">
           <p class="text-lg font-bold text-unbleached-silk">Client</p>
