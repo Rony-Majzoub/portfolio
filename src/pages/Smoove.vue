@@ -111,7 +111,7 @@
       <ProjectGallery
         title="Render Gallery"
         description="The final 3D-renders that are used on the production site.*"
-        disclaimer="*These images were created by our talented CG-Designers." />
+        disclaimer="*3D Renders created by Alexander Mellby and Per-Emil Lundqvist." />
     </main>
   </div>
 </template>
