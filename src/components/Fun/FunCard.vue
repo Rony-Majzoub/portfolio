@@ -25,7 +25,7 @@
         <!-- Sharp Final Image (Cloudinary) -->
         <img
           v-once
-          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto,f_auto,fl_progressive/dpr_auto/${imageLink}`"
+          :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
           :alt="`${title}`"
           :src="`/assets/img/${image}`"
           width="432"
