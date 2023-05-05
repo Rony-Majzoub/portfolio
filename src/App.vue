@@ -57,10 +57,11 @@
         <p class="text-unbleached-silk font-extrabold text-base lg:text-lg">
           Copyright
         </p>
-        <div class="flex flex-row gap-2">
+        <div class="flex flex-row gap-2 items-baseline">
           <p
             class="font-semibold text-xs tracking-widest uppercase text-cameo-pink antialiased">
-            © {{ new Date().getFullYear() }} Rony Majzoub
+            © {{ new Date().getFullYear() }} — Designed and coded by Rony
+            Majzoub
           </p>
         </div>
       </div>
@@ -68,7 +69,8 @@
         <p class="text-unbleached-silk font-extrabold text-base lg:text-lg">
           Contact
         </p>
-        <div class="flex flex-col lg:flex-row gap-2">
+        <div
+          class="flex flex-col lg:flex-row gap-2 items-baseline whitespace-nowrap">
           <a
             href="mailto:majzoubrony@gmail.com"
             class="nav-contact w-fit relative text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
@@ -89,7 +91,7 @@
         <p class="text-unbleached-silk font-extrabold text-base lg:text-lg">
           Social media
         </p>
-        <div class="flex flex-row gap-2">
+        <div class="flex flex-row gap-2 items-baseline whitespace-nowrap">
           <a
             href="https://www.linkedin.com/in/rony-majzoub"
             class="nav-contact relative social-media text-cameo-pink hover:text-unbleached-silk transition-colors ease-[cubic-bezier(0,0.8,0.2,1)] duration-300 font-semibold text-sm lg:text-base antialiased">
