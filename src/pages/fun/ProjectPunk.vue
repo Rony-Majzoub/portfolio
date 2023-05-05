@@ -6,17 +6,12 @@
       info="2018 — 3D Rendering"
       title="Project Punk"
       brief="Create a 3D-scene that would visualize the idea for an upcoming gaming project." />
-    <ProjectGallery
+    <ProjectImage
       class="mb-8"
-      title=""
-      description=""
-      gallery-color="var(--eggplant)" />
-    <!-- <ProjectImage
-      class="mb-8"
-      image="project_punk.jpg"
-      image-link="v1653259074/portfolio/fun/project_punk.jpg"
+      image="project_punk.png"
+      image-link="v1683308367/portfolio/fun/project_punk.png"
       alt-text="Project Punk"
-      bg-color="#3e2a21" /> -->
+      bg-color="#44332f" />
     <ProjectTags client="N/A" duration="2 months" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>

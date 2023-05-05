@@ -161,10 +161,10 @@
       <FunCard
         title="Project Punk"
         tag="Modelling & Rendering"
-        image="project_punk.jpg"
-        image-link="v1653259074/portfolio/fun/project_punk.jpg"
+        image="project_punk.png"
+        image-link="v1683308367/portfolio/fun/project_punk.png"
         link="fun/projectpunk"
-        bg-color="#3e2a21" />
+        bg-color="#44332f" />
       <FunCard
         title="Brick Wall"
         tag="Rendering"
