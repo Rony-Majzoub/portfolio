@@ -175,10 +175,10 @@
       <FunCard
         title="Anvil Render"
         tag="Modelling & Materials"
-        image="anvilrender.jpg"
-        image-link="v1653259517/portfolio/fun/anvilrender.jpg"
+        image="anvil_render.png"
+        image-link="v1683417217/portfolio/fun/anvil_render.png"
         link="fun/anvilrender"
-        bg-color="#2b2c2c" />
+        bg-color="#151311" />
       <!-- <FunCard
         title="NTI-Awards 2020"
         tag="Modelling & Rendering"

@@ -8,10 +8,10 @@
       brief="Model and sculpt a hi-res mesh, and bake detail into normal maps." />
     <ProjectImage
       class="mb-8"
-      image="anvilrender.jpg"
-      image-link="v1653259517/portfolio/fun/anvilrender.jpg"
+      image="anvil_render.png"
+      image-link="v1683417217/portfolio/fun/anvil_render.png"
       alt-text="Anvil Render"
-      bg-color="#2b2c2c" />
+      bg-color="#151311" />
     <ProjectTags client="N/A" duration="1 week" />
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16"></main>
   </div>
