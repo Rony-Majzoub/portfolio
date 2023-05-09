@@ -13,6 +13,8 @@
       thumbnail="10a_logo_thumbnail.webp"
       alt-text="10A Animation"
       description="The creation of the new, tailor-made logo for 10A."
+      link-text="View Website"
+      link="https://10a.se/"
       bg-color="#000000"
       content-ratio="1 / 1"
       :autoplay="true"

@@ -13,6 +13,8 @@
       video-link="v1682414977/portfolio/fun/wwp/WWP_Scroll_H264.mp4"
       alt-text="Animation that conveys the use of snap-scrolling on the website."
       description="Animation that conveys the use of snap-scrolling on the website."
+      link-text="View Website"
+      link="https://worldwidepadel.com/"
       bg-color="#000000"
       content-ratio="1 / 1"
       :autoplay="true"
