@@ -117,7 +117,7 @@ export default {
 };
 </script>
 <!-- The link-styling is handled without Tailwind, for targetting only elements with .name-link and link-elements. -->
-<style lang="scss">
+<style lang="scss" scoped>
 a.name-link::before {
   content: "";
   position: absolute;

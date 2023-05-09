@@ -45,7 +45,7 @@ export default {
   name: "BackButton",
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .nav-back::before {
   content: "";
   position: absolute;

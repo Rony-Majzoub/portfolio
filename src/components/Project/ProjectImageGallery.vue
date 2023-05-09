@@ -101,7 +101,7 @@ export default {
   display: block;
   width: 100%;
   height: 2px;
-  bottom: 0px;
+  bottom: 2px;
   left: 0;
   background-color: currentColor;
   transform: scaleX(0);

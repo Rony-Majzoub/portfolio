@@ -106,3 +106,23 @@ export default {
   },
 };
 </script>
+<style lang="scss" scoped>
+.nav-text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  bottom: 2px;
+  left: 0;
+  background-color: currentColor;
+  transform: scaleX(0);
+  transform-origin: top left;
+  transition: transform 300ms;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
+}
+
+.nav-text:hover::before {
+  transform: scaleX(1);
+}
+</style>

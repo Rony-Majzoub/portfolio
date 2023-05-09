@@ -45,7 +45,7 @@ export default {
   name: "HomeButton",
 };
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .nav-home::before {
   content: "";
   position: absolute;

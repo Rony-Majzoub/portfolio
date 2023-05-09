@@ -27,7 +27,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .nav-mobile.router-link-active {
   text-decoration-color: var(--unbleached-silk) !important;
   color: var(--unbleached-silk) !important;
