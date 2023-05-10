@@ -59,6 +59,7 @@ export default {
   transform-origin: top right;
   transition: transform 300ms;
   transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
+  will-change: transform;
 }
 
 .nav-home-container:hover .nav-home::before {

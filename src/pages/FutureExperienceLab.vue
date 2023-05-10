@@ -252,13 +252,13 @@ export default {
     stylePageBefore() {
       document
         .querySelector("body")
-        .setAttribute("style", "background:#212121");
+        .setAttribute("style", "background-color:#212121");
       document
         .querySelector(".navigation-overlay")
-        .setAttribute("style", "background: #212121");
+        .setAttribute("style", "background-color: #212121");
       document
         .querySelector(".page-footer")
-        .setAttribute("style", "background: #212121");
+        .setAttribute("style", "background-color: #212121");
     },
     stylePageMount() {
       var logo = document.querySelectorAll(".fill-melon");
@@ -295,7 +295,7 @@ export default {
       }
       var eggplant = document.querySelectorAll(".bg-eggplant");
       for (var i = 0; i < eggplant.length; i++) {
-        eggplant[i].setAttribute("style", "background: #333333");
+        eggplant[i].setAttribute("style", "background-color: #333333");
       }
       document
         .querySelector(".navbar")

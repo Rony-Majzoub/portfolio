@@ -2,7 +2,7 @@
   <header
     class="navigation grid grid-cols-12 col-span-full fixed top-0 left-0 right-0 pb-2 pt-3 z-40 duration-500 ease-out-expo">
     <div
-      class="navigation-overlay absolute w-full h-full bg-black-coffee -z-50 duration-500 ease-out-expo"></div>
+      class="navigation-overlay absolute w-full h-full bg-black-coffee -z-50 duration-500 ease-out-expo will-change-[background-color]"></div>
     <div
       class="navigation-row flex flex-row justify-between col-start-2 col-end-[-2] max-w-full items-center">
       <router-link to="/">
@@ -47,7 +47,7 @@
   </router-view>
   <navbarOld></navbarOld>
   <footer
-    class="page-footer relative flex justify-center items-center lg:h-auto bg-black-coffee bottom-32 lg:bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 footer-animation">
+    class="page-footer relative flex justify-center items-center lg:h-auto bg-black-coffee bottom-32 lg:bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 will-change-[background-color] footer-animation">
     <div
       class="relative flex flex-col gap-4 max-lg:w-4/5 lg:col-start-1 lg:col-end-[-1] lg:flex-row lg:justify-between lg:gap-12 lg:mx-32">
       <!-- Footer Overline -->
@@ -325,6 +325,7 @@ html {
   transform: scaleX(0);
   transition: all 300ms;
   transition-timing-function: cubic-bezier(0, 0.8, 0.2, 1);
+  will-change: transform;
 }
 .nav-contact::before {
   bottom: 2px;

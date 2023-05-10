@@ -326,13 +326,13 @@ export default {
     stylePageBefore() {
       document
         .querySelector("body")
-        .setAttribute("style", "background:#201d26");
+        .setAttribute("style", "background-color: #201d26");
       document
         .querySelector(".navigation-overlay")
-        .setAttribute("style", "background: #201d26");
+        .setAttribute("style", "background-color: #201d26");
       document
         .querySelector(".page-footer")
-        .setAttribute("style", "background: #201d26");
+        .setAttribute("style", "background-color: #201d26");
     },
     stylePageMount() {
       // var nav = document.querySelectorAll(".nav-item");
@@ -341,7 +341,7 @@ export default {
       // }
       var eggplant = document.querySelectorAll(".bg-eggplant");
       for (var i = 0; i < eggplant.length; i++) {
-        eggplant[i].setAttribute("style", "background: #363040");
+        eggplant[i].setAttribute("style", "background-color: #363040");
       }
       var melon = document.querySelectorAll(".text-melon");
       for (var i = 0; i < melon.length; i++) {

@@ -254,16 +254,16 @@ export default {
     stylePageBefore() {
       document
         .querySelector("body")
-        .setAttribute("style", "background:#fef8ea");
+        .setAttribute("style", "background-color: #fef8ea");
       // document
       //   .querySelector(".nav-menu")
       //   .setAttribute("style", "background:#fef8ea");
       document
         .querySelector(".navigation-overlay")
-        .setAttribute("style", "background: #fef8ea");
+        .setAttribute("style", "background-color: #fef8ea");
       document
         .querySelector(".page-footer")
-        .setAttribute("style", "background:#fef8ea");
+        .setAttribute("style", "background-color: #fef8ea");
     },
     stylePageMount() {
       var logo = document.querySelectorAll(".fill-melon");
@@ -300,7 +300,7 @@ export default {
       }
       var eggplant = document.querySelectorAll(".bg-eggplant");
       for (var i = 0; i < eggplant.length; i++) {
-        eggplant[i].setAttribute("style", "background: #f7b276");
+        eggplant[i].setAttribute("style", "background-color: #f7b276");
       }
       document
         .querySelector(".navbar")
