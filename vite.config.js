@@ -9,6 +9,9 @@ import IconsResolver from "unplugin-icons/resolver";
 import { visualizer } from "rollup-plugin-visualizer";
 
 const config = defineConfig({
+  server: {
+    port: 3000,
+  },
   //...
   plugins: [
     Vue(),
