@@ -118,6 +118,15 @@
         image-link="v1654003231/portfolio/fun/spices_of_gaming_thumbnail.png"
         link="fun/spicesofgaming"
         bg-color="#3c3444" />
+      <FunCard
+        title="Björkåfrihet"
+        tag="Motion Design"
+        image="Bjorkafrihet_Blood_Final_4K_Thumbnail.png"
+        image-link="v1685623614/portfolio/fun/bjorkafrihet/Bjorkafrihet_Blood_Final_4K_Thumbnail.png"
+        link="fun/bjorkafrihet"
+        bg-color="#f0e9e0"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-melon">
           3D-Rendering

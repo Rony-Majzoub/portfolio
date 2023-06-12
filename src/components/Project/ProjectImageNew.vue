@@ -20,7 +20,8 @@
             :alt="`${altText}`"
             width="432"
             height="768"
-            class="cld-responsive high-def object-contain w-auto max-w-full h-auto min-h-auto max-h-full relative text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] shadow-2xl shadow-[rgb(0,0,0)]/30 overflow-hidden" />
+            class="cld-responsive high-def object-contain w-auto max-w-full h-auto min-h-auto max-h-full relative text-[0] rounded-md sm:rounded-[calc(2.16346vw-6.46154px)] lg:rounded-[.78125vw] shadow-2xl shadow-[rgb(0,0,0)]/30 overflow-hidden"
+            :class="{ 'not-rounded': notRounded }" />
         </div>
       </div>
     </div>
@@ -86,6 +87,10 @@ export default {
       default: false,
       type: Boolean,
     },
+    notRounded: {
+      default: false,
+      type: Boolean,
+    },
   },
   mounted() {
     var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
@@ -128,5 +133,8 @@ export default {
   @media (max-width: 1024px) {
     aspect-ratio: auto;
   }
+}
+.not-rounded {
+  border-radius: 0px;
 }
 </style>
