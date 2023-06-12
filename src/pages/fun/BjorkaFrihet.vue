@@ -36,22 +36,20 @@
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectImageNew
           image="Bjork_poster_1.png"
-          image-link="v1685630293/portfolio/fun/bjorkafrihet/Bjork_poster_1.png"
+          image-link="v1686581258/portfolio/fun/bjorkafrihet/Bjork_poster_1.png"
           alt-text=""
           :dual="true"
-          :not-rounded="true"
           content-ratio="3 / 4" />
         <ProjectImageNew
           image="Bjork_poster_2.png"
-          image-link="v1685630293/portfolio/fun/bjorkafrihet/Bjork_poster_2.png"
+          image-link="v1686581258/portfolio/fun/bjorkafrihet/Bjork_poster_2.png"
           alt-text=""
           :dual="true"
-          :not-rounded="true"
           content-ratio="3 / 4" />
       </div>
       <ProjectImageNew
         image="Bjork_poster_buss.jpg"
-        image-link="v1685630293/portfolio/fun/bjorkafrihet/Bjork_poster_buss.jpg"
+        image-link="v1685630691/portfolio/fun/bjorkafrihet/Bjork_poster_buss.jpg"
         alt-text=""
         :dual="false"
         content-ratio="1867 / 1335" />
