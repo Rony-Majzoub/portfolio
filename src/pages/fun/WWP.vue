@@ -99,8 +99,8 @@ export default {
       // Data-list of names and portfolio-links to be shown in ProjectTags.
       team: [
         {
-          teamName: "kolon.studio",
-          portfolioLink: "https://kolon.studio/",
+          teamName: "Alkemi Studio",
+          portfolioLink: "https://alkemi.studio/",
         },
       ],
       // Data-list of categories to be shown in ProjectTags.
