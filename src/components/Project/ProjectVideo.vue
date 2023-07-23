@@ -12,7 +12,7 @@
         :alt="`${altText}`"
         :width="videoWidth"
         :height="videoHeight"
-        class="cld-responsive high-def relative md:absolute object-contain object-center w-full h-auto md:h-full lg:rounded-lg text-[0] transform-gpu"
+        class="relative md:absolute object-contain object-center w-full h-auto md:h-full lg:rounded-lg text-[0] transform-gpu"
         :autoplay="autoplay"
         :controls="controls"
         :loop="loop"
@@ -48,8 +48,6 @@
   </div>
 </template>
 <script>
-import cloudinary from "cloudinary-core/cloudinary-core-shrinkwrap.min.js";
-
 export default {
   name: "ProjectVideo",
   props: {
@@ -113,10 +111,6 @@ export default {
       default: true,
       type: Boolean,
     },
-  },
-  mounted() {
-    var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
-    cl.responsive();
   },
 };
 </script>

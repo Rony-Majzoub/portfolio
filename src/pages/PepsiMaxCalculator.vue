@@ -21,79 +21,64 @@
       <ColumnLeft
         title="The problem"
         description='The client had many ideas in mind when delivering their brief, including "Controlled Chaos," "Hybrid Workshop," and "Place for Creativity." How could we convey these feelings in a static website, within a tight deadline, punk aesthetic and an abstract brief?' />
-      <div
-        class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
-        <ProjectImageNew
-          image="fel_skiss.png"
-          image-link="v1652994219/portfolio/fel/fel_skiss.png"
-          alt-text="Future Experience Lab Sketches"
-          description="The early desktop & mobile sketches for the main layout of the website."
-          :dual="true" />
-        <ProjectImageNew
-          image="fel_greybox.png"
-          image-link="v1652994219/portfolio/fel/fel_greybox.png"
-          alt-text="Future Experience Lab Greyboxes"
-          description="Digital greyboxes for how components, images & sections should be placed on the website."
-          :dual="true" />
-      </div>
+
+      <ProjectImageNew
+        image="carlsberg_spreadsheet.png"
+        image-link="v1690151158/portfolio/carlsberg/carlsberg_spreadsheet.png"
+        alt-text="Carlsberg Spreadsheet"
+        description="A sample of the old spreadsheet Carlsberg Sweden were using."
+        :dual="false" />
       <ColumnLeft
         title="The solution"
         description="The solution was a landing page that showcased the projects and workshops that Future Experience Lab has contributed to. The website was divided into different sections to better communicate the different aspects of Future Experience Lab. We used a variety of images, illustrations, and stylistic choices to create a chaotic feel, while also utilizing pre-defined grids and whitespace to subconsciously organize that chaos." />
-      <ProjectImageNew
-        image="fel_moodboard.png"
-        image-link="v1652994210/portfolio/fel/fel_moodboard.png"
-        alt-text="Smoove Moodboard"
-        description="This moodboard represents the feelings we strived to achieve on the final website."
-        :dual="false" />
+      <div
+        class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
+        <ProjectVideoNew
+          video="carlsberg_calculator_interaction.mp4"
+          alt-text="Smoove Moodboard"
+          description="This moodboard represents the feelings we strived to achieve on the final website."
+          :dual="true"
+          content-ratio="1 / 1"
+          :autoplay="true"
+          :controls="false"
+          :loop="true"
+          :muted="true" />
+        <ProjectVideoNew
+          video="carlsberg_mobile_interaction.mp4"
+          alt-text="Smoove Moodboard"
+          description="This moodboard represents the feelings we strived to achieve on the final website."
+          :dual="true"
+          content-ratio="1 / 1"
+          :autoplay="true"
+          :controls="false"
+          :loop="true"
+          :muted="true" />
+      </div>
       <ColumnLeft
         title="Pre-planning"
         description="After receiving the project brief, we narrowed down the website's goal and target group and what they valued. We presented these questions to the client and shaped the project around those key points.
         
         Early on, we created a Moodboard to visualize how a chaotic yet readable website might look. We narrowed it down to a dark color scheme with strong and contrasting colors used wisely to grab attention. We also found that simple, primitive shapes could add some dynamic flare to the website, which we included in the moodboard." />
-
-      <ColumnLeft
-        title="Our stylesheet"
-        description="The final stylesheet has a focus on three key areas: fonts, colors, and patterns. For fonts, we chose a heavy, punk-like font for all titles and headers to contribute to a more heavy feel. We also used a lighter and more readable font for all body text, which made the site feel more professional and controlled.
-        
-        For brand colors, we chose three strong colors with two additional text and background colors. Throughout the website, we also used a variety of primitive shapes as decorative backgrounds. These are used in conjunction with our brand colors to give off a feeling of chaos and spice up the background as a whole.
-        " />
-      <ProjectImageNew
-        image="fel_stylesheet.png"
-        image-link="v1653003599/portfolio/fel/fel_stylesheet.png"
-        alt-text="Stylesheet created for our Web Developers."
-        description="Our stylesheet that we applied throughout our entire project."
-        :dual="false" />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ColumnHalf
-          title="Designing for the Web"
-          description="For this project, we teamed up with the Web Developer class at Yrgo, who were responsible for coding and implementing our designs to the web. Therefore, we had to carefully adapt our working schedule to accommodate agile development with our Web Developers.
-
-        Our first method was to deliver sections one by one in a timely manner, with greyboxes and large visual elements coming first. We also communicated if any changes had been made to previous deliveries.
-        
-        Our second method was to extensively use Components and Color/Text Styles in Figma, which allowed for reusable code in the final website. This drastically reduced the time needed to code the website while also giving a more consistent design to the entire prototype." />
-        <ProjectImageNew
-          image="fel_components.png"
-          image-link="v1652996443/portfolio/fel/fel_components.png"
-          alt-text="Components that were created for our Web Developers."
-          description="The mobile & desktop components that we designed for our Web Developers."
-          :dual="true" />
+          title="Our stylesheet"
+          description="The final stylesheet has a focus on three key areas: fonts, colors, and patterns. For fonts, we chose a heavy, punk-like font for all titles and headers to contribute to a more heavy feel. We also used a lighter and more readable font for all body text, which made the site feel more professional and controlled.
+          
+          For brand colors, we chose three strong colors with two additional text and background colors. Throughout the website, we also used a variety of primitive shapes as decorative backgrounds. These are used in conjunction with our brand colors to give off a feeling of chaos and spice up the background as a whole.
+          " />
+        <ProjectVideoNew
+          video="carlsberg_icon_collection.mp4"
+          alt-text="Smoove Moodboard"
+          description="This moodboard represents the feelings we strived to achieve on the final website."
+          content-ratio="auto"
+          :dual="true"
+          :autoplay="true"
+          :controls="false"
+          :loop="true"
+          :muted="true" />
       </div>
-      <ProjectImageNew
-        image="fel_delivery.png"
-        image-link="v1653003559/portfolio/fel/fel_delivery.png"
-        alt-text="Our Review Process of 3D Images."
-        description="Our delivery process of components, illustrations and layouts to our Web Developers."
-        :dual="false" />
-      <ColumnLeft
-        title="Final prototypes"
-        description="The final prototypes were made in Figma, with fine-tuned desktop and mobile variants. The prototypes were also made with a responsive layout in mind, both for larger and smaller screens. We provided multiple pages, assets, and illustrations that were used in the final website." />
-      <ProjectImageNew
-        image="fel_prototype.png"
-        image-link="v1653003373/portfolio/fel/fel_prototype.png"
-        alt-text="Final Prototypes in Figma."
-        description="Snapshots of our final Figma-prototypes."
-        :dual="false" />
+
       <ColumnLeft
         title="Learnings"
         description="We gained more experience on how to work under a tight deadline and what to prioritize in those cases. We also gained a better understanding of how Web Developers work and their requirements.
@@ -251,18 +236,18 @@ export default {
     stylePageBefore() {
       document
         .querySelector("body")
-        .setAttribute("style", "background-color:#000000");
+        .setAttribute("style", "background-color:#141212");
       document
         .querySelector(".navigation-overlay")
-        .setAttribute("style", "background-color: #000000");
+        .setAttribute("style", "background-color: #141212");
       document
         .querySelector(".page-footer")
-        .setAttribute("style", "background-color: #000000");
+        .setAttribute("style", "background-color: #141212");
     },
     stylePageMount() {
       var logo = document.querySelectorAll(".fill-melon");
       for (var i = 0; i < logo.length; i++) {
-        logo[i].setAttribute("style", "fill: #58ACDB");
+        logo[i].setAttribute("style", "fill: #80D1FF");
       }
       var melon = document.querySelectorAll(".text-melon");
       for (var i = 0; i < melon.length; i++) {
@@ -282,14 +267,14 @@ export default {
       for (var i = 0; i < cameo.length; i++) {
         cameo[i].setAttribute(
           "style",
-          "color: #bfbfbf; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+          "color: #ffffff; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
         );
       }
       var pastel = document.querySelectorAll(".text-pastel-pink");
       for (var i = 0; i < pastel.length; i++) {
         pastel[i].setAttribute(
           "style",
-          "color: #FF8090; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+          "color: #bfbfbf; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
         );
       }
       var eggplant = document.querySelectorAll(".bg-eggplant");
@@ -300,7 +285,7 @@ export default {
         .querySelector(".navbar")
         .setAttribute(
           "style",
-          "border-color: #58ACDB; background-color: #1e1c1c"
+          "border-color: #FF8090; background-color: #1e1c1c"
         );
     },
     stylePageUnmount() {
