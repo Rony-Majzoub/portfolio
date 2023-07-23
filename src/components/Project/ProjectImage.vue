@@ -3,7 +3,7 @@
     class="lg:col-start-2 lg:col-end-[-2] max-lg:w-screen col-span-full h-full w-full flex flex-col gap-2">
     <div
       v-once
-      class="relative md:aspect-video lg:rounded-lg h-auto w-full overflow-hidden bg-eggplant"
+      class="relative md:aspect-video lg:rounded-lg h-auto w-full overflow-hidden"
       :style="{ backgroundColor: bgColor }">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
@@ -13,14 +13,16 @@
         :alt="`${altText}`"
         :width="imageWidth"
         :height="imageHeight"
-        class="cld-responsive relative md:absolute object-contain md:object-cover object-[center_60%] w-full h-auto md:h-full text-[0]" />
+        class="cld-responsive relative md:absolute object-contain md:object-cover object-[center_60%] w-full h-auto md:h-full text-[0]"
+        :class="{ 'image-contain': contain }" />
       <!-- Sharp Final Image (Cloudinary) -->
       <img
         v-once
         :data-src="`https://res.cloudinary.com/rony-majzoub/image/upload/c_scale,w_auto,q_auto:best,f_auto,fl_progressive/dpr_auto/${imageLink}`"
         :src="`/assets/img/${image}`"
         :alt="`${altText}`"
-        class="cld-responsive high-def inset-0 absolute object-contain md:object-cover object-[center_60%] w-full h-auto md:h-full text-[0]" />
+        class="cld-responsive high-def inset-0 absolute object-contain md:object-cover object-[center_60%] w-full h-auto md:h-full text-[0]"
+        :class="{ 'image-contain': contain }" />
       <!-- <img
       class="object-cover object-[center_60%] w-full max-h-full rounded-lg"
       width="1280"
@@ -90,6 +92,10 @@ export default {
       default: "432",
       type: String,
     },
+    contain: {
+      default: false,
+      type: Boolean,
+    },
   },
   mounted() {
     var cl = cloudinary.Cloudinary.new({ cloud_name: "rony-majzoub" });
@@ -127,5 +133,9 @@ export default {
 
 .nav-text:hover::before {
   transform: scaleX(1);
+}
+
+.image-contain {
+  object-fit: contain;
 }
 </style>

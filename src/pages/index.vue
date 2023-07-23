@@ -34,6 +34,19 @@
           video="Showreel_Final_H264.mp4"
           video-link="v1653263740/portfolio/Showreel_Final_H264.mp4" /> -->
         <ProjectCardRight
+          link="pepsimaxcalculator"
+          title="Pepsi Max Calculator"
+          short-title="Calculator"
+          description='When Future Experience Lab reached out to Yrgo, 
+          they sought a website to augment their "Hybrid Workshop Experience" 
+          with a touch of "controlled chaos." Our goal was to strike that balance and deliver a website prototype.'
+          category="UI/UX & Web Design"
+          tag="Tool"
+          image="carlsberg_calculator_screenshot2.png"
+          image-link="v1690137928/portfolio/carlsberg/carlsberg_calculator_screenshot2.png"
+          bg-color="#000000"
+          :cover="false" />
+        <ProjectCardLeft
           link="futureexperiencelab"
           title="Future Experience Lab"
           short-title="F.E.L."
@@ -43,8 +56,10 @@
           category="UI/UX & Web Design"
           tag="Website"
           image="fel_hero2.png"
-          image-link="v1652949383/portfolio/fel/fel_hero2.png" />
-        <ProjectCardLeft
+          image-link="v1652949383/portfolio/fel/fel_hero2.png"
+          bg-color="#212121"
+          :cover="false" />
+        <ProjectCardRight
           link="smoove"
           title="Smoove"
           short-title="Smoove"
@@ -54,8 +69,9 @@
           category="UI/UX & Product Design"
           tag="Product Development"
           image="smoove_park.jpg"
-          image-link="v1652044733/portfolio/smoove/smoove.jpg" />
-        <ProjectCardRight
+          image-link="v1652044733/portfolio/smoove/smoove.jpg"
+          :cover="true" />
+        <ProjectCardLeft
           link="mojo"
           title="Mojo"
           short-title="Mojo"
@@ -65,7 +81,9 @@
           category="UX & Product Design"
           tag="Graphic Profile"
           image="mojo_hero.png"
-          image-link="v1653061123/portfolio/mojo/mojo_hero.png" />
+          image-link="v1653061123/portfolio/mojo/mojo_hero.png"
+          bg-color="#f69948"
+          :cover="false" />
         <!-- <ProjectCardLeft
           link="recypie"
           title="RecyPie"

@@ -189,6 +189,7 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap");
 @import url("https://rsms.me/inter/inter.css");
 @import "styles/variables";
 
@@ -198,6 +199,15 @@ export default {
   src: local("Satoshi Variable"),
     url(./fonts/satoshi_variable/Satoshi-Variable.woff2) format("woff2"),
     url(./fonts/satoshi_variable/Satoshi-Variable.ttf) format("truetype");
+}
+@font-face {
+  font-family: "MontrealTS-HeavyIta";
+  font-display: swap;
+  src: local("MontrealTS-HeavyIta"),
+    url(./fonts/montreal_heavy_italic/MontrealTS-HeavyIta.woff2) format("woff2"),
+    url(./fonts/montreal_heavy_italic/MontrealTS-HeavyIta.woff) format("woff"),
+    url(./fonts/montreal_heavy_italic/MontrealTS-HeavyIta.otf)
+      format("opentype");
 }
 
 html {
