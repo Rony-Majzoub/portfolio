@@ -19,17 +19,17 @@
       </router-link>
       <div class="navigation-items flex col-span-full flex-row gap-4">
         <router-link
-          class="nav-desktop relative hidden lg:inline transition-all duration-300 text-cameo-pink text-lg font-bold text-right antialiased"
+          class="nav-desktop relative hidden md:inline transition-all duration-300 text-cameo-pink text-lg font-bold text-right antialiased"
           :to="{ path: '/', hash: '#projects' }">
           Projects
         </router-link>
         <router-link
-          class="nav-desktop relative hidden lg:inline transition-all duration-300 text-cameo-pink text-lg font-bold text-right antialiased"
+          class="nav-desktop relative hidden md:inline transition-all duration-300 text-cameo-pink text-lg font-bold text-right antialiased"
           to="/fun">
           Fun
         </router-link>
         <router-link
-          class="nav-desktop relative hidden lg:inline transition-all duration-300 text-cameo-pink text-lg font-bold text-right antialiased"
+          class="nav-desktop relative hidden md:inline transition-all duration-300 text-cameo-pink text-lg font-bold text-right antialiased"
           to="/about">
           About Me
         </router-link>
@@ -45,7 +45,7 @@
       </div>
     </transition>
   </router-view>
-  <navbarOld></navbarOld>
+  <navbar></navbar>
   <footer
     class="page-footer relative flex justify-center items-center lg:h-auto bg-black-coffee bottom-32 lg:bottom-0 left-0 right-0 mb-0 lg:grid lg:grid-cols-12 lg:col-start-2 lg:col-end-[-2] lg:py-4 lg:px-0 will-change-[background-color] footer-animation">
     <div

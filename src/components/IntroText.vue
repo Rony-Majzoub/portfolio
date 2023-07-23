@@ -73,7 +73,7 @@ export default {
     window.setInterval(() => {
       this.pollPerson();
       // The time that each role stays on screen in milliseconds.
-    }, 600);
+    }, 650);
   },
   methods: {
     pollPerson() {

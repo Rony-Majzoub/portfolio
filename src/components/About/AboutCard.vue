@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-start-1 col-end-[-1] sm:col-start-2 sm:col-end-[-2] lg:min-h-128 lg:h-fit w-full max-w-6xl transition-all ease-in-out duration-300 lg:hover:-translate-y-1 lg:hover:shadow-2xl lg:hover:shadow-[#2d1f2e] transform-gpu">
+    class="relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-start-2 col-end-[-2] sm:col-start-2 sm:col-end-[-2] lg:min-h-128 lg:h-fit w-full max-w-6xl transition-all ease-in-out duration-300 lg:hover:-translate-y-1 lg:hover:shadow-2xl lg:hover:shadow-[#2d1f2e] transform-gpu">
     <!-- Image Container -->
     <div
       class="relative overflow-hidden w-full lg:w-7/12 xl:w-4/12 h-96 lg:h-auto lg:rounded-none lg:rounded-l-xl rounded-t-xl">
@@ -30,7 +30,7 @@
         class="cld-responsive high-def absolute object-cover sm:object-scale-down lg:object-cover object-[center_20%] w-full h-96 lg:h-full text-[0]" />
     </div>
     <div
-      class="pt-6 p-8 text-left max-lg:w-full lg:mb-0 gap-4 flex flex-col justify-between h-full max-w-prose">
+      class="p-6 text-left max-lg:w-full lg:mb-0 gap-4 flex flex-col justify-between h-full max-w-prose">
       <figcaption class="space-y-2 lg:space-y-4">
         <div
           class="text-pastel-pink font-semibold text-xs lg:text-sm tracking-widest uppercase antialiased">
