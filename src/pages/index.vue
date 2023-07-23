@@ -37,11 +37,9 @@
           link="pepsimaxcalculator"
           title="Pepsi Max Calculator"
           short-title="Calculator"
-          description='When Future Experience Lab reached out to Yrgo, 
-          they sought a website to augment their "Hybrid Workshop Experience" 
-          with a touch of "controlled chaos." Our goal was to strike that balance and deliver a website prototype.'
-          category="UI/UX & Web Design"
-          tag="Tool"
+          description="A tool created to facilitate the sales journey for Carlsberg representatives – enabling them to swiftly compare prices and key differences between themselves and competitors. With a structured UI and data visualization, the sales team can easily present the advantages of selecting Carlsberg as your soft drink supplier."
+          category="UI/UX & Motion Design"
+          tag="Calculator & comparison tool"
           image="carlsberg_calculator_screenshot2.png"
           image-link="v1690137928/portfolio/carlsberg/carlsberg_calculator_screenshot2.png"
           bg-color="#000000"

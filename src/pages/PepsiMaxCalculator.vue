@@ -262,27 +262,27 @@ export default {
     stylePageMount() {
       var logo = document.querySelectorAll(".fill-melon");
       for (var i = 0; i < logo.length; i++) {
-        logo[i].setAttribute("style", "fill: #FF8090");
+        logo[i].setAttribute("style", "fill: #58ACDB");
       }
       var melon = document.querySelectorAll(".text-melon");
       for (var i = 0; i < melon.length; i++) {
         melon[i].setAttribute(
           "style",
-          "color: #ffffff; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+          "color: #bfbfbf; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
         );
       }
       var silk = document.querySelectorAll(".text-unbleached-silk");
       for (var i = 0; i < silk.length; i++) {
         silk[i].setAttribute(
           "style",
-          "color: #58ACDB; text-transform: uppercase; font-family: 'MontrealTS-HeavyIta', 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
+          "color: #ffffff; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
         );
       }
       var cameo = document.querySelectorAll(".text-cameo-pink");
       for (var i = 0; i < cameo.length; i++) {
         cameo[i].setAttribute(
           "style",
-          "color: #BFBFBF; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
+          "color: #bfbfbf; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
         );
       }
       var pastel = document.querySelectorAll(".text-pastel-pink");
