@@ -27,7 +27,8 @@
         image-link="v1690151158/portfolio/carlsberg/carlsberg_spreadsheet.png"
         alt-text="Carlsberg Spreadsheet"
         description="A sample of the old spreadsheet Carlsberg Sweden were using."
-        :dual="false" />
+        :dual="false"
+        content-ratio="auto" />
       <ColumnLeft
         title="The solution"
         description="The solution was a landing page that showcased the projects and workshops that Future Experience Lab has contributed to. The website was divided into different sections to better communicate the different aspects of Future Experience Lab. We used a variety of images, illustrations, and stylistic choices to create a chaotic feel, while also utilizing pre-defined grids and whitespace to subconsciously organize that chaos." />
@@ -245,10 +246,12 @@ export default {
         .setAttribute("style", "background-color: #141212");
     },
     stylePageMount() {
+      // Styles the main logo.
       var logo = document.querySelectorAll(".fill-melon");
       for (var i = 0; i < logo.length; i++) {
         logo[i].setAttribute("style", "fill: #80D1FF");
       }
+      // Styles the body text.
       var melon = document.querySelectorAll(".text-melon");
       for (var i = 0; i < melon.length; i++) {
         melon[i].setAttribute(
@@ -256,6 +259,7 @@ export default {
           "color: #bfbfbf; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
         );
       }
+      // Styles the main headings.
       var silk = document.querySelectorAll(".text-unbleached-silk");
       for (var i = 0; i < silk.length; i++) {
         silk[i].setAttribute(
@@ -277,9 +281,10 @@ export default {
           "color: #bfbfbf; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif;"
         );
       }
+      // Uses .style instead of setAttribute() because of overwritten styles of components through setAttribute().
       var eggplant = document.querySelectorAll(".bg-eggplant");
       for (var i = 0; i < eggplant.length; i++) {
-        eggplant[i].setAttribute("style", "background-color: #1e1c1c");
+        eggplant[i].style.backgroundColor = "#1e1c1c";
       }
       document
         .querySelector(".navbar")
