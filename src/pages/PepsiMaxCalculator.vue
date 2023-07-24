@@ -17,10 +17,10 @@
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnLeft
         title="Background"
-        description='When Future Experience Lab reached out to Yrgo, they were seeking a website to enhance their "Hybrid Workshop Experience" with a touch of "controlled chaos". Our goal was to strike that balance and deliver a website prototype.' />
+        description="The sales team for Carlsberg Sweden needed a more user-friendly tool to compare and visualise the key differences between themselves and competitors, that could also be used on a multitude of devices." />
       <ColumnLeft
         title="The problem"
-        description='The client had many ideas in mind when delivering their brief, including "Controlled Chaos," "Hybrid Workshop," and "Place for Creativity." How could we convey these feelings in a static website, within a tight deadline, punk aesthetic and an abstract brief?' />
+        description="The client was already using an internal custom-made spreadsheet consisting of multiple pages, each with their own special use-cases and features. How would we translate the intricate maths and features into a responsive digital tool, without losing any functionality? How would we condense the vast amount of information into a user-friendly design that is usable on a range of devices, from desktops all the way to phones?" />
 
       <ProjectImageNew
         image="carlsberg_spreadsheet.png"
@@ -31,13 +31,13 @@
         content-ratio="auto" />
       <ColumnLeft
         title="The solution"
-        description="The solution was a landing page that showcased the projects and workshops that Future Experience Lab has contributed to. The website was divided into different sections to better communicate the different aspects of Future Experience Lab. We used a variety of images, illustrations, and stylistic choices to create a chaotic feel, while also utilizing pre-defined grids and whitespace to subconsciously organize that chaos." />
+        description="The solution was a digital web app that collected all the pages into a single dashboard, to introduce the user to the different tools that they could choose from. Across each page, we employed a consistent design language that held the user experience as the #1 priority, while neatly hiding some functionality as to not overwhelm the user." />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectVideoNew
           video="carlsberg_calculator_interaction.mp4"
           alt-text="Smoove Moodboard"
-          description="This moodboard represents the feelings we strived to achieve on the final website."
+          description="A showcase of the functionality and animations in action."
           :dual="true"
           content-ratio="1 / 1"
           :autoplay="true"
@@ -47,7 +47,7 @@
         <ProjectVideoNew
           video="carlsberg_mobile_interaction.mp4"
           alt-text="Smoove Moodboard"
-          description="This moodboard represents the feelings we strived to achieve on the final website."
+          description="A showcase of the Dashboard we created, as well as our mobile adaptation of the app."
           :dual="true"
           content-ratio="1 / 1"
           :autoplay="true"
@@ -57,21 +57,18 @@
       </div>
       <ColumnLeft
         title="Pre-planning"
-        description="After receiving the project brief, we narrowed down the website's goal and target group and what they valued. We presented these questions to the client and shaped the project around those key points.
+        description="When starting out, I had the responsibility of researching the different pages that exist in their old, internal spreadsheet. This consisted of finding and making sense of the different unique equations that were used, and finding areas in which we could simplify or tweak information, to communicate more clearly with the user.
         
-        Early on, we created a Moodboard to visualize how a chaotic yet readable website might look. We narrowed it down to a dark color scheme with strong and contrasting colors used wisely to grab attention. We also found that simple, primitive shapes could add some dynamic flare to the website, which we included in the moodboard." />
+        This resulted in multiple client meetings where we discussed the functionality of the app, our findings, and our suggested improvements. Later on, I had to collect & simplify this information and present it to our Web Developers in order to implement it in the app. I was also heavily involved in QA testing the app, to make sure all the calculations were correct, and that our designs were properly implemented." />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ColumnHalf
-          title="Our stylesheet"
-          description="The final stylesheet has a focus on three key areas: fonts, colors, and patterns. For fonts, we chose a heavy, punk-like font for all titles and headers to contribute to a more heavy feel. We also used a lighter and more readable font for all body text, which made the site feel more professional and controlled.
-          
-          For brand colors, we chose three strong colors with two additional text and background colors. Throughout the website, we also used a variety of primitive shapes as decorative backgrounds. These are used in conjunction with our brand colors to give off a feeling of chaos and spice up the background as a whole.
-          " />
+          title="Spicing it up"
+          description="We made liberal use of Pepsi Max's stylesheet, while also adjusting colors and typefaces to better suit a UX-heavy design such as this one. We also animated the different icons for each page on-click, to spice things up without disrupting the user experience." />
         <ProjectVideoNew
           video="carlsberg_icon_collection.mp4"
           alt-text="Smoove Moodboard"
-          description="This moodboard represents the feelings we strived to achieve on the final website."
+          description="The different icons that I had the pleasure of animating."
           content-ratio="auto"
           :dual="true"
           :autoplay="true"
@@ -82,9 +79,9 @@
 
       <ColumnLeft
         title="Learnings"
-        description="We gained more experience on how to work under a tight deadline and what to prioritize in those cases. We also gained a better understanding of how Web Developers work and their requirements.
+        description="I gained a lot of experience by working alongside very professional Designers and Web Developers. I was offered the time and knowledge needed to perfect my contributions to the project, while improving my use of color, typography and motion along the way.
         
-        For future projects, we would focus on getting more prep time as designers so we could deliver assets to our Web Developers immediately, instead of them having to wait without any tasks at hand. We would also like to perform more extensive user testing to further refine our design and layout, but time constraints did not allow for this. Overall, we were very satisfied with the project and felt that there was a lot of potential if we were to continue with it." />
+        Getting to communicate with the client and influencing the final result alongside them was a very rewarding experience, which helped me further improve my collaboration skills, while also gaining a lot of knowledge and understanding of their side of the project." />
     </main>
   </div>
 </template>
@@ -162,7 +159,16 @@ export default {
       // Data-list of roles to be shown in ProjectTags.
       roles: [
         {
+          roleName: "Project Lead",
+        },
+        {
           roleName: "UI/UX Designer",
+        },
+        {
+          roleName: "Motion Designer",
+        },
+        {
+          roleName: "QA Tester",
         },
       ],
     };
