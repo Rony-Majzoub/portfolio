@@ -86,6 +86,15 @@
       </div>
 
       <FunCard
+        title="Alkemi Studio"
+        tag="2D Animation"
+        image="alkemi_studio_logo.png"
+        image-link="v1690302922/portfolio/fun/alkemi_studio/alkemi_studio_logo.png"
+        link="fun/alkemistudio"
+        bg-color="#eeeeee"
+        title-color="var(--eggplant)"
+        subtitle-color="var(--black-coffee)" />
+      <FunCard
         title="10A Arkitektur"
         tag="2D Animation"
         image="10a_thumbnail.png"
