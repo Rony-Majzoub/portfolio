@@ -66,7 +66,7 @@
         <ProjectVideoNew
           video="carlsberg_icon_collection.mp4"
           alt-text="Carlsberg Calculator Animated Icons"
-          description="A collection of thoughtfully animated icons, adding flair and visual appeal to the user interface"
+          description="A collection of thoughtfully animated icons, adding flair and visual appeal to the user interface."
           content-ratio="auto"
           :dual="true"
           :autoplay="true"
@@ -268,7 +268,7 @@ export default {
       for (var i = 0; i < silk.length; i++) {
         silk[i].setAttribute(
           "style",
-          "-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #ffffff; text-transform: uppercase; color: transparent; font-family: 'MontrealTS-HeavyIta', 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
+          "color: #ffffff; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
         );
       }
       var cameo = document.querySelectorAll(".text-cameo-pink");
