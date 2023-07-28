@@ -5,7 +5,7 @@
     <ProjectTitle
       info="2023 — UI/UX & Motion Design"
       title="Pepsi Max Calculator"
-      brief="Create and design an advanced calculator for Pepsi Max, based on an internal spreadsheet from the client." />
+      brief="Create and design an advanced calculator for Carlsberg Sweden, based on an internal spreadsheet from the client." />
     <ProjectImage
       class="mb-8"
       image="carlsberg_calculator_screenshot2.png"
@@ -17,27 +17,27 @@
     <main class="grid col-span-full grid-cols-10 gap-y-8 lg:gap-y-16">
       <ColumnLeft
         title="Background"
-        description="The sales team for Carlsberg Sweden needed a more user-friendly tool to compare and visualise the key differences between themselves and competitors, that could also be used on a multitude of devices." />
+        description="Carlsberg Sweden's sales team required an innovative and user-friendly tool to visualize and compare key differences with competitors across various devices." />
       <ColumnLeft
         title="The problem"
-        description="The client was already using an internal custom-made spreadsheet consisting of multiple pages, each with their own special use-cases and features. How would we translate the intricate maths and features into a responsive digital tool, without losing any functionality? How would we condense the vast amount of information into a user-friendly design that is usable on a range of devices, from desktops all the way to phones?" />
+        description="The client had been relying on an intricate, custom-made internal spreadsheet with multiple pages, each catering to specific use-cases and packed with complex equations and features. Our mission was to translate this complexity into a responsive digital tool without compromising any functionalities. Additionally, we faced the challenge of presenting vast amounts of information in a clear and user-friendly design, suitable for a range of devices, from desktops to phones." />
 
       <ProjectImageNew
         image="carlsberg_spreadsheet.png"
         image-link="v1690151158/portfolio/carlsberg/carlsberg_spreadsheet.png"
         alt-text="Carlsberg Spreadsheet"
-        description="A sample of the old spreadsheet Carlsberg Sweden were using."
+        description="Snapshot of the legacy spreadsheet previously utilized by Carlsberg Sweden."
         :dual="false"
         content-ratio="auto" />
       <ColumnLeft
         title="The solution"
-        description="The solution was a digital web app that collected all the pages into a single dashboard, to introduce the user to the different tools that they could choose from. Across each page, we employed a consistent design language that held the user experience as the #1 priority, while neatly hiding some functionality as to not overwhelm the user." />
+        description="To address the complexity and usability issues, we designed a digital web app that unified all pages into a single dashboard. Our team meticulously crafted a consistent design language, placing the user experience at the forefront. We strategically concealed certain advanced functionalities to prevent overwhelming users while maintaining their accessibility when needed." />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ProjectVideoNew
           video="carlsberg_calculator_interaction.mp4"
-          alt-text="Smoove Moodboard"
-          description="A showcase of the functionality and animations in action."
+          alt-text="Carlsberg Calculator Demonstration"
+          description="Interactive demonstration highlighting the app's diverse functionalities and engaging animations."
           :dual="true"
           content-ratio="1 / 1"
           :autoplay="true"
@@ -46,8 +46,8 @@
           :muted="true" />
         <ProjectVideoNew
           video="carlsberg_mobile_interaction.mp4"
-          alt-text="Smoove Moodboard"
-          description="A showcase of the Dashboard we created, as well as our mobile adaptation of the app."
+          alt-text="Carlsberg Calculator Dashboard"
+          description="An overview of the intuitively designed Dashboard and its seamless adaptation for mobile devices."
           :dual="true"
           content-ratio="1 / 1"
           :autoplay="true"
@@ -57,18 +57,16 @@
       </div>
       <ColumnLeft
         title="Pre-planning"
-        description="When starting out, I had the responsibility of researching the different pages that exist in their old, internal spreadsheet. This consisted of finding and making sense of the different unique equations that were used, and finding areas in which we could simplify or tweak information, to communicate more clearly with the user.
-        
-        This resulted in multiple client meetings where we discussed the functionality of the app, our findings, and our suggested improvements. Later on, I had to collect & simplify this information and present it to our Web Developers in order to implement it in the app. I was also heavily involved in QA testing the app, to make sure all the calculations were correct, and that our designs were properly implemented." />
+        description="At the project's start, I led an extensive study of the existing spreadsheet, carefully analyzing its unique equations. This process enabled us to identify opportunities for simplification and enhanced communication with the users. Collaborative client meetings were instrumental in discussing the app's functionalities, presenting our findings, and proposing improvements. As the project progressed, I played a key role in effectively communicating these findings to our Web Developers for seamless implementation. Additionally, I took an active part in rigorous QA testing to ensure accurate calculations and proper integration of our designs." />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ColumnHalf
           title="Spicing it up"
-          description="We made liberal use of Pepsi Max's stylesheet, while also adjusting colors and typefaces to better suit a UX-heavy design such as this one. We also animated the different icons for each page on-click, to spice things up without disrupting the user experience." />
+          description="We expertly utilized elements from Pepsi Max's stylesheet to infuse the app with brand familiarity. While maintaining a UX-heavy approach, we thoughtfully adjusted colors and typefaces to create an engaging visual experience. To add a touch of excitement, we implemented subtle yet captivating on-click animations for each page's icons, elevating user engagement without compromising the app's usability." />
         <ProjectVideoNew
           video="carlsberg_icon_collection.mp4"
-          alt-text="Smoove Moodboard"
-          description="The different icons that I had the pleasure of animating."
+          alt-text="Carlsberg Calculator Animated Icons"
+          description="A collection of thoughtfully animated icons, adding flair and visual appeal to the user interface"
           content-ratio="auto"
           :dual="true"
           :autoplay="true"
@@ -79,9 +77,9 @@
 
       <ColumnLeft
         title="Learnings"
-        description="I gained a lot of experience by working alongside very professional Designers and Web Developers. I was offered the time and knowledge needed to perfect my contributions to the project, while improving my use of color, typography and motion along the way.
+        description="Working alongside seasoned Designers and Web Developers during this project was a remarkable learning experience. I had the opportunity to refine my design contributions and strengthen my expertise in color theory, typography, and motion. 
         
-        Getting to communicate with the client and influencing the final result alongside them was a very rewarding experience, which helped me further improve my collaboration skills, while also gaining a lot of knowledge and understanding of their side of the project." />
+        Collaborating closely with the client not only allowed me to influence the final result but also enhanced my teamwork and communication skills significantly. Understanding the client's perspective and actively participating in shaping the project's direction enriched my overall professional growth." />
     </main>
   </div>
 </template>
@@ -270,7 +268,7 @@ export default {
       for (var i = 0; i < silk.length; i++) {
         silk[i].setAttribute(
           "style",
-          "color: #ffffff; font-family: 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
+          "-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #ffffff; text-transform: uppercase; color: transparent; font-family: 'MontrealTS-HeavyIta', 'Be Vietnam Pro', 'articulat-cf', 'neue-haas-grotesk-text', 'Inter var', Helvetica Neue, Helvetica, Arial, system-ui, sans-serif; font-weight: 600;"
         );
       }
       var cameo = document.querySelectorAll(".text-cameo-pink");
