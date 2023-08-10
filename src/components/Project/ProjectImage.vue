@@ -4,7 +4,7 @@
     <div
       v-once
       class="relative md:aspect-video lg:rounded-lg h-auto w-full overflow-hidden"
-      :style="{ backgroundColor: bgColor }">
+      :style="{ backgroundColor: bgColor, aspectRatio: contentRatio }">
       <!-- Blurred Placeholder Image (Cloudinary) -->
       <img
         v-once
@@ -84,6 +84,10 @@ export default {
       default: "var(--eggplant)",
       type: String,
     },
+    contentRatio: {
+      default: "16 / 9",
+      type: String,
+    },
     imageWidth: {
       default: "768",
       type: String,
@@ -137,5 +141,6 @@ export default {
 
 .image-contain {
   object-fit: contain;
+  object-position: center center;
 }
 </style>

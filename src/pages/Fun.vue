@@ -51,13 +51,6 @@
         bg-color="#eaeae8"
         title-color="var(--eggplant)"
         subtitle-color="var(--black-coffee)" />
-      <!-- <FunCard
-        title="Buratino"
-        tag="Website & App"
-        image="buratino.png"
-        image-link="v1652044733/portfolio/buratino/buratino.png"
-        link="fun/buratino"
-        bg-color="#ba0909" /> -->
       <FunCard
         title="Information Screen"
         tag="Digital Prototype"
@@ -145,6 +138,13 @@
         </p>
       </div>
       <FunCard
+        title="Weathered Worksite"
+        tag="Lighting & Rendering"
+        image="construction_final.jpg"
+        image-link="v1691708250/portfolio/fun/construction_scene/construction_final.jpg"
+        link="fun/weatheredworksite"
+        bg-color="#38332f" />
+      <FunCard
         title="So Good"
         tag="Product Visualization"
         image="so_good.png"
@@ -169,13 +169,6 @@
         bg-color="#c5b8bc"
         title-color="var(--eggplant)"
         subtitle-color="var(--black-coffee)" />
-      <!-- <FunCard
-        title="Donut Night"
-        tag="Modelling & Rendering"
-        image="donut_night_render.png"
-        image-link="v1653259523/portfolio/fun/Donut_Night_Render.png"
-        link="fun/donutnightrender"
-        bg-color="#14191e" /> -->
       <FunCard
         title="Project Punk"
         tag="Modelling & Rendering"
@@ -184,26 +177,12 @@
         link="fun/projectpunk"
         bg-color="#44332f" />
       <FunCard
-        title="Brick Wall"
-        tag="Rendering"
-        image="brick_wall.jpg"
-        image-link="v1653259074/portfolio/fun/Brick_Wall.jpg"
-        link="fun/brickwall"
-        bg-color="#4d443f" />
-      <FunCard
         title="Anvil Render"
         tag="Modelling & Materials"
         image="anvil_render.png"
         image-link="v1683417217/portfolio/fun/anvil_render.png"
         link="fun/anvilrender"
         bg-color="#151311" />
-      <!-- <FunCard
-        title="NTI-Awards 2020"
-        tag="Modelling & Rendering"
-        image="nti_awards.jpg"
-        image-link="v1653259075/portfolio/fun/nti_awards.jpg"
-        link="fun/ntiawards"
-        bg-color="#3c302d" /> -->
     </main>
   </div>
 </template>

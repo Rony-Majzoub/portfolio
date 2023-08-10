@@ -9,5 +9,6 @@ Disallow: /buratino21
 Disallow: /fun/buratino
 Disallow: /fun/donutnightrender
 Disallow: /fun/ntiawards
+Disallow: /fun/brickwall
 
 Sitemap: https://rony-majzoub.netlify.app/sitemap.xml
