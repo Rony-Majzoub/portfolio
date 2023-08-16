@@ -85,7 +85,7 @@ export default {
       type: String,
     },
     contentRatio: {
-      default: "16 / 9",
+      default: "",
       type: String,
     },
     imageWidth: {
