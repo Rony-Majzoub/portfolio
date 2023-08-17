@@ -57,7 +57,9 @@
       </div>
       <ColumnLeft
         title="Pre-planning"
-        description="At the project's start, I led an extensive study of the existing spreadsheet, carefully analyzing its unique equations. This process enabled us to identify opportunities for simplification and enhanced communication with the users. Collaborative client meetings were instrumental in discussing the app's functionalities, presenting our findings, and proposing improvements. As the project progressed, I played a key role in effectively communicating these findings to our Web Developers for seamless implementation. Additionally, I took an active part in rigorous QA testing to ensure accurate calculations and proper integration of our designs." />
+        description="At the project's start, I led an extensive study of the existing spreadsheet, carefully analyzing its unique equations. This process enabled us to identify opportunities for simplification and enhanced communication with the users. Collaborative client meetings were instrumental in discussing the app's functionalities, presenting our findings, and proposing improvements. 
+        
+        As the project progressed, I played a key role in effectively communicating these findings to our Web Developers for seamless implementation. Additionally, I took an active part in rigorous QA testing to ensure accurate calculations and proper integration of our designs." />
       <div
         class="col-span-full lg:col-start-2 lg:col-end-[-2] flex flex-col lg:grid lg:grid-flow-col lg:auto-cols-[1fr] gap-8">
         <ColumnHalf
