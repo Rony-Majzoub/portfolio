@@ -38,9 +38,10 @@
   </header>
   <router-view v-slot="{ Component, route }">
     <transition name="fade-in-up" mode="out-in" appear>
+      <!-- min-h values for Mobile and Desktop are used to prevent pop-in of the Footer when loading the site. -->
       <div
         :key="route.name"
-        class="grid-cols-12 min-h-screen grid pb-52 lg:pb-28 pt-28">
+        class="grid-cols-12 min-h-[120vh] lg:min-h-screen grid pb-52 lg:pb-28 pt-28">
         <component :is="Component" v-cloak />
       </div>
     </transition>
