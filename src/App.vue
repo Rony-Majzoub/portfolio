@@ -40,7 +40,7 @@
     <transition name="fade-in-up" mode="out-in" appear>
       <div
         :key="route.name"
-        class="grid-cols-12 min-h-[89vh] grid pb-52 lg:pb-28 pt-28">
+        class="grid-cols-12 min-h-screen grid pb-52 lg:pb-28 pt-28">
         <component :is="Component" v-cloak />
       </div>
     </transition>
