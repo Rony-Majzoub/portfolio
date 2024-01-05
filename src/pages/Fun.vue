@@ -15,6 +15,13 @@
         </p>
       </div>
       <FunCard
+        title="Potatisen"
+        tag="Website"
+        image="potatisen.jpg"
+        image-link="v1704461804/portfolio/fun/potatisen/potatisen.webp"
+        link="fun/potatisen"
+        bg-color="#0D0C0C" />
+      <FunCard
         title="Otii"
         tag="Digital Prototype"
         image="otii_mobile.png"
@@ -24,16 +31,6 @@
         title-color="var(--black-coffee)"
         subtitle-color="var(--black-coffee)"
         device-color="#BFB2FF"
-        :device-border="true" />
-      <FunCard
-        title="RecyPie"
-        tag="Digital Prototype"
-        image="recypie_mobile.png"
-        image-link="v1680528618/portfolio/recypie/recypie_mobile.png"
-        link="fun/recypie"
-        bg-color="#b1e0c7"
-        title-color="var(--eggplant)"
-        subtitle-color="var(--black-coffee)"
         :device-border="true" />
       <FunCard
         title="Shuu"
@@ -60,14 +57,15 @@
         bg-color="#242323"
         :device-border="true" />
       <FunCard
-        title="Vacina"
+        title="RecyPie"
         tag="Digital Prototype"
-        image="vacina.png"
-        image-link="v1653260886/portfolio/fun/vacina/vacina.png"
-        link="fun/vacina"
-        bg-color="#a2d1fa"
+        image="recypie_mobile.png"
+        image-link="v1680528618/portfolio/recypie/recypie_mobile.png"
+        link="fun/recypie"
+        bg-color="#b1e0c7"
         title-color="var(--eggplant)"
-        subtitle-color="var(--black-coffee)" />
+        subtitle-color="var(--black-coffee)"
+        :device-border="true" />
 
       <div class="col-span-full place-self-start pt-8">
         <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-melon">

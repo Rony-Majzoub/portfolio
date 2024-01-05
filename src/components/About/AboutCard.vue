@@ -1,6 +1,6 @@
 <template>
   <figure
-    class="relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-start-2 col-end-[-2] sm:col-start-2 sm:col-end-[-2] lg:min-h-128 lg:h-fit w-full max-w-6xl transition-all ease-in-out duration-300 lg:hover:-translate-y-1 lg:hover:shadow-2xl lg:hover:shadow-[#2d1f2e] transform-gpu">
+    class="relative lg:flex-row flex flex-col bg-eggplant rounded-xl lg:p-0 col-start-2 col-end-[-2] sm:col-start-2 sm:col-end-[-2] lg:min-h-96 lg:h-fit w-full max-w-6xl transition-all ease-in-out duration-300 lg:hover:-translate-y-1 lg:hover:shadow-2xl lg:hover:shadow-[#2d1f2e] transform-gpu">
     <!-- Image Container -->
     <div
       class="relative overflow-hidden w-full lg:w-7/12 xl:w-4/12 h-96 lg:h-auto lg:rounded-none lg:rounded-l-xl rounded-t-xl">
